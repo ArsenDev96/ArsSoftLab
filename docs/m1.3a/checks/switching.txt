@@ -1,0 +1,8 @@
+select educational: educational/null panels 1 expanded station-educational-trigger
+switch to playground: playground/null panels 1 expanded station-playground-trigger
+project AZIZ: playground/aziz panels 1 expanded station-playground-trigger
+platform click creative: creative/null panels 1 expanded station-creative-trigger
+platform click creative again: creative/null panels 1 expanded station-creative-trigger
+scene chip Koreez: experience/koreez panels 1 expanded station-experience-trigger
+title creative: creative/null panels 1 expanded station-creative-trigger
+title creative again: null/null panels 0 expanded 

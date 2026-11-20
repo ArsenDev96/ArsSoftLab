@@ -1,0 +1,7 @@
+Pixel regression at 1648x928 (Chrome headless). Per-pixel max channel difference, 0-255.
+M1.2 idle vs M1.1 baseline       mean |d| 0.0043  max   2  px>2:      0  px>12:      0
+Return-to-lab vs M1.2 idle       mean |d| 0.0000  max   0  px>2:      0  px>12:      0
+Return-to-lab vs M1.1 baseline   mean |d| 0.0043  max   2  px>2:      0  px>12:      0
+Reduced-motion idle vs M1.1      mean |d| 0.0043  max   2  px>2:      0  px>12:      0
+energy-active vs idle            mean |d| 0.0701  max  97  px>2:   7465  px>12:   2761
+globe-active vs idle             mean |d| 0.0189  max  98  px>2:   1459  px>12:    680

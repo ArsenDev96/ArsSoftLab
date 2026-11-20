@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- ArsSoftLab favicon: the header A monogram (components/ui/Monogram.tsx)
+       on a dark tile, with slightly heavier strokes so it reads at 16 px. -->
+  <defs>
+    <linearGradient id="g" x1="8" y1="6" x2="40" y2="42" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffbf6a"/>
+      <stop offset="1" stop-color="#ef9440"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#0b0c0f"/>
+  <g transform="translate(0.75 2.6) scale(1.25)">
+    <g stroke="url(#g)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      <path d="M21.6 8.6h6.6" stroke-width="5.4"/>
+      <path d="M23.4 9.6 8 39.6"/>
+      <path d="M27.4 9.6 34.6 26.6"/>
+      <path d="M36.2 31.4 40.6 39.6"/>
+      <path d="M17.8 30.4c4.4-.3 10.4-1.4 16.6-2.2"/>
+    </g>
+    <circle cx="40.4" cy="29" r="2.3" fill="url(#g)"/>
+  </g>
+</svg>

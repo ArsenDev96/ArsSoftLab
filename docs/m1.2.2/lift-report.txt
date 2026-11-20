@@ -1,0 +1,8 @@
+hover state: scale 1.012, translateY -4.93px (CSS), label offset from rigid transform 0.001px
+idle vs M1.2.1 idle:                 mean 0.0000, max 0, >2: 0, >12: 0
+return vs idle:                      mean 0.0000, max 0, >2: 0, >12: 0
+hover vs idle, outside station area: mean 0.0000, max 0, >2: 0, >12: 0
+layer swap at t=0 vs idle ("pop"):   mean 0.0814, max 89, >2: 11943, >12: 2095
+GPU, 8 hover in/out cycles: 647 frames, median 16.7 ms, p95 16.8 ms, max 33.3 ms, >25 ms: 1
+  main thread during cycles: 647 style recalcs (0.337 s), 32 layouts (0.006 s), script 0.060 s, task 1.041 s over ~10.4 s
+recording: 199 frames at 30 fps (6.6 s), clip 553x307 px

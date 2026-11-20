@@ -1,0 +1,26 @@
+Visual regression (1648x928); per-pixel max channel delta, 0-255
+idle vs baseline:            mean 0.0043, max 2, >2: 0, >12: 0
+return-to-lab vs idle:       mean 0.0000, max 0, >2: 0, >12: 0
+reduced-motion idle vs base: mean 0.0043, max 2, >2: 0, >12: 0
+globe hover vs rest:         mean 0.2315, max 61, >2: 21942, >12: 13645
+
+PASS  Educational hover sets hover state
+PASS  Pointer: Engineering enters focus
+PASS  Pointer: camera transforms the scene  (matrix(1.09, 0, 0, 1.09, 74.2006, 32.7857))
+PASS  Pointer: header is not transformed
+PASS  Pointer: hero heading hidden, station info shown  (hidden/0 | visible/1)
+PASS  Pointer: Back to Lab restores the lab  (null none visible/1)
+PASS  Keyboard: Enter opens Engineering focus
+PASS  Keyboard: focus moves to the station heading  (station-engineering-panel-title)
+PASS  Keyboard: Tab reaches Back to Lab  (Back to LabEsc)
+PASS  Keyboard: Escape returns to the lab
+PASS  Keyboard: focus returns to the Engineering trigger  (station-engineering-trigger)
+PASS  Keyboard: hero heading restored  (visible/1)
+PASS  Reduced motion: no running animations, effects removed  (0 running, fx=none,none)
+PASS  Reduced motion: no camera movement  (none)
+PASS  Reduced motion: station info reachable  (visible/1 station-engineering-panel-title)
+PASS  Reduced motion: Escape returns
+PASS  Idle matches approved baseline (max <= 4)  (mean 0.0043, max 2, >2: 0, >12: 0)
+PASS  Return-to-lab matches idle (max <= 4)  (mean 0.0000, max 0, >2: 0, >12: 0)
+PASS  Reduced-motion idle matches baseline (max <= 4)  (mean 0.0043, max 2, >2: 0, >12: 0)
+PASS  Educational hover visibly boosts the orbit  (mean 0.2315, max 61, >2: 21942, >12: 13645)
