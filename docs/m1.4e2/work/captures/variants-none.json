@@ -1,0 +1,342 @@
+{
+ "base": "http://localhost:3002",
+ "none": {
+  "camera": {
+   "x": -0.4453125,
+   "y": 0,
+   "k": 0.9861786034688995
+  },
+  "rest": {
+   "lift_matrix": {
+    "a": 1,
+    "d": 1,
+    "e": 0,
+    "f": 0
+   },
+   "lift_px": 0,
+   "line_end": [
+    1088.95,
+    537.8
+   ],
+   "extension": null,
+   "contact_rect": null,
+   "shadow_ambient_rect": [
+    1066.78,
+    502.66,
+    301.44,
+    40.28
+   ],
+   "spark_scene": [
+    941.78,
+    573.59
+   ],
+   "spark_core_opacity": 0,
+   "burst_opacity": 0,
+   "strip_off_opacity": 1,
+   "shadow_ambient_opacity": 0,
+   "end_boost_opacity": null,
+   "end_lit_opacity": null,
+   "end_flash_opacity": null
+  },
+  "B-spark-half": {
+   "t": 293,
+   "lift_matrix": {
+    "a": 1,
+    "d": 1,
+    "e": 0,
+    "f": 0
+   },
+   "lift_px": 0,
+   "line_end": [
+    1088.95,
+    537.8
+   ],
+   "extension": null,
+   "contact_rect": null,
+   "shadow_ambient_rect": [
+    1066.78,
+    502.66,
+    301.44,
+    40.28
+   ],
+   "spark_scene": [
+    984.95,
+    564
+   ],
+   "spark_core_opacity": 1,
+   "burst_opacity": 0,
+   "strip_off_opacity": 1,
+   "shadow_ambient_opacity": 0,
+   "end_boost_opacity": null,
+   "end_lit_opacity": null,
+   "end_flash_opacity": null
+  },
+  "C-spark-arriving": {
+   "t": 612,
+   "lift_matrix": {
+    "a": 1,
+    "d": 1,
+    "e": 0,
+    "f": 0
+   },
+   "lift_px": 0,
+   "line_end": [
+    1088.95,
+    537.8
+   ],
+   "extension": null,
+   "contact_rect": null,
+   "shadow_ambient_rect": [
+    1066.78,
+    502.66,
+    301.44,
+    40.28
+   ],
+   "spark_scene": [
+    1088.93,
+    537.81
+   ],
+   "spark_core_opacity": 1,
+   "burst_opacity": 0.362,
+   "strip_off_opacity": 1,
+   "shadow_ambient_opacity": 0,
+   "end_boost_opacity": null,
+   "end_lit_opacity": null,
+   "end_flash_opacity": null
+  },
+  "D-endpoint-activates": {
+   "t": 700,
+   "lift_matrix": {
+    "a": 1.0004,
+    "d": 1.0004,
+    "e": 0,
+    "f": -0.69
+   },
+   "lift_px": -0.7,
+   "line_end": [
+    1088.95,
+    537.8
+   ],
+   "extension": null,
+   "contact_rect": null,
+   "shadow_ambient_rect": [
+    1066.05,
+    502.2,
+    302.9,
+    41.42
+   ],
+   "spark_scene": [
+    1088.93,
+    537.81
+   ],
+   "spark_core_opacity": 0.684,
+   "burst_opacity": 0.368,
+   "strip_off_opacity": 0.697,
+   "shadow_ambient_opacity": 0.035,
+   "end_boost_opacity": null,
+   "end_lit_opacity": null,
+   "end_flash_opacity": null
+  },
+  "E-rising": {
+   "t": 850,
+   "lift_matrix": {
+    "a": 1.0053,
+    "d": 1.0053,
+    "e": 0,
+    "f": -9.5
+   },
+   "lift_px": -9.64,
+   "line_end": [
+    1088.95,
+    537.8
+   ],
+   "extension": null,
+   "contact_rect": null,
+   "shadow_ambient_rect": [
+    1056.7,
+    496.4,
+    321.6,
+    56.01
+   ],
+   "spark_scene": [
+    1088.93,
+    537.81
+   ],
+   "spark_core_opacity": 0,
+   "burst_opacity": 0,
+   "strip_off_opacity": 0.029,
+   "shadow_ambient_opacity": 0.482,
+   "end_boost_opacity": null,
+   "end_lit_opacity": null,
+   "end_flash_opacity": null
+  },
+  "F-rising-late": {
+   "t": 1000,
+   "lift_matrix": {
+    "a": 1.0097,
+    "d": 1.0097,
+    "e": 0,
+    "f": -17.15
+   },
+   "lift_px": -17.39,
+   "line_end": [
+    1088.95,
+    537.8
+   ],
+   "extension": null,
+   "contact_rect": null,
+   "shadow_ambient_rect": [
+    1048.58,
+    491.36,
+    337.84,
+    68.66
+   ],
+   "spark_scene": [
+    1088.93,
+    537.81
+   ],
+   "spark_core_opacity": 0,
+   "burst_opacity": 0,
+   "strip_off_opacity": 0,
+   "shadow_ambient_opacity": 0.869,
+   "end_boost_opacity": null,
+   "end_lit_opacity": null,
+   "end_flash_opacity": null
+  },
+  "before_arrival": {
+   "lift_matrix": {
+    "a": 1,
+    "d": 1,
+    "e": 0,
+    "f": 0
+   },
+   "lift_px": 0,
+   "line_end": [
+    1088.95,
+    537.8
+   ],
+   "extension": null,
+   "contact_rect": null,
+   "shadow_ambient_rect": [
+    1066.78,
+    502.66,
+    301.44,
+    40.28
+   ],
+   "spark_scene": [
+    1088.93,
+    537.81
+   ],
+   "spark_core_opacity": 1,
+   "burst_opacity": 0,
+   "strip_off_opacity": 0,
+   "shadow_ambient_opacity": 0,
+   "end_boost_opacity": null,
+   "end_lit_opacity": null,
+   "end_flash_opacity": null
+  },
+  "lifted": {
+   "lift_matrix": {
+    "a": 1.01,
+    "d": 1.01,
+    "e": 0,
+    "f": -17.75
+   },
+   "lift_px": -18,
+   "line_end": [
+    1088.95,
+    537.8
+   ],
+   "extension": null,
+   "contact_rect": null,
+   "shadow_ambient_rect": [
+    1047.94,
+    490.96,
+    339.12,
+    69.67
+   ],
+   "spark_scene": [
+    1088.93,
+    537.81
+   ],
+   "spark_core_opacity": 0,
+   "burst_opacity": 0,
+   "strip_off_opacity": 0,
+   "shadow_ambient_opacity": 0.9,
+   "end_boost_opacity": null,
+   "end_lit_opacity": null,
+   "end_flash_opacity": null
+  },
+  "return_half_ms": 147,
+  "returning": {
+   "lift_matrix": {
+    "a": 1.005,
+    "d": 1.005,
+    "e": 0,
+    "f": -8.88
+   },
+   "lift_px": -9,
+   "line_end": [
+    1088.95,
+    537.8
+   ],
+   "extension": null,
+   "contact_rect": null,
+   "shadow_ambient_rect": [
+    1057.36,
+    496.81,
+    320.28,
+    54.97
+   ],
+   "spark_scene": [
+    1088.93,
+    537.81
+   ],
+   "spark_core_opacity": 0,
+   "burst_opacity": 0,
+   "strip_off_opacity": 0,
+   "shadow_ambient_opacity": 0.45,
+   "end_boost_opacity": null,
+   "end_lit_opacity": null,
+   "end_flash_opacity": null
+  },
+  "rest_again": {
+   "lift_matrix": {
+    "a": 1,
+    "d": 1,
+    "e": 0,
+    "f": 0
+   },
+   "lift_px": 0,
+   "line_end": [
+    1088.95,
+    537.8
+   ],
+   "extension": null,
+   "contact_rect": null,
+   "shadow_ambient_rect": [
+    1066.78,
+    502.66,
+    301.44,
+    40.28
+   ],
+   "spark_scene": [
+    1088.93,
+    537.81
+   ],
+   "spark_core_opacity": 0,
+   "burst_opacity": 0,
+   "strip_off_opacity": 1,
+   "shadow_ambient_opacity": 0,
+   "end_boost_opacity": null,
+   "end_lit_opacity": null,
+   "end_flash_opacity": null
+  },
+  "fixed_while_lifting": {
+   "line_end": true,
+   "extension": true,
+   "contact": true
+  },
+  "errors": []
+ }
+}

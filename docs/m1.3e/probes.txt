@@ -1,0 +1,16 @@
+OK   At rest: nothing drawn or scheduled  {"state":null,"opacity":0,"coverage":0,"clocks":0,"sig":0}
+OK   Live: running, content changes in real time  {"a":{"state":"running","opacity":1,"coverage":1,"clocks":1,"sig":22036784},"b":{"state":"running","opacity":1,"coverage":1,"clocks":1,"sig":736328889},"rafPerSecond":61}
+OK   Page hidden: no drawing; visible: resumes  {"hidden":[736328889,736328889],"resumed":805520788}
+OK   Exit: fades out, then stops and clears  {"fading":{"state":"running","opacity":0.737,"coverage":1,"clocks":1,"sig":360010414},"after":{"state":"off","opacity":0,"coverage":0,"clocks":0,"sig":0}}
+OK   Quick return mid-fade: resumes, no restart or duplicate  {"fading":{"state":"running","opacity":0.836,"coverage":1,"clocks":1,"sig":762772629},"back":{"state":"running","opacity":0.737,"coverage":1,"clocks":1,"sig":803548914},"later":{"state":"running","opacity":1,"coverage":1,"clocks":1,"sig":801074045}}
+OK   Early exit (before arrival): never switches on  {"charging":{"state":"charging","opacity":0,"coverage":0,"clocks":1,"sig":0},"maxCoverageAfter":0,"after":{"state":"off","opacity":0,"coverage":0,"clocks":0,"sig":0}}
+OK   Repeated quick hovers: clean rest state  {"state":"off","opacity":0,"coverage":0,"clocks":0,"sig":0}
+OK   Switch to Engineering: game stops  {"state":"off","opacity":0,"coverage":0,"clocks":0,"sig":0}
+OK   Click mid-charge: selected; screen on with the lights, visible  {"atClick":{"state":"charging","opacity":0,"coverage":0,"clocks":1,"sig":0},"later":{"state":"running","opacity":1,"coverage":1,"clocks":1,"sig":147479957}}
+OK   Escape (focus returns to the title): still running, one clock  {"state":"running","opacity":1,"coverage":1,"clocks":1,"sig":618494340}
+OK   Blur: back to rest  {"state":"off","opacity":0,"coverage":0,"clocks":0,"sig":0}
+OK   Keyboard focus: charging, then running  {"early":{"state":"charging","opacity":0,"coverage":0,"clocks":1,"sig":0},"later":{"state":"running","opacity":1,"coverage":1,"clocks":1,"sig":957539106}}
+OK   Keyboard blur: back to rest  {"state":"off","opacity":0,"coverage":0,"clocks":0,"sig":0}
+OK   Reduced motion: static lit frame at once, no loop  {"r1":{"state":"still","opacity":1,"coverage":1,"clocks":0,"sig":383904072},"r2":{"state":"still","opacity":1,"coverage":1,"clocks":0,"sig":383904072}}
+OK   Idle matches docs/m1.3d/idle.png  {"max":0,"over2":0}
+OK   Rest after the probes matches idle  {"max":2,"over2":0}

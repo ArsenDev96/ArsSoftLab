@@ -1,0 +1,12 @@
+{
+ "bottom_fit": [
+  -0.00017,
+  0.416192,
+  291.611699
+ ],
+ "right_edge_x": 1375.5,
+ "corner_radius": 9.0,
+ "alpha_changed_px": 290,
+ "solve_px": 1213,
+ "new_alpha_outside_background_hole": 5
+}

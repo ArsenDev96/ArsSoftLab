@@ -1,0 +1,19 @@
+OK   Idle: all five connections unpowered, no energy moving  {"idle":{"educational":0,"engineering":0,"playground":0,"creative":0,"experience":0},"unpowered":true}
+OK   educational: charges progressively from the A behind the spark, fully powered as it arrives; platform only after arrival  {"arriveMs":460,"lineStartMs":132,"halfwayLine":0.36,"lineFullMs":415,"platformFirstLightMs":465,"othersPowered":[]}
+OK   educational: leaving drains the platform, then the line back to the A; nothing stays powered  {"platformDrainedMs":263,"lineDrainedMs":846}
+OK   engineering: charges progressively from the A behind the spark, fully powered as it arrives; platform only after arrival  {"arriveMs":620,"lineStartMs":115,"halfwayLine":0.63,"lineFullMs":565,"platformFirstLightMs":632,"othersPowered":[]}
+OK   engineering: leaving drains the platform, then the line back to the A; nothing stays powered  {"platformDrainedMs":296,"lineDrainedMs":913}
+OK   playground: charges progressively from the A behind the spark, fully powered as it arrives; platform only after arrival  {"arriveMs":650,"lineStartMs":132,"halfwayLine":0.63,"lineFullMs":598,"platformFirstLightMs":682,"othersPowered":[]}
+OK   playground: leaving drains the platform, then the line back to the A; nothing stays powered  {"platformDrainedMs":280,"lineDrainedMs":913}
+OK   creative: charges progressively from the A behind the spark, fully powered as it arrives; platform only after arrival  {"arriveMs":640,"lineStartMs":115,"halfwayLine":0.47,"lineFullMs":582,"platformFirstLightMs":665,"othersPowered":[]}
+OK   creative: leaving drains the platform, then the line back to the A; nothing stays powered  {"platformDrainedMs":329,"lineDrainedMs":912}
+OK   experience: charges progressively from the A behind the spark, fully powered as it arrives; platform only after arrival  {"arriveMs":660,"lineStartMs":115,"halfwayLine":0.49,"lineFullMs":598,"platformFirstLightMs":681,"othersPowered":[]}
+OK   experience: leaving drains the platform, then the line back to the A; nothing stays powered  {"platformDrainedMs":329,"lineDrainedMs":945}
+OK   Mid-charge frame: line part-charged behind the spark, platform still unpowered  {"line":0.53,"parts":[1,0.59,0],"platform":0}
+OK   Early exit (260 ms): the line drains back, the platform never powers  {"maxLine":0.64,"maxPlatform":0,"endLine":0}
+OK   Rapid switching (Engineering → Educational → Experience → Creative): only Creative's line powered  {"educational":0,"engineering":0,"playground":0,"creative":0.998,"experience":0}
+OK   Repeated quick hovers: everything back to unpowered  {"educational":0,"engineering":0,"playground":0,"creative":0,"experience":0}
+OK   Keyboard focus charges the line and powers the platform; blur drains both  {"focused":{"line":0.9999586173935455,"lineMin":0.9998758521806368,"parts":[1,0.9998758521806368,1],"plat":1},"blurred":{"line":0,"plat":0}}
+OK   Click while charging: selected, line and platform powered; Escape then leaving: all unpowered  {"selected":"educational","unpowered":0,"line":0,"platform":1,"after":{"educational":0,"engineering":0,"playground":0,"creative":0,"experience":0}}
+OK   Direct URL (?station=experience): its connection powered at once, the others unpowered  {"selected":"experience","unpowered":{"educational":1,"engineering":1,"playground":1,"creative":1,"experience":0}}
+OK   Reduced motion: no spark, no lift; the line is powered by a short cross-fade and back  {"on":{"unpowered":0,"surge":"none","lift":"none"},"offUnpowered":1}

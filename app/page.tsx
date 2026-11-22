@@ -3,8 +3,19 @@ import { LabHero } from "@/components/lab/LabHero";
 import { LabScene } from "@/components/lab/LabScene";
 import { LabStateProvider } from "@/components/lab/LabState";
 import { SiteHeader } from "@/components/ui/SiteHeader";
+import { PROJECT_PARAM, resolveLabLocation, STATION_PARAM } from "@/lib/lab-url";
 
-export default function LabPage() {
+type SearchParams = Promise<Record<string, string | string[] | undefined>>;
+
+/**
+ * A deep link (`/?station=…&project=…`) is resolved here, on the server, so
+ * the page is rendered already in that state: no flash of the default lab,
+ * no camera move on load and nothing for hydration to disagree about.
+ */
+export default async function LabPage({ searchParams }: { searchParams: SearchParams }) {
+  const query = await searchParams;
+  const initial = resolveLabLocation(query[STATION_PARAM], query[PROJECT_PARAM]);
+
   return (
     <>
       <a
@@ -15,7 +26,7 @@ export default function LabPage() {
       </a>
       <SiteHeader activeHref="/" />
       <main className="relative h-svh w-full overflow-hidden bg-lab-ink">
-        <LabStateProvider>
+        <LabStateProvider initial={initial}>
           <LabScene />
           <LabHero />
           <ExploreCue />

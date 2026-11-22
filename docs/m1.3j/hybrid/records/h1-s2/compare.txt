@@ -1,0 +1,5 @@
+OK   Approved (default) build never references the candidate  {"references":false}
+OK   Experimental build draws the candidate layer  {"present":true}
+OK   Idle around Playground: the candidate changes nothing at rest (experimental build, candidate on vs off)  {"mean":0,"max":0,"over2":0,"over12":0,"width":355,"height":247}
+OK   Lifted, shadows off: nothing outside the floor mask changes with the candidate  {"mean":0,"max":0,"over2":0,"over12":0,"width":335,"height":99}
+OK   Lifted, shadows off: change inside the gap (for the record)  {"mean":1.3561887532036785,"max":43,"over2":4683,"over12":1216,"width":335,"height":99}

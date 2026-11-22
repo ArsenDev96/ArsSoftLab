@@ -4,6 +4,7 @@ import {
   createContext,
   useContext,
   useEffect,
+  useLayoutEffect,
   useMemo,
   useReducer,
   useRef,
@@ -12,6 +13,7 @@ import {
 } from "react";
 import { getProject, projectSummary, type ProjectId } from "@/data/projects";
 import { getZone, LAB_ZONES, type ZoneId } from "@/data/zones";
+import { LAB_HOME, labSearch, locationFromSearch, sameLocation, type LabLocation } from "@/lib/lab-url";
 
 /**
  * Lab interaction state (M1.3A), shared by the scene, the camera and the
@@ -25,6 +27,19 @@ import { getZone, LAB_ZONES, type ZoneId } from "@/data/zones";
  *
  * Selection lives in one reducer, so incompatible states can't be expressed:
  * there is at most one station, and the project always belongs to it.
+ *
+ * URL (M1.3B part 2): the reducer stays the single source of truth and the
+ * address bar mirrors it (`?station=…&project=…`, see lib/lab-url.ts).
+ *   initial      the server resolves the query and passes it as `initial`,
+ *                so a deep link renders in its state from the first byte
+ *   state → URL  after a selection change, push one entry, but only if the
+ *                address bar disagrees. Hover, focus and "returning" are
+ *                not in the URL, so they never touch history.
+ *   URL → state  popstate (Back / Forward) dispatches "restore"; the
+ *                address bar then already agrees, so nothing is pushed
+ *                back and there is no loop to guard against.
+ *   invalid      a non-canonical query is rewritten in place
+ *                (replaceState), never as a new entry.
  *
  * Re-render budget: all continuous motion is CSS. Selection changes re-render
  * the components that read this context (only on clicks and keys). Hover and
@@ -48,7 +63,9 @@ type Action =
   | { type: "toggle"; station: ZoneId }
   | { type: "project"; project: ProjectId }
   | { type: "back" }
-  | { type: "returned" };
+  | { type: "returned" }
+  /** Back / Forward: adopt the selection the URL now shows. */
+  | { type: "restore"; station: ZoneId | null; project: ProjectId | null };
 
 const LAB: Selection = { station: null, project: null, returning: null };
 
@@ -70,6 +87,10 @@ export function labReducer(s: Selection, a: Action): Selection {
       return s.station ? { ...LAB, returning: s.station } : s;
     case "returned":
       return s.returning ? { ...s, returning: null } : s;
+    case "restore":
+      return a.station
+        ? labReducer(s, { type: "select", station: a.station, project: a.project })
+        : labReducer(s, { type: "back" });
   }
 }
 
@@ -83,7 +104,15 @@ interface LabActions {
   backToLab: () => void;
   /** Light (`on`) or release a station for pointer hover or keyboard focus. */
   hover: (source: HoverSource, id: ZoneId, on: boolean) => void;
+  /**
+   * Subscribe to the effective hovered station (with the selection), without
+   * re-rendering: for imperative effects such as the M1.3C hover pulse.
+   * Returns the unsubscribe function.
+   */
+  onHoverChange: (fn: HoverListener) => () => void;
 }
+
+export type HoverListener = (hovered: ZoneId | null, selected: ZoneId | null) => void;
 
 interface LabStateValue extends Selection, LabActions {}
 
@@ -102,6 +131,14 @@ export const stationPanelId = (id: ZoneId) => `station-${id}-panel`;
 const RETURN_MS = 760;
 
 /**
+ * A station stays hovered this long after the pointer (or focus) leaves it.
+ * Crossing from a platform to its own label, or from title to chip, passes
+ * through a gap; without the grace the M1.3C activation would restart. Any
+ * other station taking over cancels it at once.
+ */
+const HOVER_GRACE_MS = 90;
+
+/**
  * Per-station state as CSS custom properties, generated from the zone list so
  * a new station needs no CSS edits. Elements opt in with data-zone="<id>"
  * (energy tracks already carry data-connection="<id>"):
@@ -114,11 +151,23 @@ const ZONE_STATE_CSS = LAB_ZONES.map(({ id }) => {
   return `[data-lab-hover="${id}"] ${own}{--zone-hover:1}[data-lab-selected="${id}"] ${own}{--zone-selected:1}`;
 }).join("");
 
-export function LabStateProvider({ children }: { children: ReactNode }) {
-  const [sel, dispatch] = useReducer(labReducer, LAB);
+const initSelection = (loc: LabLocation): Selection =>
+  loc.station ? labReducer(LAB, { type: "select", station: loc.station, project: loc.project }) : LAB;
+
+/** Rewrite a non-canonical lab query in place (no new history entry). */
+function canonicalizeUrl() {
+  const { pathname, search, hash } = window.location;
+  const canonical = labSearch(locationFromSearch(search), search);
+  if (canonical !== search) window.history.replaceState(window.history.state, "", pathname + canonical + hash);
+}
+
+export function LabStateProvider({ children, initial = LAB_HOME }: { children: ReactNode; initial?: LabLocation }) {
+  const [sel, dispatch] = useReducer(labReducer, initial, initSelection);
   const [pointer, setPointer] = useState<ZoneId | null>(null);
   const [keyboard, setKeyboard] = useState<ZoneId | null>(null);
-  const shown = useRef<ZoneId | null>(null);
+  const shown = useRef<ZoneId | null>(sel.station);
+  const leaveTimers = useRef<Partial<Record<HoverSource, number>>>({});
+  const hoverListeners = useRef(new Set<HoverListener>());
 
   const actions = useMemo<LabActions>(
     () => ({
@@ -128,13 +177,47 @@ export function LabStateProvider({ children }: { children: ReactNode }) {
       backToLab: () => dispatch({ type: "back" }),
       hover: (source, id, on) => {
         const set = source === "pointer" ? setPointer : setKeyboard;
-        // Leaving only clears this station, so moving between a station's
-        // hotspot and its label (or to another station) never flickers.
-        set((cur) => (on ? id : cur === id ? null : cur));
+        window.clearTimeout(leaveTimers.current[source]);
+        if (on) {
+          set(id);
+          return;
+        }
+        // Leaving only clears this station (after the grace), so moving
+        // between a station's hotspot and its label, or on to another
+        // station, never flickers or restarts its activation.
+        leaveTimers.current[source] = window.setTimeout(() => set((cur) => (cur === id ? null : cur)), HOVER_GRACE_MS);
+      },
+      onHoverChange: (fn) => {
+        hoverListeners.current.add(fn);
+        return () => hoverListeners.current.delete(fn);
       },
     }),
     [],
   );
+  useEffect(() => {
+    const timers = leaveTimers.current;
+    return () => Object.values(timers).forEach((t) => window.clearTimeout(t));
+  }, []);
+
+  // URL → state: tidy the address on load, follow Back / Forward.
+  useEffect(() => {
+    canonicalizeUrl();
+    const onPop = () => {
+      canonicalizeUrl();
+      dispatch({ type: "restore", ...locationFromSearch(window.location.search) });
+    };
+    window.addEventListener("popstate", onPop);
+    return () => window.removeEventListener("popstate", onPop);
+  }, []);
+
+  // State → URL: one entry per selection the address bar doesn't show yet.
+  // Initial and restored selections already match it, so they push nothing.
+  useEffect(() => {
+    const want = { station: sel.station, project: sel.project };
+    const { pathname, search } = window.location;
+    if (sameLocation(locationFromSearch(search), want)) return;
+    window.history.pushState(null, "", pathname + labSearch(want, search));
+  }, [sel.station, sel.project]);
 
   // Escape returns to the lab from anywhere while a station is selected.
   useEffect(() => {
@@ -180,6 +263,12 @@ export function LabStateProvider({ children }: { children: ReactNode }) {
 
   const value = useMemo(() => ({ ...sel, ...actions }), [sel, actions]);
   const hovered = pointer ?? keyboard;
+
+  // Hover listeners run in the same frame the hover attribute is committed,
+  // so imperative effects start together with the CSS transitions.
+  useLayoutEffect(() => {
+    hoverListeners.current.forEach((fn) => fn(hovered, sel.station));
+  }, [hovered, sel.station]);
 
   return (
     <LabStateContext.Provider value={value}>

@@ -1,0 +1,164 @@
+{
+ "files": {
+  "environment": {
+   "format": "PNG",
+   "size": [
+    1672,
+    941
+   ],
+   "mode": "RGBA",
+   "bytes": 3330716,
+   "icc": false,
+   "gamma": null
+  },
+  "playground": {
+   "format": "PNG",
+   "size": [
+    1672,
+    941
+   ],
+   "mode": "RGBA",
+   "bytes": 142589,
+   "icc": false,
+   "gamma": null
+  },
+  "connection-reference": {
+   "format": "PNG",
+   "size": [
+    1672,
+    941
+   ],
+   "mode": "RGBA",
+   "bytes": 129115,
+   "icc": false,
+   "gamma": null
+  }
+ },
+ "environment": {
+  "alpha": "opaque",
+  "outside_remove_changed_gt2": 1382331,
+  "outside_remove_px": 1525701,
+  "outside_remove_mean_abs": 15.46,
+  "outside_remove_p99": 113.0,
+  "mean_rgb_candidate": [
+   65.9,
+   53.6,
+   45.9
+  ],
+  "mean_rgb_plate": [
+   63.4,
+   51.1,
+   44.8
+  ],
+  "regions": {
+   "engineering": {
+    "mean_abs_diff": 22.4,
+    "lum_plate": 51.7,
+    "lum_candidate": 56.0,
+    "shift_dy_dx": [
+     0.15,
+     0.44
+    ]
+   },
+   "educational": {
+    "mean_abs_diff": 22.0,
+    "lum_plate": 75.4,
+    "lum_candidate": 76.4,
+    "shift_dy_dx": [
+     -0.01,
+     0.85
+    ]
+   },
+   "creative": {
+    "mean_abs_diff": 18.6,
+    "lum_plate": 71.2,
+    "lum_candidate": 74.7,
+    "shift_dy_dx": [
+     0.08,
+     0.19
+    ]
+   },
+   "experience": {
+    "mean_abs_diff": 27.3,
+    "lum_plate": 62.2,
+    "lum_candidate": 67.9,
+    "shift_dy_dx": [
+     0.17,
+     0.2
+    ]
+   },
+   "hub": {
+    "mean_abs_diff": 21.3,
+    "lum_plate": 93.1,
+    "lum_candidate": 89.2,
+    "shift_dy_dx": [
+     0.17,
+     0.86
+    ]
+   }
+  },
+  "floor_ring_around_station": {
+   "mean_abs_diff": 45.9,
+   "lum_plate": 67.2,
+   "lum_candidate": 86.3
+  }
+ },
+ "station": {
+  "alpha_levels": 256,
+  "alpha_255_px": 100,
+  "alpha_250_254_px": 35501,
+  "alpha_1_249_px": 7712,
+  "body_note": "the body is alpha 250-254, not 255: ~1-2% of the background shows through the whole cabinet",
+  "stray_px": 102,
+  "stray_max_alpha": 1,
+  "stray_bbox": [
+   41,
+   56,
+   1625,
+   922
+  ],
+  "stray_ge_16_px": 0,
+  "outside_remove_px": 248,
+  "iou_vs_current_cutout": 0.9249,
+  "centroid_shift_dx_dy": [
+   -2.06,
+   2.49
+  ],
+  "bottom_edge_vs_current": {
+   "mean": 0.53,
+   "min": -2,
+   "max": 6,
+   "cols": 316
+  },
+  "interior_vs_plate": {
+   "px": 35601,
+   "mean_abs": 17.6,
+   "median": 9.0,
+   "within_3": 0.155
+  },
+  "shift_vs_plate_dy_dx": [
+   0.07,
+   0.81
+  ]
+ },
+ "connection_reference": {
+  "alpha_255_px": 0,
+  "line_px_alpha_gt40": 9092,
+  "line_x_range": [
+   820,
+   1219
+  ],
+  "existing_line_x_range": [
+   894,
+   1099
+  ],
+  "stray_px_far_from_existing_line": 18284,
+  "ridge_dy_vs_existing": {
+   "cols": 124,
+   "mean": 25.2,
+   "mean_abs": 25.2,
+   "max_abs": 31.14
+  },
+  "use": "reference only; the preview keeps the existing connection layers"
+ }
+}

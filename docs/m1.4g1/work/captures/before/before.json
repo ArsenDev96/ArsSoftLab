@@ -1,0 +1,107 @@
+{
+ "base": "http://localhost:3002",
+ "label": "before",
+ "errors_scene-default.png": [],
+ "errors_scene-tone.png": [],
+ "playground": {
+  "rest": {
+   "hover": null,
+   "lift_px": 0,
+   "strip_off": 1,
+   "strip_reflection_lit": 0,
+   "ring_lit": null,
+   "reflection_drop_px": 0
+  },
+  "charging": {
+   "hover": "playground",
+   "lift_px": 0,
+   "strip_off": 1,
+   "strip_reflection_lit": 0,
+   "ring_lit": null,
+   "reflection_drop_px": 0
+  },
+  "powered": {
+   "hover": "playground",
+   "lift_px": -0.7,
+   "strip_off": 0.697,
+   "strip_reflection_lit": 0.303,
+   "ring_lit": null,
+   "reflection_drop_px": 0.7
+  },
+  "lifted": {
+   "hover": "playground",
+   "lift_px": -18,
+   "strip_off": 0,
+   "strip_reflection_lit": 1,
+   "ring_lit": null,
+   "reflection_drop_px": 18
+  },
+  "returning-150ms": {
+   "hover": null,
+   "lift_px": -8.68,
+   "strip_off": 0,
+   "strip_reflection_lit": 1,
+   "ring_lit": null,
+   "reflection_drop_px": 8.68
+  },
+  "returning-300ms": {
+   "hover": null,
+   "lift_px": -0.99,
+   "strip_off": 0.888,
+   "strip_reflection_lit": 0.112,
+   "ring_lit": null,
+   "reflection_drop_px": 0.99
+  },
+  "returned": {
+   "hover": null,
+   "lift_px": 0,
+   "strip_off": 1,
+   "strip_reflection_lit": 0,
+   "ring_lit": null,
+   "reflection_drop_px": 0
+  }
+ },
+ "playground_errors": [],
+ "keyboard": {
+  "tab": 15,
+  "focused": {
+   "hover": "playground",
+   "lift_px": -18,
+   "strip_off": 0,
+   "strip_reflection_lit": 1,
+   "ring_lit": null,
+   "reflection_drop_px": 18
+  },
+  "selected": {
+   "hover": null,
+   "lift_px": -18,
+   "strip_off": 0,
+   "strip_reflection_lit": 1,
+   "ring_lit": null,
+   "reflection_drop_px": 18,
+   "url": "/lab-v2?station=playground"
+  },
+  "escaped": {
+   "hover": "playground",
+   "lift_px": -18,
+   "strip_off": 0,
+   "strip_reflection_lit": 1,
+   "ring_lit": null,
+   "reflection_drop_px": 18,
+   "url": "/lab-v2"
+  },
+  "errors": []
+ },
+ "reduced_motion": {
+  "hover": "playground",
+  "lift_px": 0,
+  "strip_off": 0,
+  "strip_reflection_lit": 1,
+  "ring_lit": null,
+  "reflection_drop_px": 0,
+  "errors": []
+ },
+ "homepage": {
+  "v2_requests": 0
+ }
+}

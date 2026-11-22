@@ -1,0 +1,21 @@
+{
+ "name": "baseline-m1.3i",
+ "candidate": "docs/m1.3j/inpaint/context.png",
+ "size": "512x192",
+ "compositedPx": 6698,
+ "maskPxLeftUntouchedBecauseVisibleAtRest": 3978,
+ "identityOutsideMask": "exact (0 px changed)",
+ "restEdgePx": 1033,
+ "restEdgeMaxDiff": 47.2,
+ "contactLineSeamMeanLumStep": 16.36,
+ "band": {
+  "px": 6028,
+  "lum": 45.3,
+  "detail": 0.86
+ },
+ "floorInFront": {
+  "px": 11960,
+  "lum": 40.1,
+  "detail": 0.78
+ }
+}

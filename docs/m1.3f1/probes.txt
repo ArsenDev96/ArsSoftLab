@@ -1,0 +1,20 @@
+OK   Idle: every platform unpowered  {"hover":null,"selected":null,"educational":0,"engineering":0,"playground":0,"creative":0,"experience":0,"engineeringLift":0,"playgroundLift":0,"playgroundLiftPx":0,"u":0.9862}
+OK   educational: unpowered until the energy arrives, then lights along its strips (monotonic), nothing else powers  {"arriveMs":460,"firstLightMs":468,"allLitMs":784,"spreadMs":316,"partsFirstLightMs":[468,468,668,668],"maxOther":0,"pw":1}
+OK   educational: leaving drains it back to the arrival point and it ends unpowered  {"drainedMs":264,"end":0}
+OK   engineering: unpowered until the energy arrives, then lights along its strips (monotonic), nothing else powers  {"arriveMs":540,"firstLightMs":551,"allLitMs":901,"spreadMs":350,"partsFirstLightMs":[551,701,701,551,701],"maxOther":0,"pw":1,"inLiftPw":1}
+OK   engineering: leaving drains it back to the arrival point and it ends unpowered  {"drainedMs":298,"end":0}
+OK   playground: unpowered until the energy arrives, then lights along its strips (monotonic), nothing else powers  {"arriveMs":650,"firstLightMs":683,"allLitMs":1033,"spreadMs":350,"partsFirstLightMs":[699,683,966,699,966],"maxOther":0,"pw":1,"liftPx":-17.75,"liftExpect":-17.7516,"inLiftPw":1}
+OK   Playground: still lifts 18 px; its strips ride the lift (the lifted copy is powered with it)  {"liftPx":-17.75,"expect":-17.75,"inLiftPw":1}
+OK   playground: leaving drains it back to the arrival point and it ends unpowered  {"drainedMs":279,"end":0}
+OK   creative: unpowered until the energy arrives, then lights along its strips (monotonic), nothing else powers  {"arriveMs":620,"firstLightMs":651,"allLitMs":1034,"spreadMs":383,"partsFirstLightMs":[651,668,951],"maxOther":0,"pw":1}
+OK   creative: leaving drains it back to the arrival point and it ends unpowered  {"drainedMs":333,"end":0}
+OK   experience: unpowered until the energy arrives, then lights along its strips (monotonic), nothing else powers  {"arriveMs":650,"firstLightMs":667,"allLitMs":1067,"spreadMs":400,"partsFirstLightMs":[667,684,818,984],"maxOther":0,"pw":1}
+OK   experience: leaving drains it back to the arrival point and it ends unpowered  {"drainedMs":331,"end":0}
+OK   Experience mid-spread frame captured (partly powered)  {"pw":0.423}
+OK   Early exit (300 ms, before arrival): Playground's strips never light  {"maxPw":0}
+OK   Fast switching (Engineering → Playground → Educational → Creative): only Creative powered  {"hover":"creative","selected":null,"educational":0,"engineering":0,"playground":0,"creative":1,"experience":0,"engineeringLift":0,"playgroundLift":0,"playgroundLiftPx":0,"u":0.9862}
+OK   Switching from a powered station: it drains, the new one powers  {"creative":0,"experience":0.118}
+OK   Keyboard focus powers the platform the same way; blur unpowers it  {"focused":1,"blurred":0}
+OK   Click: selected station powered (others not); Escape keeps it while focused; then unpowered  {"selected":1,"afterEscape":1,"rest":0}
+OK   Room composition: overlays change nothing outside the five strip boxes (≤ 1/255)  {"outside":{"mean":0.0006970308838299297,"max":1,"over2":0,"over12":0,"width":1648,"height":928},"inside":{"max":212,"over12":23670}}
+OK   Reduced motion: powered at once by a short cross-fade, no front, no travelling light  {"on":{"opacity":0,"mask":"none","surge":"none"},"offOpacity":1}

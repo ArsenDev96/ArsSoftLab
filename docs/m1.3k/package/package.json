@@ -1,0 +1,43 @@
+{
+ "exposed_18px": 6779,
+ "exposed_24px": 8709,
+ "exposed_18px_floor": 6512,
+ "exposed_18px_not_floor": 267,
+ "floor_hidden": 6698,
+ "floor_band": 10676,
+ "hole": 42149,
+ "remove": 47651,
+ "station_partial_alpha": 2881,
+ "floor_reference": {
+  "left_of_base_same_depth": {
+   "rect": [
+    985,
+    500,
+    1050,
+    556
+   ],
+   "mean_rgb": [
+    112.6,
+    113.7,
+    125.3
+   ],
+   "luminance": 114.7,
+   "detail_mean_abs_laplacian": 11.09
+  },
+  "in_front_of_base": {
+   "rect": [
+    1100,
+    566,
+    1360,
+    600
+   ],
+   "mean_rgb": [
+    43.7,
+    33.2,
+    28.7
+   ],
+   "luminance": 35.8,
+   "detail_mean_abs_laplacian": 2.41
+  }
+ }
+}

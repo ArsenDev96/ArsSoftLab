@@ -48,9 +48,10 @@ export async function launch({ width = 1648, height = 928, reducedMotion = false
   ];
   const proc = spawn(findChrome(), args, { stdio: "ignore" });
 
-  // Chrome writes the chosen port to DevToolsActivePort.
+  // Chrome writes the chosen port to DevToolsActivePort. Allow a slow cold
+  // start (over 12 s has been seen on a busy Windows machine).
   let port;
-  for (let i = 0; i < 100 && !port; i++) {
+  for (let i = 0; i < 600 && !port; i++) {
     try {
       port = readFileSync(join(profile, "DevToolsActivePort"), "utf8").split("\n")[0].trim();
     } catch {
@@ -60,7 +61,7 @@ export async function launch({ width = 1648, height = 928, reducedMotion = false
   if (!port) throw new Error("Chrome did not start (no DevToolsActivePort).");
 
   let target;
-  for (let i = 0; i < 50 && !target; i++) {
+  for (let i = 0; i < 300 && !target; i++) {
     try {
       target = (await (await fetch(`http://127.0.0.1:${port}/json/list`)).json()).find((t) => t.type === "page");
     } catch {}
@@ -95,9 +96,12 @@ export async function launch({ width = 1648, height = 928, reducedMotion = false
   await send("Runtime.enable");
   await send("Emulation.setDeviceMetricsOverride", { width, height, deviceScaleFactor: 1, mobile: touch });
   if (touch) await send("Emulation.setTouchEmulationEnabled", { enabled: true, maxTouchPoints: 5 });
-  if (reducedMotion) {
-    await send("Emulation.setEmulatedMedia", { features: [{ name: "prefers-reduced-motion", value: "reduce" }] });
-  }
+  // Always pin the preference: Chrome otherwise inherits the OS setting
+  // (Windows "Animation effects" off reports reduce), which silently turns
+  // every full-motion check into a reduced-motion one.
+  await send("Emulation.setEmulatedMedia", {
+    features: [{ name: "prefers-reduced-motion", value: reducedMotion ? "reduce" : "no-preference" }],
+  });
 
   const page = {
     send,

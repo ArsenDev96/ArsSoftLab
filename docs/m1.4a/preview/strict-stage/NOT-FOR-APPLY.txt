@@ -1,0 +1,1 @@
+Forced staging of the M1.4A generated pair for a browser preview only. It FAILS validation (docs/m1.4a/review/checker/report.md). Never copy into public/.

@@ -10,7 +10,17 @@
     "typecheck": "tsc --noEmit",
     "visual": "node scripts/visual/check.mjs",
     "visual:lift": "node scripts/visual/station-lift.mjs",
-    "visual:stations": "node scripts/visual/stations-evidence.mjs"
+    "visual:stations": "node scripts/visual/stations-evidence.mjs",
+    "visual:hover": "node scripts/visual/hover-evidence.mjs",
+    "visual:arcade": "node scripts/visual/arcade-evidence.mjs",
+    "visual:playground": "node scripts/visual/playground-evidence.mjs",
+    "visual:power": "node scripts/visual/platform-power-evidence.mjs",
+    "visual:connections": "node scripts/visual/connections-evidence.mjs",
+    "visual:layered": "node scripts/visual/layered-evidence.mjs",
+    "build:layered": "node scripts/build-layered.mjs",
+    "layers:25d": "node scripts/make-scene-layers.mjs",
+    "visual:scene25d": "node scripts/visual/scene25d-evidence.mjs",
+    "inpaint:playground": "node scripts/inpaint-playground.mjs"
   },
   "dependencies": {
     "next": "16.4.6",

@@ -1,0 +1,92 @@
+{
+ "uncovered_floor_px": 4486,
+ "uncovered_floor_luminance_ratio_with_vs_without_shadow": 0.455,
+ "uncovered_floor_texture_ratio_with_vs_without_shadow": 0.561,
+ "uncovered_floor_darkest_1pct_luminance": 14.6,
+ "uncovered_floor_darkest_1pct_luminance_no_shadow": 18.0,
+ "line_core_peak_luminance_through_gap_t_with_without_shadow": [
+  [
+   2,
+   237.8,
+   237.8
+  ],
+  [
+   6,
+   239.2,
+   239.2
+  ],
+  [
+   10,
+   239.2,
+   239.2
+  ],
+  [
+   14,
+   239.2,
+   239.2
+  ],
+  [
+   18,
+   239.2,
+   239.2
+  ],
+  [
+   22,
+   239.2,
+   239.2
+  ],
+  [
+   26,
+   239.2,
+   239.2
+  ],
+  [
+   30,
+   239.2,
+   239.2
+  ],
+  [
+   34,
+   239.2,
+   239.2
+  ],
+  [
+   38,
+   239.2,
+   239.2
+  ],
+  [
+   42,
+   237.3,
+   237.4
+  ],
+  [
+   46,
+   233.9,
+   234.5
+  ],
+  [
+   50,
+   136.5,
+   157.0
+  ]
+ ],
+ "line_visible_to_t": 50,
+ "stone_face_max_abs_diff_A-rest": 2.19,
+ "outside_station_max_abs_diff_A-rest": 68.02,
+ "stone_face_max_abs_diff_G-lifted": 3.89,
+ "outside_station_max_abs_diff_G-lifted": 195.16,
+ "contact_B_rect_scene": [
+  1099.94,
+  532.06,
+  13,
+  2.95
+ ],
+ "contact_B_darkest_ratio_vs_floor": 1.008,
+ "contact_B_peak_luminance": 247.8,
+ "fixed_while_lifting": {
+  "line_end": true,
+  "extension": true,
+  "contact": true
+ }
+}

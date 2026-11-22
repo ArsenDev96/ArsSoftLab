@@ -1,5 +1,6 @@
 #!/usr/bin/env node
-// ArsSoftLab visual + interaction checks (M1.3A: five-station interaction).
+// ArsSoftLab visual + interaction checks (M1.3A: five-station interaction;
+// M1.3B part 2: URL deep links, section 12).
 //
 // Usage (against a running build, e.g. `npm run build && npm run start`):
 //   npm run visual
@@ -22,6 +23,7 @@ import { launch, sleep } from "./cdp.mjs";
 import { compareImages, composeSheet, prepare } from "./compare.mjs";
 import { HOTSPOT, hasLayer, liftRegionOnScreen, liftState, tabTo } from "./lift.mjs";
 import { STATION_IDS, STATIONS, heroOverlaps, hotspotHits, labState, lightState, panel, plateCoverage, trigger } from "./stations.mjs";
+import { INVALID_URLS, docToken, here, historyCalls, historyLength, instrument, labUrl, transitionsSinceLoad, watchErrors } from "./urls.mjs";
 
 const argv = process.argv.slice(2);
 const opt = (name, fallback) => {
@@ -499,7 +501,280 @@ for (const [vw, vh, strict] of [[1366, 768, true], [1920, 1080, true], [1280, 10
   }
 }
 
-// 12. Pixel comparisons --------------------------------------------------------
+// 12. Deep links (M1.3B part 2) ----------------------------------------------
+// Every check here also collects console errors and exceptions: a hydration
+// mismatch would show up as one.
+const go = (page, path) => page.goto(new URL(path, URL_).href);
+const deepState = async (page) => ({ ...(await labState(page)), url: await here(page), history: await historyCalls(page) });
+/**
+ * Screen box of a station's in-scene chip list (padded). Those chips carry
+ * backdrop-filter and sit in the lifted Engineering label: Chrome rasters
+ * them differently when they arrive through the camera/lift animation than
+ * when painted at rest (M1.3A notes, limitation 3), so deep-link vs clicked
+ * comparisons report that box separately.
+ */
+const chipBox = (page, id) =>
+  page.eval(`(() => { const r = document.querySelector("#station-${id} ul").getBoundingClientRect(); return [Math.floor(r.left) - 6, Math.floor(r.top) - 6, Math.ceil(r.right) + 6, Math.ceil(r.bottom) + 6]; })()`);
+let deepChips = null;
+const noErrors = (name, watcher) => {
+  const errors = watcher.take();
+  check(`${name}: no console errors or hydration warnings`, errors.length === 0, errors.join(" | "));
+};
+
+// 12a. Direct navigation to every station and every project.
+{
+  const page = await launch({ width: W, height: H });
+  const errors = watchErrors(page);
+  await instrument(page);
+  try {
+    for (const id of STATION_IDS) {
+      const want = STATIONS[id];
+      await go(page, labUrl(id));
+      const s = await deepState(page);
+      const runs = await transitionsSinceLoad(page);
+      check(
+        `Deep link ${labUrl(id)}: ${id} selected, its info shown, no project`,
+        s.selected === id && !s.project && invariants(s) && s.title === want.title && eq(s.projects, want.projects) && s.info === "visible/1" && s.heading.startsWith("hidden"),
+        `${s.selected}/${s.project} ${s.title} ${s.info}`,
+      );
+      check(`Deep link ${labUrl(id)}: camera framed on load, without animating`, s.camera !== "none" && !runs.some((r) => /camera|vignette|info|heading/.test(r)), `${s.camera}; transitions: ${runs.join(",") || "none"}`);
+      check(`Deep link ${labUrl(id)}: focus not moved on load`, (await page.eval(`document.activeElement === document.body`)), s.active);
+      check(`Deep link ${labUrl(id)}: URL kept, no history entry added`, s.url === labUrl(id) && s.history.push === 0, `${s.url} push ${s.history.push}`);
+      if (id === "engineering") {
+        await page.freezeAnimations(0);
+        await page.screenshot(aux("deeplink-engineering.png"));
+        deepChips = await chipBox(page, "engineering");
+      }
+      for (const name of want.projects) {
+        const pid = name.toLowerCase();
+        await go(page, labUrl(id, pid));
+        const p = await deepState(page);
+        check(
+          `Deep link ${labUrl(id, pid)}: ${name} selected with its approved summary`,
+          p.selected === id && p.project === pid && eq(p.pressed, [name]) && p.detail === sentence(id, name) && invariants(p) && p.url === labUrl(id, pid) && p.history.push === 0,
+          `${p.selected}/${p.project} | ${p.detail} | ${p.url}`,
+        );
+        if (pid === "sqlorbit") {
+          await page.freezeAnimations(0);
+          await page.screenshot(aux("deeplink-sqlorbit.png"));
+        }
+      }
+    }
+    noErrors("Deep links", errors);
+  } finally {
+    await page.close();
+  }
+}
+
+// 12b. Invalid and non-canonical URLs.
+{
+  const page = await launch({ width: W, height: H });
+  const errors = watchErrors(page);
+  await instrument(page);
+  try {
+    for (const t of INVALID_URLS) {
+      await go(page, t.url);
+      const s = await deepState(page);
+      const zoneOf = Object.fromEntries(Object.entries(STATIONS).flatMap(([id, z]) => z.projects.map((p) => [p.toLowerCase(), id])));
+      check(
+        `Invalid URL ${t.url}: normalized to ${t.canonical} in place`,
+        s.selected === t.station && s.project === t.project && invariants(s) && s.url === t.canonical && s.history.push === 0 &&
+          (t.project ? s.detail === sentence(t.station, STATIONS[t.station].projects.find((n) => n.toLowerCase() === t.project)) : s.detail === null) &&
+          (!s.project || zoneOf[s.project] === s.selected),
+        `${s.selected}/${s.project} ${s.url} push ${s.history.push}`,
+      );
+    }
+    await go(page, "/?station=nope&project=sqlorbit");
+    await page.freezeAnimations(0);
+    await page.screenshot(aux("deeplink-invalid.png"));
+    noErrors("Invalid URLs", errors);
+  } finally {
+    await page.close();
+  }
+}
+
+// 12c. Back / Forward, and nothing but selections adds history.
+{
+  const page = await launch({ width: W, height: H });
+  const errors = watchErrors(page);
+  await instrument(page);
+  try {
+    await go(page, "/");
+    const doc = await docToken(page);
+    const len0 = await historyLength(page);
+    const states = [];
+    const step = async (label, fn) => {
+      await fn();
+      await settle(page);
+      const s = await deepState(page);
+      states.push(`${label}: ${s.url} -> ${s.selected}/${s.project}`);
+      return s;
+    };
+    let s = await step("select engineering", () => clickOn(page, trigger("engineering")));
+    check("History: selecting a station pushes ?station=", s.url === labUrl("engineering") && s.history.push === 1, s.url);
+    s = await step("project SQLOrbit", () => clickOn(page, `${panel("engineering")} .lab-hero-project`));
+    check("History: selecting a project pushes &project=", s.url === labUrl("engineering", "sqlorbit") && s.history.push === 2, s.url);
+
+    // Hover, keyboard focus and mid-transition states never touch history.
+    for (const id of STATION_IDS) {
+      const c = await page.center(`[data-hotspot="${id}"]`);
+      await page.mouseMove(c.x, c.y);
+      await sleep(80);
+    }
+    await page.mouseMove(4, H - 4);
+    for (let i = 0; i < 6; i++) await page.key("Tab", "Tab", 9);
+    await settle(page);
+    s = await deepState(page);
+    check("History: hover and focus add no entries", s.url === labUrl("engineering", "sqlorbit") && s.history.push === 2 && (await historyLength(page)) === len0 + 2, `${s.url} push ${s.history.push}`);
+
+    s = await step("switch to playground", () => clickOn(page, trigger("playground")));
+    check("History: switching station pushes it (project cleared)", s.url === labUrl("playground") && s.history.push === 3);
+    s = await step("project AZIZ", () => clickOn(page, `${panel("playground")} .lab-hero-project`));
+    s = await step("AZIZ again (clears)", () => clickOn(page, `${panel("playground")} .lab-hero-project`));
+    check("History: clearing a project pushes the station alone", s.url === labUrl("playground") && s.project === null && s.history.push === 5, s.url);
+    const lenTop = await historyLength(page);
+    check("History: one entry per selection change", lenTop === len0 + 5, `${lenTop - len0} entries`);
+
+    const back = async (label) => step(label, () => page.eval(`history.back(), true`).then(() => sleep(150)));
+    const fwd = async (label) => step(label, () => page.eval(`history.forward(), true`).then(() => sleep(150)));
+    s = await back("Back");
+    check("Back: restores the previous entry (AZIZ)", s.selected === "playground" && s.project === "aziz" && s.url === labUrl("playground", "aziz") && invariants(s));
+    await back("Back");
+    s = await back("Back");
+    check("Back: restores Engineering + SQLOrbit with its summary", s.selected === "engineering" && s.project === "sqlorbit" && s.detail === sentence("engineering", "SQLOrbit") && s.info === "visible/1" && invariants(s), `${s.selected}/${s.project}`);
+    s = await back("Back");
+    check("Back: restores Engineering alone", s.selected === "engineering" && s.project === null && s.url === labUrl("engineering"));
+    await page.eval(`document.querySelector('${panel("engineering")} .lab-hero-project').focus(), true`);
+    await back("Back");
+    await rest(page);
+    s = await deepState(page);
+    check("Back: returns to the lab, camera home, focus back on the station", !s.selected && !s.returning && s.url === "/" && s.camera === "none" && s.heading === "visible/1" && s.active === "station-engineering-trigger", `${s.url} ${s.camera} ${s.active}`);
+    await page.screenshot(aux("deeplink-history-return.png"));
+    s = await fwd("Forward");
+    check("Forward: re-selects Engineering", s.selected === "engineering" && s.url === labUrl("engineering") && s.camera !== "none");
+    s = await fwd("Forward");
+    check("Forward: re-selects SQLOrbit", s.project === "sqlorbit" && s.url === labUrl("engineering", "sqlorbit"));
+    for (let i = 0; i < 3; i++) s = await fwd("Forward");
+    check("Forward: reaches the newest entry", s.selected === "playground" && s.project === null && s.url === labUrl("playground"));
+    check(
+      "History: Back/Forward add no entries and never reload the page",
+      s.history.push === 5 && (await historyLength(page)) === lenTop && (await docToken(page)) === doc,
+      `push ${s.history.push}, length ${await historyLength(page)}`,
+    );
+    const rsc = await page.eval(`performance.getEntriesByType("resource").filter((e) => /[?&]_rsc=|text\\/x-component/.test(e.name)).map((e) => e.name)`);
+    check("History: selections and Back/Forward never fetch from the server", rsc.length === 0, rsc.join(" "));
+    writeFileSync(aux("history.txt"), states.join("\n") + "\n");
+    noErrors("Back/Forward", errors);
+  } finally {
+    await page.close();
+  }
+}
+
+// 12d. Return to Lab and keyboard from a deep link.
+{
+  const page = await launch({ width: W, height: H });
+  const errors = watchErrors(page);
+  await instrument(page);
+  try {
+    await go(page, labUrl("creative", "wallpapers"));
+    const len0 = await historyLength(page);
+    await clickOn(page, `${panel("creative")} [aria-keyshortcuts="Escape"]`);
+    await rest(page);
+    let s = await deepState(page);
+    check(
+      "Deep link, Back to Lab: restores / with the lab at rest and focus on the station",
+      s.url === "/" && !s.selected && !s.project && s.camera === "none" && s.heading === "visible/1" && s.active === "station-creative-trigger" && (await historyLength(page)) === len0 + 1,
+      `${s.url} ${s.camera} ${s.active}`,
+    );
+    await page.screenshot(aux("deeplink-return.png"));
+    await page.eval(`history.back(), true`);
+    await sleep(150);
+    await settle(page);
+    s = await deepState(page);
+    check("Deep link, Back to Lab, then Back: the shared link's state returns", s.selected === "creative" && s.project === "wallpapers" && s.url === labUrl("creative", "wallpapers"));
+    await page.key("Escape", "Escape", 27);
+    await settle(page);
+    s = await deepState(page);
+    check("Deep link: Escape returns to / too", s.url === "/" && !s.selected);
+
+    // Keyboard from a station deep link: focus starts at the top, Escape
+    // returns (focus to the station), then Tab / Enter / Space drive the URL.
+    await go(page, labUrl("engineering"));
+    await page.key("Escape", "Escape", 27);
+    await settle(page);
+    s = await deepState(page);
+    check("Deep link, keyboard: Escape returns to / and focuses the station", s.url === "/" && !s.selected && s.active === "station-engineering-trigger", `${s.url} ${s.active}`);
+    await go(page, labUrl("engineering"));
+    await page.key("Tab", "Tab", 9);
+    const first = await page.eval(`document.activeElement?.textContent?.trim() ?? ""`);
+    check("Deep link, keyboard: the first Tab starts at the top of the page", /skip to lab stations/i.test(first), first);
+    check("Deep link, keyboard: Tab reaches Playground", await tabTo(page, "station-playground-trigger"));
+    await page.key("Enter", "Enter", 13);
+    await settle(page);
+    s = await deepState(page);
+    check("Deep link, keyboard: Enter selects it and updates the URL", s.url === labUrl("playground") && s.active === "station-playground-panel-title", `${s.url} ${s.active}`);
+    check("Deep link, keyboard: Tab reaches AZIZ", await tabUntil(page, `document.activeElement?.textContent === "AZIZ"`, 3));
+    await page.key(" ", "Space", 32);
+    await settle(page);
+    s = await deepState(page);
+    check("Deep link, keyboard: Space selects the project and updates the URL", s.url === labUrl("playground", "aziz") && s.active === "AZIZ", `${s.url} ${s.active}`);
+    await page.key("Escape", "Escape", 27);
+    await settle(page);
+    s = await deepState(page);
+    check("Deep link, keyboard: Escape restores /", s.url === "/" && s.active === "station-playground-trigger", `${s.url} ${s.active}`);
+    noErrors("Return to Lab / keyboard", errors);
+  } finally {
+    await page.close();
+  }
+}
+
+// 12e. Reduced motion and touch with deep links.
+{
+  const page = await launch({ width: W, height: H, reducedMotion: true });
+  const errors = watchErrors(page);
+  await instrument(page);
+  try {
+    await go(page, labUrl("experience", "koreez"));
+    let s = await deepState(page);
+    check(
+      "Reduced motion, deep link: project shown, no camera move, focus untouched",
+      s.selected === "experience" && s.project === "koreez" && s.camera === "none" && s.info === "visible/1" && s.runningAnimations === 0 && (await page.eval(`document.activeElement === document.body`)),
+      `${s.camera} ${s.info} ${s.runningAnimations} running`,
+    );
+    await go(page, "/");
+    await page.eval(`document.querySelector("${trigger("educational")}").focus(), true`);
+    await page.key("Enter", "Enter", 13);
+    await sleep(450);
+    s = await deepState(page);
+    check("Reduced motion: selecting updates the URL, camera stays put", s.url === labUrl("educational") && s.camera === "none" && s.active === "station-educational-panel-title");
+    await page.eval(`history.back(), true`);
+    await sleep(500);
+    s = await deepState(page);
+    check("Reduced motion: Back returns to the lab, focus to the station", s.url === "/" && !s.selected && !s.returning && s.active === "station-educational-trigger", `${s.url} ${s.returning} ${s.active}`);
+    noErrors("Reduced motion deep links", errors);
+  } finally {
+    await page.close();
+  }
+}
+{
+  const page = await launch({ width: 390, height: 844, touch: true });
+  const errors = watchErrors(page);
+  try {
+    await go(page, labUrl("educational", "arimap"));
+    let s = await deepState(page);
+    check("Touch, deep link: Educational + AriMap shown", s.selected === "educational" && s.project === "arimap" && s.info === "visible/1");
+    const b = await page.center(`${panel("educational")} [aria-keyshortcuts="Escape"]`);
+    await page.tap(b.x, b.y);
+    await sleep(900);
+    s = await deepState(page);
+    check("Touch, deep link: tapping Back to Lab restores /", s.url === "/" && !s.selected && !s.hover, `${s.url} ${s.selected}`);
+    noErrors("Touch deep links", errors);
+  } finally {
+    await page.close();
+  }
+}
+
+// 13. Pixel comparisons --------------------------------------------------------
 {
   const page = await launch({ width: W, height: H });
   try {
@@ -518,6 +793,20 @@ for (const [vw, vh, strict] of [[1366, 768, true], [1920, 1080, true], [1280, 10
       check(`Return from ${id} matches idle (max <= ${TOL})`, r.max <= TOL, fmt(r));
       const sel = await cmp(`${id} selected vs idle (must differ)`, out(`${id}-selected.png`), out("idle.png"));
       check(`Select ${id} visibly changes the scene`, sel.over12 > 10000, fmt(sel));
+    }
+    // Deep links render exactly what the same selection made by hand renders.
+    const chips = deepChips ? { exclude: [deepChips] } : {};
+    const dEng = await cmp("deep link engineering vs click (excl. chips)", aux("deeplink-engineering.png"), out("engineering-selected.png"), chips);
+    check(`Deep link ?station=engineering matches selecting it, outside the in-scene chips (max <= ${TOL})`, dEng.max <= TOL, fmt(dEng));
+    const dSql = await cmp("deep link sqlorbit vs click (excl. chips)", aux("deeplink-sqlorbit.png"), out("project-selected.png"), chips);
+    check(`Deep link &project=sqlorbit matches selecting it, outside the in-scene chips (max <= ${TOL})`, dSql.max <= TOL, fmt(dSql));
+    const all = await cmp("deep link engineering vs click (whole frame)", aux("deeplink-engineering.png"), out("engineering-selected.png"), { heatmapPath: aux("diff-deeplink-vs-click.png") });
+    console.log(`INFO  Engineering chips, deep link vs after the camera move (raster only): ${fmt(all)}`);
+    const dBad = await cmp("invalid deep link vs baseline", aux("deeplink-invalid.png"), BASELINE);
+    check(`Invalid deep link shows the default lab (max <= ${TOL})`, dBad.max <= TOL, fmt(dBad));
+    for (const f of ["deeplink-history-return.png", "deeplink-return.png"]) {
+      const r = await cmp(`${f.replace(".png", "")} vs idle`, aux(f), out("idle.png"));
+      check(`${f.replace(".png", "")}: returning to / matches idle (max <= ${TOL})`, r.max <= TOL, fmt(r));
     }
     const session = await cmp("after long session vs idle", aux("after-session.png"), out("idle.png"));
     check(`No persistent artifacts after a long session (max <= ${TOL})`, session.max <= TOL, fmt(session));

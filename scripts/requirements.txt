@@ -1,0 +1,4 @@
+# Python for the dev-only asset generators and evidence sheets (scripts/*.py). The site itself needs no Python.
+# Versions as used to build the committed /lab-v2 assets (Python 3.11.9). See docs/python-setup.md.
+numpy==2.4.6
+Pillow==13.0.0

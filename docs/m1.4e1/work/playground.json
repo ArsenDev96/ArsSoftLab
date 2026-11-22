@@ -1,0 +1,32 @@
+{
+ "footprint_ellipse": {
+  "cx": 1217.5,
+  "cy": 522.8,
+  "rx": 157.0,
+  "ry": 23.7,
+  "fit_mean_err_px": 0.32
+ },
+ "contact_point": [
+  1088.96,
+  537.81
+ ],
+ "route_points": 26,
+ "route_start": [
+  897.5,
+  563.37
+ ],
+ "route_on_stone_px": 0,
+ "mask_px": {
+  "core": 638,
+  "glow": 2470,
+  "wide": 5302
+ },
+ "strip_core_px_asset": 3836,
+ "strip_off_alpha_px_asset": 12036,
+ "strip_core_bbox_scene": [
+  1081.4,
+  1371.6,
+  505.0,
+  534.6
+ ]
+}

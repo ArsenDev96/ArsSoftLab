@@ -1,0 +1,181 @@
+{
+ "open floor tone": {
+  "approved": {
+   "mean_rgb": [
+    76.3,
+    64.0,
+    60.8
+   ],
+   "luminance": 67.3,
+   "median": 55.0,
+   "warmth_r_minus_b": 15.6
+  },
+  "before (M1.4F.1)": {
+   "mean_rgb": [
+    80.0,
+    76.6,
+    79.9
+   ],
+   "luminance": 78.0,
+   "median": 67.1,
+   "warmth_r_minus_b": 0.1
+  },
+  "after (default)": {
+   "mean_rgb": [
+    82.6,
+    78.7,
+    81.6
+   ],
+   "luminance": 80.2,
+   "median": 69.4,
+   "warmth_r_minus_b": 1.0
+  },
+  "after with tone": {
+   "mean_rgb": [
+    77.2,
+    69.5,
+    68.8
+   ],
+   "luminance": 71.7,
+   "median": 61.6,
+   "warmth_r_minus_b": 8.4
+  }
+ },
+ "recovered stations' own pixels: after vs M1.4G layers hidden": {
+  "px": 210521,
+  "mean": 0.003,
+  "px_over_16": 1,
+  "max": 18
+ },
+ "floor light under the connections (within 2.5 px of each route)": {
+  "educational": {
+   "route_px": 365,
+   "floor_light_over_8": 0,
+   "max": 2.0
+  },
+  "engineering": {
+   "route_px": 867,
+   "floor_light_over_8": 0,
+   "max": 7.0
+  },
+  "creative": {
+   "route_px": 994,
+   "floor_light_over_8": 0,
+   "max": 0.0
+  },
+  "experience": {
+   "route_px": 1112,
+   "floor_light_over_8": 0,
+   "max": 0.0
+  },
+  "playground": {
+   "route_px": 864,
+   "floor_light_over_8": 18,
+   "max": 19.0
+  }
+ },
+ "homepage: now vs M1.4F.1's captures (first, second)": [
+  {
+   "px": 1529344,
+   "mean": 0.004,
+   "px_over_16": 38,
+   "max": 23
+  },
+  {
+   "px": 1529344,
+   "mean": 0.72,
+   "px_over_16": 362,
+   "max": 60
+  }
+ ],
+ "homepage: run-to-run noise (two captures now)": {
+  "px": 1529344,
+  "mean": 0.718,
+  "px_over_16": 288,
+  "max": 43
+ },
+ "files (bytes)": {
+  "contact.png": 10462,
+  "floor-light.png": 144142,
+  "floor-mask.png": 9105,
+  "playground-reflection-lit.png": 13354,
+  "playground-reflection.png": 30299
+ },
+ "playground lift": {
+  "rest": {
+   "lift_px": 0,
+   "reflection_drop_px": 0,
+   "reflection_opacity": 1,
+   "lp": 0,
+   "lit": 0
+  },
+  "t650": {
+   "lift_px": 0,
+   "reflection_drop_px": 0,
+   "reflection_opacity": 1,
+   "lp": 0,
+   "lit": 0
+  },
+  "t760": {
+   "lift_px": -3.27,
+   "reflection_drop_px": 3.27,
+   "reflection_opacity": 0.945,
+   "lp": 0.182,
+   "lit": 0.742
+  },
+  "t875": {
+   "lift_px": -11.45,
+   "reflection_drop_px": 11.45,
+   "reflection_opacity": 0.809,
+   "lp": 0.636,
+   "lit": 0.991
+  },
+  "t990": {
+   "lift_px": -17.2,
+   "reflection_drop_px": 17.2,
+   "reflection_opacity": 0.713,
+   "lp": 0.956,
+   "lit": 1
+  },
+  "t1100": {
+   "lift_px": -18,
+   "reflection_drop_px": 18,
+   "reflection_opacity": 0.7,
+   "lp": 1,
+   "lit": 1
+  },
+  "t2400": {
+   "lift_px": -18,
+   "reflection_drop_px": 18,
+   "reflection_opacity": 0.7,
+   "lp": 1,
+   "lit": 1
+  }
+ },
+ "frame time during Playground's lift": {
+  "with_floor": {
+   "frames": 90,
+   "median_ms": 16.7,
+   "p95_ms": 17,
+   "max_ms": 200
+  },
+  "without_floor": {
+   "frames": 97,
+   "median_ms": 16.7,
+   "p95_ms": 17,
+   "max_ms": 200.1
+  },
+  "with_floor_2": {
+   "frames": 95,
+   "median_ms": 16.7,
+   "p95_ms": 17,
+   "max_ms": 216.6
+  },
+  "without_floor_2": {
+   "frames": 98,
+   "median_ms": 16.7,
+   "p95_ms": 16.9,
+   "max_ms": 183.4
+  }
+ }
+}

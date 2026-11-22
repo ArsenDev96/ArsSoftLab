@@ -1,0 +1,170 @@
+{
+ "timing (ms after the energy's arrival; arrival = 620 ms after hover)": {
+  "strip: plinth wrap / front strip (existing PLATFORM_POWER fronts)": "6-77 / 159-340",
+  "strip pulse": "rides each front (visible while it moves)",
+  "floor (ring, spill, reflections)": "0-110 right, 107-475 left (under the strip's front)",
+  "screen scan": "90-470 (380 ms)",
+  "chart bars 1-11": "180 + 24 k, 150 ms each: 180-570",
+  "chart glass": "180-480 (outside the bars)",
+  "stable": "570",
+  "shimmer": "from 900, every 5.2 s"
+ },
+ "phases": {
+  "rest": "strips [0, 0], scan 0, bars 0..0, glass 0, display standby 0.68, drawn as layers",
+  "spark-approaching": "strips [0, 0], scan 0, bars 0..0, glass 0, display standby 0.68, drawn as layers",
+  "energy-arrival": "strips [0.549, 0], scan 0, bars 0..0, glass 0, display standby 0.68, drawn as layers",
+  "laptop-scan": "strips [1, 0.558], scan 0.405, bars 0.903..0, glass 0.481, display standby 0, drawn as layers",
+  "chart-activation": "strips [1, 1], scan 0.893, bars 1..0, glass 0.933, display standby 0, drawn as layers",
+  "stable": "strips [1, 1], scan 1, bars 1..1, glass 1, display standby 0, drawn as station image",
+  "stable_finished": "strips [1, 1], scan 1, bars 1..1, glass 1, display standby 0, drawn as station image",
+  "returning-120ms": "strips [1, 0.227], scan 1, bars 1..1, glass 1, display standby 0, drawn as layers",
+  "returning-220ms": "strips [1, 0], scan 1, bars 0.685..0.685, glass 0.557, display standby 0.301, drawn as layers",
+  "returning-320ms": "strips [0, 0], scan 1, bars 0..0, glass 0.067, display standby 0.635, drawn as layers",
+  "returned": "strips [0, 0], scan 0, bars 0..0, glass 0, display standby 0.68, drawn as layers"
+ },
+ "stable (forced powered, pointer away) vs M1.4G.1 scene (max-channel)": {
+  "mean": 0.001,
+  "px_over_8": 0,
+  "px_over_16": 0,
+  "max": 2
+ },
+ "rest vs M1.4G.1 scene: px over 8 inside / outside Engineering's box": [
+  23324,
+  0
+ ],
+ "rest vs M1.4G.1: changed bbox (viewport px)": [
+  237,
+  385,
+  609,
+  650
+ ],
+ "forced powered vs rest: px over 8 inside / outside Engineering's box": [
+  23321,
+  0
+ ],
+ "scan line: pixels it changes, and how many lie outside the display mask (2x)": {
+  "+200 ms": {
+   "changed_px": 5630,
+   "outside_display": 4,
+   "max_gain": 237
+  },
+  "+320 ms": {
+   "changed_px": 5910,
+   "outside_display": 5,
+   "max_gain": 235
+  },
+  "+440 ms": {
+   "changed_px": 1282,
+   "outside_display": 0,
+   "max_gain": 17
+  }
+ },
+ "visibility at 1x (mean luminance)": {
+  "display": {
+   "rest": 17.7,
+   "powered": 40.0,
+   "ratio": 2.26
+  },
+  "chart panel": {
+   "rest": 62.9,
+   "powered": 89.3,
+   "ratio": 1.42
+  },
+  "front strip": {
+   "rest": 65.7,
+   "powered": 160.2,
+   "ratio": 2.44
+  },
+  "floor under the strip": {
+   "rest": 52.6,
+   "powered": 73.5,
+   "ratio": 1.4
+  },
+  "scan line at 1x (row mean luminance: line, 3 rows below)": [
+   216.3,
+   11.1
+  ]
+ },
+ "Playground vs M1.4G.1 (same crops)": {
+  "pg-rest.png": {
+   "mean": 0.0,
+   "px_over_16": 0,
+   "max": 0
+  },
+  "pg-rest-3x.png": {
+   "mean": 0.0,
+   "px_over_16": 0,
+   "max": 0
+  },
+  "pg-lifted.png": {
+   "mean": 0.0,
+   "px_over_16": 0,
+   "max": 0
+  },
+  "pg-lifted-3x.png": {
+   "mean": 0.0,
+   "px_over_16": 0,
+   "max": 1
+  }
+ },
+ "Playground states": {
+  "rest": {
+   "lift_px": 0,
+   "strip_off": 1,
+   "ring_lit": 0,
+   "engineering": "0"
+  },
+  "lifted": {
+   "lift_px": -18,
+   "strip_off": 0,
+   "ring_lit": 1,
+   "engineering": "0"
+  },
+  "returned": {
+   "lift_px": 0,
+   "strip_off": 1,
+   "ring_lit": 0,
+   "engineering": "0"
+  }
+ },
+ "checks": {
+  "switching": {
+   "left_before_arrival": "strips [0, 0], scan 0, bars 0..0, glass 0, display standby 0.68, drawn as layers",
+   "left_before_arrival_settled": "strips [0, 0], scan 0, bars 0..0, glass 0, display standby 0.68, drawn as layers",
+   "mid_sequence": "strips [1, 0.485], scan 0.345, bars 0.844..0, glass 0.378, display standby 0, drawn as layers",
+   "after_mid_sequence_switch": "strips [0, 0], scan 0, bars 0..0, glass 0, display standby 0.68, drawn as layers",
+   "after_sweep_ending_on_engineering_mid": "strips [1, 1], scan 0.791, bars 1..0, glass 0.869, display standby 0, drawn as layers",
+   "after_sweep_away_settled": "strips [0, 0], scan 0, bars 0..0, glass 0, display standby 0.68, drawn as layers",
+   "quick_return_powered": "strips [1, 1], scan 1, bars 1..1, glass 1, display standby 0, drawn as station image",
+   "quick_return_away_settled": "strips [0, 0], scan 0, bars 0..0, glass 0, display standby 0.68, drawn as layers"
+  },
+  "keyboard": {
+   "tab": 12,
+   "focused": "strips [1, 1], scan 1, bars 1..1, glass 1, display standby 0, drawn as station image",
+   "selected": "strips [1, 1], scan 1, bars 1..1, glass 1, display standby 0, drawn as station image, url /lab-v2?station=engineering",
+   "escaped": "strips [1, 1], scan 1, bars 1..1, glass 1, display standby 0, drawn as station image, url /lab-v2",
+   "blurred": "strips [0, 0], scan 0, bars 0..0, glass 0, display standby 0.68, drawn as layers",
+   "clicked_while_charging": "strips [1, 1], scan 1, bars 1..1, glass 1, display standby 0, drawn as station image, url /lab-v2?station=engineering"
+  },
+  "deep_link": "strips [1, 1], scan 1, bars 1..1, glass 1, display standby 0, drawn as station image, url /lab-v2?station=engineering",
+  "reduced_motion": {
+   "at_70ms": "strips [1, 1], scan 1, bars 1..1, glass 0.58, display standby 0.286, drawn as layers",
+   "powered": "strips [1, 1], scan 1, bars 1..1, glass 1, display standby 0, drawn as station image",
+   "left": "strips [0, 0], scan 0, bars 0..0, glass 0, display standby 0.68, drawn as layers"
+  },
+  "homepage": {
+   "v2_requests": 0,
+   "m14h1_requests": 0,
+   "eng_v2": false
+  },
+  "errors": [
+   [],
+   [],
+   [],
+   [],
+   [],
+   [],
+   []
+  ]
+ }
+}

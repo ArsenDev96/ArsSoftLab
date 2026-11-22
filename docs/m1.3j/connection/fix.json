@@ -1,0 +1,15 @@
+{
+ "removed_px": 360,
+ "bbox": [
+  1061,
+  521,
+  1098,
+  539
+ ],
+ "on_opaque_station_px": 263,
+ "on_soft_edge_px": 97,
+ "line_px_kept_trace": 3413,
+ "line_px_kept_lit": 3528,
+ "line_pixels_changed_off_station": 0,
+ "env_px_changed": 360
+}

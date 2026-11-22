@@ -1,0 +1,6 @@
+{
+ "background_px": 44274,
+ "floor_px": 6698,
+ "object": "delivered",
+ "contact": "regenerate after applying: scripts/playground-contact-unlit.py"
+}

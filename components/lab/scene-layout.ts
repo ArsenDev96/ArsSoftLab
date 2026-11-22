@@ -1,6 +1,7 @@
 import type { ZoneId } from "@/data/zones";
 import { frameTarget, type CameraShot } from "@/lib/camera";
 import type { ScenePoint, SceneRect } from "@/lib/scene";
+import { PLAYGROUND_25D } from "./scene-25d-data";
 
 /**
  * Measured scene geometry, in reference pixels (1672 x 941), taken from
@@ -115,6 +116,14 @@ export const CENTRAL_PLATFORM = {
 
 export const STATION_LAYERS_ENABLED = process.env.NEXT_PUBLIC_STATION_LAYERS !== "off";
 
+/**
+ * M1.3H / M1.3I (experimental, off by default): Playground as a layered 2.5D
+ * composition (scripts/make-playground-layered.mjs, make-scene-layers.mjs).
+ * Build with NEXT_PUBLIC_LAB_LAYERED=on (or M1.3H's NEXT_PUBLIC_PLAYGROUND_LAYERED)
+ * to review it; anything else keeps the approved M1.3E layers.
+ */
+export const PLAYGROUND_LAYERED = process.env.NEXT_PUBLIC_PLAYGROUND_LAYERED === "on" || process.env.NEXT_PUBLIC_LAB_LAYERED === "on";
+
 export interface StationLayerSpec {
   /** Shared clip box of the four images, in scene px (printed by the script). */
   box: SceneRect;
@@ -128,6 +137,18 @@ export interface StationLayerSpec {
   light: string;
   /** Transform origin: centre of the platform's base, where it meets the floor. */
   origin: ScenePoint;
+  /**
+   * M1.3E.3: static floor layers along the base's contact line, shown while
+   * lifted: a soft penumbra (alpha only) and a warm light pooled under the
+   * base's edge, so the gap reads against the dark stone.
+   */
+  under?: { soft: string; gap: string };
+  /**
+   * M1.3H: a layered composition. The background under the station is the
+   * whole room re-synthesised with the station removed (not a strip rebuilt
+   * for the lift), and the contact shadow is graded by depth in its image.
+   */
+  layered?: boolean;
 }
 
 export const STATION_LAYERS: Partial<Record<ZoneId, StationLayerSpec>> = STATION_LAYERS_ENABLED
@@ -137,9 +158,37 @@ export const STATION_LAYERS: Partial<Record<ZoneId, StationLayerSpec>> = STATION
         station: "/scene/layers/engineering.webp",
         backdrop: "/scene/layers/engineering-backdrop.webp",
         shadow: "/scene/layers/engineering-shadow.webp",
-        light: "/scene/layers/engineering-light.webp",
+        // M1.3F.1: the sharp strip light (core + restrained halo) on the silhouette.
+        light: "/scene/power/light-lift.png",
         origin: { x: 430, y: 548 },
       },
+      // M1.3E.1-M1.3E.3: platform, cabinet, controller and details
+      // (scripts/make-playground-layer.mjs); lifts 18 px, 1% scale.
+      // M1.3H (flag): the layered version (scripts/make-playground-layered.mjs).
+      playground: PLAYGROUND_LAYERED
+        ? {
+            box: { x: 1055, y: 334, w: 327, h: 222 },
+            // M1.3J.2: M1.3H's cut-out with the far-right base corner's matte
+            // rebuilt and the base's soft-edge colour solved for the switch at
+            // arrival (scripts/playground-edge.py; playground-v2.png unchanged).
+            station: "/scene/layers25d/playground/object.png",
+            // M1.3I: M1.3H's clean background with the strip reflection's light
+            // taken out of its edge pixels (the reflection is its own layer).
+            backdrop: PLAYGROUND_25D.background,
+            shadow: "/scene/layers/playground-v2-shadow.png",
+            light: "/scene/power/light-lift.png",
+            origin: { x: 1218, y: 546 },
+            layered: true,
+          }
+        : {
+            box: { x: 1055, y: 334, w: 327, h: 222 },
+            station: "/scene/layers/playground.png",
+            backdrop: "/scene/layers/playground-backdrop.png",
+            shadow: "/scene/layers/playground-shadow.png",
+            light: "/scene/power/light-lift.png",
+            origin: { x: 1218, y: 546 },
+            under: { soft: "/scene/layers/playground-shadow-soft.png", gap: "/scene/layers/playground-gap.png" },
+          },
     }
   : {};
 
@@ -192,8 +241,8 @@ const SHOT_SPECS: Record<ZoneId, ShotSpec> = {
   experience: { target: { x: 1420, y: 660 }, spotlight: { x: 1420, y: 670 }, zoom: 1.03, bounds: { y: [0, 42] } },
 };
 
-function shotFor({ target, zoom = CAMERA_ZOOM, bounds }: ShotSpec): CameraShot {
-  const shot = frameTarget(target, zoom);
+function shotFor({ target, zoom = CAMERA_ZOOM, bounds, anchor }: ShotSpec & { anchor?: ScenePoint }): CameraShot {
+  const shot = frameTarget(target, zoom, anchor);
   const clamp = (v: number, r?: [number, number]) => (r ? Math.max(r[0], Math.min(r[1], v)) : v);
   // Bounds only ever reduce the lean, so the plate still covers the frame.
   return { x: clamp(shot.x, bounds?.x), y: clamp(shot.y, bounds?.y), scale: zoom };

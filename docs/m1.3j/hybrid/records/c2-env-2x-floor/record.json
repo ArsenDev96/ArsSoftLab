@@ -1,0 +1,22 @@
+{
+ "name": "c2-env-2x-floor",
+ "candidate": "docs/m1.3j/lama/candidates/c2-env-2x-floor.png",
+ "size": "1024x384",
+ "compositedPx": 6698,
+ "maskPxLeftUntouchedBecauseVisibleAtRest": 3978,
+ "identityOutsideMask": "exact (0 px changed)",
+ "restEdgePx": 1022,
+ "restEdgeMaxDiff": 222.2,
+ "restEdgeNote": "File model (cut-out over the plate). Since M1.3J.2 the cut-out's edge colour is solved against real browser frames (scripts/playground-edge.py), which this model cannot reproduce; the switch is measured in docs/m1.3j/hybrid/edge/.",
+ "contactLineSeamMeanLumStep": 12.48,
+ "band": {
+  "px": 6028,
+  "lum": 41,
+  "detail": 0.69
+ },
+ "floorInFront": {
+  "px": 11960,
+  "lum": 40.1,
+  "detail": 0.78
+ }
+}

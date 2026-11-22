@@ -1,0 +1,42 @@
+[
+ {
+  "test": "round trip: current synthesised environment -> staged layers",
+  "background_identical": true,
+  "object_max_change": 0.0,
+  "floor_px_match": true,
+  "checks": {
+   "size": "OK",
+   "alignment": "OK",
+   "outside-mask": "OK",
+   "margin": "INFO",
+   "station-removed": "OK",
+   "station-light": "OK",
+   "sharpness": "INFO",
+   "tone": "INFO",
+   "seam": "OK",
+   "repetition": "WARN",
+   "at-rest": "OK"
+  },
+  "repetition": "9 of 97 floor windows (20 x 8 px) have a near-copy or mirror elsewhere (NCC > 0.85; worst 0.98).",
+  "sharpness": "Fine detail in the uncovered floor 3.37 vs real floor 2.42 (ratio 1.40): within the range of the real floor; blur is judged visually.",
+  "passed": true
+ },
+ {
+  "test": "the plate (station still present) must fail",
+  "station_removed": "FAIL",
+  "message": "100% of the station's interior is still the plate's pixels: the station was not removed.",
+  "passed": true
+ },
+ {
+  "test": "1 px shift must be detected",
+  "alignment": "FAIL",
+  "message": "Misaligned: matches the plate best shifted by dx 1, dy 0 px.",
+  "passed": true
+ },
+ {
+  "test": "2x delivery downsamples onto the scene exactly",
+  "exact": true,
+  "alignment": "OK",
+  "passed": true
+ }
+]

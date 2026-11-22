@@ -1,0 +1,344 @@
+[
+ {
+  "t": 0,
+  "file": "0000.png",
+  "layers": "hidden",
+  "animations": 55
+ },
+ {
+  "t": 25,
+  "file": "0025.png",
+  "layers": "hidden",
+  "animations": 55
+ },
+ {
+  "t": 50,
+  "file": "0050.png",
+  "layers": "hidden",
+  "animations": 55
+ },
+ {
+  "t": 75,
+  "file": "0075.png",
+  "layers": "hidden",
+  "animations": 55
+ },
+ {
+  "t": 100,
+  "file": "0100.png",
+  "layers": "hidden",
+  "animations": 55
+ },
+ {
+  "t": 125,
+  "file": "0125.png",
+  "layers": "hidden",
+  "animations": 55
+ },
+ {
+  "t": 150,
+  "file": "0150.png",
+  "layers": "hidden",
+  "animations": 55
+ },
+ {
+  "t": 175,
+  "file": "0175.png",
+  "layers": "hidden",
+  "animations": 55
+ },
+ {
+  "t": 200,
+  "file": "0200.png",
+  "layers": "hidden",
+  "animations": 55
+ },
+ {
+  "t": 225,
+  "file": "0225.png",
+  "layers": "hidden",
+  "animations": 55
+ },
+ {
+  "t": 250,
+  "file": "0250.png",
+  "layers": "hidden",
+  "animations": 55
+ },
+ {
+  "t": 275,
+  "file": "0275.png",
+  "layers": "hidden",
+  "animations": 55
+ },
+ {
+  "t": 300,
+  "file": "0300.png",
+  "layers": "hidden",
+  "animations": 53
+ },
+ {
+  "t": 325,
+  "file": "0325.png",
+  "layers": "hidden",
+  "animations": 53
+ },
+ {
+  "t": 350,
+  "file": "0350.png",
+  "layers": "hidden",
+  "animations": 53
+ },
+ {
+  "t": 375,
+  "file": "0375.png",
+  "layers": "hidden",
+  "animations": 53
+ },
+ {
+  "t": 400,
+  "file": "0400.png",
+  "layers": "hidden",
+  "animations": 53
+ },
+ {
+  "t": 425,
+  "file": "0425.png",
+  "layers": "hidden",
+  "animations": 53
+ },
+ {
+  "t": 450,
+  "file": "0450.png",
+  "layers": "hidden",
+  "animations": 53
+ },
+ {
+  "t": 475,
+  "file": "0475.png",
+  "layers": "hidden",
+  "animations": 53
+ },
+ {
+  "t": 500,
+  "file": "0500.png",
+  "layers": "hidden",
+  "animations": 53
+ },
+ {
+  "t": 525,
+  "file": "0525.png",
+  "layers": "hidden",
+  "animations": 52
+ },
+ {
+  "t": 550,
+  "file": "0550.png",
+  "layers": "hidden",
+  "animations": 52
+ },
+ {
+  "t": 575,
+  "file": "0575.png",
+  "layers": "hidden",
+  "animations": 52
+ },
+ {
+  "t": 600,
+  "file": "0600.png",
+  "layers": "hidden",
+  "animations": 52
+ },
+ {
+  "t": 625,
+  "file": "0625.png",
+  "layers": "hidden",
+  "animations": 52
+ },
+ {
+  "t": 650,
+  "file": "0650.png",
+  "layers": "visible",
+  "animations": 52
+ },
+ {
+  "t": 675,
+  "file": "0675.png",
+  "layers": "visible",
+  "animations": 51
+ },
+ {
+  "t": 700,
+  "file": "0700.png",
+  "layers": "visible",
+  "animations": 51
+ },
+ {
+  "t": 725,
+  "file": "0725.png",
+  "layers": "visible",
+  "animations": 51
+ },
+ {
+  "t": 750,
+  "file": "0750.png",
+  "layers": "visible",
+  "animations": 51
+ },
+ {
+  "t": 775,
+  "file": "0775.png",
+  "layers": "visible",
+  "animations": 51
+ },
+ {
+  "t": 800,
+  "file": "0800.png",
+  "layers": "visible",
+  "animations": 51
+ },
+ {
+  "t": 825,
+  "file": "0825.png",
+  "layers": "visible",
+  "animations": 50
+ },
+ {
+  "t": 850,
+  "file": "0850.png",
+  "layers": "visible",
+  "animations": 50
+ },
+ {
+  "t": 875,
+  "file": "0875.png",
+  "layers": "visible",
+  "animations": 48
+ },
+ {
+  "t": 900,
+  "file": "0900.png",
+  "layers": "visible",
+  "animations": 44
+ },
+ {
+  "t": 925,
+  "file": "0925.png",
+  "layers": "visible",
+  "animations": 41
+ },
+ {
+  "t": 950,
+  "file": "0950.png",
+  "layers": "visible",
+  "animations": 39
+ },
+ {
+  "t": 975,
+  "file": "0975.png",
+  "layers": "visible",
+  "animations": 39
+ },
+ {
+  "t": 1000,
+  "file": "1000.png",
+  "layers": "visible",
+  "animations": 39
+ },
+ {
+  "t": 1025,
+  "file": "1025.png",
+  "layers": "visible",
+  "animations": 39
+ },
+ {
+  "t": 1050,
+  "file": "1050.png",
+  "layers": "visible",
+  "animations": 36
+ },
+ {
+  "t": 1075,
+  "file": "1075.png",
+  "layers": "visible",
+  "animations": 36
+ },
+ {
+  "t": 1100,
+  "file": "1100.png",
+  "layers": "visible",
+  "animations": 36
+ },
+ {
+  "t": 1125,
+  "file": "1125.png",
+  "layers": "visible",
+  "animations": 32
+ },
+ {
+  "t": 1150,
+  "file": "1150.png",
+  "layers": "visible",
+  "animations": 32
+ },
+ {
+  "t": 1175,
+  "file": "1175.png",
+  "layers": "visible",
+  "animations": 32
+ },
+ {
+  "t": 1200,
+  "file": "1200.png",
+  "layers": "visible",
+  "animations": 31
+ },
+ {
+  "t": 1225,
+  "file": "1225.png",
+  "layers": "visible",
+  "animations": 31
+ },
+ {
+  "t": 1250,
+  "file": "1250.png",
+  "layers": "visible",
+  "animations": 31
+ },
+ {
+  "t": 1275,
+  "file": "1275.png",
+  "layers": "visible",
+  "animations": 31
+ },
+ {
+  "t": 1300,
+  "file": "1300.png",
+  "layers": "visible",
+  "animations": 31
+ },
+ {
+  "t": 1325,
+  "file": "1325.png",
+  "layers": "visible",
+  "animations": 31
+ },
+ {
+  "t": 1350,
+  "file": "1350.png",
+  "layers": "visible",
+  "animations": 31
+ },
+ {
+  "t": 1375,
+  "file": "1375.png",
+  "layers": "visible",
+  "animations": 31
+ },
+ {
+  "t": 1400,
+  "file": "1400.png",
+  "layers": "visible",
+  "animations": 31
+ }
+]

@@ -1,0 +1,257 @@
+{
+ "playground states": {
+  "rest": {
+   "before": {
+    "hover": null,
+    "lift_px": 0,
+    "strip_off": 1,
+    "strip_reflection_lit": 0,
+    "ring_lit": null,
+    "reflection_drop_px": 0
+   },
+   "after": {
+    "hover": null,
+    "lift_px": 0,
+    "strip_off": 1,
+    "strip_reflection_lit": 0,
+    "ring_lit": 0,
+    "reflection_drop_px": 0
+   }
+  },
+  "charging": {
+   "before": {
+    "hover": "playground",
+    "lift_px": 0,
+    "strip_off": 1,
+    "strip_reflection_lit": 0,
+    "ring_lit": null,
+    "reflection_drop_px": 0
+   },
+   "after": {
+    "hover": "playground",
+    "lift_px": 0,
+    "strip_off": 1,
+    "strip_reflection_lit": 0,
+    "ring_lit": 0,
+    "reflection_drop_px": 0
+   }
+  },
+  "powered": {
+   "before": {
+    "hover": "playground",
+    "lift_px": -0.7,
+    "strip_off": 0.697,
+    "strip_reflection_lit": 0.303,
+    "ring_lit": null,
+    "reflection_drop_px": 0.7
+   },
+   "after": {
+    "hover": "playground",
+    "lift_px": -0.7,
+    "strip_off": 0.697,
+    "strip_reflection_lit": 0.303,
+    "ring_lit": 0.303,
+    "reflection_drop_px": 0.7
+   }
+  },
+  "lifted": {
+   "before": {
+    "hover": "playground",
+    "lift_px": -18,
+    "strip_off": 0,
+    "strip_reflection_lit": 1,
+    "ring_lit": null,
+    "reflection_drop_px": 18
+   },
+   "after": {
+    "hover": "playground",
+    "lift_px": -18,
+    "strip_off": 0,
+    "strip_reflection_lit": 1,
+    "ring_lit": 1,
+    "reflection_drop_px": 18
+   }
+  },
+  "returning-150ms": {
+   "before": {
+    "hover": null,
+    "lift_px": -8.68,
+    "strip_off": 0,
+    "strip_reflection_lit": 1,
+    "ring_lit": null,
+    "reflection_drop_px": 8.68
+   },
+   "after": {
+    "hover": null,
+    "lift_px": -8.68,
+    "strip_off": 0,
+    "strip_reflection_lit": 1,
+    "ring_lit": 1,
+    "reflection_drop_px": 8.68
+   }
+  },
+  "returning-300ms": {
+   "before": {
+    "hover": null,
+    "lift_px": -0.99,
+    "strip_off": 0.888,
+    "strip_reflection_lit": 0.112,
+    "ring_lit": null,
+    "reflection_drop_px": 0.99
+   },
+   "after": {
+    "hover": null,
+    "lift_px": -0.99,
+    "strip_off": 0.888,
+    "strip_reflection_lit": 0.112,
+    "ring_lit": 0.112,
+    "reflection_drop_px": 0.99
+   }
+  },
+  "returned": {
+   "before": {
+    "hover": null,
+    "lift_px": 0,
+    "strip_off": 1,
+    "strip_reflection_lit": 0,
+    "ring_lit": null,
+    "reflection_drop_px": 0
+   },
+   "after": {
+    "hover": null,
+    "lift_px": 0,
+    "strip_off": 1,
+    "strip_reflection_lit": 0,
+    "ring_lit": 0,
+    "reflection_drop_px": 0
+   }
+  }
+ },
+ "power sync (after): max |strip reflection - (1 - strip off)|, max |ring - (1 - strip off)|": [
+  5.551115123125783e-17,
+  5.551115123125783e-17
+ ],
+ "timing unchanged: lift and strip at every state, before vs after": true,
+ "floor under Playground's strip": {
+  "before rest": {
+   "luminance": 113.1,
+   "warmth_r_minus_b": 35.2
+  },
+  "before lifted": {
+   "luminance": 113.1,
+   "warmth_r_minus_b": 35.4
+  },
+  "after rest": {
+   "luminance": 98.2,
+   "warmth_r_minus_b": 31.0
+  },
+  "after lifted": {
+   "luminance": 104.0,
+   "warmth_r_minus_b": 33.0
+  }
+ },
+ "bluish light near Creative's strip end": {
+  "public/scene/v2/m14g/floor-light.png": {
+   "px": 119,
+   "max_blue_minus_red": 60.0
+  },
+  "public/scene/v2/m14g1/floor-light.png": {
+   "px": 0,
+   "max_blue_minus_red": 0.0
+  },
+  "public/scene/v2/m14f/creative-light.png": {
+   "px": 37,
+   "max_blue_minus_red": 62.2
+  },
+  "public/scene/v2/m14g1/creative-light.png": {
+   "px": 0,
+   "max_blue_minus_red": 1.5
+  }
+ },
+ "scene at rest, before vs after, per area (max-channel)": {
+  "engineering": {
+   "mean": 0.175,
+   "px_over_16": 50,
+   "max": 22
+  },
+  "educational": {
+   "mean": 0.131,
+   "px_over_16": 87,
+   "max": 36
+  },
+  "creative": {
+   "mean": 0.142,
+   "px_over_16": 126,
+   "max": 35
+  },
+  "experience": {
+   "mean": 0.3,
+   "px_over_16": 644,
+   "max": 47
+  },
+  "hub": {
+   "mean": 0.004,
+   "px_over_16": 0,
+   "max": 1
+  }
+ },
+ "floor options (open floor incl. stations' floor light)": {
+  "default": {
+   "luminance": 79.5,
+   "warmth_r_minus_b": 21.5
+  },
+  "?floor=approved": {
+   "luminance": 74.1,
+   "warmth_r_minus_b": 26.2
+  }
+ },
+ "checks (after)": {
+  "keyboard": {
+   "tab": 15,
+   "focused": {
+    "hover": "playground",
+    "lift_px": -18,
+    "strip_off": 0,
+    "strip_reflection_lit": 1,
+    "ring_lit": 1,
+    "reflection_drop_px": 18
+   },
+   "selected": {
+    "hover": null,
+    "lift_px": -18,
+    "strip_off": 0,
+    "strip_reflection_lit": 1,
+    "ring_lit": 1,
+    "reflection_drop_px": 18,
+    "url": "/lab-v2?station=playground"
+   },
+   "escaped": {
+    "hover": "playground",
+    "lift_px": -18,
+    "strip_off": 0,
+    "strip_reflection_lit": 1,
+    "ring_lit": 1,
+    "reflection_drop_px": 18,
+    "url": "/lab-v2"
+   },
+   "errors": []
+  },
+  "reduced_motion": {
+   "hover": "playground",
+   "lift_px": 0,
+   "strip_off": 0,
+   "strip_reflection_lit": 1,
+   "ring_lit": 1,
+   "reflection_drop_px": 0,
+   "errors": []
+  },
+  "homepage": {
+   "v2_requests": 0
+  },
+  "errors": [
+   [],
+   [],
+   []
+  ]
+ }
+}

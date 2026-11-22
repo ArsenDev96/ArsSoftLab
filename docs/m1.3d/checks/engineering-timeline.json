@@ -1,0 +1,221 @@
+{
+ "station": "engineering",
+ "arriveMs": 540,
+ "headAtStationMs": 460,
+ "platformStartsMs": 540,
+ "glowStartsMs": 620,
+ "liftStartsMs": 540,
+ "platformFullMs": 640,
+ "rows": [
+  {
+   "t": 0,
+   "hover": "engineering",
+   "glow": 0,
+   "platform": 0,
+   "surge": 1,
+   "lift": "matrix(1, 0, 0, 1, 0, 0)",
+   "running": 0,
+   "head": -0.193
+  },
+  {
+   "t": 100,
+   "hover": "engineering",
+   "glow": 0,
+   "platform": 0,
+   "surge": 1,
+   "lift": "matrix(1, 0, 0, 1, 0, 0)",
+   "running": 0,
+   "head": -0.012
+  },
+  {
+   "t": 200,
+   "hover": "engineering",
+   "glow": 0,
+   "platform": 0,
+   "surge": 1,
+   "lift": "matrix(1, 0, 0, 1, 0, 0)",
+   "running": 0,
+   "head": 0.548
+  },
+  {
+   "t": 300,
+   "hover": "engineering",
+   "glow": 0,
+   "platform": 0,
+   "surge": 1,
+   "lift": "matrix(1, 0, 0, 1, 0, 0)",
+   "running": 0,
+   "head": 0.845
+  },
+  {
+   "t": 400,
+   "hover": "engineering",
+   "glow": 0,
+   "platform": 0,
+   "surge": 1,
+   "lift": "matrix(1, 0, 0, 1, 0, 0)",
+   "running": 0,
+   "head": 0.962
+  },
+  {
+   "t": 500,
+   "hover": "engineering",
+   "glow": 0,
+   "platform": 0,
+   "surge": 1,
+   "lift": "matrix(1, 0, 0, 1, 0, 0)",
+   "running": 0,
+   "head": 0.999
+  },
+  {
+   "t": 600,
+   "hover": "engineering",
+   "glow": 0.014,
+   "platform": 0.542,
+   "surge": 1,
+   "lift": "matrix(1.00577, 0, 0, 1.00577, 0, -2.36902)",
+   "running": 0,
+   "head": 1
+  },
+  {
+   "t": 700,
+   "hover": "engineering",
+   "glow": 0.279,
+   "platform": 0.94,
+   "surge": 1,
+   "lift": "matrix(1.01006, 0, 0, 1.01006, 0, -4.13184)",
+   "running": 0,
+   "head": 1
+  },
+  {
+   "t": 800,
+   "hover": "engineering",
+   "glow": 0.592,
+   "platform": 1,
+   "surge": 1,
+   "lift": "matrix(1.01153, 0, 0, 1.01153, 0, -4.73959)",
+   "running": 0,
+   "head": 1
+  },
+  {
+   "t": 900,
+   "hover": "engineering",
+   "glow": 0.763,
+   "platform": 1,
+   "surge": 1,
+   "lift": "matrix(1.01199, 0, 0, 1.01199, 0, -4.92528)",
+   "running": 0,
+   "head": 1
+  },
+  {
+   "t": 1000,
+   "hover": "engineering",
+   "glow": 0.851,
+   "platform": 1,
+   "surge": 1,
+   "lift": "matrix(1.012, 0, 0, 1.012, 0, -4.93092)",
+   "running": 0,
+   "head": 1
+  },
+  {
+   "t": 1100,
+   "hover": "engineering",
+   "glow": 0.891,
+   "platform": 1,
+   "surge": 1,
+   "lift": "matrix(1.012, 0, 0, 1.012, 0, -4.93092)",
+   "running": 0,
+   "head": 1
+  },
+  {
+   "t": 1200,
+   "hover": "engineering",
+   "glow": 0.9,
+   "platform": 1,
+   "surge": 1,
+   "lift": "matrix(1.012, 0, 0, 1.012, 0, -4.93092)",
+   "running": 0,
+   "head": 1
+  },
+  {
+   "t": 1300,
+   "hover": "engineering",
+   "glow": 0.9,
+   "platform": 1,
+   "surge": 1,
+   "lift": "matrix(1.012, 0, 0, 1.012, 0, -4.93092)",
+   "running": 0,
+   "head": 1
+  },
+  {
+   "t": 1400,
+   "hover": "engineering",
+   "glow": 0.9,
+   "platform": 1,
+   "surge": 1,
+   "lift": "matrix(1.012, 0, 0, 1.012, 0, -4.93092)",
+   "running": 0,
+   "head": 1
+  },
+  {
+   "t": 1500,
+   "hover": "engineering",
+   "glow": 0.9,
+   "platform": 1,
+   "surge": 1,
+   "lift": "matrix(1.012, 0, 0, 1.012, 0, -4.93092)",
+   "running": 0,
+   "head": 1
+  },
+  {
+   "t": 1600,
+   "hover": "engineering",
+   "glow": 0.9,
+   "platform": 1,
+   "surge": 1,
+   "lift": "matrix(1.012, 0, 0, 1.012, 0, -4.93092)",
+   "running": 0,
+   "head": 1
+  },
+  {
+   "t": 1700,
+   "hover": "engineering",
+   "glow": 0.9,
+   "platform": 1,
+   "surge": 1,
+   "lift": "matrix(1.012, 0, 0, 1.012, 0, -4.93092)",
+   "running": 0,
+   "head": 1
+  },
+  {
+   "t": 1800,
+   "hover": "engineering",
+   "glow": 0.9,
+   "platform": 1,
+   "surge": 1,
+   "lift": "matrix(1.012, 0, 0, 1.012, 0, -4.93092)",
+   "running": 0,
+   "head": 1
+  },
+  {
+   "t": 1900,
+   "hover": "engineering",
+   "glow": 0.9,
+   "platform": 1,
+   "surge": 1,
+   "lift": "matrix(1.012, 0, 0, 1.012, 0, -4.93092)",
+   "running": 0,
+   "head": 1
+  },
+  {
+   "t": 2000,
+   "hover": "engineering",
+   "glow": 0.9,
+   "platform": 1,
+   "surge": 1,
+   "lift": "matrix(1.012, 0, 0, 1.012, 0, -4.93092)",
+   "running": 0,
+   "head": 1
+  }
+ ]
+}

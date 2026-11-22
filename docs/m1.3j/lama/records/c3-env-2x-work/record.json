@@ -1,0 +1,21 @@
+{
+ "name": "c3-env-2x-work",
+ "candidate": "docs/m1.3j/lama/candidates/c3-env-2x-work.png",
+ "size": "1024x384",
+ "compositedPx": 6698,
+ "maskPxLeftUntouchedBecauseVisibleAtRest": 3978,
+ "identityOutsideMask": "exact (0 px changed)",
+ "restEdgePx": 1033,
+ "restEdgeMaxDiff": 81.2,
+ "contactLineSeamMeanLumStep": 12.29,
+ "band": {
+  "px": 6028,
+  "lum": 36.4,
+  "detail": 0.83
+ },
+ "floorInFront": {
+  "px": 11960,
+  "lum": 40.1,
+  "detail": 0.78
+ }
+}

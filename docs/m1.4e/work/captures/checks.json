@@ -1,0 +1,77 @@
+{
+ "camera": {
+  "x": -0.4453125,
+  "y": 0,
+  "k": 0.9861786034688995
+ },
+ "camera_same_as_m14d": true,
+ "recovered": [
+  [
+   "hub",
+   1672,
+   941,
+   "normal"
+  ],
+  [
+   "hub-light",
+   1672,
+   941,
+   "plus-lighter"
+  ],
+  [
+   "steam",
+   1672,
+   941,
+   "plus-lighter"
+  ],
+  [
+   "table",
+   1672,
+   941,
+   "normal"
+  ],
+  [
+   "plant",
+   1672,
+   941,
+   "normal"
+  ]
+ ],
+ "generated_hub_drawn": false,
+ "manual_lift_px": -17.7513,
+ "static_errors": [],
+ "hit_test": {
+  "books": "DIV",
+  "mug": "DIV",
+  "steam": "creative",
+  "plant": "DIV",
+  "creative_platform": "creative",
+  "hub": "DIV"
+ },
+ "creative_hover": "creative",
+ "playground_hover": {
+  "hover": "playground",
+  "lift_px": -17.7513,
+  "arcade_opacity": 1,
+  "arcade_state": "running"
+ },
+ "after_leave_lift_px": 0,
+ "keyboard": {
+  "tabs": 15,
+  "selected": "playground",
+  "url": "/lab-v2?station=playground",
+  "after_escape": "/lab-v2"
+ },
+ "behaviour_errors": [],
+ "deep_link": {
+  "selected": "playground",
+  "lift_px": -17.7513
+ },
+ "deep_link_errors": [],
+ "reduced_motion": {
+  "hover": "playground",
+  "lift_px": 0
+ },
+ "reduced_errors": [],
+ "homepage_v2_requests": []
+}

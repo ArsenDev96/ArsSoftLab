@@ -1,0 +1,21 @@
+{
+ "name": "c1-env-1x-floor",
+ "candidate": "docs/m1.3j/lama/candidates/c1-env-1x-floor.png",
+ "size": "512x192",
+ "compositedPx": 6698,
+ "maskPxLeftUntouchedBecauseVisibleAtRest": 3978,
+ "identityOutsideMask": "exact (0 px changed)",
+ "restEdgePx": 1033,
+ "restEdgeMaxDiff": 80.8,
+ "contactLineSeamMeanLumStep": 8.62,
+ "band": {
+  "px": 6028,
+  "lum": 46,
+  "detail": 1.05
+ },
+ "floorInFront": {
+  "px": 11960,
+  "lum": 40.1,
+  "detail": 0.78
+ }
+}

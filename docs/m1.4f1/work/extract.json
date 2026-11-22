@@ -1,0 +1,26 @@
+{
+ "engineering": {
+  "alpha_px": 39125,
+  "opaque_px": 36349,
+  "partial_px": 2776,
+  "hologram_light_px": 3357,
+  "strip_px": 2749,
+  "floor_light_px": 1501,
+  "rebuild_vs_plate_in_station": {
+   "mean": 0.607,
+   "max": 144.6
+  }
+ },
+ "educational": {
+  "alpha_px": 54461,
+  "opaque_px": 47973,
+  "partial_px": 6488,
+  "hologram_light_px": 10646,
+  "strip_px": 3231,
+  "floor_light_px": 817,
+  "rebuild_vs_plate_in_station": {
+   "mean": 0.311,
+   "max": 149.3
+  }
+ }
+}

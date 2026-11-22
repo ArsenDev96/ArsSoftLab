@@ -28,3 +28,34 @@ __pycache__/
 *.py[cod]
 .venv/
 venv/
+
+# Experimental build output (NEXT_DIST_DIR, e.g. M1.3H)
+.next-*/
+
+# docs/: commit the written record (Markdown, text reports, JSON measurements) and the few images
+# that scripts read as inputs or baselines; keep screenshots, recordings and experiments local.
+docs/**/*.png
+docs/**/*.jpg
+docs/**/*.webm
+docs/**/*.webp
+docs/**/*.zip
+docs/**/*.npy
+# Approved sources every M1.4F-M1.4H extractor reads (scripts/m14f-extract.py SRC_DIR)
+!docs/m1.3k/package/01-source/lab-plate.png
+!docs/m1.3k/package/01-source/environment-lines-removed.png
+# Station/line masks read by v2-fit.py, m14a-preview.py, playground-contact-unlit.py, hybrid-floor.py
+!docs/m1.3i/masks/*.png
+docs/m1.3i/masks/preview.png
+# Visual-check baselines (defaults of npm run visual / visual:lift / visual:arcade / visual:playground)
+!docs/m1.1/homepage-1648x928.png
+!docs/m1.2.1/idle.png
+!docs/m1.3d/idle.png
+!docs/m1.3e2/idle.png
+# M1.4H.1: the M1.4G.1 "before" captures scripts/m14h1-sheets.py compares against (not reproducible now)
+!docs/m1.4g1/work/captures/after/scene-default.png
+!docs/m1.4g1/work/captures/after/pg-rest.png
+!docs/m1.4g1/work/captures/after/pg-rest-3x.png
+!docs/m1.4g1/work/captures/after/pg-lifted.png
+!docs/m1.4g1/work/captures/after/pg-lifted-3x.png
+# M1.4H.1 review sheets (awaiting owner review; the .webm stays local)
+!docs/m1.4h1/*.png

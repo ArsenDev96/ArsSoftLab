@@ -1,0 +1,1503 @@
+{
+ "base": "http://localhost:3002",
+ "arrive_ms": 620,
+ "state+0": {
+  "hover": "engineering",
+  "selected": null,
+  "strip_pw": [
+   0,
+   0
+  ],
+  "pulse": [
+   0,
+   0
+  ],
+  "floor_pw": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "screen_standby": 0.68,
+  "scan": 0,
+  "scan_shade": 0,
+  "scan_line": 0,
+  "chart_glass": 0,
+  "bars": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "shimmer": 0,
+  "drawn": "layers"
+ },
+ "state+140": {
+  "hover": "engineering",
+  "selected": null,
+  "strip_pw": [
+   1,
+   0
+  ],
+  "pulse": [
+   0,
+   0
+  ],
+  "floor_pw": [
+   1,
+   0.09,
+   1,
+   0.09
+  ],
+  "screen_standby": 0,
+  "scan": 0.031,
+  "scan_shade": 0.68,
+  "scan_line": 0.435,
+  "chart_glass": 0,
+  "bars": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "shimmer": 0,
+  "drawn": "layers"
+ },
+ "state+200": {
+  "hover": "engineering",
+  "selected": null,
+  "strip_pw": [
+   1,
+   0.227
+  ],
+  "pulse": [
+   0,
+   0.9
+  ],
+  "floor_pw": [
+   1,
+   0.253,
+   1,
+   0.253
+  ],
+  "screen_standby": 0,
+  "scan": 0.164,
+  "scan_shade": 0.68,
+  "scan_line": 1,
+  "chart_glass": 0.052,
+  "bars": [
+   0.336,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "shimmer": 0,
+  "drawn": "layers"
+ },
+ "state+260": {
+  "hover": "engineering",
+  "selected": null,
+  "strip_pw": [
+   1,
+   0.558
+  ],
+  "pulse": [
+   0,
+   0.9
+  ],
+  "floor_pw": [
+   1,
+   0.416,
+   1,
+   0.416
+  ],
+  "screen_standby": 0,
+  "scan": 0.405,
+  "scan_shade": 0.68,
+  "scan_line": 1,
+  "chart_glass": 0.481,
+  "bars": [
+   0.903,
+   0.776,
+   0.523,
+   0.132,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "shimmer": 0,
+  "drawn": "layers"
+ },
+ "state+320": {
+  "hover": "engineering",
+  "selected": null,
+  "strip_pw": [
+   1,
+   0.89
+  ],
+  "pulse": [
+   0,
+   0.9
+  ],
+  "floor_pw": [
+   1,
+   0.579,
+   1,
+   0.579
+  ],
+  "screen_standby": 0,
+  "scan": 0.685,
+  "scan_shade": 0.68,
+  "scan_line": 1,
+  "chart_glass": 0.791,
+  "bars": [
+   0.999,
+   0.983,
+   0.94,
+   0.851,
+   0.67,
+   0.336,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "shimmer": 0,
+  "drawn": "layers"
+ },
+ "state+380": {
+  "hover": "engineering",
+  "selected": null,
+  "strip_pw": [
+   1,
+   1
+  ],
+  "pulse": [
+   0,
+   0
+  ],
+  "floor_pw": [
+   1,
+   0.742,
+   1,
+   0.742
+  ],
+  "screen_standby": 0,
+  "scan": 0.893,
+  "scan_shade": 0.68,
+  "scan_line": 0.75,
+  "chart_glass": 0.933,
+  "bars": [
+   1,
+   1,
+   1,
+   0.993,
+   0.966,
+   0.903,
+   0.776,
+   0.523,
+   0.132,
+   0,
+   0
+  ],
+  "shimmer": 0,
+  "drawn": "layers"
+ },
+ "state+440": {
+  "hover": "engineering",
+  "selected": null,
+  "strip_pw": [
+   1,
+   1
+  ],
+  "pulse": [
+   0,
+   0
+  ],
+  "floor_pw": [
+   1,
+   0.905,
+   1,
+   0.905
+  ],
+  "screen_standby": 0,
+  "scan": 0.989,
+  "scan_shade": 0.68,
+  "scan_line": 0.076,
+  "chart_glass": 0.991,
+  "bars": [
+   1,
+   1,
+   1,
+   1,
+   1,
+   0.999,
+   0.983,
+   0.94,
+   0.851,
+   0.67,
+   0.336
+  ],
+  "shimmer": 0,
+  "drawn": "layers"
+ },
+ "state+520": {
+  "hover": "engineering",
+  "selected": null,
+  "strip_pw": [
+   1,
+   1
+  ],
+  "pulse": [
+   0,
+   0
+  ],
+  "floor_pw": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "screen_standby": 0,
+  "scan": 1,
+  "scan_shade": 0.68,
+  "scan_line": 0,
+  "chart_glass": 1,
+  "bars": [
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   0.99,
+   0.958
+  ],
+  "shimmer": 0,
+  "drawn": "layers"
+ },
+ "state+700": {
+  "hover": "engineering",
+  "selected": null,
+  "strip_pw": [
+   1,
+   1
+  ],
+  "pulse": [
+   0,
+   0
+  ],
+  "floor_pw": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "screen_standby": 0,
+  "scan": 1,
+  "scan_shade": 0.68,
+  "scan_line": 0,
+  "chart_glass": 1,
+  "bars": [
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1
+  ],
+  "shimmer": 0,
+  "drawn": "station image"
+ },
+ "phases": {
+  "rest": {
+   "hover": null,
+   "selected": null,
+   "strip_pw": [
+    0,
+    0
+   ],
+   "pulse": [
+    0,
+    0
+   ],
+   "floor_pw": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "screen_standby": 0.68,
+   "scan": 0,
+   "scan_shade": 0,
+   "scan_line": 0,
+   "chart_glass": 0,
+   "bars": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "shimmer": 0,
+   "drawn": "layers"
+  },
+  "spark-approaching": {
+   "t_after_hover": 400,
+   "t_after_arrival": -220,
+   "hover": "engineering",
+   "selected": null,
+   "strip_pw": [
+    0,
+    0
+   ],
+   "pulse": [
+    0,
+    0
+   ],
+   "floor_pw": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "screen_standby": 0.68,
+   "scan": 0,
+   "scan_shade": 0,
+   "scan_line": 0,
+   "chart_glass": 0,
+   "bars": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "shimmer": 0,
+   "drawn": "layers"
+  },
+  "energy-arrival": {
+   "t_after_hover": 665,
+   "t_after_arrival": 45,
+   "hover": "engineering",
+   "selected": null,
+   "strip_pw": [
+    0.549,
+    0
+   ],
+   "pulse": [
+    0.9,
+    0
+   ],
+   "floor_pw": [
+    0.409,
+    0,
+    0.409,
+    0
+   ],
+   "screen_standby": 0.68,
+   "scan": 0,
+   "scan_shade": 0,
+   "scan_line": 0,
+   "chart_glass": 0,
+   "bars": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "shimmer": 0,
+   "drawn": "layers"
+  },
+  "laptop-scan": {
+   "t_after_hover": 880,
+   "t_after_arrival": 260,
+   "hover": "engineering",
+   "selected": null,
+   "strip_pw": [
+    1,
+    0.558
+   ],
+   "pulse": [
+    0,
+    0.9
+   ],
+   "floor_pw": [
+    1,
+    0.416,
+    1,
+    0.416
+   ],
+   "screen_standby": 0,
+   "scan": 0.405,
+   "scan_shade": 0.68,
+   "scan_line": 1,
+   "chart_glass": 0.481,
+   "bars": [
+    0.903,
+    0.776,
+    0.523,
+    0.132,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "shimmer": 0,
+   "drawn": "layers"
+  },
+  "chart-activation": {
+   "t_after_hover": 1000,
+   "t_after_arrival": 380,
+   "hover": "engineering",
+   "selected": null,
+   "strip_pw": [
+    1,
+    1
+   ],
+   "pulse": [
+    0,
+    0
+   ],
+   "floor_pw": [
+    1,
+    0.742,
+    1,
+    0.742
+   ],
+   "screen_standby": 0,
+   "scan": 0.893,
+   "scan_shade": 0.68,
+   "scan_line": 0.75,
+   "chart_glass": 0.933,
+   "bars": [
+    1,
+    1,
+    1,
+    0.993,
+    0.966,
+    0.903,
+    0.776,
+    0.523,
+    0.132,
+    0,
+    0
+   ],
+   "shimmer": 0,
+   "drawn": "layers"
+  },
+  "stable": {
+   "t_after_hover": 2020,
+   "t_after_arrival": 1400,
+   "hover": "engineering",
+   "selected": null,
+   "strip_pw": [
+    1,
+    1
+   ],
+   "pulse": [
+    0,
+    0
+   ],
+   "floor_pw": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "screen_standby": 0,
+   "scan": 1,
+   "scan_shade": 0.68,
+   "scan_line": 0,
+   "chart_glass": 1,
+   "bars": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "shimmer": 0.5,
+   "drawn": "station image"
+  },
+  "stable_finished": {
+   "hover": "engineering",
+   "selected": null,
+   "strip_pw": [
+    1,
+    1
+   ],
+   "pulse": [
+    0,
+    0
+   ],
+   "floor_pw": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "screen_standby": 0,
+   "scan": 1,
+   "scan_shade": 0.68,
+   "scan_line": 0,
+   "chart_glass": 1,
+   "bars": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "shimmer": 0.5,
+   "drawn": "station image"
+  },
+  "returning-120ms": {
+   "hover": null,
+   "selected": null,
+   "strip_pw": [
+    1,
+    0.227
+   ],
+   "pulse": [
+    0,
+    0
+   ],
+   "floor_pw": [
+    1,
+    0.256,
+    1,
+    0.256
+   ],
+   "screen_standby": 0,
+   "scan": 1,
+   "scan_shade": 0.68,
+   "scan_line": 0,
+   "chart_glass": 1,
+   "bars": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "shimmer": 0.125,
+   "drawn": "layers"
+  },
+  "returning-220ms": {
+   "hover": null,
+   "selected": null,
+   "strip_pw": [
+    1,
+    0
+   ],
+   "pulse": [
+    0,
+    0
+   ],
+   "floor_pw": [
+    0.798,
+    0,
+    0.798,
+    0
+   ],
+   "screen_standby": 0.301,
+   "scan": 1,
+   "scan_shade": 0.379,
+   "scan_line": 0,
+   "chart_glass": 0.557,
+   "bars": [
+    0.685,
+    0.685,
+    0.685,
+    0.685,
+    0.685,
+    0.685,
+    0.685,
+    0.685,
+    0.685,
+    0.685,
+    0.685
+   ],
+   "shimmer": 0,
+   "drawn": "layers"
+  },
+  "returning-320ms": {
+   "hover": null,
+   "selected": null,
+   "strip_pw": [
+    0,
+    0
+   ],
+   "pulse": [
+    0,
+    0
+   ],
+   "floor_pw": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "screen_standby": 0.635,
+   "scan": 1,
+   "scan_shade": 0.045,
+   "scan_line": 0,
+   "chart_glass": 0.067,
+   "bars": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "shimmer": 0,
+   "drawn": "layers"
+  },
+  "returned": {
+   "hover": null,
+   "selected": null,
+   "strip_pw": [
+    0,
+    0
+   ],
+   "pulse": [
+    0,
+    0
+   ],
+   "floor_pw": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "screen_standby": 0.68,
+   "scan": 0,
+   "scan_shade": 0,
+   "scan_line": 0,
+   "chart_glass": 0,
+   "bars": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "shimmer": 0,
+   "drawn": "layers"
+  }
+ },
+ "phase_errors": [],
+ "forced_powered": {
+  "hover": null,
+  "selected": null,
+  "strip_pw": [
+   1,
+   1
+  ],
+  "pulse": [
+   0,
+   0
+  ],
+  "floor_pw": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "screen_standby": 0,
+  "scan": 1,
+  "scan_shade": 0,
+  "scan_line": 0,
+  "chart_glass": 1,
+  "bars": [
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1
+  ],
+  "shimmer": 0,
+  "drawn": "station image",
+  "errors": []
+ },
+ "switching": {
+  "left_before_arrival": {
+   "hover": "playground",
+   "selected": null,
+   "strip_pw": [
+    0,
+    0
+   ],
+   "pulse": [
+    0,
+    0
+   ],
+   "floor_pw": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "screen_standby": 0.68,
+   "scan": 0,
+   "scan_shade": 0,
+   "scan_line": 0,
+   "chart_glass": 0,
+   "bars": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "shimmer": 0,
+   "drawn": "layers"
+  },
+  "left_before_arrival_settled": {
+   "hover": "playground",
+   "selected": null,
+   "strip_pw": [
+    0,
+    0
+   ],
+   "pulse": [
+    0,
+    0
+   ],
+   "floor_pw": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "screen_standby": 0.68,
+   "scan": 0,
+   "scan_shade": 0,
+   "scan_line": 0,
+   "chart_glass": 0,
+   "bars": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "shimmer": 0,
+   "drawn": "layers"
+  },
+  "mid_sequence": {
+   "hover": "engineering",
+   "selected": null,
+   "strip_pw": [
+    1,
+    0.485
+   ],
+   "pulse": [
+    0,
+    0.9
+   ],
+   "floor_pw": [
+    1,
+    0.38,
+    1,
+    0.38
+   ],
+   "screen_standby": 0,
+   "scan": 0.345,
+   "scan_shade": 0.68,
+   "scan_line": 1,
+   "chart_glass": 0.378,
+   "bars": [
+    0.844,
+    0.657,
+    0.315,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "shimmer": 0,
+   "drawn": "layers"
+  },
+  "after_mid_sequence_switch": {
+   "hover": "educational",
+   "selected": null,
+   "strip_pw": [
+    0,
+    0
+   ],
+   "pulse": [
+    0,
+    0
+   ],
+   "floor_pw": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "screen_standby": 0.68,
+   "scan": 0,
+   "scan_shade": 0,
+   "scan_line": 0,
+   "chart_glass": 0,
+   "bars": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "shimmer": 0,
+   "drawn": "layers"
+  },
+  "after_sweep_ending_on_engineering_mid": {
+   "hover": "engineering",
+   "selected": null,
+   "strip_pw": [
+    1,
+    1
+   ],
+   "pulse": [
+    0,
+    0
+   ],
+   "floor_pw": [
+    1,
+    0.652,
+    1,
+    0.652
+   ],
+   "screen_standby": 0,
+   "scan": 0.791,
+   "scan_shade": 0.68,
+   "scan_line": 1,
+   "chart_glass": 0.869,
+   "bars": [
+    1,
+    0.999,
+    0.986,
+    0.947,
+    0.865,
+    0.698,
+    0.382,
+    0,
+    0,
+    0,
+    0
+   ],
+   "shimmer": 0,
+   "drawn": "layers"
+  },
+  "after_sweep_away_settled": {
+   "hover": null,
+   "selected": null,
+   "strip_pw": [
+    0,
+    0
+   ],
+   "pulse": [
+    0,
+    0
+   ],
+   "floor_pw": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "screen_standby": 0.68,
+   "scan": 0,
+   "scan_shade": 0,
+   "scan_line": 0,
+   "chart_glass": 0,
+   "bars": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "shimmer": 0,
+   "drawn": "layers"
+  },
+  "quick_return_powered": {
+   "hover": "engineering",
+   "selected": null,
+   "strip_pw": [
+    1,
+    1
+   ],
+   "pulse": [
+    0,
+    0
+   ],
+   "floor_pw": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "screen_standby": 0,
+   "scan": 1,
+   "scan_shade": 0.68,
+   "scan_line": 0,
+   "chart_glass": 1,
+   "bars": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "shimmer": 0,
+   "drawn": "station image"
+  },
+  "quick_return_away_settled": {
+   "hover": null,
+   "selected": null,
+   "strip_pw": [
+    0,
+    0
+   ],
+   "pulse": [
+    0,
+    0
+   ],
+   "floor_pw": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "screen_standby": 0.68,
+   "scan": 0,
+   "scan_shade": 0,
+   "scan_line": 0,
+   "chart_glass": 0,
+   "bars": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "shimmer": 0,
+   "drawn": "layers"
+  },
+  "errors": []
+ },
+ "keyboard": {
+  "tab": 12,
+  "focused": {
+   "hover": "engineering",
+   "selected": null,
+   "strip_pw": [
+    1,
+    1
+   ],
+   "pulse": [
+    0,
+    0
+   ],
+   "floor_pw": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "screen_standby": 0,
+   "scan": 1,
+   "scan_shade": 0.68,
+   "scan_line": 0,
+   "chart_glass": 1,
+   "bars": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "shimmer": 0.341,
+   "drawn": "station image"
+  },
+  "selected": {
+   "hover": null,
+   "selected": "engineering",
+   "strip_pw": [
+    1,
+    1
+   ],
+   "pulse": [
+    0,
+    0
+   ],
+   "floor_pw": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "screen_standby": 0,
+   "scan": 1,
+   "scan_shade": 0.68,
+   "scan_line": 0,
+   "chart_glass": 1,
+   "bars": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "shimmer": 0.5,
+   "drawn": "station image",
+   "url": "/lab-v2?station=engineering"
+  },
+  "escaped": {
+   "hover": "engineering",
+   "selected": null,
+   "strip_pw": [
+    1,
+    1
+   ],
+   "pulse": [
+    0,
+    0
+   ],
+   "floor_pw": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "screen_standby": 0,
+   "scan": 1,
+   "scan_shade": 0.68,
+   "scan_line": 0,
+   "chart_glass": 1,
+   "bars": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "shimmer": 0.5,
+   "drawn": "station image",
+   "url": "/lab-v2"
+  },
+  "blurred": {
+   "hover": null,
+   "selected": null,
+   "strip_pw": [
+    0,
+    0
+   ],
+   "pulse": [
+    0,
+    0
+   ],
+   "floor_pw": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "screen_standby": 0.68,
+   "scan": 0,
+   "scan_shade": 0,
+   "scan_line": 0,
+   "chart_glass": 0,
+   "bars": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "shimmer": 0,
+   "drawn": "layers"
+  },
+  "clicked_while_charging": {
+   "hover": "engineering",
+   "selected": "engineering",
+   "strip_pw": [
+    1,
+    1
+   ],
+   "pulse": [
+    0,
+    0
+   ],
+   "floor_pw": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "screen_standby": 0,
+   "scan": 1,
+   "scan_shade": 0.68,
+   "scan_line": 0,
+   "chart_glass": 1,
+   "bars": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "shimmer": 0.449,
+   "drawn": "station image",
+   "url": "/lab-v2?station=engineering"
+  },
+  "errors": []
+ },
+ "deep_link": {
+  "hover": null,
+  "selected": "engineering",
+  "strip_pw": [
+   1,
+   1
+  ],
+  "pulse": [
+   0,
+   0
+  ],
+  "floor_pw": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "screen_standby": 0,
+  "scan": 1,
+  "scan_shade": 0.68,
+  "scan_line": 0,
+  "chart_glass": 1,
+  "bars": [
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1
+  ],
+  "shimmer": 0.5,
+  "drawn": "station image",
+  "url": "/lab-v2?station=engineering",
+  "errors": []
+ },
+ "reduced_motion": {
+  "at_70ms": {
+   "hover": "engineering",
+   "selected": null,
+   "strip_pw": [
+    1,
+    1
+   ],
+   "pulse": [
+    0,
+    0
+   ],
+   "floor_pw": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "screen_standby": 0.286,
+   "scan": 1,
+   "scan_shade": 0.68,
+   "scan_line": 0,
+   "chart_glass": 0.58,
+   "bars": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "shimmer": 0.5,
+   "drawn": "layers"
+  },
+  "powered": {
+   "hover": "engineering",
+   "selected": null,
+   "strip_pw": [
+    1,
+    1
+   ],
+   "pulse": [
+    0,
+    0
+   ],
+   "floor_pw": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "screen_standby": 0,
+   "scan": 1,
+   "scan_shade": 0.68,
+   "scan_line": 0,
+   "chart_glass": 1,
+   "bars": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "shimmer": 0.5,
+   "drawn": "station image"
+  },
+  "left": {
+   "hover": null,
+   "selected": null,
+   "strip_pw": [
+    0,
+    0
+   ],
+   "pulse": [
+    0,
+    0
+   ],
+   "floor_pw": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "screen_standby": 0.68,
+   "scan": 0,
+   "scan_shade": 0,
+   "scan_line": 0,
+   "chart_glass": 0,
+   "bars": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "shimmer": 0,
+   "drawn": "layers"
+  },
+  "errors": []
+ },
+ "playground": {
+  "rest": {
+   "lift_px": 0,
+   "strip_off": 1,
+   "ring_lit": 0,
+   "engineering": "0"
+  },
+  "lifted": {
+   "lift_px": -18,
+   "strip_off": 0,
+   "ring_lit": 1,
+   "engineering": "0"
+  },
+  "returned": {
+   "lift_px": 0,
+   "strip_off": 1,
+   "ring_lit": 0,
+   "engineering": "0"
+  },
+  "errors": []
+ },
+ "homepage": {
+  "v2_requests": 0,
+  "m14h1_requests": 0,
+  "eng_v2": false
+ }
+}

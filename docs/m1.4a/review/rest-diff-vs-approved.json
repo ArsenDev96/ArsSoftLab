@@ -1,0 +1,34 @@
+{
+ "approved": {
+  "engineering": 0.0,
+  "educational": 0.0,
+  "creative": 0.0,
+  "experience": 0.0,
+  "hub": 0.0,
+  "playground": 0.0
+ },
+ "m13j": {
+  "engineering": 0.03,
+  "educational": 0.05,
+  "creative": 0.04,
+  "experience": 0.02,
+  "hub": 0.33,
+  "playground": 0.09
+ },
+ "strict": {
+  "engineering": 0.03,
+  "educational": 0.02,
+  "creative": 0.04,
+  "experience": 0.02,
+  "hub": 0.33,
+  "playground": 0.09
+ },
+ "full": {
+  "engineering": 15.95,
+  "educational": 16.65,
+  "creative": 12.38,
+  "experience": 16.77,
+  "hub": 13.77,
+  "playground": 24.81
+ }
+}

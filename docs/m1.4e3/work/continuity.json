@@ -1,0 +1,108 @@
+{
+ "path_length_px": 257,
+ "bend_arc_px": 66,
+ "M1.4E.3 idle (rest)": {
+  "visible_arc_px": [
+   1,
+   196
+  ],
+  "whole visible line (excluding the first and last 4 px)": {
+   "samples": 187,
+   "core_min": 181.5,
+   "core_median": 187.6,
+   "core_max": 194.7,
+   "core_max_step_per_px": 1.7,
+   "width_min": 0.0,
+   "width_median": 2.33,
+   "width_max": 10.33
+  },
+  "rim junction (arc +-12 px)": {
+   "samples": 25,
+   "core_min": 185.3,
+   "core_median": 190.4,
+   "core_max": 192.1,
+   "core_max_step_per_px": 1.7,
+   "width_min": 0.0,
+   "width_median": 1.0,
+   "width_max": 1.33
+  }
+ },
+ "M1.4E.3 powered (fully lifted)": {
+  "visible_arc_px": [
+   1,
+   244
+  ],
+  "whole visible line (excluding the first and last 4 px)": {
+   "samples": 235,
+   "core_min": 239.2,
+   "core_median": 239.2,
+   "core_max": 239.2,
+   "core_max_step_per_px": 0.0,
+   "width_min": 1.33,
+   "width_median": 4.33,
+   "width_max": 10.67
+  },
+  "rim junction (arc +-12 px)": {
+   "samples": 25,
+   "core_min": 239.2,
+   "core_median": 239.2,
+   "core_max": 239.2,
+   "core_max_step_per_px": 0.0,
+   "width_min": 1.33,
+   "width_median": 1.67,
+   "width_max": 2.67
+  }
+ },
+ "M1.4E.1 idle (rest)": {
+  "visible_arc_px": [
+   1,
+   196
+  ],
+  "whole visible line (excluding the first and last 4 px)": {
+   "samples": 187,
+   "core_min": 180.4,
+   "core_median": 187.2,
+   "core_max": 194.7,
+   "core_max_step_per_px": 8.8,
+   "width_min": 0.0,
+   "width_median": 2.33,
+   "width_max": 10.0
+  },
+  "rim junction (arc +-12 px)": {
+   "samples": 25,
+   "core_min": 184.6,
+   "core_median": 189.7,
+   "core_max": 194.7,
+   "core_max_step_per_px": 8.8,
+   "width_min": 0.0,
+   "width_median": 1.0,
+   "width_max": 1.33
+  }
+ },
+ "M1.4E.1 powered (fully lifted)": {
+  "visible_arc_px": [
+   1,
+   244
+  ],
+  "whole visible line (excluding the first and last 4 px)": {
+   "samples": 235,
+   "core_min": 47.2,
+   "core_median": 239.2,
+   "core_max": 239.2,
+   "core_max_step_per_px": 88.8,
+   "width_min": 0.0,
+   "width_median": 4.33,
+   "width_max": 11.0
+  },
+  "rim junction (arc +-12 px)": {
+   "samples": 25,
+   "core_min": 208.1,
+   "core_median": 239.2,
+   "core_max": 239.2,
+   "core_max_step_per_px": 31.1,
+   "width_min": 1.33,
+   "width_median": 1.67,
+   "width_max": 2.67
+  }
+ }
+}

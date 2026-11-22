@@ -1,0 +1,10 @@
+OK   Experimental idle: layered Playground loaded and at rest (shown from the energy's arrival, like the approved one)  {"layered":true,"visible":"hidden","lift":{"y":0,"s":1},"label":{"y":0,"s":1},"arcadeTop":393.98,"shadow":0,"shadowDisplay":"block","background":0,"line":0}
+OK   Idle: experimental vs original, whole frame (per-pixel max channel difference, 0-255; a few px of ambient noise allowed)  {"mean":0.00016412265651155004,"max":2,"over2":0,"over12":0,"width":1648,"height":928}
+OK   For reference: the layers shown at rest vs the plate (separate resampling; not shipped this way)  {"mean":0.042567924548041515,"max":60,"over2":4742,"over12":267,"width":1648,"height":928}
+OK   Lift: the whole station rises 18 px with 1% scale; label and chips with it  {"lift":{"y":-18,"s":1.01},"label":{"y":-18,"s":1.01}}
+OK   Arcade screen rides the lift (moved with the station, still inside it)  {"rest":393.98,"lifted":374.46}
+OK   Floor stays put: background layer unmoved; contact shadow on  {"background":[0,0],"shadow":1}
+OK   Power connection fully charged when lifted (unchanged system)  {"line":0.995}
+OK   Return to idle: station down, shadow off, layers hidden, the station's area matches idle  {"lift":{"y":0,"s":1},"shadow":0,"diff":{"mean":0,"max":0,"over2":0,"over12":0,"width":355,"height":247}}
+OK   Keyboard focus lifts the station (after the charge); blur lowers it  {"focused":{"y":-18,"s":1.01},"line":0.995,"blurred":{"y":0,"s":1}}
+OK   Reduced motion: layered station shown, no lift, no contact shadow  {"visible":"visible","lift":{"y":0,"s":1},"shadow":"none"}

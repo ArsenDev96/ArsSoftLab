@@ -21,9 +21,13 @@ export function StationPanel({ zoneId }: { zoneId: ZoneId }) {
   const headingRef = useRef<HTMLHeadingElement>(null);
 
   // Opening moves focus to the heading, so keyboard and screen-reader users
-  // land on the new information (switching stations moves it again).
+  // land on the new information (switching stations moves it again). A
+  // panel that is already open on load (a deep link) leaves focus alone:
+  // only a change from closed to open moves it.
+  const wasOpen = useRef(open);
   useEffect(() => {
-    if (open) headingRef.current?.focus({ preventScroll: true });
+    if (open && !wasOpen.current) headingRef.current?.focus({ preventScroll: true });
+    wasOpen.current = open;
   }, [open]);
 
   const id = stationPanelId(zoneId);

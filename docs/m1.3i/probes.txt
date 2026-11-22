@@ -1,0 +1,18 @@
+OK   No loading flash (approved): the scene appears only once its 29 gated images are decoded  {"checks":6,"bad":0,"at":null,"done":true}
+OK   No loading flash (experimental): the scene appears only once its 42 gated images are decoded  {"checks":3,"bad":0,"at":null,"done":true}
+OK   Experimental idle: layered Playground loaded, at rest (layers shown from the energy's arrival), lines unpowered  {"visible":"hidden","lift":{"y":0,"s":1},"lp":0,"line":[0,0]}
+OK   Idle: experimental vs approved, whole frame, outside the 16 window joints and line ends (20 x 20 px each): near-identical (< 0.03% of px over 12/255, none over 50)  {"mean":0.023009211792768665,"max":43,"over2":4172,"over12":256,"width":1648,"height":928}
+OK   Idle, including the joints and ends (for the notes: there the approved build leaks the baked line; checks/window-seams-8x.png)  {"mean":0.03012729640944091,"max":92,"over2":5178,"over12":458,"width":1648,"height":928}
+OK   Lift: the station rises 18 px with 1% scale; label and chips with it  {"lift":{"y":-18,"s":1.01},"label":{"y":-18,"s":1.01}}
+OK   Arcade screen rides the lift and is running  {"rest":393.98,"lifted":374.46,"opacity":1}
+OK   Platform strips lit on the moving platform (power front complete, light on)  {"pw":1,"light":0.75}
+OK   Grounded: the environment, clean background, foundation joint and connection layers do not move  {"environment":[0,0],"backdrop":[0,0],"foundation":[333.99,333.99],"line":[0,0]}
+OK   Connection charges progressively (part-way 330 ms after hover) and is fully powered when lifted  {"mid":[0.995,0.192],"lifted":[0.995,1]}
+OK   Shadows follow height: contact eased to ~0.55 at full lift, ambient full  {"lp":1,"contact":0.55,"ambient":1}
+OK   Reflection follows height: dropped 9 px (half the lift), faded to 0.65  {"y":9,"s":1,"opacity":0.65}
+OK   Powered: the five connections and the central platform vs the approved build, Playground station excluded (for the notes: the vector core and the line layers drawn through the charge windows)  {"mean":0.15204678362573099,"max":52,"over2":4083,"over12":436,"width":779,"height":306}
+OK   Drain: on leave the connection retracts toward the A (station end first, never refilling)  {"draining":[[0.995,0.999],[0.995,0.999],[0.995,0.999],[0.995,0.999],[0.995,0.999],[0.995,0.877],[0.995,0.65],[0.995,0.271],[0.555,0],[0.062,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]]}
+OK   Return to idle: station down, --lp 0, reflection home, line unpowered; the area matches idle  {"lift":{"y":0,"s":1},"lp":0,"reflection":{"y":0,"s":1,"opacity":1},"line":[0,0],"station":{"mean":0,"max":0,"over2":0,"over12":0,"width":355,"height":247},"lines":{"mean":0,"max":0,"over2":0,"over12":0,"width":779,"height":306}}
+OK   Switching to Engineering mid-lift: Playground drops, its line drains, nothing left on  {"onEngineering":{"lift":{"y":0,"s":1},"lp":0,"line":[0,0]},"after":{"lift":{"y":0,"s":1},"line":[0,0],"visible":"hidden"}}
+OK   Keyboard focus powers and lifts the station; blur lowers it and drains the line  {"focused":{"lift":{"y":-18,"s":1.01},"line":[0.995,1],"lp":1},"blurred":{"lift":{"y":0,"s":1},"line":[0,0],"lp":0}}
+OK   Reduced motion: no lift, --lp 0 (no shadow, reflection unmoved), connection shown powered at once  {"lift":{"y":0,"s":1},"lp":0,"reflection":{"y":0,"s":1,"opacity":1},"unpoweredOpacity":[0,0]}

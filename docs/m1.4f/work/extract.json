@@ -1,0 +1,16 @@
+{
+ "creative": {
+  "alpha_px": 60214,
+  "opaque_px": 58678,
+  "edge_or_band_px": 1536,
+  "strip_px": 2737,
+  "floor_light_px": 4859
+ },
+ "experience": {
+  "alpha_px": 76854,
+  "opaque_px": 73785,
+  "edge_or_band_px": 3069,
+  "strip_px": 4011,
+  "floor_light_px": 4972
+ }
+}

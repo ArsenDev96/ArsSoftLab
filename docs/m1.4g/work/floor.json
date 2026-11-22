@@ -1,0 +1,79 @@
+{
+ "engineering": {
+  "cx": 426.72,
+  "cy": 532.43,
+  "rx": 186.38,
+  "ry": 22.63,
+  "angle": -1.051,
+  "visible_px": 2811,
+  "mean_light": 23.54
+ },
+ "educational": {
+  "cx": 838.03,
+  "cy": 484.78,
+  "rx": 171.71,
+  "ry": 16.82,
+  "angle": -0.353,
+  "visible_px": 2781,
+  "mean_light": 16.48
+ },
+ "creative": {
+  "cx": 301.75,
+  "cy": 734.52,
+  "rx": 248.31,
+  "ry": 46.12,
+  "angle": 0.421,
+  "visible_px": 4700,
+  "mean_light": 18.41
+ },
+ "experience": {
+  "cx": 1434.5,
+  "cy": 732.035735762778,
+  "rx": 275.9023731827115,
+  "ry": 35.78280448966879,
+  "angle": 0.0,
+  "visible_px": 2184,
+  "mean_light": 65.8
+ },
+ "experience-outer": {
+  "cx": 1423.3844169422337,
+  "cy": 765.8196241945318,
+  "rx": 370.0781511096257,
+  "ry": 58.557461762876265,
+  "angle": 4.506367679676487,
+  "visible_px": 9558,
+  "mean_light": 10.92
+ },
+ "playground": {
+  "cx": 1217.5,
+  "cy": 526.4435038420928,
+  "rx": 171.23149671896275,
+  "ry": 20.923876545399214,
+  "angle": 0.0,
+  "drawn": true,
+  "peak": 37.0
+ },
+ "reflection": {
+  "engineering": 1108.6,
+  "educational": 859.6,
+  "creative": 1632.9,
+  "experience": 1587.0
+ },
+ "strip_spill_px": 3238,
+ "playground_occlusion_max": 0.256,
+ "creative_light_pixels_rehued": 44,
+ "files": {
+  "m14g/contact.png": 10462,
+  "m14g/floor-light.png": 144142,
+  "m14g/floor-mask.png": 9105,
+  "m14g/playground-reflection-lit.png": 13354,
+  "m14g/playground-reflection.png": 30299,
+  "m14g1/creative-light.png": 21760,
+  "m14g1/floor-light.png": 126111,
+  "m14g1/playground-occlusion.png": 12194,
+  "m14g1/playground-reflection-lit.png": 13355,
+  "m14g1/playground-reflection.png": 30190,
+  "m14g1/playground-ring-lit.png": 9685,
+  "m14g1/playground-ring.png": 8908
+ }
+}

@@ -1,0 +1,385 @@
+{
+ "v2": {
+  "camera": {
+   "x": -0.4453125,
+   "y": 0,
+   "k": 0.9861786034688995
+  },
+  "rest": {
+   "lift_px": 0,
+   "spark_scene": [
+    941.8,
+    573.6
+   ],
+   "spark_core_opacity": 0,
+   "strip_off_opacity": 1,
+   "shadow_ambient_opacity": 0,
+   "shadow_contact_opacity": 0.9,
+   "line_rect": [
+    884.66,
+    555.57,
+    65.08,
+    6.69
+   ]
+  },
+  "half_ms": 293,
+  "half": {
+   "lift_px": 0,
+   "spark_scene": [
+    984.9,
+    564
+   ],
+   "spark_core_opacity": 1,
+   "strip_off_opacity": 1,
+   "shadow_ambient_opacity": 0,
+   "shadow_contact_opacity": 0.9,
+   "line_rect": [
+    884.66,
+    555.57,
+    65.08,
+    6.69
+   ]
+  },
+  "before_arrival": {
+   "lift_px": 0,
+   "spark_scene": [
+    1088.9,
+    537.8
+   ],
+   "spark_core_opacity": 1,
+   "strip_off_opacity": 1,
+   "shadow_ambient_opacity": 0,
+   "shadow_contact_opacity": 0.9,
+   "line_rect": [
+    884.66,
+    555.57,
+    65.08,
+    6.69
+   ]
+  },
+  "arriving": {
+   "lift_px": 0,
+   "spark_scene": [
+    1088.9,
+    537.8
+   ],
+   "spark_core_opacity": 1,
+   "strip_off_opacity": 1,
+   "shadow_ambient_opacity": 0,
+   "shadow_contact_opacity": 0.9,
+   "line_rect": [
+    884.66,
+    555.57,
+    65.08,
+    6.69
+   ]
+  },
+  "strips_on": {
+   "lift_px": -3.23,
+   "spark_scene": [
+    1088.9,
+    537.8
+   ],
+   "spark_core_opacity": 0.171,
+   "strip_off_opacity": 0.258,
+   "shadow_ambient_opacity": 0.164,
+   "shadow_contact_opacity": 0.791,
+   "line_rect": [
+    884.66,
+    555.57,
+    65.08,
+    6.69
+   ]
+  },
+  "lifted": {
+   "lift_px": -17.75,
+   "spark_scene": [
+    1088.9,
+    537.8
+   ],
+   "spark_core_opacity": 0,
+   "strip_off_opacity": 0,
+   "shadow_ambient_opacity": 0.9,
+   "shadow_contact_opacity": 0.3,
+   "line_rect": [
+    884.66,
+    555.57,
+    65.08,
+    6.69
+   ]
+  },
+  "return_half_ms": 147,
+  "returning": {
+   "lift_px": -8.88,
+   "spark_scene": [
+    1088.9,
+    537.8
+   ],
+   "spark_core_opacity": 0,
+   "strip_off_opacity": 0,
+   "shadow_ambient_opacity": 0.45,
+   "shadow_contact_opacity": 0.6,
+   "line_rect": [
+    884.66,
+    555.57,
+    65.08,
+    6.69
+   ]
+  },
+  "rest_again": {
+   "lift_px": 0,
+   "spark_scene": [
+    1088.9,
+    537.8
+   ],
+   "spark_core_opacity": 0,
+   "strip_off_opacity": 1,
+   "shadow_ambient_opacity": 0,
+   "shadow_contact_opacity": 0.9,
+   "line_rect": [
+    884.66,
+    555.57,
+    65.08,
+    6.69
+   ]
+  },
+  "errors": []
+ },
+ "approved": {
+  "camera": {
+   "x": -0.4453125,
+   "y": 0,
+   "k": 0.9861786034688995
+  },
+  "rest": {
+   "lift_px": 0,
+   "spark_scene": [
+    941.8,
+    573.6
+   ],
+   "spark_core_opacity": 0,
+   "strip_off_opacity": null,
+   "shadow_ambient_opacity": null,
+   "shadow_contact_opacity": null,
+   "line_rect": null
+  },
+  "half_ms": 293,
+  "half": {
+   "lift_px": 0,
+   "spark_scene": [
+    984.9,
+    564
+   ],
+   "spark_core_opacity": 1,
+   "strip_off_opacity": null,
+   "shadow_ambient_opacity": null,
+   "shadow_contact_opacity": null,
+   "line_rect": null
+  },
+  "before_arrival": {
+   "lift_px": 0,
+   "spark_scene": [
+    1088.9,
+    537.8
+   ],
+   "spark_core_opacity": 1,
+   "strip_off_opacity": null,
+   "shadow_ambient_opacity": null,
+   "shadow_contact_opacity": null,
+   "line_rect": null
+  },
+  "arriving": {
+   "lift_px": 0,
+   "spark_scene": [
+    1088.9,
+    537.8
+   ],
+   "spark_core_opacity": 1,
+   "strip_off_opacity": null,
+   "shadow_ambient_opacity": null,
+   "shadow_contact_opacity": null,
+   "line_rect": null
+  },
+  "strips_on": {
+   "lift_px": -3.23,
+   "spark_scene": [
+    1088.9,
+    537.8
+   ],
+   "spark_core_opacity": 0.171,
+   "strip_off_opacity": null,
+   "shadow_ambient_opacity": null,
+   "shadow_contact_opacity": null,
+   "line_rect": null
+  },
+  "lifted": {
+   "lift_px": -17.75,
+   "spark_scene": [
+    1088.9,
+    537.8
+   ],
+   "spark_core_opacity": 0,
+   "strip_off_opacity": null,
+   "shadow_ambient_opacity": null,
+   "shadow_contact_opacity": null,
+   "line_rect": null
+  },
+  "return_half_ms": 147,
+  "returning": {
+   "lift_px": -8.88,
+   "spark_scene": [
+    1088.9,
+    537.8
+   ],
+   "spark_core_opacity": 0,
+   "strip_off_opacity": null,
+   "shadow_ambient_opacity": null,
+   "shadow_contact_opacity": null,
+   "line_rect": null
+  },
+  "rest_again": {
+   "lift_px": 0,
+   "spark_scene": [
+    1088.9,
+    537.8
+   ],
+   "spark_core_opacity": 0,
+   "strip_off_opacity": null,
+   "shadow_ambient_opacity": null,
+   "shadow_contact_opacity": null,
+   "line_rect": null
+  },
+  "errors": []
+ },
+ "line_fixed_while_lifting": true,
+ "interrupted": {
+  "at_800ms": {
+   "lift_px": 0,
+   "spark_scene": [
+    1088.9,
+    537.8
+   ],
+   "spark_core_opacity": 0,
+   "strip_off_opacity": 1,
+   "shadow_ambient_opacity": 0,
+   "shadow_contact_opacity": 0.9,
+   "line_rect": [
+    884.66,
+    555.57,
+    65.08,
+    6.69
+   ]
+  },
+  "at_2000ms": {
+   "lift_px": 0,
+   "spark_scene": [
+    1088.9,
+    537.8
+   ],
+   "spark_core_opacity": 0,
+   "strip_off_opacity": 1,
+   "shadow_ambient_opacity": 0,
+   "shadow_contact_opacity": 0.9,
+   "line_rect": [
+    884.66,
+    555.57,
+    65.08,
+    6.69
+   ]
+  },
+  "errors": []
+ },
+ "keyboard": {
+  "tabs": 15,
+  "focused": {
+   "lift_px": -17.75,
+   "spark_scene": [
+    1088.9,
+    537.8
+   ],
+   "spark_core_opacity": 0,
+   "strip_off_opacity": 0,
+   "shadow_ambient_opacity": 0.9,
+   "shadow_contact_opacity": 0.3,
+   "line_rect": [
+    884.66,
+    555.57,
+    65.08,
+    6.69
+   ]
+  },
+  "selected": {
+   "lift_px": -17.75,
+   "spark_scene": [
+    1096.7,
+    585.8
+   ],
+   "spark_core_opacity": 0,
+   "strip_off_opacity": 0,
+   "shadow_ambient_opacity": 0.9,
+   "shadow_contact_opacity": 0.3,
+   "line_rect": [
+    875.33,
+    605.2,
+    70.94,
+    7.29
+   ],
+   "url": "/lab-v2?station=playground"
+  },
+  "after_escape": {
+   "lift_px": -17.75,
+   "spark_scene": [
+    1088.9,
+    537.8
+   ],
+   "spark_core_opacity": 0,
+   "strip_off_opacity": 0,
+   "shadow_ambient_opacity": 0.9,
+   "shadow_contact_opacity": 0.3,
+   "line_rect": [
+    884.66,
+    555.57,
+    65.08,
+    6.69
+   ],
+   "url": "/lab-v2"
+  },
+  "errors": []
+ },
+ "deep_link": {
+  "lift_px": -17.75,
+  "spark_scene": [
+   941.8,
+   573.6
+  ],
+  "spark_core_opacity": 0,
+  "strip_off_opacity": 0,
+  "shadow_ambient_opacity": 0.9,
+  "shadow_contact_opacity": 0.3,
+  "line_rect": [
+   875.33,
+   605.2,
+   70.94,
+   7.29
+  ],
+  "errors": []
+ },
+ "reduced_motion": {
+  "lift_px": 0,
+  "spark_scene": [
+   0.5,
+   0
+  ],
+  "spark_core_opacity": 0,
+  "strip_off_opacity": 0,
+  "shadow_ambient_opacity": 0,
+  "shadow_contact_opacity": 0.9,
+  "line_rect": [
+   884.66,
+   555.57,
+   65.08,
+   6.69
+  ],
+  "errors": []
+ }
+}

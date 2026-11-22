@@ -1,0 +1,25 @@
+{
+ "variant": "approved",
+ "url": "http://localhost:3000",
+ "camera": {
+  "x": -0.4453125,
+  "y": 0,
+  "k": 0.9861786034688995
+ },
+ "pointer": {
+  "x": 1200.7109375,
+  "y": 447.7109375
+ },
+ "arrive_ms": 650,
+ "half_ms": 841.4,
+ "arrival_frame_ms": 667,
+ "lift_px_arrival": -0.101932,
+ "lift_px_half": -8.88642,
+ "lift_px_full": -17.7513,
+ "return_half_ms": 147,
+ "lift_px_returning": -8.87566,
+ "requests": {
+  "served": {},
+  "layers25d": 0
+ }
+}

@@ -1,6 +1,6 @@
 "use client";
 
-import { LAB_ZONES } from "@/data/zones";
+import { LAB_ZONES, type ZoneId } from "@/data/zones";
 import { sceneRect } from "@/lib/scene";
 import { useLabState } from "./LabState";
 import { ProjectStation } from "./ProjectStation";
@@ -15,7 +15,7 @@ import { hotspotBox, hotspotClip, STATION_LAYOUT } from "./scene-layout";
  * button. Hover lighting is pure CSS (data-lab-hover), so this component
  * only re-renders when the selection changes.
  */
-export function LabStations() {
+export function LabStations({ hideIcons = [] }: { hideIcons?: readonly ZoneId[] } = {}) {
   const { station, project, hover, selectStation, toggleStation, toggleProject } = useLabState();
 
   return (
@@ -55,6 +55,7 @@ export function LabStations() {
           onHover={(source, on) => hover(source, zone.id, on)}
           onToggle={() => toggleStation(zone.id)}
           onSelectProject={toggleProject}
+          showIcon={!hideIcons.includes(zone.id)}
         />
       ))}
     </div>

@@ -1,0 +1,97 @@
+[
+ {
+  "n": 0,
+  "t": 7,
+  "layers": "hidden"
+ },
+ {
+  "n": 1,
+  "t": 120,
+  "layers": "hidden"
+ },
+ {
+  "n": 2,
+  "t": 260,
+  "layers": "hidden"
+ },
+ {
+  "n": 3,
+  "t": 343,
+  "layers": "hidden"
+ },
+ {
+  "n": 4,
+  "t": 427,
+  "layers": "hidden"
+ },
+ {
+  "n": 5,
+  "t": 497,
+  "layers": "hidden"
+ },
+ {
+  "n": 6,
+  "t": 563,
+  "layers": "hidden"
+ },
+ {
+  "n": 7,
+  "t": 630,
+  "layers": "hidden"
+ },
+ {
+  "n": 8,
+  "t": 944,
+  "layers": "visible"
+ },
+ {
+  "n": 9,
+  "t": 1028,
+  "layers": "visible"
+ },
+ {
+  "n": 10,
+  "t": 1112,
+  "layers": "visible"
+ },
+ {
+  "n": 11,
+  "t": 1192,
+  "layers": "visible"
+ },
+ {
+  "n": 12,
+  "t": 1245,
+  "layers": "visible"
+ },
+ {
+  "n": 13,
+  "t": 1308,
+  "layers": "visible"
+ },
+ {
+  "n": 14,
+  "t": 1375,
+  "layers": "visible"
+ },
+ {
+  "n": 15,
+  "t": 1428,
+  "layers": "visible"
+ },
+ {
+  "n": 16,
+  "t": 1478,
+  "layers": "visible"
+ },
+ {
+  "n": 17,
+  "t": 1528,
+  "layers": "visible"
+ },
+ {
+  "n": 18,
+  "t": 1589,
+  "layers": "visible"
+ }
+]

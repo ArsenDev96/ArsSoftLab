@@ -1,0 +1,236 @@
+{
+ "engineering": {
+  "base (approved, measured on the plate)": {
+   "base_w": 338,
+   "cx": 431.5,
+   "bottom": 551,
+   "depth": 29
+  },
+  "base depth / width: approved vs generated": [
+   0.086,
+   0.076
+  ],
+  "station extent [x0, y0, x1, y1]: generated (before)": [
+   263,
+   341,
+   600,
+   551
+  ],
+  "station extent [x0, y0, x1, y1]: recovered (after) = approved": [
+   262,
+   385,
+   599,
+   551
+  ],
+  "stone, generated (before)": {
+   "px": 7025,
+   "mean_rgb": [
+    83.4,
+    45.1,
+    19.4
+   ],
+   "luminance": 53.6,
+   "contrast_std": 28.8,
+   "warmth_r_minus_b": 64.0,
+   "saturation": 77.5
+  },
+  "stone, recovered (after)": {
+   "px": 7000,
+   "mean_rgb": [
+    106.7,
+    61.3,
+    28.8
+   ],
+   "luminance": 71.2,
+   "contrast_std": 34.1,
+   "warmth_r_minus_b": 77.9,
+   "saturation": 73.5
+  }
+ },
+ "educational": {
+  "base (approved, measured on the plate)": {
+   "base_w": 312,
+   "cx": 833.5,
+   "bottom": 485,
+   "depth": 41
+  },
+  "base depth / width: approved vs generated": [
+   0.131,
+   0.095
+  ],
+  "station extent [x0, y0, x1, y1]: generated (before)": [
+   674,
+   259,
+   990,
+   484
+  ],
+  "station extent [x0, y0, x1, y1]: recovered (after) = approved": [
+   669,
+   274,
+   994,
+   496
+  ],
+  "stone, generated (before)": {
+   "px": 6470,
+   "mean_rgb": [
+    68.3,
+    48.2,
+    38.9
+   ],
+   "luminance": 53.1,
+   "contrast_std": 19.9,
+   "warmth_r_minus_b": 29.4,
+   "saturation": 43.7
+  },
+  "stone, recovered (after)": {
+   "px": 6355,
+   "mean_rgb": [
+    83.3,
+    54.4,
+    37.2
+   ],
+   "luminance": 61.1,
+   "contrast_std": 26.9,
+   "warmth_r_minus_b": 46.1,
+   "saturation": 55.5
+  }
+ },
+ "other stations' stone": {
+  "playground (generated, unchanged)": {
+   "px": 6544,
+   "mean_rgb": [
+    88.2,
+    50.2,
+    24.7
+   ],
+   "luminance": 58.7,
+   "contrast_std": 29.3,
+   "warmth_r_minus_b": 63.5,
+   "saturation": 72.3
+  },
+  "hub (approved, M1.4E)": {
+   "px": 7917,
+   "mean_rgb": [
+    114.1,
+    79.2,
+    60.0
+   ],
+   "luminance": 87.4,
+   "contrast_std": 48.8,
+   "warmth_r_minus_b": 54.1,
+   "saturation": 49.9
+  },
+  "creative (approved, M1.4F)": {
+   "px": 8485,
+   "mean_rgb": [
+    62.8,
+    40.6,
+    25.5
+   ],
+   "luminance": 45.5,
+   "contrast_std": 20.4,
+   "warmth_r_minus_b": 37.3,
+   "saturation": 59.8
+  },
+  "experience (approved, M1.4F)": {
+   "px": 9626,
+   "mean_rgb": [
+    73.3,
+    40.1,
+    15.2
+   ],
+   "luminance": 47.2,
+   "contrast_std": 30.8,
+   "warmth_r_minus_b": 58.1,
+   "saturation": 79.3
+  }
+ },
+ "homepage: now vs M1.4E.1 (whole frame)": {
+  "mean": 0.718,
+  "px_over_16": 342,
+  "max": 45
+ },
+ "homepage: now vs M1.4F's capture (whole frame)": {
+  "px": 1529344,
+  "mean": 0.714,
+  "px_over_16": 149,
+  "max": 37
+ },
+ "homepage: run-to-run noise (two captures now, same code)": {
+  "px": 1529344,
+  "mean": 0.718,
+  "px_over_16": 319,
+  "max": 45
+ },
+ "playground station at rest: M1.4F.1 vs M1.4F": {
+  "raw": {
+   "px": 131052,
+   "mean": 0.847,
+   "px_over_16": 950,
+   "max": 66
+  },
+  "blur2": {
+   "px": 131052,
+   "mean": 0.415,
+   "px_over_16": 0,
+   "max": 13
+  }
+ },
+ "playground connection at rest: M1.4F.1 vs M1.4F": {
+  "raw": {
+   "px": 27300,
+   "mean": 0.247,
+   "px_over_16": 4,
+   "max": 29
+  },
+  "blur2": {
+   "px": 27300,
+   "mean": 0.143,
+   "px_over_16": 0,
+   "max": 5
+  }
+ },
+ "playground station lifted: M1.4F.1 vs M1.4F": {
+  "raw": {
+   "px": 131052,
+   "mean": 0.582,
+   "px_over_16": 349,
+   "max": 32
+  },
+  "blur2": {
+   "px": 131052,
+   "mean": 0.312,
+   "px_over_16": 0,
+   "max": 6
+  }
+ },
+ "playground connection lifted: M1.4F.1 vs M1.4F": {
+  "raw": {
+   "px": 27300,
+   "mean": 0.071,
+   "px_over_16": 0,
+   "max": 11
+  },
+  "blur2": {
+   "px": 27300,
+   "mean": 0.045,
+   "px_over_16": 0,
+   "max": 4
+  }
+ },
+ "playground lift": {
+  "lift_px": -18
+ },
+ "creative at rest: M1.4F.1 vs M1.4F (its own pixels)": {
+  "px": 57864,
+  "mean": 0.008,
+  "px_over_16": 0,
+  "max": 11
+ },
+ "experience at rest: M1.4F.1 vs M1.4F (its own pixels)": {
+  "px": 73231,
+  "mean": 0.036,
+  "px_over_16": 0,
+  "max": 2
+ }
+}

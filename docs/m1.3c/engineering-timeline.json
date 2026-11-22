@@ -1,0 +1,181 @@
+{
+ "station": "engineering",
+ "arriveMs": 580,
+ "headAtStationMs": 500,
+ "platformStartsMs": 580,
+ "glowStartsMs": 660,
+ "liftStartsMs": 580,
+ "platformFullMs": 680,
+ "rows": [
+  {
+   "t": 0,
+   "hover": "engineering",
+   "glow": 0,
+   "platform": 0,
+   "surge": 1,
+   "lift": "matrix(1, 0, 0, 1, 0, 0)",
+   "running": 0,
+   "head": -0.193
+  },
+  {
+   "t": 100,
+   "hover": "engineering",
+   "glow": 0,
+   "platform": 0,
+   "surge": 1,
+   "lift": "matrix(1, 0, 0, 1, 0, 0)",
+   "running": 0,
+   "head": -0.044
+  },
+  {
+   "t": 200,
+   "hover": "engineering",
+   "glow": 0,
+   "platform": 0,
+   "surge": 1,
+   "lift": "matrix(1, 0, 0, 1, 0, 0)",
+   "running": 0,
+   "head": 0.473
+  },
+  {
+   "t": 300,
+   "hover": "engineering",
+   "glow": 0,
+   "platform": 0,
+   "surge": 1,
+   "lift": "matrix(1, 0, 0, 1, 0, 0)",
+   "running": 0,
+   "head": 0.801
+  },
+  {
+   "t": 400,
+   "hover": "engineering",
+   "glow": 0,
+   "platform": 0,
+   "surge": 1,
+   "lift": "matrix(1, 0, 0, 1, 0, 0)",
+   "running": 0,
+   "head": 0.939
+  },
+  {
+   "t": 500,
+   "hover": "engineering",
+   "glow": 0,
+   "platform": 0,
+   "surge": 1,
+   "lift": "matrix(1, 0, 0, 1, 0, 0)",
+   "running": 0,
+   "head": 0.992
+  },
+  {
+   "t": 600,
+   "hover": "engineering",
+   "glow": 0,
+   "platform": 0.18,
+   "surge": 1,
+   "lift": "matrix(1.00152, 0, 0, 1.00152, 0, -0.624983)",
+   "running": 0,
+   "head": 1
+  },
+  {
+   "t": 700,
+   "hover": "engineering",
+   "glow": 0.144,
+   "platform": 0.845,
+   "surge": 1,
+   "lift": "matrix(1.0089, 0, 0, 1.0089, 0, -3.65862)",
+   "running": 0,
+   "head": 1
+  },
+  {
+   "t": 800,
+   "hover": "engineering",
+   "glow": 0.512,
+   "platform": 0.996,
+   "surge": 1,
+   "lift": "matrix(1.01111, 0, 0, 1.01111, 0, -4.56397)",
+   "running": 0,
+   "head": 1
+  },
+  {
+   "t": 900,
+   "hover": "engineering",
+   "glow": 0.746,
+   "platform": 1,
+   "surge": 1,
+   "lift": "matrix(1.01189, 0, 0, 1.01189, 0, -4.88553)",
+   "running": 0,
+   "head": 1
+  },
+  {
+   "t": 1000,
+   "hover": "engineering",
+   "glow": 0.868,
+   "platform": 1,
+   "surge": 1,
+   "lift": "matrix(1.012, 0, 0, 1.012, 0, -4.93092)",
+   "running": 0,
+   "head": 1
+  },
+  {
+   "t": 1100,
+   "hover": "engineering",
+   "glow": 0.928,
+   "platform": 1,
+   "surge": 1,
+   "lift": "matrix(1.012, 0, 0, 1.012, 0, -4.93092)",
+   "running": 0,
+   "head": 1
+  },
+  {
+   "t": 1200,
+   "hover": "engineering",
+   "glow": 0.949,
+   "platform": 1,
+   "surge": 1,
+   "lift": "matrix(1.012, 0, 0, 1.012, 0, -4.93092)",
+   "running": 0,
+   "head": 1
+  },
+  {
+   "t": 1300,
+   "hover": "engineering",
+   "glow": 0.95,
+   "platform": 1,
+   "surge": 1,
+   "lift": "matrix(1.012, 0, 0, 1.012, 0, -4.93092)",
+   "running": 0,
+   "head": 1
+  },
+  {
+   "t": 1400,
+   "hover": "engineering",
+   "glow": 0.95,
+   "platform": 1,
+   "surge": 1,
+   "lift": "matrix(1.012, 0, 0, 1.012, 0, -4.93092)",
+   "running": 0,
+   "head": 1
+  },
+  {
+   "t": 1500,
+   "hover": "engineering",
+   "glow": 0.95,
+   "platform": 1,
+   "surge": 1,
+   "lift": "matrix(1.012, 0, 0, 1.012, 0, -4.93092)",
+   "running": 0,
+   "head": 1
+  },
+  {
+   "t": 1600,
+   "hover": "engineering",
+   "glow": 0.95,
+   "platform": 1,
+   "surge": 1,
+   "lift": "matrix(1.012, 0, 0, 1.012, 0, -4.93092)",
+   "running": 0,
+   "head": 1
+  }
+ ]
+}

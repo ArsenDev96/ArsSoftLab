@@ -1,0 +1,103 @@
+{
+ "approved_errors": [],
+ "v2_layers": [
+  [
+   "educational",
+   1672,
+   941,
+   true
+  ],
+  [
+   "playground",
+   1672,
+   941,
+   true
+  ],
+  [
+   "engineering",
+   1672,
+   941,
+   true
+  ],
+  [
+   "hub",
+   1672,
+   941,
+   true
+  ],
+  [
+   "creative",
+   1672,
+   941,
+   true
+  ],
+  [
+   "experience",
+   1672,
+   941,
+   true
+  ]
+ ],
+ "v2_plate_requests": [
+  "/scene/activation/core.png",
+  "/scene/activation/lines/educational-route-wide.png",
+  "/scene/activation/lines/educational-route-glow.png",
+  "/scene/activation/lines/educational-route.png",
+  "/scene/activation/lines/engineering-route-glow.png",
+  "/scene/activation/lines/engineering-route-wide.png",
+  "/scene/activation/lines/engineering-route.png",
+  "/scene/activation/playground-route-glow.png",
+  "/scene/activation/playground-route-wide.png",
+  "/scene/activation/playground-route.png",
+  "/scene/activation/lines/creative-route-wide.png",
+  "/scene/activation/lines/creative-route.png",
+  "/scene/activation/lines/creative-route-glow.png",
+  "/scene/activation/lines/experience-route-glow.png",
+  "/scene/activation/lines/experience-route-wide.png",
+  "/scene/activation/lines/experience-route.png"
+ ],
+ "v2_manual_lift_px": -17.7513,
+ "v2_errors": [],
+ "v2_hover": {
+  "hover": "playground",
+  "lift_px": -17.7513,
+  "arcade_opacity": 1,
+  "arcade_state": "running"
+ },
+ "v2_after_leave_lift_px": 0,
+ "v2_focus": "BODY",
+ "v2_keyboard_select": {
+  "selected": null,
+  "url": "/lab-v2"
+ },
+ "v2_behaviour_errors": [],
+ "v2_deep_link": {
+  "selected": "engineering",
+  "url": "/lab-v2?station=engineering"
+ },
+ "v2_deep_link_errors": [],
+ "v2_reduced_motion": {
+  "hover": "playground",
+  "lift_px": 0,
+  "transition": "0.45s"
+ },
+ "v2_reduced_errors": [],
+ "cameras": {
+  "approved": {
+   "x": -0.4453125,
+   "y": 0,
+   "k": 0.9861786034688995
+  },
+  "v2": {
+   "x": -0.4453125,
+   "y": 0,
+   "k": 0.9861786034688995
+  },
+  "m13j": {
+   "x": -0.4453125,
+   "y": 0,
+   "k": 0.9861786034688995
+  }
+ },
+ "camera_identical": true
+}

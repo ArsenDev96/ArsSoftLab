@@ -1,0 +1,9 @@
+OK   Early exit leaves nothing active  {"hover":null,"glow":0,"platform":0,"surge":0,"lift":"none","running":0}
+OK   Fast switch: only the new station activates  {"engineering":{"hover":"educational","glow":0,"platform":0,"surge":0,"lift":"none","running":0},"educational":{"hover":"educational","glow":0.85,"platform":0.75,"surge":1,"lift":null,"running":0}}
+OK   Repeated quick hovers: no stale activation  {"hover":null,"glow":0,"platform":0,"surge":0,"lift":null,"running":0}
+OK   Select mid-sequence: station selected and active  {"hover":"playground","glow":0.995,"platform":0.85,"surge":0,"lift":null,"running":1}
+OK   Escape after select: focus keeps it lit, no second pulse  {"hover":"playground","glow":1,"platform":0.75,"surge":1,"lift":null,"running":0,"flash":0,"heads":0}
+OK   Then blur: back to rest  {"hover":null,"glow":0,"platform":0,"surge":0,"lift":null,"running":0}
+OK   Keyboard focus: same sequence (dark at 80 ms, active later)  {"early":{"hover":"engineering","glow":0,"platform":0,"surge":1,"lift":"matrix(1, 0, 0, 1, 0, 0)","running":18},"later":{"hover":"engineering","glow":0.95,"platform":1,"surge":1,"lift":"matrix(1.012, 0, 0, 1.012, 0, -4.93092)","running":0}}
+OK   Keyboard blur: back to rest  {"hover":null,"glow":0,"platform":0,"surge":0,"lift":"none","running":0}
+OK   Reduced motion: lights at once, no lift, no pulse  {"hover":"engineering","glow":0.95,"platform":1,"surge":"none","lift":"none","running":1}

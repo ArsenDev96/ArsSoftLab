@@ -1,0 +1,42 @@
+[
+ {
+  "t": 1500,
+  "state": "running",
+  "opacity": 1,
+  "coverage": 1,
+  "clocks": 1,
+  "sig": 15261158
+ },
+ {
+  "t": 2000,
+  "state": "running",
+  "opacity": 1,
+  "coverage": 1,
+  "clocks": 1,
+  "sig": 320334243
+ },
+ {
+  "t": 2500,
+  "state": "running",
+  "opacity": 1,
+  "coverage": 1,
+  "clocks": 1,
+  "sig": 375123234
+ },
+ {
+  "t": 3000,
+  "state": "running",
+  "opacity": 1,
+  "coverage": 1,
+  "clocks": 1,
+  "sig": 765369471
+ },
+ {
+  "t": 4000,
+  "state": "running",
+  "opacity": 1,
+  "coverage": 1,
+  "clocks": 1,
+  "sig": 276964314
+ }
+]

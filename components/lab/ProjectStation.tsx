@@ -18,6 +18,8 @@ export interface ProjectStationProps {
   onToggle: () => void;
   onSelectProject: (id: ProjectId) => void;
   onHover: (source: HoverSource, on: boolean) => void;
+  /** M1.4E.3: false leaves the floating icon out (/lab-v2 Playground, whose cabinet carries its own). */
+  showIcon?: boolean;
 }
 
 /**
@@ -36,6 +38,7 @@ export function ProjectStation({
   onToggle,
   onSelectProject,
   onHover,
+  showIcon = true,
 }: ProjectStationProps) {
   const titleId = `station-${zone.id}-title`;
   const listId = `station-${zone.id}-projects`;
@@ -92,13 +95,15 @@ export function ProjectStation({
       }}
       onTransitionEnd={onLiftEnd}
     >
-      <span
-        aria-hidden="true"
-        className="lab-station-icon absolute flex -translate-x-1/2 -translate-y-1/2 items-center justify-center"
-        style={{ left: u(layout.iconOffset.x), top: u(layout.iconOffset.y) }}
-      >
-        <StationIcon name={zone.icon} accent={zone.accent} />
-      </span>
+      {showIcon ? (
+        <span
+          aria-hidden="true"
+          className="lab-station-icon absolute flex -translate-x-1/2 -translate-y-1/2 items-center justify-center"
+          style={{ left: u(layout.iconOffset.x), top: u(layout.iconOffset.y) }}
+        >
+          <StationIcon name={zone.icon} accent={zone.accent} />
+        </span>
+      ) : null}
 
       <h2 id={titleId} className="m-0 leading-none" style={{ fontSize: u(layout.titleSize) }}>
         <button

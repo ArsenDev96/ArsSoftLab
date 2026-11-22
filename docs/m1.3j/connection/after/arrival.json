@@ -1,0 +1,87 @@
+[
+ {
+  "n": 0,
+  "t": 6,
+  "layers": "hidden"
+ },
+ {
+  "n": 1,
+  "t": 104,
+  "layers": "hidden"
+ },
+ {
+  "n": 2,
+  "t": 227,
+  "layers": "hidden"
+ },
+ {
+  "n": 3,
+  "t": 359,
+  "layers": "hidden"
+ },
+ {
+  "n": 4,
+  "t": 468,
+  "layers": "hidden"
+ },
+ {
+  "n": 5,
+  "t": 530,
+  "layers": "hidden"
+ },
+ {
+  "n": 6,
+  "t": 597,
+  "layers": "hidden"
+ },
+ {
+  "n": 7,
+  "t": 663,
+  "layers": "hidden"
+ },
+ {
+  "n": 8,
+  "t": 991,
+  "layers": "visible"
+ },
+ {
+  "n": 9,
+  "t": 1094,
+  "layers": "visible"
+ },
+ {
+  "n": 10,
+  "t": 1175,
+  "layers": "visible"
+ },
+ {
+  "n": 11,
+  "t": 1228,
+  "layers": "visible"
+ },
+ {
+  "n": 12,
+  "t": 1307,
+  "layers": "visible"
+ },
+ {
+  "n": 13,
+  "t": 1361,
+  "layers": "visible"
+ },
+ {
+  "n": 14,
+  "t": 1412,
+  "layers": "visible"
+ },
+ {
+  "n": 15,
+  "t": 1474,
+  "layers": "visible"
+ },
+ {
+  "n": 16,
+  "t": 1541,
+  "layers": "visible"
+ }
+]

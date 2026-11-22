@@ -1,0 +1,131 @@
+{
+ "chart pixels": 3281,
+ "light split (px > 2): chart, strip floor, rest": [
+  2754,
+  1497,
+  495
+ ],
+ "strip pixels (station lit, unpowered from the darkened plate)": {
+  "px": 2749,
+  "bbox": [
+   354,
+   514,
+   596,
+   551
+  ]
+ },
+ "station == lit plate on the strip pixels (max diff)": 0.0,
+ "floor light: pixels outside Engineering's share changed": 0,
+ "floor light: Engineering's share (px > 2)": 14372,
+ "screen": {
+  "quad": [
+   [
+    346.81,
+    391.0
+   ],
+   [
+    473.63,
+    391.0
+   ],
+   [
+    486.69,
+    473.5
+   ],
+   [
+    358.92,
+    473.5
+   ]
+  ],
+  "rims": {
+   "left": [
+    283.6,
+    0.1468
+   ],
+   "right": [
+    416.46,
+    0.1582
+   ],
+   "top": [
+    385.0,
+    -0.0
+   ],
+   "left_rms": 0.31,
+   "right_rms": 1.97
+  },
+  "mask_px": 10878.6
+ },
+ "bars": [
+  {
+   "x": 438,
+   "y": 466,
+   "w": 8,
+   "h": 6
+  },
+  {
+   "x": 448,
+   "y": 462,
+   "w": 8,
+   "h": 10
+  },
+  {
+   "x": 456,
+   "y": 464,
+   "w": 5,
+   "h": 7
+  },
+  {
+   "x": 461,
+   "y": 458,
+   "w": 8,
+   "h": 13
+  },
+  {
+   "x": 470,
+   "y": 458,
+   "w": 8,
+   "h": 12
+  },
+  {
+   "x": 478,
+   "y": 452,
+   "w": 8,
+   "h": 18
+  },
+  {
+   "x": 487,
+   "y": 452,
+   "w": 8,
+   "h": 18
+  },
+  {
+   "x": 497,
+   "y": 443,
+   "w": 8,
+   "h": 27
+  },
+  {
+   "x": 507,
+   "y": 444,
+   "w": 8,
+   "h": 24
+  },
+  {
+   "x": 515,
+   "y": 433,
+   "w": 8,
+   "h": 35
+  },
+  {
+   "x": 525,
+   "y": 423,
+   "w": 9,
+   "h": 44
+  }
+ ],
+ "powered recomposition vs current (max-channel, 8-bit)": {
+  "mean": 0.0,
+  "max": 0.0,
+  "px_over_1": 0
+ },
+ "unpowered strip == darkened plate (max diff)": 0.0
+}

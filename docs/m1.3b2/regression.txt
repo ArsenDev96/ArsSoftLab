@@ -1,0 +1,289 @@
+Visual regression (1648x928); per-pixel max channel delta, 0-255
+idle vs approved baseline (M1.1)             mean 1.1156, max 72, >2: 100457, >12: 2277
+return from educational vs idle              mean 0.0000, max 0, >2: 0, >12: 0
+educational selected vs idle (must differ)   mean 46.4196, max 255, >2: 1506243, >12: 1136640
+return from engineering vs idle              mean 0.0000, max 0, >2: 0, >12: 0
+engineering selected vs idle (must differ)   mean 49.4562, max 255, >2: 1497258, >12: 1162711
+return from playground vs idle               mean 0.0000, max 0, >2: 0, >12: 0
+playground selected vs idle (must differ)    mean 47.2232, max 253, >2: 1504921, >12: 1150203
+return from creative vs idle                 mean 0.0000, max 0, >2: 0, >12: 0
+creative selected vs idle (must differ)      mean 49.9008, max 255, >2: 1504786, >12: 1169529
+return from experience vs idle               mean 0.0000, max 0, >2: 0, >12: 0
+experience selected vs idle (must differ)    mean 42.4286, max 251, >2: 1490889, >12: 1084522
+deep link engineering vs click (excl. chips) mean 0.0006, max 3, >2: 35, >12: 0
+deep link sqlorbit vs click (excl. chips)    mean 0.0003, max 1, >2: 0, >12: 0
+deep link engineering vs click (whole frame) mean 0.0710, max 225, >2: 2063, >12: 1342
+invalid deep link vs baseline                mean 0.8057, max 72, >2: 41035, >12: 996
+deeplink-history-return vs idle              mean 0.0000, max 0, >2: 0, >12: 0
+deeplink-return vs idle                      mean 0.0000, max 0, >2: 0, >12: 0
+after long session vs idle                   mean 0.0000, max 0, >2: 0, >12: 0
+reduced-motion idle vs baseline              mean 1.1156, max 72, >2: 100457, >12: 2277
+eng. hover vs idle (outside station + line)  mean 0.0000, max 0, >2: 0, >12: 0
+eng. hover return vs idle                    mean 0.0000, max 1, >2: 0, >12: 0
+globe hover vs rest                          mean 0.0958, max 61, >2: 11235, >12: 3955
+
+PASS  Project data: every project has an approved summary  (7 found)
+PASS  Idle: nothing selected or hovered, hero heading shown  ([null,null,"visible/1"])
+PASS  Idle: every station light is off and every label fully shown  ({"educational":{"platform":0,"connection":0,"pulse":1,"label":1},"engineering":{"platform":null,"connection":0,"pulse":1,"label":1},"playground":{"platform":0,"connection":0,"pulse":1,"label":1},"creative":{"platform":0,"connection":0,"pulse":1,"label":1},"experience":{"platform":0,"connection":0,"pulse":1,"label":1},"orbit":0.55})
+PASS  Hotspots: each polygon's centre hits its own station  (educational:educational engineering:engineering playground:playground creative:creative experience:experience)
+PASS  Hover educational: lights its platform and connection; others stay readable  (platform 0.6, connection 0.45, labels 1/1/1/1)
+PASS  Hover engineering: lights its platform and connection; others stay readable  (platform null, connection 0.45, labels 1/1/1/1)
+PASS  Hover playground: lights its platform and connection; others stay readable  (platform 0.6, connection 0.45, labels 1/1/1/1)
+PASS  Hover creative: lights its platform and connection; others stay readable  (platform 0.6, connection 0.45, labels 1/1/1/1)
+PASS  Hover experience: lights its platform and connection; others stay readable  (platform 0.6, connection 0.45, labels 1/1/1/1)
+PASS  Hover end: every light fades back out  ({"educational":{"platform":0,"connection":0,"pulse":1,"label":1},"engineering":{"platform":null,"connection":0,"pulse":1,"label":1},"playground":{"platform":0,"connection":0,"pulse":1,"label":1},"creative":{"platform":0,"connection":0,"pulse":1,"label":1},"experience":{"platform":0,"connection":0,"pulse":1,"label":1},"orbit":0.55})
+PASS  Lift: layers hidden at rest (plate shows the station)  (hidden none)
+PASS  Lift: hover lifts the station (5 px, <= 1.015x)  (scale 1.012, ty -4.93px)
+PASS  Lift: labels follow the station (<= 0.5 px)  (0.264px)
+PASS  Lift: lifted cut-out is not clipped by the static layer box
+PASS  Lift: contact shadow and light shown  (shadow 0.7/block, light 1)
+PASS  Lift: return removes the transform and hides the layers  (none none hidden)
+PASS  Lift: Tab reaches the Engineering trigger
+PASS  Lift: keyboard focus lifts the station  (scale 1.012)
+PASS  Lift: stays lifted while focus is on its project chips
+PASS  Lift: moving focus to another station returns it
+PASS  Lift: Engineering stays lifted while selected  (scale 1.012, label 0.288px)
+PASS  Select educational: becomes the single selected station  (["educational",1,["station-educational-trigger"]])
+PASS  Select educational: hero shows its title, description and projects  (Educational | Interactive learning experiences and tools. | AriMap, Armat)
+PASS  Select educational: focus moves to the station heading  (station-educational-panel-title)
+PASS  Select educational: camera moves the scene, header untouched  (matrix(1.09, 0, 0, 1.09, -2.14988, 41.76))
+PASS  Select educational: no image edge exposed  ({"left":-76.8,"top":0,"right":1720.5,"bottom":1011.52,"gap":0})
+PASS  Select educational: no in-scene label under the hero info
+PASS  Select educational: its connection is primary, others quieter but present  (own 0.85/1; others pulse 0.4/0.4/0.4/0.4, labels 0.6/0.6/0.6/0.6)
+PASS  Back to Lab (educational): enters "returning"  (educational)
+PASS  Back to Lab (educational): lab restored, focus back on the station trigger  (null none visible/1 station-educational-trigger)
+PASS  Select engineering: becomes the single selected station  (["engineering",1,["station-engineering-trigger"]])
+PASS  Select engineering: hero shows its title, description and projects  (Engineering | Developer tools and production engineering. | SQLOrbit, TableRefresh)
+PASS  Select engineering: focus moves to the station heading  (station-engineering-panel-title)
+PASS  Select engineering: camera moves the scene, header untouched  (matrix(1.09, 0, 0, 1.09, 74.2006, 32.7857))
+PASS  Select engineering: no image edge exposed  ({"left":-0.44,"top":-8.97,"right":1796.85,"bottom":1002.55,"gap":-0.44})
+PASS  Select engineering: no in-scene label under the hero info
+PASS  Select engineering: its connection is primary, others quieter but present  (own 0.85/1; others pulse 0.4/0.4/0.4/0.4, labels 0.6/0.6/0.6/0.6)
+PASS  Back to Lab (engineering): enters "returning"  (engineering)
+PASS  Back to Lab (engineering): lab restored, focus back on the station trigger  (null none visible/1 station-engineering-trigger)
+PASS  Select playground: becomes the single selected station  (["playground",1,["station-playground-trigger"]])
+PASS  Select playground: hero shows its title, description and projects  (Playground | Games, challenges, and playful experiments. | AZIZ)
+PASS  Select playground: focus moves to the station heading  (station-playground-panel-title)
+PASS  Select playground: camera moves the scene, header untouched  (matrix(1.09, 0, 0, 1.09, -14.7928, 41.3853))
+PASS  Select playground: no image edge exposed  ({"left":-89.44,"top":-0.37,"right":1707.85,"bottom":1011.15,"gap":-0.37})
+PASS  Select playground: no in-scene label under the hero info
+PASS  Select playground: its connection is primary, others quieter but present  (own 0.85/1; others pulse 0.4/0.4/0.4/0.4, labels 0.6/0.6/0.6/0.6)
+PASS  Back to Lab (playground): enters "returning"  (playground)
+PASS  Back to Lab (playground): lab restored, focus back on the station trigger  (null none visible/1 station-playground-trigger)
+PASS  Select creative: becomes the single selected station  (["creative",1,["station-creative-trigger"]])
+PASS  Select creative: hero shows its title, description and projects  (Creative Studio | Visual ideas and creative products. | Wallpapers)
+PASS  Select creative: focus moves to the station heading  (station-creative-panel-title)
+PASS  Select creative: camera moves the scene, header untouched  (matrix(1.09, 0, 0, 1.09, 74.2006, 9.86185))
+PASS  Select creative: no image edge exposed  ({"left":-0.44,"top":-31.9,"right":1796.85,"bottom":979.62,"gap":-0.44})
+PASS  Select creative: no in-scene label under the hero info
+PASS  Select creative: its connection is primary, others quieter but present  (own 0.85/1; others pulse 0.4/0.4/0.4/0.4, labels 0.6/0.6/0.6/0.6)
+PASS  Back to Lab (creative): enters "returning"  (creative)
+PASS  Back to Lab (creative): lab restored, focus back on the station trigger  (null none visible/1 station-creative-trigger)
+PASS  Select experience: becomes the single selected station  (["experience",1,["station-experience-trigger"]])
+PASS  Select experience: hero shows its title, description and projects  (Experience | Building and maintaining real-world software. | Koreez)
+PASS  Select experience: focus moves to the station heading  (station-experience-panel-title)
+PASS  Select experience: camera moves the scene, header untouched  (matrix(1.03, 0, 0, 1.03, -24.7335, 0))
+PASS  Select experience: no image edge exposed  ({"left":-49.91,"top":-13.92,"right":1648.45,"bottom":941.92,"gap":-0.45})
+PASS  Select experience: no in-scene label under the hero info
+PASS  Select experience: its connection is primary, others quieter but present  (own 0.85/1; others pulse 0.4/0.4/0.4/0.4, labels 0.6/0.6/0.6/0.6)
+PASS  Back to Lab (experience): enters "returning"  (experience)
+PASS  Back to Lab (experience): lab restored, focus back on the station trigger  (null none visible/1 station-experience-trigger)
+PASS  Project AriMap: scene chip selects educational + project, hero shows its approved summary  (educational/arimap | An interactive geography-learning game built around exploration, lessons, and challenges.)
+PASS  Project AriMap: Open project says the page is coming soon (no link)  ({"disabled":"true","desc":"Project page Coming soon"})
+PASS  Project AriMap: selecting it again clears it (station stays)
+PASS  Project AriMap: hero name selects it
+PASS  Project Armat: scene chip selects educational + project, hero shows its approved summary  (educational/armat | A multilingual platform for discovering Armenian history, literature, culture, and places.)
+PASS  Project Armat: Open project says the page is coming soon (no link)  ({"disabled":"true","desc":"Project page Coming soon"})
+PASS  Project Armat: selecting it again clears it (station stays)
+PASS  Project Armat: hero name selects it
+PASS  Project SQLOrbit: scene chip selects engineering + project, hero shows its approved summary  (engineering/sqlorbit | A Node.js developer tool for identifying slow, repeated, and N+1 SQL queries.)
+PASS  Project SQLOrbit: Open project says the page is coming soon (no link)  ({"disabled":"true","desc":"Project page Coming soon"})
+PASS  Project SQLOrbit: selecting it again clears it (station stays)
+PASS  Project SQLOrbit: hero name selects it
+PASS  Project TableRefresh: scene chip selects engineering + project, hero shows its approved summary  (engineering/tablerefresh | A WordPress plugin that synchronizes TablePress tables with CSV files and Google Sheets.)
+PASS  Project TableRefresh: Open project says the page is coming soon (no link)  ({"disabled":"true","desc":"Project page Coming soon"})
+PASS  Project TableRefresh: selecting it again clears it (station stays)
+PASS  Project TableRefresh: hero name selects it
+PASS  Project AZIZ: scene chip selects playground + project, hero shows its approved summary  (playground/aziz | A party-game app designed around creative questions, unexpected answers, and group play.)
+PASS  Project AZIZ: Open project says the page is coming soon (no link)  ({"disabled":"true","desc":"Project page Coming soon"})
+PASS  Project AZIZ: selecting it again clears it (station stays)
+PASS  Project AZIZ: hero name selects it
+PASS  Project Wallpapers: scene chip selects creative + project, hero shows its approved summary  (creative/wallpapers | A collection of message-driven wallpapers combining typography, visual storytelling, and design.)
+PASS  Project Wallpapers: Open project says the page is coming soon (no link)  ({"disabled":"true","desc":"Project page Coming soon"})
+PASS  Project Wallpapers: selecting it again clears it (station stays)
+PASS  Project Wallpapers: hero name selects it
+PASS  Project Koreez: scene chip selects experience + project, hero shows its approved summary  (experience/koreez | An educational platform involving web applications, backend services, and production systems.)
+PASS  Project Koreez: Open project says the page is coming soon (no link)  ({"disabled":"true","desc":"Project page Coming soon"})
+PASS  Project Koreez: selecting it again clears it (station stays)
+PASS  Project Koreez: hero name selects it
+PASS  Project selected: no in-scene label under the hero info
+PASS  Keyboard educational: Tab reaches the station
+PASS  Keyboard educational: focus indicator visible
+PASS  Keyboard educational: Enter selects it and focuses the station heading  (station-educational-panel-title)
+PASS  Keyboard educational: Tab reaches the first project
+PASS  Keyboard educational: Space selects AriMap  (arimap AriMap)
+PASS  Keyboard educational: Tab reaches Open project
+PASS  Keyboard educational: Open project announces it is coming soon  (The AriMap project page is coming soon.)
+PASS  Keyboard educational: Tab reaches Back to Lab
+PASS  Keyboard educational: Escape returns, clears the project, restores focus  (null null station-educational-trigger)
+PASS  Keyboard engineering: Tab reaches the station
+PASS  Keyboard engineering: focus indicator visible
+PASS  Keyboard engineering: Enter selects it and focuses the station heading  (station-engineering-panel-title)
+PASS  Keyboard engineering: Tab reaches the first project
+PASS  Keyboard engineering: Space selects SQLOrbit  (sqlorbit SQLOrbit)
+PASS  Keyboard engineering: Tab reaches Open project
+PASS  Keyboard engineering: Open project announces it is coming soon  (The SQLOrbit project page is coming soon.)
+PASS  Keyboard engineering: Tab reaches Back to Lab
+PASS  Keyboard engineering: Escape returns, clears the project, restores focus  (null null station-engineering-trigger)
+PASS  Keyboard playground: Tab reaches the station
+PASS  Keyboard playground: focus indicator visible
+PASS  Keyboard playground: Enter selects it and focuses the station heading  (station-playground-panel-title)
+PASS  Keyboard playground: Tab reaches the first project
+PASS  Keyboard playground: Space selects AZIZ  (aziz AZIZ)
+PASS  Keyboard playground: Tab reaches Open project
+PASS  Keyboard playground: Open project announces it is coming soon  (The AZIZ project page is coming soon.)
+PASS  Keyboard playground: Tab reaches Back to Lab
+PASS  Keyboard playground: Escape returns, clears the project, restores focus  (null null station-playground-trigger)
+PASS  Keyboard creative: Tab reaches the station
+PASS  Keyboard creative: focus indicator visible
+PASS  Keyboard creative: Enter selects it and focuses the station heading  (station-creative-panel-title)
+PASS  Keyboard creative: Tab reaches the first project
+PASS  Keyboard creative: Space selects Wallpapers  (wallpapers Wallpapers)
+PASS  Keyboard creative: Tab reaches Open project
+PASS  Keyboard creative: Open project announces it is coming soon  (The Wallpapers project page is coming soon.)
+PASS  Keyboard creative: Tab reaches Back to Lab
+PASS  Keyboard creative: Escape returns, clears the project, restores focus  (null null station-creative-trigger)
+PASS  Keyboard experience: Tab reaches the station
+PASS  Keyboard experience: focus indicator visible
+PASS  Keyboard experience: Enter selects it and focuses the station heading  (station-experience-panel-title)
+PASS  Keyboard experience: Tab reaches the first project
+PASS  Keyboard experience: Space selects Koreez  (koreez Koreez)
+PASS  Keyboard experience: Tab reaches Open project
+PASS  Keyboard experience: Open project announces it is coming soon  (The Koreez project page is coming soon.)
+PASS  Keyboard experience: Tab reaches Back to Lab
+PASS  Keyboard experience: Escape returns, clears the project, restores focus  (null null station-experience-trigger)
+PASS  Keyboard: Enter on the selected station's title returns to the lab
+PASS  Switch: selecting another station replaces the selection
+PASS  Switch: platform click selects; the previous project is cleared
+PASS  Switch: clicking the selected platform keeps it selected
+PASS  Toggle: clicking the selected station's title returns to the lab
+PASS  Invariants: one station, one panel, project within its station, at every step  (select educational: educational/null panels 1 expanded station-educational-trigger | switch to playground: playground/null panels 1 expanded station-playground-trigger | project AZIZ: playground/aziz panels 1 expanded station-playground-trigger | platform click creative: creative/null panels 1 expanded station-creative-trigger | platform click creative again: creative/null panels 1 expanded station-creative-trigger | scene chip Koreez: experience/koreez panels 1 expanded station-experience-trigger | title creative: creative/null panels 1 expanded station-creative-trigger | title creative again: null/null panels 0 expanded )
+PASS  Camera 1366x768: no image edge exposed for any station  (worst gap 0 px)
+PASS  Camera 1366x768: no in-scene label under the hero info
+PASS  Camera 1920x1080: no image edge exposed for any station  (worst gap 0 px)
+PASS  Camera 1920x1080: no in-scene label under the hero info
+PASS  Camera 1280x1024: no image edge exposed for any station  (worst gap 0 px)
+PASS  Camera 2560x1080: no image edge exposed for any station  (worst gap 0 px)
+PASS  Camera 1024x1366: no image edge exposed for any station  (worst gap 0 px)
+PASS  Reduced motion: no running animations, effects removed  (0 running, fx=none,none)
+PASS  Reduced motion educational: selected with no camera move or lift, info reachable  (none visible/1 station-educational-panel-title)
+PASS  Reduced motion educational: Escape returns
+PASS  Reduced motion engineering: selected with no camera move or lift, info reachable  (none visible/1 station-engineering-panel-title)
+PASS  Reduced motion engineering: Escape returns
+PASS  Reduced motion playground: selected with no camera move or lift, info reachable  (none visible/1 station-playground-panel-title)
+PASS  Reduced motion playground: Escape returns
+PASS  Reduced motion creative: selected with no camera move or lift, info reachable  (none visible/1 station-creative-panel-title)
+PASS  Reduced motion creative: Escape returns
+PASS  Reduced motion experience: selected with no camera move or lift, info reachable  (none visible/1 station-experience-panel-title)
+PASS  Reduced motion experience: Escape returns
+PASS  Reduced motion: hover brightens without lifting  (none shadow 0.7/none light 1)
+PASS  Touch: tapping a station title selects it (no hover needed)  (educational visible/1)
+PASS  Touch: tapping a project selects it
+PASS  Touch: Back to Lab returns and leaves no hover state behind  (null null)
+PASS  Deep link /?station=educational: educational selected, its info shown, no project  (educational/null Educational visible/1)
+PASS  Deep link /?station=educational: camera framed on load, without animating  (matrix(1.09, 0, 0, 1.09, -2.14988, 41.76); transitions: none)
+PASS  Deep link /?station=educational: focus not moved on load  (Skip to lab stationsArsen ManukyanSoftwa)
+PASS  Deep link /?station=educational: URL kept, no history entry added  (/?station=educational push 0)
+PASS  Deep link /?station=educational&project=arimap: AriMap selected with its approved summary  (educational/arimap | An interactive geography-learning game built around exploration, lessons, and challenges. | /?station=educational&project=arimap)
+PASS  Deep link /?station=educational&project=armat: Armat selected with its approved summary  (educational/armat | A multilingual platform for discovering Armenian history, literature, culture, and places. | /?station=educational&project=armat)
+PASS  Deep link /?station=engineering: engineering selected, its info shown, no project  (engineering/null Engineering visible/1)
+PASS  Deep link /?station=engineering: camera framed on load, without animating  (matrix(1.09, 0, 0, 1.09, 74.2006, 32.7857); transitions: none)
+PASS  Deep link /?station=engineering: focus not moved on load  (Skip to lab stationsArsen ManukyanSoftwa)
+PASS  Deep link /?station=engineering: URL kept, no history entry added  (/?station=engineering push 0)
+PASS  Deep link /?station=engineering&project=sqlorbit: SQLOrbit selected with its approved summary  (engineering/sqlorbit | A Node.js developer tool for identifying slow, repeated, and N+1 SQL queries. | /?station=engineering&project=sqlorbit)
+PASS  Deep link /?station=engineering&project=tablerefresh: TableRefresh selected with its approved summary  (engineering/tablerefresh | A WordPress plugin that synchronizes TablePress tables with CSV files and Google Sheets. | /?station=engineering&project=tablerefresh)
+PASS  Deep link /?station=playground: playground selected, its info shown, no project  (playground/null Playground visible/1)
+PASS  Deep link /?station=playground: camera framed on load, without animating  (matrix(1.09, 0, 0, 1.09, -14.7928, 41.3853); transitions: none)
+PASS  Deep link /?station=playground: focus not moved on load  (Skip to lab stationsArsen ManukyanSoftwa)
+PASS  Deep link /?station=playground: URL kept, no history entry added  (/?station=playground push 0)
+PASS  Deep link /?station=playground&project=aziz: AZIZ selected with its approved summary  (playground/aziz | A party-game app designed around creative questions, unexpected answers, and group play. | /?station=playground&project=aziz)
+PASS  Deep link /?station=creative: creative selected, its info shown, no project  (creative/null Creative Studio visible/1)
+PASS  Deep link /?station=creative: camera framed on load, without animating  (matrix(1.09, 0, 0, 1.09, 74.2006, 9.86185); transitions: none)
+PASS  Deep link /?station=creative: focus not moved on load  (Skip to lab stationsArsen ManukyanSoftwa)
+PASS  Deep link /?station=creative: URL kept, no history entry added  (/?station=creative push 0)
+PASS  Deep link /?station=creative&project=wallpapers: Wallpapers selected with its approved summary  (creative/wallpapers | A collection of message-driven wallpapers combining typography, visual storytelling, and design. | /?station=creative&project=wallpapers)
+PASS  Deep link /?station=experience: experience selected, its info shown, no project  (experience/null Experience visible/1)
+PASS  Deep link /?station=experience: camera framed on load, without animating  (matrix(1.03, 0, 0, 1.03, -24.7335, 0); transitions: none)
+PASS  Deep link /?station=experience: focus not moved on load  (Skip to lab stationsArsen ManukyanSoftwa)
+PASS  Deep link /?station=experience: URL kept, no history entry added  (/?station=experience push 0)
+PASS  Deep link /?station=experience&project=koreez: Koreez selected with its approved summary  (experience/koreez | An educational platform involving web applications, backend services, and production systems. | /?station=experience&project=koreez)
+PASS  Deep links: no console errors or hydration warnings
+PASS  Invalid URL /?station=nope: normalized to / in place  (null/null / push 0)
+PASS  Invalid URL /?station=nope&project=sqlorbit: normalized to / in place  (null/null / push 0)
+PASS  Invalid URL /?project=sqlorbit: normalized to / in place  (null/null / push 0)
+PASS  Invalid URL /?project=nope: normalized to / in place  (null/null / push 0)
+PASS  Invalid URL /?station=&project=: normalized to / in place  (null/null / push 0)
+PASS  Invalid URL /?station=__proto__&project=constructor: normalized to / in place  (null/null / push 0)
+PASS  Invalid URL /?station=engineering&project=arimap: normalized to /?station=engineering in place  (engineering/null /?station=engineering push 0)
+PASS  Invalid URL /?station=playground&project=nope: normalized to /?station=playground in place  (playground/null /?station=playground push 0)
+PASS  Invalid URL /?station=Engineering&project=SQLOrbit: normalized to /?station=engineering&project=sqlorbit in place  (engineering/sqlorbit /?station=engineering&project=sqlorbit push 0)
+PASS  Invalid URL /?project=koreez&station=experience: normalized to /?station=experience&project=koreez in place  (experience/koreez /?station=experience&project=koreez push 0)
+PASS  Invalid URL /?station=creative&station=experience: normalized to /?station=creative in place  (creative/null /?station=creative push 0)
+PASS  Invalid URL /?station=educational&project=armat&project=arimap: normalized to /?station=educational&project=armat in place  (educational/armat /?station=educational&project=armat push 0)
+PASS  Invalid URL /?ref=share&station=educational: normalized to /?station=educational&ref=share in place  (educational/null /?station=educational&ref=share push 0)
+PASS  Invalid URLs: no console errors or hydration warnings
+PASS  History: selecting a station pushes ?station=  (/?station=engineering)
+PASS  History: selecting a project pushes &project=  (/?station=engineering&project=sqlorbit)
+PASS  History: hover and focus add no entries  (/?station=engineering&project=sqlorbit push 2)
+PASS  History: switching station pushes it (project cleared)
+PASS  History: clearing a project pushes the station alone  (/?station=playground)
+PASS  History: one entry per selection change  (5 entries)
+PASS  Back: restores the previous entry (AZIZ)
+PASS  Back: restores Engineering + SQLOrbit with its summary  (engineering/sqlorbit)
+PASS  Back: restores Engineering alone
+PASS  Back: returns to the lab, camera home, focus back on the station  (/ none station-engineering-trigger)
+PASS  Forward: re-selects Engineering
+PASS  Forward: re-selects SQLOrbit
+PASS  Forward: reaches the newest entry
+PASS  History: Back/Forward add no entries and never reload the page  (push 5, length 7)
+PASS  History: selections and Back/Forward never fetch from the server
+PASS  Back/Forward: no console errors or hydration warnings
+PASS  Deep link, Back to Lab: restores / with the lab at rest and focus on the station  (/ none station-creative-trigger)
+PASS  Deep link, Back to Lab, then Back: the shared link's state returns
+PASS  Deep link: Escape returns to / too
+PASS  Deep link, keyboard: Escape returns to / and focuses the station  (/ station-engineering-trigger)
+PASS  Deep link, keyboard: the first Tab starts at the top of the page  (Skip to lab stations)
+PASS  Deep link, keyboard: Tab reaches Playground
+PASS  Deep link, keyboard: Enter selects it and updates the URL  (/?station=playground station-playground-panel-title)
+PASS  Deep link, keyboard: Tab reaches AZIZ
+PASS  Deep link, keyboard: Space selects the project and updates the URL  (/?station=playground&project=aziz AZIZ)
+PASS  Deep link, keyboard: Escape restores /  (/ station-playground-trigger)
+PASS  Return to Lab / keyboard: no console errors or hydration warnings
+PASS  Reduced motion, deep link: project shown, no camera move, focus untouched  (none visible/1 0 running)
+PASS  Reduced motion: selecting updates the URL, camera stays put
+PASS  Reduced motion: Back returns to the lab, focus to the station  (/ null station-educational-trigger)
+PASS  Reduced motion deep links: no console errors or hydration warnings
+PASS  Touch, deep link: Educational + AriMap shown
+PASS  Touch, deep link: tapping Back to Lab restores /  (/ null)
+PASS  Touch deep links: no console errors or hydration warnings
+FAIL  Idle matches approved baseline (max <= 4)  (mean 1.1156, max 72, >2: 100457, >12: 2277)
+PASS  Return from educational matches idle (max <= 4)  (mean 0.0000, max 0, >2: 0, >12: 0)
+PASS  Select educational visibly changes the scene  (mean 46.4196, max 255, >2: 1506243, >12: 1136640)
+PASS  Return from engineering matches idle (max <= 4)  (mean 0.0000, max 0, >2: 0, >12: 0)
+PASS  Select engineering visibly changes the scene  (mean 49.4562, max 255, >2: 1497258, >12: 1162711)
+PASS  Return from playground matches idle (max <= 4)  (mean 0.0000, max 0, >2: 0, >12: 0)
+PASS  Select playground visibly changes the scene  (mean 47.2232, max 253, >2: 1504921, >12: 1150203)
+PASS  Return from creative matches idle (max <= 4)  (mean 0.0000, max 0, >2: 0, >12: 0)
+PASS  Select creative visibly changes the scene  (mean 49.9008, max 255, >2: 1504786, >12: 1169529)
+PASS  Return from experience matches idle (max <= 4)  (mean 0.0000, max 0, >2: 0, >12: 0)
+PASS  Select experience visibly changes the scene  (mean 42.4286, max 251, >2: 1490889, >12: 1084522)
+PASS  Deep link ?station=engineering matches selecting it, outside the in-scene chips (max <= 4)  (mean 0.0006, max 3, >2: 35, >12: 0)
+PASS  Deep link &project=sqlorbit matches selecting it, outside the in-scene chips (max <= 4)  (mean 0.0003, max 1, >2: 0, >12: 0)
+FAIL  Invalid deep link shows the default lab (max <= 4)  (mean 0.8057, max 72, >2: 41035, >12: 996)
+PASS  deeplink-history-return: returning to / matches idle (max <= 4)  (mean 0.0000, max 0, >2: 0, >12: 0)
+PASS  deeplink-return: returning to / matches idle (max <= 4)  (mean 0.0000, max 0, >2: 0, >12: 0)
+PASS  No persistent artifacts after a long session (max <= 4)  (mean 0.0000, max 0, >2: 0, >12: 0)
+FAIL  Reduced-motion idle matches baseline (max <= 4)  (mean 1.1156, max 72, >2: 100457, >12: 2277)
+PASS  Lift: nothing outside the station region and its connection changes on hover  (mean 0.0000, max 0, >2: 0, >12: 0)
+PASS  Lift: hover return matches idle (max <= 4)  (mean 0.0000, max 1, >2: 0, >12: 0)
+PASS  Educational hover visibly boosts the orbit  (mean 0.0958, max 61, >2: 11235, >12: 3955)

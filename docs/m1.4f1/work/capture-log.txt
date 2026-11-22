@@ -1,0 +1,256 @@
+{
+ "base": "http://localhost:3002",
+ "camera": {
+  "x": -0.4453125,
+  "y": 0,
+  "k": 0.9861786034688995
+ },
+ "v2_layers": {
+  "educational": {
+   "loaded": true,
+   "size": "1672x941",
+   "blend": "normal",
+   "src": "/scene/v2/m14f1/educational.png"
+  },
+  "educational-light": {
+   "loaded": true,
+   "size": "1672x941",
+   "blend": "plus-lighter",
+   "src": "/scene/v2/m14f1/educational-light.png"
+  },
+  "playground": {
+   "loaded": true,
+   "size": "1672x941",
+   "blend": "normal",
+   "src": "/scene/v2/stations/playground.png"
+  },
+  "engineering": {
+   "loaded": true,
+   "size": "1672x941",
+   "blend": "normal",
+   "src": "/scene/v2/m14f1/engineering.png"
+  },
+  "engineering-light": {
+   "loaded": true,
+   "size": "1672x941",
+   "blend": "plus-lighter",
+   "src": "/scene/v2/m14f1/engineering-light.png"
+  },
+  "creative": {
+   "loaded": true,
+   "size": "1672x941",
+   "blend": "normal",
+   "src": "/scene/v2/m14f/creative.png"
+  },
+  "creative-light": {
+   "loaded": true,
+   "size": "1672x941",
+   "blend": "plus-lighter",
+   "src": "/scene/v2/m14f/creative-light.png"
+  },
+  "experience": {
+   "loaded": true,
+   "size": "1672x941",
+   "blend": "normal",
+   "src": "/scene/v2/m14f/experience.png"
+  },
+  "experience-light": {
+   "loaded": true,
+   "size": "1672x941",
+   "blend": "plus-lighter",
+   "src": "/scene/v2/m14f/experience-light.png"
+  }
+ },
+ "rest": {
+  "hover": null,
+  "selected": null,
+  "url": "/lab-v2",
+  "lift_px": 0,
+  "icons": {
+   "educational": 1,
+   "engineering": 1,
+   "playground": 0,
+   "creative": 1,
+   "experience": 1
+  }
+ },
+ "hover_engineering": {
+  "hover": "engineering",
+  "selected": null,
+  "url": "/lab-v2",
+  "lift_px": 0,
+  "icons": {
+   "educational": 1,
+   "engineering": 1,
+   "playground": 0,
+   "creative": 1,
+   "experience": 1
+  }
+ },
+ "hover_educational": {
+  "hover": "educational",
+  "selected": null,
+  "url": "/lab-v2",
+  "lift_px": 0,
+  "icons": {
+   "educational": 1,
+   "engineering": 1,
+   "playground": 0,
+   "creative": 1,
+   "experience": 1
+  }
+ },
+ "playground_lifted": {
+  "hover": "playground",
+  "selected": null,
+  "url": "/lab-v2",
+  "lift_px": -18,
+  "icons": {
+   "educational": 1,
+   "engineering": 1,
+   "playground": 0,
+   "creative": 1,
+   "experience": 1
+  }
+ },
+ "v2_errors": [],
+ "keyboard": {
+  "educational": 9,
+  "educational_focus": {
+   "hover": "educational",
+   "selected": null,
+   "url": "/lab-v2",
+   "lift_px": 0,
+   "icons": {
+    "educational": 1,
+    "engineering": 1,
+    "playground": 0,
+    "creative": 1,
+    "experience": 1
+   }
+  },
+  "educational_selected": {
+   "hover": null,
+   "selected": "educational",
+   "url": "/lab-v2?station=educational",
+   "lift_px": 0,
+   "icons": {
+    "educational": 1,
+    "engineering": 1,
+    "playground": 0,
+    "creative": 1,
+    "experience": 1
+   }
+  },
+  "educational_after_escape": {
+   "hover": "educational",
+   "selected": null,
+   "url": "/lab-v2",
+   "lift_px": 0,
+   "icons": {
+    "educational": 1,
+    "engineering": 1,
+    "playground": 0,
+    "creative": 1,
+    "experience": 1
+   }
+  },
+  "engineering": 12,
+  "engineering_focus": {
+   "hover": "engineering",
+   "selected": null,
+   "url": "/lab-v2",
+   "lift_px": 0,
+   "icons": {
+    "educational": 1,
+    "engineering": 1,
+    "playground": 0,
+    "creative": 1,
+    "experience": 1
+   }
+  },
+  "engineering_selected": {
+   "hover": null,
+   "selected": "engineering",
+   "url": "/lab-v2?station=engineering",
+   "lift_px": 0,
+   "icons": {
+    "educational": 1,
+    "engineering": 1,
+    "playground": 0,
+    "creative": 1,
+    "experience": 1
+   }
+  },
+  "engineering_after_escape": {
+   "hover": "engineering",
+   "selected": null,
+   "url": "/lab-v2",
+   "lift_px": 0,
+   "icons": {
+    "educational": 1,
+    "engineering": 1,
+    "playground": 0,
+    "creative": 1,
+    "experience": 1
+   }
+  },
+  "errors": []
+ },
+ "deep_link_engineering": {
+  "hover": null,
+  "selected": "engineering",
+  "url": "/lab-v2?station=engineering",
+  "lift_px": 0,
+  "icons": {
+   "educational": 1,
+   "engineering": 1,
+   "playground": 0,
+   "creative": 1,
+   "experience": 1
+  },
+  "errors": []
+ },
+ "deep_link_educational": {
+  "hover": null,
+  "selected": "educational",
+  "url": "/lab-v2?station=educational",
+  "lift_px": 0,
+  "icons": {
+   "educational": 1,
+   "engineering": 1,
+   "playground": 0,
+   "creative": 1,
+   "experience": 1
+  },
+  "errors": []
+ },
+ "reduced_motion_educational": {
+  "hover": "educational",
+  "selected": null,
+  "url": "/lab-v2",
+  "lift_px": 0,
+  "icons": {
+   "educational": 1,
+   "engineering": 1,
+   "playground": 0,
+   "creative": 1,
+   "experience": 1
+  },
+  "errors": []
+ },
+ "homepage": {
+  "v2_requests": 0,
+  "hover": null,
+  "selected": null,
+  "url": "/",
+  "lift_px": 0,
+  "icons": {
+   "educational": 1,
+   "engineering": 1,
+   "playground": 1,
+   "creative": 1,
+   "experience": 1
+  }
+ }
+}

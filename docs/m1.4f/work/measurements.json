@@ -1,0 +1,165 @@
+{
+ "creative": {
+  "base (approved, measured on the plate)": {
+   "base_w": 402,
+   "cx": 298.5,
+   "bottom": 773,
+   "depth": 73
+  },
+  "base depth / width: approved vs generated": [
+   0.182,
+   0.089
+  ],
+  "station extent [x0, y0, x1, y1]: generated (before)": [
+   95,
+   507,
+   501,
+   773
+  ],
+  "station extent [x0, y0, x1, y1]: recovered (after) = approved": [
+   98,
+   509,
+   501,
+   779
+  ],
+  "stone, generated (before)": {
+   "px": 4838,
+   "mean_rgb": [
+    88.4,
+    47.4,
+    16.5
+   ],
+   "luminance": 56.1,
+   "contrast_std": 32.4,
+   "warmth_r_minus_b": 71.9,
+   "saturation": 81.4
+  },
+  "stone, recovered (after)": {
+   "px": 4987,
+   "mean_rgb": [
+    62.1,
+    36.7,
+    18.2
+   ],
+   "luminance": 42.2,
+   "contrast_std": 19.8,
+   "warmth_r_minus_b": 43.9,
+   "saturation": 71.3
+  }
+ },
+ "experience": {
+  "base (approved, measured on the plate)": {
+   "base_w": 446,
+   "cx": 1434.5,
+   "bottom": 775,
+   "depth": 85
+  },
+  "base depth / width: approved vs generated": [
+   0.191,
+   0.105
+  ],
+  "station extent [x0, y0, x1, y1]: generated (before)": [
+   1211,
+   517,
+   1658,
+   775
+  ],
+  "station extent [x0, y0, x1, y1]: recovered (after) = approved": [
+   1201,
+   513,
+   1662,
+   784
+  ],
+  "stone, generated (before)": {
+   "px": 8896,
+   "mean_rgb": [
+    96.9,
+    52.5,
+    13.6
+   ],
+   "luminance": 61.4,
+   "contrast_std": 40.3,
+   "warmth_r_minus_b": 83.3,
+   "saturation": 86.0
+  },
+  "stone, recovered (after)": {
+   "px": 9626,
+   "mean_rgb": [
+    73.3,
+    40.1,
+    15.2
+   ],
+   "luminance": 47.2,
+   "contrast_std": 30.8,
+   "warmth_r_minus_b": 58.1,
+   "saturation": 79.3
+  }
+ },
+ "other stations' stone (unchanged)": {
+  "educational": {
+   "px": 6470,
+   "mean_rgb": [
+    68.3,
+    48.2,
+    38.9
+   ],
+   "luminance": 53.1,
+   "contrast_std": 19.9,
+   "warmth_r_minus_b": 29.4,
+   "saturation": 43.7
+  },
+  "engineering": {
+   "px": 7025,
+   "mean_rgb": [
+    83.4,
+    45.1,
+    19.4
+   ],
+   "luminance": 53.6,
+   "contrast_std": 28.8,
+   "warmth_r_minus_b": 64.0,
+   "saturation": 77.5
+  },
+  "playground": {
+   "px": 6544,
+   "mean_rgb": [
+    88.2,
+    50.2,
+    24.7
+   ],
+   "luminance": 58.7,
+   "contrast_std": 29.3,
+   "warmth_r_minus_b": 63.5,
+   "saturation": 72.3
+  },
+  "hub (approved, M1.4E)": {
+   "px": 7917,
+   "mean_rgb": [
+    114.1,
+    79.2,
+    60.0
+   ],
+   "luminance": 87.4,
+   "contrast_std": 48.8,
+   "warmth_r_minus_b": 54.1,
+   "saturation": 49.9
+  }
+ },
+ "homepage: now vs M1.4E.1 (whole frame)": {
+  "mean": 0.005,
+  "px_over_16": 135,
+  "max": 32
+ },
+ "playground at rest: M1.4F vs M1.4E.3 (station silhouette, screen excluded)": {
+  "px": 39327,
+  "mean": 0.0,
+  "px_over_16": 0,
+  "max": 0
+ },
+ "playground lifted: M1.4F vs M1.4E.3": {
+  "px": 40303,
+  "mean": 0.0,
+  "px_over_16": 0,
+  "max": 0
+ }
+}

@@ -1,0 +1,181 @@
+{
+ "station": "educational",
+ "arriveMs": 480,
+ "headAtStationMs": 420,
+ "platformStartsMs": 480,
+ "glowStartsMs": 620,
+ "liftStartsMs": null,
+ "platformFullMs": 700,
+ "rows": [
+  {
+   "t": 0,
+   "hover": "educational",
+   "glow": 0,
+   "platform": 0,
+   "surge": 1,
+   "lift": null,
+   "running": 0,
+   "head": -0.39
+  },
+  {
+   "t": 100,
+   "hover": "educational",
+   "glow": 0,
+   "platform": 0,
+   "surge": 1,
+   "lift": null,
+   "running": 0,
+   "head": -0.098
+  },
+  {
+   "t": 200,
+   "hover": "educational",
+   "glow": 0,
+   "platform": 0,
+   "surge": 1,
+   "lift": null,
+   "running": 0,
+   "head": 0.603
+  },
+  {
+   "t": 300,
+   "hover": "educational",
+   "glow": 0,
+   "platform": 0,
+   "surge": 1,
+   "lift": null,
+   "running": 0,
+   "head": 0.89
+  },
+  {
+   "t": 400,
+   "hover": "educational",
+   "glow": 0,
+   "platform": 0,
+   "surge": 1,
+   "lift": null,
+   "running": 0,
+   "head": 0.987
+  },
+  {
+   "t": 500,
+   "hover": "educational",
+   "glow": 0,
+   "platform": 0.139,
+   "surge": 1,
+   "lift": null,
+   "running": 0,
+   "head": 1
+  },
+  {
+   "t": 600,
+   "hover": "educational",
+   "glow": 0.011,
+   "platform": 0.636,
+   "surge": 1,
+   "lift": null,
+   "running": 0,
+   "head": 1
+  },
+  {
+   "t": 700,
+   "hover": "educational",
+   "glow": 0.206,
+   "platform": 0.747,
+   "surge": 1,
+   "lift": null,
+   "running": 0,
+   "head": 1
+  },
+  {
+   "t": 800,
+   "hover": "educational",
+   "glow": 0.485,
+   "platform": 0.75,
+   "surge": 1,
+   "lift": null,
+   "running": 0,
+   "head": 1
+  },
+  {
+   "t": 900,
+   "hover": "educational",
+   "glow": 0.66,
+   "platform": 0.75,
+   "surge": 1,
+   "lift": null,
+   "running": 0,
+   "head": 1
+  },
+  {
+   "t": 1000,
+   "hover": "educational",
+   "glow": 0.761,
+   "platform": 0.75,
+   "surge": 1,
+   "lift": null,
+   "running": 0,
+   "head": 1
+  },
+  {
+   "t": 1100,
+   "hover": "educational",
+   "glow": 0.817,
+   "platform": 0.75,
+   "surge": 1,
+   "lift": null,
+   "running": 0,
+   "head": 1
+  },
+  {
+   "t": 1200,
+   "hover": "educational",
+   "glow": 0.844,
+   "platform": 0.75,
+   "surge": 1,
+   "lift": null,
+   "running": 0,
+   "head": 1
+  },
+  {
+   "t": 1300,
+   "hover": "educational",
+   "glow": 0.85,
+   "platform": 0.75,
+   "surge": 1,
+   "lift": null,
+   "running": 0,
+   "head": 1
+  },
+  {
+   "t": 1400,
+   "hover": "educational",
+   "glow": 0.85,
+   "platform": 0.75,
+   "surge": 1,
+   "lift": null,
+   "running": 0,
+   "head": 1
+  },
+  {
+   "t": 1500,
+   "hover": "educational",
+   "glow": 0.85,
+   "platform": 0.75,
+   "surge": 1,
+   "lift": null,
+   "running": 0,
+   "head": 1
+  },
+  {
+   "t": 1600,
+   "hover": "educational",
+   "glow": 0.85,
+   "platform": 0.75,
+   "surge": 1,
+   "lift": null,
+   "running": 0,
+   "head": 1
+  }
+ ]
+}

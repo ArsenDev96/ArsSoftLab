@@ -1,0 +1,16 @@
+{
+ "strict": {
+  "/scene/layers25d/playground/background.png": "docs/m1.4a/preview/strict-stage/public/scene/layers25d/playground/background.png",
+  "/scene/layers25d/playground/floor.png": "docs/m1.4a/preview/strict-stage/public/scene/layers25d/playground/floor.png",
+  "/scene/layers25d/playground/object.png": "docs/m1.4a/preview/strict-stage/public/scene/layers25d/playground/object.png",
+  "/scene/layers25d/playground/contact-unlit.png": "docs/m1.4a/preview/strict-stage/public/scene/layers25d/playground/contact-unlit.png"
+ },
+ "full": {
+  "/scene/lab-plate.webp": "docs/m1.4a/preview/full/scene/lab-plate.png",
+  "/scene/layers25d/environment-corrections.png": "docs/m1.4a/preview/full/scene/layers25d/environment-corrections.png",
+  "/scene/layers25d/playground/background.png": "docs/m1.4a/preview/full/scene/layers25d/playground/background.png",
+  "/scene/layers25d/playground/floor.png": "docs/m1.4a/preview/full/scene/layers25d/playground/floor.png",
+  "/scene/layers25d/playground/object.png": "docs/m1.4a/preview/full/scene/layers25d/playground/object.png",
+  "/scene/layers25d/playground/contact-unlit.png": "docs/m1.4a/preview/full/scene/layers25d/playground/contact-unlit.png"
+ }
+}

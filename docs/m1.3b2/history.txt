@@ -1,0 +1,15 @@
+select engineering: /?station=engineering -> engineering/null
+project SQLOrbit: /?station=engineering&project=sqlorbit -> engineering/sqlorbit
+switch to playground: /?station=playground -> playground/null
+project AZIZ: /?station=playground&project=aziz -> playground/aziz
+AZIZ again (clears): /?station=playground -> playground/null
+Back: /?station=playground&project=aziz -> playground/aziz
+Back: /?station=playground -> playground/null
+Back: /?station=engineering&project=sqlorbit -> engineering/sqlorbit
+Back: /?station=engineering -> engineering/null
+Back: / -> null/null
+Forward: /?station=engineering -> engineering/null
+Forward: /?station=engineering&project=sqlorbit -> engineering/sqlorbit
+Forward: /?station=playground -> playground/null
+Forward: /?station=playground&project=aziz -> playground/aziz
+Forward: /?station=playground -> playground/null

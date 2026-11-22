@@ -1,0 +1,29 @@
+{
+ "hub": {
+  "platform_px": 29920,
+  "soft_edge_px": 738,
+  "glyph_above_rim_px": 108,
+  "light_px": 9714,
+  "ring_light_px": 3435,
+  "reflection_px": 9276,
+  "bbox_alpha": [
+   640,
+   1040,
+   552,
+   655
+  ]
+ },
+ "table_cluster": {
+  "px": 65000,
+  "soft_edge_px": 811
+ },
+ "steam": {
+  "px": 4697,
+  "max_added_luminance": 120.0,
+  "mode": "plus-lighter"
+ },
+ "plant": {
+  "px": 20804,
+  "soft_px": 3485
+ }
+}

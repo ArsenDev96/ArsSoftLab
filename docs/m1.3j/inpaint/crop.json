@@ -1,0 +1,13 @@
+{
+ "crop": {
+  "x": 962,
+  "y": 432,
+  "w": 512,
+  "h": 192
+ },
+ "scale2x": true,
+ "floorMaskPx": 10676,
+ "floorMaskHiddenAtRestPx": 6698,
+ "contextReplacedPx": 49428,
+ "stationPxLeftInContext": 0
+}
