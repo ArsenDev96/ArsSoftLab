@@ -134,22 +134,3 @@ export function PlatformPower() {
     </>
   );
 }
-
-/**
- * The plate layer is shown only once the plate *and* the unpowered overlay
- * have decoded, so the strips never flash fully lit while the page loads.
- * Runs as the HTML is parsed (not after hydration); without scripts, or
- * after 4 s at the latest, the layer is shown anyway.
- */
-const GATE_JS = `(function(){var d=0,l=document.currentScript&&document.currentScript.parentElement;function show(){if(d)return;d=1;var s=document.createElement("style");s.textContent=".lab-plate-gate{opacity:1}";document.head.appendChild(s)}setTimeout(show,4000);if(!l)return show();Promise.all([].slice.call(l.querySelectorAll("img[data-gate]")).map(function(i){return new Promise(function(r){if(i.complete)r();else{i.addEventListener("load",r);i.addEventListener("error",r)}}).then(function(){return i.decode?i.decode().catch(function(){}):0})})).then(show)})();`;
-
-export function PlateGate() {
-  return (
-    <>
-      <script dangerouslySetInnerHTML={{ __html: GATE_JS }} />
-      <noscript>
-        <style>{`.lab-plate-gate{opacity:1}`}</style>
-      </noscript>
-    </>
-  );
-}

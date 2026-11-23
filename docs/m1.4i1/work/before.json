@@ -1,0 +1,1292 @@
+[
+ {
+  "scenario": "direct",
+  "log": [
+   {
+    "entry": "direct /",
+    "ok": true,
+    "ms": 1398,
+    "routeMs": null,
+    "path": "/",
+    "doc": "dpe9d8ne5bi",
+    "opacity": "1,1",
+    "gateImages": 29,
+    "loaded": 29,
+    "gateRules": 1,
+    "script": "(none)",
+    "timers": [
+     "pending"
+    ],
+    "decodes": 78,
+    "listeners": 160,
+    "observers": 2,
+    "errors": [],
+    "activation": {
+     "poweredMs": 970,
+     "arcade": "running",
+     "rafPerFrame": 1,
+     "restMs": 466,
+     "arcadeAfter": "off",
+     "rafAtRest": 0,
+     "errors": []
+    }
+   }
+  ]
+ },
+ {
+  "scenario": "direct",
+  "log": [
+   {
+    "entry": "direct /lab-v2",
+    "ok": true,
+    "ms": 1217,
+    "routeMs": null,
+    "path": "/lab-v2",
+    "doc": "ah3vns4jz58",
+    "opacity": "1,1",
+    "gateImages": 84,
+    "loaded": 84,
+    "gateRules": 1,
+    "script": "(none)",
+    "timers": [
+     "pending"
+    ],
+    "decodes": 84,
+    "listeners": 160,
+    "observers": 4,
+    "errors": [],
+    "activation": {
+     "poweredMs": 1152,
+     "arcade": "running",
+     "rafPerFrame": 1,
+     "restMs": 536,
+     "arcadeAfter": "off",
+     "rafAtRest": 0,
+     "errors": []
+    }
+   }
+  ]
+ },
+ {
+  "scenario": "client",
+  "log": [
+   {
+    "entry": "/nav-test-tmp -> / (client)",
+    "ok": false,
+    "ms": null,
+    "routeMs": 214,
+    "path": "/",
+    "doc": "oueubu1zuha",
+    "opacity": "0,0",
+    "gateImages": 29,
+    "loaded": 29,
+    "gateRules": 0,
+    "script": "(none)",
+    "timers": [],
+    "decodes": 113,
+    "listeners": 160,
+    "observers": 2,
+    "errors": [
+     "error: Encountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using templa"
+    ],
+    "experiment": {
+     "images": 29,
+     "decodable": 29,
+     "opacityBefore": "0,0",
+     "opacityAfterExecutingTheSameScript": "1,1"
+    }
+   },
+   {
+    "entry": "reload /",
+    "ok": true,
+    "ms": 966,
+    "routeMs": 214,
+    "path": "/",
+    "doc": "b1mmser2cos",
+    "opacity": "1,1",
+    "gateImages": 29,
+    "loaded": 29,
+    "gateRules": 1,
+    "script": "(none)",
+    "timers": [
+     "pending"
+    ],
+    "decodes": 78,
+    "listeners": 160,
+    "observers": 2,
+    "errors": []
+   }
+  ]
+ },
+ {
+  "scenario": "client",
+  "log": [
+   {
+    "entry": "/nav-test-tmp -> /lab-v2 (client)",
+    "ok": false,
+    "ms": null,
+    "routeMs": 454,
+    "path": "/lab-v2",
+    "doc": "chj5uwe9gzp",
+    "opacity": "0,0",
+    "gateImages": 84,
+    "loaded": 84,
+    "gateRules": 0,
+    "script": "(none)",
+    "timers": [],
+    "decodes": 0,
+    "listeners": 160,
+    "observers": 4,
+    "errors": [
+     "error: Encountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using templa"
+    ],
+    "experiment": {
+     "images": 84,
+     "decodable": 84,
+     "opacityBefore": "0,0",
+     "opacityAfterExecutingTheSameScript": "1,1"
+    }
+   },
+   {
+    "entry": "reload /lab-v2",
+    "ok": true,
+    "ms": 7347,
+    "routeMs": 454,
+    "path": "/lab-v2",
+    "doc": "jwoe8oegnno",
+    "opacity": "1,1",
+    "gateImages": 84,
+    "loaded": 84,
+    "gateRules": 1,
+    "script": "(none)",
+    "timers": [
+     "pending"
+    ],
+    "decodes": 84,
+    "listeners": 160,
+    "observers": 4,
+    "errors": []
+   }
+  ]
+ },
+ {
+  "scenario": "roundtrip from direct",
+  "log": [
+   {
+    "entry": "direct /",
+    "ok": true,
+    "ms": 5041,
+    "routeMs": null,
+    "path": "/",
+    "doc": "k7fskfubak",
+    "opacity": "1,1",
+    "gateImages": 29,
+    "loaded": 29,
+    "gateRules": 1,
+    "script": "(none)",
+    "timers": [
+     "pending"
+    ],
+    "decodes": 29,
+    "listeners": 152,
+    "observers": 1,
+    "errors": [],
+    "activation": {
+     "poweredMs": 1015,
+     "arcade": "running",
+     "rafPerFrame": 1,
+     "restMs": 468,
+     "arcadeAfter": "off",
+     "rafAtRest": 0,
+     "errors": []
+    }
+   },
+   {
+    "entry": "-> /lab-v2",
+    "ok": true,
+    "ms": 1336,
+    "routeMs": 1317,
+    "path": "/lab-v2",
+    "doc": "k7fskfubak",
+    "opacity": "1,1",
+    "gateImages": 84,
+    "loaded": 84,
+    "gateRules": 1,
+    "script": "(none)",
+    "timers": [
+     "fired"
+    ],
+    "decodes": 78,
+    "listeners": 160,
+    "observers": 4,
+    "errors": [
+     "error: Encountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using templa"
+    ],
+    "activation": {
+     "poweredMs": 1218,
+     "arcade": "running",
+     "rafPerFrame": 1,
+     "restMs": 599,
+     "arcadeAfter": "off",
+     "rafAtRest": 0,
+     "errors": []
+    }
+   },
+   {
+    "entry": "-> /",
+    "ok": true,
+    "ms": 2750,
+    "routeMs": 2341,
+    "path": "/",
+    "doc": "k7fskfubak",
+    "opacity": "1,1",
+    "gateImages": 29,
+    "loaded": 29,
+    "gateRules": 1,
+    "script": "(none)",
+    "timers": [
+     "fired"
+    ],
+    "decodes": 369,
+    "listeners": 160,
+    "observers": 2,
+    "errors": [],
+    "activation": {
+     "poweredMs": 1001,
+     "arcade": "running",
+     "rafPerFrame": 1,
+     "restMs": 467,
+     "arcadeAfter": "off",
+     "rafAtRest": 0,
+     "errors": []
+    }
+   }
+  ]
+ },
+ {
+  "scenario": "roundtrip from client",
+  "log": [
+   {
+    "entry": "/nav-test-tmp -> /",
+    "ok": false,
+    "ms": null,
+    "routeMs": 395,
+    "path": "/",
+    "doc": "xfdbbro2ifa",
+    "opacity": "0,0",
+    "gateImages": 29,
+    "loaded": 29,
+    "gateRules": 0,
+    "script": "(none)",
+    "timers": [],
+    "decodes": 195,
+    "listeners": 160,
+    "observers": 2,
+    "errors": [
+     "error: Encountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using templa"
+    ]
+   },
+   {
+    "entry": "-> /lab-v2",
+    "ok": false,
+    "ms": null,
+    "routeMs": 1899,
+    "path": "/lab-v2",
+    "doc": "xfdbbro2ifa",
+    "opacity": "0,0",
+    "gateImages": 84,
+    "loaded": 84,
+    "gateRules": 0,
+    "script": "(none)",
+    "timers": [],
+    "decodes": 195,
+    "listeners": 160,
+    "observers": 4,
+    "errors": []
+   },
+   {
+    "entry": "-> /",
+    "ok": false,
+    "ms": null,
+    "routeMs": 183,
+    "path": "/",
+    "doc": "xfdbbro2ifa",
+    "opacity": "0,0",
+    "gateImages": 29,
+    "loaded": 29,
+    "gateRules": 0,
+    "script": "(none)",
+    "timers": [],
+    "decodes": 486,
+    "listeners": 160,
+    "observers": 2,
+    "errors": []
+   }
+  ]
+ },
+ {
+  "scenario": "history",
+  "log": [
+   {
+    "entry": "/nav-test-tmp -> /",
+    "ok": false,
+    "ms": null,
+    "routeMs": 404,
+    "path": "/",
+    "doc": "8twdl0ajysb",
+    "opacity": "0,0",
+    "gateImages": 29,
+    "loaded": 29,
+    "gateRules": 0,
+    "script": "(none)",
+    "timers": [],
+    "decodes": 162,
+    "listeners": 160,
+    "observers": 2,
+    "errors": [
+     "error: Encountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using templa"
+    ]
+   },
+   {
+    "entry": "Forward to /",
+    "ok": false,
+    "ms": null,
+    "routeMs": 43,
+    "path": "/",
+    "doc": "8twdl0ajysb",
+    "opacity": "0,0",
+    "gateImages": 29,
+    "loaded": 29,
+    "gateRules": 0,
+    "script": "(none)",
+    "timers": [],
+    "decodes": 453,
+    "listeners": 160,
+    "observers": 2,
+    "errors": []
+   },
+   {
+    "entry": "-> /lab-v2",
+    "ok": false,
+    "ms": null,
+    "routeMs": 212,
+    "path": "/lab-v2",
+    "doc": "8twdl0ajysb",
+    "opacity": "0,0",
+    "gateImages": 84,
+    "loaded": 84,
+    "gateRules": 0,
+    "script": "(none)",
+    "timers": [],
+    "decodes": 453,
+    "listeners": 160,
+    "observers": 4,
+    "errors": []
+   },
+   {
+    "entry": "Back to /",
+    "ok": false,
+    "ms": null,
+    "routeMs": 57,
+    "path": "/",
+    "doc": "8twdl0ajysb",
+    "opacity": "0,0",
+    "gateImages": 29,
+    "loaded": 29,
+    "gateRules": 0,
+    "script": "(none)",
+    "timers": [],
+    "decodes": 511,
+    "listeners": 160,
+    "observers": 2,
+    "errors": []
+   },
+   {
+    "entry": "Forward to /lab-v2",
+    "ok": false,
+    "ms": null,
+    "routeMs": 64,
+    "path": "/lab-v2",
+    "doc": "8twdl0ajysb",
+    "opacity": "0,0",
+    "gateImages": 84,
+    "loaded": 84,
+    "gateRules": 0,
+    "script": "(none)",
+    "timers": [],
+    "decodes": 511,
+    "listeners": 160,
+    "observers": 4,
+    "errors": []
+   }
+  ]
+ },
+ {
+  "scenario": "left and back",
+  "log": [
+   {
+    "entry": "direct /",
+    "ok": true,
+    "ms": 1128,
+    "routeMs": null,
+    "path": "/",
+    "doc": "6q6xvey24v9",
+    "opacity": "1,1",
+    "gateImages": 29,
+    "loaded": 29,
+    "gateRules": 1,
+    "script": "(none)",
+    "timers": [
+     "pending"
+    ],
+    "decodes": 78,
+    "listeners": 160,
+    "observers": 2,
+    "errors": []
+   },
+   {
+    "entry": "Back to /",
+    "ok": true,
+    "ms": 69,
+    "routeMs": 58,
+    "path": "/",
+    "doc": "6q6xvey24v9",
+    "opacity": "1,1",
+    "gateImages": 29,
+    "loaded": 29,
+    "gateRules": 1,
+    "script": "(none)",
+    "timers": [
+     "pending"
+    ],
+    "decodes": 369,
+    "listeners": 160,
+    "observers": 2,
+    "errors": [
+     "error: Encountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using templa"
+    ],
+    "activation": {
+     "poweredMs": 965,
+     "arcade": "running",
+     "rafPerFrame": 1,
+     "restMs": 532,
+     "arcadeAfter": "off",
+     "rafAtRest": 0,
+     "errors": []
+    }
+   }
+  ]
+ },
+ {
+  "scenario": "left and back",
+  "log": [
+   {
+    "entry": "direct /lab-v2",
+    "ok": true,
+    "ms": 2419,
+    "routeMs": null,
+    "path": "/lab-v2",
+    "doc": "1qjxambwc23",
+    "opacity": "1,1",
+    "gateImages": 84,
+    "loaded": 84,
+    "gateRules": 1,
+    "script": "(none)",
+    "timers": [
+     "pending"
+    ],
+    "decodes": 84,
+    "listeners": 152,
+    "observers": 1,
+    "errors": []
+   },
+   {
+    "entry": "Back to /lab-v2",
+    "ok": true,
+    "ms": 131,
+    "routeMs": 110,
+    "path": "/lab-v2",
+    "doc": "1qjxambwc23",
+    "opacity": "1,1",
+    "gateImages": 84,
+    "loaded": 84,
+    "gateRules": 1,
+    "script": "(none)",
+    "timers": [
+     "pending"
+    ],
+    "decodes": 84,
+    "listeners": 160,
+    "observers": 4,
+    "errors": [
+     "error: Encountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using templa"
+    ],
+    "activation": {
+     "poweredMs": 1206,
+     "arcade": "running",
+     "rafPerFrame": 1,
+     "restMs": 615,
+     "arcadeAfter": "off",
+     "rafAtRest": 0,
+     "errors": []
+    }
+   }
+  ]
+ },
+ {
+  "scenario": "remount /",
+  "log": [
+   {
+    "entry": "mount 1: /nav-test-tmp -> /",
+    "ok": false,
+    "ms": null,
+    "routeMs": 265,
+    "path": "/",
+    "doc": "snkpl6x5aqp",
+    "opacity": "0,0",
+    "gateImages": 29,
+    "loaded": 29,
+    "gateRules": 0,
+    "script": "(none)",
+    "timers": [],
+    "decodes": 291,
+    "listeners": 160,
+    "observers": 2,
+    "errors": [
+     "error: Encountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using templa"
+    ],
+    "afterUnmount": {
+     "listeners": 156,
+     "observers": 1,
+     "animations": 0,
+     "timers": []
+    }
+   },
+   {
+    "entry": "mount 2: /nav-test-tmp -> /",
+    "ok": false,
+    "ms": null,
+    "routeMs": 123,
+    "path": "/",
+    "doc": "snkpl6x5aqp",
+    "opacity": "0,0",
+    "gateImages": 29,
+    "loaded": 29,
+    "gateRules": 0,
+    "script": "(none)",
+    "timers": [],
+    "decodes": 582,
+    "listeners": 160,
+    "observers": 2,
+    "errors": [],
+    "afterUnmount": {
+     "listeners": 156,
+     "observers": 1,
+     "animations": 0,
+     "timers": []
+    }
+   },
+   {
+    "entry": "mount 3: /nav-test-tmp -> /",
+    "ok": false,
+    "ms": null,
+    "routeMs": 121,
+    "path": "/",
+    "doc": "snkpl6x5aqp",
+    "opacity": "0,0",
+    "gateImages": 29,
+    "loaded": 29,
+    "gateRules": 0,
+    "script": "(none)",
+    "timers": [],
+    "decodes": 873,
+    "listeners": 160,
+    "observers": 2,
+    "errors": [],
+    "afterUnmount": {
+     "listeners": 156,
+     "observers": 1,
+     "animations": 0,
+     "timers": []
+    }
+   },
+   {
+    "entry": "mount 4: /nav-test-tmp -> /",
+    "ok": false,
+    "ms": null,
+    "routeMs": 120,
+    "path": "/",
+    "doc": "snkpl6x5aqp",
+    "opacity": "0,0",
+    "gateImages": 29,
+    "loaded": 29,
+    "gateRules": 0,
+    "script": "(none)",
+    "timers": [],
+    "decodes": 1164,
+    "listeners": 160,
+    "observers": 2,
+    "errors": [],
+    "afterUnmount": {
+     "listeners": 156,
+     "observers": 1,
+     "animations": 0,
+     "timers": []
+    }
+   },
+   {
+    "entry": "mount 5: /nav-test-tmp -> /",
+    "ok": false,
+    "ms": null,
+    "routeMs": 115,
+    "path": "/",
+    "doc": "snkpl6x5aqp",
+    "opacity": "0,0",
+    "gateImages": 29,
+    "loaded": 29,
+    "gateRules": 0,
+    "script": "(none)",
+    "timers": [],
+    "decodes": 1455,
+    "listeners": 160,
+    "observers": 2,
+    "errors": [],
+    "afterUnmount": {
+     "listeners": 156,
+     "observers": 1,
+     "animations": 0,
+     "timers": []
+    }
+   },
+   {
+    "entry": "mount 6: /nav-test-tmp -> /",
+    "ok": false,
+    "ms": null,
+    "routeMs": 125,
+    "path": "/",
+    "doc": "snkpl6x5aqp",
+    "opacity": "0,0",
+    "gateImages": 29,
+    "loaded": 29,
+    "gateRules": 0,
+    "script": "(none)",
+    "timers": [],
+    "decodes": 1746,
+    "listeners": 160,
+    "observers": 2,
+    "errors": [],
+    "afterUnmount": {
+     "listeners": 156,
+     "observers": 1,
+     "animations": 0,
+     "timers": []
+    }
+   }
+  ]
+ },
+ {
+  "scenario": "remount /lab-v2",
+  "log": [
+   {
+    "entry": "mount 1: /nav-test-tmp -> /lab-v2",
+    "ok": false,
+    "ms": null,
+    "routeMs": 678,
+    "path": "/lab-v2",
+    "doc": "z9n2s38wis8",
+    "opacity": "0,0",
+    "gateImages": 84,
+    "loaded": 84,
+    "gateRules": 0,
+    "script": "(none)",
+    "timers": [],
+    "decodes": 0,
+    "listeners": 160,
+    "observers": 4,
+    "errors": [
+     "error: Encountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using templa"
+    ],
+    "afterUnmount": {
+     "listeners": 156,
+     "observers": 1,
+     "animations": 0,
+     "timers": []
+    }
+   },
+   {
+    "entry": "mount 2: /nav-test-tmp -> /lab-v2",
+    "ok": false,
+    "ms": null,
+    "routeMs": 130,
+    "path": "/lab-v2",
+    "doc": "z9n2s38wis8",
+    "opacity": "0,0",
+    "gateImages": 84,
+    "loaded": 84,
+    "gateRules": 0,
+    "script": "(none)",
+    "timers": [],
+    "decodes": 0,
+    "listeners": 160,
+    "observers": 4,
+    "errors": [],
+    "afterUnmount": {
+     "listeners": 156,
+     "observers": 1,
+     "animations": 0,
+     "timers": []
+    }
+   },
+   {
+    "entry": "mount 3: /nav-test-tmp -> /lab-v2",
+    "ok": false,
+    "ms": null,
+    "routeMs": 144,
+    "path": "/lab-v2",
+    "doc": "z9n2s38wis8",
+    "opacity": "0,0",
+    "gateImages": 84,
+    "loaded": 84,
+    "gateRules": 0,
+    "script": "(none)",
+    "timers": [],
+    "decodes": 0,
+    "listeners": 160,
+    "observers": 4,
+    "errors": [],
+    "afterUnmount": {
+     "listeners": 156,
+     "observers": 1,
+     "animations": 0,
+     "timers": []
+    }
+   },
+   {
+    "entry": "mount 4: /nav-test-tmp -> /lab-v2",
+    "ok": false,
+    "ms": null,
+    "routeMs": 130,
+    "path": "/lab-v2",
+    "doc": "z9n2s38wis8",
+    "opacity": "0,0",
+    "gateImages": 84,
+    "loaded": 84,
+    "gateRules": 0,
+    "script": "(none)",
+    "timers": [],
+    "decodes": 0,
+    "listeners": 160,
+    "observers": 4,
+    "errors": [],
+    "afterUnmount": {
+     "listeners": 156,
+     "observers": 1,
+     "animations": 0,
+     "timers": []
+    }
+   },
+   {
+    "entry": "mount 5: /nav-test-tmp -> /lab-v2",
+    "ok": false,
+    "ms": null,
+    "routeMs": 167,
+    "path": "/lab-v2",
+    "doc": "z9n2s38wis8",
+    "opacity": "0,0",
+    "gateImages": 84,
+    "loaded": 84,
+    "gateRules": 0,
+    "script": "(none)",
+    "timers": [],
+    "decodes": 0,
+    "listeners": 160,
+    "observers": 4,
+    "errors": [],
+    "afterUnmount": {
+     "listeners": 156,
+     "observers": 1,
+     "animations": 0,
+     "timers": []
+    }
+   },
+   {
+    "entry": "mount 6: /nav-test-tmp -> /lab-v2",
+    "ok": false,
+    "ms": null,
+    "routeMs": 348,
+    "path": "/lab-v2",
+    "doc": "z9n2s38wis8",
+    "opacity": "0,0",
+    "gateImages": 84,
+    "loaded": 84,
+    "gateRules": 0,
+    "script": "(none)",
+    "timers": [],
+    "decodes": 0,
+    "listeners": 160,
+    "observers": 4,
+    "errors": [],
+    "afterUnmount": {
+     "listeners": 156,
+     "observers": 1,
+     "animations": 0,
+     "timers": []
+    }
+   }
+  ]
+ },
+ {
+  "scenario": "deep links",
+  "log": [
+   {
+    "entry": "/nav-test-tmp -> /?station=experience",
+    "ok": false,
+    "ms": null,
+    "routeMs": null,
+    "path": "/?station=experience",
+    "doc": "fuowaysilhf",
+    "opacity": "0,0",
+    "gateImages": 29,
+    "loaded": 29,
+    "gateRules": 0,
+    "script": "(none)",
+    "timers": [],
+    "decodes": 56,
+    "listeners": 161,
+    "observers": 2,
+    "errors": [
+     "error: Encountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using templa"
+    ],
+    "selected": "experience"
+   },
+   {
+    "entry": "Back, Forward",
+    "ok": false,
+    "ms": null,
+    "routeMs": 48,
+    "path": "/?station=experience",
+    "doc": "fuowaysilhf",
+    "opacity": "0,0",
+    "gateImages": 29,
+    "loaded": 29,
+    "gateRules": 0,
+    "script": "(none)",
+    "timers": [],
+    "decodes": 347,
+    "listeners": 161,
+    "observers": 2,
+    "errors": [],
+    "selected": "experience"
+   },
+   {
+    "entry": "/nav-test-tmp -> /",
+    "ok": false,
+    "ms": null,
+    "routeMs": 117,
+    "path": "/",
+    "doc": "fuowaysilhf",
+    "opacity": "0,0",
+    "gateImages": 29,
+    "loaded": 29,
+    "gateRules": 0,
+    "script": "(none)",
+    "timers": [],
+    "decodes": 638,
+    "listeners": 160,
+    "observers": 2,
+    "errors": [],
+    "selected": null,
+    "afterClick": "educational"
+   },
+   {
+    "entry": "Back closes the station",
+    "ok": false,
+    "ms": null,
+    "routeMs": 117,
+    "path": "/",
+    "doc": "fuowaysilhf",
+    "opacity": "0,0",
+    "gateImages": 29,
+    "loaded": 29,
+    "gateRules": 0,
+    "script": "(none)",
+    "timers": [],
+    "decodes": 638,
+    "listeners": 160,
+    "observers": 2,
+    "errors": [],
+    "selected": null
+   }
+  ]
+ },
+ {
+  "scenario": "deep links",
+  "log": [
+   {
+    "entry": "/nav-test-tmp -> /lab-v2?station=experience",
+    "ok": false,
+    "ms": null,
+    "routeMs": null,
+    "path": "/lab-v2?station=experience",
+    "doc": "l9hdgejg4ge",
+    "opacity": "0,0",
+    "gateImages": 84,
+    "loaded": 84,
+    "gateRules": 0,
+    "script": "(none)",
+    "timers": [],
+    "decodes": 0,
+    "listeners": 161,
+    "observers": 4,
+    "errors": [
+     "error: Encountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using templa"
+    ],
+    "selected": "experience"
+   },
+   {
+    "entry": "Back, Forward",
+    "ok": false,
+    "ms": null,
+    "routeMs": 52,
+    "path": "/lab-v2?station=experience",
+    "doc": "l9hdgejg4ge",
+    "opacity": "0,0",
+    "gateImages": 84,
+    "loaded": 84,
+    "gateRules": 0,
+    "script": "(none)",
+    "timers": [],
+    "decodes": 0,
+    "listeners": 161,
+    "observers": 4,
+    "errors": [],
+    "selected": "experience"
+   },
+   {
+    "entry": "/nav-test-tmp -> /lab-v2",
+    "ok": false,
+    "ms": null,
+    "routeMs": 143,
+    "path": "/lab-v2",
+    "doc": "l9hdgejg4ge",
+    "opacity": "0,0",
+    "gateImages": 84,
+    "loaded": 84,
+    "gateRules": 0,
+    "script": "(none)",
+    "timers": [],
+    "decodes": 0,
+    "listeners": 160,
+    "observers": 4,
+    "errors": [],
+    "selected": null,
+    "afterClick": "educational"
+   },
+   {
+    "entry": "Back closes the station",
+    "ok": false,
+    "ms": null,
+    "routeMs": 143,
+    "path": "/lab-v2",
+    "doc": "l9hdgejg4ge",
+    "opacity": "0,0",
+    "gateImages": 84,
+    "loaded": 84,
+    "gateRules": 0,
+    "script": "(none)",
+    "timers": [],
+    "decodes": 0,
+    "listeners": 160,
+    "observers": 4,
+    "errors": [],
+    "selected": null
+   }
+  ]
+ },
+ {
+  "scenario": "left before the gate opened",
+  "during": {
+   "opacity": "0,0",
+   "loaded": 0,
+   "of": 29,
+   "timers": []
+  },
+  "away": {
+   "timers": [],
+   "rules": 0
+  },
+  "later": {
+   "timers": [],
+   "rules": 0
+  },
+  "log": [
+   {
+    "entry": "/ again after leaving early",
+    "ok": false,
+    "ms": null,
+    "routeMs": 47,
+    "path": "/",
+    "doc": "u8e7piophpp",
+    "opacity": "0,0",
+    "gateImages": 29,
+    "loaded": 29,
+    "gateRules": 0,
+    "script": "(none)",
+    "timers": [],
+    "decodes": 291,
+    "listeners": 160,
+    "observers": 2,
+    "errors": [
+     "error: Encountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using templa"
+    ]
+   }
+  ]
+ },
+ {
+  "scenario": "left before the gate opened",
+  "during": {
+   "opacity": "0,0",
+   "loaded": 0,
+   "of": 84,
+   "timers": []
+  },
+  "away": {
+   "timers": [],
+   "rules": 0
+  },
+  "later": {
+   "timers": [],
+   "rules": 0
+  },
+  "log": [
+   {
+    "entry": "/lab-v2 again after leaving early",
+    "ok": false,
+    "ms": null,
+    "routeMs": 51,
+    "path": "/lab-v2",
+    "doc": "cas1i76q6ud",
+    "opacity": "0,0",
+    "gateImages": 84,
+    "loaded": 84,
+    "gateRules": 0,
+    "script": "(none)",
+    "timers": [],
+    "decodes": 0,
+    "listeners": 160,
+    "observers": 4,
+    "errors": [
+     "error: Encountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using templa"
+    ]
+   }
+  ]
+ },
+ {
+  "scenario": "stalled images",
+  "log": [
+   {
+    "entry": "stalled, direct /",
+    "ok": true,
+    "ms": 4618,
+    "path": "/",
+    "doc": "0vdy2ak4j0nl",
+    "opacity": "1,1",
+    "gateImages": 29,
+    "loaded": 0,
+    "gateRules": 1,
+    "script": "(none)",
+    "timers": [
+     "fired"
+    ],
+    "decodes": 0,
+    "listeners": 160,
+    "observers": 2,
+    "errors": []
+   }
+  ]
+ },
+ {
+  "scenario": "stalled images",
+  "log": [
+   {
+    "entry": "stalled, client /",
+    "ok": false,
+    "ms": null,
+    "path": "/",
+    "doc": "i5qf36jufsg",
+    "opacity": "0,0",
+    "gateImages": 29,
+    "loaded": 0,
+    "gateRules": 0,
+    "script": "(none)",
+    "timers": [],
+    "decodes": 0,
+    "listeners": 160,
+    "observers": 2,
+    "errors": [
+     "error: Encountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using templa"
+    ]
+   }
+  ]
+ },
+ {
+  "scenario": "stalled images",
+  "log": [
+   {
+    "entry": "stalled, direct /lab-v2",
+    "ok": true,
+    "ms": 4669,
+    "path": "/lab-v2",
+    "doc": "v279vbulvt9",
+    "opacity": "1,1",
+    "gateImages": 84,
+    "loaded": 0,
+    "gateRules": 1,
+    "script": "(none)",
+    "timers": [
+     "fired"
+    ],
+    "decodes": 0,
+    "listeners": 160,
+    "observers": 4,
+    "errors": []
+   }
+  ]
+ },
+ {
+  "scenario": "stalled images",
+  "log": [
+   {
+    "entry": "stalled, client /lab-v2",
+    "ok": false,
+    "ms": null,
+    "path": "/lab-v2",
+    "doc": "6ve5iip9pk8",
+    "opacity": "0,0",
+    "gateImages": 84,
+    "loaded": 0,
+    "gateRules": 0,
+    "script": "(none)",
+    "timers": [],
+    "decodes": 0,
+    "listeners": 160,
+    "observers": 4,
+    "errors": [
+     "error: Encountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using templa"
+    ]
+   }
+  ]
+ },
+ {
+  "scenario": "reduced",
+  "log": [
+   {
+    "entry": "reduced: direct /",
+    "ok": true,
+    "ms": 4125,
+    "routeMs": null,
+    "path": "/",
+    "doc": "ttpijqyec4b",
+    "opacity": "1,1",
+    "gateImages": 29,
+    "loaded": 29,
+    "gateRules": 1,
+    "script": "(none)",
+    "timers": [
+     "pending"
+    ],
+    "decodes": 78,
+    "listeners": 160,
+    "observers": 2,
+    "errors": [],
+    "reduced": {
+     "hover": "playground",
+     "arcade": "still",
+     "lift": "none",
+     "surgeRunning": 0
+    }
+   }
+  ]
+ },
+ {
+  "scenario": "reduced",
+  "log": [
+   {
+    "entry": "reduced: /nav-test-tmp -> /",
+    "ok": false,
+    "ms": null,
+    "routeMs": 201,
+    "path": "/",
+    "doc": "r2f0yssee4",
+    "opacity": "0,0",
+    "gateImages": 29,
+    "loaded": 29,
+    "gateRules": 0,
+    "script": "(none)",
+    "timers": [],
+    "decodes": 291,
+    "listeners": 160,
+    "observers": 2,
+    "errors": [
+     "error: Encountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using templa"
+    ]
+   }
+  ]
+ },
+ {
+  "scenario": "reduced",
+  "log": [
+   {
+    "entry": "reduced: direct /lab-v2",
+    "ok": true,
+    "ms": 1123,
+    "routeMs": null,
+    "path": "/lab-v2",
+    "doc": "vw6lrby0cn",
+    "opacity": "1,1",
+    "gateImages": 84,
+    "loaded": 84,
+    "gateRules": 1,
+    "script": "(none)",
+    "timers": [
+     "pending"
+    ],
+    "decodes": 84,
+    "listeners": 160,
+    "observers": 4,
+    "errors": [],
+    "reduced": {
+     "hover": "playground",
+     "arcade": "still",
+     "lift": "none",
+     "surgeRunning": 0
+    }
+   }
+  ]
+ },
+ {
+  "scenario": "reduced",
+  "log": [
+   {
+    "entry": "reduced: /nav-test-tmp -> /lab-v2",
+    "ok": false,
+    "ms": null,
+    "routeMs": 249,
+    "path": "/lab-v2",
+    "doc": "4dqaqwrus0v",
+    "opacity": "0,0",
+    "gateImages": 84,
+    "loaded": 84,
+    "gateRules": 0,
+    "script": "(none)",
+    "timers": [],
+    "decodes": 0,
+    "listeners": 160,
+    "observers": 4,
+    "errors": [
+     "error: Encountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using templa"
+    ]
+   }
+  ]
+ }
+]

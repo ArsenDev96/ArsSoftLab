@@ -3,6 +3,7 @@ import { SCENE, u, type SceneRect } from "@/lib/scene";
 import { CRE_BOX, CRE_GLINT_GRID, CRE_GLINT_STEPS, CRE_GRID, CRE_SUNRISE_STEPS } from "./creative-v2";
 import { PLATFORM_POWER, POWER_FRONT } from "./platform-power";
 import { partFrame, PowerPart, powerCss } from "./PlatformPower";
+import { cycleCss } from "./station-cycle";
 
 /**
  * M1.4H.3 (/lab-v2 only): Creative Studio's activation: the painting awakens
@@ -73,23 +74,28 @@ const CLIP = clipTo(CRE_BOX);
 const prop = (name: string) => `@property ${name}{syntax:"<number>";inherits:true;initial-value:0}`;
 
 const CRE_CSS =
-  ["--cw", "--cs", "--cg", "--cr"].map(prop).join("") +
+  prop("--cr") +
   powerCss(ID) +
-  // The sequence's numbers, on the station's root and on its floor light. Leaving: the added light is gated off at
-  // once, its numbers reset a moment later (Escape passes through a frame with neither hover nor selection: an
-  // instant reset would replay them).
-  `.cre-seq{--cw:0;--cs:0;--cg:0;--cr:0;transition:--cw 0ms linear 300ms,--cs 320ms ease-in-out 100ms,--cg 0ms linear 300ms}` +
-  `${ON} .cre-seq{--cw:1;--cs:1;--cg:1;--cr:1;` +
-  `transition:--cw ${T.warmMs}ms linear calc(var(--arrive-now) + ${T.warmDelay}ms),` +
-  `--cs ${T.sunriseMs}ms cubic-bezier(0.35,0.25,0.65,0.85) calc(var(--arrive-now) + ${T.sunriseDelay}ms),` +
-  `--cg ${T.glintMs}ms linear calc(var(--arrive-now) + ${T.glintDelay}ms)}` +
+  // The sequence's numbers, on the station's root and on its floor light, and the strips' pulse (M1.4I.1D:
+  // station-cycle.ts). Leaving: the added light is gated off at once, its numbers reset a moment later.
+  cycleCss({
+    id: ID,
+    cls: "cre",
+    key: "c",
+    numbers: [
+      { v: "--cw", on: `${T.warmMs}ms linear calc(var(--arrive-now) + ${T.warmDelay}ms)`, off: "0ms linear 300ms" },
+      { v: "--cs", on: `${T.sunriseMs}ms cubic-bezier(0.35,0.25,0.65,0.85) calc(var(--arrive-now) + ${T.sunriseDelay}ms)`, off: "320ms ease-in-out 100ms" },
+      { v: "--cg", on: `${T.glintMs}ms linear calc(var(--arrive-now) + ${T.glintDelay}ms)`, off: "0ms linear 300ms" },
+    ],
+    doneMs: T.stableDelay,
+    pulse: 0.8,
+  }) +
+  `.cre-seq{--cr:0}${ON} .cre-seq{--cr:1}` +
   // Light that only exists while the sequence runs forward: nothing before the energy is there, gone at once on leaving.
   `.cre-gate{opacity:0;transition:opacity 0s}${ON} .cre-gate{opacity:1;transition:opacity 0ms linear var(--arrive-now)}` +
   `.cre-warm{opacity:calc(min(1, var(--cw) * 2.6) * min(1, (1 - var(--cw)) * 1.7))}` +
   `.cre-crest{opacity:calc(min(1, var(--cs) * 1000) * min(1, (1 - var(--cs)) * 1000))}` +
   `.cre-glints{opacity:calc(min(1, var(--cg) * 1000) * min(1, (1 - var(--cg)) * 1000))}` +
-  // The strips' pulse rides each power front (it never runs while draining).
-  `.cre-pulse{opacity:0}${ON} .cre-pulse{opacity:calc(min(1, var(--pw) * 12) * min(1, (1 - var(--pw)) * 10) * 0.8)}` +
   // The strips' floor light: behind the fronts while they move, then the approved layer itself (a masked layer draws
   // its 1 px edges a little differently). Both add, so fading one into the other changes nothing else.
   `[data-cre-swap="stable"]{opacity:0;transition:opacity 80ms linear}[data-cre-swap="anim"]{opacity:1;transition:opacity 80ms linear}` +
@@ -182,7 +188,14 @@ function Pulse({ index }: { index: number }) {
 /** The strips' pieces on the stone (the reflection part is the floor's: CreativeFloor). */
 const STRIP_PARTS = PLATFORM_POWER[ID].parts.flatMap((p, k) => (p.kind === "strip" ? [k] : []));
 
-export function CreativeV2() {
+/** The station in this cycle's wrapper (station-cycle.ts). */
+export const CreativeV2 = () => (
+  <div data-zone={ID} className="cre-cycle contents">
+    <Station />
+  </div>
+);
+
+function Station() {
   const glint = frame("--cg", CRE_GLINT_STEPS, CRE_GLINT_GRID, { x: 0, y: 0 });
   return (
     <div aria-hidden="true" data-zone={ID} data-v2-station={ID} data-v2-station-source="approved" className="cre-v2 cre-seq pointer-events-none absolute inset-0">
@@ -297,7 +310,14 @@ function FloorParts({ src, name, standby, full }: { src: string; name: string; s
  * station (SceneV2): the ring, spill and strip reflections follow its strips;
  * what mirrors the lit objects on the platform follows the painting.
  */
-export function CreativeFloor() {
+/** Its floor light in this cycle's wrapper (station-cycle.ts). */
+export const CreativeFloor = () => (
+  <div data-zone={ID} className="cre-cycle contents">
+    <Floor />
+  </div>
+);
+
+function Floor() {
   return (
     <div aria-hidden="true" data-zone={ID} data-v2-floor="creative-floor" className="cre-seq pointer-events-none absolute inset-0">
       <FloorParts src={`${M14H3}/creative-floor.png`} name="floor" standby={FLOOR_STANDBY} />

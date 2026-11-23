@@ -1,0 +1,974 @@
+[
+ {
+  "scenario": "direct",
+  "log": [
+   {
+    "entry": "direct /",
+    "ok": true,
+    "ms": 948,
+    "routeMs": null,
+    "path": "/",
+    "doc": "kxv2r7irsqr",
+    "opacity": "1,1",
+    "gateImages": 29,
+    "loaded": 29,
+    "gateRules": 1,
+    "script": "text/javascript",
+    "timers": [
+     "pending"
+    ],
+    "decodes": 78,
+    "listeners": 160,
+    "observers": 2,
+    "errors": [],
+    "activation": {
+     "poweredMs": 950,
+     "arcade": "running",
+     "rafPerFrame": 1,
+     "restMs": 533,
+     "arcadeAfter": "off",
+     "rafAtRest": 0,
+     "errors": []
+    }
+   }
+  ]
+ },
+ {
+  "scenario": "direct",
+  "log": [
+   {
+    "entry": "direct /lab-v2",
+    "ok": true,
+    "ms": 1136,
+    "routeMs": null,
+    "path": "/lab-v2",
+    "doc": "ybmtis4prg",
+    "opacity": "1,1",
+    "gateImages": 84,
+    "loaded": 84,
+    "gateRules": 1,
+    "script": "text/javascript",
+    "timers": [
+     "pending"
+    ],
+    "decodes": 84,
+    "listeners": 160,
+    "observers": 4,
+    "errors": [],
+    "activation": {
+     "poweredMs": 1219,
+     "arcade": "running",
+     "rafPerFrame": 1,
+     "restMs": 602,
+     "arcadeAfter": "off",
+     "rafAtRest": 0,
+     "errors": []
+    }
+   }
+  ]
+ },
+ {
+  "scenario": "client",
+  "log": [
+   {
+    "entry": "/nav-test-tmp -> / (client)",
+    "ok": true,
+    "ms": 884,
+    "routeMs": 212,
+    "path": "/",
+    "doc": "wkewusae45l",
+    "opacity": "1,1",
+    "gateImages": 29,
+    "loaded": 29,
+    "gateRules": 1,
+    "script": "text/plain",
+    "timers": [
+     "cleared",
+     "cleared"
+    ],
+    "decodes": 349,
+    "listeners": 160,
+    "observers": 2,
+    "errors": [],
+    "activation": {
+     "poweredMs": 950,
+     "arcade": "running",
+     "rafPerFrame": 1,
+     "restMs": 467,
+     "arcadeAfter": "off",
+     "rafAtRest": 0,
+     "errors": []
+    }
+   },
+   {
+    "entry": "reload /",
+    "ok": true,
+    "ms": 624,
+    "routeMs": 212,
+    "path": "/",
+    "doc": "tghwodmy1s",
+    "opacity": "1,1",
+    "gateImages": 29,
+    "loaded": 29,
+    "gateRules": 1,
+    "script": "text/javascript",
+    "timers": [
+     "pending"
+    ],
+    "decodes": 78,
+    "listeners": 160,
+    "observers": 2,
+    "errors": []
+   }
+  ]
+ },
+ {
+  "scenario": "client",
+  "log": [
+   {
+    "entry": "/nav-test-tmp -> /lab-v2 (client)",
+    "ok": true,
+    "ms": 1735,
+    "routeMs": 226,
+    "path": "/lab-v2",
+    "doc": "g1dymxce9oq",
+    "opacity": "1,1",
+    "gateImages": 84,
+    "loaded": 84,
+    "gateRules": 1,
+    "script": "text/plain",
+    "timers": [
+     "cleared",
+     "cleared"
+    ],
+    "decodes": 168,
+    "listeners": 160,
+    "observers": 4,
+    "errors": [],
+    "activation": {
+     "poweredMs": 1149,
+     "arcade": "running",
+     "rafPerFrame": 1,
+     "restMs": 601,
+     "arcadeAfter": "off",
+     "rafAtRest": 0,
+     "errors": []
+    }
+   },
+   {
+    "entry": "reload /lab-v2",
+    "ok": true,
+    "ms": 917,
+    "routeMs": 226,
+    "path": "/lab-v2",
+    "doc": "zl1l3hzb8m",
+    "opacity": "1,1",
+    "gateImages": 84,
+    "loaded": 84,
+    "gateRules": 1,
+    "script": "text/javascript",
+    "timers": [
+     "pending"
+    ],
+    "decodes": 84,
+    "listeners": 160,
+    "observers": 4,
+    "errors": []
+   }
+  ]
+ },
+ {
+  "scenario": "roundtrip from direct",
+  "log": [
+   {
+    "entry": "direct /",
+    "ok": true,
+    "ms": 920,
+    "routeMs": null,
+    "path": "/",
+    "doc": "2u9vwha8kyg",
+    "opacity": "1,1",
+    "gateImages": 29,
+    "loaded": 29,
+    "gateRules": 1,
+    "script": "text/javascript",
+    "timers": [
+     "pending"
+    ],
+    "decodes": 78,
+    "listeners": 160,
+    "observers": 2,
+    "errors": [],
+    "activation": {
+     "poweredMs": 1031,
+     "arcade": "running",
+     "rafPerFrame": 1,
+     "restMs": 534,
+     "arcadeAfter": "off",
+     "rafAtRest": 0,
+     "errors": []
+    }
+   },
+   {
+    "entry": "-> /lab-v2",
+    "ok": true,
+    "ms": 221,
+    "routeMs": 209,
+    "path": "/lab-v2",
+    "doc": "2u9vwha8kyg",
+    "opacity": "1,1",
+    "gateImages": 84,
+    "loaded": 84,
+    "gateRules": 1,
+    "script": "text/plain",
+    "timers": [
+     "fired"
+    ],
+    "decodes": 78,
+    "listeners": 160,
+    "observers": 4,
+    "errors": [],
+    "activation": {
+     "poweredMs": 1144,
+     "arcade": "running",
+     "rafPerFrame": 1,
+     "restMs": 537,
+     "arcadeAfter": "off",
+     "rafAtRest": 0,
+     "errors": []
+    }
+   },
+   {
+    "entry": "-> /",
+    "ok": true,
+    "ms": 152,
+    "routeMs": 118,
+    "path": "/",
+    "doc": "2u9vwha8kyg",
+    "opacity": "1,1",
+    "gateImages": 29,
+    "loaded": 29,
+    "gateRules": 1,
+    "script": "text/plain",
+    "timers": [
+     "fired"
+    ],
+    "decodes": 369,
+    "listeners": 160,
+    "observers": 2,
+    "errors": [],
+    "activation": {
+     "poweredMs": 957,
+     "arcade": "running",
+     "rafPerFrame": 1,
+     "restMs": 467,
+     "arcadeAfter": "off",
+     "rafAtRest": 0,
+     "errors": []
+    }
+   }
+  ]
+ },
+ {
+  "scenario": "roundtrip from client",
+  "log": [
+   {
+    "entry": "/nav-test-tmp -> /",
+    "ok": true,
+    "ms": 835,
+    "routeMs": 211,
+    "path": "/",
+    "doc": "8j9okn0qz59",
+    "opacity": "1,1",
+    "gateImages": 29,
+    "loaded": 29,
+    "gateRules": 1,
+    "script": "text/plain",
+    "timers": [
+     "cleared",
+     "cleared"
+    ],
+    "decodes": 349,
+    "listeners": 160,
+    "observers": 2,
+    "errors": [],
+    "activation": {
+     "poweredMs": 951,
+     "arcade": "running",
+     "rafPerFrame": 1,
+     "restMs": 466,
+     "arcadeAfter": "off",
+     "rafAtRest": 0,
+     "errors": []
+    }
+   },
+   {
+    "entry": "-> /lab-v2",
+    "ok": true,
+    "ms": 241,
+    "routeMs": 231,
+    "path": "/lab-v2",
+    "doc": "8j9okn0qz59",
+    "opacity": "1,1",
+    "gateImages": 84,
+    "loaded": 84,
+    "gateRules": 1,
+    "script": "text/plain",
+    "timers": [
+     "cleared",
+     "cleared"
+    ],
+    "decodes": 349,
+    "listeners": 160,
+    "observers": 4,
+    "errors": [],
+    "activation": {
+     "poweredMs": 1167,
+     "arcade": "running",
+     "rafPerFrame": 1,
+     "restMs": 536,
+     "arcadeAfter": "off",
+     "rafAtRest": 0,
+     "errors": []
+    }
+   },
+   {
+    "entry": "-> /",
+    "ok": true,
+    "ms": 182,
+    "routeMs": 136,
+    "path": "/",
+    "doc": "8j9okn0qz59",
+    "opacity": "1,1",
+    "gateImages": 29,
+    "loaded": 29,
+    "gateRules": 1,
+    "script": "text/plain",
+    "timers": [
+     "cleared",
+     "cleared"
+    ],
+    "decodes": 640,
+    "listeners": 160,
+    "observers": 2,
+    "errors": [],
+    "activation": {
+     "poweredMs": 951,
+     "arcade": "running",
+     "rafPerFrame": 1,
+     "restMs": 468,
+     "arcadeAfter": "off",
+     "rafAtRest": 0,
+     "errors": []
+    }
+   }
+  ]
+ },
+ {
+  "scenario": "history",
+  "log": [
+   {
+    "entry": "/nav-test-tmp -> /",
+    "ok": true,
+    "ms": 1233,
+    "routeMs": 202,
+    "path": "/",
+    "doc": "eiedshhote",
+    "opacity": "1,1",
+    "gateImages": 29,
+    "loaded": 29,
+    "gateRules": 1,
+    "script": "text/plain",
+    "timers": [
+     "cleared",
+     "cleared"
+    ],
+    "decodes": 83,
+    "listeners": 160,
+    "observers": 2,
+    "errors": [],
+    "activation": {
+     "poweredMs": 950,
+     "arcade": "running",
+     "rafPerFrame": 1,
+     "restMs": 463,
+     "arcadeAfter": "off",
+     "rafAtRest": 0,
+     "errors": []
+    }
+   },
+   {
+    "entry": "Forward to /",
+    "ok": true,
+    "ms": 51,
+    "routeMs": 44,
+    "path": "/",
+    "doc": "eiedshhote",
+    "opacity": "1,1",
+    "gateImages": 29,
+    "loaded": 29,
+    "gateRules": 1,
+    "script": "text/plain",
+    "timers": [
+     "cleared",
+     "cleared"
+    ],
+    "decodes": 374,
+    "listeners": 160,
+    "observers": 2,
+    "errors": [],
+    "activation": {
+     "poweredMs": 935,
+     "arcade": "running",
+     "rafPerFrame": 1,
+     "restMs": 467,
+     "arcadeAfter": "off",
+     "rafAtRest": 0,
+     "errors": []
+    }
+   },
+   {
+    "entry": "-> /lab-v2",
+    "ok": true,
+    "ms": 284,
+    "routeMs": 276,
+    "path": "/lab-v2",
+    "doc": "eiedshhote",
+    "opacity": "1,1",
+    "gateImages": 84,
+    "loaded": 84,
+    "gateRules": 1,
+    "script": "text/plain",
+    "timers": [
+     "cleared",
+     "cleared"
+    ],
+    "decodes": 374,
+    "listeners": 160,
+    "observers": 4,
+    "errors": [],
+    "activation": {
+     "poweredMs": 1294,
+     "arcade": "running",
+     "rafPerFrame": 1,
+     "restMs": 598,
+     "arcadeAfter": "off",
+     "rafAtRest": 0,
+     "errors": []
+    }
+   },
+   {
+    "entry": "Back to /",
+    "ok": true,
+    "ms": 69,
+    "routeMs": 59,
+    "path": "/",
+    "doc": "eiedshhote",
+    "opacity": "1,1",
+    "gateImages": 29,
+    "loaded": 29,
+    "gateRules": 1,
+    "script": "text/plain",
+    "timers": [
+     "cleared",
+     "cleared"
+    ],
+    "decodes": 665,
+    "listeners": 160,
+    "observers": 2,
+    "errors": [],
+    "activation": {
+     "poweredMs": 963,
+     "arcade": "running",
+     "rafPerFrame": 1,
+     "restMs": 471,
+     "arcadeAfter": "off",
+     "rafAtRest": 0,
+     "errors": []
+    }
+   },
+   {
+    "entry": "Forward to /lab-v2",
+    "ok": true,
+    "ms": 63,
+    "routeMs": 54,
+    "path": "/lab-v2",
+    "doc": "eiedshhote",
+    "opacity": "1,1",
+    "gateImages": 84,
+    "loaded": 84,
+    "gateRules": 1,
+    "script": "text/plain",
+    "timers": [
+     "cleared",
+     "cleared"
+    ],
+    "decodes": 665,
+    "listeners": 160,
+    "observers": 4,
+    "errors": [],
+    "activation": {
+     "poweredMs": 1154,
+     "arcade": "running",
+     "rafPerFrame": 1,
+     "restMs": 534,
+     "arcadeAfter": "off",
+     "rafAtRest": 0,
+     "errors": []
+    }
+   }
+  ]
+ },
+ {
+  "scenario": "left and back",
+  "log": [
+   {
+    "entry": "direct /",
+    "ok": true,
+    "ms": 2971,
+    "routeMs": null,
+    "path": "/",
+    "doc": "zak3l8gj7p",
+    "opacity": "1,1",
+    "gateImages": 29,
+    "loaded": 29,
+    "gateRules": 1,
+    "script": "text/javascript",
+    "timers": [
+     "pending"
+    ],
+    "decodes": 78,
+    "listeners": 160,
+    "observers": 2,
+    "errors": []
+   },
+   {
+    "entry": "Back to /",
+    "ok": true,
+    "ms": 71,
+    "routeMs": 64,
+    "path": "/",
+    "doc": "zak3l8gj7p",
+    "opacity": "1,1",
+    "gateImages": 29,
+    "loaded": 29,
+    "gateRules": 1,
+    "script": "text/plain",
+    "timers": [
+     "pending"
+    ],
+    "decodes": 369,
+    "listeners": 160,
+    "observers": 2,
+    "errors": [],
+    "activation": {
+     "poweredMs": 1015,
+     "arcade": "running",
+     "rafPerFrame": 1,
+     "restMs": 529,
+     "arcadeAfter": "off",
+     "rafAtRest": 0,
+     "errors": []
+    }
+   }
+  ]
+ },
+ {
+  "scenario": "left and back",
+  "log": [
+   {
+    "entry": "direct /lab-v2",
+    "ok": true,
+    "ms": 2094,
+    "routeMs": null,
+    "path": "/lab-v2",
+    "doc": "ezw7fknvjpm",
+    "opacity": "1,1",
+    "gateImages": 84,
+    "loaded": 84,
+    "gateRules": 1,
+    "script": "text/javascript",
+    "timers": [
+     "pending"
+    ],
+    "decodes": 84,
+    "listeners": 160,
+    "observers": 4,
+    "errors": []
+   },
+   {
+    "entry": "Back to /lab-v2",
+    "ok": true,
+    "ms": 59,
+    "routeMs": 52,
+    "path": "/lab-v2",
+    "doc": "ezw7fknvjpm",
+    "opacity": "1,1",
+    "gateImages": 84,
+    "loaded": 84,
+    "gateRules": 1,
+    "script": "text/plain",
+    "timers": [
+     "pending"
+    ],
+    "decodes": 84,
+    "listeners": 160,
+    "observers": 4,
+    "errors": [],
+    "activation": {
+     "poweredMs": 1168,
+     "arcade": "running",
+     "rafPerFrame": 1,
+     "restMs": 535,
+     "arcadeAfter": "off",
+     "rafAtRest": 0,
+     "errors": []
+    }
+   }
+  ]
+ },
+ {
+  "scenario": "left before the gate opened",
+  "during": {
+   "opacity": "0,0",
+   "loaded": 0,
+   "of": 29,
+   "timers": [
+    "cleared",
+    "pending"
+   ]
+  },
+  "away": {
+   "timers": [
+    "cleared",
+    "cleared"
+   ],
+   "rules": 0
+  },
+  "later": {
+   "timers": [
+    "cleared",
+    "cleared"
+   ],
+   "rules": 0
+  },
+  "log": [
+   {
+    "entry": "/ again after leaving early",
+    "ok": true,
+    "ms": 447,
+    "routeMs": 50,
+    "path": "/",
+    "doc": "78uaeajp1w9",
+    "opacity": "1,1",
+    "gateImages": 29,
+    "loaded": 29,
+    "gateRules": 1,
+    "script": "text/plain",
+    "timers": [
+     "cleared",
+     "cleared",
+     "cleared",
+     "cleared"
+    ],
+    "decodes": 407,
+    "listeners": 160,
+    "observers": 2,
+    "errors": [],
+    "activation": {
+     "poweredMs": 945,
+     "arcade": "running",
+     "rafPerFrame": 1,
+     "restMs": 468,
+     "arcadeAfter": "off",
+     "rafAtRest": 0,
+     "errors": []
+    }
+   }
+  ]
+ },
+ {
+  "scenario": "left before the gate opened",
+  "during": {
+   "opacity": "0,0",
+   "loaded": 0,
+   "of": 84,
+   "timers": [
+    "cleared",
+    "pending"
+   ]
+  },
+  "away": {
+   "timers": [
+    "cleared",
+    "cleared"
+   ],
+   "rules": 0
+  },
+  "later": {
+   "timers": [
+    "cleared",
+    "cleared"
+   ],
+   "rules": 0
+  },
+  "log": [
+   {
+    "entry": "/lab-v2 again after leaving early",
+    "ok": true,
+    "ms": 532,
+    "routeMs": 78,
+    "path": "/lab-v2",
+    "doc": "sn1hoj431bo",
+    "opacity": "1,1",
+    "gateImages": 84,
+    "loaded": 84,
+    "gateRules": 1,
+    "script": "text/plain",
+    "timers": [
+     "cleared",
+     "cleared",
+     "cleared",
+     "cleared"
+    ],
+    "decodes": 336,
+    "listeners": 160,
+    "observers": 4,
+    "errors": [],
+    "activation": {
+     "poweredMs": 1152,
+     "arcade": "running",
+     "rafPerFrame": 1,
+     "restMs": 601,
+     "arcadeAfter": "off",
+     "rafAtRest": 0,
+     "errors": []
+    }
+   }
+  ]
+ },
+ {
+  "scenario": "stalled images",
+  "log": [
+   {
+    "entry": "stalled, direct /",
+    "ok": true,
+    "ms": 4655,
+    "path": "/",
+    "doc": "z713ngrxtnh",
+    "opacity": "1,1",
+    "gateImages": 29,
+    "loaded": 0,
+    "gateRules": 1,
+    "script": "text/javascript",
+    "timers": [
+     "fired"
+    ],
+    "decodes": 0,
+    "listeners": 160,
+    "observers": 2,
+    "errors": []
+   }
+  ]
+ },
+ {
+  "scenario": "stalled images",
+  "log": [
+   {
+    "entry": "stalled, client /",
+    "ok": true,
+    "ms": 4519,
+    "path": "/",
+    "doc": "yk6gwzpab2",
+    "opacity": "1,1",
+    "gateImages": 29,
+    "loaded": 0,
+    "gateRules": 1,
+    "script": "text/plain",
+    "timers": [
+     "cleared",
+     "fired"
+    ],
+    "decodes": 58,
+    "listeners": 160,
+    "observers": 2,
+    "errors": []
+   }
+  ]
+ },
+ {
+  "scenario": "stalled images",
+  "log": [
+   {
+    "entry": "stalled, direct /lab-v2",
+    "ok": true,
+    "ms": 5658,
+    "path": "/lab-v2",
+    "doc": "jhw8cs41wp",
+    "opacity": "1,1",
+    "gateImages": 84,
+    "loaded": 0,
+    "gateRules": 1,
+    "script": "text/javascript",
+    "timers": [
+     "fired"
+    ],
+    "decodes": 0,
+    "listeners": 160,
+    "observers": 4,
+    "errors": []
+   }
+  ]
+ },
+ {
+  "scenario": "stalled images",
+  "log": [
+   {
+    "entry": "stalled, client /lab-v2",
+    "ok": true,
+    "ms": 4843,
+    "path": "/lab-v2",
+    "doc": "5h65no68vdg",
+    "opacity": "1,1",
+    "gateImages": 84,
+    "loaded": 0,
+    "gateRules": 1,
+    "script": "text/plain",
+    "timers": [
+     "cleared",
+     "fired"
+    ],
+    "decodes": 168,
+    "listeners": 160,
+    "observers": 4,
+    "errors": []
+   }
+  ]
+ },
+ {
+  "scenario": "reduced",
+  "log": [
+   {
+    "entry": "reduced: direct /",
+    "ok": true,
+    "ms": 1052,
+    "routeMs": null,
+    "path": "/",
+    "doc": "t55hy0d2s1",
+    "opacity": "1,1",
+    "gateImages": 29,
+    "loaded": 29,
+    "gateRules": 1,
+    "script": "text/javascript",
+    "timers": [
+     "pending"
+    ],
+    "decodes": 78,
+    "listeners": 160,
+    "observers": 2,
+    "errors": [],
+    "reduced": {
+     "hover": "playground",
+     "arcade": "still",
+     "lift": "none",
+     "surgeRunning": 0
+    }
+   }
+  ]
+ },
+ {
+  "scenario": "reduced",
+  "log": [
+   {
+    "entry": "reduced: /nav-test-tmp -> /",
+    "ok": true,
+    "ms": 968,
+    "routeMs": 332,
+    "path": "/",
+    "doc": "8h0iiaztygq",
+    "opacity": "1,1",
+    "gateImages": 29,
+    "loaded": 29,
+    "gateRules": 1,
+    "script": "text/plain",
+    "timers": [
+     "cleared",
+     "cleared"
+    ],
+    "decodes": 349,
+    "listeners": 160,
+    "observers": 2,
+    "errors": [],
+    "reduced": {
+     "hover": "playground",
+     "arcade": "still",
+     "lift": "none",
+     "surgeRunning": 0
+    }
+   }
+  ]
+ },
+ {
+  "scenario": "reduced",
+  "log": [
+   {
+    "entry": "reduced: direct /lab-v2",
+    "ok": true,
+    "ms": 1365,
+    "routeMs": null,
+    "path": "/lab-v2",
+    "doc": "rpy17pd5jr",
+    "opacity": "1,1",
+    "gateImages": 84,
+    "loaded": 84,
+    "gateRules": 1,
+    "script": "text/javascript",
+    "timers": [
+     "pending"
+    ],
+    "decodes": 84,
+    "listeners": 160,
+    "observers": 4,
+    "errors": [],
+    "reduced": {
+     "hover": "playground",
+     "arcade": "still",
+     "lift": "none",
+     "surgeRunning": 0
+    }
+   }
+  ]
+ },
+ {
+  "scenario": "reduced",
+  "log": [
+   {
+    "entry": "reduced: /nav-test-tmp -> /lab-v2",
+    "ok": true,
+    "ms": 1200,
+    "routeMs": 354,
+    "path": "/lab-v2",
+    "doc": "2d2zn01ceuq",
+    "opacity": "1,1",
+    "gateImages": 84,
+    "loaded": 84,
+    "gateRules": 1,
+    "script": "text/plain",
+    "timers": [
+     "cleared",
+     "cleared"
+    ],
+    "decodes": 168,
+    "listeners": 160,
+    "observers": 4,
+    "errors": [],
+    "reduced": {
+     "hover": "playground",
+     "arcade": "still",
+     "lift": "none",
+     "surgeRunning": 0
+    }
+   }
+  ]
+ }
+]

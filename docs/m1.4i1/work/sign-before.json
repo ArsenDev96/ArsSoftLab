@@ -1,0 +1,782 @@
+{
+ "map": {
+  "rest": {
+   "signPx": 1311,
+   "signHit": 0,
+   "signCovered": 0,
+   "hotspotPxAbove352": 0,
+   "ofWhichOffArtwork": 0,
+   "ofWhichToTheRightTowardsTheLabel": 0,
+   "farthestOffArtworkElsewherePx": 0,
+   "labelPx": 948
+  },
+  "lifted": {
+   "signPx": 1339,
+   "signHit": 0,
+   "signCovered": 0,
+   "hotspotPxAbove352": 0,
+   "ofWhichOffArtwork": 0,
+   "ofWhichToTheRightTowardsTheLabel": 0,
+   "farthestOffArtworkElsewherePx": 0,
+   "labelPx": 1269
+  },
+  "whole": {
+   "e": 2597,
+   "d": 3706,
+   "p": 2796,
+   "c": 4234,
+   "x": 5132,
+   "L": 2391,
+   "N": 3618,
+   ".": 73756
+  },
+  "errors": []
+ },
+ "timing": {
+  "body": {
+   "spark": 32,
+   "stripStarts": 683,
+   "liftStarts": 683,
+   "liftDone": 1098,
+   "lift": 18,
+   "arcade": 1,
+   "others": 0
+  },
+  "sign": "no hover",
+  "body again": {
+   "spark": 16,
+   "stripStarts": 666,
+   "liftStarts": 666,
+   "liftDone": 1082,
+   "lift": 18,
+   "arcade": 1,
+   "others": 0
+  },
+  "sign again": "no hover",
+  "rest": true
+ },
+ "click": {
+  "sign": {
+   "hit": null,
+   "changes": [
+    "-/-"
+   ],
+   "url": "/lab-v2",
+   "panel": null,
+   "focus": null,
+   "hitZoomed": null,
+   "afterSecondClick": null,
+   "afterEscape": [
+    null,
+    "",
+    "/lab-v2"
+   ],
+   "errors": []
+  },
+  "body": {
+   "hit": "playground",
+   "changes": [
+    "-/-",
+    "playground/-",
+    "playground/playground"
+   ],
+   "url": "/lab-v2?station=playground",
+   "panel": "playground",
+   "focus": "station-playground-panel-title",
+   "hitZoomed": "playground",
+   "afterSecondClick": "playground",
+   "afterEscape": [
+    null,
+    "station-playground-trigger",
+    "/lab-v2"
+   ],
+   "errors": []
+  },
+  "duringCharge": {
+   "changes": [
+    "-/-"
+   ],
+   "powered": false
+  }
+ },
+ "paths": [
+  {
+   "name": "charging: body -> sign -> platform",
+   "ms": 120,
+   "entered": "playground",
+   "changes": [
+    "playground/-"
+   ],
+   "drops": 0,
+   "end": "playground"
+  },
+  {
+   "name": "charging: sign -> body -> sign",
+   "ms": 120,
+   "entered": null,
+   "changes": [
+    "-/-",
+    "playground/-",
+    "-/-"
+   ],
+   "drops": 1,
+   "end": null
+  },
+  {
+   "name": "lifted: body -> raised sign -> body",
+   "ms": 120,
+   "entered": "playground",
+   "changes": [
+    "playground/-",
+    "-/-",
+    "playground/-"
+   ],
+   "drops": 1,
+   "end": "playground"
+  },
+  {
+   "name": "lifted: raised sign -> resting sign -> platform",
+   "ms": 120,
+   "entered": null,
+   "changes": [
+    "-/-",
+    "playground/-"
+   ],
+   "drops": 0,
+   "end": "playground"
+  },
+  {
+   "name": "lifted: raised sign -> title",
+   "ms": 120,
+   "entered": null,
+   "changes": [
+    "-/-"
+   ],
+   "drops": 0,
+   "end": null
+  },
+  {
+   "name": "lifted: sign -> chip",
+   "ms": 120,
+   "entered": null,
+   "changes": [
+    "-/-",
+    "playground/-",
+    "-/-"
+   ],
+   "drops": 1,
+   "end": null
+  },
+  {
+   "name": "charging: sign -> title",
+   "ms": 120,
+   "entered": null,
+   "changes": [
+    "-/-",
+    "playground/-"
+   ],
+   "drops": 0,
+   "end": "playground"
+  },
+  {
+   "name": "charging: sign -> chip",
+   "ms": 120,
+   "entered": null,
+   "changes": [
+    "-/-",
+    "playground/-"
+   ],
+   "drops": 0,
+   "end": "playground"
+  },
+  {
+   "name": "lifted: title -> raised sign",
+   "ms": 120,
+   "entered": "playground",
+   "changes": [
+    "playground/-",
+    "-/-"
+   ],
+   "drops": 1,
+   "end": null
+  },
+  {
+   "name": "charging: body -> sign -> platform",
+   "ms": 250,
+   "entered": "playground",
+   "changes": [
+    "playground/-"
+   ],
+   "drops": 0,
+   "end": "playground"
+  },
+  {
+   "name": "charging: sign -> body -> sign",
+   "ms": 250,
+   "entered": null,
+   "changes": [
+    "-/-",
+    "playground/-",
+    "-/-"
+   ],
+   "drops": 1,
+   "end": null
+  },
+  {
+   "name": "lifted: body -> raised sign -> body",
+   "ms": 250,
+   "entered": "playground",
+   "changes": [
+    "playground/-",
+    "-/-",
+    "playground/-"
+   ],
+   "drops": 1,
+   "end": "playground"
+  },
+  {
+   "name": "lifted: raised sign -> resting sign -> platform",
+   "ms": 250,
+   "entered": null,
+   "changes": [
+    "-/-",
+    "playground/-"
+   ],
+   "drops": 0,
+   "end": "playground"
+  },
+  {
+   "name": "lifted: raised sign -> title",
+   "ms": 250,
+   "entered": null,
+   "changes": [
+    "-/-"
+   ],
+   "drops": 0,
+   "end": null
+  },
+  {
+   "name": "lifted: sign -> chip",
+   "ms": 250,
+   "entered": null,
+   "changes": [
+    "-/-",
+    "playground/-",
+    "-/-"
+   ],
+   "drops": 1,
+   "end": null
+  },
+  {
+   "name": "charging: sign -> title",
+   "ms": 250,
+   "entered": null,
+   "changes": [
+    "-/-",
+    "playground/-"
+   ],
+   "drops": 0,
+   "end": "playground"
+  },
+  {
+   "name": "charging: sign -> chip",
+   "ms": 250,
+   "entered": null,
+   "changes": [
+    "-/-",
+    "playground/-"
+   ],
+   "drops": 0,
+   "end": "playground"
+  },
+  {
+   "name": "lifted: title -> raised sign",
+   "ms": 250,
+   "entered": "playground",
+   "changes": [
+    "playground/-",
+    "-/-"
+   ],
+   "drops": 1,
+   "end": null
+  },
+  {
+   "name": "charging: body -> sign -> platform",
+   "ms": 400,
+   "entered": "playground",
+   "changes": [
+    "playground/-",
+    "-/-",
+    "playground/-"
+   ],
+   "drops": 1,
+   "end": "playground"
+  },
+  {
+   "name": "charging: sign -> body -> sign",
+   "ms": 400,
+   "entered": null,
+   "changes": [
+    "-/-",
+    "playground/-",
+    "-/-"
+   ],
+   "drops": 1,
+   "end": null
+  },
+  {
+   "name": "lifted: body -> raised sign -> body",
+   "ms": 400,
+   "entered": "playground",
+   "changes": [
+    "playground/-",
+    "-/-",
+    "playground/-"
+   ],
+   "drops": 1,
+   "end": "playground"
+  },
+  {
+   "name": "lifted: raised sign -> resting sign -> platform",
+   "ms": 400,
+   "entered": null,
+   "changes": [
+    "-/-",
+    "playground/-"
+   ],
+   "drops": 0,
+   "end": "playground"
+  },
+  {
+   "name": "lifted: raised sign -> title",
+   "ms": 400,
+   "entered": null,
+   "changes": [
+    "-/-"
+   ],
+   "drops": 0,
+   "end": null
+  },
+  {
+   "name": "lifted: sign -> chip",
+   "ms": 400,
+   "entered": null,
+   "changes": [
+    "-/-",
+    "playground/-",
+    "-/-"
+   ],
+   "drops": 1,
+   "end": null
+  },
+  {
+   "name": "charging: sign -> title",
+   "ms": 400,
+   "entered": null,
+   "changes": [
+    "-/-",
+    "playground/-"
+   ],
+   "drops": 0,
+   "end": "playground"
+  },
+  {
+   "name": "charging: sign -> chip",
+   "ms": 400,
+   "entered": null,
+   "changes": [
+    "-/-",
+    "playground/-"
+   ],
+   "drops": 0,
+   "end": "playground"
+  },
+  {
+   "name": "lifted: title -> raised sign",
+   "ms": 400,
+   "entered": "playground",
+   "changes": [
+    "playground/-",
+    "-/-"
+   ],
+   "drops": 1,
+   "end": null
+  },
+  {
+   "name": "charging: body -> sign -> platform",
+   "ms": 800,
+   "entered": "playground",
+   "changes": [
+    "playground/-",
+    "-/-",
+    "playground/-"
+   ],
+   "drops": 1,
+   "end": "playground"
+  },
+  {
+   "name": "charging: sign -> body -> sign",
+   "ms": 800,
+   "entered": null,
+   "changes": [
+    "-/-",
+    "playground/-",
+    "-/-"
+   ],
+   "drops": 1,
+   "end": null
+  },
+  {
+   "name": "lifted: body -> raised sign -> body",
+   "ms": 800,
+   "entered": "playground",
+   "changes": [
+    "playground/-",
+    "-/-",
+    "playground/-"
+   ],
+   "drops": 1,
+   "end": "playground"
+  },
+  {
+   "name": "lifted: raised sign -> resting sign -> platform",
+   "ms": 800,
+   "entered": null,
+   "changes": [
+    "-/-",
+    "playground/-"
+   ],
+   "drops": 0,
+   "end": "playground"
+  },
+  {
+   "name": "lifted: raised sign -> title",
+   "ms": 800,
+   "entered": null,
+   "changes": [
+    "-/-"
+   ],
+   "drops": 0,
+   "end": null
+  },
+  {
+   "name": "lifted: sign -> chip",
+   "ms": 800,
+   "entered": null,
+   "changes": [
+    "-/-",
+    "playground/-",
+    "-/-"
+   ],
+   "drops": 1,
+   "end": null
+  },
+  {
+   "name": "charging: sign -> title",
+   "ms": 800,
+   "entered": null,
+   "changes": [
+    "-/-",
+    "playground/-"
+   ],
+   "drops": 0,
+   "end": "playground"
+  },
+  {
+   "name": "charging: sign -> chip",
+   "ms": 800,
+   "entered": null,
+   "changes": [
+    "-/-",
+    "playground/-",
+    "-/-",
+    "playground/-"
+   ],
+   "drops": 1,
+   "end": "playground"
+  },
+  {
+   "name": "lifted: title -> raised sign",
+   "ms": 800,
+   "entered": "playground",
+   "changes": [
+    "playground/-",
+    "-/-"
+   ],
+   "drops": 1,
+   "end": null
+  },
+  {
+   "name": "charging: body -> sign -> platform",
+   "ms": 1500,
+   "entered": "playground",
+   "changes": [
+    "playground/-",
+    "-/-",
+    "playground/-"
+   ],
+   "drops": 1,
+   "end": "playground"
+  },
+  {
+   "name": "charging: sign -> body -> sign",
+   "ms": 1500,
+   "entered": null,
+   "changes": [
+    "-/-",
+    "playground/-",
+    "-/-"
+   ],
+   "drops": 1,
+   "end": null
+  },
+  {
+   "name": "lifted: body -> raised sign -> body",
+   "ms": 1500,
+   "entered": "playground",
+   "changes": [
+    "playground/-",
+    "-/-",
+    "playground/-"
+   ],
+   "drops": 1,
+   "end": "playground"
+  },
+  {
+   "name": "lifted: raised sign -> resting sign -> platform",
+   "ms": 1500,
+   "entered": null,
+   "changes": [
+    "-/-",
+    "playground/-"
+   ],
+   "drops": 0,
+   "end": "playground"
+  },
+  {
+   "name": "lifted: raised sign -> title",
+   "ms": 1500,
+   "entered": null,
+   "changes": [
+    "-/-"
+   ],
+   "drops": 0,
+   "end": null
+  },
+  {
+   "name": "lifted: sign -> chip",
+   "ms": 1500,
+   "entered": null,
+   "changes": [
+    "-/-",
+    "playground/-",
+    "-/-"
+   ],
+   "drops": 1,
+   "end": null
+  },
+  {
+   "name": "charging: sign -> title",
+   "ms": 1500,
+   "entered": null,
+   "changes": [
+    "-/-",
+    "playground/-"
+   ],
+   "drops": 0,
+   "end": "playground"
+  },
+  {
+   "name": "charging: sign -> chip",
+   "ms": 1500,
+   "entered": null,
+   "changes": [
+    "-/-",
+    "playground/-",
+    "-/-",
+    "playground/-"
+   ],
+   "drops": 1,
+   "end": "playground"
+  },
+  {
+   "name": "lifted: title -> raised sign",
+   "ms": 1500,
+   "entered": "playground",
+   "changes": [
+    "playground/-",
+    "-/-"
+   ],
+   "drops": 1,
+   "end": null
+  }
+ ],
+ "restOnRaisedSign": {
+  "changes": [
+   "-/-"
+  ],
+  "lift": 0
+ },
+ "wallAboveRestingSign": {
+  "changes": [
+   "-/-"
+  ]
+ },
+ "pathErrors": [],
+ "reenter": [
+  {
+   "gap": 40,
+   "changes": [
+    "-/-"
+   ],
+   "powered": false,
+   "lift": 0
+  },
+  {
+   "gap": 120,
+   "changes": [
+    "-/-"
+   ],
+   "powered": false,
+   "lift": 0
+  },
+  {
+   "gap": 180,
+   "changes": [
+    "-/-"
+   ],
+   "powered": false,
+   "lift": 0
+  },
+  {
+   "gap": 260,
+   "changes": [
+    "-/-"
+   ],
+   "powered": false,
+   "lift": 0
+  },
+  {
+   "gap": 400,
+   "changes": [
+    "-/-"
+   ],
+   "powered": false,
+   "lift": 0
+  },
+  {
+   "gap": 700,
+   "changes": [
+    "-/-"
+   ],
+   "powered": false,
+   "lift": 0
+  }
+ ],
+ "leave": {
+  "changes": [
+   "-/-"
+  ],
+  "rest": true
+ },
+ "game": {
+  "fromSign": "off",
+  "frames": [
+   false,
+   false,
+   false,
+   false
+  ],
+  "pointerEvents": [
+   "none",
+   "none"
+  ],
+  "state": "charging",
+  "changes": [
+   "-/-",
+   "playground/-",
+   "-/-",
+   "playground/-"
+  ]
+ },
+ "keyboard": {
+  "order": [
+   "Skip to lab stations",
+   "Arsen Manukyan — ArsSoftLab ho",
+   "Lab",
+   "Projects",
+   "Experience",
+   "About",
+   "Search the lab",
+   "Let’s Talk",
+   "station-educational-trigger",
+   "AriMap",
+   "Armat",
+   "station-engineering-trigger",
+   "SQLOrbit",
+   "TableRefresh",
+   "station-playground-trigger",
+   "AZIZ",
+   "station-creative-trigger",
+   "Wallpapers",
+   "station-experience-trigger",
+   "Koreez",
+   "Explore the Lab"
+  ],
+  "count": 21,
+  "tabbable": 33,
+  "hotspots": [
+   "educational,true,-1,",
+   "engineering,true,-1,",
+   "playground,true,-1,",
+   "creative,true,-1,",
+   "experience,true,-1,"
+  ],
+  "focused": true,
+  "selected": "playground",
+  "escape": [
+   null,
+   "station-playground-trigger"
+  ],
+  "errors": []
+ },
+ "neighbours": {
+  "engineering": {
+   "powered": true,
+   "rest": true
+  },
+  "educational": {
+   "powered": true,
+   "rest": true
+  },
+  "playground": {
+   "powered": true,
+   "rest": true
+  },
+  "creative": {
+   "powered": true,
+   "rest": true
+  },
+  "experience": {
+   "powered": true,
+   "rest": true
+  },
+  "title": "label:playground",
+  "chip": "label:playground",
+  "chipClick": "/lab-v2?station=playground&project=aziz",
+  "errors": []
+ },
+ "reduced": {
+  "hover": null,
+  "lift": 0,
+  "stripOff": 1,
+  "arcade": "off",
+  "aboveSign": null,
+  "sign": null,
+  "selected": null
+ },
+ "home": {
+  "map": 2763,
+  "style": "left:63.397129186602875%;top:37.40701381509033%;width:18.899521531100476%;height:21.679064824654624%;clip-path:polygon(0% 75%, 11.076% 61.765%, 16.456% 23.529%, 22.152% 0%, 63.924% 0%, 66.456% 49.02%, 85.443% 51.961%, 98.734% 67.647%, 100% 92.157%, 88.608% 100%, 12.658% 100%, 0% 92.157%)"
+ }
+}

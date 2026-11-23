@@ -3,6 +3,7 @@ import { SCENE, u, type SceneRect } from "@/lib/scene";
 import { EDU_LIGHT_BOX, EDU_LIGHT_GRID, EDU_LIGHT_STEPS, EDU_LIGHT_TAIL, EDU_RING_LENGTH, EDU_RING_PATH, EDU_WAVE_BOX, EDU_WAVE_STEPS } from "./educational-v2";
 import { PLATFORM_POWER, POWER_FRONT } from "./platform-power";
 import { partFrame, PowerPart, powerCss } from "./PlatformPower";
+import { cycleCss } from "./station-cycle";
 
 /**
  * M1.4H.2 (/lab-v2 only): Educational's activation, on M1.4F.1's recovered
@@ -84,16 +85,25 @@ const prop = (name: string) => `@property ${name}{syntax:"<number>";inherits:tru
 const level = (a: string | number) => `linear-gradient(rgb(0 0 0 / ${a}), rgb(0 0 0 / ${a}))`;
 
 const EDU_CSS =
-  ["--gp", "--gs", "--go", "--gr"].map(prop).join("") +
+  prop("--gr") +
   powerCss(ID) +
-  // The sequence's numbers, on the station's root and on its floor light.
-  `.edu-seq{--gp:0;--gs:0;--go:0;--gr:0;transition:--gp 0ms linear 120ms,--gs 280ms ease-in-out 100ms,--go 280ms ease-in-out 100ms}` +
-  `${ON} .edu-seq{--gp:1;--gs:1;--go:1;--gr:1;` +
-  `transition:--gp ${T.pulseMs}ms linear calc(var(--arrive-now) + ${T.pulseDelay}ms),` +
-  `--gs ${T.globeMs}ms cubic-bezier(0.35,0.2,0.5,0.95) calc(var(--arrive-now) + ${T.globeDelay}ms),` +
-  `--go ${T.orbitMs}ms cubic-bezier(0.35,0.15,0.45,0.95) calc(var(--arrive-now) + ${T.orbitDelay}ms)}` +
+  // The sequence's numbers, on the station's root and on its floor light, and the strips' pulse (M1.4I.1D:
+  // station-cycle.ts).
+  cycleCss({
+    id: ID,
+    cls: "edu",
+    key: "g",
+    numbers: [
+      { v: "--gp", on: `${T.pulseMs}ms linear calc(var(--arrive-now) + ${T.pulseDelay}ms)`, off: "0ms linear 120ms" },
+      { v: "--gs", on: `${T.globeMs}ms cubic-bezier(0.35,0.2,0.5,0.95) calc(var(--arrive-now) + ${T.globeDelay}ms)`, off: "280ms ease-in-out 100ms" },
+      { v: "--go", on: `${T.orbitMs}ms cubic-bezier(0.35,0.15,0.45,0.95) calc(var(--arrive-now) + ${T.orbitDelay}ms)`, off: "280ms ease-in-out 100ms" },
+    ],
+    doneMs: T.stableDelay,
+    pulse: 0.9,
+  }) +
+  `.edu-seq{--gr:0}${ON} .edu-seq{--gr:1}` +
   // What only exists while the sequence runs forward: nothing before the energy is there (a quick return can find
-  // the numbers part-way), gone at once on leaving.
+  // the numbers still running back), gone at once on leaving.
   `.edu-gate{opacity:0;transition:opacity 0s}${ON} .edu-gate{opacity:1;transition:opacity 0ms linear var(--arrive-now)}` +
   `.edu-pulse-base{opacity:calc(min(1, var(--gp) * 3) * min(1, (1 - var(--gp)) * 1.6) * 0.85)}` +
   `.edu-crest{opacity:calc(min(1, var(--gs) * 1000) * min(1, (1 - var(--gs)) * 1000))}` +
@@ -102,8 +112,6 @@ const EDU_CSS =
   `[data-edu-swap="stable"]{visibility:hidden;transition:visibility 0s}[data-edu-swap="anim"]{visibility:visible;transition:visibility 0s}` +
   `${ON} [data-edu-swap="stable"]{visibility:visible;transition:visibility 0s linear calc(var(--arrive-now) + ${T.stableDelay}ms)}` +
   `${ON} [data-edu-swap="anim"]{visibility:hidden;transition:visibility 0s linear calc(var(--arrive-now) + ${T.stableDelay}ms)}` +
-  // The strips' pulse rides each power front (it never runs while draining).
-  `.edu-pulse{opacity:0}${ON} .edu-pulse{opacity:calc(min(1, var(--pw) * 12) * min(1, (1 - var(--pw)) * 10) * 0.9)}` +
   // The floor: the strips' share over its standby; the globe's cyan reflection with the globe.
   `.edu-floor{opacity:calc(1 - var(--edu-standby, 0))}` +
   FLOOR_PARTS.map(
@@ -231,7 +239,14 @@ function Pulse({ index }: { index: number }) {
 
 const PARTS = PLATFORM_POWER[ID].parts.map((_, k) => k);
 
-export function EducationalV2() {
+/** The station in this cycle's wrapper (station-cycle.ts). */
+export const EducationalV2 = () => (
+  <div data-zone={ID} className="edu-cycle contents">
+    <Station />
+  </div>
+);
+
+function Station() {
   return (
     <div aria-hidden="true" data-zone={ID} data-v2-station={ID} data-v2-station-source="approved" className="edu-v2 edu-seq pointer-events-none absolute inset-0">
       <style>{EDU_CSS}</style>
@@ -346,7 +361,14 @@ function EducationalFloorParts({ src, name, standby }: { src: string; name: stri
  * floor under every station (SceneV2): the warm part follows its strips, the
  * cyan part (the globe's reflection) the globe.
  */
-export function EducationalFloor() {
+/** Its floor light in this cycle's wrapper (station-cycle.ts). */
+export const EducationalFloor = () => (
+  <div data-zone={ID} className="edu-cycle contents">
+    <Floor />
+  </div>
+);
+
+function Floor() {
   return (
     <div aria-hidden="true" data-zone={ID} data-v2-floor="educational-floor" className="edu-seq pointer-events-none absolute inset-0">
       <EducationalFloorParts src={`${M14H2}/educational-floor.png`} name="floor" standby={FLOOR_STANDBY} />

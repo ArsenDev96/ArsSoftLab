@@ -1,0 +1,668 @@
+[
+ {
+  "scenario": "remount /",
+  "log": [
+   {
+    "entry": "mount 1: /nav-test-tmp -> /",
+    "ok": true,
+    "ms": 1440,
+    "routeMs": 639,
+    "path": "/",
+    "doc": "s6t2xktzbw",
+    "opacity": "1,1",
+    "gateImages": 29,
+    "loaded": 29,
+    "gateRules": 1,
+    "script": "text/plain",
+    "timers": [
+     "cleared",
+     "cleared"
+    ],
+    "decodes": 349,
+    "listeners": 160,
+    "observers": 2,
+    "errors": [],
+    "activation": {
+     "poweredMs": 967,
+     "arcade": "running",
+     "rafPerFrame": 1,
+     "restMs": 532,
+     "arcadeAfter": "off",
+     "rafAtRest": 0,
+     "errors": []
+    },
+    "afterUnmount": {
+     "listeners": 156,
+     "observers": 1,
+     "animations": 0,
+     "timers": [
+      "cleared",
+      "cleared"
+     ]
+    }
+   },
+   {
+    "entry": "mount 2: /nav-test-tmp -> /",
+    "ok": true,
+    "ms": 4226,
+    "routeMs": 4215,
+    "path": "/",
+    "doc": "s6t2xktzbw",
+    "opacity": "1,1",
+    "gateImages": 29,
+    "loaded": 29,
+    "gateRules": 1,
+    "script": "text/plain",
+    "timers": [
+     "cleared",
+     "cleared"
+    ],
+    "decodes": 640,
+    "listeners": 160,
+    "observers": 2,
+    "errors": [],
+    "activation": {
+     "poweredMs": 1135,
+     "arcade": "running",
+     "rafPerFrame": 1,
+     "restMs": 470,
+     "arcadeAfter": "off",
+     "rafAtRest": 0,
+     "errors": []
+    },
+    "afterUnmount": {
+     "listeners": 156,
+     "observers": 1,
+     "animations": 0,
+     "timers": [
+      "cleared",
+      "cleared"
+     ]
+    }
+   },
+   {
+    "entry": "mount 3: /nav-test-tmp -> /",
+    "ok": true,
+    "ms": 295,
+    "routeMs": 282,
+    "path": "/",
+    "doc": "s6t2xktzbw",
+    "opacity": "1,1",
+    "gateImages": 29,
+    "loaded": 29,
+    "gateRules": 1,
+    "script": "text/plain",
+    "timers": [
+     "cleared",
+     "cleared"
+    ],
+    "decodes": 931,
+    "listeners": 160,
+    "observers": 2,
+    "errors": [],
+    "activation": {
+     "poweredMs": 950,
+     "arcade": "running",
+     "rafPerFrame": 1,
+     "restMs": 535,
+     "arcadeAfter": "off",
+     "rafAtRest": 0,
+     "errors": []
+    },
+    "afterUnmount": {
+     "listeners": 156,
+     "observers": 1,
+     "animations": 0,
+     "timers": [
+      "cleared",
+      "cleared"
+     ]
+    }
+   },
+   {
+    "entry": "mount 4: /nav-test-tmp -> /",
+    "ok": true,
+    "ms": 117,
+    "routeMs": 106,
+    "path": "/",
+    "doc": "s6t2xktzbw",
+    "opacity": "1,1",
+    "gateImages": 29,
+    "loaded": 29,
+    "gateRules": 1,
+    "script": "text/plain",
+    "timers": [
+     "cleared",
+     "cleared"
+    ],
+    "decodes": 1222,
+    "listeners": 160,
+    "observers": 2,
+    "errors": [],
+    "activation": {
+     "poweredMs": 949,
+     "arcade": "running",
+     "rafPerFrame": 1,
+     "restMs": 534,
+     "arcadeAfter": "off",
+     "rafAtRest": 0,
+     "errors": []
+    },
+    "afterUnmount": {
+     "listeners": 156,
+     "observers": 1,
+     "animations": 0,
+     "timers": [
+      "cleared",
+      "cleared"
+     ]
+    }
+   },
+   {
+    "entry": "mount 5: /nav-test-tmp -> /",
+    "ok": true,
+    "ms": 143,
+    "routeMs": 127,
+    "path": "/",
+    "doc": "s6t2xktzbw",
+    "opacity": "1,1",
+    "gateImages": 29,
+    "loaded": 29,
+    "gateRules": 1,
+    "script": "text/plain",
+    "timers": [
+     "cleared",
+     "cleared"
+    ],
+    "decodes": 1513,
+    "listeners": 160,
+    "observers": 2,
+    "errors": [],
+    "activation": {
+     "poweredMs": 932,
+     "arcade": "running",
+     "rafPerFrame": 1,
+     "restMs": 532,
+     "arcadeAfter": "off",
+     "rafAtRest": 0,
+     "errors": []
+    },
+    "afterUnmount": {
+     "listeners": 156,
+     "observers": 1,
+     "animations": 0,
+     "timers": [
+      "cleared",
+      "cleared"
+     ]
+    }
+   },
+   {
+    "entry": "mount 6: /nav-test-tmp -> /",
+    "ok": true,
+    "ms": 140,
+    "routeMs": 92,
+    "path": "/",
+    "doc": "s6t2xktzbw",
+    "opacity": "1,1",
+    "gateImages": 29,
+    "loaded": 29,
+    "gateRules": 1,
+    "script": "text/plain",
+    "timers": [
+     "cleared",
+     "cleared"
+    ],
+    "decodes": 1804,
+    "listeners": 160,
+    "observers": 2,
+    "errors": [],
+    "activation": {
+     "poweredMs": 950,
+     "arcade": "running",
+     "rafPerFrame": 1,
+     "restMs": 529,
+     "arcadeAfter": "off",
+     "rafAtRest": 0,
+     "errors": []
+    },
+    "afterUnmount": {
+     "listeners": 156,
+     "observers": 1,
+     "animations": 0,
+     "timers": [
+      "cleared",
+      "cleared"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "scenario": "remount /lab-v2",
+  "log": [
+   {
+    "entry": "mount 1: /nav-test-tmp -> /lab-v2",
+    "ok": true,
+    "ms": 2751,
+    "routeMs": 1451,
+    "path": "/lab-v2",
+    "doc": "erz6q8cztx7",
+    "opacity": "1,1",
+    "gateImages": 84,
+    "loaded": 84,
+    "gateRules": 1,
+    "script": "text/plain",
+    "timers": [
+     "cleared",
+     "cleared"
+    ],
+    "decodes": 168,
+    "listeners": 160,
+    "observers": 4,
+    "errors": [],
+    "activation": {
+     "poweredMs": 1152,
+     "arcade": "running",
+     "rafPerFrame": 1,
+     "restMs": 535,
+     "arcadeAfter": "off",
+     "rafAtRest": 0,
+     "errors": []
+    },
+    "afterUnmount": {
+     "listeners": 156,
+     "observers": 1,
+     "animations": 0,
+     "timers": [
+      "cleared",
+      "cleared"
+     ]
+    }
+   },
+   {
+    "entry": "mount 2: /nav-test-tmp -> /lab-v2",
+    "ok": true,
+    "ms": 162,
+    "routeMs": 138,
+    "path": "/lab-v2",
+    "doc": "erz6q8cztx7",
+    "opacity": "1,1",
+    "gateImages": 84,
+    "loaded": 84,
+    "gateRules": 1,
+    "script": "text/plain",
+    "timers": [
+     "cleared",
+     "cleared"
+    ],
+    "decodes": 168,
+    "listeners": 160,
+    "observers": 4,
+    "errors": [],
+    "activation": {
+     "poweredMs": 1152,
+     "arcade": "running",
+     "rafPerFrame": 1,
+     "restMs": 536,
+     "arcadeAfter": "off",
+     "rafAtRest": 0,
+     "errors": []
+    },
+    "afterUnmount": {
+     "listeners": 156,
+     "observers": 1,
+     "animations": 0,
+     "timers": [
+      "cleared",
+      "cleared"
+     ]
+    }
+   },
+   {
+    "entry": "mount 3: /nav-test-tmp -> /lab-v2",
+    "ok": true,
+    "ms": 142,
+    "routeMs": 126,
+    "path": "/lab-v2",
+    "doc": "erz6q8cztx7",
+    "opacity": "1,1",
+    "gateImages": 84,
+    "loaded": 84,
+    "gateRules": 1,
+    "script": "text/plain",
+    "timers": [
+     "cleared",
+     "cleared"
+    ],
+    "decodes": 168,
+    "listeners": 160,
+    "observers": 4,
+    "errors": [],
+    "activation": {
+     "poweredMs": 1136,
+     "arcade": "running",
+     "rafPerFrame": 1,
+     "restMs": 536,
+     "arcadeAfter": "off",
+     "rafAtRest": 0,
+     "errors": []
+    },
+    "afterUnmount": {
+     "listeners": 156,
+     "observers": 1,
+     "animations": 0,
+     "timers": [
+      "cleared",
+      "cleared"
+     ]
+    }
+   },
+   {
+    "entry": "mount 4: /nav-test-tmp -> /lab-v2",
+    "ok": true,
+    "ms": 188,
+    "routeMs": 181,
+    "path": "/lab-v2",
+    "doc": "erz6q8cztx7",
+    "opacity": "1,1",
+    "gateImages": 84,
+    "loaded": 84,
+    "gateRules": 1,
+    "script": "text/plain",
+    "timers": [
+     "cleared",
+     "cleared"
+    ],
+    "decodes": 168,
+    "listeners": 160,
+    "observers": 4,
+    "errors": [],
+    "activation": {
+     "poweredMs": 1136,
+     "arcade": "running",
+     "rafPerFrame": 1,
+     "restMs": 536,
+     "arcadeAfter": "off",
+     "rafAtRest": 0,
+     "errors": []
+    },
+    "afterUnmount": {
+     "listeners": 156,
+     "observers": 1,
+     "animations": 0,
+     "timers": [
+      "cleared",
+      "cleared"
+     ]
+    }
+   },
+   {
+    "entry": "mount 5: /nav-test-tmp -> /lab-v2",
+    "ok": true,
+    "ms": 148,
+    "routeMs": 132,
+    "path": "/lab-v2",
+    "doc": "erz6q8cztx7",
+    "opacity": "1,1",
+    "gateImages": 84,
+    "loaded": 84,
+    "gateRules": 1,
+    "script": "text/plain",
+    "timers": [
+     "cleared",
+     "cleared"
+    ],
+    "decodes": 168,
+    "listeners": 160,
+    "observers": 4,
+    "errors": [],
+    "activation": {
+     "poweredMs": 1136,
+     "arcade": "running",
+     "rafPerFrame": 1,
+     "restMs": 536,
+     "arcadeAfter": "off",
+     "rafAtRest": 0,
+     "errors": []
+    },
+    "afterUnmount": {
+     "listeners": 156,
+     "observers": 1,
+     "animations": 0,
+     "timers": [
+      "cleared",
+      "cleared"
+     ]
+    }
+   },
+   {
+    "entry": "mount 6: /nav-test-tmp -> /lab-v2",
+    "ok": true,
+    "ms": 144,
+    "routeMs": 137,
+    "path": "/lab-v2",
+    "doc": "erz6q8cztx7",
+    "opacity": "1,1",
+    "gateImages": 84,
+    "loaded": 84,
+    "gateRules": 1,
+    "script": "text/plain",
+    "timers": [
+     "cleared",
+     "cleared"
+    ],
+    "decodes": 168,
+    "listeners": 160,
+    "observers": 4,
+    "errors": [],
+    "activation": {
+     "poweredMs": 1136,
+     "arcade": "running",
+     "rafPerFrame": 1,
+     "restMs": 537,
+     "arcadeAfter": "off",
+     "rafAtRest": 0,
+     "errors": []
+    },
+    "afterUnmount": {
+     "listeners": 156,
+     "observers": 1,
+     "animations": 0,
+     "timers": [
+      "cleared",
+      "cleared"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "scenario": "deep links",
+  "log": [
+   {
+    "entry": "/nav-test-tmp -> /?station=experience",
+    "ok": true,
+    "ms": 1250,
+    "routeMs": null,
+    "path": "/?station=experience",
+    "doc": "883l078l8gq",
+    "opacity": "1,1",
+    "gateImages": 29,
+    "loaded": 29,
+    "gateRules": 1,
+    "script": "text/plain",
+    "timers": [
+     "cleared",
+     "cleared"
+    ],
+    "decodes": 83,
+    "listeners": 161,
+    "observers": 2,
+    "errors": [],
+    "selected": "experience"
+   },
+   {
+    "entry": "Back, Forward",
+    "ok": true,
+    "ms": 85,
+    "routeMs": 77,
+    "path": "/?station=experience",
+    "doc": "883l078l8gq",
+    "opacity": "1,1",
+    "gateImages": 29,
+    "loaded": 29,
+    "gateRules": 1,
+    "script": "text/plain",
+    "timers": [
+     "cleared",
+     "cleared"
+    ],
+    "decodes": 374,
+    "listeners": 161,
+    "observers": 2,
+    "errors": [],
+    "selected": "experience"
+   },
+   {
+    "entry": "/nav-test-tmp -> /",
+    "ok": true,
+    "ms": 267,
+    "routeMs": 128,
+    "path": "/",
+    "doc": "883l078l8gq",
+    "opacity": "1,1",
+    "gateImages": 29,
+    "loaded": 29,
+    "gateRules": 1,
+    "script": "text/plain",
+    "timers": [
+     "cleared",
+     "cleared"
+    ],
+    "decodes": 665,
+    "listeners": 160,
+    "observers": 2,
+    "errors": [],
+    "selected": null,
+    "afterClick": "educational"
+   },
+   {
+    "entry": "Back closes the station",
+    "ok": true,
+    "ms": 1,
+    "routeMs": 128,
+    "path": "/",
+    "doc": "883l078l8gq",
+    "opacity": "1,1",
+    "gateImages": 29,
+    "loaded": 29,
+    "gateRules": 1,
+    "script": "text/plain",
+    "timers": [
+     "cleared",
+     "cleared"
+    ],
+    "decodes": 665,
+    "listeners": 160,
+    "observers": 2,
+    "errors": [],
+    "selected": null
+   }
+  ]
+ },
+ {
+  "scenario": "deep links",
+  "log": [
+   {
+    "entry": "/nav-test-tmp -> /lab-v2?station=experience",
+    "ok": true,
+    "ms": 1033,
+    "routeMs": null,
+    "path": "/lab-v2?station=experience",
+    "doc": "anfakju88sg",
+    "opacity": "1,1",
+    "gateImages": 84,
+    "loaded": 84,
+    "gateRules": 1,
+    "script": "text/plain",
+    "timers": [
+     "cleared",
+     "cleared"
+    ],
+    "decodes": 168,
+    "listeners": 161,
+    "observers": 4,
+    "errors": [],
+    "selected": "experience"
+   },
+   {
+    "entry": "Back, Forward",
+    "ok": true,
+    "ms": 51,
+    "routeMs": 49,
+    "path": "/lab-v2?station=experience",
+    "doc": "anfakju88sg",
+    "opacity": "1,1",
+    "gateImages": 84,
+    "loaded": 84,
+    "gateRules": 1,
+    "script": "text/plain",
+    "timers": [
+     "cleared",
+     "cleared"
+    ],
+    "decodes": 168,
+    "listeners": 161,
+    "observers": 4,
+    "errors": [],
+    "selected": "experience"
+   },
+   {
+    "entry": "/nav-test-tmp -> /lab-v2",
+    "ok": true,
+    "ms": 258,
+    "routeMs": 138,
+    "path": "/lab-v2",
+    "doc": "anfakju88sg",
+    "opacity": "1,1",
+    "gateImages": 84,
+    "loaded": 84,
+    "gateRules": 1,
+    "script": "text/plain",
+    "timers": [
+     "cleared",
+     "cleared"
+    ],
+    "decodes": 168,
+    "listeners": 160,
+    "observers": 4,
+    "errors": [],
+    "selected": null,
+    "afterClick": "educational"
+   },
+   {
+    "entry": "Back closes the station",
+    "ok": true,
+    "ms": 1,
+    "routeMs": 138,
+    "path": "/lab-v2",
+    "doc": "anfakju88sg",
+    "opacity": "1,1",
+    "gateImages": 84,
+    "loaded": 84,
+    "gateRules": 1,
+    "script": "text/plain",
+    "timers": [
+     "cleared",
+     "cleared"
+    ],
+    "decodes": 168,
+    "listeners": 160,
+    "observers": 4,
+    "errors": [],
+    "selected": null
+   }
+  ]
+ }
+]

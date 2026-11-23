@@ -1,0 +1,112 @@
+[
+ {
+  "scenario": "client",
+  "log": [
+   {
+    "entry": "/nope -> / (client)",
+    "ok": true,
+    "ms": 884,
+    "routeMs": 300,
+    "path": "/",
+    "doc": "p27rnyc8dye",
+    "opacity": "1,1",
+    "gateImages": 29,
+    "loaded": 29,
+    "gateRules": 1,
+    "script": "text/plain",
+    "timers": [
+     "cleared",
+     "cleared"
+    ],
+    "decodes": 301,
+    "listeners": 160,
+    "observers": 2,
+    "errors": [],
+    "activation": {
+     "poweredMs": 949,
+     "arcade": "running",
+     "rafPerFrame": 1,
+     "restMs": 531,
+     "arcadeAfter": "off",
+     "rafAtRest": 0,
+     "errors": []
+    }
+   },
+   {
+    "entry": "reload /",
+    "ok": true,
+    "ms": 716,
+    "routeMs": 300,
+    "path": "/",
+    "doc": "unr1nk24xx",
+    "opacity": "1,1",
+    "gateImages": 29,
+    "loaded": 29,
+    "gateRules": 1,
+    "script": "text/javascript",
+    "timers": [
+     "pending"
+    ],
+    "decodes": 78,
+    "listeners": 160,
+    "observers": 2,
+    "errors": []
+   }
+  ]
+ },
+ {
+  "scenario": "client",
+  "log": [
+   {
+    "entry": "/nope -> /lab-v2 (client)",
+    "ok": true,
+    "ms": 950,
+    "routeMs": 211,
+    "path": "/lab-v2",
+    "doc": "o8qj47ijpdi",
+    "opacity": "1,1",
+    "gateImages": 84,
+    "loaded": 84,
+    "gateRules": 1,
+    "script": "text/plain",
+    "timers": [
+     "cleared",
+     "cleared"
+    ],
+    "decodes": 168,
+    "listeners": 160,
+    "observers": 4,
+    "errors": [],
+    "activation": {
+     "poweredMs": 1149,
+     "arcade": "running",
+     "rafPerFrame": 1,
+     "restMs": 535,
+     "arcadeAfter": "off",
+     "rafAtRest": 0,
+     "errors": []
+    }
+   },
+   {
+    "entry": "reload /lab-v2",
+    "ok": true,
+    "ms": 801,
+    "routeMs": 211,
+    "path": "/lab-v2",
+    "doc": "s49agwwutxe",
+    "opacity": "1,1",
+    "gateImages": 84,
+    "loaded": 84,
+    "gateRules": 1,
+    "script": "text/javascript",
+    "timers": [
+     "pending"
+    ],
+    "decodes": 84,
+    "listeners": 160,
+    "observers": 4,
+    "errors": []
+   }
+  ]
+ }
+]

@@ -43,9 +43,14 @@ export function hotspotBox(shape: readonly ScenePoint[]): SceneRect {
   return { x, y, w: Math.max(...xs) - x, h: Math.max(...ys) - y };
 }
 
-/** CSS clip-path for a hotspot polygon, relative to its bounding box. */
-export function hotspotClip(shape: readonly ScenePoint[]): string {
-  const b = hotspotBox(shape);
+/** A hotspot whose outline changes with its station's lift (same number of points, so it can follow it). */
+export interface HotspotShape {
+  rest: readonly ScenePoint[];
+  raised: readonly ScenePoint[];
+}
+
+/** CSS clip-path for a hotspot polygon, relative to its bounding box (or the element's own box). */
+export function hotspotClip(shape: readonly ScenePoint[], b: SceneRect = hotspotBox(shape)): string {
   const pct = (v: number, o: number, s: number) => `${+(((v - o) / s) * 100).toFixed(3)}%`;
   return `polygon(${shape.map((p) => `${pct(p.x, b.x, b.w)} ${pct(p.y, b.y, b.h)}`).join(", ")})`;
 }

@@ -79,27 +79,61 @@ const FLOOR_PARTS = [
 const box = (r: SceneRect): CSSProperties => ({ left: u(r.x), top: u(r.y), width: u(r.w), height: u(r.h) });
 const C = ENG_CHART_BOX;
 
+/** The strips' pieces on the stone (the reflection part is the floor's: EngineeringFloor). */
+const STRIP_PARTS = PLATFORM_POWER[ID].parts.flatMap((p, k) => (p.kind === "strip" ? [k] : []));
+
 const prop = (name: string) => `@property ${name}{syntax:"<number>";inherits:true;initial-value:0}`;
-const barOn = (k: number) => `${BAR_VARS[k]} ${T.barMs}ms cubic-bezier(0.25,0.6,0.3,1) calc(var(--arrive-now) + ${T.chartDelay + k * T.barStagger}ms)`;
+
+/**
+ * M1.4I.1B: the sequence's numbers. A transition that is waiting for the
+ * energy holds whatever value it interrupted, so a quick return used to carry
+ * the previous cycle's half-run scan and half-risen bars through the new
+ * charge. Each number is therefore two:
+ *   --x-on  (.eng-cycle)  this cycle's progress: 0 until the energy arrives,
+ *                         and back to 0 at once on leaving
+ *   --x     (.eng-v2)     what is shown: follows --x-on; on leaving it runs
+ *                         back with its own timing, and a return during that
+ *                         doesn't touch it (--x-on is still 0), so it ends in
+ *                         standby and the arrival always starts from there
+ * The scan line, the caps and the strips' pulse (--ep<part>-on) need this
+ * cycle's numbers, so nothing left from before can show them.
+ *
+ * --eh: fully powered. Returning from a selection (Escape, Back) gives the
+ * station a moment with neither state before the focus lands on its title:
+ * it never lost power, so --eh keeps it through that moment (only then, and
+ * only if the sequence had finished) and no second sequence runs.
+ */
+const SEQ: { v: string; on: string; off: string }[] = [
+  { v: "--es", on: `${T.scanMs}ms cubic-bezier(0.45,0,0.55,1) calc(var(--arrive-now) + ${T.scanDelay}ms)`, off: "0ms linear 400ms" },
+  // The display: 0 standby, 1 switched on (at the scan's start).
+  { v: "--eo", on: `0ms linear calc(var(--arrive-now) + ${T.scanDelay}ms)`, off: "240ms var(--ease-glow) 160ms" },
+  { v: "--ef", on: `${T.glassMs}ms var(--ease-glow) calc(var(--arrive-now) + ${T.chartDelay}ms)`, off: "240ms var(--ease-glow) 160ms" },
+  { v: "--ed", on: `0ms linear calc(var(--arrive-now) + ${CHART_DONE}ms)`, off: "0ms linear 120ms" },
+  ...BAR_VARS.map((v, k) => ({ v, on: `${T.barMs}ms cubic-bezier(0.25,0.6,0.3,1) calc(var(--arrive-now) + ${T.chartDelay + k * T.barStagger}ms)`, off: "200ms ease-in 120ms" })),
+];
+const seq = (f: (s: (typeof SEQ)[number]) => string, sep: string) => SEQ.map(f).join(sep);
+/** The strips' pulse: each part only once its own front starts (the strips themselves keep their level until then). */
+const PULSE_ON = PLATFORM_POWER[ID].parts.map((p, k) => ({ v: `--ep${k}-on`, on: `0ms linear calc(var(--arrive-now) + ${p.on.delay}ms)` }));
+/** Everything .eng-cycle carries. */
+const CYCLE = [...SEQ.map((s) => ({ v: `${s.v}-on`, on: s.on })), ...PULSE_ON, { v: "--eh", on: `0ms linear calc(var(--arrive-now) + ${CHART_DONE}ms)` }];
+const RETURN_HOLD = 20;
 
 const ENG_CSS =
-  [prop("--es"), prop("--ef"), prop("--ed"), ...BAR_VARS.map(prop)].join("") +
+  [...SEQ, ...CYCLE].map((s) => prop(s.v)).join("") +
   powerCss(ID) +
-  // The sequence's numbers, on the station's root.
-  `.eng-v2{--es:0;--ef:0;--ed:0;${BAR_VARS.map((v) => `${v}:0`).join(";")};` +
-  `transition:--es 0ms linear 400ms,--ef 240ms var(--ease-glow) 160ms,--ed 0ms linear 120ms,${BAR_VARS.map((v) => `${v} 200ms ease-in 120ms`).join(",")}}` +
-  `${ON} .eng-v2{--es:1;--ef:1;--ed:1;${BAR_VARS.map((v) => `${v}:1`).join(";")};` +
-  `transition:--es ${T.scanMs}ms cubic-bezier(0.45,0,0.55,1) calc(var(--arrive-now) + ${T.scanDelay}ms),` +
-  `--ef ${T.glassMs}ms var(--ease-glow) calc(var(--arrive-now) + ${T.chartDelay}ms),--ed 0ms linear calc(var(--arrive-now) + ${CHART_DONE}ms),${BAR_VARS.map((_, k) => barOn(k)).join(",")}}` +
+  `.eng-cycle{${CYCLE.map((c) => `${c.v}:0`).join(";")};transition:none}` +
+  `[data-lab-returning="${ID}"] .eng-cycle{transition:--eh 0ms linear ${RETURN_HOLD}ms}` +
+  `${ON} .eng-cycle{${CYCLE.map((c) => `${c.v}:1`).join(";")};transition:${CYCLE.map((c) => `${c.v} ${c.on}`).join(",")}}` +
+  `.eng-v2{${seq((s) => `${s.v}:max(var(${s.v}-on),var(--eh))`, ";")};transition:${seq((s) => `${s.v} ${s.off}`, ",")}}` +
+  // Follows at once; naming the properties (not `none`) lets a run-back in progress finish.
+  `${ON} .eng-v2{transition:${seq((s) => `${s.v} 0s`, ",")}}` +
   // The display: standby until the scan starts, then the shade below the line takes over (same tint, same mask).
-  `.eng-screen-off{opacity:${SCREEN_STANDBY};transition:opacity 240ms var(--ease-glow) 160ms}` +
-  `${ON} .eng-screen-off{opacity:0;transition:opacity 0ms linear calc(var(--arrive-now) + ${T.scanDelay}ms)}` +
-  `.eng-scan-shade{background:rgb(3 6 9);opacity:0;transition:opacity 240ms var(--ease-glow) 160ms}` +
-  `${ON} .eng-scan-shade{opacity:${SCREEN_STANDBY};transition:opacity 0ms linear calc(var(--arrive-now) + ${T.scanDelay}ms)}` +
+  `.eng-screen-off{opacity:calc(${SCREEN_STANDBY} * (1 - var(--eo)))}` +
+  `.eng-scan-shade{background:rgb(3 6 9);opacity:calc(${SCREEN_STANDBY} * var(--eo))}` +
   `.eng-scan-band{opacity:0;transition:opacity 100ms linear}` +
-  `${ON} .eng-scan-band{opacity:calc(min(1, var(--es) * 14) * min(1, (1 - var(--es)) * 7));transition:none}` +
+  `${ON} .eng-scan-band{opacity:calc(min(1, var(--es-on) * 14) * min(1, (1 - var(--es-on)) * 7) * (1 - var(--eh)));transition:none}` +
   // The bars' caps, only while rising.
-  `.eng-caps{opacity:0;transition:opacity 100ms linear}${ON} .eng-caps{opacity:1;transition:none}` +
+  `.eng-caps{opacity:0;transition:opacity 100ms linear}${ON} .eng-caps{opacity:calc(var(--eo-on) * (1 - var(--eh)));transition:none}` +
   // Every bar risen: the masked chart gives way to the same images unmasked (a masked layer resamples sharp
   // edges a little differently), so the stable state draws exactly as the approved artwork. Leaving swaps back
   // at once, for the bars to sink.
@@ -107,7 +141,8 @@ const ENG_CSS =
   `${ON} [data-eng-swap="stable"]{visibility:visible;transition:visibility 0s linear calc(var(--arrive-now) + ${CHART_DONE}ms)}` +
   `${ON} [data-eng-swap="anim"]{visibility:hidden;transition:visibility 0s linear calc(var(--arrive-now) + ${CHART_DONE}ms)}` +
   // The strips' pulse rides each power front (it never runs while draining).
-  `.eng-pulse{opacity:0}${ON} .eng-pulse{opacity:calc(min(1, var(--pw) * 12) * min(1, (1 - var(--pw)) * 10) * 0.9)}` +
+  `.eng-pulse{opacity:0}` +
+  STRIP_PARTS.map((k) => `${ON} .eng-pulse[data-part="${k}"]{opacity:calc(min(1, var(--pw) * 12) * min(1, (1 - var(--pw)) * 10) * 0.9 * var(--ep${k}-on))}`).join("") +
   // The floor's share: the powered part over the standby part.
   `.eng-floor{opacity:calc(1 - var(--eng-standby, 0))}` +
   FLOOR_PARTS.map(
@@ -124,7 +159,7 @@ const ENG_CSS =
   `@media (prefers-reduced-motion: reduce){` +
   // The chart cross-fades whole (no bar rises): its masks off, its strength on --ef; the display's bars come up
   // with the display (the standby overlay fades).
-  `.eng-v2{transition:--ef 150ms ease!important}` +
+  `.eng-cycle{transition:none!important}.eng-v2{transition:--ef 150ms ease!important}` +
   `.eng-screen-off{transition:opacity 150ms ease!important}` +
   `${ON} [data-eng-swap]{transition:visibility 0s linear 150ms!important}` +
   `.eng-scan-shade,.eng-scan-band,.eng-caps,.eng-pulse,.eng-shimmer,[data-eng="screen-bars"]{display:none}` +
@@ -235,11 +270,9 @@ function Pulse({ index }: { index: number }) {
   );
 }
 
-/** The strips' pieces on the stone (the reflection part is the floor's: EngineeringFloor). */
-const STRIP_PARTS = PLATFORM_POWER[ID].parts.flatMap((p, k) => (p.kind === "strip" ? [k] : []));
-
 export function EngineeringV2() {
   return (
+    <div data-zone={ID} className="eng-cycle contents">
     <div aria-hidden="true" data-zone={ID} data-v2-station={ID} data-v2-station-source="approved" className="eng-v2 pointer-events-none absolute inset-0">
       <style>{ENG_CSS}</style>
       {/* The station: its body (the chart is its own layer) while anything moves; once every bar has risen, the
@@ -308,6 +341,7 @@ export function EngineeringV2() {
           style={{ top: "100%", height: u(6), background: "linear-gradient(180deg, rgb(150 235 255 / 0.9), rgb(80 200 255 / 0.25) 45%, transparent)" }}
         />
       </div>
+    </div>
     </div>
   );
 }

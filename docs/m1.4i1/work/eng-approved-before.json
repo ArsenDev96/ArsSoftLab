@@ -1,0 +1,235 @@
+{
+ "deeplink": {
+  "pw": 1,
+  "floor": 1,
+  "es": 1,
+  "ef": 1,
+  "ed": 1,
+  "bars": 11,
+  "scan": 0,
+  "screenOff": 0,
+  "caps": 1
+ },
+ "keyboardFocus": {
+  "tabs": 12,
+  "frames": 110,
+  "minEs": 0,
+  "minBars": 0,
+  "maxOff": 0.68,
+  "scanFrames": 21,
+  "capFrames": 23,
+  "hovers": [
+   "null/null",
+   "engineering/null"
+  ],
+  "end": {
+   "hover": "engineering",
+   "sel": null,
+   "es": 1,
+   "ef": 1,
+   "bars": 11,
+   "off": 0,
+   "stable": 1,
+   "pw": 1
+  }
+ },
+ "enterSelects": {
+  "frames": 87,
+  "minEs": 1,
+  "minBars": 11,
+  "maxOff": 0,
+  "scanFrames": 0,
+  "capFrames": 0,
+  "hovers": [
+   "engineering/engineering",
+   "null/engineering"
+  ],
+  "end": {
+   "hover": null,
+   "sel": "engineering",
+   "es": 1,
+   "ef": 1,
+   "bars": 11,
+   "off": 0,
+   "stable": 1,
+   "pw": 1
+  }
+ },
+ "escapeKeyboard": {
+  "frames": 108,
+  "minEs": 1,
+  "minBars": 11,
+  "maxOff": 0,
+  "scanFrames": 0,
+  "capFrames": 0,
+  "hovers": [
+   "engineering/null"
+  ],
+  "end": {
+   "hover": "engineering",
+   "sel": null,
+   "es": 1,
+   "ef": 1,
+   "bars": 11,
+   "off": 0,
+   "stable": 1,
+   "pw": 1
+  },
+  "focusBack": true
+ },
+ "tabOn": {
+  "frames": 54,
+  "minEs": 1,
+  "minBars": 11,
+  "maxOff": 0,
+  "scanFrames": 0,
+  "capFrames": 0,
+  "hovers": [
+   "engineering/null"
+  ],
+  "end": {
+   "hover": "engineering",
+   "sel": null,
+   "es": 1,
+   "ef": 1,
+   "bars": 11,
+   "off": 0,
+   "stable": 1,
+   "pw": 1
+  }
+ },
+ "click": {
+  "frames": 193,
+  "minEs": 0,
+  "minBars": 0,
+  "maxOff": 0.68,
+  "scanFrames": 21,
+  "capFrames": 22,
+  "hovers": [
+   "null/null",
+   "engineering/null",
+   "engineering/engineering"
+  ],
+  "end": {
+   "hover": "engineering",
+   "sel": "engineering",
+   "es": 1,
+   "ef": 1,
+   "bars": 11,
+   "off": 0,
+   "stable": 1,
+   "pw": 1
+  }
+ },
+ "escapePointerOver": {
+  "frames": 108,
+  "minEs": 1,
+  "minBars": 11,
+  "maxOff": 0,
+  "scanFrames": 0,
+  "capFrames": 0,
+  "hovers": [
+   "engineering/null"
+  ],
+  "end": {
+   "hover": "engineering",
+   "sel": null,
+   "es": 1,
+   "ef": 1,
+   "bars": 11,
+   "off": 0,
+   "stable": 1,
+   "pw": 1
+  }
+ },
+ "clickWhileCharging": {
+  "frames": 129,
+  "minEs": 0,
+  "minBars": 0,
+  "maxOff": 0.68,
+  "scanFrames": 21,
+  "capFrames": 23,
+  "hovers": [
+   "null/null",
+   "engineering/null",
+   "engineering/engineering"
+  ],
+  "end": {
+   "hover": "engineering",
+   "sel": "engineering",
+   "es": 1,
+   "ef": 1,
+   "bars": 11,
+   "off": 0,
+   "stable": 1,
+   "pw": 1
+  }
+ },
+ "escapePointerAway": {
+  "frames": 110,
+  "minEs": 1,
+  "minBars": 11,
+  "maxOff": 0,
+  "scanFrames": 0,
+  "capFrames": 0,
+  "hovers": [
+   "engineering/null"
+  ],
+  "end": {
+   "hover": "engineering",
+   "sel": null,
+   "es": 1,
+   "ef": 1,
+   "bars": 11,
+   "off": 0,
+   "stable": 1,
+   "pw": 1
+  }
+ },
+ "browserBack": {
+  "frames": 109,
+  "minEs": 1,
+  "minBars": 11,
+  "maxOff": 0,
+  "scanFrames": 0,
+  "capFrames": 0,
+  "hovers": [
+   "engineering/null"
+  ],
+  "end": {
+   "hover": "engineering",
+   "sel": null,
+   "es": 1,
+   "ef": 1,
+   "bars": 11,
+   "off": 0,
+   "stable": 1,
+   "pw": 1
+  }
+ },
+ "restAtEnd": true,
+ "errors": [],
+ "others": {
+  "educational": {
+   "powered": true,
+   "rest": true
+  },
+  "playground": {
+   "powered": true,
+   "rest": true
+  },
+  "creative": {
+   "powered": true,
+   "rest": true
+  },
+  "experience": {
+   "powered": true,
+   "rest": true
+  },
+  "engineering": {
+   "powered": true,
+   "rest": true
+  }
+ },
+ "othersErrors": []
+}

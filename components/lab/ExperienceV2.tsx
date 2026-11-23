@@ -3,6 +3,7 @@ import { SCENE, u, type SceneRect } from "@/lib/scene";
 import { EXP_BOX, EXP_CLOCK, EXP_GRID, EXP_STEPS } from "./experience-v2";
 import { PLATFORM_POWER, POWER_FRONT } from "./platform-power";
 import { partFrame, PowerPart, powerCss } from "./PlatformPower";
+import { cycleCss } from "./station-cycle";
 
 /**
  * M1.4H.4 (/lab-v2 only): Experience's activation: the energy travels the
@@ -74,18 +75,22 @@ const prop = (name: string) => `@property ${name}{syntax:"<number>";inherits:tru
 const floorSel = (k: number) => `.exp-floor[data-floor-part="${k}"]`;
 
 const EXP_CSS =
-  ["--xs", "--xr"].map(prop).join("") +
+  prop("--xr") +
   powerCss(ID) +
-  // The clock, on the station's root and on its floor light. Leaving: it stops, then runs back (it passes the
-  // destination's part quickly: that light is gated off). The short hold also covers Escape, which passes through a
-  // frame with neither hover nor selection.
-  `.exp-seq{--xs:0;--xr:0;transition:--xs ${T.drainMs}ms cubic-bezier(0.12,0.4,0.5,1) ${T.drainDelay}ms}` +
-  `${ON} .exp-seq{--xs:1;--xr:1;transition:--xs ${T.clockMs}ms linear calc(var(--arrive-now) + ${T.clockDelay}ms)}` +
+  // The clock, on the station's root and on its floor light, and the strips' pulse (M1.4I.1D: station-cycle.ts).
+  // Leaving: it stops, then runs back (it passes the destination's part quickly: that light is gated off).
+  cycleCss({
+    id: ID,
+    cls: "exp",
+    key: "x",
+    numbers: [{ v: "--xs", on: `${T.clockMs}ms linear calc(var(--arrive-now) + ${T.clockDelay}ms)`, off: `${T.drainMs}ms cubic-bezier(0.12,0.4,0.5,1) ${T.drainDelay}ms` }],
+    doneMs: T.stableDelay,
+    pulse: 0.8,
+  }) +
+  `.exp-seq{--xr:0}${ON} .exp-seq{--xr:1}` +
   // Light that only exists while the sequence runs forward: nothing before the energy is there, gone at once on leaving.
   `.exp-gate{opacity:0;transition:opacity 0s}${ON} .exp-gate{opacity:1;transition:opacity 0ms linear var(--arrive-now)}` +
   `.exp-light{opacity:calc(min(1, var(--xs) * 1000) * min(1, (1 - var(--xs)) * 1000))}` +
-  // The strips' pulse rides each power front (it never runs while draining).
-  `.exp-pulse{opacity:0}${ON} .exp-pulse{opacity:calc(min(1, var(--pw) * 12) * min(1, (1 - var(--pw)) * 10) * 0.8)}` +
   // The strips' floor light: behind the fronts while they move, then the approved layer itself (a masked layer draws
   // its 1 px edges a little differently). Both add, so fading one into the other changes nothing else.
   `[data-exp-swap="stable"]{opacity:0;transition:opacity 80ms linear}[data-exp-swap="anim"]{opacity:1;transition:opacity 80ms linear}` +
@@ -180,7 +185,14 @@ function Pulse({ index }: { index: number }) {
 /** The strips' pieces on the stone (the reflection parts are the floor's: ExperienceFloor). */
 const STRIP_PARTS = PLATFORM_POWER[ID].parts.flatMap((p, k) => (p.kind === "strip" ? [k] : []));
 
-export function ExperienceV2() {
+/** The station in this cycle's wrapper (station-cycle.ts). */
+export const ExperienceV2 = () => (
+  <div data-zone={ID} className="exp-cycle contents">
+    <Station />
+  </div>
+);
+
+function Station() {
   const light = frame({ x: 0, y: 0 });
   return (
     <div aria-hidden="true" data-zone={ID} data-v2-station={ID} data-v2-station-source="approved" className="exp-v2 exp-seq pointer-events-none absolute inset-0">
@@ -268,7 +280,14 @@ function FloorParts({ src, lit = src, name, standby, full }: { src: string; lit?
  * station (SceneV2): the ring, spill and strip reflections follow its strips;
  * what mirrors the lit landscape follows the journey.
  */
-export function ExperienceFloor() {
+/** Its floor light in this cycle's wrapper (station-cycle.ts). */
+export const ExperienceFloor = () => (
+  <div data-zone={ID} className="exp-cycle contents">
+    <Floor />
+  </div>
+);
+
+function Floor() {
   return (
     <div aria-hidden="true" data-zone={ID} data-v2-floor="experience-floor" className="exp-seq pointer-events-none absolute inset-0">
       {/* The fronts' image holds back the bright floor disc left of the platform (the standby's is unchanged). */}

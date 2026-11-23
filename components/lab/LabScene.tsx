@@ -8,7 +8,9 @@ import { StationActivation } from "./StationActivation";
 import { GlobeOrbit } from "./GlobeOrbit";
 import { FocusVignette, LabCamera } from "./LabCamera";
 import { LabStations } from "./LabStations";
-import { PlateGate, PlatformPower } from "./PlatformPower";
+import { PlateGate } from "./PlateGate";
+import { PLAYGROUND_HOTSPOT_V2 } from "./playground-sign-v2";
+import { PlatformPower } from "./PlatformPower";
 import { EnvironmentCorrections, StationReflections } from "./SceneDepth";
 import { SceneLayer } from "./SceneLayer";
 import { StationLayers } from "./StationLayers";
@@ -140,7 +142,8 @@ function LabSceneV2({ floorTone }: { floorTone: boolean }) {
         <FocusVignette />
         <SceneLayer name="stations" depth={0.5} className="z-10">
           {/* M1.4E.3: no floating gamepad over the v2 cabinet's marquee. */}
-          <LabStations hideIcons={["playground"]} />
+          {/* M1.4I.1C: Playground's target includes the v2 cabinet's sign. */}
+          <LabStations hideIcons={["playground"]} hotspots={{ playground: PLAYGROUND_HOTSPOT_V2 }} />
         </SceneLayer>
       </LabCamera>
     </div>
