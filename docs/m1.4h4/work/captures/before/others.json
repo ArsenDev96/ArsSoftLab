@@ -1,0 +1,2852 @@
+{
+ "engineering": {
+  "400": {
+   "eng": {
+    "strip": [
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "es": 0,
+    "ef": 0,
+    "ed": 0,
+    "bars": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "screen": 0.68,
+    "line": 0,
+    "drawn": "hidden"
+   },
+   "edu": {
+    "strip": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "gp": 0,
+    "gs": 0,
+    "go": 0,
+    "light": 0,
+    "gates": [
+     0,
+     0,
+     0
+    ],
+    "drawn": "hidden"
+   },
+   "cre": {
+    "strip": [
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "cw": 0,
+    "cs": 0,
+    "cg": 0,
+    "gates": [
+     0,
+     0,
+     0
+    ],
+    "top": 0.75,
+    "drawn": 0
+   },
+   "pg": {
+    "lift_px": 0,
+    "strip_off": 1,
+    "ring_lit": 0,
+    "arcade": 0,
+    "reflection": "matrix(1, 0, 0, 1, 0, 0)"
+   }
+  },
+  "665": {
+   "eng": {
+    "strip": [
+     0.549,
+     0
+    ],
+    "floor": [
+     0.409,
+     0,
+     0.409,
+     0
+    ],
+    "es": 0,
+    "ef": 0,
+    "ed": 0,
+    "bars": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "screen": 0.68,
+    "line": 0,
+    "drawn": "hidden"
+   },
+   "edu": {
+    "strip": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "gp": 0,
+    "gs": 0,
+    "go": 0,
+    "light": 0,
+    "gates": [
+     0,
+     0,
+     0
+    ],
+    "drawn": "hidden"
+   },
+   "cre": {
+    "strip": [
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "cw": 0,
+    "cs": 0,
+    "cg": 0,
+    "gates": [
+     0,
+     0,
+     0
+    ],
+    "top": 0.75,
+    "drawn": 0
+   },
+   "pg": {
+    "lift_px": 0,
+    "strip_off": 1,
+    "ring_lit": 0,
+    "arcade": 0,
+    "reflection": "matrix(1, 0, 0, 1, 0, 0)"
+   }
+  },
+  "880": {
+   "eng": {
+    "strip": [
+     1,
+     0.558
+    ],
+    "floor": [
+     1,
+     0.416,
+     1,
+     0.416
+    ],
+    "es": 0.405,
+    "ef": 0.481,
+    "ed": 0,
+    "bars": [
+     0.903,
+     0.776,
+     0.523,
+     0.132,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "screen": 0,
+    "line": 1,
+    "drawn": "hidden"
+   },
+   "edu": {
+    "strip": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "gp": 0,
+    "gs": 0,
+    "go": 0,
+    "light": 0,
+    "gates": [
+     0,
+     0,
+     0
+    ],
+    "drawn": "hidden"
+   },
+   "cre": {
+    "strip": [
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "cw": 0,
+    "cs": 0,
+    "cg": 0,
+    "gates": [
+     0,
+     0,
+     0
+    ],
+    "top": 0.75,
+    "drawn": 0
+   },
+   "pg": {
+    "lift_px": 0,
+    "strip_off": 1,
+    "ring_lit": 0,
+    "arcade": 0,
+    "reflection": "matrix(1, 0, 0, 1, 0, 0)"
+   }
+  },
+  "1000": {
+   "eng": {
+    "strip": [
+     1,
+     1
+    ],
+    "floor": [
+     1,
+     0.742,
+     1,
+     0.742
+    ],
+    "es": 0.893,
+    "ef": 0.933,
+    "ed": 0,
+    "bars": [
+     1,
+     1,
+     1,
+     0.993,
+     0.966,
+     0.903,
+     0.776,
+     0.523,
+     0.132,
+     0,
+     0
+    ],
+    "screen": 0,
+    "line": 0.75,
+    "drawn": "hidden"
+   },
+   "edu": {
+    "strip": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "gp": 0,
+    "gs": 0,
+    "go": 0,
+    "light": 0,
+    "gates": [
+     0,
+     0,
+     0
+    ],
+    "drawn": "hidden"
+   },
+   "cre": {
+    "strip": [
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "cw": 0,
+    "cs": 0,
+    "cg": 0,
+    "gates": [
+     0,
+     0,
+     0
+    ],
+    "top": 0.75,
+    "drawn": 0
+   },
+   "pg": {
+    "lift_px": 0,
+    "strip_off": 1,
+    "ring_lit": 0,
+    "arcade": 0,
+    "reflection": "matrix(1, 0, 0, 1, 0, 0)"
+   }
+  },
+  "2000": {
+   "eng": {
+    "strip": [
+     1,
+     1
+    ],
+    "floor": [
+     1,
+     1,
+     1,
+     1
+    ],
+    "es": 1,
+    "ef": 1,
+    "ed": 1,
+    "bars": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "screen": 0,
+    "line": 0,
+    "drawn": "visible"
+   },
+   "edu": {
+    "strip": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "gp": 0,
+    "gs": 0,
+    "go": 0,
+    "light": 0,
+    "gates": [
+     0,
+     0,
+     0
+    ],
+    "drawn": "hidden"
+   },
+   "cre": {
+    "strip": [
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "cw": 0,
+    "cs": 0,
+    "cg": 0,
+    "gates": [
+     0,
+     0,
+     0
+    ],
+    "top": 0.75,
+    "drawn": 0
+   },
+   "pg": {
+    "lift_px": 0,
+    "strip_off": 1,
+    "ring_lit": 0,
+    "arcade": 0,
+    "reflection": "matrix(1, 0, 0, 1, 0, 0)"
+   }
+  },
+  "rest": {
+   "eng": {
+    "strip": [
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "es": 0,
+    "ef": 0,
+    "ed": 0,
+    "bars": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "screen": 0.68,
+    "line": 0,
+    "drawn": "hidden"
+   },
+   "edu": {
+    "strip": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "gp": 0,
+    "gs": 0,
+    "go": 0,
+    "light": 0,
+    "gates": [
+     0,
+     0,
+     0
+    ],
+    "drawn": "hidden"
+   },
+   "cre": {
+    "strip": [
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "cw": 0,
+    "cs": 0,
+    "cg": 0,
+    "gates": [
+     0,
+     0,
+     0
+    ],
+    "top": 0.75,
+    "drawn": 0
+   },
+   "pg": {
+    "lift_px": 0,
+    "strip_off": 1,
+    "ring_lit": 0,
+    "arcade": 0,
+    "reflection": "matrix(1, 0, 0, 1, 0, 0)"
+   }
+  },
+  "leave-120": {
+   "eng": {
+    "strip": [
+     1,
+     0.227
+    ],
+    "floor": [
+     1,
+     0.256,
+     1,
+     0.256
+    ],
+    "es": 1,
+    "ef": 1,
+    "ed": 0,
+    "bars": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "screen": 0,
+    "line": 0,
+    "drawn": "hidden"
+   },
+   "edu": {
+    "strip": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "gp": 0,
+    "gs": 0,
+    "go": 0,
+    "light": 0,
+    "gates": [
+     0,
+     0,
+     0
+    ],
+    "drawn": "hidden"
+   },
+   "cre": {
+    "strip": [
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "cw": 0,
+    "cs": 0,
+    "cg": 0,
+    "gates": [
+     0,
+     0,
+     0
+    ],
+    "top": 0.75,
+    "drawn": 0
+   },
+   "pg": {
+    "lift_px": 0,
+    "strip_off": 1,
+    "ring_lit": 0,
+    "arcade": 0,
+    "reflection": "matrix(1, 0, 0, 1, 0, 0)"
+   }
+  },
+  "leave-300": {
+   "eng": {
+    "strip": [
+     0,
+     0
+    ],
+    "floor": [
+     0.126,
+     0,
+     0.126,
+     0
+    ],
+    "es": 1,
+    "ef": 0.112,
+    "ed": 0,
+    "bars": [
+     0.161,
+     0.161,
+     0.161,
+     0.161,
+     0.161,
+     0.161,
+     0.161,
+     0.161,
+     0.161,
+     0.161,
+     0.161
+    ],
+    "screen": 0.604,
+    "line": 0,
+    "drawn": "hidden"
+   },
+   "edu": {
+    "strip": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "gp": 0,
+    "gs": 0,
+    "go": 0,
+    "light": 0,
+    "gates": [
+     0,
+     0,
+     0
+    ],
+    "drawn": "hidden"
+   },
+   "cre": {
+    "strip": [
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "cw": 0,
+    "cs": 0,
+    "cg": 0,
+    "gates": [
+     0,
+     0,
+     0
+    ],
+    "top": 0.75,
+    "drawn": 0
+   },
+   "pg": {
+    "lift_px": 0,
+    "strip_off": 1,
+    "ring_lit": 0,
+    "arcade": 0,
+    "reflection": "matrix(1, 0, 0, 1, 0, 0)"
+   }
+  },
+  "errors": []
+ },
+ "educational": {
+  "340": {
+   "eng": {
+    "strip": [
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "es": 0,
+    "ef": 0,
+    "ed": 0,
+    "bars": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "screen": 0.68,
+    "line": 0,
+    "drawn": "hidden"
+   },
+   "edu": {
+    "strip": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "gp": 0,
+    "gs": 0,
+    "go": 0,
+    "light": 0,
+    "gates": [
+     0,
+     0,
+     0
+    ],
+    "drawn": "hidden"
+   },
+   "cre": {
+    "strip": [
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "cw": 0,
+    "cs": 0,
+    "cg": 0,
+    "gates": [
+     0,
+     0,
+     0
+    ],
+    "top": 0.75,
+    "drawn": 0
+   },
+   "pg": {
+    "lift_px": 0,
+    "strip_off": 1,
+    "ring_lit": 0,
+    "arcade": 0,
+    "reflection": "matrix(1, 0, 0, 1, 0, 0)"
+   }
+  },
+  "540": {
+   "eng": {
+    "strip": [
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "es": 0,
+    "ef": 0,
+    "ed": 0,
+    "bars": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "screen": 0.68,
+    "line": 0,
+    "drawn": "hidden"
+   },
+   "edu": {
+    "strip": [
+     0.491,
+     0.506,
+     0,
+     0
+    ],
+    "floor": [
+     0.258,
+     0.258,
+     0.258,
+     0.258
+    ],
+    "gp": 0.059,
+    "gs": 0,
+    "go": 0,
+    "light": 0,
+    "gates": [
+     1,
+     1,
+     1
+    ],
+    "drawn": "hidden"
+   },
+   "cre": {
+    "strip": [
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "cw": 0,
+    "cs": 0,
+    "cg": 0,
+    "gates": [
+     0,
+     0,
+     0
+    ],
+    "top": 0.75,
+    "drawn": 0
+   },
+   "pg": {
+    "lift_px": 0,
+    "strip_off": 1,
+    "ring_lit": 0,
+    "arcade": 0,
+    "reflection": "matrix(1, 0, 0, 1, 0, 0)"
+   }
+  },
+  "710": {
+   "eng": {
+    "strip": [
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "es": 0,
+    "ef": 0,
+    "ed": 0,
+    "bars": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "screen": 0.68,
+    "line": 0,
+    "drawn": "hidden"
+   },
+   "edu": {
+    "strip": [
+     1,
+     1,
+     0.495,
+     0.473
+    ],
+    "floor": [
+     0.806,
+     0.806,
+     0.806,
+     0.806
+    ],
+    "gp": 1,
+    "gs": 0.397,
+    "go": 0.057,
+    "light": 1,
+    "gates": [
+     1,
+     1,
+     1
+    ],
+    "drawn": "hidden"
+   },
+   "cre": {
+    "strip": [
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "cw": 0,
+    "cs": 0,
+    "cg": 0,
+    "gates": [
+     0,
+     0,
+     0
+    ],
+    "top": 0.75,
+    "drawn": 0
+   },
+   "pg": {
+    "lift_px": 0,
+    "strip_off": 1,
+    "ring_lit": 0,
+    "arcade": 0,
+    "reflection": "matrix(1, 0, 0, 1, 0, 0)"
+   }
+  },
+  "860": {
+   "eng": {
+    "strip": [
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "es": 0,
+    "ef": 0,
+    "ed": 0,
+    "bars": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "screen": 0.68,
+    "line": 0,
+    "drawn": "hidden"
+   },
+   "edu": {
+    "strip": [
+     1,
+     1,
+     1,
+     1
+    ],
+    "floor": [
+     1,
+     1,
+     1,
+     1
+    ],
+    "gp": 1,
+    "gs": 0.895,
+    "go": 0.434,
+    "light": 1,
+    "gates": [
+     1,
+     1,
+     1
+    ],
+    "drawn": "hidden"
+   },
+   "cre": {
+    "strip": [
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "cw": 0,
+    "cs": 0,
+    "cg": 0,
+    "gates": [
+     0,
+     0,
+     0
+    ],
+    "top": 0.75,
+    "drawn": 0
+   },
+   "pg": {
+    "lift_px": 0,
+    "strip_off": 1,
+    "ring_lit": 0,
+    "arcade": 0,
+    "reflection": "matrix(1, 0, 0, 1, 0, 0)"
+   }
+  },
+  "1020": {
+   "eng": {
+    "strip": [
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "es": 0,
+    "ef": 0,
+    "ed": 0,
+    "bars": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "screen": 0.68,
+    "line": 0,
+    "drawn": "hidden"
+   },
+   "edu": {
+    "strip": [
+     1,
+     1,
+     1,
+     1
+    ],
+    "floor": [
+     1,
+     1,
+     1,
+     1
+    ],
+    "gp": 1,
+    "gs": 1,
+    "go": 0.838,
+    "light": 1,
+    "gates": [
+     1,
+     1,
+     1
+    ],
+    "drawn": "hidden"
+   },
+   "cre": {
+    "strip": [
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "cw": 0,
+    "cs": 0,
+    "cg": 0,
+    "gates": [
+     0,
+     0,
+     0
+    ],
+    "top": 0.75,
+    "drawn": 0
+   },
+   "pg": {
+    "lift_px": 0,
+    "strip_off": 1,
+    "ring_lit": 0,
+    "arcade": 0,
+    "reflection": "matrix(1, 0, 0, 1, 0, 0)"
+   }
+  },
+  "1860": {
+   "eng": {
+    "strip": [
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "es": 0,
+    "ef": 0,
+    "ed": 0,
+    "bars": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "screen": 0.68,
+    "line": 0,
+    "drawn": "hidden"
+   },
+   "edu": {
+    "strip": [
+     1,
+     1,
+     1,
+     1
+    ],
+    "floor": [
+     1,
+     1,
+     1,
+     1
+    ],
+    "gp": 1,
+    "gs": 1,
+    "go": 1,
+    "light": 0,
+    "gates": [
+     1,
+     1,
+     1
+    ],
+    "drawn": "visible"
+   },
+   "cre": {
+    "strip": [
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "cw": 0,
+    "cs": 0,
+    "cg": 0,
+    "gates": [
+     0,
+     0,
+     0
+    ],
+    "top": 0.75,
+    "drawn": 0
+   },
+   "pg": {
+    "lift_px": 0,
+    "strip_off": 1,
+    "ring_lit": 0,
+    "arcade": 0,
+    "reflection": "matrix(1, 0, 0, 1, 0, 0)"
+   }
+  },
+  "rest": {
+   "eng": {
+    "strip": [
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "es": 0,
+    "ef": 0,
+    "ed": 0,
+    "bars": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "screen": 0.68,
+    "line": 0,
+    "drawn": "hidden"
+   },
+   "edu": {
+    "strip": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "gp": 0,
+    "gs": 0,
+    "go": 0,
+    "light": 0,
+    "gates": [
+     0,
+     0,
+     0
+    ],
+    "drawn": "hidden"
+   },
+   "cre": {
+    "strip": [
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "cw": 0,
+    "cs": 0,
+    "cg": 0,
+    "gates": [
+     0,
+     0,
+     0
+    ],
+    "top": 0.75,
+    "drawn": 0
+   },
+   "pg": {
+    "lift_px": 0,
+    "strip_off": 1,
+    "ring_lit": 0,
+    "arcade": 0,
+    "reflection": "matrix(1, 0, 0, 1, 0, 0)"
+   }
+  },
+  "leave-120": {
+   "eng": {
+    "strip": [
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "es": 0,
+    "ef": 0,
+    "ed": 0,
+    "bars": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "screen": 0.68,
+    "line": 0,
+    "drawn": "hidden"
+   },
+   "edu": {
+    "strip": [
+     0.915,
+     0.942,
+     0,
+     0
+    ],
+    "floor": [
+     0.538,
+     0.538,
+     0.538,
+     0.538
+    ],
+    "gp": 0,
+    "gs": 0.99,
+    "go": 0.99,
+    "light": 1,
+    "gates": [
+     0,
+     0,
+     0
+    ],
+    "drawn": "hidden"
+   },
+   "cre": {
+    "strip": [
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "cw": 0,
+    "cs": 0,
+    "cg": 0,
+    "gates": [
+     0,
+     0,
+     0
+    ],
+    "top": 0.75,
+    "drawn": 0
+   },
+   "pg": {
+    "lift_px": 0,
+    "strip_off": 1,
+    "ring_lit": 0,
+    "arcade": 0,
+    "reflection": "matrix(1, 0, 0, 1, 0, 0)"
+   }
+  },
+  "leave-300": {
+   "eng": {
+    "strip": [
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "es": 0,
+    "ef": 0,
+    "ed": 0,
+    "bars": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "screen": 0.68,
+    "line": 0,
+    "drawn": "hidden"
+   },
+   "edu": {
+    "strip": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "gp": 0,
+    "gs": 0.17,
+    "go": 0.17,
+    "light": 1,
+    "gates": [
+     0,
+     0,
+     0
+    ],
+    "drawn": "hidden"
+   },
+   "cre": {
+    "strip": [
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "cw": 0,
+    "cs": 0,
+    "cg": 0,
+    "gates": [
+     0,
+     0,
+     0
+    ],
+    "top": 0.75,
+    "drawn": 0
+   },
+   "pg": {
+    "lift_px": 0,
+    "strip_off": 1,
+    "ring_lit": 0,
+    "arcade": 0,
+    "reflection": "matrix(1, 0, 0, 1, 0, 0)"
+   }
+  },
+  "errors": []
+ },
+ "playground": {
+  "400": {
+   "eng": {
+    "strip": [
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "es": 0,
+    "ef": 0,
+    "ed": 0,
+    "bars": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "screen": 0.68,
+    "line": 0,
+    "drawn": "hidden"
+   },
+   "edu": {
+    "strip": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "gp": 0,
+    "gs": 0,
+    "go": 0,
+    "light": 0,
+    "gates": [
+     0,
+     0,
+     0
+    ],
+    "drawn": "hidden"
+   },
+   "cre": {
+    "strip": [
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "cw": 0,
+    "cs": 0,
+    "cg": 0,
+    "gates": [
+     0,
+     0,
+     0
+    ],
+    "top": 0.75,
+    "drawn": 0
+   },
+   "pg": {
+    "lift_px": 0,
+    "strip_off": 1,
+    "ring_lit": 0,
+    "arcade": 0,
+    "reflection": "matrix(1, 0, 0, 1, 0, 0)"
+   }
+  },
+  "700": {
+   "eng": {
+    "strip": [
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "es": 0,
+    "ef": 0,
+    "ed": 0,
+    "bars": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "screen": 0.68,
+    "line": 0,
+    "drawn": "hidden"
+   },
+   "edu": {
+    "strip": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "gp": 0,
+    "gs": 0,
+    "go": 0,
+    "light": 0,
+    "gates": [
+     0,
+     0,
+     0
+    ],
+    "drawn": "hidden"
+   },
+   "cre": {
+    "strip": [
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "cw": 0,
+    "cs": 0,
+    "cg": 0,
+    "gates": [
+     0,
+     0,
+     0
+    ],
+    "top": 0.75,
+    "drawn": 0
+   },
+   "pg": {
+    "lift_px": -0.7,
+    "strip_off": 0.697,
+    "ring_lit": 0.303,
+    "arcade": 0,
+    "reflection": "matrix(1, 0, 0, 1, 0, 0.68737)"
+   }
+  },
+  "900": {
+   "eng": {
+    "strip": [
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "es": 0,
+    "ef": 0,
+    "ed": 0,
+    "bars": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "screen": 0.68,
+    "line": 0,
+    "drawn": "hidden"
+   },
+   "edu": {
+    "strip": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "gp": 0,
+    "gs": 0,
+    "go": 0,
+    "light": 0,
+    "gates": [
+     0,
+     0,
+     0
+    ],
+    "drawn": "hidden"
+   },
+   "cre": {
+    "strip": [
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "cw": 0,
+    "cs": 0,
+    "cg": 0,
+    "gates": [
+     0,
+     0,
+     0
+    ],
+    "top": 0.75,
+    "drawn": 0
+   },
+   "pg": {
+    "lift_px": -13.25,
+    "strip_off": 0.001,
+    "ring_lit": 0.999,
+    "arcade": 1,
+    "reflection": "matrix(1, 0, 0, 1, 0, 13.0707)"
+   }
+  },
+  "2400": {
+   "eng": {
+    "strip": [
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "es": 0,
+    "ef": 0,
+    "ed": 0,
+    "bars": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "screen": 0.68,
+    "line": 0,
+    "drawn": "hidden"
+   },
+   "edu": {
+    "strip": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "gp": 0,
+    "gs": 0,
+    "go": 0,
+    "light": 0,
+    "gates": [
+     0,
+     0,
+     0
+    ],
+    "drawn": "hidden"
+   },
+   "cre": {
+    "strip": [
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "cw": 0,
+    "cs": 0,
+    "cg": 0,
+    "gates": [
+     0,
+     0,
+     0
+    ],
+    "top": 0.75,
+    "drawn": 0
+   },
+   "pg": {
+    "lift_px": -18,
+    "strip_off": 0,
+    "ring_lit": 1,
+    "arcade": 1,
+    "reflection": "matrix(1, 0, 0, 1, 0, 17.7513)"
+   }
+  },
+  "rest": {
+   "eng": {
+    "strip": [
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "es": 0,
+    "ef": 0,
+    "ed": 0,
+    "bars": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "screen": 0.68,
+    "line": 0,
+    "drawn": "hidden"
+   },
+   "edu": {
+    "strip": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "gp": 0,
+    "gs": 0,
+    "go": 0,
+    "light": 0,
+    "gates": [
+     0,
+     0,
+     0
+    ],
+    "drawn": "hidden"
+   },
+   "cre": {
+    "strip": [
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "cw": 0,
+    "cs": 0,
+    "cg": 0,
+    "gates": [
+     0,
+     0,
+     0
+    ],
+    "top": 0.75,
+    "drawn": 0
+   },
+   "pg": {
+    "lift_px": 0,
+    "strip_off": 1,
+    "ring_lit": 0,
+    "arcade": 0,
+    "reflection": "matrix(1, 0, 0, 1, 0, 0)"
+   }
+  },
+  "leave-120": {
+   "eng": {
+    "strip": [
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "es": 0,
+    "ef": 0,
+    "ed": 0,
+    "bars": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "screen": 0.68,
+    "line": 0,
+    "drawn": "hidden"
+   },
+   "edu": {
+    "strip": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "gp": 0,
+    "gs": 0,
+    "go": 0,
+    "light": 0,
+    "gates": [
+     0,
+     0,
+     0
+    ],
+    "drawn": "hidden"
+   },
+   "cre": {
+    "strip": [
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "cw": 0,
+    "cs": 0,
+    "cg": 0,
+    "gates": [
+     0,
+     0,
+     0
+    ],
+    "top": 0.75,
+    "drawn": 0
+   },
+   "pg": {
+    "lift_px": -12.09,
+    "strip_off": 0,
+    "ring_lit": 1,
+    "arcade": 0.589,
+    "reflection": "matrix(1, 0, 0, 1, 0, 11.9215)"
+   }
+  },
+  "leave-300": {
+   "eng": {
+    "strip": [
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "es": 0,
+    "ef": 0,
+    "ed": 0,
+    "bars": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "screen": 0.68,
+    "line": 0,
+    "drawn": "hidden"
+   },
+   "edu": {
+    "strip": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "gp": 0,
+    "gs": 0,
+    "go": 0,
+    "light": 0,
+    "gates": [
+     0,
+     0,
+     0
+    ],
+    "drawn": "hidden"
+   },
+   "cre": {
+    "strip": [
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "cw": 0,
+    "cs": 0,
+    "cg": 0,
+    "gates": [
+     0,
+     0,
+     0
+    ],
+    "top": 0.75,
+    "drawn": 0
+   },
+   "pg": {
+    "lift_px": -0.99,
+    "strip_off": 0.888,
+    "ring_lit": 0.112,
+    "arcade": 0.009,
+    "reflection": "matrix(1, 0, 0, 1, 0, 0.978682)"
+   }
+  },
+  "errors": []
+ },
+ "creative": {
+  "400": {
+   "eng": {
+    "strip": [
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "es": 0,
+    "ef": 0,
+    "ed": 0,
+    "bars": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "screen": 0.68,
+    "line": 0,
+    "drawn": "hidden"
+   },
+   "edu": {
+    "strip": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "gp": 0,
+    "gs": 0,
+    "go": 0,
+    "light": 0,
+    "gates": [
+     0,
+     0,
+     0
+    ],
+    "drawn": "hidden"
+   },
+   "cre": {
+    "strip": [
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "cw": 0,
+    "cs": 0,
+    "cg": 0,
+    "gates": [
+     0,
+     0,
+     0
+    ],
+    "top": 0.75,
+    "drawn": 0
+   },
+   "pg": {
+    "lift_px": 0,
+    "strip_off": 1,
+    "ring_lit": 0,
+    "arcade": 0,
+    "reflection": "matrix(1, 0, 0, 1, 0, 0)"
+   }
+  },
+  "720": {
+   "eng": {
+    "strip": [
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "es": 0,
+    "ef": 0,
+    "ed": 0,
+    "bars": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "screen": 0.68,
+    "line": 0,
+    "drawn": "hidden"
+   },
+   "edu": {
+    "strip": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "gp": 0,
+    "gs": 0,
+    "go": 0,
+    "light": 0,
+    "gates": [
+     0,
+     0,
+     0
+    ],
+    "drawn": "hidden"
+   },
+   "cre": {
+    "strip": [
+     0.321,
+     0
+    ],
+    "floor": [
+     0.356,
+     0,
+     0.356,
+     0
+    ],
+    "cw": 0,
+    "cs": 0,
+    "cg": 0,
+    "gates": [
+     1,
+     1,
+     1
+    ],
+    "top": 0.75,
+    "drawn": 0
+   },
+   "pg": {
+    "lift_px": 0,
+    "strip_off": 1,
+    "ring_lit": 0,
+    "arcade": 0,
+    "reflection": "matrix(1, 0, 0, 1, 0, 0)"
+   }
+  },
+  "860": {
+   "eng": {
+    "strip": [
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "es": 0,
+    "ef": 0,
+    "ed": 0,
+    "bars": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "screen": 0.68,
+    "line": 0,
+    "drawn": "hidden"
+   },
+   "edu": {
+    "strip": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "gp": 0,
+    "gs": 0,
+    "go": 0,
+    "light": 0,
+    "gates": [
+     0,
+     0,
+     0
+    ],
+    "drawn": "hidden"
+   },
+   "cre": {
+    "strip": [
+     1,
+     0
+    ],
+    "floor": [
+     0.978,
+     0.014,
+     0.978,
+     0.014
+    ],
+    "cw": 0.429,
+    "cs": 0.138,
+    "cg": 0,
+    "gates": [
+     1,
+     1,
+     1
+    ],
+    "top": 0.785,
+    "drawn": 0
+   },
+   "pg": {
+    "lift_px": 0,
+    "strip_off": 1,
+    "ring_lit": 0,
+    "arcade": 0,
+    "reflection": "matrix(1, 0, 0, 1, 0, 0)"
+   }
+  },
+  "960": {
+   "eng": {
+    "strip": [
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "es": 0,
+    "ef": 0,
+    "ed": 0,
+    "bars": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "screen": 0.68,
+    "line": 0,
+    "drawn": "hidden"
+   },
+   "edu": {
+    "strip": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "gp": 0,
+    "gs": 0,
+    "go": 0,
+    "light": 0,
+    "gates": [
+     0,
+     0,
+     0
+    ],
+    "drawn": "hidden"
+   },
+   "cre": {
+    "strip": [
+     1,
+     0
+    ],
+    "floor": [
+     1,
+     0.296,
+     1,
+     0.296
+    ],
+    "cw": 0.786,
+    "cs": 0.397,
+    "cg": 0,
+    "gates": [
+     1,
+     1,
+     1
+    ],
+    "top": 0.849,
+    "drawn": 0
+   },
+   "pg": {
+    "lift_px": 0,
+    "strip_off": 1,
+    "ring_lit": 0,
+    "arcade": 0,
+    "reflection": "matrix(1, 0, 0, 1, 0, 0)"
+   }
+  },
+  "1140": {
+   "eng": {
+    "strip": [
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "es": 0,
+    "ef": 0,
+    "ed": 0,
+    "bars": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "screen": 0.68,
+    "line": 0,
+    "drawn": "hidden"
+   },
+   "edu": {
+    "strip": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "gp": 0,
+    "gs": 0,
+    "go": 0,
+    "light": 0,
+    "gates": [
+     0,
+     0,
+     0
+    ],
+    "drawn": "hidden"
+   },
+   "cre": {
+    "strip": [
+     1,
+     1
+    ],
+    "floor": [
+     1,
+     0.803,
+     1,
+     0.803
+    ],
+    "cw": 1,
+    "cs": 0.863,
+    "cg": 0.395,
+    "gates": [
+     1,
+     1,
+     1
+    ],
+    "top": 0.966,
+    "drawn": 0
+   },
+   "pg": {
+    "lift_px": 0,
+    "strip_off": 1,
+    "ring_lit": 0,
+    "arcade": 0,
+    "reflection": "matrix(1, 0, 0, 1, 0, 0)"
+   }
+  },
+  "2000": {
+   "eng": {
+    "strip": [
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "es": 0,
+    "ef": 0,
+    "ed": 0,
+    "bars": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "screen": 0.68,
+    "line": 0,
+    "drawn": "hidden"
+   },
+   "edu": {
+    "strip": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "gp": 0,
+    "gs": 0,
+    "go": 0,
+    "light": 0,
+    "gates": [
+     0,
+     0,
+     0
+    ],
+    "drawn": "hidden"
+   },
+   "cre": {
+    "strip": [
+     1,
+     1
+    ],
+    "floor": [
+     1,
+     1,
+     1,
+     1
+    ],
+    "cw": 1,
+    "cs": 1,
+    "cg": 1,
+    "gates": [
+     1,
+     1,
+     1
+    ],
+    "top": 1,
+    "drawn": 1
+   },
+   "pg": {
+    "lift_px": 0,
+    "strip_off": 1,
+    "ring_lit": 0,
+    "arcade": 0,
+    "reflection": "matrix(1, 0, 0, 1, 0, 0)"
+   }
+  },
+  "rest": {
+   "eng": {
+    "strip": [
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "es": 0,
+    "ef": 0,
+    "ed": 0,
+    "bars": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "screen": 0.68,
+    "line": 0,
+    "drawn": "hidden"
+   },
+   "edu": {
+    "strip": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "gp": 0,
+    "gs": 0,
+    "go": 0,
+    "light": 0,
+    "gates": [
+     0,
+     0,
+     0
+    ],
+    "drawn": "hidden"
+   },
+   "cre": {
+    "strip": [
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "cw": 0,
+    "cs": 0,
+    "cg": 0,
+    "gates": [
+     0,
+     0,
+     0
+    ],
+    "top": 0.75,
+    "drawn": 0
+   },
+   "pg": {
+    "lift_px": 0,
+    "strip_off": 1,
+    "ring_lit": 0,
+    "arcade": 0,
+    "reflection": "matrix(1, 0, 0, 1, 0, 0)"
+   }
+  },
+  "leave-120": {
+   "eng": {
+    "strip": [
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "es": 0,
+    "ef": 0,
+    "ed": 0,
+    "bars": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "screen": 0.68,
+    "line": 0,
+    "drawn": "hidden"
+   },
+   "edu": {
+    "strip": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "gp": 0,
+    "gs": 0,
+    "go": 0,
+    "light": 0,
+    "gates": [
+     0,
+     0,
+     0
+    ],
+    "drawn": "hidden"
+   },
+   "cre": {
+    "strip": [
+     1,
+     0
+    ],
+    "floor": [
+     1,
+     0.333,
+     1,
+     0.333
+    ],
+    "cw": 1,
+    "cs": 0.992,
+    "cg": 1,
+    "gates": [
+     0,
+     0,
+     0
+    ],
+    "top": 0.998,
+    "drawn": 0
+   },
+   "pg": {
+    "lift_px": 0,
+    "strip_off": 1,
+    "ring_lit": 0,
+    "arcade": 0,
+    "reflection": "matrix(1, 0, 0, 1, 0, 0)"
+   }
+  },
+  "leave-300": {
+   "eng": {
+    "strip": [
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "es": 0,
+    "ef": 0,
+    "ed": 0,
+    "bars": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "screen": 0.68,
+    "line": 0,
+    "drawn": "hidden"
+   },
+   "edu": {
+    "strip": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "floor": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "gp": 0,
+    "gs": 0,
+    "go": 0,
+    "light": 0,
+    "gates": [
+     0,
+     0,
+     0
+    ],
+    "drawn": "hidden"
+   },
+   "cre": {
+    "strip": [
+     0.143,
+     0
+    ],
+    "floor": [
+     0.15,
+     0,
+     0.15,
+     0
+    ],
+    "cw": 0,
+    "cs": 0.293,
+    "cg": 0,
+    "gates": [
+     0,
+     0,
+     0
+    ],
+    "top": 0.823,
+    "drawn": 0
+   },
+   "pg": {
+    "lift_px": 0,
+    "strip_off": 1,
+    "ring_lit": 0,
+    "arcade": 0,
+    "reflection": "matrix(1, 0, 0, 1, 0, 0)"
+   }
+  },
+  "errors": []
+ }
+}

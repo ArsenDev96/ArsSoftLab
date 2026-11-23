@@ -1,0 +1,66 @@
+{
+ "1648x928 engineering": [
+  {
+   "frames": 13,
+   "median_ms": 16.7,
+   "p95_ms": 219.5,
+   "max_ms": 219.5,
+   "over_50ms": 2
+  },
+  {
+   "frames": 13,
+   "median_ms": 16.7,
+   "p95_ms": 133.4,
+   "max_ms": 133.4,
+   "over_50ms": 3
+  }
+ ],
+ "1648x928 experience": [
+  {
+   "frames": 16,
+   "median_ms": 66.7,
+   "p95_ms": 149.9,
+   "max_ms": 149.9,
+   "over_50ms": 9
+  },
+  {
+   "frames": 39,
+   "median_ms": 16.7,
+   "p95_ms": 49.9,
+   "max_ms": 83.3,
+   "over_50ms": 1
+  }
+ ],
+ "824x464 engineering": [
+  {
+   "frames": 25,
+   "median_ms": 16.7,
+   "p95_ms": 50,
+   "max_ms": 83.4,
+   "over_50ms": 1
+  },
+  {
+   "frames": 24,
+   "median_ms": 16.7,
+   "p95_ms": 50.1,
+   "max_ms": 66.6,
+   "over_50ms": 2
+  }
+ ],
+ "824x464 experience": [
+  {
+   "frames": 52,
+   "median_ms": 16.7,
+   "p95_ms": 33.4,
+   "max_ms": 50.1,
+   "over_50ms": 1
+  },
+  {
+   "frames": 60,
+   "median_ms": 16.7,
+   "p95_ms": 16.8,
+   "max_ms": 16.8,
+   "over_50ms": 0
+  }
+ ]
+}

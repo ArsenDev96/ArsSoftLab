@@ -1,0 +1,154 @@
+{
+ "traverse": {
+  "engineering": {
+   "150": {
+    "took": 585,
+    "lost": 0,
+    "other": [],
+    "sparks": 0,
+    "stays": true
+   },
+   "400": {
+    "took": 2992,
+    "lost": 20,
+    "other": [],
+    "sparks": 54,
+    "stays": false
+   },
+   "900": {
+    "took": 4203,
+    "lost": 18,
+    "other": [],
+    "sparks": 135,
+    "stays": false
+   },
+   "1600": {
+    "took": 3835,
+    "lost": 36,
+    "other": [],
+    "sparks": 132,
+    "stays": false
+   }
+  },
+  "educational": {
+   "150": {
+    "took": 178,
+    "lost": 0,
+    "other": [],
+    "sparks": 0,
+    "stays": true
+   },
+   "400": {
+    "took": 1232,
+    "lost": 0,
+    "other": [],
+    "sparks": 0,
+    "stays": true
+   },
+   "900": {
+    "took": 3633,
+    "lost": 0,
+    "other": [],
+    "sparks": 0,
+    "stays": true
+   },
+   "1600": {
+    "took": 2050,
+    "lost": 0,
+    "other": [],
+    "sparks": 0,
+    "stays": true
+   }
+  },
+  "playground": {
+   "150": {
+    "took": 449,
+    "lost": 0,
+    "other": [],
+    "sparks": 0,
+    "stays": true
+   },
+   "400": {
+    "took": 3298,
+    "lost": 16,
+    "other": [],
+    "sparks": 26,
+    "stays": false
+   },
+   "900": {
+    "took": 5095,
+    "lost": 39,
+    "other": [],
+    "sparks": 75,
+    "stays": false
+   },
+   "1600": {
+    "took": 5950,
+    "lost": 56,
+    "other": [],
+    "sparks": 108,
+    "stays": false
+   }
+  },
+  "creative": {
+   "150": {
+    "took": 158,
+    "lost": 0,
+    "other": [],
+    "sparks": 0,
+    "stays": true
+   },
+   "400": {
+    "took": 1168,
+    "lost": 14,
+    "other": [],
+    "sparks": 72,
+    "stays": false
+   },
+   "900": {
+    "took": 1601,
+    "lost": 51,
+    "other": [],
+    "sparks": 123,
+    "stays": false
+   },
+   "1600": {
+    "took": 3831,
+    "lost": 172,
+    "other": [],
+    "sparks": 288,
+    "stays": false
+   }
+  },
+  "experience": {
+   "150": {
+    "took": 217,
+    "lost": 0,
+    "other": [],
+    "sparks": 0,
+    "stays": true
+   },
+   "400": {
+    "took": 1126,
+    "lost": 12,
+    "other": [],
+    "sparks": 66,
+    "stays": false
+   },
+   "900": {
+    "took": 2804,
+    "lost": 69,
+    "other": [],
+    "sparks": 96,
+    "stays": false
+   },
+   "1600": {
+    "took": 2329,
+    "lost": 136,
+    "other": [],
+    "sparks": 168,
+    "stays": false
+   }
+  }
+ }
+}

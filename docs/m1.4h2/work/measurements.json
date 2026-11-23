@@ -1,0 +1,327 @@
+{
+ "educational-phases.png": [
+  2620,
+  2296
+ ],
+ "educational-orbit-closeup.png": [
+  2390,
+  5320
+ ],
+ "stable vs approved (whole scene)": {
+  "max": 2,
+  "px_over_2": 0,
+  "px_over_8": 0,
+  "px": 1529344
+ },
+ "the swap: layers at their end values vs the station image": {
+  "max": 12,
+  "px_over_2": 134,
+  "px_over_8": 5,
+  "px": 1529344
+ },
+ "rest vs approved, outside Educational's box": {
+  "max": 0,
+  "px_over_2": 0,
+  "px_over_8": 0,
+  "px": 1404928
+ },
+ "returned vs rest (whole scene)": {
+  "max": 0,
+  "px_over_2": 0,
+  "px_over_8": 0,
+  "px": 1529344
+ },
+ "other stations": {
+  "others-creative-2400.png": {
+   "max": 0,
+   "px_over_2": 0,
+   "px_over_8": 0,
+   "px": 128464
+  },
+  "others-creative-rest.png": {
+   "max": 0,
+   "px_over_2": 0,
+   "px_over_8": 0,
+   "px": 128464
+  },
+  "others-engineering-1000.png": {
+   "max": 0,
+   "px_over_2": 0,
+   "px_over_8": 0,
+   "px": 116624
+  },
+  "others-engineering-2000.png": {
+   "max": 0,
+   "px_over_2": 0,
+   "px_over_8": 0,
+   "px": 116624
+  },
+  "others-engineering-400.png": {
+   "max": 1,
+   "px_over_2": 0,
+   "px_over_8": 0,
+   "px": 116624
+  },
+  "others-engineering-665.png": {
+   "max": 0,
+   "px_over_2": 0,
+   "px_over_8": 0,
+   "px": 116624
+  },
+  "others-engineering-880.png": {
+   "max": 0,
+   "px_over_2": 0,
+   "px_over_8": 0,
+   "px": 116624
+  },
+  "others-engineering-rest.png": {
+   "max": 0,
+   "px_over_2": 0,
+   "px_over_8": 0,
+   "px": 116624
+  },
+  "others-experience-2400.png": {
+   "max": 0,
+   "px_over_2": 0,
+   "px_over_8": 0,
+   "px": 128464
+  },
+  "others-experience-rest.png": {
+   "max": 0,
+   "px_over_2": 0,
+   "px_over_8": 0,
+   "px": 128464
+  },
+  "others-playground-2400.png": {
+   "max": 0,
+   "px_over_2": 0,
+   "px_over_8": 0,
+   "px": 119584
+  },
+  "others-playground-400.png": {
+   "max": 0,
+   "px_over_2": 0,
+   "px_over_8": 0,
+   "px": 119584
+  },
+  "others-playground-700.png": {
+   "max": 0,
+   "px_over_2": 0,
+   "px_over_8": 0,
+   "px": 119584
+  },
+  "others-playground-900.png": {
+   "max": 0,
+   "px_over_2": 0,
+   "px_over_8": 0,
+   "px": 119584
+  },
+  "others-playground-rest.png": {
+   "max": 0,
+   "px_over_2": 0,
+   "px_over_8": 0,
+   "px": 119584
+  }
+ },
+ "other stations: states whose numbers differ": [],
+ "landscape, church, stone: rest vs approved": {
+  "max": 1,
+  "px_over_2": 0,
+  "px_over_8": 0,
+  "px": 25809
+ },
+ "confinement (2x captures, with vs without)": {
+  "light +280": {
+   "changed_px_over_4": 3869,
+   "outside_the_ring_band": 0,
+   "over_the_island_or_church_away_from_the_front_arc": 0
+  },
+  "light +350": {
+   "changed_px_over_4": 4985,
+   "outside_the_ring_band": 0,
+   "over_the_island_or_church_away_from_the_front_arc": 0
+  },
+  "light +410": {
+   "changed_px_over_4": 3755,
+   "outside_the_ring_band": 0,
+   "over_the_island_or_church_away_from_the_front_arc": 0
+  },
+  "light +480": {
+   "changed_px_over_4": 94,
+   "outside_the_ring_band": 0,
+   "over_the_island_or_church_away_from_the_front_arc": 0
+  },
+  "light +570": {
+   "changed_px_over_4": 4529,
+   "outside_the_ring_band": 0,
+   "over_the_island_or_church_away_from_the_front_arc": 0
+  },
+  "crest +230": {
+   "changed_px_over_4": 21842,
+   "outside_the_hologram": 0
+  },
+  "crest +300": {
+   "changed_px_over_4": 29990,
+   "outside_the_hologram": 0
+  }
+ },
+ "1x luminance rest -> stable": {
+  "great bubble": [
+   75.5,
+   82.5
+  ],
+  "dome sky": [
+   97.2,
+   111.0
+  ],
+  "pool": [
+   92.6,
+   135.7
+  ],
+  "front strip": [
+   65.3,
+   154.6
+  ],
+  "floor under the base": [
+   156.1,
+   165.0
+  ]
+ },
+ "1x light on the ring": {
+  "orbit-front": {
+   "ring_p99": 255.0,
+   "ring_p99_at_rest": 169.8,
+   "ring_px_brighter_than_rest_by_40": 348
+  },
+  "orbit-back": {
+   "ring_p99": 250.3,
+   "ring_p99_at_rest": 169.8,
+   "ring_px_brighter_than_rest_by_40": 467
+  },
+  "orbit-left": {
+   "ring_p99": 255.0,
+   "ring_p99_at_rest": 169.8,
+   "ring_px_brighter_than_rest_by_40": 453
+  }
+ },
+ "checks": {
+  "switching": {
+   "left_before_arrival": {
+    "frames": 23,
+    "max_globe": 0,
+    "max_orbit": 0,
+    "settled": true
+   },
+   "mid_globe": {
+    "left_at": [
+     790,
+     "educational",
+     0.289,
+     0.022,
+     1,
+     1
+    ],
+    "after_leaving": {
+     "frames": 28,
+     "light_drawn_frames": 0,
+     "crest_drawn_frames": 0,
+     "globe_ever_rose": false
+    },
+    "settled": true
+   },
+   "mid_orbit": {
+    "left_at": [
+     1040,
+     "educational",
+     0.935,
+     0.506,
+     1,
+     1
+    ],
+    "after_leaving": {
+     "frames": 21,
+     "light_drawn_frames": 0,
+     "crest_drawn_frames": 0,
+     "globe_ever_rose": false
+    },
+    "settled": true
+   },
+   "quick_return": {
+    "frames_before_arrival": 7,
+    "held_globe": 0.438,
+    "light_or_crest_drawn_before_arrival": 0,
+    "powered": "station image"
+   },
+   "sweep_ending_on_educational": "station image",
+   "sweep_away_settled": true,
+   "sweep_ending_on_experience_settled": true,
+   "errors": []
+  },
+  "deep_link": {
+   "hover": null,
+   "selected": "educational",
+   "strip_pw": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "floor_pw": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "floor_cyan": 1,
+   "pulse": 1,
+   "globe": 1,
+   "orbit": 1,
+   "gates": [
+    1,
+    1,
+    1
+   ],
+   "light": 0,
+   "shimmer": 0.3,
+   "lift": "none",
+   "drawn": "station image",
+   "frames": 53,
+   "first_frame": [
+    1,
+    1,
+    "educational",
+    0
+   ],
+   "frames_with_a_number_between_0_and_1": 0,
+   "frames_with_the_light_visible": 0,
+   "url": "/lab-v2?station=educational",
+   "errors": []
+  },
+  "pacing": {
+   "charging": {
+    "frames": 9,
+    "median_ms": 16.8,
+    "p95_ms": 133.3,
+    "max_ms": 133.3
+   },
+   "activation": {
+    "frames": 23,
+    "median_ms": 33.2,
+    "p95_ms": 83.4,
+    "max_ms": 183.3
+   }
+  },
+  "homepage": {
+   "v2_requests": 0,
+   "edu_v2": false
+  },
+  "phase_errors": [],
+  "forced_powered_errors": [],
+  "escape": {
+   "frames": 55,
+   "min_globe": 1,
+   "min_orbit": 1,
+   "light_frames": 0
+  }
+ }
+}

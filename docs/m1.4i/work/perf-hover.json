@@ -1,0 +1,357 @@
+{
+ "engineering": [
+  {
+   "charging": {
+    "frames": 24,
+    "median_ms": 16.7,
+    "p95_ms": 83.3,
+    "max_ms": 117.2,
+    "over_50ms": 2
+   },
+   "activation": {
+    "frames": 11,
+    "median_ms": 16.9,
+    "p95_ms": 166.7,
+    "max_ms": 166.7,
+    "over_50ms": 2
+   },
+   "first_frame_after_input_ms": 13,
+   "react_commits": 1,
+   "layouts": 11,
+   "style_recalcs": 34,
+   "script_ms": 19.9,
+   "main_task_ms": 151.8,
+   "long_tasks": []
+  },
+  {
+   "charging": {
+    "frames": 29,
+    "median_ms": 16.7,
+    "p95_ms": 33.5,
+    "max_ms": 100,
+    "over_50ms": 1
+   },
+   "activation": {
+    "frames": 15,
+    "median_ms": 16.7,
+    "p95_ms": 133.3,
+    "max_ms": 133.3,
+    "over_50ms": 3
+   },
+   "first_frame_after_input_ms": 4.3,
+   "react_commits": 1,
+   "layouts": 20,
+   "style_recalcs": 45,
+   "script_ms": 9.9,
+   "main_task_ms": 172.8,
+   "long_tasks": []
+  },
+  {
+   "charging": {
+    "frames": 31,
+    "median_ms": 16.7,
+    "p95_ms": 33.3,
+    "max_ms": 83.4,
+    "over_50ms": 1
+   },
+   "activation": {
+    "frames": 16,
+    "median_ms": 16.8,
+    "p95_ms": 116.7,
+    "max_ms": 116.7,
+    "over_50ms": 2
+   },
+   "first_frame_after_input_ms": 0.5,
+   "react_commits": 1,
+   "layouts": 21,
+   "style_recalcs": 47,
+   "script_ms": 9.1,
+   "main_task_ms": 186.4,
+   "long_tasks": []
+  }
+ ],
+ "educational": [
+  {
+   "charging": {
+    "frames": 15,
+    "median_ms": 16.7,
+    "p95_ms": 149.9,
+    "max_ms": 149.9,
+    "over_50ms": 2
+   },
+   "activation": {
+    "frames": 30,
+    "median_ms": 16.7,
+    "p95_ms": 66.7,
+    "max_ms": 100,
+    "over_50ms": 2
+   },
+   "first_frame_after_input_ms": 8.7,
+   "react_commits": 1,
+   "layouts": 26,
+   "style_recalcs": 44,
+   "script_ms": 11.3,
+   "main_task_ms": 194.3,
+   "long_tasks": []
+  },
+  {
+   "charging": {
+    "frames": 19,
+    "median_ms": 16.7,
+    "p95_ms": 150,
+    "max_ms": 150,
+    "over_50ms": 1
+   },
+   "activation": {
+    "frames": 33,
+    "median_ms": 16.7,
+    "p95_ms": 34.7,
+    "max_ms": 116.7,
+    "over_50ms": 1
+   },
+   "first_frame_after_input_ms": 14.3,
+   "react_commits": 1,
+   "layouts": 31,
+   "style_recalcs": 53,
+   "script_ms": 10.6,
+   "main_task_ms": 345.1,
+   "long_tasks": []
+  },
+  {
+   "charging": {
+    "frames": 22,
+    "median_ms": 16.7,
+    "p95_ms": 16.7,
+    "max_ms": 116.6,
+    "over_50ms": 1
+   },
+   "activation": {
+    "frames": 31,
+    "median_ms": 16.8,
+    "p95_ms": 34,
+    "max_ms": 117.9,
+    "over_50ms": 1
+   },
+   "first_frame_after_input_ms": 8.1,
+   "react_commits": 1,
+   "layouts": 33,
+   "style_recalcs": 53,
+   "script_ms": 9.6,
+   "main_task_ms": 284.2,
+   "long_tasks": []
+  }
+ ],
+ "playground": [
+  {
+   "charging": {
+    "frames": 6,
+    "median_ms": 16.7,
+    "p95_ms": 316.7,
+    "max_ms": 316.7,
+    "over_50ms": 2
+   },
+   "activation": {
+    "frames": 23,
+    "median_ms": 16.7,
+    "p95_ms": 99.5,
+    "max_ms": 316.6,
+    "over_50ms": 3
+   },
+   "first_frame_after_input_ms": 8.4,
+   "react_commits": 1,
+   "layouts": 26,
+   "style_recalcs": 28,
+   "script_ms": 26,
+   "main_task_ms": 130.6,
+   "long_tasks": []
+  },
+  {
+   "charging": {
+    "frames": 25,
+    "median_ms": 16.7,
+    "p95_ms": 33.3,
+    "max_ms": 216.6,
+    "over_50ms": 1
+   },
+   "activation": {
+    "frames": 14,
+    "median_ms": 16.7,
+    "p95_ms": 133.3,
+    "max_ms": 133.3,
+    "over_50ms": 5
+   },
+   "first_frame_after_input_ms": 7.9,
+   "react_commits": 1,
+   "layouts": 32,
+   "style_recalcs": 35,
+   "script_ms": 17.4,
+   "main_task_ms": 111.6,
+   "long_tasks": []
+  },
+  {
+   "charging": {
+    "frames": 25,
+    "median_ms": 16.7,
+    "p95_ms": 33.4,
+    "max_ms": 216.6,
+    "over_50ms": 1
+   },
+   "activation": {
+    "frames": 10,
+    "median_ms": 100,
+    "p95_ms": 200,
+    "max_ms": 200,
+    "over_50ms": 5
+   },
+   "first_frame_after_input_ms": 6.8,
+   "react_commits": 1,
+   "layouts": 32,
+   "style_recalcs": 35,
+   "script_ms": 14.3,
+   "main_task_ms": 98.9,
+   "long_tasks": []
+  }
+ ],
+ "creative": [
+  {
+   "charging": {
+    "frames": 27,
+    "median_ms": 16.7,
+    "p95_ms": 66.6,
+    "max_ms": 150,
+    "over_50ms": 2
+   },
+   "activation": {
+    "frames": 27,
+    "median_ms": 16.8,
+    "p95_ms": 66.6,
+    "max_ms": 66.8,
+    "over_50ms": 2
+   },
+   "first_frame_after_input_ms": 1.7,
+   "react_commits": 1,
+   "layouts": 8,
+   "style_recalcs": 55,
+   "script_ms": 14.2,
+   "main_task_ms": 179.5,
+   "long_tasks": []
+  },
+  {
+   "charging": {
+    "frames": 34,
+    "median_ms": 16.7,
+    "p95_ms": 16.9,
+    "max_ms": 83.4,
+    "over_50ms": 1
+   },
+   "activation": {
+    "frames": 31,
+    "median_ms": 16.7,
+    "p95_ms": 50,
+    "max_ms": 83.3,
+    "over_50ms": 1
+   },
+   "first_frame_after_input_ms": 11.5,
+   "react_commits": 1,
+   "layouts": 18,
+   "style_recalcs": 67,
+   "script_ms": 16.8,
+   "main_task_ms": 274.2,
+   "long_tasks": []
+  },
+  {
+   "charging": {
+    "frames": 35,
+    "median_ms": 16.7,
+    "p95_ms": 17.2,
+    "max_ms": 83.6,
+    "over_50ms": 1
+   },
+   "activation": {
+    "frames": 31,
+    "median_ms": 16.7,
+    "p95_ms": 66.7,
+    "max_ms": 83.3,
+    "over_50ms": 2
+   },
+   "first_frame_after_input_ms": 2.6,
+   "react_commits": 1,
+   "layouts": 18,
+   "style_recalcs": 66,
+   "script_ms": 10.2,
+   "main_task_ms": 228.5,
+   "long_tasks": []
+  }
+ ],
+ "experience": [
+  {
+   "charging": {
+    "frames": 26,
+    "median_ms": 16.7,
+    "p95_ms": 116.7,
+    "max_ms": 133.3,
+    "over_50ms": 2
+   },
+   "activation": {
+    "frames": 29,
+    "median_ms": 33.3,
+    "p95_ms": 83.4,
+    "max_ms": 100.1,
+    "over_50ms": 3
+   },
+   "first_frame_after_input_ms": 1.9,
+   "react_commits": 1,
+   "layouts": 6,
+   "style_recalcs": 54,
+   "script_ms": 14.2,
+   "main_task_ms": 210.5,
+   "long_tasks": []
+  },
+  {
+   "charging": {
+    "frames": 35,
+    "median_ms": 16.7,
+    "p95_ms": 33.3,
+    "max_ms": 83.3,
+    "over_50ms": 1
+   },
+   "activation": {
+    "frames": 33,
+    "median_ms": 33.2,
+    "p95_ms": 50.2,
+    "max_ms": 83.4,
+    "over_50ms": 3
+   },
+   "first_frame_after_input_ms": 4,
+   "react_commits": 1,
+   "layouts": 15,
+   "style_recalcs": 68,
+   "script_ms": 10.3,
+   "main_task_ms": 212.4,
+   "long_tasks": []
+  },
+  {
+   "charging": {
+    "frames": 35,
+    "median_ms": 16.7,
+    "p95_ms": 33.4,
+    "max_ms": 83.3,
+    "over_50ms": 1
+   },
+   "activation": {
+    "frames": 20,
+    "median_ms": 33.3,
+    "p95_ms": 116.8,
+    "max_ms": 116.8,
+    "over_50ms": 6
+   },
+   "first_frame_after_input_ms": 4.9,
+   "react_commits": 1,
+   "layouts": 15,
+   "style_recalcs": 56,
+   "script_ms": 10,
+   "main_task_ms": 217.4,
+   "long_tasks": []
+  }
+ ]
+}

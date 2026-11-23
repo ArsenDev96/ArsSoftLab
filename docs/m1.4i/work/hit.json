@@ -1,0 +1,92 @@
+{
+ "engineering": {
+  "artwork_px": 37279,
+  "covered": 0.985,
+  "hotspot_px": 42029,
+  "hotspot_off_artwork": 0.127,
+  "hotspot_bbox": [
+   262,
+   384,
+   600,
+   553
+  ],
+  "artwork_bbox": [
+   263,
+   385,
+   599,
+   551
+  ]
+ },
+ "educational": {
+  "artwork_px": 50649,
+  "covered": 0.954,
+  "hotspot_px": 59589,
+  "hotspot_off_artwork": 0.189,
+  "hotspot_bbox": [
+   672,
+   288,
+   996,
+   492
+  ],
+  "artwork_bbox": [
+   669,
+   274,
+   994,
+   496
+  ]
+ },
+ "playground": {
+  "artwork_px": 44677,
+  "covered": 0.856,
+  "hotspot_px": 45087,
+  "hotspot_off_artwork": 0.152,
+  "hotspot_bbox": [
+   1060,
+   352,
+   1376,
+   556
+  ],
+  "artwork_bbox": [
+   1060,
+   320,
+   1376,
+   547
+  ]
+ },
+ "creative": {
+  "artwork_px": 59323,
+  "covered": 0.957,
+  "hotspot_px": 68176,
+  "hotspot_off_artwork": 0.167,
+  "hotspot_bbox": [
+   92,
+   548,
+   508,
+   780
+  ],
+  "artwork_bbox": [
+   98,
+   509,
+   501,
+   778
+  ]
+ },
+ "experience": {
+  "artwork_px": 75261,
+  "covered": 0.986,
+  "hotspot_px": 83648,
+  "hotspot_off_artwork": 0.113,
+  "hotspot_bbox": [
+   1206,
+   515,
+   1664,
+   782
+  ],
+  "artwork_bbox": [
+   1201,
+   513,
+   1662,
+   784
+  ]
+ }
+}

@@ -1,0 +1,42 @@
+{
+ "painted px: painting, small": [
+  14569,
+  [
+   728,
+   625
+  ]
+ ],
+ "station alpha where the overlay is (min)": 0.9372549019607843,
+ "quad px outside the station's matte": 54,
+ "painting luminance: approved, standby, ratio": [
+  125.2,
+  104.3,
+  0.833
+ ],
+ "its brightest 5%: approved, standby": [
+  208.2,
+  158.3
+ ],
+ "glint px: ridge, cloud edges, small": [
+  365,
+  1006,
+  [
+   304,
+   145
+  ]
+ ],
+ "ridge path length px": 79.0,
+ "strip pixels": {
+  "px": 2628,
+  "bbox": [
+   180,
+   723,
+   501,
+   779
+  ]
+ },
+ "strip light: px with blue above red": 0,
+ "floor light: pixels outside Creative Studio's share changed": 0,
+ "floor light: light on the share's border (max)": 2.0,
+ "floor light: shares + rest vs before (max)": 1.0
+}

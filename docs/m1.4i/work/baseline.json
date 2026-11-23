@@ -1,0 +1,870 @@
+{
+ "home": {
+  "scene_files": 75,
+  "scene_kb": 1428,
+  "v2_files": 0,
+  "v2_kb": 0,
+  "img_elements": 59,
+  "img_decoded_mb_rgba": 94,
+  "style_images": [
+   {
+    "src": "/scene/activation/engineering-scan.png",
+    "w": 836,
+    "h": 471
+   },
+   {
+    "src": "/scene/activation/playground-route-a-glow.png",
+    "w": 1672,
+    "h": 941
+   },
+   {
+    "src": "/scene/activation/playground-route-a.png",
+    "w": 1672,
+    "h": 941
+   },
+   {
+    "src": "/scene/activation/playground-route-b-glow.png",
+    "w": 1672,
+    "h": 941
+   },
+   {
+    "src": "/scene/activation/playground-route-b.png",
+    "w": 1672,
+    "h": 941
+   },
+   {
+    "src": "/scene/activation/lines/educational-0-glow.png",
+    "w": 61,
+    "h": 132
+   },
+   {
+    "src": "/scene/activation/lines/educational-0.png",
+    "w": 61,
+    "h": 132
+   },
+   {
+    "src": "/scene/activation/lines/engineering-0-glow.png",
+    "w": 257,
+    "h": 91
+   },
+   {
+    "src": "/scene/activation/lines/engineering-0.png",
+    "w": 257,
+    "h": 91
+   },
+   {
+    "src": "/scene/activation/lines/engineering-1-glow.png",
+    "w": 257,
+    "h": 91
+   },
+   {
+    "src": "/scene/activation/lines/engineering-1.png",
+    "w": 257,
+    "h": 91
+   },
+   {
+    "src": "/scene/activation/lines/creative-0-glow.png",
+    "w": 280,
+    "h": 113
+   },
+   {
+    "src": "/scene/activation/lines/creative-0.png",
+    "w": 280,
+    "h": 113
+   },
+   {
+    "src": "/scene/activation/lines/creative-1-glow.png",
+    "w": 280,
+    "h": 113
+   },
+   {
+    "src": "/scene/activation/lines/creative-1.png",
+    "w": 280,
+    "h": 113
+   },
+   {
+    "src": "/scene/activation/lines/creative-2-glow.png",
+    "w": 280,
+    "h": 113
+   },
+   {
+    "src": "/scene/activation/lines/creative-2.png",
+    "w": 280,
+    "h": 113
+   },
+   {
+    "src": "/scene/activation/lines/experience-0-glow.png",
+    "w": 313,
+    "h": 113
+   },
+   {
+    "src": "/scene/activation/lines/experience-0.png",
+    "w": 313,
+    "h": 113
+   },
+   {
+    "src": "/scene/activation/lines/experience-1-glow.png",
+    "w": 313,
+    "h": 113
+   },
+   {
+    "src": "/scene/activation/lines/experience-1.png",
+    "w": 313,
+    "h": 113
+   },
+   {
+    "src": "/scene/activation/lines/experience-2-glow.png",
+    "w": 313,
+    "h": 113
+   },
+   {
+    "src": "/scene/activation/lines/experience-2.png",
+    "w": 313,
+    "h": 113
+   },
+   {
+    "src": "/scene/power/light.png",
+    "w": 1672,
+    "h": 941
+   },
+   {
+    "src": "/scene/masks/connections-glow.png",
+    "w": 1672,
+    "h": 941
+   },
+   {
+    "src": "/scene/masks/connections.png",
+    "w": 1672,
+    "h": 941
+   },
+   {
+    "src": "/scene/activation/creative-scan.png",
+    "w": 836,
+    "h": 471
+   },
+   {
+    "src": "/scene/activation/experience-scan-glow.png",
+    "w": 836,
+    "h": 471
+   },
+   {
+    "src": "/scene/activation/experience-scan.png",
+    "w": 836,
+    "h": 471
+   },
+   {
+    "src": "/scene/masks/orbit-glow.png",
+    "w": 1672,
+    "h": 941
+   },
+   {
+    "src": "/scene/masks/orbit.png",
+    "w": 1672,
+    "h": 941
+   },
+   {
+    "src": "/scene/activation/lines/educational-route-wide.png",
+    "w": 61,
+    "h": 132
+   },
+   {
+    "src": "/scene/activation/lines/educational-route-glow.png",
+    "w": 61,
+    "h": 132
+   },
+   {
+    "src": "/scene/activation/lines/educational-route.png",
+    "w": 61,
+    "h": 132
+   },
+   {
+    "src": "/scene/activation/lines/engineering-route-wide.png",
+    "w": 257,
+    "h": 91
+   },
+   {
+    "src": "/scene/activation/lines/engineering-route-glow.png",
+    "w": 257,
+    "h": 91
+   },
+   {
+    "src": "/scene/activation/lines/engineering-route.png",
+    "w": 257,
+    "h": 91
+   },
+   {
+    "src": "/scene/activation/playground-route-wide.png",
+    "w": 1672,
+    "h": 941
+   },
+   {
+    "src": "/scene/activation/playground-route-glow.png",
+    "w": 1672,
+    "h": 941
+   },
+   {
+    "src": "/scene/activation/playground-route.png",
+    "w": 1672,
+    "h": 941
+   },
+   {
+    "src": "/scene/activation/lines/creative-route-wide.png",
+    "w": 280,
+    "h": 113
+   },
+   {
+    "src": "/scene/activation/lines/creative-route-glow.png",
+    "w": 280,
+    "h": 113
+   },
+   {
+    "src": "/scene/activation/lines/creative-route.png",
+    "w": 280,
+    "h": 113
+   },
+   {
+    "src": "/scene/activation/lines/experience-route-wide.png",
+    "w": 313,
+    "h": 113
+   },
+   {
+    "src": "/scene/activation/lines/experience-route-glow.png",
+    "w": 313,
+    "h": 113
+   },
+   {
+    "src": "/scene/activation/lines/experience-route.png",
+    "w": 313,
+    "h": 113
+   }
+  ],
+  "style_decoded_mb_rgba": 81.1,
+  "dom_nodes": 675,
+  "running_animations_idle": [
+   [
+    "lab-orbit-orbit-x",
+    "lab-track absolute top-0 left-0 h-0 w-full"
+   ],
+   [
+    "lab-orbit-orbit-y",
+    "lab-track absolute top-0 left-0 h-full w-0"
+   ],
+   [
+    "lab-orbit-orbit-r",
+    "lab-track lab-blob absolute top-0 left-0"
+   ],
+   [
+    "lab-orbit-orbit-x",
+    "lab-track absolute top-0 left-0 h-0 w-full"
+   ],
+   [
+    "lab-orbit-orbit-y",
+    "lab-track absolute top-0 left-0 h-full w-0"
+   ],
+   [
+    "lab-orbit-orbit-r",
+    "lab-track lab-blob absolute top-0 left-0"
+   ]
+  ],
+  "raf_per_second_idle": 0,
+  "layout_shift": 0,
+  "errors": []
+ },
+ "v2": {
+  "scene_files": 83,
+  "scene_kb": 5919,
+  "v2_files": 70,
+  "v2_kb": 5851,
+  "img_elements": 85,
+  "img_decoded_mb_rgba": 343.6,
+  "style_images": [
+   {
+    "src": "/scene/v2/m14h2/educational-wave.png",
+    "w": 4094,
+    "h": 94
+   },
+   {
+    "src": "/scene/v2/m14h2/educational-crest.png",
+    "w": 4094,
+    "h": 94
+   },
+   {
+    "src": "/scene/v2/m14h2/educational-light.png",
+    "w": 2112,
+    "h": 1050
+   },
+   {
+    "src": "/scene/v2/m14h2/educational-ring-core.png",
+    "w": 1672,
+    "h": 941
+   },
+   {
+    "src": "/scene/v2/m14h1/engineering-screen-mask.png",
+    "w": 1672,
+    "h": 941
+   },
+   {
+    "src": "/scene/v2/m14h1/engineering-chart.png",
+    "w": 1672,
+    "h": 941
+   },
+   {
+    "src": "/scene/v2/m14h3/creative-sunrise.png",
+    "w": 1608,
+    "h": 608
+   },
+   {
+    "src": "/scene/v2/m14h3/creative-crest.png",
+    "w": 1608,
+    "h": 608
+   },
+   {
+    "src": "/scene/v2/m14h3/creative-glints.png",
+    "w": 1608,
+    "h": 608
+   },
+   {
+    "src": "/scene/v2/m14h4/experience-reveal.png",
+    "w": 1656,
+    "h": 1536
+   },
+   {
+    "src": "/scene/v2/m14h4/experience-light.png",
+    "w": 1656,
+    "h": 1536
+   },
+   {
+    "src": "/scene/activation/lines/educational-route-wide.png",
+    "w": 61,
+    "h": 132
+   },
+   {
+    "src": "/scene/activation/lines/educational-route-glow.png",
+    "w": 61,
+    "h": 132
+   },
+   {
+    "src": "/scene/activation/lines/educational-route.png",
+    "w": 61,
+    "h": 132
+   },
+   {
+    "src": "/scene/activation/lines/engineering-route-wide.png",
+    "w": 257,
+    "h": 91
+   },
+   {
+    "src": "/scene/activation/lines/engineering-route-glow.png",
+    "w": 257,
+    "h": 91
+   },
+   {
+    "src": "/scene/activation/lines/engineering-route.png",
+    "w": 257,
+    "h": 91
+   },
+   {
+    "src": "/scene/v2/m14e1/playground-route-wide.png",
+    "w": 1672,
+    "h": 941
+   },
+   {
+    "src": "/scene/v2/m14e1/playground-route-glow.png",
+    "w": 1672,
+    "h": 941
+   },
+   {
+    "src": "/scene/v2/m14e1/playground-route-core.png",
+    "w": 1672,
+    "h": 941
+   },
+   {
+    "src": "/scene/activation/lines/creative-route-wide.png",
+    "w": 280,
+    "h": 113
+   },
+   {
+    "src": "/scene/activation/lines/creative-route-glow.png",
+    "w": 280,
+    "h": 113
+   },
+   {
+    "src": "/scene/activation/lines/creative-route.png",
+    "w": 280,
+    "h": 113
+   },
+   {
+    "src": "/scene/activation/lines/experience-route-wide.png",
+    "w": 313,
+    "h": 113
+   },
+   {
+    "src": "/scene/activation/lines/experience-route-glow.png",
+    "w": 313,
+    "h": 113
+   },
+   {
+    "src": "/scene/activation/lines/experience-route.png",
+    "w": 313,
+    "h": 113
+   }
+  ],
+  "style_decoded_mb_rgba": 79.1,
+  "dom_nodes": 799,
+  "running_animations_idle": [],
+  "raf_per_second_idle": 0,
+  "layout_shift": 0,
+  "errors": [],
+  "files": [
+   "/scene/activation/core.png",
+   "/scene/activation/lines/creative-route-glow.png",
+   "/scene/activation/lines/creative-route-wide.png",
+   "/scene/activation/lines/creative-route.png",
+   "/scene/activation/lines/educational-route-glow.png",
+   "/scene/activation/lines/educational-route-wide.png",
+   "/scene/activation/lines/educational-route.png",
+   "/scene/activation/lines/engineering-route-glow.png",
+   "/scene/activation/lines/engineering-route-wide.png",
+   "/scene/activation/lines/engineering-route.png",
+   "/scene/activation/lines/experience-route-glow.png",
+   "/scene/activation/lines/experience-route-wide.png",
+   "/scene/activation/lines/experience-route.png",
+   "/scene/v2/environment/lab-background.png",
+   "/scene/v2/m14e/fg-plant.png",
+   "/scene/v2/m14e/fg-steam.png",
+   "/scene/v2/m14e/fg-table.png",
+   "/scene/v2/m14e/hub-light.png",
+   "/scene/v2/m14e/hub.png",
+   "/scene/v2/m14e1/playground-route-core.png",
+   "/scene/v2/m14e1/playground-route-glow.png",
+   "/scene/v2/m14e1/playground-route-wide.png",
+   "/scene/v2/m14e1/playground-strip-off.png",
+   "/scene/v2/m14f/creative.png",
+   "/scene/v2/m14f/experience-light.png",
+   "/scene/v2/m14f/experience.png",
+   "/scene/v2/m14f1/educational-light.png",
+   "/scene/v2/m14f1/educational.png",
+   "/scene/v2/m14f1/engineering.png",
+   "/scene/v2/m14g/contact.png",
+   "/scene/v2/m14g1/creative-light.png",
+   "/scene/v2/m14g1/playground-occlusion.png",
+   "/scene/v2/m14g1/playground-reflection-lit.png",
+   "/scene/v2/m14g1/playground-reflection.png",
+   "/scene/v2/m14g1/playground-ring-lit.png",
+   "/scene/v2/m14g1/playground-ring.png",
+   "/scene/v2/m14h1/engineering-body-light.png",
+   "/scene/v2/m14h1/engineering-body.png",
+   "/scene/v2/m14h1/engineering-chart-light.png",
+   "/scene/v2/m14h1/engineering-chart.png",
+   "/scene/v2/m14h1/engineering-floor.png",
+   "/scene/v2/m14h1/engineering-screen-bars.png",
+   "/scene/v2/m14h1/engineering-screen-mask.png",
+   "/scene/v2/m14h1/engineering-strip-floor.png",
+   "/scene/v2/m14h1/engineering-strip-light.png",
+   "/scene/v2/m14h1/engineering-strip-off.png",
+   "/scene/v2/m14h2/educational-base.png",
+   "/scene/v2/m14h2/educational-body.png",
+   "/scene/v2/m14h2/educational-crest.png",
+   "/scene/v2/m14h2/educational-flare.png",
+   "/scene/v2/m14h2/educational-floor-cyan.png",
+   "/scene/v2/m14h2/educational-floor.png",
+   "/scene/v2/m14h2/educational-globe-light.png",
+   "/scene/v2/m14h2/educational-globe.png",
+   "/scene/v2/m14h2/educational-light.png",
+   "/scene/v2/m14h2/educational-orbit-light.png",
+   "/scene/v2/m14h2/educational-orbit.png",
+   "/scene/v2/m14h2/educational-ring-core.png",
+   "/scene/v2/m14h2/educational-strip-floor.png",
+   "/scene/v2/m14h2/educational-strip-light.png",
+   "/scene/v2/m14h2/educational-strip-off.png",
+   "/scene/v2/m14h2/educational-wave.png",
+   "/scene/v2/m14h3/creative-crest.png",
+   "/scene/v2/m14h3/creative-floor-top.png",
+   "/scene/v2/m14h3/creative-floor.png",
+   "/scene/v2/m14h3/creative-glints.png",
+   "/scene/v2/m14h3/creative-highlights.png",
+   "/scene/v2/m14h3/creative-standby.png",
+   "/scene/v2/m14h3/creative-strip-floor.png",
+   "/scene/v2/m14h3/creative-strip-light.png",
+   "/scene/v2/m14h3/creative-strip-off.png",
+   "/scene/v2/m14h3/creative-sunrise.png",
+   "/scene/v2/m14h3/creative-warm.png",
+   "/scene/v2/m14h4/experience-floor-lit.png",
+   "/scene/v2/m14h4/experience-floor-top.png",
+   "/scene/v2/m14h4/experience-floor.png",
+   "/scene/v2/m14h4/experience-light.png",
+   "/scene/v2/m14h4/experience-reveal.png",
+   "/scene/v2/m14h4/experience-standby.png",
+   "/scene/v2/m14h4/experience-strip-light.png",
+   "/scene/v2/m14h4/experience-strip-off.png",
+   "/scene/v2/m14h4/floor-light.png",
+   "/scene/v2/stations/playground.png"
+  ],
+  "activation": [
+   {
+    "id": "engineering",
+    "arrive": "620",
+    "rules_on_hover_or_selected": 19,
+    "zone_elements": 15,
+    "duplicates": {
+     "titles": 1,
+     "hotspots": 1,
+     "surges": 1,
+     "station_layers": 2
+    }
+   },
+   {
+    "id": "educational",
+    "arrive": "460",
+    "rules_on_hover_or_selected": 18,
+    "zone_elements": 17,
+    "duplicates": {
+     "titles": 1,
+     "hotspots": 1,
+     "surges": 1,
+     "station_layers": 1
+    }
+   },
+   {
+    "id": "playground",
+    "arrive": "650",
+    "rules_on_hover_or_selected": 4,
+    "zone_elements": 10,
+    "duplicates": {
+     "titles": 1,
+     "hotspots": 1,
+     "surges": 1,
+     "station_layers": 2
+    }
+   },
+   {
+    "id": "creative",
+    "arrive": "640",
+    "rules_on_hover_or_selected": 15,
+    "zone_elements": 15,
+    "duplicates": {
+     "titles": 1,
+     "hotspots": 1,
+     "surges": 1,
+     "station_layers": 1
+    }
+   },
+   {
+    "id": "experience",
+    "arrive": "660",
+    "rules_on_hover_or_selected": 17,
+    "zone_elements": 17,
+    "duplicates": {
+     "titles": 1,
+     "hotspots": 1,
+     "surges": 1,
+     "station_layers": 1
+    }
+   }
+  ],
+  "duplicate_ids": [],
+  "floor_disc_correction": {
+   "floor": true,
+   "lit": true,
+   "fronts_use": [
+    "/scene/v2/m14h4/experience-floor-lit.png",
+    "/scene/v2/m14h4/experience-floor-lit.png",
+    "/scene/v2/m14h4/experience-floor-lit.png"
+   ]
+  },
+  "floor_light": [
+   "/scene/v2/m14h4/floor-light.png"
+  ],
+  "unused_requests": [
+   "/scene/activation/core.png",
+   "/scene/activation/lines/creative-route-glow.png",
+   "/scene/activation/lines/creative-route-wide.png",
+   "/scene/activation/lines/creative-route.png",
+   "/scene/activation/lines/educational-route-glow.png",
+   "/scene/activation/lines/educational-route-wide.png",
+   "/scene/activation/lines/educational-route.png",
+   "/scene/activation/lines/engineering-route-glow.png",
+   "/scene/activation/lines/engineering-route-wide.png",
+   "/scene/activation/lines/engineering-route.png",
+   "/scene/activation/lines/experience-route-glow.png",
+   "/scene/activation/lines/experience-route-wide.png",
+   "/scene/activation/lines/experience-route.png"
+  ]
+ },
+ "v2_tone": {
+  "scene_files": 84,
+  "scene_kb": 5928,
+  "v2_files": 71,
+  "v2_kb": 5859,
+  "img_elements": 85,
+  "img_decoded_mb_rgba": 343.6,
+  "style_images": [
+   {
+    "src": "/scene/v2/m14g/floor-mask.png",
+    "w": 1672,
+    "h": 941
+   },
+   {
+    "src": "/scene/v2/m14h2/educational-wave.png",
+    "w": 4094,
+    "h": 94
+   },
+   {
+    "src": "/scene/v2/m14h2/educational-crest.png",
+    "w": 4094,
+    "h": 94
+   },
+   {
+    "src": "/scene/v2/m14h2/educational-light.png",
+    "w": 2112,
+    "h": 1050
+   },
+   {
+    "src": "/scene/v2/m14h2/educational-ring-core.png",
+    "w": 1672,
+    "h": 941
+   },
+   {
+    "src": "/scene/v2/m14h1/engineering-screen-mask.png",
+    "w": 1672,
+    "h": 941
+   },
+   {
+    "src": "/scene/v2/m14h1/engineering-chart.png",
+    "w": 1672,
+    "h": 941
+   },
+   {
+    "src": "/scene/v2/m14h3/creative-sunrise.png",
+    "w": 1608,
+    "h": 608
+   },
+   {
+    "src": "/scene/v2/m14h3/creative-crest.png",
+    "w": 1608,
+    "h": 608
+   },
+   {
+    "src": "/scene/v2/m14h3/creative-glints.png",
+    "w": 1608,
+    "h": 608
+   },
+   {
+    "src": "/scene/v2/m14h4/experience-reveal.png",
+    "w": 1656,
+    "h": 1536
+   },
+   {
+    "src": "/scene/v2/m14h4/experience-light.png",
+    "w": 1656,
+    "h": 1536
+   },
+   {
+    "src": "/scene/activation/lines/educational-route-wide.png",
+    "w": 61,
+    "h": 132
+   },
+   {
+    "src": "/scene/activation/lines/educational-route-glow.png",
+    "w": 61,
+    "h": 132
+   },
+   {
+    "src": "/scene/activation/lines/educational-route.png",
+    "w": 61,
+    "h": 132
+   },
+   {
+    "src": "/scene/activation/lines/engineering-route-wide.png",
+    "w": 257,
+    "h": 91
+   },
+   {
+    "src": "/scene/activation/lines/engineering-route-glow.png",
+    "w": 257,
+    "h": 91
+   },
+   {
+    "src": "/scene/activation/lines/engineering-route.png",
+    "w": 257,
+    "h": 91
+   },
+   {
+    "src": "/scene/v2/m14e1/playground-route-wide.png",
+    "w": 1672,
+    "h": 941
+   },
+   {
+    "src": "/scene/v2/m14e1/playground-route-glow.png",
+    "w": 1672,
+    "h": 941
+   },
+   {
+    "src": "/scene/v2/m14e1/playground-route-core.png",
+    "w": 1672,
+    "h": 941
+   },
+   {
+    "src": "/scene/activation/lines/creative-route-wide.png",
+    "w": 280,
+    "h": 113
+   },
+   {
+    "src": "/scene/activation/lines/creative-route-glow.png",
+    "w": 280,
+    "h": 113
+   },
+   {
+    "src": "/scene/activation/lines/creative-route.png",
+    "w": 280,
+    "h": 113
+   },
+   {
+    "src": "/scene/activation/lines/experience-route-wide.png",
+    "w": 313,
+    "h": 113
+   },
+   {
+    "src": "/scene/activation/lines/experience-route-glow.png",
+    "w": 313,
+    "h": 113
+   },
+   {
+    "src": "/scene/activation/lines/experience-route.png",
+    "w": 313,
+    "h": 113
+   }
+  ],
+  "style_decoded_mb_rgba": 85.1,
+  "dom_nodes": 800,
+  "running_animations_idle": [],
+  "raf_per_second_idle": 0,
+  "layout_shift": 0,
+  "errors": []
+ },
+ "isolation": {
+  "home_v2_requests": 0,
+  "tone_extra": [
+   "/scene/v2/m14g/floor-mask.png"
+  ],
+  "tone_missing": [],
+  "home_with_floor_param_tone_elements": 0
+ },
+ "navigation": {
+  "steps": [
+   [
+    "home",
+    {
+     "url": "/",
+     "v2": false,
+     "stations": 5,
+     "selected": null
+    }
+   ],
+   [
+    "goto /lab-v2",
+    {
+     "url": "/lab-v2",
+     "v2": true,
+     "stations": 5,
+     "selected": null
+    }
+   ],
+   [
+    "back",
+    {
+     "url": "/",
+     "v2": false,
+     "stations": 5,
+     "selected": null
+    }
+   ],
+   [
+    "forward",
+    {
+     "url": "/lab-v2",
+     "v2": true,
+     "stations": 5,
+     "selected": null
+    }
+   ],
+   [
+    "client push /",
+    {
+     "url": "/",
+     "v2": false,
+     "stations": 5,
+     "selected": null
+    }
+   ],
+   [
+    "client push /lab-v2?station=experience",
+    {
+     "url": "/lab-v2?station=experience",
+     "v2": true,
+     "stations": 5,
+     "selected": "experience"
+    }
+   ],
+   [
+    "back",
+    {
+     "url": "/",
+     "v2": false,
+     "stations": 5,
+     "selected": null
+    }
+   ]
+  ],
+  "home_links": [
+   "#lab-stations",
+   "/",
+   "/",
+   "#lab-stations",
+   "#station-experience",
+   "#lab-intro",
+   "#contact",
+   "#lab-stations"
+  ],
+  "errors": [
+   "error: Encountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template)."
+  ],
+  "v2_links": [
+   [
+    "Skip to lab stations",
+    "#lab-stations"
+   ],
+   [
+    "Arsen ManukyanSoftware Enginee",
+    "/"
+   ],
+   [
+    "Lab",
+    "/"
+   ],
+   [
+    "Projects",
+    "#lab-stations"
+   ],
+   [
+    "Experience",
+    "#station-experience"
+   ],
+   [
+    "About",
+    "#lab-intro"
+   ],
+   [
+    "Let’s Talk",
+    "#contact"
+   ],
+   [
+    "Explore the Lab",
+    "#lab-stations"
+   ]
+  ],
+  "link_status": {
+   "/": 200
+  }
+ }
+}

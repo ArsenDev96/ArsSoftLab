@@ -1,0 +1,675 @@
+{
+ "experience-phases.png": [
+  2560,
+  2608
+ ],
+ "experience-trail-closeup.png": [
+  2530,
+  3704
+ ],
+ "stable vs approved (whole scene)": {
+  "max": 2,
+  "px_over_2": 0,
+  "px_over_8": 0,
+  "px": 1529344
+ },
+ "stable vs approved (route, terrain, flags, panel)": {
+  "max": 0,
+  "px_over_2": 0,
+  "px_over_8": 0,
+  "px": 34398
+ },
+ "the two ends of the settling cross-fade (whole scene)": {
+  "max": 52,
+  "px_over_2": 139,
+  "px_over_8": 33,
+  "px": 1529344
+ },
+ "rest vs approved, outside Experience's box": {
+  "max": 0,
+  "px_over_2": 0,
+  "px_over_8": 0,
+  "px": 1285504
+ },
+ "returned vs rest (whole scene)": {
+  "max": 0,
+  "px_over_2": 0,
+  "px_over_8": 0,
+  "px": 1529344
+ },
+ "stable, 2.5 s apart (2x)": {
+  "max": 0,
+  "px_over_2": 0,
+  "px_over_8": 0,
+  "px": 837441
+ },
+ "other stations": {
+  "others-creative-1140.png": {
+   "max": 0,
+   "px_over_2": 0,
+   "px_over_8": 0,
+   "px": 212520
+  },
+  "others-creative-2000.png": {
+   "max": 0,
+   "px_over_2": 0,
+   "px_over_8": 0,
+   "px": 212520
+  },
+  "others-creative-400.png": {
+   "max": 0,
+   "px_over_2": 0,
+   "px_over_8": 0,
+   "px": 212520
+  },
+  "others-creative-720.png": {
+   "max": 0,
+   "px_over_2": 0,
+   "px_over_8": 0,
+   "px": 212520
+  },
+  "others-creative-860.png": {
+   "max": 0,
+   "px_over_2": 0,
+   "px_over_8": 0,
+   "px": 212520
+  },
+  "others-creative-960.png": {
+   "max": 0,
+   "px_over_2": 0,
+   "px_over_8": 0,
+   "px": 212520
+  },
+  "others-creative-leave-120.png": {
+   "max": 0,
+   "px_over_2": 0,
+   "px_over_8": 0,
+   "px": 212520
+  },
+  "others-creative-leave-300.png": {
+   "max": 0,
+   "px_over_2": 0,
+   "px_over_8": 0,
+   "px": 212520
+  },
+  "others-creative-rest.png": {
+   "max": 0,
+   "px_over_2": 0,
+   "px_over_8": 0,
+   "px": 212520
+  },
+  "others-educational-1020.png": {
+   "max": 0,
+   "px_over_2": 0,
+   "px_over_8": 0,
+   "px": 141050
+  },
+  "others-educational-1860.png": {
+   "max": 0,
+   "px_over_2": 0,
+   "px_over_8": 0,
+   "px": 141050
+  },
+  "others-educational-340.png": {
+   "max": 0,
+   "px_over_2": 0,
+   "px_over_8": 0,
+   "px": 141050
+  },
+  "others-educational-540.png": {
+   "max": 0,
+   "px_over_2": 0,
+   "px_over_8": 0,
+   "px": 141050
+  },
+  "others-educational-710.png": {
+   "max": 0,
+   "px_over_2": 0,
+   "px_over_8": 0,
+   "px": 141050
+  },
+  "others-educational-860.png": {
+   "max": 0,
+   "px_over_2": 0,
+   "px_over_8": 0,
+   "px": 141050
+  },
+  "others-educational-leave-120.png": {
+   "max": 0,
+   "px_over_2": 0,
+   "px_over_8": 0,
+   "px": 141050
+  },
+  "others-educational-leave-300.png": {
+   "max": 0,
+   "px_over_2": 0,
+   "px_over_8": 0,
+   "px": 141050
+  },
+  "others-educational-rest.png": {
+   "max": 0,
+   "px_over_2": 0,
+   "px_over_8": 0,
+   "px": 141050
+  },
+  "others-engineering-1000.png": {
+   "max": 0,
+   "px_over_2": 0,
+   "px_over_8": 0,
+   "px": 112684
+  },
+  "others-engineering-2000.png": {
+   "max": 0,
+   "px_over_2": 0,
+   "px_over_8": 0,
+   "px": 112684
+  },
+  "others-engineering-400.png": {
+   "max": 0,
+   "px_over_2": 0,
+   "px_over_8": 0,
+   "px": 112684
+  },
+  "others-engineering-665.png": {
+   "max": 0,
+   "px_over_2": 0,
+   "px_over_8": 0,
+   "px": 112684
+  },
+  "others-engineering-880.png": {
+   "max": 0,
+   "px_over_2": 0,
+   "px_over_8": 0,
+   "px": 112684
+  },
+  "others-engineering-leave-120.png": {
+   "max": 0,
+   "px_over_2": 0,
+   "px_over_8": 0,
+   "px": 112684
+  },
+  "others-engineering-leave-300.png": {
+   "max": 0,
+   "px_over_2": 0,
+   "px_over_8": 0,
+   "px": 112684
+  },
+  "others-engineering-rest.png": {
+   "max": 0,
+   "px_over_2": 0,
+   "px_over_8": 0,
+   "px": 112684
+  },
+  "others-playground-2400.png": {
+   "max": 0,
+   "px_over_2": 0,
+   "px_over_8": 0,
+   "px": 127762
+  },
+  "others-playground-400.png": {
+   "max": 3,
+   "px_over_2": 1,
+   "px_over_8": 0,
+   "px": 127762
+  },
+  "others-playground-700.png": {
+   "max": 0,
+   "px_over_2": 0,
+   "px_over_8": 0,
+   "px": 127762
+  },
+  "others-playground-900.png": {
+   "max": 0,
+   "px_over_2": 0,
+   "px_over_8": 0,
+   "px": 127762
+  },
+  "others-playground-leave-120.png": {
+   "max": 0,
+   "px_over_2": 0,
+   "px_over_8": 0,
+   "px": 127762
+  },
+  "others-playground-leave-300.png": {
+   "max": 0,
+   "px_over_2": 0,
+   "px_over_8": 0,
+   "px": 127762
+  },
+  "others-playground-rest.png": {
+   "max": 0,
+   "px_over_2": 0,
+   "px_over_8": 0,
+   "px": 127762
+  }
+ },
+ "other stations: states whose numbers differ": [],
+ "stone, plant, panel, everything else on the station: rest vs approved": {
+  "max": 0,
+  "px_over_2": 0,
+  "px_over_8": 0,
+  "px": 51642
+ },
+ "the two flags: rest vs approved": {
+  "max": 0,
+  "px_over_2": 0,
+  "px_over_8": 0,
+  "px": 175
+ },
+ "the code panel's text: rest vs approved": {
+  "max": 0,
+  "px_over_2": 0,
+  "px_over_8": 0,
+  "px": 6387
+ },
+ "route luminance at rest: approved, standby, ratio": [
+  209.9,
+  104.5,
+  0.498
+ ],
+ "terrain the route lights, at rest: approved, standby, ratio": [
+  105.3,
+  96.3,
+  0.914
+ ],
+ "added light (2x, with vs without)": {
+  "+100": {
+   "changed_px_over_4": 1316,
+   "outside_the_station": 0,
+   "on_the_code_text": 0,
+   "on_the_plant": 0,
+   "px_whose_blue_passes_green_or_red": 0,
+   "darkened_px": 0,
+   "clipped_white_px": 0,
+   "clipped_white_px_without": 0
+  },
+  "+170": {
+   "changed_px_over_4": 6609,
+   "outside_the_station": 0,
+   "on_the_code_text": 0,
+   "on_the_plant": 0,
+   "px_whose_blue_passes_green_or_red": 0,
+   "darkened_px": 0,
+   "clipped_white_px": 0,
+   "clipped_white_px_without": 0
+  },
+  "+250": {
+   "changed_px_over_4": 5197,
+   "outside_the_station": 0,
+   "on_the_code_text": 0,
+   "on_the_plant": 0,
+   "px_whose_blue_passes_green_or_red": 0,
+   "darkened_px": 0,
+   "clipped_white_px": 0,
+   "clipped_white_px_without": 0
+  },
+  "+388": {
+   "changed_px_over_4": 2331,
+   "outside_the_station": 0,
+   "on_the_code_text": 0,
+   "on_the_plant": 0,
+   "px_whose_blue_passes_green_or_red": 0,
+   "darkened_px": 0,
+   "clipped_white_px": 0,
+   "clipped_white_px_without": 0
+  },
+  "+470": {
+   "changed_px_over_4": 2329,
+   "outside_the_station": 0,
+   "on_the_code_text": 0,
+   "on_the_plant": 0,
+   "px_whose_blue_passes_green_or_red": 0,
+   "darkened_px": 0,
+   "clipped_white_px": 0,
+   "clipped_white_px_without": 0
+  },
+  "+545": {
+   "changed_px_over_4": 2485,
+   "outside_the_station": 0,
+   "on_the_code_text": 0,
+   "on_the_plant": 0,
+   "px_whose_blue_passes_green_or_red": 0,
+   "darkened_px": 0,
+   "clipped_white_px": 0,
+   "clipped_white_px_without": 0
+  },
+  "+680": {
+   "changed_px_over_4": 2135,
+   "outside_the_station": 0,
+   "on_the_code_text": 0,
+   "on_the_plant": 0,
+   "px_whose_blue_passes_green_or_red": 0,
+   "darkened_px": 0,
+   "clipped_white_px": 0,
+   "clipped_white_px_without": 0
+  },
+  "+790": {
+   "changed_px_over_4": 3842,
+   "outside_the_station": 0,
+   "on_the_code_text": 0,
+   "on_the_plant": 0,
+   "px_whose_blue_passes_green_or_red": 0,
+   "darkened_px": 0,
+   "clipped_white_px": 0,
+   "clipped_white_px_without": 0
+  },
+  "+830": {
+   "changed_px_over_4": 5757,
+   "outside_the_station": 0,
+   "on_the_code_text": 0,
+   "on_the_plant": 0,
+   "px_whose_blue_passes_green_or_red": 0,
+   "darkened_px": 0,
+   "clipped_white_px": 0,
+   "clipped_white_px_without": 0
+  },
+  "+880": {
+   "changed_px_over_4": 994,
+   "outside_the_station": 0,
+   "on_the_code_text": 0,
+   "on_the_plant": 0,
+   "px_whose_blue_passes_green_or_red": 0,
+   "darkened_px": 0,
+   "clipped_white_px": 0,
+   "clipped_white_px_without": 0
+  }
+ },
+ "the reveal along the route (6x)": {
+  "+100": {
+   "route_lit_share": 0.0,
+   "lit_px_more_than_14px_ahead": 0,
+   "unlit_px_more_than_14px_behind": 0
+  },
+  "+150": {
+   "route_lit_share": 0.05,
+   "lit_px_more_than_14px_ahead": 0,
+   "unlit_px_more_than_14px_behind": 0
+  },
+  "+200": {
+   "route_lit_share": 0.16,
+   "lit_px_more_than_14px_ahead": 11,
+   "unlit_px_more_than_14px_behind": 0
+  },
+  "+250": {
+   "route_lit_share": 0.23,
+   "lit_px_more_than_14px_ahead": 51,
+   "unlit_px_more_than_14px_behind": 0
+  },
+  "+300": {
+   "route_lit_share": 0.34,
+   "lit_px_more_than_14px_ahead": 0,
+   "unlit_px_more_than_14px_behind": 0
+  },
+  "+350": {
+   "route_lit_share": 0.43,
+   "lit_px_more_than_14px_ahead": 55,
+   "unlit_px_more_than_14px_behind": 0
+  },
+  "+388": {
+   "route_lit_share": 0.51,
+   "lit_px_more_than_14px_ahead": 0,
+   "unlit_px_more_than_14px_behind": 0
+  },
+  "+450": {
+   "route_lit_share": 0.6,
+   "lit_px_more_than_14px_ahead": 16,
+   "unlit_px_more_than_14px_behind": 0
+  },
+  "+500": {
+   "route_lit_share": 0.69,
+   "lit_px_more_than_14px_ahead": 0,
+   "unlit_px_more_than_14px_behind": 0
+  },
+  "+545": {
+   "route_lit_share": 0.75,
+   "lit_px_more_than_14px_ahead": 0,
+   "unlit_px_more_than_14px_behind": 0
+  },
+  "+600": {
+   "route_lit_share": 0.83,
+   "lit_px_more_than_14px_ahead": 0,
+   "unlit_px_more_than_14px_behind": 0
+  },
+  "+650": {
+   "route_lit_share": 0.88,
+   "lit_px_more_than_14px_ahead": 0,
+   "unlit_px_more_than_14px_behind": 0
+  },
+  "+700": {
+   "route_lit_share": 0.95,
+   "lit_px_more_than_14px_ahead": 0,
+   "unlit_px_more_than_14px_behind": 0
+  },
+  "+750": {
+   "route_lit_share": 1.0,
+   "lit_px_more_than_14px_ahead": 0,
+   "unlit_px_more_than_14px_behind": 0
+  },
+  "+880": {
+   "route_lit_share": 1.0,
+   "lit_px_more_than_14px_ahead": 0,
+   "unlit_px_more_than_14px_behind": 0
+  }
+ },
+ "route px checked (6x)": 54138,
+ "1x route px, station-top px": [
+  1652,
+  29543
+ ],
+ "1x route luminance by phase": {
+  "rest": 104.2,
+  "spark-approaching": 104.2,
+  "energy-arrival": 106.0,
+  "route-25": 147.9,
+  "route-50": 167.3,
+  "route-75": 183.2,
+  "destination": 200.8,
+  "settling": 207.4,
+  "stable": 209.1
+ },
+ "1x px brighter than standby by 25": {
+  "rest": 0,
+  "spark-approaching": 0,
+  "energy-arrival": 61,
+  "route-25": 1671,
+  "route-50": 2294,
+  "route-75": 3000,
+  "destination": 3993,
+  "settling": 3747,
+  "stable": 3731
+ },
+ "1x px brighter than the approved by 10 (the moving light)": {
+  "rest": 0,
+  "spark-approaching": 0,
+  "energy-arrival": 0,
+  "route-25": 189,
+  "route-50": 94,
+  "route-75": 210,
+  "destination": 448,
+  "settling": 0,
+  "stable": 0
+ },
+ "rest brighter than the approved by 4 or more (whole scene, px)": 13,
+ "1x destination area: max and mean gain over the approved, by phase": {
+  "rest": [
+   0,
+   -29.2
+  ],
+  "spark-approaching": [
+   0,
+   -29.2
+  ],
+  "energy-arrival": [
+   0,
+   -29.2
+  ],
+  "route-25": [
+   0,
+   -28.1
+  ],
+  "route-50": [
+   0,
+   -26.4
+  ],
+  "route-75": [
+   29,
+   -23.7
+  ],
+  "destination": [
+   55,
+   4.9
+  ],
+  "settling": [
+   9,
+   0.3
+  ],
+  "stable": [
+   0,
+   0.0
+  ]
+ },
+ "1x luminance rest -> stable": {
+  "front strip": [
+   67.4,
+   225.1
+  ],
+  "right strip": [
+   36.0,
+   134.8
+  ],
+  "ring, left of the base": [
+   161.8,
+   220.8
+  ]
+ },
+ "checks": {
+  "switching": {
+   "left_before_arrival": {
+    "frames": 45,
+    "max_clock": 0,
+    "frames_with_light": 0,
+    "settled": true
+   },
+   "during_the_journey": {
+    "left_at": [
+     964,
+     "experience",
+     0.274,
+     1
+    ],
+    "after_leaving": {
+     "frames": 33,
+     "frames_with_light": 0,
+     "clock_ever_rose": false
+    },
+    "settled": true
+   },
+   "at_the_destination": {
+    "left_at": [
+     1407,
+     "experience",
+     0.747,
+     1
+    ],
+    "after_leaving": {
+     "frames": 16,
+     "frames_with_light": 0,
+     "clock_ever_rose": false
+    },
+    "settled": true
+   },
+   "during_the_journey_to_nothing": {
+    "left_at": [
+     984,
+     "experience",
+     0.274,
+     1
+    ],
+    "after_leaving": {
+     "frames": 49,
+     "frames_with_light": 0,
+     "clock_ever_rose": false
+    },
+    "settled": true
+   },
+   "quick_return": {
+    "frames_before_arrival": 27,
+    "held_clock": 0.059,
+    "clock_rose_before_arrival": false,
+    "frames_with_light_before_arrival": 0,
+    "then": "approved layer"
+   },
+   "sweep_ending_on_experience": "approved layer",
+   "sweep_away_settled": true,
+   "sweep_ending_on_creative_settled": true,
+   "errors": []
+  },
+  "deep_link": {
+   "hover": null,
+   "selected": "experience",
+   "strip_pw": [
+    1,
+    1
+   ],
+   "floor_pw": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "floor_top": 1,
+   "clock": 1,
+   "gate": 1,
+   "drawn_light": 0,
+   "lift": "none",
+   "rect": [
+    -49.91,
+    -13.92,
+    1698.36,
+    955.84
+   ],
+   "floor_light": "approved layer",
+   "frames": 98,
+   "first_frame": [
+    1,
+    "experience",
+    false
+   ],
+   "frames_mid_sequence": 0,
+   "frames_with_light": 0,
+   "url": "/lab-v2?station=experience",
+   "errors": []
+  },
+  "escape": {
+   "frames": 72,
+   "min_clock": 1,
+   "frames_with_light": 0
+  },
+  "pacing": [
+   {
+    "frames_in_1000ms": 20,
+    "median_ms": 33.3,
+    "max_ms": 233.3
+   },
+   {
+    "frames_in_1000ms": 37,
+    "median_ms": 16.7,
+    "max_ms": 83.3
+   },
+   {
+    "frames_in_1000ms": 35,
+    "median_ms": 16.7,
+    "max_ms": 83.3
+   }
+  ],
+  "homepage": {
+   "v2_requests": 0,
+   "exp_v2": false
+  },
+  "phase_errors": [],
+  "forced_powered_errors": [],
+  "animations_running_when_stable": 0
+ }
+}

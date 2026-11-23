@@ -1,7 +1,10 @@
 import type { CSSProperties } from "react";
 import { SCENE, u } from "@/lib/scene";
 import { ArcadeScreen } from "./ArcadeScreen";
+import { CreativeFloor, CreativeV2 } from "./CreativeV2";
+import { EducationalFloor, EducationalV2 } from "./EducationalV2";
 import { EngineeringFloor, EngineeringV2 } from "./EngineeringV2";
+import { ExperienceFloor, ExperienceV2 } from "./ExperienceV2";
 import { V2_ENVIRONMENT, V2_OBJECTS, V2_PLAYGROUND_SCREEN, type V2Object } from "./scene-v2-data";
 
 /**
@@ -70,8 +73,15 @@ const M14G1 = "/scene/v2/m14g1";
  * M1.4H.1: Engineering powers on (EngineeringV2). Its share of the floor light
  * (ring, spill, reflections) follows its strips (EngineeringFloor), so the
  * floor light is M1.4G.1's without that share (every other pixel identical).
+ * M1.4H.2: Educational powers on (EducationalV2). Its share of the floor light
+ * follows its strips and globe (EducationalFloor), so the floor light is
+ * M1.4H.1's without that share (every other pixel identical).
+ * M1.4H.3: Creative Studio likewise (CreativeV2, CreativeFloor): M1.4H.2's
+ * without its share.
+ * M1.4H.4: Experience likewise (ExperienceV2, ExperienceFloor): M1.4H.3's
+ * without its share.
  */
-const M14H1 = "/scene/v2/m14h1";
+const M14H4 = "/scene/v2/m14h4";
 const FLOOR_TONE = "rgb(236 222 212)";
 
 function FloorLayer({ src, name, blend }: { src: string; name: string; blend?: CSSProperties["mixBlendMode"] }) {
@@ -201,7 +211,6 @@ const RECOVERED_STATIONS: Partial<Record<V2Object["id"], string>> = {
   creative: `${M14F}/creative`,
   experience: `${M14F}/experience`,
   engineering: `${M14F1}/engineering`,
-  educational: `${M14F1}/educational`,
 };
 /** M1.4G.1: Creative Studio's light layer with its strip end's cyan subtraction residue re-hued (M1.4F's file untouched). */
 const RECOVERED_LIGHT: Partial<Record<V2Object["id"], string>> = { creative: `${M14G1}/creative-light.png` };
@@ -287,8 +296,11 @@ export function SceneV2({ floorTone = false }: { floorTone?: boolean } = {}) {
       />
       {/* M1.4G: the floor's tone (optional), rings and reflections, contact shadows. The hub carries its approved contact. */}
       {floorTone && <FloorTone />}
-      <FloorLayer src={`${M14H1}/floor-light.png`} name="light" blend="plus-lighter" />
+      <FloorLayer src={`${M14H4}/floor-light.png`} name="light" blend="plus-lighter" />
       <EngineeringFloor />
+      <EducationalFloor />
+      <CreativeFloor />
+      <ExperienceFloor />
       <PlaygroundRing />
       <PlaygroundReflection />
       <FloorLayer src={`${M14G}/contact.png`} name="contact" />
@@ -320,6 +332,15 @@ export function SceneV2({ floorTone = false }: { floorTone?: boolean } = {}) {
         ) : o.id === "engineering" ? (
           // M1.4H.1: the recovered Engineering, split so it can power on.
           <EngineeringV2 key={o.id} />
+        ) : o.id === "educational" ? (
+          // M1.4H.2: the recovered Educational, split so its globe can awaken.
+          <EducationalV2 key={o.id} />
+        ) : o.id === "creative" ? (
+          // M1.4H.3: the recovered Creative Studio, its painting awakening.
+          <CreativeV2 key={o.id} />
+        ) : o.id === "experience" ? (
+          // M1.4H.4: the recovered Experience, the energy travelling its mountain route.
+          <ExperienceV2 key={o.id} />
         ) : RECOVERED_STATIONS[o.id] ? (
           <div key={o.id} className="pointer-events-none absolute inset-0" data-v2-station={o.id} data-v2-station-source="approved">
             <Recovered src={`${RECOVERED_STATIONS[o.id]}.png`} light={false} name={o.id} />

@@ -1,0 +1,194 @@
+{
+ "default": {
+  "engineering1": {
+   "frames": 52,
+   "longest": 169
+  },
+  "engineering_powered": true,
+  "engineering2": {
+   "frames": 113,
+   "longest": 3946
+  },
+  "educational1": {
+   "frames": 283,
+   "longest": 7600
+  },
+  "educational_powered": true,
+  "educational2": {
+   "frames": 421,
+   "longest": 11517
+  },
+  "playground1": {
+   "frames": 291,
+   "longest": 15748
+  },
+  "playground_powered": true,
+  "playground2": {
+   "frames": 355,
+   "longest": 19662
+  },
+  "creative1": {
+   "frames": 673,
+   "longest": 23567
+  },
+  "creative_powered": true,
+  "creative2": {
+   "frames": 729,
+   "longest": 27527
+  },
+  "experience1": {
+   "frames": 1018,
+   "longest": 31666
+  },
+  "experience_powered": true,
+  "experience2": {
+   "frames": 1151,
+   "longest": 35850
+  },
+  "errors": []
+ },
+ "tone": {
+  "engineering1": {
+   "frames": 49,
+   "longest": 176
+  },
+  "engineering_powered": true,
+  "engineering2": {
+   "frames": 111,
+   "longest": 3957
+  },
+  "educational1": {
+   "frames": 256,
+   "longest": 9132
+  },
+  "educational_powered": true,
+  "educational2": {
+   "frames": 365,
+   "longest": 13092
+  },
+  "playground1": {
+   "frames": 181,
+   "longest": 18283
+  },
+  "playground_powered": true,
+  "playground2": {
+   "frames": 343,
+   "longest": 22253
+  },
+  "creative1": {
+   "frames": 666,
+   "longest": 27850
+  },
+  "creative_powered": true,
+  "creative2": {
+   "frames": 809,
+   "longest": 31794
+  },
+  "experience1": {
+   "frames": 1000,
+   "longest": 36981
+  },
+  "experience_powered": true,
+  "experience2": {
+   "frames": 1171,
+   "longest": 41513
+  },
+  "errors": []
+ },
+ "default2": {
+  "engineering1": {
+   "frames": 44,
+   "longest": 208
+  },
+  "engineering_powered": true,
+  "engineering2": {
+   "frames": 115,
+   "longest": 4109
+  },
+  "educational1": {
+   "frames": 280,
+   "longest": 7794
+  },
+  "educational_powered": true,
+  "educational2": {
+   "frames": 413,
+   "longest": 11634
+  },
+  "playground1": {
+   "frames": 281,
+   "longest": 15777
+  },
+  "playground_powered": true,
+  "playground2": {
+   "frames": 373,
+   "longest": 19766
+  },
+  "creative1": {
+   "frames": 652,
+   "longest": 23698
+  },
+  "creative_powered": true,
+  "creative2": {
+   "frames": 713,
+   "longest": 27702
+  },
+  "experience1": {
+   "frames": 1018,
+   "longest": 31707
+  },
+  "experience_powered": true,
+  "experience2": {
+   "frames": 1101,
+   "longest": 35882
+  },
+  "errors": []
+ },
+ "tone2": {
+  "engineering1": {
+   "frames": 42,
+   "longest": 213
+  },
+  "engineering_powered": true,
+  "engineering2": {
+   "frames": 93,
+   "longest": 4039
+  },
+  "educational1": {
+   "frames": 268,
+   "longest": 7837
+  },
+  "educational_powered": true,
+  "educational2": {
+   "frames": 381,
+   "longest": 11597
+  },
+  "playground1": {
+   "frames": 271,
+   "longest": 15556
+  },
+  "playground_powered": true,
+  "playground2": {
+   "frames": 409,
+   "longest": 19504
+  },
+  "creative1": {
+   "frames": 715,
+   "longest": 23954
+  },
+  "creative_powered": true,
+  "creative2": {
+   "frames": 737,
+   "longest": 28095
+  },
+  "experience1": {
+   "frames": 910,
+   "longest": 32467
+  },
+  "experience_powered": true,
+  "experience2": {
+   "frames": 1011,
+   "longest": 37122
+  },
+  "errors": []
+ }
+}

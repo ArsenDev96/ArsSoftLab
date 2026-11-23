@@ -1,0 +1,528 @@
+{
+ "traverse": {
+  "/lab-v2": {
+   "engineering": {
+    "200": {
+     "sent": 208,
+     "handled": 209,
+     "lost_frames": 0,
+     "others": [],
+     "ends_on": "engineering"
+    },
+    "400": {
+     "sent": 406,
+     "handled": 409,
+     "lost_frames": 0,
+     "others": [],
+     "ends_on": "engineering"
+    },
+    "800": {
+     "sent": 803,
+     "handled": 811,
+     "lost_frames": 0,
+     "others": [],
+     "ends_on": "engineering"
+    }
+   },
+   "educational": {
+    "200": {
+     "sent": 202,
+     "handled": 202,
+     "lost_frames": 0,
+     "others": [],
+     "ends_on": "educational"
+    },
+    "400": {
+     "sent": 405,
+     "handled": 405,
+     "lost_frames": 0,
+     "others": [],
+     "ends_on": "educational"
+    },
+    "800": {
+     "sent": 809,
+     "handled": 809,
+     "lost_frames": 0,
+     "others": [],
+     "ends_on": "educational"
+    }
+   },
+   "playground": {
+    "200": {
+     "sent": 209,
+     "handled": 209,
+     "lost_frames": 0,
+     "others": [],
+     "ends_on": "playground"
+    },
+    "400": {
+     "sent": 400,
+     "handled": 615,
+     "lost_frames": 4,
+     "others": [],
+     "ends_on": "playground"
+    },
+    "800": {
+     "sent": 800,
+     "handled": 802,
+     "lost_frames": 4,
+     "others": [],
+     "ends_on": "playground"
+    }
+   },
+   "creative": {
+    "200": {
+     "sent": 212,
+     "handled": 212,
+     "lost_frames": 0,
+     "others": [],
+     "ends_on": "creative"
+    },
+    "400": {
+     "sent": 407,
+     "handled": 469,
+     "lost_frames": 3,
+     "others": [],
+     "ends_on": "creative"
+    },
+    "800": {
+     "sent": 813,
+     "handled": 870,
+     "lost_frames": 4,
+     "others": [],
+     "ends_on": "creative"
+    }
+   },
+   "experience": {
+    "200": {
+     "sent": 210,
+     "handled": 213,
+     "lost_frames": 0,
+     "others": [],
+     "ends_on": "experience"
+    },
+    "400": {
+     "sent": 405,
+     "handled": 470,
+     "lost_frames": 2,
+     "others": [],
+     "ends_on": "experience"
+    },
+    "800": {
+     "sent": 804,
+     "handled": 808,
+     "lost_frames": 5,
+     "others": [],
+     "ends_on": "experience"
+    }
+   }
+  },
+  "/": {
+   "engineering": {
+    "200": {
+     "sent": 202,
+     "handled": 212,
+     "lost_frames": 0,
+     "others": [],
+     "ends_on": "engineering"
+    },
+    "400": {
+     "sent": 405,
+     "handled": 408,
+     "lost_frames": 0,
+     "others": [],
+     "ends_on": "engineering"
+    },
+    "800": {
+     "sent": 802,
+     "handled": 813,
+     "lost_frames": 0,
+     "others": [],
+     "ends_on": "engineering"
+    }
+   },
+   "educational": {
+    "200": {
+     "sent": 202,
+     "handled": 202,
+     "lost_frames": 0,
+     "others": [],
+     "ends_on": "educational"
+    },
+    "400": {
+     "sent": 414,
+     "handled": 429,
+     "lost_frames": 0,
+     "others": [],
+     "ends_on": "educational"
+    },
+    "800": {
+     "sent": 803,
+     "handled": 818,
+     "lost_frames": 0,
+     "others": [],
+     "ends_on": "educational"
+    }
+   },
+   "playground": {
+    "200": {
+     "sent": 212,
+     "handled": 233,
+     "lost_frames": 0,
+     "others": [],
+     "ends_on": "playground"
+    },
+    "400": {
+     "sent": 415,
+     "handled": 485,
+     "lost_frames": 4,
+     "others": [],
+     "ends_on": "playground"
+    },
+    "800": {
+     "sent": 809,
+     "handled": 877,
+     "lost_frames": 8,
+     "others": [],
+     "ends_on": "playground"
+    }
+   },
+   "creative": {
+    "200": {
+     "sent": 206,
+     "handled": 206,
+     "lost_frames": 0,
+     "others": [],
+     "ends_on": "creative"
+    },
+    "400": {
+     "sent": 405,
+     "handled": 405,
+     "lost_frames": 4,
+     "others": [],
+     "ends_on": "creative"
+    },
+    "800": {
+     "sent": 808,
+     "handled": 808,
+     "lost_frames": 13,
+     "others": [],
+     "ends_on": "creative"
+    }
+   },
+   "experience": {
+    "200": {
+     "sent": 202,
+     "handled": 208,
+     "lost_frames": 0,
+     "others": [],
+     "ends_on": "experience"
+    },
+    "400": {
+     "sent": 407,
+     "handled": 410,
+     "lost_frames": 3,
+     "others": [],
+     "ends_on": "experience"
+    },
+    "800": {
+     "sent": 812,
+     "handled": 866,
+     "lost_frames": 15,
+     "others": [],
+     "ends_on": "experience"
+    }
+   }
+  }
+ },
+ "pacing": {
+  "default": {
+   "engineering": [
+    [
+     35,
+     195
+    ],
+    [
+     47,
+     186
+    ],
+    [
+     46,
+     184
+    ]
+   ],
+   "educational": [
+    [
+     68,
+     145
+    ],
+    [
+     80,
+     127
+    ],
+    [
+     79,
+     130
+    ]
+   ],
+   "playground": [
+    [
+     43,
+     303
+    ],
+    [
+     49,
+     193
+    ],
+    [
+     47,
+     205
+    ]
+   ],
+   "creative": [
+    [
+     78,
+     88
+    ],
+    [
+     76,
+     83
+    ],
+    [
+     83,
+     81
+    ]
+   ],
+   "experience": [
+    [
+     80,
+     88
+    ],
+    [
+     95,
+     76
+    ],
+    [
+     94,
+     76
+    ]
+   ]
+  },
+  "tone": {
+   "engineering": [
+    [
+     31,
+     188
+    ],
+    [
+     47,
+     191
+    ],
+    [
+     45,
+     192
+    ]
+   ],
+   "educational": [
+    [
+     65,
+     169
+    ],
+    [
+     79,
+     154
+    ],
+    [
+     76,
+     187
+    ]
+   ],
+   "playground": [
+    [
+     40,
+     305
+    ],
+    [
+     40,
+     209
+    ],
+    [
+     39,
+     209
+    ]
+   ],
+   "creative": [
+    [
+     90,
+     106
+    ],
+    [
+     75,
+     84
+    ],
+    [
+     80,
+     82
+    ]
+   ],
+   "experience": [
+    [
+     90,
+     78
+    ],
+    [
+     92,
+     92
+    ],
+    [
+     93,
+     78
+    ]
+   ]
+  },
+  "default again": {
+   "engineering": [
+    [
+     40,
+     196
+    ],
+    [
+     47,
+     216
+    ],
+    [
+     47,
+     211
+    ]
+   ],
+   "educational": [
+    [
+     81,
+     160
+    ],
+    [
+     73,
+     163
+    ],
+    [
+     83,
+     163
+    ]
+   ],
+   "playground": [
+    [
+     44,
+     321
+    ],
+    [
+     46,
+     214
+    ],
+    [
+     67,
+     218
+    ]
+   ],
+   "creative": [
+    [
+     79,
+     82
+    ],
+    [
+     88,
+     79
+    ],
+    [
+     84,
+     81
+    ]
+   ],
+   "experience": [
+    [
+     81,
+     76
+    ],
+    [
+     93,
+     92
+    ],
+    [
+     87,
+     100
+    ]
+   ]
+  },
+  "tone again": {
+   "engineering": [
+    [
+     22,
+     465
+    ],
+    [
+     47,
+     193
+    ],
+    [
+     46,
+     198
+    ]
+   ],
+   "educational": [
+    [
+     63,
+     206
+    ],
+    [
+     70,
+     140
+    ],
+    [
+     74,
+     157
+    ]
+   ],
+   "playground": [
+    [
+     36,
+     402
+    ],
+    [
+     42,
+     207
+    ],
+    [
+     40,
+     212
+    ]
+   ],
+   "creative": [
+    [
+     69,
+     101
+    ],
+    [
+     78,
+     82
+    ],
+    [
+     73,
+     91
+    ]
+   ],
+   "experience": [
+    [
+     72,
+     88
+    ],
+    [
+     90,
+     82
+    ],
+    [
+     92,
+     81
+    ]
+   ]
+  }
+ }
+}

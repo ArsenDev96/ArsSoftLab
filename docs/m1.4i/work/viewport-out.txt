@@ -1,0 +1,12 @@
+1280x800 scale 0.8499 cut {"left":84,"top":0} scroll false,false lift 18.01 hover experience
+  v2 clipped - | overlaps -
+  home clipped - | overlaps -
+1648x928 scale 0.9862 cut {"left":0,"top":0} scroll false,false lift 18 hover experience
+  v2 clipped - | overlaps -
+  home clipped - | overlaps -
+1920x1080 scale 1.1483 cut {"left":0,"top":0} scroll false,false lift 18 hover experience
+  v2 clipped - | overlaps -
+  home clipped - | overlaps -
+2560x1080 scale 1.5311 cut {"left":0,"top":118} scroll false,false lift 18 hover experience
+  v2 clipped - | overlaps -
+  home clipped - | overlaps -

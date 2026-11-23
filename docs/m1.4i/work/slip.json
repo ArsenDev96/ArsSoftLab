@@ -1,0 +1,37 @@
+{
+ "engineering, back 140 ms after hover dropped": {
+  "left_at": 0.42,
+  "light_shown_before_arrival_frames": 7,
+  "from_ms": 0,
+  "to_ms": 457,
+  "last_light_ms": 911,
+  "held_value_at_return": 0.655,
+  "static_frames_after_arrival": 0
+ },
+ "engineering, back 220 ms after hover dropped": {
+  "light_shown_before_arrival_frames": 0,
+  "from_ms": null,
+  "to_ms": null,
+  "last_light_ms": null,
+  "held_value_at_return": 1,
+  "static_frames_after_arrival": 0
+ },
+ "creative, back 140 ms after hover dropped": {
+  "left_at": 0.333,
+  "light_shown_before_arrival_frames": 0,
+  "from_ms": null,
+  "to_ms": null,
+  "last_light_ms": 1120,
+  "held_value_at_return": 0.728,
+  "static_frames_after_arrival": 5
+ },
+ "creative, back 220 ms after hover dropped": {
+  "left_at": 0.421,
+  "light_shown_before_arrival_frames": 0,
+  "from_ms": null,
+  "to_ms": null,
+  "last_light_ms": 1132,
+  "held_value_at_return": 0.728,
+  "static_frames_after_arrival": 4
+ }
+}

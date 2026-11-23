@@ -10,8 +10,8 @@ export const SITE = {
   title: "Arsen Manukyan — Inside My Lab | ArsSoftLab",
   description:
     "Explore the lab of software engineer Arsen Manukyan: products, tools and ideas across education, engineering, play, creative work and experience.",
-  /** Placeholder until the contact flow is designed (later milestone). */
-  contactHref: "#contact",
+  /** Email link used by the header's Let’s Talk button. */
+  contactHref: "mailto:arsmanukyandev@gmail.com?subject=Let's%20Talk",
 } as const;
 
 export const HERO = {

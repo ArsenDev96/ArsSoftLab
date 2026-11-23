@@ -1,0 +1,200 @@
+{
+ "/": [
+  {
+   "ttfb_ms": 621,
+   "dom_ms": 782,
+   "load_ms": 1315,
+   "fcp_ms": 976,
+   "lcp_ms": 1876,
+   "scene_shown_ms": 1506,
+   "long_tasks": [
+    [
+     722,
+     60
+    ],
+    [
+     1128,
+     149
+    ],
+    [
+     1570,
+     66
+    ]
+   ],
+   "layout_shift": 0,
+   "commits": 12,
+   "heap_mb": 12.3,
+   "nodes": 2993,
+   "memory_mb": {
+    "browser": 55,
+    "crashpad-handler": 7,
+    "gpu-process": 349,
+    "utility": 28,
+    "renderer": 335
+   }
+  },
+  {
+   "ttfb_ms": 419,
+   "dom_ms": 478,
+   "load_ms": 1168,
+   "fcp_ms": 1088,
+   "lcp_ms": 1688,
+   "scene_shown_ms": 1402,
+   "long_tasks": [
+    [
+     515,
+     70
+    ],
+    [
+     892,
+     155
+    ],
+    [
+     1345,
+     53
+    ]
+   ],
+   "layout_shift": 0,
+   "commits": 14,
+   "heap_mb": 12.4,
+   "nodes": 2993,
+   "memory_mb": {
+    "browser": 54,
+    "crashpad-handler": 7,
+    "utility": 38,
+    "gpu-process": 349,
+    "renderer": 307
+   }
+  },
+  {
+   "ttfb_ms": 510,
+   "dom_ms": 692,
+   "load_ms": 1220,
+   "fcp_ms": 884,
+   "lcp_ms": 1716,
+   "scene_shown_ms": 1376,
+   "long_tasks": [
+    [
+     564,
+     62
+    ],
+    [
+     636,
+     54
+    ],
+    [
+     1032,
+     150
+    ]
+   ],
+   "layout_shift": 0,
+   "commits": 12,
+   "heap_mb": 12.1,
+   "nodes": 2993,
+   "memory_mb": {
+    "browser": 55,
+    "crashpad-handler": 7,
+    "gpu-process": 349,
+    "utility": 42,
+    "renderer": 203
+   }
+  }
+ ],
+ "/lab-v2": [
+  {
+   "ttfb_ms": 726,
+   "dom_ms": 877,
+   "load_ms": 2459,
+   "fcp_ms": 1104,
+   "lcp_ms": 3536,
+   "scene_shown_ms": 2191,
+   "long_tasks": [
+    [
+     2197,
+     145
+    ],
+    [
+     2625,
+     52
+    ]
+   ],
+   "layout_shift": 0,
+   "commits": 11,
+   "heap_mb": 15.2,
+   "nodes": 3653,
+   "memory_mb": {
+    "browser": 55,
+    "crashpad-handler": 7,
+    "gpu-process": 816,
+    "utility": 63,
+    "renderer": 323
+   }
+  },
+  {
+   "ttfb_ms": 603,
+   "dom_ms": 739,
+   "load_ms": 1704,
+   "fcp_ms": 1348,
+   "lcp_ms": 2980,
+   "scene_shown_ms": 2213,
+   "long_tasks": [
+    [
+     778,
+     66
+    ],
+    [
+     938,
+     156
+    ],
+    [
+     1788,
+     351
+    ]
+   ],
+   "layout_shift": 0,
+   "commits": 16,
+   "heap_mb": 12.4,
+   "nodes": 3653,
+   "memory_mb": {
+    "browser": 55,
+    "crashpad-handler": 7,
+    "gpu-process": 676,
+    "utility": 41,
+    "renderer": 315
+   }
+  },
+  {
+   "ttfb_ms": 615,
+   "dom_ms": 675,
+   "load_ms": 1427,
+   "fcp_ms": 1244,
+   "lcp_ms": 3244,
+   "scene_shown_ms": 1244,
+   "long_tasks": [
+    [
+     706,
+     69
+    ],
+    [
+     1262,
+     138
+    ],
+    [
+     1700,
+     52
+    ]
+   ],
+   "layout_shift": 0,
+   "commits": 10,
+   "heap_mb": 15.2,
+   "nodes": 3653,
+   "memory_mb": {
+    "browser": 56,
+    "crashpad-handler": 7,
+    "gpu-process": 844,
+    "utility": 27,
+    "renderer": 337
+   }
+  }
+ ]
+}

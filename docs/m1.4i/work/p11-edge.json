@@ -1,0 +1,27 @@
+{
+ "engineering": {
+  "frames": 41,
+  "spark_frames": 17,
+  "others": 0
+ },
+ "educational": {
+  "frames": 231,
+  "spark_frames": 44,
+  "others": 0
+ },
+ "playground": {
+  "frames": 166,
+  "spark_frames": 63,
+  "others": 0
+ },
+ "creative": {
+  "frames": 429,
+  "spark_frames": 152,
+  "others": 0
+ },
+ "experience": {
+  "frames": 451,
+  "spark_frames": 195,
+  "others": 0
+ }
+}

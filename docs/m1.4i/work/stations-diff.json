@@ -1,0 +1,136 @@
+{
+ "engineering": {
+  "powered: px changed over 4 (own box)": 37317,
+  "powered: px over 2 outside own box and the hub": 344,
+  "max there": 25,
+  "returned vs idle: max, px over 2": [
+   0,
+   0
+  ],
+  "over 2 in other stations' boxes": {
+   "educational": 1297,
+   "playground": 0,
+   "creative": 5,
+   "experience": 4
+  },
+  "before arrival: px over 4 in own box": 4595,
+  "before arrival: where (scene px)": [
+   358,
+   320,
+   640,
+   559
+  ],
+  "outside where": [
+   362,
+   309,
+   580,
+   697
+  ]
+ },
+ "educational": {
+  "powered: px changed over 4 (own box)": 36126,
+  "powered: px over 2 outside own box and the hub": 5,
+  "max there": 5,
+  "returned vs idle: max, px over 2": [
+   0,
+   0
+  ],
+  "over 2 in other stations' boxes": {
+   "engineering": 0,
+   "playground": 0,
+   "creative": 5,
+   "experience": 4
+  },
+  "before arrival: px over 4 in own box": 4932,
+  "before arrival: where (scene px)": [
+   758,
+   223,
+   937,
+   537
+  ],
+  "outside where": [
+   516,
+   687,
+   580,
+   697
+  ]
+ },
+ "playground": {
+  "powered: px changed over 4 (own box)": 66590,
+  "powered: px over 2 outside own box and the hub": 5223,
+  "max there": 234,
+  "returned vs idle: max, px over 2": [
+   0,
+   0
+  ],
+  "over 2 in other stations' boxes": {
+   "engineering": 0,
+   "educational": 2606,
+   "creative": 5,
+   "experience": 3982
+  },
+  "before arrival: px over 4 in own box": 13520,
+  "before arrival: where (scene px)": [
+   1030,
+   320,
+   1399,
+   562
+  ],
+  "outside where": [
+   516,
+   299,
+   1400,
+   697
+  ]
+ },
+ "creative": {
+  "powered: px changed over 4 (own box)": 31701,
+  "powered: px over 2 outside own box and the hub": 105,
+  "max there": 60,
+  "returned vs idle: max, px over 2": [
+   0,
+   0
+  ],
+  "over 2 in other stations' boxes": {
+   "engineering": 93,
+   "educational": 0,
+   "playground": 0,
+   "experience": 4
+  },
+  "before arrival: px over 4 in own box": 5795,
+  "before arrival: where (scene px)": [
+   343,
+   572,
+   599,
+   709
+  ],
+  "outside where": [
+   600,
+   681,
+   630,
+   686
+  ]
+ },
+ "experience": {
+  "powered: px changed over 4 (own box)": 31080,
+  "powered: px over 2 outside own box and the hub": 0,
+  "max there": 0,
+  "returned vs idle: max, px over 2": [
+   0,
+   0
+  ],
+  "over 2 in other stations' boxes": {
+   "engineering": 0,
+   "educational": 0,
+   "playground": 0,
+   "creative": 0
+  },
+  "before arrival: px over 4 in own box": 5842,
+  "before arrival: where (scene px)": [
+   1020,
+   565,
+   1381,
+   709
+  ]
+ }
+}

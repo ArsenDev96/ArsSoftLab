@@ -1,0 +1,1527 @@
+{
+ "base": "http://localhost:3002",
+ "arrive_ms": 640,
+ "state+150": {
+  "hover": "creative",
+  "selected": null,
+  "strip_pw": [
+   0.691,
+   0
+  ],
+  "floor_pw": [
+   0.668,
+   0,
+   0.668,
+   0
+  ],
+  "floor_top": 0.75,
+  "warm": 0.179,
+  "sunrise": 0,
+  "glint": 0,
+  "gates": [
+   1,
+   1,
+   1
+  ],
+  "drawn_light": [
+   0.467,
+   0.406,
+   0
+  ],
+  "lift": "none",
+  "rect": [
+   -0.45,
+   0,
+   1648.89,
+   928
+  ],
+  "floor_light": "fronts"
+ },
+ "state+180": {
+  "hover": "creative",
+  "selected": null,
+  "strip_pw": [
+   0.849,
+   0
+  ],
+  "floor_pw": [
+   0.801,
+   0,
+   0.801,
+   0
+  ],
+  "floor_top": 0.763,
+  "warm": 0.287,
+  "sunrise": 0.054,
+  "glint": 0,
+  "gates": [
+   1,
+   1,
+   1
+  ],
+  "drawn_light": [
+   0.745,
+   1,
+   0
+  ],
+  "lift": "none",
+  "rect": [
+   -0.45,
+   0,
+   1648.89,
+   928
+  ],
+  "floor_light": "fronts"
+ },
+ "state+210": {
+  "hover": "creative",
+  "selected": null,
+  "strip_pw": [
+   1,
+   0
+  ],
+  "floor_pw": [
+   0.934,
+   0,
+   0.934,
+   0
+  ],
+  "floor_top": 0.779,
+  "warm": 0.394,
+  "sunrise": 0.116,
+  "glint": 0,
+  "gates": [
+   1,
+   1,
+   1
+  ],
+  "drawn_light": [
+   1,
+   1,
+   0
+  ],
+  "lift": "none",
+  "rect": [
+   -0.45,
+   0,
+   1648.89,
+   928
+  ],
+  "floor_light": "fronts"
+ },
+ "state+250": {
+  "hover": "creative",
+  "selected": null,
+  "strip_pw": [
+   1,
+   0
+  ],
+  "floor_pw": [
+   1,
+   0.099,
+   1,
+   0.099
+  ],
+  "floor_top": 0.803,
+  "warm": 0.537,
+  "sunrise": 0.211,
+  "glint": 0,
+  "gates": [
+   1,
+   1,
+   1
+  ],
+  "drawn_light": [
+   0.788,
+   1,
+   0
+  ],
+  "lift": "none",
+  "rect": [
+   -0.45,
+   0,
+   1648.89,
+   928
+  ],
+  "floor_light": "fronts"
+ },
+ "state+290": {
+  "hover": "creative",
+  "selected": null,
+  "strip_pw": [
+   1,
+   0
+  ],
+  "floor_pw": [
+   1,
+   0.212,
+   1,
+   0.212
+  ],
+  "floor_top": 0.829,
+  "warm": 0.679,
+  "sunrise": 0.315,
+  "glint": 0,
+  "gates": [
+   1,
+   1,
+   1
+  ],
+  "drawn_light": [
+   0.545,
+   1,
+   0
+  ],
+  "lift": "none",
+  "rect": [
+   -0.45,
+   0,
+   1648.89,
+   928
+  ],
+  "floor_light": "fronts"
+ },
+ "state+330": {
+  "hover": "creative",
+  "selected": null,
+  "strip_pw": [
+   1,
+   0.038
+  ],
+  "floor_pw": [
+   1,
+   0.325,
+   1,
+   0.325
+  ],
+  "floor_top": 0.856,
+  "warm": 0.822,
+  "sunrise": 0.426,
+  "glint": 0,
+  "gates": [
+   1,
+   1,
+   1
+  ],
+  "drawn_light": [
+   0.302,
+   1,
+   0
+  ],
+  "lift": "none",
+  "rect": [
+   -0.45,
+   0,
+   1648.89,
+   928
+  ],
+  "floor_light": "fronts"
+ },
+ "state+370": {
+  "hover": "creative",
+  "selected": null,
+  "strip_pw": [
+   1,
+   0.509
+  ],
+  "floor_pw": [
+   1,
+   0.437,
+   1,
+   0.437
+  ],
+  "floor_top": 0.885,
+  "warm": 0.965,
+  "sunrise": 0.538,
+  "glint": 0.053,
+  "gates": [
+   1,
+   1,
+   1
+  ],
+  "drawn_light": [
+   0.059,
+   1,
+   1
+  ],
+  "lift": "none",
+  "rect": [
+   -0.45,
+   0,
+   1648.89,
+   928
+  ],
+  "floor_light": "fronts"
+ },
+ "state+410": {
+  "hover": "creative",
+  "selected": null,
+  "strip_pw": [
+   1,
+   0.979
+  ],
+  "floor_pw": [
+   1,
+   0.55,
+   1,
+   0.55
+  ],
+  "floor_top": 0.912,
+  "warm": 1,
+  "sunrise": 0.648,
+  "glint": 0.159,
+  "gates": [
+   1,
+   1,
+   1
+  ],
+  "drawn_light": [
+   0,
+   1,
+   1
+  ],
+  "lift": "none",
+  "rect": [
+   -0.45,
+   0,
+   1648.89,
+   928
+  ],
+  "floor_light": "fronts"
+ },
+ "state+450": {
+  "hover": "creative",
+  "selected": null,
+  "strip_pw": [
+   1,
+   1
+  ],
+  "floor_pw": [
+   1,
+   0.663,
+   1,
+   0.663
+  ],
+  "floor_top": 0.938,
+  "warm": 1,
+  "sunrise": 0.751,
+  "glint": 0.264,
+  "gates": [
+   1,
+   1,
+   1
+  ],
+  "drawn_light": [
+   0,
+   1,
+   1
+  ],
+  "lift": "none",
+  "rect": [
+   -0.45,
+   0,
+   1648.89,
+   928
+  ],
+  "floor_light": "fronts"
+ },
+ "state+490": {
+  "hover": "creative",
+  "selected": null,
+  "strip_pw": [
+   1,
+   1
+  ],
+  "floor_pw": [
+   1,
+   0.775,
+   1,
+   0.775
+  ],
+  "floor_top": 0.961,
+  "warm": 1,
+  "sunrise": 0.842,
+  "glint": 0.369,
+  "gates": [
+   1,
+   1,
+   1
+  ],
+  "drawn_light": [
+   0,
+   1,
+   1
+  ],
+  "lift": "none",
+  "rect": [
+   -0.45,
+   0,
+   1648.89,
+   928
+  ],
+  "floor_light": "fronts"
+ },
+ "state+530": {
+  "hover": "creative",
+  "selected": null,
+  "strip_pw": [
+   1,
+   1
+  ],
+  "floor_pw": [
+   1,
+   0.888,
+   1,
+   0.888
+  ],
+  "floor_top": 0.98,
+  "warm": 1,
+  "sunrise": 0.919,
+  "glint": 0.474,
+  "gates": [
+   1,
+   1,
+   1
+  ],
+  "drawn_light": [
+   0,
+   1,
+   1
+  ],
+  "lift": "none",
+  "rect": [
+   -0.45,
+   0,
+   1648.89,
+   928
+  ],
+  "floor_light": "fronts"
+ },
+ "state+580": {
+  "hover": "creative",
+  "selected": null,
+  "strip_pw": [
+   1,
+   1
+  ],
+  "floor_pw": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "floor_top": 0.997,
+  "warm": 1,
+  "sunrise": 0.99,
+  "glint": 0.606,
+  "gates": [
+   1,
+   1,
+   1
+  ],
+  "drawn_light": [
+   0,
+   1,
+   1
+  ],
+  "lift": "none",
+  "rect": [
+   -0.45,
+   0,
+   1648.89,
+   928
+  ],
+  "floor_light": "fronts"
+ },
+ "state+640": {
+  "hover": "creative",
+  "selected": null,
+  "strip_pw": [
+   1,
+   1
+  ],
+  "floor_pw": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "floor_top": 1,
+  "warm": 1,
+  "sunrise": 1,
+  "glint": 0.764,
+  "gates": [
+   1,
+   1,
+   1
+  ],
+  "drawn_light": [
+   0,
+   0,
+   1
+  ],
+  "lift": "none",
+  "rect": [
+   -0.45,
+   0,
+   1648.89,
+   928
+  ],
+  "floor_light": "cross-fading"
+ },
+ "state+800": {
+  "hover": "creative",
+  "selected": null,
+  "strip_pw": [
+   1,
+   1
+  ],
+  "floor_pw": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "floor_top": 1,
+  "warm": 1,
+  "sunrise": 1,
+  "glint": 1,
+  "gates": [
+   1,
+   1,
+   1
+  ],
+  "drawn_light": [
+   0,
+   0,
+   0
+  ],
+  "lift": "none",
+  "rect": [
+   -0.45,
+   0,
+   1648.89,
+   928
+  ],
+  "floor_light": "approved layer"
+ },
+ "animations_running_when_stable": 0,
+ "phases": {
+  "rest": {
+   "hover": null,
+   "selected": null,
+   "strip_pw": [
+    0,
+    0
+   ],
+   "floor_pw": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "floor_top": 0.75,
+   "warm": 0,
+   "sunrise": 0,
+   "glint": 0,
+   "gates": [
+    0,
+    0,
+    0
+   ],
+   "drawn_light": [
+    0,
+    0,
+    0
+   ],
+   "lift": "none",
+   "rect": [
+    -0.45,
+    0,
+    1648.89,
+    928
+   ],
+   "floor_light": "fronts"
+  },
+  "spark-approaching": {
+   "t_after_arrival": -120,
+   "hover": "creative",
+   "selected": null,
+   "strip_pw": [
+    0,
+    0
+   ],
+   "floor_pw": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "floor_top": 0.75,
+   "warm": 0,
+   "sunrise": 0,
+   "glint": 0,
+   "gates": [
+    0,
+    0,
+    0
+   ],
+   "drawn_light": [
+    0,
+    0,
+    0
+   ],
+   "lift": "none",
+   "rect": [
+    -0.45,
+    0,
+    1648.89,
+    928
+   ],
+   "floor_light": "fronts"
+  },
+  "energy-arrival": {
+   "t_after_arrival": 80,
+   "hover": "creative",
+   "selected": null,
+   "strip_pw": [
+    0.321,
+    0
+   ],
+   "floor_pw": [
+    0.356,
+    0,
+    0.356,
+    0
+   ],
+   "floor_top": 0.75,
+   "warm": 0,
+   "sunrise": 0,
+   "glint": 0,
+   "gates": [
+    1,
+    1,
+    1
+   ],
+   "drawn_light": [
+    0,
+    0,
+    0
+   ],
+   "lift": "none",
+   "rect": [
+    -0.45,
+    0,
+    1648.89,
+    928
+   ],
+   "floor_light": "fronts"
+  },
+  "first-response": {
+   "t_after_arrival": 150,
+   "hover": "creative",
+   "selected": null,
+   "strip_pw": [
+    0.689,
+    0
+   ],
+   "floor_pw": [
+    0.667,
+    0,
+    0.667,
+    0
+   ],
+   "floor_top": 0.75,
+   "warm": 0.179,
+   "sunrise": 0,
+   "glint": 0,
+   "gates": [
+    1,
+    1,
+    1
+   ],
+   "drawn_light": [
+    0.464,
+    0,
+    0
+   ],
+   "lift": "none",
+   "rect": [
+    -0.45,
+    0,
+    1648.89,
+    928
+   ],
+   "floor_light": "fronts"
+  },
+  "sun": {
+   "t_after_arrival": 200,
+   "hover": "creative",
+   "selected": null,
+   "strip_pw": [
+    0.953,
+    0
+   ],
+   "floor_pw": [
+    0.889,
+    0,
+    0.889,
+    0
+   ],
+   "floor_top": 0.773,
+   "warm": 0.357,
+   "sunrise": 0.094,
+   "glint": 0,
+   "gates": [
+    1,
+    1,
+    1
+   ],
+   "drawn_light": [
+    0.929,
+    1,
+    0
+   ],
+   "lift": "none",
+   "rect": [
+    -0.45,
+    0,
+    1648.89,
+    928
+   ],
+   "floor_light": "fronts"
+  },
+  "clouds": {
+   "t_after_arrival": 260,
+   "hover": "creative",
+   "selected": null,
+   "strip_pw": [
+    1,
+    0
+   ],
+   "floor_pw": [
+    1,
+    0.127,
+    1,
+    0.127
+   ],
+   "floor_top": 0.809,
+   "warm": 0.571,
+   "sunrise": 0.235,
+   "glint": 0,
+   "gates": [
+    1,
+    1,
+    1
+   ],
+   "drawn_light": [
+    0.729,
+    1,
+    0
+   ],
+   "lift": "none",
+   "rect": [
+    -0.45,
+    0,
+    1648.89,
+    928
+   ],
+   "floor_light": "fronts"
+  },
+  "sky-and-peak": {
+   "t_after_arrival": 320,
+   "hover": "creative",
+   "selected": null,
+   "strip_pw": [
+    1,
+    0
+   ],
+   "floor_pw": [
+    1,
+    0.296,
+    1,
+    0.296
+   ],
+   "floor_top": 0.849,
+   "warm": 0.786,
+   "sunrise": 0.397,
+   "glint": 0,
+   "gates": [
+    1,
+    1,
+    1
+   ],
+   "drawn_light": [
+    0.364,
+    1,
+    0
+   ],
+   "lift": "none",
+   "rect": [
+    -0.45,
+    0,
+    1648.89,
+    928
+   ],
+   "floor_light": "fronts"
+  },
+  "ridge-glint": {
+   "t_after_arrival": 500,
+   "hover": "creative",
+   "selected": null,
+   "strip_pw": [
+    1,
+    1
+   ],
+   "floor_pw": [
+    1,
+    0.803,
+    1,
+    0.803
+   ],
+   "floor_top": 0.966,
+   "warm": 1,
+   "sunrise": 0.863,
+   "glint": 0.395,
+   "gates": [
+    1,
+    1,
+    1
+   ],
+   "drawn_light": [
+    0,
+    1,
+    1
+   ],
+   "lift": "none",
+   "rect": [
+    -0.45,
+    0,
+    1648.89,
+    928
+   ],
+   "floor_light": "fronts"
+  },
+  "summit": {
+   "t_after_arrival": 550,
+   "hover": "creative",
+   "selected": null,
+   "strip_pw": [
+    1,
+    1
+   ],
+   "floor_pw": [
+    1,
+    0.944,
+    1,
+    0.944
+   ],
+   "floor_top": 0.988,
+   "warm": 1,
+   "sunrise": 0.951,
+   "glint": 0.526,
+   "gates": [
+    1,
+    1,
+    1
+   ],
+   "drawn_light": [
+    0,
+    1,
+    1
+   ],
+   "lift": "none",
+   "rect": [
+    -0.45,
+    0,
+    1648.89,
+    928
+   ],
+   "floor_light": "fronts"
+  },
+  "settling": {
+   "t_after_arrival": 660,
+   "hover": "creative",
+   "selected": null,
+   "strip_pw": [
+    1,
+    1
+   ],
+   "floor_pw": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "floor_top": 1,
+   "warm": 1,
+   "sunrise": 1,
+   "glint": 0.816,
+   "gates": [
+    1,
+    1,
+    1
+   ],
+   "drawn_light": [
+    0,
+    0,
+    1
+   ],
+   "lift": "none",
+   "rect": [
+    -0.45,
+    0,
+    1648.89,
+    928
+   ],
+   "floor_light": "cross-fading"
+  },
+  "stable": {
+   "t_after_arrival": 1400,
+   "hover": "creative",
+   "selected": null,
+   "strip_pw": [
+    1,
+    1
+   ],
+   "floor_pw": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "floor_top": 1,
+   "warm": 1,
+   "sunrise": 1,
+   "glint": 1,
+   "gates": [
+    1,
+    1,
+    1
+   ],
+   "drawn_light": [
+    0,
+    0,
+    0
+   ],
+   "lift": "none",
+   "rect": [
+    -0.45,
+    0,
+    1648.89,
+    928
+   ],
+   "floor_light": "approved layer"
+  },
+  "stable_finished": {
+   "hover": "creative",
+   "selected": null,
+   "strip_pw": [
+    1,
+    1
+   ],
+   "floor_pw": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "floor_top": 1,
+   "warm": 1,
+   "sunrise": 1,
+   "glint": 1,
+   "gates": [
+    1,
+    1,
+    1
+   ],
+   "drawn_light": [
+    0,
+    0,
+    0
+   ],
+   "lift": "none",
+   "rect": [
+    -0.45,
+    0,
+    1648.89,
+    928
+   ],
+   "floor_light": "approved layer"
+  },
+  "returning-100ms": {
+   "hover": null,
+   "selected": null,
+   "strip_pw": [
+    1,
+    0
+   ],
+   "floor_pw": [
+    1,
+    0.444,
+    1,
+    0.444
+   ],
+   "floor_top": 1,
+   "warm": 1,
+   "sunrise": 1,
+   "glint": 1,
+   "gates": [
+    0,
+    0,
+    0
+   ],
+   "drawn_light": [
+    0,
+    0,
+    0
+   ],
+   "lift": "none",
+   "rect": [
+    -0.45,
+    0,
+    1648.89,
+    928
+   ],
+   "floor_light": "fronts"
+  },
+  "returning-200ms": {
+   "hover": null,
+   "selected": null,
+   "strip_pw": [
+    0.764,
+    0
+   ],
+   "floor_pw": [
+    0.65,
+    0,
+    0.65,
+    0
+   ],
+   "floor_top": 0.949,
+   "warm": 1,
+   "sunrise": 0.796,
+   "glint": 1,
+   "gates": [
+    0,
+    0,
+    0
+   ],
+   "drawn_light": [
+    0,
+    1,
+    0
+   ],
+   "lift": "none",
+   "rect": [
+    -0.45,
+    0,
+    1648.89,
+    928
+   ],
+   "floor_light": "fronts"
+  },
+  "returning-300ms": {
+   "hover": null,
+   "selected": null,
+   "strip_pw": [
+    0.143,
+    0
+   ],
+   "floor_pw": [
+    0.15,
+    0,
+    0.15,
+    0
+   ],
+   "floor_top": 0.823,
+   "warm": 0,
+   "sunrise": 0.293,
+   "glint": 0,
+   "gates": [
+    0,
+    0,
+    0
+   ],
+   "drawn_light": [
+    0,
+    1,
+    0
+   ],
+   "lift": "none",
+   "rect": [
+    -0.45,
+    0,
+    1648.89,
+    928
+   ],
+   "floor_light": "fronts"
+  },
+  "returned": {
+   "hover": null,
+   "selected": null,
+   "strip_pw": [
+    0,
+    0
+   ],
+   "floor_pw": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "floor_top": 0.75,
+   "warm": 0,
+   "sunrise": 0,
+   "glint": 0,
+   "gates": [
+    0,
+    0,
+    0
+   ],
+   "drawn_light": [
+    0,
+    0,
+    0
+   ],
+   "lift": "none",
+   "rect": [
+    -0.45,
+    0,
+    1648.89,
+    928
+   ],
+   "floor_light": "fronts"
+  }
+ },
+ "phase_errors": [],
+ "forced_powered_errors": [],
+ "switching": {
+  "left_before_arrival": {
+   "frames": 80,
+   "max_sunrise": 0,
+   "frames_with_light": 0,
+   "settled": true
+  },
+  "mid_sunrise": {
+   "left_at": [
+    915,
+    "creative",
+    0.279,
+    0,
+    0.628,
+    1,
+    0
+   ],
+   "after_leaving": {
+    "frames": 26,
+    "frames_with_light": 0,
+    "sunrise_ever_rose": false
+   },
+   "settled": true
+  },
+  "mid_glint": {
+   "left_at": [
+    1175,
+    "creative",
+    0.813,
+    0.333,
+    0,
+    1,
+    1
+   ],
+   "after_leaving": {
+    "frames": 42,
+    "frames_with_light": 0,
+    "sunrise_ever_rose": false
+   },
+   "settled": true
+  },
+  "quick_return": {
+   "frames_before_arrival": 28,
+   "held_sunrise": 0.005,
+   "frames_with_light_before_arrival": 0,
+   "then": "approved layer"
+  },
+  "sweep_ending_on_creative": "approved layer",
+  "sweep_away_settled": true,
+  "sweep_ending_on_educational_settled": true,
+  "errors": []
+ },
+ "escape": {
+  "frames": 87,
+  "min_sunrise": 1,
+  "frames_with_light": 0
+ },
+ "keyboard": {
+  "tab": 17,
+  "focused": {
+   "hover": "creative",
+   "selected": null,
+   "strip_pw": [
+    1,
+    1
+   ],
+   "floor_pw": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "floor_top": 1,
+   "warm": 1,
+   "sunrise": 1,
+   "glint": 1,
+   "gates": [
+    1,
+    1,
+    1
+   ],
+   "drawn_light": [
+    0,
+    0,
+    0
+   ],
+   "lift": "none",
+   "rect": [
+    -0.45,
+    0,
+    1648.89,
+    928
+   ],
+   "floor_light": "approved layer"
+  },
+  "selected": {
+   "hover": null,
+   "selected": "creative",
+   "strip_pw": [
+    1,
+    1
+   ],
+   "floor_pw": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "floor_top": 1,
+   "warm": 1,
+   "sunrise": 1,
+   "glint": 1,
+   "gates": [
+    1,
+    1,
+    1
+   ],
+   "drawn_light": [
+    0,
+    0,
+    0
+   ],
+   "lift": "none",
+   "rect": [
+    -0.44,
+    -31.37,
+    1794.81,
+    1010.13
+   ],
+   "floor_light": "approved layer",
+   "url": "/lab-v2?station=creative"
+  },
+  "escaped": {
+   "hover": "creative",
+   "selected": null,
+   "strip_pw": [
+    1,
+    1
+   ],
+   "floor_pw": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "floor_top": 1,
+   "warm": 1,
+   "sunrise": 1,
+   "glint": 1,
+   "gates": [
+    1,
+    1,
+    1
+   ],
+   "drawn_light": [
+    0,
+    0,
+    0
+   ],
+   "lift": "none",
+   "rect": [
+    -0.45,
+    0,
+    1648.89,
+    928
+   ],
+   "floor_light": "approved layer",
+   "url": "/lab-v2"
+  },
+  "blurred": {
+   "hover": null,
+   "selected": null,
+   "strip_pw": [
+    0,
+    0
+   ],
+   "floor_pw": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "floor_top": 0.75,
+   "warm": 0,
+   "sunrise": 0,
+   "glint": 0,
+   "gates": [
+    0,
+    0,
+    0
+   ],
+   "drawn_light": [
+    0,
+    0,
+    0
+   ],
+   "lift": "none",
+   "rect": [
+    -0.45,
+    0,
+    1648.89,
+    928
+   ],
+   "floor_light": "fronts"
+  },
+  "clicked_while_charging": {
+   "hover": "creative",
+   "selected": "creative",
+   "strip_pw": [
+    1,
+    1
+   ],
+   "floor_pw": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "floor_top": 1,
+   "warm": 1,
+   "sunrise": 1,
+   "glint": 1,
+   "gates": [
+    1,
+    1,
+    1
+   ],
+   "drawn_light": [
+    0,
+    0,
+    0
+   ],
+   "lift": "none",
+   "rect": [
+    -0.44,
+    -31.9,
+    1797.29,
+    1011.52
+   ],
+   "floor_light": "approved layer",
+   "url": "/lab-v2?station=creative"
+  },
+  "errors": []
+ },
+ "deep_link": {
+  "hover": null,
+  "selected": "creative",
+  "strip_pw": [
+   1,
+   1
+  ],
+  "floor_pw": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "floor_top": 1,
+  "warm": 1,
+  "sunrise": 1,
+  "glint": 1,
+  "gates": [
+   1,
+   1,
+   1
+  ],
+  "drawn_light": [
+   0,
+   0,
+   0
+  ],
+  "lift": "none",
+  "rect": [
+   -0.44,
+   -31.9,
+   1797.29,
+   1011.52
+  ],
+  "floor_light": "approved layer",
+  "frames": 90,
+  "first_frame": [
+   1,
+   1,
+   "creative",
+   false
+  ],
+  "frames_with_a_number_between_0_and_1": 0,
+  "frames_with_light": 0,
+  "url": "/lab-v2?station=creative",
+  "errors": []
+ },
+ "reduced_motion": {
+  "rest": {
+   "hover": null,
+   "selected": null,
+   "strip_pw": [
+    0,
+    0
+   ],
+   "floor_pw": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "floor_top": 0.75,
+   "warm": 0,
+   "sunrise": 0,
+   "glint": 0,
+   "gates": [
+    "none",
+    "none",
+    "none"
+   ],
+   "drawn_light": [
+    0,
+    0,
+    0
+   ],
+   "lift": "none",
+   "rect": [
+    -0.45,
+    0,
+    1648.89,
+    928
+   ],
+   "floor_light": "fronts"
+  },
+  "frames_mid_fade": 2,
+  "standby_opacity_start_end": [
+   1,
+   0
+  ],
+  "powered": {
+   "hover": "creative",
+   "selected": null,
+   "strip_pw": [
+    1,
+    1
+   ],
+   "floor_pw": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "floor_top": 1,
+   "warm": 1,
+   "sunrise": 1,
+   "glint": 1,
+   "gates": [
+    "none",
+    "none",
+    "none"
+   ],
+   "drawn_light": [
+    0,
+    0,
+    0
+   ],
+   "lift": "none",
+   "rect": [
+    -0.45,
+    0,
+    1648.89,
+    928
+   ],
+   "floor_light": "approved layer"
+  },
+  "left": {
+   "hover": null,
+   "selected": null,
+   "strip_pw": [
+    0,
+    0
+   ],
+   "floor_pw": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "floor_top": 0.75,
+   "warm": 0,
+   "sunrise": 0,
+   "glint": 0,
+   "gates": [
+    "none",
+    "none",
+    "none"
+   ],
+   "drawn_light": [
+    0,
+    0,
+    0
+   ],
+   "lift": "none",
+   "rect": [
+    -0.45,
+    0,
+    1648.89,
+    928
+   ],
+   "floor_light": "fronts"
+  },
+  "errors": []
+ },
+ "pacing": [
+  {
+   "frames_in_850ms": 30,
+   "median_ms": 16.7,
+   "max_ms": 100.1
+  },
+  {
+   "frames_in_850ms": 33,
+   "median_ms": 16.7,
+   "max_ms": 100.1
+  },
+  {
+   "frames_in_850ms": 33,
+   "median_ms": 16.7,
+   "max_ms": 100
+  }
+ ],
+ "homepage": {
+  "v2_requests": 0,
+  "cre_v2": false
+ }
+}

@@ -1,0 +1,64 @@
+{
+ "route": {
+  "start": [
+   1410.0,
+   705.2
+  ],
+  "end": [
+   1478.5,
+   610.2
+  ],
+  "length_px": 307.5,
+  "width_start_end": [
+   16.0,
+   1.6
+  ],
+  "pixels": 1693,
+  "highest_point": [
+   1478.5,
+   610.2
+  ]
+ },
+ "arc length reached (share) at +ms": {
+  "120": 0.0,
+  "200": 0.154,
+  "280": 0.305,
+  "360": 0.45,
+  "440": 0.589,
+  "520": 0.714,
+  "600": 0.827,
+  "680": 0.927,
+  "750": 1.0
+ },
+ "route lit by length at +ms": {
+  "0.25": 250,
+  "0.5": 388,
+  "0.75": 545
+ },
+ "route luminance: approved, standby, ratio": [
+  214.0,
+  105.7,
+  0.494
+ ],
+ "station alpha where the overlay is (min)": 1.0,
+ "the head passes the lower flag at +ms": 464,
+ "px: start, destination tail, destination wires, flags": [
+  343,
+  82,
+  1563,
+  251,
+  192
+ ],
+ "strip pixels": {
+  "px": 3684,
+  "bbox": [
+   1200,
+   717,
+   1643,
+   783
+  ]
+ },
+ "floor light: pixels outside Experience's share changed": 0,
+ "floor light: light on the share's border (max)": 0.0,
+ "floor light: shares + rest vs before (max)": 1.0
+}

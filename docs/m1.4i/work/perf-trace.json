@@ -1,0 +1,642 @@
+{
+ "engineering": [
+  {
+   "image_decodes": {
+    "n": 46,
+    "ms": 133.5,
+    "max_ms": 5.1
+   },
+   "raster_tasks": {
+    "n": 180,
+    "ms": 15.7,
+    "max_ms": 2.6
+   },
+   "main_script": {
+    "n": 221,
+    "ms": 35.9,
+    "max_ms": 23.2
+   },
+   "main_style": {
+    "n": 31,
+    "ms": 88.7,
+    "max_ms": 12.5
+   },
+   "main_layout": {
+    "n": 17,
+    "ms": 4,
+    "max_ms": 0.5
+   },
+   "main_prepaint": {
+    "n": 41,
+    "ms": 6,
+    "max_ms": 0.5
+   },
+   "main_paint": {
+    "n": 129,
+    "ms": 15.2,
+    "max_ms": 2.2
+   },
+   "main_commit": {
+    "n": 28,
+    "ms": 12.2,
+    "max_ms": 2.1
+   },
+   "gpu_tasks": {
+    "n": 101,
+    "ms": 445.7,
+    "max_ms": 85.8
+   },
+   "top": [
+    "RunTask x196 2917ms",
+    "ThreadControllerImpl::RunTask x196 2915ms",
+    "Scheduler::RunTask x42 1051ms",
+    "Graphics.Pipeline x41 660ms",
+    "SkiaOutputSurfaceImplOnGpu::SwapBuffers x14 580ms",
+    "SkiaOutputDevice->ScheduleOverlays() x13 573ms",
+    "DXGISwapChainImageBacking::Present x13 573ms",
+    "GpuChannel::ExecuteDeferredRequest x20 405ms",
+    "GPUTask x20 405ms",
+    "RendererRasterWorker x20 405ms",
+    "CommandBuffer::Flush x20 405ms",
+    "CommandBufferStub::OnAsyncFlush x20 405ms",
+    "CommandBufferService:PutChanged x20 405ms",
+    "ThreadPool_RunTask x37 223ms"
+   ]
+  },
+  {
+   "image_decodes": {
+    "n": 12,
+    "ms": 31.9,
+    "max_ms": 3.6
+   },
+   "raster_tasks": {
+    "n": 193,
+    "ms": 8.8,
+    "max_ms": 0.2
+   },
+   "main_script": {
+    "n": 221,
+    "ms": 17.7,
+    "max_ms": 13.8
+   },
+   "main_style": {
+    "n": 40,
+    "ms": 71,
+    "max_ms": 7.1
+   },
+   "main_layout": {
+    "n": 24,
+    "ms": 4.9,
+    "max_ms": 0.5
+   },
+   "main_prepaint": {
+    "n": 59,
+    "ms": 8,
+    "max_ms": 0.5
+   },
+   "main_paint": {
+    "n": 135,
+    "ms": 15.4,
+    "max_ms": 1.1
+   },
+   "main_commit": {
+    "n": 37,
+    "ms": 15.3,
+    "max_ms": 1.6
+   },
+   "gpu_tasks": {
+    "n": 131,
+    "ms": 102.3,
+    "max_ms": 20.6
+   },
+   "top": [
+    "RunTask x208 2870ms",
+    "ThreadControllerImpl::RunTask x207 2865ms",
+    "ThreadPool_RunTask x57 2428ms",
+    "Scheduler::RunTask x39 1060ms",
+    "Graphics.Pipeline x57 1040ms",
+    "SkiaOutputSurfaceImplOnGpu::SwapBuffers x26 974ms",
+    "SkiaOutputDevice->ScheduleOverlays() x26 965ms",
+    "DXGISwapChainImageBacking::Present x26 964ms",
+    "ProxyMain::BeginMainFrame x27 140ms",
+    "GpuChannel::ExecuteDeferredRequest x13 70ms",
+    "GPUTask x13 70ms",
+    "RendererRasterWorker x13 70ms",
+    "CommandBuffer::Flush x13 70ms",
+    "CommandBufferStub::OnAsyncFlush x13 70ms"
+   ]
+  }
+ ],
+ "educational": [
+  {
+   "image_decodes": {
+    "n": 50,
+    "ms": 215.5,
+    "max_ms": 16.4
+   },
+   "raster_tasks": {
+    "n": 100,
+    "ms": 13,
+    "max_ms": 0.7
+   },
+   "main_script": {
+    "n": 192,
+    "ms": 18,
+    "max_ms": 13.9
+   },
+   "main_style": {
+    "n": 39,
+    "ms": 96.4,
+    "max_ms": 6.2
+   },
+   "main_layout": {
+    "n": 24,
+    "ms": 2.2,
+    "max_ms": 0.3
+   },
+   "main_prepaint": {
+    "n": 67,
+    "ms": 6.4,
+    "max_ms": 0.5
+   },
+   "main_paint": {
+    "n": 237,
+    "ms": 16.3,
+    "max_ms": 0.7
+   },
+   "main_commit": {
+    "n": 41,
+    "ms": 13.9,
+    "max_ms": 1.6
+   },
+   "gpu_tasks": {
+    "n": 208,
+    "ms": 506.3,
+    "max_ms": 123.8
+   },
+   "top": [
+    "RunTask x227 3111ms",
+    "ThreadControllerImpl::RunTask x226 3106ms",
+    "ThreadPool_RunTask x152 3091ms",
+    "Scheduler::RunTask x67 1206ms",
+    "Graphics.Pipeline x32 712ms",
+    "SkiaOutputSurfaceImplOnGpu::SwapBuffers x27 702ms",
+    "SkiaOutputDevice->ScheduleOverlays() x27 695ms",
+    "DXGISwapChainImageBacking::Present x27 695ms",
+    "GpuChannel::ExecuteDeferredRequest x37 460ms",
+    "GPUTask x37 459ms",
+    "RendererRasterWorker x37 459ms",
+    "CommandBuffer::Flush x37 459ms",
+    "CommandBufferStub::OnAsyncFlush x37 459ms",
+    "CommandBufferService:PutChanged x37 458ms"
+   ]
+  },
+  {
+   "image_decodes": {
+    "n": 24,
+    "ms": 81.8,
+    "max_ms": 6.2
+   },
+   "raster_tasks": {
+    "n": 128,
+    "ms": 12.9,
+    "max_ms": 0.3
+   },
+   "main_script": {
+    "n": 192,
+    "ms": 21.7,
+    "max_ms": 18.2
+   },
+   "main_style": {
+    "n": 57,
+    "ms": 130.9,
+    "max_ms": 7.9
+   },
+   "main_layout": {
+    "n": 38,
+    "ms": 4.2,
+    "max_ms": 0.4
+   },
+   "main_prepaint": {
+    "n": 89,
+    "ms": 11,
+    "max_ms": 0.6
+   },
+   "main_paint": {
+    "n": 291,
+    "ms": 22.8,
+    "max_ms": 0.9
+   },
+   "main_commit": {
+    "n": 54,
+    "ms": 19.9,
+    "max_ms": 1.3
+   },
+   "gpu_tasks": {
+    "n": 112,
+    "ms": 434.3,
+    "max_ms": 109.9
+   },
+   "top": [
+    "RunTask x228 2732ms",
+    "ThreadControllerImpl::RunTask x227 2728ms",
+    "Scheduler::RunTask x72 863ms",
+    "Graphics.Pipeline x40 459ms",
+    "SkiaOutputSurfaceImplOnGpu::SwapBuffers x33 446ms",
+    "SkiaOutputDevice->ScheduleOverlays() x33 438ms",
+    "DXGISwapChainImageBacking::Present x33 437ms",
+    "GpuChannel::ExecuteDeferredRequest x39 399ms",
+    "GPUTask x39 399ms",
+    "RendererRasterWorker x39 398ms",
+    "CommandBuffer::Flush x39 398ms",
+    "CommandBufferStub::OnAsyncFlush x39 398ms",
+    "CommandBufferService:PutChanged x39 398ms",
+    "ProxyMain::BeginMainFrame x46 234ms"
+   ]
+  }
+ ],
+ "playground": [
+  {
+   "image_decodes": {
+    "n": 34,
+    "ms": 220.8,
+    "max_ms": 25.3
+   },
+   "raster_tasks": {
+    "n": 178,
+    "ms": 11.1,
+    "max_ms": 1.8
+   },
+   "main_script": {
+    "n": 144,
+    "ms": 47.3,
+    "max_ms": 15.4
+   },
+   "main_style": {
+    "n": 28,
+    "ms": 26.1,
+    "max_ms": 3.9
+   },
+   "main_layout": {
+    "n": 26,
+    "ms": 2,
+    "max_ms": 0.2
+   },
+   "main_prepaint": {
+    "n": 58,
+    "ms": 6.6,
+    "max_ms": 0.4
+   },
+   "main_paint": {
+    "n": 75,
+    "ms": 10.9,
+    "max_ms": 0.6
+   },
+   "main_commit": {
+    "n": 32,
+    "ms": 18.4,
+    "max_ms": 3.1
+   },
+   "gpu_tasks": {
+    "n": 102,
+    "ms": 819.6,
+    "max_ms": 297.9
+   },
+   "top": [
+    "RunTask x225 3750ms",
+    "ThreadControllerImpl::RunTask x225 3747ms",
+    "Scheduler::RunTask x47 1466ms",
+    "ThreadPool_RunTask x75 801ms",
+    "GpuChannel::ExecuteDeferredRequest x18 781ms",
+    "GPUTask x18 780ms",
+    "CommandBuffer::Flush x18 780ms",
+    "CommandBufferStub::OnAsyncFlush x18 780ms",
+    "CommandBufferService:PutChanged x18 780ms",
+    "Graphics.Pipeline x38 670ms",
+    "SkiaOutputSurfaceImplOnGpu::SwapBuffers x22 619ms",
+    "SkiaOutputDevice->ScheduleOverlays() x22 613ms",
+    "DXGISwapChainImageBacking::Present x22 612ms",
+    "RasterDecoderImpl::DoEndRasterCHROMIUM x19 581ms"
+   ]
+  },
+  {
+   "image_decodes": {
+    "n": 0,
+    "ms": 0,
+    "max_ms": 0
+   },
+   "raster_tasks": {
+    "n": 188,
+    "ms": 7.9,
+    "max_ms": 0.3
+   },
+   "main_script": {
+    "n": 170,
+    "ms": 37.8,
+    "max_ms": 8.3
+   },
+   "main_style": {
+    "n": 35,
+    "ms": 26.8,
+    "max_ms": 3.6
+   },
+   "main_layout": {
+    "n": 32,
+    "ms": 2.9,
+    "max_ms": 0.4
+   },
+   "main_prepaint": {
+    "n": 78,
+    "ms": 8.9,
+    "max_ms": 0.3
+   },
+   "main_paint": {
+    "n": 78,
+    "ms": 11.4,
+    "max_ms": 0.5
+   },
+   "main_commit": {
+    "n": 45,
+    "ms": 23.8,
+    "max_ms": 2
+   },
+   "gpu_tasks": {
+    "n": 103,
+    "ms": 117.4,
+    "max_ms": 13.2
+   },
+   "top": [
+    "RunTask x210 3656ms",
+    "ThreadControllerImpl::RunTask x209 3651ms",
+    "Scheduler::RunTask x45 1609ms",
+    "Graphics.Pipeline x45 1556ms",
+    "SkiaOutputSurfaceImplOnGpu::SwapBuffers x33 1530ms",
+    "SkiaOutputDevice->ScheduleOverlays() x33 1520ms",
+    "DXGISwapChainImageBacking::Present x33 1519ms",
+    "ThreadPool_RunTask x17 318ms",
+    "ProxyMain::BeginMainFrame x34 118ms",
+    "GpuChannel::ExecuteDeferredRequest x12 60ms",
+    "GPUTask x12 60ms",
+    "CommandBuffer::Flush x12 60ms",
+    "CommandBufferStub::OnAsyncFlush x12 60ms",
+    "CommandBufferService:PutChanged x12 60ms"
+   ]
+  }
+ ],
+ "creative": [
+  {
+   "image_decodes": {
+    "n": 58,
+    "ms": 361.4,
+    "max_ms": 31.8
+   },
+   "raster_tasks": {
+    "n": 147,
+    "ms": 20.1,
+    "max_ms": 10.8
+   },
+   "main_script": {
+    "n": 142,
+    "ms": 21.6,
+    "max_ms": 17.1
+   },
+   "main_style": {
+    "n": 37,
+    "ms": 67.6,
+    "max_ms": 5
+   },
+   "main_layout": {
+    "n": 9,
+    "ms": 1.8,
+    "max_ms": 0.3
+   },
+   "main_prepaint": {
+    "n": 49,
+    "ms": 8.3,
+    "max_ms": 1.4
+   },
+   "main_paint": {
+    "n": 140,
+    "ms": 14.9,
+    "max_ms": 1.6
+   },
+   "main_commit": {
+    "n": 39,
+    "ms": 17,
+    "max_ms": 1.8
+   },
+   "gpu_tasks": {
+    "n": 146,
+    "ms": 515.3,
+    "max_ms": 117
+   },
+   "top": [
+    "RunTask x265 3650ms",
+    "ThreadControllerImpl::RunTask x265 3648ms",
+    "ThreadPool_RunTask x111 3577ms",
+    "Scheduler::RunTask x58 1377ms",
+    "Receive mojo message x30 1109ms",
+    "SimpleWatcher::OnHandleReady x27 1092ms",
+    "Graphics.Pipeline x70 946ms",
+    "SkiaOutputSurfaceImplOnGpu::SwapBuffers x27 841ms",
+    "SkiaOutputDevice->ScheduleOverlays() x27 831ms",
+    "DXGISwapChainImageBacking::Present x27 830ms",
+    "GpuChannel::ExecuteDeferredRequest x23 458ms",
+    "GPUTask x23 458ms",
+    "CommandBuffer::Flush x23 458ms",
+    "CommandBufferStub::OnAsyncFlush x23 458ms"
+   ]
+  },
+  {
+   "image_decodes": {
+    "n": 0,
+    "ms": 0,
+    "max_ms": 0
+   },
+   "raster_tasks": {
+    "n": 208,
+    "ms": 10,
+    "max_ms": 0.4
+   },
+   "main_script": {
+    "n": 142,
+    "ms": 13.4,
+    "max_ms": 10.9
+   },
+   "main_style": {
+    "n": 58,
+    "ms": 85.6,
+    "max_ms": 4
+   },
+   "main_layout": {
+    "n": 19,
+    "ms": 3.6,
+    "max_ms": 0.3
+   },
+   "main_prepaint": {
+    "n": 74,
+    "ms": 8.7,
+    "max_ms": 0.3
+   },
+   "main_paint": {
+    "n": 192,
+    "ms": 19,
+    "max_ms": 0.7
+   },
+   "main_commit": {
+    "n": 55,
+    "ms": 21.5,
+    "max_ms": 1.5
+   },
+   "gpu_tasks": {
+    "n": 132,
+    "ms": 108.3,
+    "max_ms": 15.9
+   },
+   "top": [
+    "RunTask x245 3342ms",
+    "ThreadControllerImpl::RunTask x243 3331ms",
+    "Scheduler::RunTask x65 1276ms",
+    "Graphics.Pipeline x65 1214ms",
+    "SkiaOutputSurfaceImplOnGpu::SwapBuffers x51 1195ms",
+    "SkiaOutputDevice->ScheduleOverlays() x51 1179ms",
+    "DXGISwapChainImageBacking::Present x51 1178ms",
+    "ProxyMain::BeginMainFrame x46 186ms",
+    "ThreadPool_RunTask x11 128ms",
+    "WebFrameWidgetImpl::UpdateLifecycle x30 108ms",
+    "LocalFrameView::UpdateStyleAndLayout x24 63ms",
+    "Blink.Style.UpdateTime x24 61ms",
+    "UpdateLayoutTree x24 61ms",
+    "LocalFrameView::RunStyleAndLayoutLifecyclePhases x23 60ms"
+   ]
+  }
+ ],
+ "experience": [
+  {
+   "image_decodes": {
+    "n": 16,
+    "ms": 117.1,
+    "max_ms": 13.9
+   },
+   "raster_tasks": {
+    "n": 153,
+    "ms": 8.8,
+    "max_ms": 0.5
+   },
+   "main_script": {
+    "n": 118,
+    "ms": 21.6,
+    "max_ms": 17.7
+   },
+   "main_style": {
+    "n": 43,
+    "ms": 82.9,
+    "max_ms": 5.5
+   },
+   "main_layout": {
+    "n": 14,
+    "ms": 3.4,
+    "max_ms": 0.8
+   },
+   "main_prepaint": {
+    "n": 55,
+    "ms": 7.9,
+    "max_ms": 0.8
+   },
+   "main_paint": {
+    "n": 152,
+    "ms": 13.1,
+    "max_ms": 0.5
+   },
+   "main_commit": {
+    "n": 42,
+    "ms": 48.1,
+    "max_ms": 25.4
+   },
+   "gpu_tasks": {
+    "n": 136,
+    "ms": 370.3,
+    "max_ms": 171.8
+   },
+   "top": [
+    "RunTask x253 4003ms",
+    "ThreadControllerImpl::RunTask x253 4000ms",
+    "ThreadPool_RunTask x63 2246ms",
+    "Scheduler::RunTask x54 1675ms",
+    "Graphics.Pipeline x61 1267ms",
+    "SkiaOutputSurfaceImplOnGpu::SwapBuffers x36 1195ms",
+    "SkiaOutputDevice->ScheduleOverlays() x36 1183ms",
+    "DXGISwapChainImageBacking::Present x36 1182ms",
+    "GpuChannel::ExecuteDeferredRequest x12 318ms",
+    "GPUTask x12 318ms",
+    "CommandBuffer::Flush x12 318ms",
+    "CommandBufferStub::OnAsyncFlush x12 318ms",
+    "CommandBufferService:PutChanged x12 317ms",
+    "RendererRasterWorker x11 304ms"
+   ]
+  },
+  {
+   "image_decodes": {
+    "n": 0,
+    "ms": 0,
+    "max_ms": 0
+   },
+   "raster_tasks": {
+    "n": 200,
+    "ms": 11.2,
+    "max_ms": 0.9
+   },
+   "main_script": {
+    "n": 118,
+    "ms": 12.7,
+    "max_ms": 10.2
+   },
+   "main_style": {
+    "n": 64,
+    "ms": 111.2,
+    "max_ms": 5
+   },
+   "main_layout": {
+    "n": 19,
+    "ms": 4.2,
+    "max_ms": 0.8
+   },
+   "main_prepaint": {
+    "n": 80,
+    "ms": 10.5,
+    "max_ms": 0.5
+   },
+   "main_paint": {
+    "n": 214,
+    "ms": 18.8,
+    "max_ms": 0.5
+   },
+   "main_commit": {
+    "n": 62,
+    "ms": 26.1,
+    "max_ms": 1.5
+   },
+   "gpu_tasks": {
+    "n": 152,
+    "ms": 95.6,
+    "max_ms": 7.3
+   },
+   "top": [
+    "RunTask x278 3695ms",
+    "ThreadControllerImpl::RunTask x277 3689ms",
+    "ThreadPool_RunTask x133 3553ms",
+    "Scheduler::RunTask x61 1292ms",
+    "Graphics.Pipeline x80 1280ms",
+    "SkiaOutputSurfaceImplOnGpu::SwapBuffers x50 1224ms",
+    "SkiaOutputDevice->ScheduleOverlays() x50 1209ms",
+    "DXGISwapChainImageBacking::Present x50 1208ms",
+    "ProxyMain::BeginMainFrame x54 223ms",
+    "Receive mojo message x15 165ms",
+    "SimpleWatcher::OnHandleReady x15 154ms",
+    "WebFrameWidgetImpl::UpdateLifecycle x37 139ms",
+    "LocalFrameView::UpdateStyleAndLayout x33 90ms",
+    "LocalFrameView::RunStyleAndLayoutLifecyclePhases x32 87ms"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "ring": {
+  "ridge_points": 407,
+  "ridge_rms_px": 0.51,
+  "ridge_p95_px": 0.57,
+  "length_px": 630.5,
+  "hidden_px": [
+   312.3,
+   458.3
+  ],
+  "bezier knots, max distance from the traced path (px)": [
+   58,
+   0.48
+  ]
+ },
+ "sky inside the hard outlines (px)": 875,
+ "partition (px): globe soft, cyan on rock, orbit": [
+  14920,
+  2924,
+  1870
+ ],
+ "landscape, church, stone (opaque, off the foot and ring): px changed by the split": 28,
+ "strip pixels": {
+  "px": 3231,
+  "bbox": [
+   682,
+   450,
+   994,
+   496
+  ]
+ },
+ "station == lit plate on the strip pixels (max diff)": 0.0,
+ "floor light: pixels outside Educational's share changed": 0,
+ "floor light share (px > 2): warm, cyan": [
+  10165,
+  2420
+ ],
+ "sprite": {
+  "frames": 23,
+  "shape": [
+   94,
+   4094
+  ]
+ },
+ "powered recomposition vs current (max-channel, 8-bit)": {
+  "mean": 0.0009,
+  "max": 11.41,
+  "px_over_2": 6
+ }
+}

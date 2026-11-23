@@ -1,0 +1,351 @@
+{
+ "idle_default": [],
+ "idle_tone": [],
+ "idle_home": [],
+ "anchors": {
+  "/lab-v2": [
+   [
+    "Skip to lab statio",
+    "#lab-stations",
+    true
+   ],
+   [
+    "Arsen ManukyanSoft",
+    "/",
+    null
+   ],
+   [
+    "Lab",
+    "/",
+    null
+   ],
+   [
+    "Projects",
+    "#lab-stations",
+    true
+   ],
+   [
+    "Experience",
+    "#station-experience",
+    true
+   ],
+   [
+    "About",
+    "#lab-intro",
+    true
+   ],
+   [
+    "Let’s Talk",
+    "#contact",
+    false
+   ],
+   [
+    "Explore the Lab",
+    "#lab-stations",
+    true
+   ]
+  ],
+  "/": [
+   [
+    "Skip to lab statio",
+    "#lab-stations",
+    true
+   ],
+   [
+    "Arsen ManukyanSoft",
+    "/",
+    null
+   ],
+   [
+    "Lab",
+    "/",
+    null
+   ],
+   [
+    "Projects",
+    "#lab-stations",
+    true
+   ],
+   [
+    "Experience",
+    "#station-experience",
+    true
+   ],
+   [
+    "About",
+    "#lab-intro",
+    true
+   ],
+   [
+    "Let’s Talk",
+    "#contact",
+    false
+   ],
+   [
+    "Explore the Lab",
+    "#lab-stations",
+    true
+   ]
+  ]
+ },
+ "client_nav_from_404": {
+  "pushed": true,
+  "samples": [
+   "/nope ;  ; outfit_9f4f9187-module__4LtYgq__variable",
+   "/lab-v2 ; visible 0 block|visible 0 block ; outfit_9f4f9187-module__4LtYgq__variable"
+  ],
+  "errors": [
+   "Encountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template)."
+  ]
+ },
+ "playground_marquee": [
+  [
+   300,
+   "scene"
+  ],
+  [
+   304,
+   "scene"
+  ],
+  [
+   308,
+   "scene"
+  ],
+  [
+   312,
+   "scene"
+  ],
+  [
+   316,
+   "scene"
+  ],
+  [
+   320,
+   "scene"
+  ],
+  [
+   324,
+   "scene"
+  ],
+  [
+   328,
+   "scene"
+  ],
+  [
+   332,
+   "scene"
+  ],
+  [
+   336,
+   "scene"
+  ],
+  [
+   340,
+   "scene"
+  ],
+  [
+   344,
+   "scene"
+  ],
+  [
+   348,
+   "scene"
+  ],
+  [
+   352,
+   "playground"
+  ],
+  [
+   356,
+   "playground"
+  ],
+  [
+   360,
+   "playground"
+  ],
+  [
+   364,
+   "playground"
+  ],
+  [
+   368,
+   "playground"
+  ],
+  [
+   372,
+   "playground"
+  ]
+ ],
+ "paths": {
+  "engineering": {
+   "px": 142,
+   "parts": [
+    [
+     "hotspot engineering",
+     38
+    ],
+    [
+     "scene",
+     2
+    ],
+    [
+     "label engineering",
+     12
+    ],
+    [
+     "scene",
+     3
+    ],
+    [
+     "label engineering",
+     6
+    ]
+   ]
+  },
+  "educational": {
+   "px": 159,
+   "parts": [
+    [
+     "hotspot educational",
+     40
+    ],
+    [
+     "scene",
+     3
+    ],
+    [
+     "label educational",
+     10
+    ],
+    [
+     "scene",
+     3
+    ],
+    [
+     "label educational",
+     5
+    ]
+   ]
+  },
+  "playground": {
+   "px": 168,
+   "parts": [
+    [
+     "hotspot playground",
+     24
+    ],
+    [
+     "scene",
+     13
+    ],
+    [
+     "label playground",
+     14
+    ],
+    [
+     "scene",
+     3
+    ],
+    [
+     "label playground",
+     7
+    ]
+   ]
+  },
+  "creative": {
+   "px": 195,
+   "parts": [
+    [
+     "hotspot creative",
+     12
+    ],
+    [
+     "scene",
+     24
+    ],
+    [
+     "label creative",
+     9
+    ],
+    [
+     "scene",
+     5
+    ],
+    [
+     "label creative",
+     11
+    ]
+   ]
+  },
+  "experience": {
+   "px": 130,
+   "parts": [
+    [
+     "hotspot experience",
+     26
+    ],
+    [
+     "scene",
+     22
+    ],
+    [
+     "label experience",
+     13
+    ]
+   ]
+  }
+ },
+ "label_rise": {
+  "engineering": {
+   "dy": -7.6,
+   "dx": -0.06,
+   "dw": 1.29
+  },
+  "educational": {
+   "dy": 0,
+   "dx": 0,
+   "dw": 0
+  },
+  "playground": {
+   "dy": -19.92,
+   "dx": 0.69,
+   "dw": 1.04
+  },
+  "creative": {
+   "dy": 0,
+   "dx": 0,
+   "dw": 0
+  },
+  "experience": {
+   "dy": 0,
+   "dx": 0,
+   "dw": 0
+  }
+ },
+ "escape_in_panel": {
+  "engineering": {
+   "selected": null,
+   "focus": "station-engineering-trigger"
+  },
+  "educational": {
+   "selected": null,
+   "focus": "station-educational-trigger"
+  },
+  "playground": {
+   "selected": null,
+   "focus": "station-playground-trigger"
+  },
+  "creative": {
+   "selected": null,
+   "focus": "station-creative-trigger"
+  },
+  "experience": {
+   "selected": null,
+   "focus": "station-experience-trigger"
+  }
+ },
+ "back_button": {
+  "selected": null,
+  "focus": "station-creative-trigger"
+ }
+}
