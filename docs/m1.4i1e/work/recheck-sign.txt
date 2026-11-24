@@ -1,0 +1,64 @@
+# timing {"body":{"spark":41,"stripStarts":702,"liftStarts":702,"liftDone":1115,"lift":18,"arcade":1,"others":0},"sign":{"spark":47,"stripStarts":693,"liftStarts":693,"liftDone":1222,"lift":18,"arcade":1,"others":0},"body again":{"spark":47,"stripStarts":679,"liftStarts":679,"liftDone":1206,"lift":18,"arcade":1,"others":0},"sign
+# paths
+   {"name":"charging: body -> sign -> platform","ms":120,"entered":"playground","changes":["playground/-"],"drops":0,"end":"playground"}
+   {"name":"charging: sign -> body -> sign","ms":120,"entered":"playground","changes":["playground/-"],"drops":0,"end":"playground"}
+   {"name":"lifted: body -> raised sign -> body","ms":120,"entered":"playground","changes":["playground/-"],"drops":0,"end":"playground"}
+   {"name":"lifted: raised sign -> resting sign -> platform","ms":120,"entered":"playground","changes":["playground/-"],"drops":0,"end":"playground"}
+   {"name":"lifted: raised sign -> title","ms":120,"entered":"playground","changes":["playground/-"],"drops":0,"end":"playground"}
+   {"name":"lifted: sign -> chip","ms":120,"entered":"playground","changes":["playground/-"],"drops":0,"end":"playground"}
+   {"name":"charging: sign -> title","ms":120,"entered":"playground","changes":["playground/-"],"drops":0,"end":"playground"}
+   {"name":"charging: sign -> chip","ms":120,"entered":"playground","changes":["playground/-"],"drops":0,"end":"playground"}
+   {"name":"lifted: title -> raised sign","ms":120,"entered":"playground","changes":["playground/-"],"drops":0,"end":"playground"}
+   {"name":"charging: body -> sign -> platform","ms":250,"entered":"playground","changes":["playground/-"],"drops":0,"end":"playground"}
+   {"name":"charging: sign -> body -> sign","ms":250,"entered":"playground","changes":["playground/-"],"drops":0,"end":"playground"}
+   {"name":"lifted: body -> raised sign -> body","ms":250,"entered":"playground","changes":["playground/-"],"drops":0,"end":"playground"}
+   {"name":"lifted: raised sign -> resting sign -> platform","ms":250,"entered":"playground","changes":["playground/-"],"drops":0,"end":"playground"}
+   {"name":"lifted: raised sign -> title","ms":250,"entered":"playground","changes":["playground/-"],"drops":0,"end":"playground"}
+   {"name":"lifted: sign -> chip","ms":250,"entered":"playground","changes":["playground/-"],"drops":0,"end":"playground"}
+   {"name":"charging: sign -> title","ms":250,"entered":"playground","changes":["playground/-"],"drops":0,"end":"playground"}
+   {"name":"charging: sign -> chip","ms":250,"entered":"playground","changes":["playground/-"],"drops":0,"end":"playground"}
+   {"name":"lifted: title -> raised sign","ms":250,"entered":"playground","changes":["playground/-"],"drops":0,"end":"playground"}
+   {"name":"charging: body -> sign -> platform","ms":400,"entered":"playground","changes":["playground/-"],"drops":0,"end":"playground"}
+   {"name":"charging: sign -> body -> sign","ms":400,"entered":"playground","changes":["playground/-"],"drops":0,"end":"playground"}
+   {"name":"lifted: body -> raised sign -> body","ms":400,"entered":"playground","changes":["playground/-"],"drops":0,"end":"playground"}
+   {"name":"lifted: raised sign -> resting sign -> platform","ms":400,"entered":"playground","changes":["playground/-"],"drops":0,"end":"playground"}
+   {"name":"lifted: raised sign -> title","ms":400,"entered":"playground","changes":["playground/-"],"drops":0,"end":"playground"}
+   {"name":"lifted: sign -> chip","ms":400,"entered":"playground","changes":["playground/-"],"drops":0,"end":"playground"}
+   {"name":"charging: sign -> title","ms":400,"entered":"playground","changes":["playground/-"],"drops":0,"end":"playground"}
+   {"name":"charging: sign -> chip","ms":400,"entered":"playground","changes":["playground/-"],"drops":0,"end":"playground"}
+   {"name":"lifted: title -> raised sign","ms":400,"entered":"playground","changes":["playground/-"],"drops":0,"end":"playground"}
+   {"name":"charging: body -> sign -> platform","ms":800,"entered":"playground","changes":["playground/-"],"drops":0,"end":"playground"}
+   {"name":"charging: sign -> body -> sign","ms":800,"entered":"playground","changes":["playground/-"],"drops":0,"end":"playground"}
+   {"name":"lifted: body -> raised sign -> body","ms":800,"entered":"playground","changes":["playground/-"],"drops":0,"end":"playground"}
+   {"name":"lifted: raised sign -> resting sign -> platform","ms":800,"entered":"playground","changes":["playground/-"],"drops":0,"end":"playground"}
+   {"name":"lifted: raised sign -> title","ms":800,"entered":"playground","changes":["playground/-"],"drops":0,"end":"playground"}
+   {"name":"lifted: sign -> chip","ms":800,"entered":"playground","changes":["playground/-"],"drops":0,"end":"playground"}
+   {"name":"charging: sign -> title","ms":800,"entered":"playground","changes":["playground/-"],"drops":0,"end":"playground"}
+   {"name":"charging: sign -> chip","ms":800,"entered":"playground","changes":["playground/-"],"drops":0,"end":"playground"}
+   {"name":"lifted: title -> raised sign","ms":800,"entered":"playground","changes":["playground/-"],"drops":0,"end":"playground"}
+   {"name":"charging: body -> sign -> platform","ms":1500,"entered":"playground","changes":["playground/-"],"drops":0,"end":"playground"}
+   {"name":"charging: sign -> body -> sign","ms":1500,"entered":"playground","changes":["playground/-"],"drops":0,"end":"playground"}
+   {"name":"lifted: body -> raised sign -> body","ms":1500,"entered":"playground","changes":["playground/-"],"drops":0,"end":"playground"}
+   {"name":"lifted: raised sign -> resting sign -> platform","ms":1500,"entered":"playground","changes":["playground/-"],"drops":0,"end":"playground"}
+   {"name":"lifted: raised sign -> title","ms":1500,"entered":"playground","changes":["playground/-"],"drops":0,"end":"playground"}
+   {"name":"lifted: sign -> chip","ms":1500,"entered":"playground","changes":["playground/-"],"drops":0,"end":"playground"}
+   {"name":"charging: sign -> title","ms":1500,"entered":"playground","changes":["playground/-"],"drops":0,"end":"playground"}
+   {"name":"charging: sign -> chip","ms":1500,"entered":"playground","changes":["playground/-"],"drops":0,"end":"playground"}
+   {"name":"lifted: title -> raised sign","ms":1500,"entered":"playground","changes":["playground/-"],"drops":0,"end":"playground"}
+# labelAlone
+   {"name":"title's lower half, resting position","changes":["-/-","playground/-"],"drops":0}
+   {"name":"title's upper part","changes":["-/-","playground/-"],"drops":0}
+   {"name":"chip's lower half, resting position","changes":["-/-","playground/-"],"drops":0}
+   {"name":"chip's upper part","changes":["-/-","playground/-"],"drops":0}
+# restOnRaisedSign {"changes":["playground/-"],"lift":18}
+# wallAboveRestingSign {"changes":["-/-"]}
+# pathErrors
+# click {"sign":{"hit":"playground","changes":["-/-","playground/-","playground/playground"],"url":"/lab-v2?station=playground","panel":"playground","focus":"station-playground-panel-title","hitZoomed":"playground","afterSecondClick":"playground","afterEscape":[null,"station-playground-trigger","/lab-v2"],"errors":[]},"body":{"h
+# reenter
+   {"gap":40,"changes":["playground/-","-/-","playground/-"],"powered":true,"lift":18}
+   {"gap":120,"changes":["playground/-","-/-","playground/-"],"powered":true,"lift":18}
+   {"gap":180,"changes":["playground/-","-/-","playground/-"],"powered":true,"lift":18}
+   {"gap":260,"changes":["playground/-","-/-","playground/-"],"powered":true,"lift":18}
+   {"gap":400,"changes":["playground/-","-/-","playground/-"],"powered":true,"lift":18}
+   {"gap":700,"changes":["playground/-","-/-","playground/-"],"powered":true,"lift":18}
+# leave {"changes":["playground/-","-/-"],"rest":true}

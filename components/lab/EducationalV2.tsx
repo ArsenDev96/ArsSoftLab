@@ -3,6 +3,7 @@ import { SCENE, u, type SceneRect } from "@/lib/scene";
 import { EDU_LIGHT_BOX, EDU_LIGHT_GRID, EDU_LIGHT_STEPS, EDU_LIGHT_TAIL, EDU_RING_LENGTH, EDU_RING_PATH, EDU_WAVE_BOX, EDU_WAVE_STEPS } from "./educational-v2";
 import { PLATFORM_POWER, POWER_FRONT } from "./platform-power";
 import { partFrame, PowerPart, powerCss } from "./PlatformPower";
+import { SceneImage, SceneImageInSvg } from "./SceneImage";
 import { cycleCss } from "./station-cycle";
 
 /**
@@ -140,12 +141,8 @@ const EDU_CSS =
 
 function Full({ src, name, add, swap, className = "" }: { src: string; name: string; add?: boolean; swap?: "anim" | "stable"; className?: string }) {
   return (
-    // eslint-disable-next-line @next/next/no-img-element -- full-frame layer at the plate's geometry
-    <img
+    <SceneImage
       src={src}
-      alt=""
-      draggable={false}
-      data-gate=""
       data-edu={name}
       data-edu-swap={swap}
       className={`pointer-events-none absolute inset-0 h-full w-full max-w-none select-none ${className}`}
@@ -156,8 +153,7 @@ function Full({ src, name, add, swap, className = "" }: { src: string; name: str
 
 /** A full-frame image placed in a box (the box clips it). */
 function Frame({ src, box }: { src: string; box: SceneRect }) {
-  // eslint-disable-next-line @next/next/no-img-element -- full-frame layer at the plate's geometry
-  return <img src={src} alt="" draggable={false} data-gate="" className="absolute max-w-none select-none" style={partFrame(box)} />;
+  return <SceneImage src={src} className="absolute max-w-none select-none" style={partFrame(box)} />;
 }
 
 /**
@@ -274,7 +270,7 @@ function Station() {
                 />
               </mask>
             </defs>
-            <image href={`${M14H2}/educational-orbit.png`} width={SCENE.width} height={SCENE.height} mask="url(#edu-ring-lit)" />
+            <SceneImageInSvg src={`${M14H2}/educational-orbit.png`} mask="url(#edu-ring-lit)" />
           </svg>
         </div>
       </div>

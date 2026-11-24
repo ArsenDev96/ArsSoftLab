@@ -1,0 +1,159 @@
+{
+ "version": "144.0",
+ "engineering": {
+  "200": {
+   "changes": [
+    "-",
+    "engineering"
+   ],
+   "sparks": 1
+  },
+  "800": {
+   "changes": [
+    "-",
+    "engineering"
+   ],
+   "sparks": 1
+  },
+  "1800": {
+   "changes": [
+    "-",
+    "engineering"
+   ],
+   "sparks": 1
+  },
+  "stillOnChipEdge": {
+   "changes": [
+    "-",
+    "engineering"
+   ],
+   "sparks": 1
+  },
+  "rest": true
+ },
+ "educational": {
+  "200": {
+   "changes": [
+    "-",
+    "educational"
+   ],
+   "sparks": 1
+  },
+  "800": {
+   "changes": [
+    "-",
+    "educational"
+   ],
+   "sparks": 1
+  },
+  "1800": {
+   "changes": [
+    "-",
+    "educational"
+   ],
+   "sparks": 1
+  },
+  "stillOnChipEdge": {
+   "changes": [
+    "-",
+    "educational"
+   ],
+   "sparks": 1
+  },
+  "rest": true
+ },
+ "playground": {
+  "200": {
+   "changes": [
+    "-",
+    "playground"
+   ],
+   "sparks": 1
+  },
+  "800": {
+   "changes": [
+    "-",
+    "playground"
+   ],
+   "sparks": 1
+  },
+  "1800": {
+   "changes": [
+    "-",
+    "playground"
+   ],
+   "sparks": 1
+  },
+  "stillOnChipEdge": {
+   "changes": [
+    "-",
+    "playground"
+   ],
+   "sparks": 1
+  },
+  "rest": true
+ },
+ "creative": {
+  "200": {
+   "changes": [
+    "-",
+    "creative"
+   ],
+   "sparks": 1
+  },
+  "800": {
+   "changes": [
+    "-",
+    "creative"
+   ],
+   "sparks": 1
+  },
+  "1800": {
+   "changes": [
+    "-",
+    "creative"
+   ],
+   "sparks": 1
+  },
+  "stillOnChipEdge": {
+   "changes": [
+    "-",
+    "creative"
+   ],
+   "sparks": 1
+  },
+  "rest": true
+ },
+ "experience": {
+  "200": {
+   "changes": [
+    "-",
+    "experience"
+   ],
+   "sparks": 1
+  },
+  "800": {
+   "changes": [
+    "-",
+    "experience"
+   ],
+   "sparks": 1
+  },
+  "1800": {
+   "changes": [
+    "-",
+    "experience"
+   ],
+   "sparks": 1
+  },
+  "stillOnChipEdge": {
+   "changes": [
+    "-",
+    "experience"
+   ],
+   "sparks": 1
+  },
+  "rest": true
+ },
+ "errors": []
+}

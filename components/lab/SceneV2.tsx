@@ -5,6 +5,7 @@ import { CreativeFloor, CreativeV2 } from "./CreativeV2";
 import { EducationalFloor, EducationalV2 } from "./EducationalV2";
 import { EngineeringFloor, EngineeringV2 } from "./EngineeringV2";
 import { ExperienceFloor, ExperienceV2 } from "./ExperienceV2";
+import { SceneImage } from "./SceneImage";
 import { V2_ENVIRONMENT, V2_OBJECTS, V2_PLAYGROUND_SCREEN, type V2Object } from "./scene-v2-data";
 
 /**
@@ -86,12 +87,8 @@ const FLOOR_TONE = "rgb(236 222 212)";
 
 function FloorLayer({ src, name, blend }: { src: string; name: string; blend?: CSSProperties["mixBlendMode"] }) {
   return (
-    // eslint-disable-next-line @next/next/no-img-element -- full-frame floor layer at the scene's geometry
-    <img
+    <SceneImage
       src={src}
-      alt=""
-      draggable={false}
-      data-gate=""
       data-v2-floor={name}
       className="pointer-events-none absolute inset-0 h-full w-full max-w-none select-none"
       style={blend ? { mixBlendMode: blend } : undefined}
@@ -217,12 +214,8 @@ const RECOVERED_LIGHT: Partial<Record<V2Object["id"], string>> = { creative: `${
 
 function Recovered({ src, light, name }: { src: string; light: boolean; name: string }) {
   return (
-    // eslint-disable-next-line @next/next/no-img-element -- full-frame layer at the plate's geometry, no optimisation
-    <img
+    <SceneImage
       src={src}
-      alt=""
-      draggable={false}
-      data-gate=""
       data-v2-recovered={name}
       className="pointer-events-none absolute inset-0 h-full w-full max-w-none select-none"
       style={light ? { mixBlendMode: "plus-lighter" } : undefined}

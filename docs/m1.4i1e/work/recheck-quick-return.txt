@@ -1,0 +1,14 @@
+
+# mouse: 10 runs | premature 2 | scan 0 caps 0 pulse 0 shimmer 0 held 2 (run-back finishing 3) rose 0 | frozen scan after arrival 0 | frozen pulse 0 | scan not from the top 0 | no scan 0 | no caps 0 | not powered 0 | not at rest 0 | rose after leaving 0 | firs
+  at 560 gap 140 (left 313, back 483) scan 0 caps 0 pulse 0 shim 0 held 1 tail 1 rose 0 /6 atArrival {"es":0,"ef":0,"bars":0,"off":0.68,"shade":0} from 0.006 frozen 0 powered true rest true
+  at 800 gap 200 (left 447, back 534) scan 0 caps 0 pulse 0 shim 0 held 1 tail 1 rose 0 /6 atArrival {"es":0,"ef":0,"bars":0,"off":0.68,"shade":0} from 0.103 frozen 0 powered true rest true
+== creative
+== creative recheck-1e
+# mouse {"runs":11,"bad":0,"premature":0,"lightBefore":{"warm":0,"crest":0,"glint":0},"pulseBefore":0,"shimmerBefore":0,"rose":0,"heldThroughCharge":0,"resumesPartWay":0,"litAtArrivalNoReplay":0,"frozenAfterArrival":{"warm":0,"crest":0,"glint":0},"frozenPulseA
+== educational
+== educational recheck-1e
+# mouse {"runs":11,"bad":1,"premature":1,"lightBefore":{"pool":0,"crest":0,"orbit":0},"pulseBefore":1,"shimmerBefore":0,"rose":1,"heldThroughCharge":1,"resumesPartWay":1,"litAtArrivalNoReplay":0,"frozenAfterArrival":{"pool":0,"crest":0,"orbit":0},"frozenPulseA
+    {"at":640,"gap":60,"light":{"pool":0,"crest":0,"orbit":0},"pulse":1,"held":1,"atArrival":{"--gp":0.142,"--gs":0,"--go":0},"frozen":{"pool":0,"crest":0,"orbit":0},"fp":0,"powered":true,"kept":false,"others":0,"rest":true}
+== experience
+== experience recheck-1e
+# mouse {"runs":11,"bad":0,"premature":0,"lightBefore":{"trail":0},"pulseBefore":0,"shimmerBefore":0,"rose":0,"heldThroughCharge":0,"resumesPartWay":0,"litAtArrivalNoReplay":0,"frozenAfterArrival":{"trail":0},"frozenPulseAfter":0,"notPowered":0,"runBackFinishi

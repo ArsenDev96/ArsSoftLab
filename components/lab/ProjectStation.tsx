@@ -20,6 +20,8 @@ export interface ProjectStationProps {
   onHover: (source: HoverSource, on: boolean) => void;
   /** M1.4E.3: false leaves the floating icon out (/lab-v2 Playground, whose cabinet carries its own). */
   showIcon?: boolean;
+  /** M1.4I.1E: false keeps the label still where its platform doesn't lift (/lab-v2 Engineering). */
+  lifts?: boolean;
 }
 
 /**
@@ -39,13 +41,14 @@ export function ProjectStation({
   onSelectProject,
   onHover,
   showIcon = true,
+  lifts = true,
 }: ProjectStationProps) {
   const titleId = `station-${zone.id}-title`;
   const listId = `station-${zone.id}-projects`;
   const { chips } = layout;
   // Labels of a layered station ride the same transform as its cut-out,
   // with the origin re-expressed relative to the label anchor.
-  const layer = STATION_LAYERS[zone.id];
+  const layer = lifts ? STATION_LAYERS[zone.id] : undefined;
 
   // Chrome workaround (layered stations only). A chip (backdrop-filter) that
   // repaints while its lifted label is transformed, e.g. its hover colour or

@@ -1,0 +1,245 @@
+{
+ "hold": {
+  "engineering": {
+   "restUnder": "nothing",
+   "startsFromEmpty": 0,
+   "holds": {
+    "under": "bridge engineering",
+    "changes": [
+     "-",
+     "engineering"
+    ],
+    "sparks": 1,
+    "powered": true
+   },
+   "cursor": "auto",
+   "clickSelects": null,
+   "backWithinGrace": [
+    "engineering"
+   ],
+   "leavesToRest": true,
+   "afterUnder": "nothing",
+   "restartsFromBridge": 0
+  },
+  "educational": {
+   "restUnder": "nothing",
+   "startsFromEmpty": 0,
+   "holds": {
+    "under": "bridge educational",
+    "changes": [
+     "-",
+     "educational"
+    ],
+    "sparks": 1,
+    "powered": true
+   },
+   "cursor": "auto",
+   "clickSelects": null,
+   "backWithinGrace": [
+    "educational"
+   ],
+   "leavesToRest": true,
+   "afterUnder": "nothing",
+   "restartsFromBridge": 0
+  },
+  "playground": {
+   "restUnder": "nothing",
+   "startsFromEmpty": 0,
+   "holds": {
+    "under": "bridge playground",
+    "changes": [
+     "-",
+     "playground"
+    ],
+    "sparks": 1,
+    "powered": true
+   },
+   "cursor": "auto",
+   "clickSelects": null,
+   "backWithinGrace": [
+    "playground"
+   ],
+   "leavesToRest": true,
+   "afterUnder": "nothing",
+   "restartsFromBridge": 0
+  },
+  "creative": {
+   "restUnder": "nothing",
+   "startsFromEmpty": 0,
+   "holds": {
+    "under": "bridge creative",
+    "changes": [
+     "-",
+     "creative"
+    ],
+    "sparks": 1,
+    "powered": true
+   },
+   "cursor": "auto",
+   "clickSelects": null,
+   "backWithinGrace": [
+    "creative"
+   ],
+   "leavesToRest": true,
+   "afterUnder": "nothing",
+   "restartsFromBridge": 0
+  },
+  "experience": {
+   "restUnder": "nothing",
+   "startsFromEmpty": 0,
+   "holds": {
+    "under": "bridge experience",
+    "changes": [
+     "-",
+     "experience"
+    ],
+    "sparks": 1,
+    "powered": true
+   },
+   "cursor": "auto",
+   "clickSelects": null,
+   "backWithinGrace": [
+    "experience"
+   ],
+   "leavesToRest": true,
+   "afterUnder": "nothing",
+   "restartsFromBridge": 0
+  },
+  "errors": []
+ },
+ "ownership": {
+  "routePoints": 133,
+  "restBridgePoints": 0,
+  "engineering": {
+   "bridgePx": 16060,
+   "otherStationsPointsChanged": 0,
+   "ownPointsMoved": 0,
+   "bridgePointsOverHub": 0,
+   "routePointsInBridge": 0,
+   "bridgesOnForOthers": []
+  },
+  "educational": {
+   "bridgePx": 9048,
+   "otherStationsPointsChanged": 0,
+   "ownPointsMoved": 0,
+   "bridgePointsOverHub": 0,
+   "routePointsInBridge": 0,
+   "bridgesOnForOthers": []
+  },
+  "playground": {
+   "bridgePx": 14852,
+   "otherStationsPointsChanged": 0,
+   "ownPointsMoved": 1999,
+   "bridgePointsOverHub": 0,
+   "routePointsInBridge": 0,
+   "bridgesOnForOthers": []
+  },
+  "creative": {
+   "bridgePx": 12600,
+   "otherStationsPointsChanged": 0,
+   "ownPointsMoved": 0,
+   "bridgePointsOverHub": 0,
+   "routePointsInBridge": 0,
+   "bridgesOnForOthers": []
+  },
+  "experience": {
+   "bridgePx": 10028,
+   "otherStationsPointsChanged": 0,
+   "ownPointsMoved": 0,
+   "bridgePointsOverHub": 0,
+   "routePointsInBridge": 0,
+   "bridgesOnForOthers": []
+  },
+  "errors": []
+ },
+ "random": {
+  "engineering": {
+   "moves": 16,
+   "drops": 0,
+   "restarts": 0,
+   "skipped": 0,
+   "bad": []
+  },
+  "educational": {
+   "moves": 16,
+   "drops": 0,
+   "restarts": 0,
+   "skipped": 0,
+   "bad": []
+  },
+  "playground": {
+   "moves": 16,
+   "drops": 0,
+   "restarts": 0,
+   "skipped": 0,
+   "bad": []
+  },
+  "creative": {
+   "moves": 16,
+   "drops": 0,
+   "restarts": 0,
+   "skipped": 0,
+   "bad": []
+  },
+  "experience": {
+   "moves": 16,
+   "drops": 0,
+   "restarts": 0,
+   "skipped": 0,
+   "bad": []
+  },
+  "errors": []
+ },
+ "engineering": {
+  "rest": {
+   "title": [
+    418.68,
+    318.06,
+    107.67,
+    20.22
+   ],
+   "chips": [
+    [
+     418.68,
+     348.11,
+     78.84,
+     25.64
+    ],
+    [
+     504.41,
+     348.11,
+     98.97,
+     25.64
+    ]
+   ],
+   "font": "460 20.2168px / 20.2168px Outfit, \"Outfit Fallback\", ui-sans-serif, system-ui, sans-serif",
+   "transform": "none"
+  },
+  "active": {
+   "title": [
+    418.68,
+    318.06,
+    107.67,
+    20.22
+   ],
+   "chips": [
+    [
+     418.68,
+     348.11,
+     78.84,
+     25.64
+    ],
+    [
+     504.41,
+     348.11,
+     98.97,
+     25.64
+    ]
+   ],
+   "font": "460 20.2168px / 20.2168px Outfit, \"Outfit Fallback\", ui-sans-serif, system-ui, sans-serif",
+   "transform": "none"
+  },
+  "same": true,
+  "playgroundLabelClass": "lab-station absolute lab-lift"
+ }
+}

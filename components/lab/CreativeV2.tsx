@@ -3,6 +3,7 @@ import { SCENE, u, type SceneRect } from "@/lib/scene";
 import { CRE_BOX, CRE_GLINT_GRID, CRE_GLINT_STEPS, CRE_GRID, CRE_SUNRISE_STEPS } from "./creative-v2";
 import { PLATFORM_POWER, POWER_FRONT } from "./platform-power";
 import { partFrame, PowerPart, powerCss } from "./PlatformPower";
+import { SceneImage } from "./SceneImage";
 import { cycleCss } from "./station-cycle";
 
 /**
@@ -120,12 +121,8 @@ const CRE_CSS =
 
 function Full({ src, name, add, swap }: { src: string; name: string; add?: boolean; swap?: "stable" }) {
   return (
-    // eslint-disable-next-line @next/next/no-img-element -- full-frame layer at the plate's geometry
-    <img
+    <SceneImage
       src={src}
-      alt=""
-      draggable={false}
-      data-gate=""
       data-cre={name}
       data-cre-swap={swap}
       className="pointer-events-none absolute inset-0 h-full w-full max-w-none select-none"
@@ -136,8 +133,7 @@ function Full({ src, name, add, swap }: { src: string; name: string; add?: boole
 
 /** A full-frame image placed in a box (the box clips it). */
 function Frame({ src, box }: { src: string; box: SceneRect }) {
-  // eslint-disable-next-line @next/next/no-img-element -- full-frame layer at the plate's geometry
-  return <img src={src} alt="" draggable={false} data-gate="" className="absolute max-w-none select-none" style={partFrame(box)} />;
+  return <SceneImage src={src} className="absolute max-w-none select-none" style={partFrame(box)} />;
 }
 
 /** Frame k (0 to `steps`, following `value`) of a grid sprite: its size, and its position when frame 0 lies at `at`. */
@@ -203,7 +199,7 @@ function Station() {
       {/* The recovered station itself (M1.4F's file), always. */}
       <Full src={`${M14F}/creative.png`} name="station" />
       {/* The strips' light on the floor (M1.4G.1's creative-light), behind the fronts, then whole. */}
-      <div data-cre-swap="anim" className="absolute inset-0" style={{ mixBlendMode: "plus-lighter" }}>
+      <div data-cre-swap="anim" className="absolute inset-0" style={{ ...clipTo({ x: 26, y: 668, w: 550, h: 150 }), mixBlendMode: "plus-lighter" }}>
         <FloorParts src={`${M14H3}/creative-strip-floor.png`} name="strip-floor" standby={0} full />
       </div>
       <Full src={`${M14G1}/creative-light.png`} name="light-stable" add swap="stable" />

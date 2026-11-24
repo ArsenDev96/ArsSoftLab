@@ -1,9 +1,10 @@
 import type { CSSProperties } from "react";
 import { SCENE, u, type SceneRect } from "@/lib/scene";
 import { ENG_BARS, ENG_CHART_BOX } from "./engineering-v2";
-import { EngineeringScreenLayer } from "./EngineeringScreen";
+import { ENG_DISPLAY_CLIP, EngineeringScreenLayer } from "./EngineeringScreen";
 import { PLATFORM_POWER, POWER_FRONT } from "./platform-power";
 import { partFrame, PowerPart, powerCss } from "./PlatformPower";
+import { SceneImage } from "./SceneImage";
 
 /**
  * M1.4H.1 (/lab-v2 only): Engineering's activation, on M1.4F.1's recovered
@@ -77,6 +78,10 @@ const FLOOR_PARTS = [
 ];
 
 const box = (r: SceneRect): CSSProperties => ({ left: u(r.x), top: u(r.y), width: u(r.w), height: u(r.h) });
+/** M1.4I.2: a full-frame layer whose pixels all lie in a small box is clipped to it (as Educational's, M1.4H.2), so the browser composites only that. */
+const clipTo = (r: SceneRect): CSSProperties => ({ clipPath: `inset(${u(r.y)} ${u(SCENE.width - r.x - r.w)} ${u(SCENE.height - r.y - r.h)} ${u(r.x)})` });
+/** The chart's panel, its glow and the bars painted on the display. */
+const CHART_CLIP = clipTo({ x: 430, y: 386, w: 138, h: 98 });
 const C = ENG_CHART_BOX;
 
 /** The strips' pieces on the stone (the reflection part is the floor's: EngineeringFloor). */
@@ -169,18 +174,13 @@ const ENG_CSS =
 
 /** A full-frame image placed in a box (the box clips it). */
 function Frame({ src, box, style }: { src: string; box: SceneRect; style?: CSSProperties }) {
-  // eslint-disable-next-line @next/next/no-img-element -- full-frame layer at the plate's geometry
-  return <img src={src} alt="" draggable={false} data-gate="" className="absolute max-w-none select-none" style={{ ...partFrame(box), ...style }} />;
+  return <SceneImage src={src} className="absolute max-w-none select-none" style={{ ...partFrame(box), ...style }} />;
 }
 
 function Full({ src, name, add, swap }: { src: string; name: string; add?: boolean; swap?: "anim" | "stable" }) {
   return (
-    // eslint-disable-next-line @next/next/no-img-element -- full-frame layer at the plate's geometry
-    <img
+    <SceneImage
       src={src}
-      alt=""
-      draggable={false}
-      data-gate=""
       data-eng={name}
       data-eng-swap={swap}
       className="pointer-events-none absolute inset-0 h-full w-full max-w-none select-none"
@@ -244,7 +244,7 @@ function chartMask(base: boolean): CSSProperties {
  */
 function ChartLayer({ src, name, base, add }: { src: string; name: string; base: boolean; add?: boolean }) {
   return (
-    <div data-eng={name} data-eng-swap="anim" className="absolute inset-0" style={{ ...chartMask(base), mixBlendMode: add ? "plus-lighter" : undefined }}>
+    <div data-eng={name} data-eng-swap="anim" className="absolute inset-0" style={{ ...chartMask(base), ...CHART_CLIP, mixBlendMode: add ? "plus-lighter" : undefined }}>
       <Full src={src} name={`${name}-image`} />
     </div>
   );
@@ -295,7 +295,7 @@ export function EngineeringV2() {
       <div
         data-eng="screen-off"
         className="eng-screen-off absolute inset-0"
-        style={{ background: "rgb(3 6 9)", maskImage: `url(${M14H1}/engineering-screen-mask.png)`, WebkitMaskImage: `url(${M14H1}/engineering-screen-mask.png)`, maskSize: "100% 100%", WebkitMaskSize: "100% 100%" }}
+        style={{ background: "rgb(3 6 9)", ...clipTo(ENG_DISPLAY_CLIP), maskImage: `url(${M14H1}/engineering-screen-mask.png)`, WebkitMaskImage: `url(${M14H1}/engineering-screen-mask.png)`, maskSize: "100% 100%", WebkitMaskSize: "100% 100%" }}
       />
       <EngineeringScreenLayer kind="shade" />
       <ChartLayer src={`${M14H1}/engineering-screen-bars.png`} name="screen-bars" base={false} />
@@ -304,7 +304,7 @@ export function EngineeringV2() {
       {/* Stable: the chart's glow unmasked (its solid part is in the station image below). */}
       <Full src={`${M14H1}/engineering-chart-light.png`} name="chart-light-stable" add swap="stable" />
       {/* Each bar's rising edge: a crisp cap, only while it moves. */}
-      <div className="eng-caps absolute inset-0" style={{ mixBlendMode: "plus-lighter" }}>
+      <div className="eng-caps absolute inset-0" style={{ ...CHART_CLIP, mixBlendMode: "plus-lighter" }}>
         {ENG_BARS.map((b, k) => (
           <div key={k} className="absolute" style={box({ x: b.x + 1, y: b.y, w: b.w - 2, h: b.h })}>
             <span

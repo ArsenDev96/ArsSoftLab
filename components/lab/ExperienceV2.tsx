@@ -3,6 +3,7 @@ import { SCENE, u, type SceneRect } from "@/lib/scene";
 import { EXP_BOX, EXP_CLOCK, EXP_GRID, EXP_STEPS } from "./experience-v2";
 import { PLATFORM_POWER, POWER_FRONT } from "./platform-power";
 import { partFrame, PowerPart, powerCss } from "./PlatformPower";
+import { SceneImage } from "./SceneImage";
 import { cycleCss } from "./station-cycle";
 
 /**
@@ -115,12 +116,8 @@ const EXP_CSS =
 
 function Full({ src, name, add, swap }: { src: string; name: string; add?: boolean; swap?: "stable" }) {
   return (
-    // eslint-disable-next-line @next/next/no-img-element -- full-frame layer at the plate's geometry
-    <img
+    <SceneImage
       src={src}
-      alt=""
-      draggable={false}
-      data-gate=""
       data-exp={name}
       data-exp-swap={swap}
       className="pointer-events-none absolute inset-0 h-full w-full max-w-none select-none"
@@ -131,8 +128,7 @@ function Full({ src, name, add, swap }: { src: string; name: string; add?: boole
 
 /** A full-frame image placed in a box (the box clips it). */
 function Frame({ src, box }: { src: string; box: SceneRect }) {
-  // eslint-disable-next-line @next/next/no-img-element -- full-frame layer at the plate's geometry
-  return <img src={src} alt="" draggable={false} data-gate="" className="absolute max-w-none select-none" style={partFrame(box)} />;
+  return <SceneImage src={src} className="absolute max-w-none select-none" style={partFrame(box)} />;
 }
 
 /** The sprites' frame at the clock --xs: the grid's size, and its position when frame 0 lies at `at`. */
@@ -200,7 +196,7 @@ function Station() {
       {/* The recovered station itself (M1.4F's file), always. */}
       <Full src={`${M14F}/experience.png`} name="station" />
       {/* The strips' light on the floor (M1.4F's experience-light), behind the fronts, then whole. */}
-      <div data-exp-swap="anim" className="absolute inset-0" style={{ mixBlendMode: "plus-lighter" }}>
+      <div data-exp-swap="anim" className="absolute inset-0" style={{ ...clipTo({ x: 1032, y: 655, w: 640, h: 257 }), mixBlendMode: "plus-lighter" }}>
         <FloorParts src={`${M14F}/experience-light.png`} name="strip-floor" standby={0} full />
       </div>
       <Full src={`${M14F}/experience-light.png`} name="light-stable" add swap="stable" />

@@ -19,7 +19,23 @@ const FALLBACK_MS = 4000;
  * Runs as the HTML is parsed (not after hydration); without scripts, or
  * after 4 s at the latest, the layer is shown anyway.
  */
-const GATE_JS = `(function(){window.__labGate=1;var d=0,l=document.currentScript&&document.currentScript.parentElement;function show(){if(d)return;d=1;var s=document.createElement("style");s.textContent="${OPEN_CSS}";document.head.appendChild(s)}setTimeout(show,${FALLBACK_MS});if(!l)return show();Promise.all([].slice.call(l.querySelectorAll("img[data-gate]")).map(function(i){return new Promise(function(r){if(i.complete)r();else{i.addEventListener("load",r);i.addEventListener("error",r)}}).then(function(){return i.decode?i.decode().catch(function(){}):0})})).then(show)})();`;
+const gateJs = (selector: string, each: string) => `(function(){window.__labGate=1;var d=0,l=document.currentScript&&document.currentScript.parentElement;function show(){if(d)return;d=1;var s=document.createElement("style");s.textContent="${OPEN_CSS}";document.head.appendChild(s)}setTimeout(show,${FALLBACK_MS});if(!l)return show();Promise.all([].slice.call(l.querySelectorAll("${selector}")).map(function(i){${each}return new Promise(function(r){if(i.complete)r();else{i.addEventListener("load",r);i.addEventListener("error",r)}}).then(function(){return i.decode?i.decode().catch(function(){}):0})})).then(show)})();`;
+
+const IMG = "img[data-gate]";
+/** M1.4I.2 (/lab-v2): the layers drawn from crops are SVG images (SceneImage), awaited through an Image of the same file. */
+const IMG_OR_SVG = `${IMG},image[data-gate]`;
+/** Whether a SceneImage draws its crop here (SceneImage.tsx, CROPS_HERE) or the full-frame file. */
+const CROPS_HERE_JS = 'CSS.supports("object-view-box","none")';
+const VIA_IMAGE = `if(!i.src){var n=new Image();n.src=i.getAttribute(${CROPS_HERE_JS}?"href":"data-full");i=n}`;
+const GATE_JS = gateJs(IMG, "");
+const GATE_JS_SVG = gateJs(IMG_OR_SVG, VIA_IMAGE);
+/** The file an element shows, as an image that can be decoded. */
+function asImage(el: Element): HTMLImageElement {
+  if (el instanceof HTMLImageElement) return el;
+  const img = new Image();
+  img.src = el.getAttribute(CSS.supports("object-view-box", "none") ? "href" : "data-full") ?? "";
+  return img;
+}
 
 /**
  * M1.4I.1A: the inline script only runs when the browser parses it from the
@@ -29,7 +45,7 @@ const GATE_JS = `(function(){window.__labGate=1;var d=0,l=document.currentScript
  * same fallback. Once open, the gate stays open for the whole document (the
  * rule lives in <head>), so later mounts do nothing.
  */
-export function PlateGate() {
+export function PlateGate({ svgImages = false }: { svgImages?: boolean }) {
   const script = useRef<HTMLScriptElement>(null);
 
   useEffect(() => {
@@ -47,13 +63,13 @@ export function PlateGate() {
     };
     const timer = window.setTimeout(show, FALLBACK_MS);
     // decode() waits for the load, and rejects if it fails.
-    Promise.allSettled([...root.querySelectorAll<HTMLImageElement>("img[data-gate]")].map((img) => img.decode())).then(show);
+    Promise.allSettled([...root.querySelectorAll(svgImages ? IMG_OR_SVG : IMG)].map((el) => asImage(el).decode())).then(show);
     // Left before it opened: the next mount starts over.
     return () => {
       done = true;
       window.clearTimeout(timer);
     };
-  }, []);
+  }, [svgImages]);
 
   return (
     <>
@@ -63,7 +79,7 @@ export function PlateGate() {
         ref={script}
         type={typeof window === "undefined" ? "text/javascript" : "text/plain"}
         suppressHydrationWarning
-        dangerouslySetInnerHTML={{ __html: GATE_JS }}
+        dangerouslySetInnerHTML={{ __html: svgImages ? GATE_JS_SVG : GATE_JS }}
       />
       <noscript>
         <style>{OPEN_CSS}</style>

@@ -1,0 +1,111 @@
+{
+ "engineering": {
+  "rows": [
+   {
+    "group": "in-label",
+    "name": "icon, title, chips",
+    "ms": 400,
+    "state": "charging",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "engineering"
+   },
+   {
+    "group": "in-label",
+    "name": "icon, title, chips",
+    "ms": 1500,
+    "state": "charging",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "engineering"
+   },
+   {
+    "group": "in-label",
+    "name": "icon, title, chips",
+    "ms": 150,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "engineering"
+   },
+   {
+    "group": "in-label",
+    "name": "icon, title, chips",
+    "ms": 400,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "engineering"
+   },
+   {
+    "group": "in-label",
+    "name": "icon, title, chips",
+    "ms": 1000,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "engineering"
+   },
+   {
+    "group": "in-label",
+    "name": "icon, title, chips",
+    "ms": 2200,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "engineering"
+   },
+   {
+    "group": "still",
+    "name": "lower edge of chip",
+    "ms": 5000,
+    "state": "from rest",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "engineering",
+    "under": "bridge"
+   },
+   {
+    "group": "still",
+    "name": "chip centre",
+    "ms": 5000,
+    "state": "from rest",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "engineering",
+    "under": "chip"
+   },
+   {
+    "group": "still",
+    "name": "title",
+    "ms": 5000,
+    "state": "from rest",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "engineering",
+    "under": "title"
+   },
+   {
+    "group": "still",
+    "name": "title lower edge",
+    "ms": 5000,
+    "state": "from rest",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "engineering",
+    "under": "bridge"
+   }
+  ],
+  "errors": []
+ }
+}

@@ -1,0 +1,28 @@
+creative {"art-label":{"runs":8,"bad":3,"drops":4,"restarts":4},"label-art":{"runs":8,"bad":6,"drops":7,"restarts":7},"platform-chip":{"runs":10,"bad":6,"drops":6,"restarts":6},"chip-platform":{"runs":10,"bad":6,"drops":6,"restarts":6},"in-label":{"runs":6,"bad":4,"drops":11,"restarts":11},"repeated":{"runs":4,"bad":4,"drops":18,"restarts":18},"still":{"runs":4,"bad":0,"drops":0,"restarts":0}} 
+    {"group":"still","name":"lower edge of chip","ms":5000,"state":"from rest","drops":0,"restarts":0,"other":[],"ends":"creative","under":"chip"}
+    {"group":"still","name":"chip centre","ms":5000,"state":"from rest","drops":0,"restarts":0,"other":[],"ends":"creative","under":"chip"}
+    {"group":"still","name":"title","ms":5000,"state":"from rest","drops":0,"restarts":0,"other":[],"ends":"creative","under":"title"}
+    {"group":"still","name":"title lower edge","ms":5000,"state":"from rest","drops":0,"restarts":0,"other":[],"ends":"creative","under":"title"}
+    {"group":"leave","name":"artwork","ms":0,"state":"powered","before":"creative","afterMs":241,"ends":"-","rest":true,"sparks":0}
+    {"group":"leave","name":"title","ms":0,"state":"powered","before":"creative","afterMs":231,"ends":"-","rest":true,"sparks":0}
+    {"group":"leave","name":"chip","ms":0,"state":"powered","before":"creative","afterMs":113,"ends":"-","rest":true,"sparks":0}
+    {"group":"leave","name":"platform","ms":0,"state":"powered","before":"creative","afterMs":227,"ends":"-","rest":true,"sparks":0}
+    {"group":"leave","name":"between chip and platform","ms":0,"state":"powered","before":"creative","afterMs":216,"ends":"-","rest":true,"sparks":0}
+    {"group":"switch","name":"label -> engineering","ms":200,"state":"powered","h":["creative","engineering"],"sparks":1,"ok":true}
+    {"group":"switch","name":"label -> engineering","ms":900,"state":"powered","h":["creative","-","engineering"],"sparks":1,"ok":true}
+    {"group":"switch","name":"platform -> engineering","ms":200,"state":"powered","h":["creative","engineering"],"sparks":1,"ok":true}
+    {"group":"switch","name":"platform -> engineering","ms":900,"state":"powered","h":["creative","-","creative","engineering"],"sparks":2,"ok":true}
+experience {"art-label":{"runs":8,"bad":6,"drops":6,"restarts":6},"label-art":{"runs":8,"bad":6,"drops":6,"restarts":6},"platform-chip":{"runs":10,"bad":5,"drops":5,"restarts":5},"chip-platform":{"runs":10,"bad":7,"drops":7,"restarts":7},"in-label":{"runs":6,"bad":6,"drops":12,"restarts":12},"repeated":{"runs":4,"bad":3,"drops":13,"restarts":13},"still":{"runs":4,"bad":0,"drops":0,"restarts":0}} 
+    {"group":"still","name":"lower edge of chip","ms":5000,"state":"from rest","drops":0,"restarts":0,"other":[],"ends":"experience","under":"chip"}
+    {"group":"still","name":"chip centre","ms":5000,"state":"from rest","drops":0,"restarts":0,"other":[],"ends":"experience","under":"chip"}
+    {"group":"still","name":"title","ms":5000,"state":"from rest","drops":0,"restarts":0,"other":[],"ends":"experience","under":"title"}
+    {"group":"still","name":"title lower edge","ms":5000,"state":"from rest","drops":0,"restarts":0,"other":[],"ends":"experience","under":"title"}
+    {"group":"leave","name":"artwork","ms":0,"state":"powered","before":"experience","afterMs":126,"ends":"-","rest":true,"sparks":0}
+    {"group":"leave","name":"title","ms":0,"state":"powered","before":"experience","afterMs":133,"ends":"-","rest":true,"sparks":0}
+    {"group":"leave","name":"chip","ms":0,"state":"powered","before":"experience","afterMs":269,"ends":"-","rest":true,"sparks":0}
+    {"group":"leave","name":"platform","ms":0,"state":"powered","before":"experience","afterMs":141,"ends":"-","rest":true,"sparks":0}
+    {"group":"leave","name":"between chip and platform","ms":0,"state":"powered","before":"experience","afterMs":119,"ends":"-","rest":true,"sparks":0}
+    {"group":"switch","name":"label -> playground","ms":200,"state":"powered","h":["experience","playground"],"sparks":1,"ok":true}
+    {"group":"switch","name":"label -> playground","ms":900,"state":"powered","h":["experience","-","playground"],"sparks":1,"ok":true}
+    {"group":"switch","name":"platform -> playground","ms":200,"state":"powered","h":["experience","-","playground"],"sparks":1,"ok":true}
+    {"group":"switch","name":"platform -> playground","ms":900,"state":"powered","h":["experience","-","experience","playground"],"sparks":2,"ok":true}

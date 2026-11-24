@@ -1,0 +1,98 @@
+{
+ "lift": {
+  "steps": {
+   "600": {
+    "lift": 0,
+    "holes": 12,
+    "total": 24166,
+    "hover": "playground"
+   },
+   "650": {
+    "lift": 0,
+    "holes": 12,
+    "total": 24166,
+    "hover": "playground"
+   },
+   "700": {
+    "lift": 0.7,
+    "holes": 12,
+    "total": 24166,
+    "hover": "playground"
+   },
+   "750": {
+    "lift": 2.73,
+    "holes": 12,
+    "total": 24166,
+    "hover": "playground"
+   },
+   "800": {
+    "lift": 6,
+    "holes": 12,
+    "total": 24166,
+    "hover": "playground"
+   },
+   "850": {
+    "lift": 9.64,
+    "holes": 12,
+    "total": 24166,
+    "hover": "playground"
+   },
+   "900": {
+    "lift": 13.25,
+    "holes": 12,
+    "total": 24166,
+    "hover": "playground"
+   },
+   "950": {
+    "lift": 15.97,
+    "holes": 12,
+    "total": 24166,
+    "hover": "playground"
+   },
+   "1000": {
+    "lift": 17.39,
+    "holes": 12,
+    "total": 24166,
+    "hover": "playground"
+   },
+   "1050": {
+    "lift": 17.92,
+    "holes": 12,
+    "total": 24166,
+    "hover": "playground"
+   },
+   "1100": {
+    "lift": 18,
+    "holes": 12,
+    "total": 24166,
+    "hover": "playground"
+   }
+  },
+  "still": {
+   "tried": 18,
+   "started": 16,
+   "restarted": 0,
+   "after": [
+    "1292,328: title",
+    "1330,328: title",
+    "1292,334: title",
+    "1330,334: title",
+    "1292,340: chip",
+    "1330,340: chip",
+    "1292,346: chip",
+    "1330,346: chip",
+    "1292,352: nothing (not a start)",
+    "1330,352: nothing (not a start)",
+    "1292,358: chip",
+    "1330,358: chip",
+    "1292,364: chip",
+    "1330,364: chip",
+    "1292,370: chip",
+    "1330,370: chip",
+    "1292,376: chip",
+    "1330,376: chip"
+   ]
+  },
+  "errors": []
+ }
+}

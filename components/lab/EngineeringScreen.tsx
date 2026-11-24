@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { SCENE } from "@/lib/scene";
+import { SCENE, u } from "@/lib/scene";
 import { ENG_SCREEN_QUAD } from "./engineering-v2";
 
 /**
@@ -47,6 +47,11 @@ function squareToQuad([[x0, y0], [x1, y1], [x2, y2], [x3, y3]]: readonly Pt[]) {
   return `matrix3d(${m.map((v) => +v.toPrecision(7)).join(", ")})`;
 }
 
+/** M1.4I.2: everything the display's mask shows lies in here (the mask is the edge; this only bounds the layer). */
+export const ENG_DISPLAY_CLIP = { x: 340, y: 384, w: 156, h: 98 } as const;
+const D = ENG_DISPLAY_CLIP;
+const CLIP_PATH = `inset(${u(D.y)} ${u(SCENE.width - D.x - D.w)} ${u(SCENE.height - D.y - D.h)} ${u(D.x)})`;
+
 const MASK = "url(/scene/v2/m14h1/engineering-screen-mask.png)";
 
 export function EngineeringScreenLayer({ kind }: { kind: "shade" | "band" }) {
@@ -74,6 +79,7 @@ export function EngineeringScreenLayer({ kind }: { kind: "shade" | "band" }) {
       data-eng-screen={kind}
       className="pointer-events-none absolute inset-0"
       style={{
+        clipPath: CLIP_PATH,
         maskImage: MASK,
         WebkitMaskImage: MASK,
         maskSize: "100% 100%",

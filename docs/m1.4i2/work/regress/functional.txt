@@ -1,0 +1,147 @@
+#### 18:12 node docs/m1.4i1e/work/behaviour.mjs keyboard,clicks,direct,reduced
+ },
+ "errors": []
+}
+clicks {
+ "engineering": { "chip 1": { "url": "/lab-v2?station=engineering&project=sqlorbit", "sparks": 1, "errors": [] }, "chip 2": { "url": "/lab-v2?station=engineering&project=tablerefresh", "sparks": 1, "errors": [] }, "title": "/lab-v2?station=engineering", "escape": [ "/lab-v2", "station-engineering-trigger" ], "platform": "/lab-v2?station=engineering"
+ },
+ "educational": { "chip 1": { "url": "/lab-v2?station=educational&project=arimap", "sparks": 1, "errors": [] }, "chip 2": { "url": "/lab-v2?station=educational&project=armat", "sparks": 1, "errors": [] }, "title": "/lab-v2?station=educational", "escape": [ "/lab-v2", "station-educational-trigger" ], "platform": "/lab-v2?station=educational"
+ },
+ "playground": { "chip 1": { "url": "/lab-v2?station=playground&project=aziz", "sparks": 1, "errors": [] }, "title": "/lab-v2?station=playground", "escape": [ "/lab-v2", "station-playground-trigger" ], "platform": "/lab-v2?station=playground"
+ },
+ "creative": { "chip 1": { "url": "/lab-v2?station=creative&project=wallpapers", "sparks": 1, "errors": [] }, "title": "/lab-v2?station=creative", "escape": [ "/lab-v2", "station-creative-trigger" ], "platform": "/lab-v2?station=creative"
+ },
+ "experience": { "chip 1": { "url": "/lab-v2?station=experience&project=koreez", "sparks": 1, "errors": [] }, "title": "/lab-v2?station=experience", "escape": [ "/lab-v2", "station-experience-trigger" ], "platform": "/lab-v2?station=experience"
+ }
+}
+direct {
+ "engineering": { "selected": "engineering", "powered": true, "sparks": 0, "rest": true, "errors": []
+ },
+ "educational": { "selected": "educational", "powered": true, "sparks": 0, "rest": true, "errors": []
+ },
+ "playground": { "selected": "playground", "powered": true, "sparks": 0, "rest": true, "errors": []
+ },
+ "creative": { "selected": "creative", "powered": true, "sparks": 0, "rest": true, "errors": []
+ },
+ "experience": { "selected": "experience", "powered": true, "sparks": 0, "rest": true, "errors": []
+ }
+}
+reduced {
+ "engineering": { "changes": [ "-", "engineering" ], "sparks": 0, "lift": 0, "label": "none"
+ },
+ "educational": { "changes": [ "-", "educational" ], "sparks": 0, "lift": 0, "label": "none"
+ },
+ "playground": { "changes": [ "-", "playground" ], "sparks": 0, "lift": 0, "label": "none"
+ },
+ "creative": { "changes": [ "-", "creative" ], "sparks": 0, "lift": 0, "label": "none"
+ },
+ "experience": { "changes": [ "-", "experience" ], "sparks": 0, "lift": 0, "label": "none"
+ },
+ "errors": []
+}
+#### 18:16 node docs/m1.4i1e/work/behaviour.mjs hold,lift
+hold {
+ "engineering": { "restUnder": "nothing", "startsFromEmpty": 0, "holds": { "under": "bridge engineering", "changes": [ "-", "engineering" ], "sparks": 1, "powered": true }, "cursor": "auto", "clickSelects": null, "backWithinGrace": [ "engineering" ], "leavesToRest": true, "afterUnder": "nothing", "restartsFromBridge": 0
+ },
+ "educational": { "restUnder": "nothing", "startsFromEmpty": 0, "holds": { "under": "bridge educational", "changes": [ "-", "educational" ], "sparks": 1, "powered": true }, "cursor": "auto", "clickSelects": null, "backWithinGrace": [ "educational" ], "leavesToRest": true, "afterUnder": "nothing", "restartsFromBridge": 0
+ },
+ "playground": { "restUnder": "nothing", "startsFromEmpty": 0, "holds": { "under": "bridge playground", "changes": [ "-", "playground" ], "sparks": 1, "powered": true }, "cursor": "auto", "clickSelects": null, "backWithinGrace": [ "playground" ], "leavesToRest": true, "afterUnder": "nothing", "restartsFromBridge": 0
+ },
+ "creative": { "restUnder": "nothing", "startsFromEmpty": 0, "holds": { "under": "bridge creative", "changes": [ "-", "creative" ], "sparks": 1, "powered": true }, "cursor": "auto", "clickSelects": null, "backWithinGrace": [ "creative" ], "leavesToRest": true, "afterUnder": "nothing", "restartsFromBridge": 0
+ },
+ "experience": { "restUnder": "nothing", "startsFromEmpty": 0, "holds": { "under": "bridge experience", "changes": [ "-", "experience" ], "sparks": 1, "powered": true }, "cursor": "auto", "clickSelects": null, "backWithinGrace": [ "experience" ], "leavesToRest": true, "afterUnder": "nothing", "restartsFromBridge": 0
+ },
+ "errors": []
+}
+lift {
+ "steps": { "600": { "lift": 0, "holes": 12, "total": 24166, "hover": "playground" }, "650": { "lift": 0, "holes": 12, "total": 24166, "hover": "playground" }, "700": { "lift": 0.7, "holes": 12, "total": 24166, "hover": "playground" }, "750": { "lift": 2.73, "holes": 12, "total": 24166, "hover": "playground" }, "800": { "lift": 6, "holes": 12, "total": 24166, "hover": "playground" }, "850": { "lift": 9.64, "holes": 12, "total": 24166, "hover": "playground" }, "900": { "lift": 13.25, "holes": 12, "total": 24166, "hover": "playground" }, "950": { "lift": 15.97, "holes": 12, "total": 24166, "hover": "playground" }, "1000": { "lift": 17.39, "holes": 12, "total": 24166, "hover": "playground" }, "
+ },
+ "still": { "tried": 18, "started": 16, "restarted": 0, "after": [ "1292,328: title", "1330,328: title", "1292,334: title", "1330,334: title", "1292,340: chip", "1330,340: chip", "1292,346: chip", "1330,346: chip", "1292,352: nothing (not a start)", "1330,352: nothing (not a start)", "1292,358: chip", "1330,358: chip", "1292,364: bridge playground", "1330,364: chip", "1292,370: bridge playground", "1330,370: chip", "1292,376: chip", "1330,376: chip" ]
+ },
+ "errors": []
+}
+#### 18:18 node docs/m1.4i1e/work/transitions.mjs i2 all label,chip
+engineering {"art-label":{"runs":8,"bad":0,"drops":0,"restarts":0},"label-art":{"runs":8,"bad":0,"drops":0,"restarts":0},"platform-chip":{"runs":16,"bad":0,"drops":0,"restarts":0},"chip-platform":{"runs":16,"bad":0,"drops":0,"restarts":0}} 
+educational {"art-label":{"runs":8,"bad":0,"drops":0,"restarts":0},"label-art":{"runs":8,"bad":0,"drops":0,"restarts":0},"platform-chip":{"runs":16,"bad":0,"drops":0,"restarts":0},"chip-platform":{"runs":16,"bad":0,"drops":0,"restarts":0}} 
+#### 18:25 node docs/m1.4i1/work/nav.mjs i2
+# direct  
+OK    direct / | 1672 ms op=1,1 img=29/29 rules=1 script=text/javascript timers=pending dec=78 lis=160 ro=2 doc=x2mu03gnwfa err=[]
+      activation {"poweredMs":1109,"arcade":"running","rafPerFrame":1,"restMs":535,"arcadeAfter":"off","rafAtRest":0,"errors":[]}
+
+# direct  
+OK    direct /lab-v2 | 2511 ms op=1,1 img=18/18 rules=1 script=text/javascript timers=pending dec=84 lis=160 ro=4 doc=ls8rv9y3vo err=[]
+      activation {"poweredMs":1155,"arcade":"running","rafPerFrame":1,"restMs":613,"arcadeAfter":"off","rafAtRest":0,"errors":[]}
+
+# client FAILED Error: Cannot navigate to invalid URL 
+
+# roundtrip from direct  
+OK    direct / | 2094 ms op=1,1 img=29/29 rules=1 script=text/javascript timers=pending dec=78 lis=160 ro=2 doc=lm26uqby1j err=[]
+      activation {"poweredMs":1150,"arcade":"running","rafPerFrame":1,"restMs":539,"arcadeAfter":"off","rafAtRest":0,"errors":[]}
+OK    -> /lab-v2 | 990 ms op=1,1 img=18/18 rules=1 script=text/plain timers=fired dec=78 lis=160 ro=4 doc=lm26uqby1j err=[]
+      activation {"poweredMs":1345,"arcade":"running","rafPerFrame":1,"restMs":621,"arcadeAfter":"off","rafAtRest":0,"errors":[]}
+OK    -> / | 615 ms op=1,1 img=29/29 rules=1 script=text/plain timers=fired dec=369 lis=160 ro=2 doc=lm26uqby1j err=[]
+      activation {"poweredMs":1030,"arcade":"running","rafPerFrame":1,"restMs":489,"arcadeAfter":"off","rafAtRest":0,"errors":[]}
+
+# roundtrip FAILED Error: Cannot navigate to invalid URL 
+
+# history FAILED Error: Cannot navigate to invalid URL 
+
+# historyDirect FAILED Error: never reached C:/Program Files/Git/nope {"path":"/","ready":"complete","gates":2,"v2":false,"doc":"6pb5y8e6cof","router":true,"text":"Skip to lab stations\nArsen Manukyan\nSOFTWARE ENGINEER\nLab\nProjects\nExperience\nAbout\nCtrl K\nLet’s Talk\nEducational\nAriMap"} [["direct /",true]] 
+
+# remount FAILED Error: Cannot navigate to invalid URL 
+
+# deep FAILED Error: Cannot navigate to invalid URL 
+
+# early FAILED Error: Cannot navigate to invalid URL 
+
+# stalled images  
+OK    stalled, direct / | 6825 ms op=1,1 img=0/29 rules=1 script=text/javascript timers=fired dec=0 lis=160 ro=2 doc=efdo6qw82wn err=[]
+
+# stalled FAILED Error: Cannot navigate to invalid URL 
+
+# reduced  
+OK    reduced: direct / | 4574 ms op=1,1 img=29/29 rules=1 script=text/javascript timers=pending dec=65 lis=160 ro=2 doc=rn4nen13huo err=[]
+      reduced {"hover":"playground","arcade":"still","lift":"none","surgeRunning":0}
+
+# reduced FAILED Error: Cannot navigate to invalid URL 
+#### 18:27 node docs/m1.4i1/work/sign-probe.mjs i2 timing click paths
+#### 18:28 node docs/m1.4i1/work/eng-return.mjs i2 mouse
+
+# mouse: 10 runs | premature 0 | scan 0 caps 0 pulse 0 shimmer 0 held 0 (run-back finishing 8) rose 0 | frozen scan after arrival 0 | frozen pulse 0 | scan not from the top 0 | no scan 0 | no caps 0 | not powered 0 | not at rest 0 | rose after leaving 0 | first visit premature 0 | errors []
+#### 18:29 node docs/m1.4i1/work/qr-run.mjs i2 creative mouse
+file:///D:/ArsSoftLab/scripts/visual/cdp.mjs:116
+        throw new Error(r.exceptionDetails.exception?.description ?? r.exceptionDetails.text);
+              ^
+
+Error: TypeError: Cannot read properties of undefined (reading 'stop')
+    at <anonymous>:1:48
+    at <anonymous>:1:66
+    at Object.eval (file:///D:/ArsSoftLab/scripts/visual/cdp.mjs:116:15)
+    at async call (file:///D:/ArsSoftLab/docs/m1.4i1/work/qr-lib.mjs:169:43)
+    at async Object.mouse (file:///D:/ArsSoftLab/docs/m1.4i1/work/qr-run.mjs:43:30)
+    at async file:///D:/ArsSoftLab/docs/m1.4i1/work/qr-run.mjs:172:3
+
+Node.js v22.22.3
+#### 18:30 node docs/m1.4i1/work/qr-run.mjs i2 educational mouse
+file:///D:/ArsSoftLab/scripts/visual/cdp.mjs:176
+      if (!r) throw new Error(`No element for ${selector}`);
+                    ^
+
+Error: No element for [data-hotspot="educational"]
+    at Object.center (file:///D:/ArsSoftLab/scripts/visual/cdp.mjs:176:21)
+    at async Object.mouse (file:///D:/ArsSoftLab/docs/m1.4i1/work/qr-run.mjs:29:15)
+    at async file:///D:/ArsSoftLab/docs/m1.4i1/work/qr-run.mjs:172:3
+
+Node.js v22.22.3
+#### 18:30 node docs/m1.4i1/work/qr-run.mjs i2 experience mouse
+file:///D:/ArsSoftLab/scripts/visual/cdp.mjs:176
+      if (!r) throw new Error(`No element for ${selector}`);
+                    ^
+
+Error: No element for [data-hotspot="experience"]
+    at Object.center (file:///D:/ArsSoftLab/scripts/visual/cdp.mjs:176:21)
+    at async Object.mouse (file:///D:/ArsSoftLab/docs/m1.4i1/work/qr-run.mjs:29:15)
+    at async file:///D:/ArsSoftLab/docs/m1.4i1/work/qr-run.mjs:172:3
+
+Node.js v22.22.3
+ALLDONE

@@ -30,7 +30,7 @@ export interface StationLayout {
 }
 
 /** Polygon from a flat x, y list. */
-function poly(...xy: number[]): ScenePoint[] {
+export function poly(...xy: number[]): ScenePoint[] {
   return Array.from({ length: xy.length / 2 }, (_, i) => ({ x: xy[2 * i], y: xy[2 * i + 1] }));
 }
 
