@@ -1,0 +1,9 @@
+creative-books            613 px, x 97-183, y 732-778
+creative-fill-off         130 px, x 174-184, y 767-778
+creative-fill            6464 px, x 97-328, y 711-778
+creative-steam           4968 px, x 244-327, y 720-793
+stone + steam against station + fg-steam: max 37, 211 px above 2 (the foot line)
+creative-light-edge      1695 px, x 174-510, y 735-786
+creative-light-spill     4237 px, x 185-519, y 735-799
+creative-floor-edge       650 px, x 177-517, y 722-782
+creative-floor-rest      6804 px, x 51-553, y 671-813

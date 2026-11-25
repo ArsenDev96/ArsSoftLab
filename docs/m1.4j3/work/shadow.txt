@@ -1,0 +1,9 @@
+gap, left of the steam: no shadow 63.7,22.1 | contact only 63.7,22.1 | both 53.7,21.7  => 16% darker
+gap, right of the steam: no shadow 69.8,23.7 | contact only 69.8,23.7 | both 51,18.1  => 27% darker
+gap, front strip: no shadow 73.8,16.9 | contact only 73.8,17 | both 60.3,17  => 18% darker
+gap, right: no shadow 68,15.4 | contact only 67.5,15.8 | both 55.9,16.3  => 18% darker
+directly under the stone: no shadow 67.5,15.8 | contact only 67.5,15.8 | both 47.8,10.7  => 29% darker
+at the old contour: no shadow 82.3,29.2 | contact only 76.1,26.7 | both 62.5,22.7  => 24% darker
+just outside: no shadow 89.4,35.2 | contact only 87,34.6 | both 78.8,32.6  => 12% darker
+outside, right: no shadow 68.3,10.9 | contact only 68.3,10.9 | both 68.1,10.9  => 0% darker
+floor far: no shadow 83.8,47.3 | contact only 83.8,47.3 | both 83.8,47.3  => 0% darker

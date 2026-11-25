@@ -1,0 +1,6 @@
+pairs runs 80 flagged 0 | most stations not at rest at once 2 sparks at once 2 | largest step %/60Hz frame 10.9 longest frame 150 | one-shot light on an inactive station (frames, max) {"engineering":[6,1]} | spark clock after the hover, ms: max 16.7
+reenter runs 55 flagged 0 | most stations not at rest at once 1 sparks at once 2 | largest step %/60Hz frame 10.9 longest frame 50 | one-shot light on an inactive station (frames, max) {} | spark clock after the hover, ms: max 17
+sweep runs 20 flagged 0 | most stations not at rest at once 1 sparks at once 5 | largest step %/60Hz frame 7.9 longest frame 17 | one-shot light on an inactive station (frames, max) {"engineering":[6,0.971589]} | spark clock after the hover, ms: max 16.7
+around runs 6 flagged 0 | most stations not at rest at once 1 sparks at once 3 | largest step %/60Hz frame 10.9 longest frame 33 | one-shot light on an inactive station (frames, max) {"engineering":[12,1]} | spark clock after the hover, ms: max 16.9
+hub runs 4 flagged 0 | most stations not at rest at once 1 sparks at once 2 | largest step %/60Hz frame 10.9 longest frame 17 | one-shot light on an inactive station (frames, max) {} | spark clock after the hover, ms: max 16.7
+errors []

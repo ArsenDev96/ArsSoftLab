@@ -1,5 +1,6 @@
 import type { CSSProperties } from "react";
 import { SCENE, u, type SceneRect } from "@/lib/scene";
+import { CreativeLift, M14J3, OFF_FLOOR } from "./CreativeLift";
 import { CRE_BOX, CRE_GLINT_GRID, CRE_GLINT_STEPS, CRE_GRID, CRE_SUNRISE_STEPS } from "./creative-v2";
 import { PLATFORM_POWER, POWER_FRONT } from "./platform-power";
 import { partFrame, PowerPart, powerCss } from "./PlatformPower";
@@ -33,6 +34,10 @@ import { cycleCss } from "./station-cycle";
  * selection or deep link is powered at once with no replay. Leaving: the added
  * light stops at once, the sunrise draws back to the sun, the strips drain.
  * Reduced motion: a 150 ms cross-fade; nothing travels.
+ *
+ * M1.4J.3: it rises (CreativeLift). Every layer of the station carries the same
+ * translation (.cre-rise) itself: a wrapper would isolate their blending. What
+ * the strips cast on the floor stays.
  */
 
 const M14H3 = "/scene/v2/m14h3";
@@ -44,6 +49,11 @@ const ON = `:is([data-lab-hover="${ID}"],[data-lab-selected="${ID}"])`;
 /** At rest the floor keeps this much of the ring and strip reflections, and of the mirrored objects on top. */
 const FLOOR_STANDBY = 0.2;
 const FLOOR_TOP_STANDBY = 0.75;
+
+/** M1.4J.3: raised, the strips' spill on the floor is this much weaker. */
+const SPILL_SOFTEN = 0.25;
+/** M1.4J.3: and the strip's end round the right corner: raised, it lies over the lit ring, and the two add. */
+const END_SOFTEN = 0.45;
 
 /** Timing after the energy's arrival (ms). */
 export const CRE_TIMING = {
@@ -71,6 +81,14 @@ const box = (r: SceneRect): CSSProperties => ({ left: u(r.x), top: u(r.y), width
 /** Moving layers repaint only their own box (on the blended element itself, so it still adds to the room). */
 const clipTo = (r: SceneRect): CSSProperties => ({ clipPath: `inset(${u(r.y)} ${u(SCENE.width - r.x - r.w)} ${u(SCENE.height - r.y - r.h)} ${u(r.x)})` });
 const CLIP = clipTo(CRE_BOX);
+/**
+ * M1.4J.3: 0 on the floor, 1 off it, nothing between: there the approved light
+ * gives way to its two parts. It is moved out of the frame, not faded: its
+ * opacity is the sequence's, and a group around it would resample it.
+ */
+const LEFT_FLOOR = "min(1, var(--cl) * 100000)";
+/** The strips' light on the floor. */
+const SPILL_CLIP = clipTo({ x: 26, y: 668, w: 550, h: 150 });
 
 const prop = (name: string) => `@property ${name}{syntax:"<number>";inherits:true;initial-value:0}`;
 
@@ -102,7 +120,7 @@ const CRE_CSS =
   `[data-cre-swap="stable"]{opacity:0;transition:opacity 80ms linear}[data-cre-swap="anim"]{opacity:1;transition:opacity 80ms linear}` +
   `${ON} [data-cre-swap="stable"]{opacity:1;transition:opacity ${T.settleMs}ms linear calc(var(--arrive-now) + ${T.stableDelay - T.settleMs}ms)}` +
   `${ON} [data-cre-swap="anim"]{opacity:0;transition:opacity ${T.settleMs}ms linear calc(var(--arrive-now) + ${T.stableDelay - T.settleMs}ms)}` +
-  `.cre-floor{opacity:calc(1 - var(--cre-standby, 0))}` +
+  `.cre-floor{opacity:calc((1 - var(--cre-standby, 0)) * (1 - var(--cre-soften, 0) * var(--cl)))}` +
   FLOOR_PARTS.map(
     (p, k) =>
       `.cre-floor[data-floor-part="${k}"]{--pw:0;transition:--pw ${p.off.dur}ms linear ${p.off.delay}ms}` +
@@ -119,14 +137,14 @@ const CRE_CSS =
   `.cre-floor{mask-image:none!important;-webkit-mask-image:none!important;opacity:0!important;transition:opacity 150ms ease!important}` +
   `${ON} .cre-floor{opacity:calc(1 - var(--cre-standby, 0))!important}}`;
 
-function Full({ src, name, add, swap }: { src: string; name: string; add?: boolean; swap?: "stable" }) {
+function Full({ src, name, add, swap, className = "", style }: { src: string; name: string; add?: boolean; swap?: "stable"; className?: string; style?: CSSProperties }) {
   return (
     <SceneImage
       src={src}
       data-cre={name}
       data-cre-swap={swap}
-      className="pointer-events-none absolute inset-0 h-full w-full max-w-none select-none"
-      style={add ? { mixBlendMode: "plus-lighter" } : undefined}
+      className={`pointer-events-none absolute inset-0 h-full w-full max-w-none select-none ${className}`}
+      style={add || style ? { mixBlendMode: add ? "plus-lighter" : undefined, ...style } : undefined}
     />
   );
 }
@@ -173,7 +191,7 @@ function Pulse({ index }: { index: number }) {
       data-zone={ID}
       data-power={ID}
       data-part={index}
-      className="lab-power cre-pulse pointer-events-none absolute overflow-hidden"
+      className="lab-power cre-pulse cre-rise pointer-events-none absolute overflow-hidden"
       style={{ ...box(p.box), clipPath: clip, maskImage: mask, WebkitMaskImage: mask, mixBlendMode: "plus-lighter" }}
     >
       <Frame src={`${M14H3}/creative-strip-light.png`} box={p.box} />
@@ -183,6 +201,8 @@ function Pulse({ index }: { index: number }) {
 
 /** The strips' pieces on the stone (the reflection part is the floor's: CreativeFloor). */
 const STRIP_PARTS = PLATFORM_POWER[ID].parts.flatMap((p, k) => (p.kind === "strip" ? [k] : []));
+/** The left strip (the one the books reach). */
+const LEFT_STRIP = STRIP_PARTS[STRIP_PARTS.length - 1];
 
 /** The station in this cycle's wrapper (station-cycle.ts). */
 export const CreativeV2 = () => (
@@ -196,45 +216,63 @@ function Station() {
   return (
     <div aria-hidden="true" data-zone={ID} data-v2-station={ID} data-v2-station-source="approved" className="cre-v2 cre-seq pointer-events-none absolute inset-0">
       <style>{CRE_CSS}</style>
-      {/* The recovered station itself (M1.4F's file), always. */}
-      <Full src={`${M14F}/creative.png`} name="station" />
-      {/* The strips' light on the floor (M1.4G.1's creative-light), behind the fronts, then whole. */}
-      <div data-cre-swap="anim" className="absolute inset-0" style={{ ...clipTo({ x: 26, y: 668, w: 550, h: 150 }), mixBlendMode: "plus-lighter" }}>
-        <FloorParts src={`${M14H3}/creative-strip-floor.png`} name="strip-floor" standby={0} full />
+      <CreativeLift>
+      {/* The recovered station itself (M1.4F's file), always. M1.4J.3: off the floor, its stone continued behind the books
+          and without the steam. */}
+      <Full src={`${M14F}/creative.png`} name="station" className="cre-rise" />
+      <Full src={`${M14J3}/creative-fill.png`} name="fill" className="cre-rise cre-aloft" style={{ opacity: OFF_FLOOR }} />
+      {/* The strips' light on the floor (M1.4G.1's creative-light), behind the fronts, then whole. M1.4J.3: off the
+          floor, its edge, on the strips themselves, rises with them; the spill stays. */}
+      <div data-cre-swap="anim" className="absolute inset-0" style={{ ...SPILL_CLIP, mixBlendMode: "plus-lighter" }}>
+        <FloorParts src={`${M14J3}/creative-light-spill.png`} name="strip-spill" standby={0} full soften={SPILL_SOFTEN} />
+        <FloorParts src={`${M14J3}/creative-light-edge.png`} name="strip-edge" standby={0} full rise />
       </div>
-      <Full src={`${M14G1}/creative-light.png`} name="light-stable" add swap="stable" />
+      <Full src={`${M14G1}/creative-light.png`} name="light-stable" add swap="stable" style={{ translate: `calc(var(--u) * ${-2 * SCENE.width} * ${LEFT_FLOOR})` }} />
+      <div className="cre-aloft absolute inset-0" style={{ ...SPILL_CLIP, opacity: `calc(${LEFT_FLOOR} * (1 - ${SPILL_SOFTEN} * var(--cl)))`, mixBlendMode: "plus-lighter" }}>
+        <Full src={`${M14J3}/creative-light-spill.png`} name="light-stable-spill" add swap="stable" />
+      </div>
+      <div className="cre-rise cre-aloft absolute inset-0" style={{ ...SPILL_CLIP, opacity: LEFT_FLOOR, mixBlendMode: "plus-lighter" }}>
+        <Full src={`${M14J3}/creative-light-edge.png`} name="light-stable-edge" add swap="stable" />
+      </div>
       {/* The strips: unpowered ahead of each front (PowerPart, the established fronts), a pulse riding it. */}
       {STRIP_PARTS.map((k) => (
-        <PowerPart key={`off-${k}`} id={ID} index={k} side="dim">
+        <PowerPart key={`off-${k}`} id={ID} index={k} side="dim" className="cre-rise">
           <Frame src={`${M14H3}/creative-strip-off.png`} box={PLATFORM_POWER[ID].parts[k].box} />
         </PowerPart>
       ))}
+      {/* M1.4J.3: the left strip's end, which the second book hides at rest, unpowered until the front is there. */}
+      <div className="cre-aloft absolute inset-0">
+        <div data-zone={ID} data-power={ID} data-part={LEFT_STRIP} className="lab-power cre-rise absolute inset-0" style={{ ...clipTo({ x: 172, y: 762, w: 14, h: 20 }), opacity: `calc(${OFF_FLOOR} * min(1, (1 - var(--pw)) * 8))` }}>
+          <Full src={`${M14J3}/creative-fill-off.png`} name="fill-off" />
+        </div>
+      </div>
       {STRIP_PARTS.map((k) => (
         <Pulse key={`pulse-${k}`} index={k} />
       ))}
       {/* Standby: the subdued painting, removed by the sunrise. */}
-      <div data-cre="standby" className="absolute inset-0" style={{ ...sunriseMask(`${M14H3}/creative-sunrise.png`), ...CLIP }}>
+      <div data-cre="standby" className="cre-rise absolute inset-0" style={{ ...sunriseMask(`${M14H3}/creative-sunrise.png`), ...CLIP }}>
         <Full src={`${M14H3}/creative-standby.png`} name="standby-image" />
       </div>
       {/* The first response: its warm lower details, once. */}
-      <div data-cre="warm" className="cre-gate absolute inset-0" style={{ ...CLIP, mixBlendMode: "plus-lighter" }}>
+      <div data-cre="warm" className="cre-gate cre-rise absolute inset-0" style={{ ...CLIP, mixBlendMode: "plus-lighter" }}>
         <div className="cre-warm absolute inset-0">
           <Full src={`${M14H3}/creative-warm.png`} name="warm-image" />
         </div>
       </div>
       {/* The sunrise's front: the painting's own highlights, brighter where it is passing. */}
-      <div data-cre="crest" className="cre-gate absolute inset-0" style={{ ...CLIP, mixBlendMode: "plus-lighter" }}>
+      <div data-cre="crest" className="cre-gate cre-rise absolute inset-0" style={{ ...CLIP, mixBlendMode: "plus-lighter" }}>
         <div className="cre-crest absolute inset-0" style={sunriseMask(`${M14H3}/creative-crest.png`)}>
           <Full src={`${M14H3}/creative-highlights.png`} name="highlights" />
         </div>
       </div>
       {/* The ridge's glint, cloud edges, the small paintings' peaks. */}
-      <div data-cre="glints" className="cre-gate absolute inset-0" style={{ ...CLIP, mixBlendMode: "plus-lighter" }}>
+      <div data-cre="glints" className="cre-gate cre-rise absolute inset-0" style={{ ...CLIP, mixBlendMode: "plus-lighter" }}>
         <div
           className="cre-glints absolute"
           style={{ ...box(CRE_BOX), backgroundImage: `url(${M14H3}/creative-glints.png)`, backgroundSize: glint.size, backgroundPosition: glint.position, backgroundRepeat: "no-repeat" }}
         />
       </div>
+      </CreativeLift>
     </div>
   );
 }
@@ -243,13 +281,16 @@ function Station() {
  * Floor light following the strips' fronts (FLOOR_PARTS), over its standby.
  * `full`: each part is the full-frame image with its front as a placed mask,
  * so it draws pixel for pixel like the plain image it gives way to.
+ * M1.4J.3: `rise`, the part of it that belongs to the station; `soften`, how
+ * much weaker it is when the station is raised.
  */
-function FloorParts({ src, name, standby, full }: { src: string; name: string; standby: number; full?: boolean }) {
+function FloorParts({ src, name, standby, full, rise, soften = 0 }: { src: string; name: string; standby: number; full?: boolean; rise?: boolean; soften?: number }) {
+  const moves = rise ? "cre-rise " : "";
   return (
     <>
       {standby > 0 ? (
         // plus-lighter on the fading element itself (its opacity would isolate a blended child)
-        <div data-cre={`${name}-standby`} className="absolute inset-0" style={{ opacity: standby, mixBlendMode: "plus-lighter" }}>
+        <div data-cre={`${name}-standby`} className={`${moves}absolute inset-0`} style={{ opacity: standby, mixBlendMode: "plus-lighter" }}>
           <Full src={src} name={name} />
         </div>
       ) : null}
@@ -266,9 +307,10 @@ function FloorParts({ src, name, standby, full }: { src: string; name: string; s
               key={k}
               data-zone={ID}
               data-floor-part={k}
-              className="cre-floor absolute inset-0"
+              className={`cre-floor ${moves}absolute inset-0`}
               style={{
                 ["--cre-standby" as string]: standby,
+                ["--cre-soften" as string]: soften,
                 ...clipTo(p.box),
                 maskImage: mask,
                 WebkitMaskImage: mask,
@@ -290,8 +332,8 @@ function FloorParts({ src, name, standby, full }: { src: string; name: string; s
             key={k}
             data-zone={ID}
             data-floor-part={k}
-            className="cre-floor absolute overflow-hidden"
-            style={{ ...box(p.box), ["--cre-standby" as string]: standby, maskImage: mask, WebkitMaskImage: mask, mixBlendMode: "plus-lighter" }}
+            className={`cre-floor ${moves}absolute overflow-hidden`}
+            style={{ ...box(p.box), ["--cre-standby" as string]: standby, ["--cre-soften" as string]: soften, maskImage: mask, WebkitMaskImage: mask, mixBlendMode: "plus-lighter" }}
           >
             <Frame src={src} box={p.box} />
           </div>
@@ -309,14 +351,18 @@ function FloorParts({ src, name, standby, full }: { src: string; name: string; s
 /** Its floor light in this cycle's wrapper (station-cycle.ts). */
 export const CreativeFloor = () => (
   <div data-zone={ID} className="cre-cycle contents">
-    <Floor />
+    <CreativeLift>
+      <Floor />
+    </CreativeLift>
   </div>
 );
 
 function Floor() {
   return (
     <div aria-hidden="true" data-zone={ID} data-v2-floor="creative-floor" className="cre-seq pointer-events-none absolute inset-0">
-      <FloorParts src={`${M14H3}/creative-floor.png`} name="floor" standby={FLOOR_STANDBY} />
+      <FloorParts src={`${M14J3}/creative-floor-rest.png`} name="floor" standby={FLOOR_STANDBY} />
+      {/* M1.4J.3: the strip's end round the right corner, and what is left of the strips along the stone's outline. */}
+      <FloorParts src={`${M14J3}/creative-floor-edge.png`} name="floor-edge" standby={FLOOR_STANDBY} rise soften={END_SOFTEN} />
       <div className="cre-floor-top absolute inset-0" style={{ ...clipTo({ x: 26, y: 800, w: 550, h: 104 }), mixBlendMode: "plus-lighter" }}>
         <Full src={`${M14H3}/creative-floor-top.png`} name="floor-top" />
       </div>

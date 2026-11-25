@@ -1,0 +1,30 @@
+ M components/lab/CreativeV2.tsx
+ M components/lab/ExperienceV2.tsx
+ M components/lab/LabScene.tsx
+ M components/lab/SceneV2.tsx
+ M components/lab/scene-crops.ts
+ M docs/m1.4i2/crop-map.json
+ M package-lock.json
+ M scripts/m14i2-crop.py
+?? components/lab/CreativeLift.tsx
+?? components/lab/ExperienceLift.tsx
+?? docs/m1.4j3/
+?? docs/m1.4j4/
+?? docs/m1.4k/
+?? public/scene/v2/m14i2/m14j3-creative-books.png
+?? public/scene/v2/m14i2/m14j3-creative-fill-off.png
+?? public/scene/v2/m14i2/m14j3-creative-fill.png
+?? public/scene/v2/m14i2/m14j3-creative-floor-edge.png
+?? public/scene/v2/m14i2/m14j3-creative-floor-rest.png
+?? public/scene/v2/m14i2/m14j3-creative-light-edge.png
+?? public/scene/v2/m14i2/m14j3-creative-light-spill.png
+?? public/scene/v2/m14i2/m14j3-creative-steam.png
+?? public/scene/v2/m14i2/m14j4-experience-floor-edge.png
+?? public/scene/v2/m14i2/m14j4-experience-floor-lit-rest.png
+?? public/scene/v2/m14i2/m14j4-experience-floor-rest.png
+?? public/scene/v2/m14i2/m14j4-experience-light-edge.png
+?? public/scene/v2/m14i2/m14j4-experience-light-spill.png
+?? public/scene/v2/m14j3/
+?? public/scene/v2/m14j4/
+?? scripts/m14j3-creative.py
+?? scripts/m14j4-experience.py

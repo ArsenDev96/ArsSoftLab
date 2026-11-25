@@ -1,0 +1,1 @@
+a x1 engineering  runs 64 flagged 0 | within one frame of the arrival 0 | spark clock after hover max 17 | step 10.9 longest frame 84 | height at return max 12.133 at arrival max 0

@@ -2,6 +2,7 @@ import type { CSSProperties } from "react";
 import { SCENE, u, type SceneRect } from "@/lib/scene";
 import { EXP_BOX, EXP_CLOCK, EXP_GRID, EXP_STEPS } from "./experience-v2";
 import { PLATFORM_POWER, POWER_FRONT } from "./platform-power";
+import { ExperienceLift, M14J4 } from "./ExperienceLift";
 import { partFrame, PowerPart, powerCss } from "./PlatformPower";
 import { SceneImage } from "./SceneImage";
 import { cycleCss } from "./station-cycle";
@@ -34,6 +35,10 @@ import { cycleCss } from "./station-cycle";
  * selection or deep link is powered at once with no replay. Leaving: the added
  * light is gated off at once, the trail drains back to its start, the strips drain.
  * Reduced motion: a 150 ms cross-fade; nothing travels.
+ *
+ * M1.4J.4: it rises (ExperienceLift). Every layer of the station carries the same
+ * translation (.exp-rise) itself: a wrapper would isolate their blending. What
+ * the strips cast on the floor stays, under the station.
  */
 
 const M14H4 = "/scene/v2/m14h4";
@@ -44,6 +49,9 @@ const ON = `:is([data-lab-hover="${ID}"],[data-lab-selected="${ID}"])`;
 /** At rest the floor keeps this much of the ring and strip reflections, and of the mirrored landscape. */
 const FLOOR_STANDBY = 0.2;
 const FLOOR_TOP_STANDBY = 0.6;
+
+/** M1.4J.4: raised, the strips' spill on the floor is this much weaker. */
+const SPILL_SOFTEN = 0.25;
 
 /** Timing (ms): the clock after the energy's arrival, the strips' floor light's hand-over, and leaving. */
 export const EXP_TIMING = {
@@ -71,6 +79,14 @@ const box = (r: SceneRect): CSSProperties => ({ left: u(r.x), top: u(r.y), width
 /** Moving layers repaint only their own box (on the blended element itself, so it still adds to the room). */
 const clipTo = (r: SceneRect): CSSProperties => ({ clipPath: `inset(${u(r.y)} ${u(SCENE.width - r.x - r.w)} ${u(SCENE.height - r.y - r.h)} ${u(r.x)})` });
 const CLIP = clipTo(EXP_BOX);
+/**
+ * M1.4J.4: 0 on the floor, 1 off it, nothing between: there the approved light
+ * gives way to its two parts. It is moved out of the frame, not faded: its
+ * opacity is the sequence's, and a group around it would resample it.
+ */
+const LEFT_FLOOR = "min(1, var(--xl) * 100000)";
+/** The strips' light on the floor. */
+const SPILL_CLIP = clipTo({ x: 1032, y: 655, w: 640, h: 257 });
 
 const prop = (name: string) => `@property ${name}{syntax:"<number>";inherits:true;initial-value:0}`;
 const floorSel = (k: number) => `.exp-floor[data-floor-part="${k}"]`;
@@ -97,7 +113,7 @@ const EXP_CSS =
   `[data-exp-swap="stable"]{opacity:0;transition:opacity 80ms linear}[data-exp-swap="anim"]{opacity:1;transition:opacity 80ms linear}` +
   `${ON} [data-exp-swap="stable"]{opacity:1;transition:opacity ${T.settleMs}ms linear calc(var(--arrive-now) + ${T.stableDelay - T.settleMs}ms)}` +
   `${ON} [data-exp-swap="anim"]{opacity:0;transition:opacity ${T.settleMs}ms linear calc(var(--arrive-now) + ${T.stableDelay - T.settleMs}ms)}` +
-  `.exp-floor{opacity:calc(1 - var(--exp-standby, 0))}` +
+  `.exp-floor{opacity:calc((1 - var(--exp-standby, 0)) * (1 - var(--exp-soften, 0) * var(--xl)))}` +
   FLOOR_PARTS.map(
     (p, k) =>
       `${floorSel(k)}{--pw:0;transition:--pw ${p.off.dur}ms linear ${p.off.delay}ms}` +
@@ -114,14 +130,14 @@ const EXP_CSS =
   `.exp-floor{mask-image:none!important;-webkit-mask-image:none!important;opacity:0!important;transition:opacity 150ms ease!important}` +
   `${ON} .exp-floor{opacity:calc(1 - var(--exp-standby, 0))!important}}`;
 
-function Full({ src, name, add, swap }: { src: string; name: string; add?: boolean; swap?: "stable" }) {
+function Full({ src, name, add, swap, className = "", style }: { src: string; name: string; add?: boolean; swap?: "stable"; className?: string; style?: CSSProperties }) {
   return (
     <SceneImage
       src={src}
       data-exp={name}
       data-exp-swap={swap}
-      className="pointer-events-none absolute inset-0 h-full w-full max-w-none select-none"
-      style={add ? { mixBlendMode: "plus-lighter" } : undefined}
+      className={`pointer-events-none absolute inset-0 h-full w-full max-w-none select-none ${className}`}
+      style={add || style ? { mixBlendMode: add ? "plus-lighter" : undefined, ...style } : undefined}
     />
   );
 }
@@ -170,7 +186,7 @@ function Pulse({ index }: { index: number }) {
       data-zone={ID}
       data-power={ID}
       data-part={index}
-      className="lab-power exp-pulse pointer-events-none absolute overflow-hidden"
+      className="lab-power exp-pulse exp-rise pointer-events-none absolute overflow-hidden"
       style={{ ...box(p.box), clipPath: clip, maskImage: mask, WebkitMaskImage: mask, mixBlendMode: "plus-lighter" }}
     >
       <Frame src={`${M14H4}/experience-strip-light.png`} box={p.box} />
@@ -193,16 +209,28 @@ function Station() {
   return (
     <div aria-hidden="true" data-zone={ID} data-v2-station={ID} data-v2-station-source="approved" className="exp-v2 exp-seq pointer-events-none absolute inset-0">
       <style>{EXP_CSS}</style>
-      {/* The recovered station itself (M1.4F's file), always. */}
-      <Full src={`${M14F}/experience.png`} name="station" />
-      {/* The strips' light on the floor (M1.4F's experience-light), behind the fronts, then whole. */}
-      <div data-exp-swap="anim" className="absolute inset-0" style={{ ...clipTo({ x: 1032, y: 655, w: 640, h: 257 }), mixBlendMode: "plus-lighter" }}>
-        <FloorParts src={`${M14F}/experience-light.png`} name="strip-floor" standby={0} full />
+      <ExperienceLift>
+      {/* M1.4J.4: what the strips throw on the floor stays, under the station (M1.4F's experience-light but for its edge). */}
+      <div data-exp-swap="anim" className="absolute inset-0" style={{ ...SPILL_CLIP, mixBlendMode: "plus-lighter" }}>
+        <FloorParts src={`${M14J4}/experience-light-spill.png`} name="strip-spill" standby={0} full soften={SPILL_SOFTEN} />
       </div>
-      <Full src={`${M14F}/experience-light.png`} name="light-stable" add swap="stable" />
+      <div className="exp-aloft absolute inset-0" style={{ ...SPILL_CLIP, opacity: `calc(${LEFT_FLOOR} * (1 - ${SPILL_SOFTEN} * var(--xl)))`, mixBlendMode: "plus-lighter" }}>
+        <Full src={`${M14J4}/experience-light-spill.png`} name="light-stable-spill" add swap="stable" />
+      </div>
+      {/* The recovered station itself (M1.4F's file), always. */}
+      <Full src={`${M14F}/experience.png`} name="station" className="exp-rise" />
+      {/* Its edge, on the strips themselves, rises with them: behind the fronts, then whole. On the floor, the approved
+          light itself (M1.4F's experience-light). */}
+      <div data-exp-swap="anim" className="absolute inset-0" style={{ ...SPILL_CLIP, mixBlendMode: "plus-lighter" }}>
+        <FloorParts src={`${M14J4}/experience-light-edge.png`} name="strip-edge" standby={0} full rise />
+      </div>
+      <Full src={`${M14F}/experience-light.png`} name="light-stable" add swap="stable" style={{ translate: `calc(var(--u) * ${-2 * SCENE.width} * ${LEFT_FLOOR})` }} />
+      <div className="exp-rise exp-aloft absolute inset-0" style={{ ...SPILL_CLIP, opacity: LEFT_FLOOR, mixBlendMode: "plus-lighter" }}>
+        <Full src={`${M14J4}/experience-light-edge.png`} name="light-stable-edge" add swap="stable" />
+      </div>
       {/* The strips: unpowered ahead of each front (PowerPart, the established fronts), a pulse riding it. */}
       {STRIP_PARTS.map((k) => (
-        <PowerPart key={`off-${k}`} id={ID} index={k} side="dim">
+        <PowerPart key={`off-${k}`} id={ID} index={k} side="dim" className="exp-rise">
           <Frame src={`${M14H4}/experience-strip-off.png`} box={PLATFORM_POWER[ID].parts[k].box} />
         </PowerPart>
       ))}
@@ -210,16 +238,17 @@ function Station() {
         <Pulse key={`pulse-${k}`} index={k} />
       ))}
       {/* Standby: the dim route and the terrain without its light, removed along the route by the journey. */}
-      <div data-exp="standby" className="absolute inset-0" style={{ ...revealMask(), ...CLIP }}>
+      <div data-exp="standby" className="exp-rise absolute inset-0" style={{ ...revealMask(), ...CLIP }}>
         <Full src={`${M14H4}/experience-standby.png`} name="standby-image" />
       </div>
       {/* The light that travels: the start, the head, the terrain and flags it passes, the destination. */}
-      <div data-exp="light" className="exp-gate absolute inset-0" style={{ ...CLIP, mixBlendMode: "plus-lighter" }}>
+      <div data-exp="light" className="exp-gate exp-rise absolute inset-0" style={{ ...CLIP, mixBlendMode: "plus-lighter" }}>
         <div
           className="exp-light absolute"
           style={{ ...box(EXP_BOX), backgroundImage: `url(${M14H4}/experience-light.png)`, backgroundSize: light.size, backgroundPosition: light.position, backgroundRepeat: "no-repeat" }}
         />
       </div>
+      </ExperienceLift>
     </div>
   );
 }
@@ -229,8 +258,11 @@ function Station() {
  * `full`: each part is the full-frame image with its front as a placed mask,
  * so it draws pixel for pixel like the plain image it gives way to.
  * `lit`: what the fronts add, where it isn't the standby's own image.
+ * M1.4J.4: `rise`, the part of it that belongs to the station; `soften`, how
+ * much weaker it is when the station is raised.
  */
-function FloorParts({ src, lit = src, name, standby, full }: { src: string; lit?: string; name: string; standby: number; full?: boolean }) {
+function FloorParts({ src, lit = src, name, standby, full, rise, soften = 0 }: { src: string; lit?: string; name: string; standby: number; full?: boolean; rise?: boolean; soften?: number }) {
+  const moves = rise ? "exp-rise " : "";
   return (
     <>
       {standby > 0 ? (
@@ -260,8 +292,8 @@ function FloorParts({ src, lit = src, name, standby, full }: { src: string; lit?
             key={k}
             data-zone={ID}
             data-floor-part={k}
-            className={full ? "exp-floor absolute inset-0" : "exp-floor absolute overflow-hidden"}
-            style={{ ["--exp-standby" as string]: standby, ...placed, maskImage: mask, WebkitMaskImage: mask, mixBlendMode: "plus-lighter" }}
+            className={full ? `exp-floor ${moves}absolute inset-0` : `exp-floor ${moves}absolute overflow-hidden`}
+            style={{ ["--exp-standby" as string]: standby, ["--exp-soften" as string]: soften, ...placed, maskImage: mask, WebkitMaskImage: mask, mixBlendMode: "plus-lighter" }}
           >
             {full ? <Full src={lit} name={`${name}-${k}`} /> : <Frame src={lit} box={p.box} />}
           </div>
@@ -279,7 +311,9 @@ function FloorParts({ src, lit = src, name, standby, full }: { src: string; lit?
 /** Its floor light in this cycle's wrapper (station-cycle.ts). */
 export const ExperienceFloor = () => (
   <div data-zone={ID} className="exp-cycle contents">
-    <Floor />
+    <ExperienceLift>
+      <Floor />
+    </ExperienceLift>
   </div>
 );
 
@@ -287,7 +321,9 @@ function Floor() {
   return (
     <div aria-hidden="true" data-zone={ID} data-v2-floor="experience-floor" className="exp-seq pointer-events-none absolute inset-0">
       {/* The fronts' image holds back the bright floor disc left of the platform (the standby's is unchanged). */}
-      <FloorParts src={`${M14H4}/experience-floor.png`} lit={`${M14H4}/experience-floor-lit.png`} name="floor" standby={FLOOR_STANDBY} />
+      <FloorParts src={`${M14J4}/experience-floor-rest.png`} lit={`${M14J4}/experience-floor-lit-rest.png`} name="floor" standby={FLOOR_STANDBY} />
+      {/* M1.4J.4: what is left of the strips along the platform's outline rises with it. */}
+      <FloorParts src={`${M14J4}/experience-floor-edge.png`} name="floor-edge" standby={FLOOR_STANDBY} rise />
       <div className="exp-floor-top absolute inset-0" style={{ ...clipTo({ x: 1032, y: 816, w: 640, h: 96 }), mixBlendMode: "plus-lighter" }}>
         <Full src={`${M14H4}/experience-floor-top.png`} name="floor-top" />
       </div>

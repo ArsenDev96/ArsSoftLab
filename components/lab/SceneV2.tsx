@@ -2,11 +2,13 @@ import type { CSSProperties } from "react";
 import { SCENE, u } from "@/lib/scene";
 import { ArcadeScreen } from "./ArcadeScreen";
 import { BOOST_STROKES } from "./ChargeLine";
+import { CRE_CONTACT, CRE_LIFT_CSS, CreativeFront, CreativeGround } from "./CreativeLift";
 import { CreativeFloor, CreativeV2 } from "./CreativeV2";
 import { EDU_CONTACT, EDU_LIFT_CSS, EducationalGround } from "./EducationalLift";
 import { EducationalFloor, EducationalV2 } from "./EducationalV2";
 import { ENG_CONTACT, ENG_LIFT_CSS, EngineeringGround, EngineeringLift } from "./EngineeringLift";
 import { EngineeringFloor, EngineeringV2 } from "./EngineeringV2";
+import { EXP_CONTACT, EXP_LIFT_CSS, ExperienceGround } from "./ExperienceLift";
 import { ExperienceFloor, ExperienceV2 } from "./ExperienceV2";
 import { SceneImage } from "./SceneImage";
 import { contactWithout } from "./station-lift";
@@ -88,8 +90,8 @@ const M14G1 = "/scene/v2/m14g1";
  */
 const M14H4 = "/scene/v2/m14h4";
 const FLOOR_TONE = "rgb(236 222 212)";
-/** M1.4J: M1.4G's contact shadows without the lifted stations' own (EngineeringGround, EducationalGround). */
-const CONTACT_OTHERS = contactWithout(ENG_CONTACT, EDU_CONTACT);
+/** M1.4J: M1.4G's contact shadows without the lifted stations' own (EngineeringGround, EducationalGround, CreativeGround, ExperienceGround). */
+const CONTACT_OTHERS = contactWithout(ENG_CONTACT, EDU_CONTACT, CRE_CONTACT, EXP_CONTACT);
 
 function FloorLayer({ src, name, blend, clip }: { src: string; name: string; blend?: CSSProperties["mixBlendMode"]; clip?: CSSProperties }) {
   return (
@@ -187,7 +189,6 @@ const HUB = [
   { src: `${M14E}/hub-light.png`, light: true },
 ];
 const FOREGROUND = [
-  { id: "steam", src: `${M14E}/fg-steam.png`, light: true },
   { id: "table", src: `${M14E}/fg-table.png`, light: false },
   { id: "plant", src: `${M14E}/fg-plant.png`, light: false },
 ];
@@ -296,7 +297,7 @@ export function SceneV2({ floorTone = false }: { floorTone?: boolean } = {}) {
       {/* M1.4G: the floor's tone (optional), rings and reflections, contact shadows. The hub carries its approved contact. */}
       {floorTone && <FloorTone />}
       <FloorLayer src={`${M14H4}/floor-light.png`} name="light" blend="plus-lighter" />
-      <style>{ENG_LIFT_CSS + EDU_LIFT_CSS}</style>
+      <style>{ENG_LIFT_CSS + EDU_LIFT_CSS + CRE_LIFT_CSS + EXP_LIFT_CSS}</style>
       <EngineeringLift>
         <EngineeringFloor />
       </EngineeringLift>
@@ -310,6 +311,10 @@ export function SceneV2({ floorTone = false }: { floorTone?: boolean } = {}) {
       <EngineeringGround line={BOOST_STROKES} />
       {/* M1.4J.2: Educational's grounding, which answers its lift. */}
       <EducationalGround />
+      {/* M1.4J.3: Creative Studio's grounding, which answers its lift. */}
+      <CreativeGround />
+      {/* M1.4J.4: Experience's grounding, which answers its lift. */}
+      <ExperienceGround />
       {/* M1.4E.1: Playground's own height-responsive grounding. */}
       <PlaygroundGround />
       {V2_OBJECTS.map((o) =>
@@ -358,6 +363,8 @@ export function SceneV2({ floorTone = false }: { floorTone?: boolean } = {}) {
       )}
       {/* M1.4E: foreground details from the approved artwork, in front of every station; they never move. */}
       <div className="pointer-events-none absolute inset-0" data-v2-foreground="">
+        {/* M1.4J.3: the steam and the books stand before Creative Studio's stone, which holds some of them. */}
+        <CreativeFront className="pointer-events-none absolute inset-0 h-full w-full max-w-none select-none" />
         {FOREGROUND.map((l) => (
           <Recovered key={l.id} src={l.src} light={l.light} name={l.id} />
         ))}

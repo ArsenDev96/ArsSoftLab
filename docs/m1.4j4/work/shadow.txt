@@ -1,0 +1,9 @@
+gap, left rim: no shadow 84,7.6 | contact only 84,7.6 | both 64.4,7.5  => 23% darker
+gap, front strip: no shadow 83.3,26.4 | contact only 83.2,26.4 | both 66.2,22.8  => 21% darker
+gap, middle: no shadow 42.4,5.1 | contact only 42.4,5.1 | both 31.4,3.5  => 26% darker
+gap, right strip: no shadow 44.1,8.6 | contact only 44.1,8.6 | both 33.3,6.4  => 24% darker
+gap, right corner: no shadow 49.4,16.2 | contact only 49.4,16.2 | both 40.1,16.8  => 19% darker
+at the old contour: no shadow 34.8,3.8 | contact only 33,4.7 | both 25.5,4.2  => 27% darker
+just outside: no shadow 34.9,5.3 | contact only 33.5,5.3 | both 28.7,5.4  => 18% darker
+outside, right: no shadow 39.2,7.7 | contact only 38.4,8 | both 35.2,8.7  => 10% darker
+floor far: no shadow 35.9,6.4 | contact only 35.9,6.4 | both 35.9,6.4  => 0% darker

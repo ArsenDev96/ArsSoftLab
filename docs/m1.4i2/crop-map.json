@@ -1154,6 +1154,409 @@
    "lossless": true
   },
   {
+   "source": "/scene/v2/m14j3/creative-fill.png",
+   "crop": "/scene/v2/m14i2/m14j3-creative-fill.png",
+   "canvas": [
+    1672,
+    941
+   ],
+   "rect": {
+    "x": 95,
+    "y": 709,
+    "w": 236,
+    "h": 72
+   },
+   "visible_bbox": {
+    "x": 97,
+    "y": 711,
+    "w": 232,
+    "h": 68
+   },
+   "alpha_coverage_pct": 0.411,
+   "visible_px": 6464,
+   "decoded_mb": [
+    6.002,
+    0.065
+   ],
+   "bytes": [
+    20263,
+    11685
+   ],
+   "lossless": true
+  },
+  {
+   "source": "/scene/v2/m14j3/creative-fill-off.png",
+   "crop": "/scene/v2/m14i2/m14j3-creative-fill-off.png",
+   "canvas": [
+    1672,
+    941
+   ],
+   "rect": {
+    "x": 172,
+    "y": 765,
+    "w": 15,
+    "h": 16
+   },
+   "visible_bbox": {
+    "x": 174,
+    "y": 767,
+    "w": 11,
+    "h": 12
+   },
+   "alpha_coverage_pct": 0.008,
+   "visible_px": 130,
+   "decoded_mb": [
+    6.002,
+    0.001
+   ],
+   "bytes": [
+    6513,
+    326
+   ],
+   "lossless": true
+  },
+  {
+   "source": "/scene/v2/m14j3/creative-books.png",
+   "crop": "/scene/v2/m14i2/m14j3-creative-books.png",
+   "canvas": [
+    1672,
+    941
+   ],
+   "rect": {
+    "x": 95,
+    "y": 730,
+    "w": 91,
+    "h": 51
+   },
+   "visible_bbox": {
+    "x": 97,
+    "y": 732,
+    "w": 87,
+    "h": 47
+   },
+   "alpha_coverage_pct": 0.039,
+   "visible_px": 613,
+   "decoded_mb": [
+    6.002,
+    0.018
+   ],
+   "bytes": [
+    8050,
+    1686
+   ],
+   "lossless": true
+  },
+  {
+   "source": "/scene/v2/m14j3/creative-steam.png",
+   "crop": "/scene/v2/m14i2/m14j3-creative-steam.png",
+   "canvas": [
+    1672,
+    941
+   ],
+   "rect": {
+    "x": 242,
+    "y": 718,
+    "w": 88,
+    "h": 78
+   },
+   "visible_bbox": {
+    "x": 244,
+    "y": 720,
+    "w": 84,
+    "h": 74
+   },
+   "alpha_coverage_pct": 0.316,
+   "visible_px": 4968,
+   "decoded_mb": [
+    6.002,
+    0.026
+   ],
+   "bytes": [
+    15721,
+    7453
+   ],
+   "lossless": true
+  },
+  {
+   "source": "/scene/v2/m14j3/creative-light-edge.png",
+   "crop": "/scene/v2/m14i2/m14j3-creative-light-edge.png",
+   "canvas": [
+    1672,
+    941
+   ],
+   "rect": {
+    "x": 172,
+    "y": 733,
+    "w": 341,
+    "h": 56
+   },
+   "visible_bbox": {
+    "x": 174,
+    "y": 735,
+    "w": 337,
+    "h": 52
+   },
+   "alpha_coverage_pct": 0.108,
+   "visible_px": 1695,
+   "decoded_mb": [
+    6.002,
+    0.073
+   ],
+   "bytes": [
+    11440,
+    4772
+   ],
+   "lossless": true
+  },
+  {
+   "source": "/scene/v2/m14j3/creative-light-spill.png",
+   "crop": "/scene/v2/m14i2/m14j3-creative-light-spill.png",
+   "canvas": [
+    1672,
+    941
+   ],
+   "rect": {
+    "x": 183,
+    "y": 733,
+    "w": 339,
+    "h": 69
+   },
+   "visible_bbox": {
+    "x": 185,
+    "y": 735,
+    "w": 335,
+    "h": 65
+   },
+   "alpha_coverage_pct": 0.269,
+   "visible_px": 4237,
+   "decoded_mb": [
+    6.002,
+    0.089
+   ],
+   "bytes": [
+    19122,
+    11157
+   ],
+   "lossless": true
+  },
+  {
+   "source": "/scene/v2/m14j3/creative-floor-edge.png",
+   "crop": "/scene/v2/m14i2/m14j3-creative-floor-edge.png",
+   "canvas": [
+    1672,
+    941
+   ],
+   "rect": {
+    "x": 175,
+    "y": 720,
+    "w": 345,
+    "h": 65
+   },
+   "visible_bbox": {
+    "x": 177,
+    "y": 722,
+    "w": 341,
+    "h": 61
+   },
+   "alpha_coverage_pct": 0.041,
+   "visible_px": 650,
+   "decoded_mb": [
+    6.002,
+    0.086
+   ],
+   "bytes": [
+    8025,
+    1904
+   ],
+   "lossless": true
+  },
+  {
+   "source": "/scene/v2/m14j3/creative-floor-rest.png",
+   "crop": "/scene/v2/m14i2/m14j3-creative-floor-rest.png",
+   "canvas": [
+    1672,
+    941
+   ],
+   "rect": {
+    "x": 49,
+    "y": 669,
+    "w": 507,
+    "h": 147
+   },
+   "visible_bbox": {
+    "x": 51,
+    "y": 671,
+    "w": 503,
+    "h": 143
+   },
+   "alpha_coverage_pct": 0.432,
+   "visible_px": 6804,
+   "decoded_mb": [
+    6.002,
+    0.284
+   ],
+   "bytes": [
+    20698,
+    13180
+   ],
+   "lossless": true
+  },
+  {
+   "source": "/scene/v2/m14j4/experience-light-edge.png",
+   "crop": "/scene/v2/m14i2/m14j4-experience-light-edge.png",
+   "canvas": [
+    1672,
+    941
+   ],
+   "rect": {
+    "x": 1210,
+    "y": 746,
+    "w": 438,
+    "h": 47
+   },
+   "visible_bbox": {
+    "x": 1212,
+    "y": 748,
+    "w": 434,
+    "h": 43
+   },
+   "alpha_coverage_pct": 0.131,
+   "visible_px": 2055,
+   "decoded_mb": [
+    6.002,
+    0.079
+   ],
+   "bytes": [
+    12395,
+    5536
+   ],
+   "lossless": true
+  },
+  {
+   "source": "/scene/v2/m14j4/experience-light-spill.png",
+   "crop": "/scene/v2/m14i2/m14j4-experience-light-spill.png",
+   "canvas": [
+    1672,
+    941
+   ],
+   "rect": {
+    "x": 1191,
+    "y": 713,
+    "w": 455,
+    "h": 89
+   },
+   "visible_bbox": {
+    "x": 1193,
+    "y": 715,
+    "w": 451,
+    "h": 85
+   },
+   "alpha_coverage_pct": 0.291,
+   "visible_px": 4585,
+   "decoded_mb": [
+    6.002,
+    0.154
+   ],
+   "bytes": [
+    19949,
+    12042
+   ],
+   "lossless": true
+  },
+  {
+   "source": "/scene/v2/m14j4/experience-floor-edge.png",
+   "crop": "/scene/v2/m14i2/m14j4-experience-floor-edge.png",
+   "canvas": [
+    1672,
+    941
+   ],
+   "rect": {
+    "x": 1211,
+    "y": 739,
+    "w": 457,
+    "h": 50
+   },
+   "visible_bbox": {
+    "x": 1213,
+    "y": 741,
+    "w": 453,
+    "h": 46
+   },
+   "alpha_coverage_pct": 0.012,
+   "visible_px": 181,
+   "decoded_mb": [
+    6.002,
+    0.087
+   ],
+   "bytes": [
+    7233,
+    1208
+   ],
+   "lossless": true
+  },
+  {
+   "source": "/scene/v2/m14j4/experience-floor-rest.png",
+   "crop": "/scene/v2/m14i2/m14j4-experience-floor-rest.png",
+   "canvas": [
+    1672,
+    941
+   ],
+   "rect": {
+    "x": 1050,
+    "y": 674,
+    "w": 622,
+    "h": 157
+   },
+   "visible_bbox": {
+    "x": 1052,
+    "y": 676,
+    "w": 620,
+    "h": 153
+   },
+   "alpha_coverage_pct": 0.945,
+   "visible_px": 14872,
+   "decoded_mb": [
+    6.002,
+    0.373
+   ],
+   "bytes": [
+    34051,
+    25074
+   ],
+   "lossless": true
+  },
+  {
+   "source": "/scene/v2/m14j4/experience-floor-lit-rest.png",
+   "crop": "/scene/v2/m14i2/m14j4-experience-floor-lit-rest.png",
+   "canvas": [
+    1672,
+    941
+   ],
+   "rect": {
+    "x": 1050,
+    "y": 674,
+    "w": 622,
+    "h": 157
+   },
+   "visible_bbox": {
+    "x": 1052,
+    "y": 676,
+    "w": 620,
+    "h": 153
+   },
+   "alpha_coverage_pct": 0.909,
+   "visible_px": 14305,
+   "decoded_mb": [
+    6.002,
+    0.373
+   ],
+   "bytes": [
+    32598,
+    23801
+   ],
+   "lossless": true
+  },
+  {
    "source": "/scene/v2/m14h4/experience-strip-off.png",
    "crop": "/scene/v2/m14i2/m14h4-experience-strip-off.png",
    "canvas": [

@@ -1,0 +1,4 @@
+homepage, 8 fresh loads each, alternating, against checkpoint run 0 (max difference of 255, px above 2):
+checkpoint  [(0, 0), (0, 0), (0, 0), (0, 0), (37, 47763), (0, 0), (0, 0), (0, 0)]
+now         [(0, 0), (0, 0), (0, 0), (1, 0), (1, 0), (0, 0), (0, 0), (0, 0)]
+The second plate variant (37, 47763 px) is the checkpoint's own (M1.4J.3 found it after dev-server recompiles); others.txt caught it once for "now".

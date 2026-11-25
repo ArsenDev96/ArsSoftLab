@@ -72,6 +72,20 @@ SOURCES = [
     "/scene/v2/m14h3/creative-highlights.png",
     "/scene/v2/m14h3/creative-floor.png",
     "/scene/v2/m14h3/creative-floor-top.png",
+    # Creative Studio's lift (M1.4J.3)
+    "/scene/v2/m14j3/creative-fill.png",
+    "/scene/v2/m14j3/creative-fill-off.png",
+    "/scene/v2/m14j3/creative-books.png",
+    "/scene/v2/m14j3/creative-steam.png",
+    "/scene/v2/m14j3/creative-light-edge.png",
+    "/scene/v2/m14j3/creative-light-spill.png",
+    "/scene/v2/m14j3/creative-floor-edge.png",
+    "/scene/v2/m14j3/creative-floor-rest.png",
+    "/scene/v2/m14j4/experience-light-edge.png",
+    "/scene/v2/m14j4/experience-light-spill.png",
+    "/scene/v2/m14j4/experience-floor-edge.png",
+    "/scene/v2/m14j4/experience-floor-rest.png",
+    "/scene/v2/m14j4/experience-floor-lit-rest.png",
     # Experience
     "/scene/v2/m14h4/experience-strip-off.png",
     "/scene/v2/m14h4/experience-strip-light.png",
@@ -106,7 +120,8 @@ def main(check):
         a = np.array(im)
         bbox, (x0, y0, x1, y1) = rect(a[..., 3])
         out = name(src)
-        if not check:
+        # A crop that already holds these pixels is left as it is (another Pillow would only compress it differently).
+        if not check and not (os.path.exists(disk(out)) and np.array_equal(np.array(Image.open(disk(out))), a[y0:y1, x0:x1])):
             buf = io.BytesIO()
             Image.fromarray(a[y0:y1, x0:x1]).save(buf, "PNG", optimize=True)
             with open(disk(out), "wb") as f:

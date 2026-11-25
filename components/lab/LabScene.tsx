@@ -1,9 +1,11 @@
 import Image from "next/image";
 import { SCENE } from "@/lib/scene";
 import { ChargeLines } from "./ChargeLine";
+import { CREATIVE_HOTSPOT_V2 } from "./CreativeLift";
 import { EDUCATIONAL_HOTSPOT_V2 } from "./EducationalLift";
 import { ENGINEERING_HOTSPOT_V2 } from "./EngineeringLift";
 import { EnergySurge } from "./EnergySurge";
+import { EXPERIENCE_HOTSPOT_V2 } from "./ExperienceLift";
 import { surgeStations } from "./scene-fx";
 import { hasStationLayer } from "./scene-layout";
 import { StationActivation } from "./StationActivation";
@@ -149,8 +151,8 @@ function LabSceneV2({ floorTone }: { floorTone: boolean }) {
           {/* M1.4E.3: no floating gamepad over the v2 cabinet's marquee. */}
           {/* M1.4I.1C: Playground's target includes the v2 cabinet's sign. */}
           {/* M1.4I.1E: hover holds between platform and label. Engineering's label stays where it is. */}
-          {/* M1.4J: Engineering's and Educational's targets follow their lifts. */}
-          <LabStations hideIcons={["playground"]} hotspots={{ playground: PLAYGROUND_HOTSPOT_V2, engineering: ENGINEERING_HOTSPOT_V2, educational: EDUCATIONAL_HOTSPOT_V2 }} bridges={STATION_BRIDGES_V2} stillLabels={["engineering"]} />
+          {/* M1.4J: Engineering's, Educational's, Creative Studio's and Experience's targets follow their lifts. */}
+          <LabStations hideIcons={["playground"]} hotspots={{ playground: PLAYGROUND_HOTSPOT_V2, engineering: ENGINEERING_HOTSPOT_V2, educational: EDUCATIONAL_HOTSPOT_V2, creative: CREATIVE_HOTSPOT_V2, experience: EXPERIENCE_HOTSPOT_V2 }} bridges={STATION_BRIDGES_V2} stillLabels={["engineering"]} />
         </SceneLayer>
       </LabCamera>
     </div>

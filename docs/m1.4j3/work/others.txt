@@ -1,0 +1,51 @@
+﻿educational--200.png       now vs checkpoint (1, 0, None) | noise of the checkpoint (2, 0)
+educational-150.png        now vs checkpoint (1, 0, None) | noise of the checkpoint (2, 0)
+educational-250.png        now vs checkpoint (1, 0, None) | noise of the checkpoint (2, 0)
+educational-350.png        now vs checkpoint (1, 0, None) | noise of the checkpoint (2, 0)
+educational-500.png        now vs checkpoint (1, 0, None) | noise of the checkpoint (2, 0)
+educational-60.png         now vs checkpoint (1, 0, None) | noise of the checkpoint (2, 0)
+educational-700.png        now vs checkpoint (1, 0, None) | noise of the checkpoint (2, 0)
+educational-powered.png    now vs checkpoint (1, 0, None) | noise of the checkpoint (2, 0)
+educational-reduced.png    now vs checkpoint (1, 0, None) | noise of the checkpoint (1, 0)
+engineering--200.png       now vs checkpoint (1, 0, None) | noise of the checkpoint (1, 0)
+engineering-150.png        now vs checkpoint (1, 0, None) | noise of the checkpoint (1, 0)
+engineering-250.png        now vs checkpoint (1, 0, None) | noise of the checkpoint (1, 0)
+engineering-350.png        now vs checkpoint (1, 0, None) | noise of the checkpoint (1, 0)
+engineering-500.png        now vs checkpoint (1, 0, None) | noise of the checkpoint (1, 0)
+engineering-60.png         now vs checkpoint (1, 0, None) | noise of the checkpoint (1, 0)
+engineering-700.png        now vs checkpoint (1, 0, None) | noise of the checkpoint (1, 0)
+engineering-powered.png    now vs checkpoint (1, 0, None) | noise of the checkpoint (1, 0)
+engineering-reduced.png    now vs checkpoint (1, 0, None) | noise of the checkpoint (1, 0)
+experience--200.png        now vs checkpoint (1, 0, None) | noise of the checkpoint (0, 0)
+experience-150.png         now vs checkpoint (1, 0, None) | noise of the checkpoint (0, 0)
+experience-250.png         now vs checkpoint (1, 0, None) | noise of the checkpoint (0, 0)
+experience-350.png         now vs checkpoint (1, 0, None) | noise of the checkpoint (0, 0)
+experience-500.png         now vs checkpoint (1, 0, None) | noise of the checkpoint (0, 0)
+experience-60.png          now vs checkpoint (1, 0, None) | noise of the checkpoint (0, 0)
+experience-700.png         now vs checkpoint (1, 0, None) | noise of the checkpoint (0, 0)
+experience-powered.png     now vs checkpoint (1, 0, None) | noise of the checkpoint (0, 0)
+experience-reduced.png     now vs checkpoint (1, 0, None) | noise of the checkpoint (0, 0)
+home-creative.png          now vs checkpoint (37, 47226, (0, 0, 1647, 927)) | noise of the checkpoint (0, 0)
+home.png                   now vs checkpoint (37, 47763, (0, 0, 1647, 927)) | noise of the checkpoint (0, 0)
+idle-1024.png              now vs checkpoint (1, 0, None) | noise of the checkpoint (1, 0)
+idle-1366.png              now vs checkpoint (1, 0, None) | noise of the checkpoint (0, 0)
+idle-1648-tone.png         now vs checkpoint (2, 0, None) | noise of the checkpoint (1, 0)
+idle-1648.png              now vs checkpoint (1, 0, None) | noise of the checkpoint (1, 0)
+idle-1920.png              now vs checkpoint (1, 0, None) | noise of the checkpoint (1, 0)
+playground--200.png        now vs checkpoint (1, 0, None) | noise of the checkpoint (0, 0)
+playground-150.png         now vs checkpoint (1, 0, None) | noise of the checkpoint (0, 0)
+playground-250.png         now vs checkpoint (1, 0, None) | noise of the checkpoint (0, 0)
+playground-350.png         now vs checkpoint (1, 0, None) | noise of the checkpoint (0, 0)
+playground-500.png         now vs checkpoint (1, 0, None) | noise of the checkpoint (0, 0)
+playground-60.png          now vs checkpoint (1, 0, None) | noise of the checkpoint (0, 0)
+playground-700.png         now vs checkpoint (1, 0, None) | noise of the checkpoint (0, 0)
+playground-powered.png     now vs checkpoint (1, 0, None) | noise of the checkpoint (0, 0)
+hit map rest 0 {} | noise 0
+hit map engineering 0 {} | noise 0
+hit map educational 0 {} | noise 0
+hit map playground 0 {} | noise 0
+hit map creative 737 {'.>c': 306, '1>c': 431} | noise 0
+hit map experience 0 {} | noise 0
+hit map home 0 {} | noise 0
+hit map homeCre 0 {} | noise 0
+focus order same True 38 | home markup same True | home /scene/v2 requests 0 0 | errors []

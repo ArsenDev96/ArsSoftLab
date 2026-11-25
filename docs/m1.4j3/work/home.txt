@@ -1,0 +1,4 @@
+homepage, 8 fresh loads each, alternating, against checkpoint run 0 (max difference, px above 2):
+checkpoint  [(0, 0), (0, 0), (0, 0), (0, 0), (0, 0), (1, 0), (0, 0), (0, 0)]
+now         [(1, 0), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0)]
+checkpoint, recompiled before loads 0, 2, 4: [(0, 0), (37, 47763), (0, 0), (1, 0), (0, 0), (1, 0)]

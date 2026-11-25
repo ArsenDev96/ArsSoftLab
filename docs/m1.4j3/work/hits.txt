@@ -1,0 +1,12 @@
+﻿still on the hotspot: 51, flagged 0
+Wallpapers: outline 212 px, tested 71, lost 0 []
+title: outline 354 px, tested 71, lost 0 []
+clicks: 32, failed 0
+   ["raised canvas top, hover held","hotspot creative","-,creative"]
+   ["raised canvas top, click","?station=creative"]
+   ["floor above the resting target","nothing","-",0]
+   ["foot of the platform, raised","hotspot creative","-,creative",1]
+   ["...click","?station=creative"]
+   ["keyboard Enter on chip 1, lift 5.2","?station=creative&project=wallpapers"]
+   ["keyboard Space on chip 1, lift 5.7","?station=creative&project=wallpapers"]
+errors []
