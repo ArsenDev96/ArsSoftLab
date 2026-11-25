@@ -1,0 +1,1 @@
+{"captured":640,"encoded":641,"seconds":12,"kb":8151,"w":960,"h":600,"hovered":null,"maxY":10,"largestStep":1.08}

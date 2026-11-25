@@ -50,6 +50,14 @@ export interface HotspotShape {
   /** Its transitions (clip-path), when not Playground's: up after the arrival, and down. */
   on?: string;
   off?: string;
+  /**
+   * M1.4J.2: it follows its station's lift number instead (station-lift.ts: `v`,
+   * carried by .<cls>-lift), at every height and with no transition of its own.
+   * A clip-path transition is one of the compositor's, like the spark's: on a
+   * slow GPU a quick return could then start the spark later than the sequence
+   * that waits for it.
+   */
+  follows?: { cls: string; v: string };
 }
 
 /** CSS clip-path for a hotspot polygon, relative to its bounding box (or the element's own box). */

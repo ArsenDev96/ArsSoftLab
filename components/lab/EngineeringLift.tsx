@@ -1,10 +1,11 @@
 import type { CSSProperties, ReactNode } from "react";
 import type { ZoneId } from "@/data/zones";
-import { SCENE, u, type ScenePoint, type SceneRect } from "@/lib/scene";
+import { u, type ScenePoint, type SceneRect } from "@/lib/scene";
 import { CHARGE_ROUTES } from "./charge-routes";
 import { CONNECTION_LAYERS } from "./scene-25d-data";
 import { STATION_LAYOUT, type HotspotShape } from "./scene-layout";
 import { SceneImage } from "./SceneImage";
+import { contactOnly } from "./station-lift";
 
 /**
  * M1.4J.1 (/lab-v2 only): Engineering's lift. The whole workstation (stone,
@@ -94,16 +95,7 @@ export function EngineeringLift({ children }: { children: ReactNode }) {
 -------------------------------------------------------------------------- */
 
 /** Engineering's share of M1.4G's contact shadows: nothing else of them lies in here. */
-const CONTACT: SceneRect = { x: 250, y: 515, w: 370, h: 56 };
-const pct = (x: number, y: number) => `${+((x / SCENE.width) * 100).toFixed(4)}% ${+((y / SCENE.height) * 100).toFixed(4)}%`;
-const C = CONTACT;
-/** M1.4G's contact shadows without Engineering's. */
-export const CONTACT_OTHERS: CSSProperties = {
-  clipPath: `polygon(evenodd, 0 0, 100% 0, 100% 100%, 0 100%, 0 0, ${pct(C.x, C.y)}, ${pct(C.x + C.w, C.y)}, ${pct(C.x + C.w, C.y + C.h)}, ${pct(C.x, C.y + C.h)}, ${pct(C.x, C.y)})`,
-};
-const CONTACT_OWN: CSSProperties = {
-  clipPath: `polygon(${pct(C.x, C.y)}, ${pct(C.x + C.w, C.y)}, ${pct(C.x + C.w, C.y + C.h)}, ${pct(C.x, C.y + C.h)})`,
-};
+export const ENG_CONTACT: SceneRect = { x: 250, y: 515, w: 370, h: 56 };
 
 /**
  * Where the platform stands: its ground contour (the lowest stone in each
@@ -139,7 +131,7 @@ export function EngineeringGround({ line }: { line: readonly LineStroke[] }) {
         src={`${M14G}/contact.png`}
         data-v2-floor="contact-engineering"
         className="pointer-events-none absolute inset-0 h-full w-full max-w-none select-none"
-        style={{ ...CONTACT_OWN, opacity: "calc(1 - 0.7 * var(--el))" }}
+        style={{ ...contactOnly(ENG_CONTACT), opacity: "calc(1 - 0.7 * var(--el))" }}
       />
       <svg
         aria-hidden="true"

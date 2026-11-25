@@ -1,0 +1,13 @@
+still on the hotspot: 59, flagged 0
+AriMap: outline 166 px, tested 83, lost 0 []
+Armat: outline 156 px, tested 78, lost 0 []
+title: outline 256 px, tested 64, lost 0 []
+clicks: 64, failed 0
+   ["raised sphere top, hover held","hotspot educational","-,educational"]
+   ["raised sphere top, click","?station=educational"]
+   ["view above the resting target","nothing","-",0]
+   ["foot of the platform, raised","hotspot educational","-,educational",1]
+   ["...click","?station=educational"]
+   ["keyboard Enter on chip 1, lift 3.2","?station=educational&project=arimap"]
+   ["keyboard Space on chip 1, lift 0.9","?station=educational&project=arimap"]
+errors []

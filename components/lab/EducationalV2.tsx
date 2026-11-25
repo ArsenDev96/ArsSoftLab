@@ -1,10 +1,12 @@
 import type { CSSProperties } from "react";
 import { SCENE, u, type SceneRect } from "@/lib/scene";
 import { EDU_LIGHT_BOX, EDU_LIGHT_GRID, EDU_LIGHT_STEPS, EDU_LIGHT_TAIL, EDU_RING_LENGTH, EDU_RING_PATH, EDU_WAVE_BOX, EDU_WAVE_STEPS } from "./educational-v2";
+import { EducationalLift } from "./EducationalLift";
 import { PLATFORM_POWER, POWER_FRONT } from "./platform-power";
 import { partFrame, PowerPart, powerCss } from "./PlatformPower";
 import { SceneImage, SceneImageInSvg } from "./SceneImage";
 import { cycleCss } from "./station-cycle";
+import { frameMask } from "./station-lift";
 
 /**
  * M1.4H.2 (/lab-v2 only): Educational's activation, on M1.4F.1's recovered
@@ -44,6 +46,11 @@ const GLOBE_STANDBY = 0.42;
 const ORBIT_STANDBY = 0.5;
 const FLOOR_STANDBY = 0.2;
 
+/** M1.4J.2: raised, the corner strips' spill on the floor is this much weaker. */
+const SPILL_SOFTEN = 0.25;
+/** M1.4J.2: the station's light ends here; below it the light layer holds the corner strips' light only (nothing lies in y 428-480). */
+const LIGHT_SPLIT = 455;
+
 /** Timing after the energy's arrival (ms). */
 export const EDU_TIMING = {
   pulseDelay: 70,
@@ -70,6 +77,52 @@ const FLOOR_PARTS = [
   { box: { x: 838, y: 470, w: 190, h: 112 }, angle: 90, on: { delay: 0, dur: 310 }, off: { delay: 0, dur: 260 } },
 ];
 
+/**
+ * M1.4J.2: the corner strips' light (educational-strip-floor) is both the bright
+ * edge of the strip, just outside the stone's outline, and its spill on the
+ * floor. The edge belongs to the station and rises; the spill stays. The same
+ * image is drawn through two complementary masks (a soft line about 4.5 px
+ * outside the stone's foot, through (x, y) at `angle`), added, so together they
+ * are the image itself. One line for each of FLOOR_PARTS. Between the corners
+ * the image holds two short streaks beside the connection: floor.
+ */
+const STRIP_LINES = [
+  { x: 699, y: 495, angle: 189.1 },
+  { x: 980, y: 494.3, angle: 169.8 },
+];
+type StripShare = "edge" | "spill" | "streak";
+const SHARES: readonly StripShare[] = ["streak", "spill", "edge"];
+/** Where each share has anything to draw, for each of FLOOR_PARTS. */
+const CORNERS: readonly SceneRect[] = [
+  { x: 664, y: 477, w: 62, h: 37 },
+  { x: 950, y: 477, w: 62, h: 37 },
+];
+const STREAKS: readonly SceneRect[] = [
+  { x: 726, y: 477, w: 112, h: 37 },
+  { x: 838, y: 477, w: 112, h: 37 },
+];
+const shareBox = (share: StripShare, k: number): SceneRect => (share === "streak" ? STREAKS : CORNERS)[k];
+function shareMask(share: StripShare, k: number): CSSProperties {
+  if (share === "streak") return footFade(k);
+  const l = STRIP_LINES[k];
+  const rad = (l.angle * Math.PI) / 180;
+  // Along the gradient line, from the frame's middle (its 50 %).
+  const s = (l.x - SCENE.width / 2) * Math.sin(rad) - (l.y - SCENE.height / 2) * Math.cos(rad);
+  const at = (d: number) => `calc(50% + ${u(+(s + d).toFixed(2))})`;
+  const [near, far] = share === "edge" ? ["#000", "transparent"] : ["transparent", "#000"];
+  return frameMask(`linear-gradient(${l.angle}deg, ${near} ${at(-2)}, ${far} ${at(2)})`);
+}
+
+/**
+ * M1.4J.2: the floor's light (M1.4G) was recovered up to the resting stone, so
+ * raised it would end in that outline: specks along the two corners, and the
+ * streaks beside the connection with square tops. There it gives way to the
+ * platform as that leaves the floor. At rest the mask is opaque.
+ */
+const fade = (x: number, y: number, rx: number, ry: number, solid: number) =>
+  `radial-gradient(${u(rx)} ${u(ry)} at ${u(x)} ${u(y)}, rgb(0 0 0 / calc(1 - var(--dl))) ${solid}%, #000)`;
+const footFade = (k: number): CSSProperties => frameMask(k === 0 ? fade(700, 491, 22, 6.5, 72) : fade(977, 491, 21, 6.5, 72), fade(838.6, 494, 30, 20, 35));
+
 const box = (r: SceneRect): CSSProperties => ({ left: u(r.x), top: u(r.y), width: u(r.w), height: u(r.h) });
 /**
  * Every layer that moves is clipped to the station (its own pixels, the floor
@@ -77,7 +130,9 @@ const box = (r: SceneRect): CSSProperties => ({ left: u(r.x), top: u(r.y), width
  * the blended elements themselves: a clip-path on their parent would isolate
  * them, and they would no longer add to the room.
  */
-const clipTo = (r: SceneRect): CSSProperties => ({ clipPath: `inset(${u(r.y)} ${u(SCENE.width - r.x - r.w)} ${u(SCENE.height - r.y - r.h)} ${u(r.x)})` });
+const clipTo = (r: SceneRect, of: SceneRect = { x: 0, y: 0, w: SCENE.width, h: SCENE.height }): CSSProperties => ({
+  clipPath: `inset(${u(r.y - of.y)} ${u(of.x + of.w - r.x - r.w)} ${u(of.y + of.h - r.y - r.h)} ${u(r.x - of.x)})`,
+});
 const CLIP = clipTo({ x: 648, y: 248, w: 376, h: 264 });
 const RING_CLIP = clipTo({ x: 656, y: 296, w: 352, h: 150 });
 const FOOT_CLIP = clipTo({ x: 656, y: 386, w: 352, h: 58 });
@@ -114,7 +169,7 @@ const EDU_CSS =
   `${ON} [data-edu-swap="stable"]{visibility:visible;transition:visibility 0s linear calc(var(--arrive-now) + ${T.stableDelay}ms)}` +
   `${ON} [data-edu-swap="anim"]{visibility:hidden;transition:visibility 0s linear calc(var(--arrive-now) + ${T.stableDelay}ms)}` +
   // The floor: the strips' share over its standby; the globe's cyan reflection with the globe.
-  `.edu-floor{opacity:calc(1 - var(--edu-standby, 0))}` +
+  `.edu-floor{opacity:calc((1 - var(--edu-standby, 0)) * (1 - var(--edu-soften, 0) * var(--dl)))}` +
   FLOOR_PARTS.map(
     (p, k) =>
       `.edu-floor[data-floor-part="${k}"]{--pw:0;transition:--pw ${p.off.dur}ms linear ${p.off.delay}ms}` +
@@ -139,21 +194,21 @@ const EDU_CSS =
   `.edu-floor{mask-image:none!important;-webkit-mask-image:none!important;opacity:0!important;transition:opacity 150ms ease!important}` +
   `${ON} .edu-floor{opacity:calc(1 - var(--edu-standby, 0))!important}}`;
 
-function Full({ src, name, add, swap, className = "" }: { src: string; name: string; add?: boolean; swap?: "anim" | "stable"; className?: string }) {
+function Full({ src, name, add, swap, className = "", style }: { src: string; name: string; add?: boolean; swap?: "anim" | "stable"; className?: string; style?: CSSProperties }) {
   return (
     <SceneImage
       src={src}
       data-edu={name}
       data-edu-swap={swap}
       className={`pointer-events-none absolute inset-0 h-full w-full max-w-none select-none ${className}`}
-      style={add ? { mixBlendMode: "plus-lighter" } : undefined}
+      style={add || style ? { mixBlendMode: add ? "plus-lighter" : undefined, ...style } : undefined}
     />
   );
 }
 
 /** A full-frame image placed in a box (the box clips it). */
-function Frame({ src, box }: { src: string; box: SceneRect }) {
-  return <SceneImage src={src} className="absolute max-w-none select-none" style={partFrame(box)} />;
+function Frame({ src, box, style }: { src: string; box: SceneRect; style?: CSSProperties }) {
+  return <SceneImage src={src} className="absolute max-w-none select-none" style={{ ...partFrame(box), ...style }} />;
 }
 
 /**
@@ -225,7 +280,7 @@ function Pulse({ index }: { index: number }) {
       data-zone={ID}
       data-power={ID}
       data-part={index}
-      className="lab-power edu-pulse pointer-events-none absolute overflow-hidden"
+      className="lab-power edu-pulse edu-rise pointer-events-none absolute overflow-hidden"
       style={{ ...box(p.box), clipPath: clip, maskImage: mask, WebkitMaskImage: mask, mixBlendMode: "plus-lighter" }}
     >
       <Frame src={`${M14H2}/educational-strip-light.png`} box={p.box} />
@@ -246,9 +301,10 @@ function Station() {
   return (
     <div aria-hidden="true" data-zone={ID} data-v2-station={ID} data-v2-station-source="approved" className="edu-v2 edu-seq pointer-events-none absolute inset-0">
       <style>{EDU_CSS}</style>
+      <EducationalLift>
       {/* The station, while anything moves: body + globe + ring, summed in an isolated group (colour and alpha, so the
           room shows through the dimmed glass and no seam appears where the parts meet). */}
-      <div data-edu-swap="anim" className="absolute inset-0" style={{ isolation: "isolate", ...CLIP }}>
+      <div data-edu-swap="anim" className="edu-rise absolute inset-0" style={{ isolation: "isolate", ...CLIP }}>
         <Full src={`${M14H2}/educational-body.png`} name="body" />
         <div data-edu="globe" data-edu-wave="" className="absolute inset-0" style={{ ...waveMask(`${M14H2}/educational-wave.png`, GLOBE_STANDBY), ...CLIP, mixBlendMode: "plus-lighter" }}>
           <Full src={`${M14H2}/educational-globe.png`} name="globe-image" />
@@ -274,22 +330,39 @@ function Station() {
           </svg>
         </div>
       </div>
-      {/* Stable: the recovered station itself (M1.4F.1's files), exactly as before this milestone. */}
-      <Full src={`${M14F1}/educational.png`} name="station-stable" swap="stable" />
-      <Full src={`${M14F1}/educational-light.png`} name="light-stable" add swap="stable" />
+      {/* Stable: the recovered station itself (M1.4F.1's files), exactly as before this milestone. M1.4J.2: its light
+          rises with it, except for the corner strips' spill on the floor. */}
+      <Full src={`${M14F1}/educational.png`} name="station-stable" swap="stable" className="edu-rise" />
+      <Full src={`${M14F1}/educational-light.png`} name="light-stable" add swap="stable" className="edu-rise" style={clipTo({ x: 648, y: 248, w: 376, h: LIGHT_SPLIT - 248 })} />
+      {SHARES.flatMap((share) =>
+        FLOOR_PARTS.map((_, k) => (
+          <Full
+            key={`stable-${share}-${k}`}
+            src={`${M14F1}/educational-light.png`}
+            name={`stable-${share}-${k}`}
+            add
+            swap="stable"
+            className={share === "edge" ? "edu-rise" : ""}
+            style={{ ...clipTo(shareBox(share, k)), ...shareMask(share, k), opacity: share === "spill" ? `calc(1 - ${SPILL_SOFTEN} * var(--dl))` : undefined }}
+          />
+        )),
+      )}
       {/* The station's light, split the same way. */}
-      <div data-edu="globe-light" data-edu-wave="" data-edu-swap="anim" className="absolute inset-0" style={{ ...waveMask(`${M14H2}/educational-wave.png`, GLOBE_STANDBY), ...CLIP, mixBlendMode: "plus-lighter" }}>
+      <div data-edu="globe-light" data-edu-wave="" data-edu-swap="anim" className="edu-rise absolute inset-0" style={{ ...waveMask(`${M14H2}/educational-wave.png`, GLOBE_STANDBY), ...CLIP, mixBlendMode: "plus-lighter" }}>
         <Full src={`${M14H2}/educational-globe-light.png`} name="globe-light-image" />
       </div>
-      <div data-edu-swap="anim" className="edu-orbit-rest absolute inset-0" style={{ ...RING_CLIP, mixBlendMode: "plus-lighter" }}>
+      <div data-edu-swap="anim" className="edu-orbit-rest edu-rise absolute inset-0" style={{ ...RING_CLIP, mixBlendMode: "plus-lighter" }}>
         <Full src={`${M14H2}/educational-orbit-light.png`} name="orbit-light" />
       </div>
+      {/* The corner strips' light: their spill on the floor stays, their edge rises with them. */}
       <div data-edu-swap="anim" className="absolute inset-0">
-        <EducationalFloorParts src={`${M14H2}/educational-strip-floor.png`} name="strip-floor" standby={0} />
+        {SHARES.map((share) => (
+          <EducationalFloorParts key={share} src={`${M14H2}/educational-strip-floor.png`} name={`strip-${share}`} standby={0} share={share} />
+        ))}
       </div>
       {/* The strips: unpowered ahead of each front (PowerPart, the established fronts), a pulse riding it. */}
       {PARTS.map((k) => (
-        <PowerPart key={`off-${k}`} id={ID} index={k} side="dim">
+        <PowerPart key={`off-${k}`} id={ID} index={k} side="dim" className="edu-rise">
           <Frame src={`${M14H2}/educational-strip-off.png`} box={PLATFORM_POWER[ID].parts[k].box} />
         </PowerPart>
       ))}
@@ -297,32 +370,33 @@ function Station() {
         <Pulse key={`pulse-${k}`} index={k} />
       ))}
       {/* The pool at the globe's foot: one pulse of its own light. */}
-      <div className="edu-gate absolute inset-0" style={{ ...FOOT_CLIP, mixBlendMode: "plus-lighter" }}>
+      <div className="edu-gate edu-rise absolute inset-0" style={{ ...FOOT_CLIP, mixBlendMode: "plus-lighter" }}>
         <div className="edu-pulse-base absolute inset-0">
           <Full src={`${M14H2}/educational-base.png`} name="base" />
         </div>
       </div>
       {/* The wave's crest: the globe's own light, brighter where the wave is passing. */}
-      <div className="edu-gate absolute inset-0" style={{ ...CLIP, mixBlendMode: "plus-lighter" }}>
+      <div className="edu-gate edu-rise absolute inset-0" style={{ ...CLIP, mixBlendMode: "plus-lighter" }}>
         <div data-edu="crest" className="edu-crest absolute inset-0" style={waveMask(`${M14H2}/educational-crest.png`)}>
           <Full src={`${M14H2}/educational-flare.png`} name="flare" />
         </div>
       </div>
       {/* The light round the ring, through the ring's visible pixels (the island, church and dome hide it behind). */}
-      <div data-edu="light" className="edu-gate absolute inset-0" style={{ ...RING_CLIP, mixBlendMode: "plus-lighter" }}>
+      <div data-edu="light" className="edu-gate edu-rise absolute inset-0" style={{ ...RING_CLIP, mixBlendMode: "plus-lighter" }}>
         <RingLight />
       </div>
-      <div data-edu="shimmer" className="edu-shimmer absolute inset-0" style={{ ...ringMask(`${M14H2}/educational-ring-core.png`), ...RING_CLIP, mixBlendMode: "plus-lighter" }}>
+      <div data-edu="shimmer" className="edu-shimmer edu-rise absolute inset-0" style={{ ...ringMask(`${M14H2}/educational-ring-core.png`), ...RING_CLIP, mixBlendMode: "plus-lighter" }}>
         <svg {...SVG_FRAME} aria-hidden="true">
           <path className="edu-shimmer-line" d={EDU_RING_PATH} fill="none" stroke="rgb(255 226 170)" strokeWidth={3} strokeLinecap="round" style={{ strokeDasharray: "90px 9999px", strokeDashoffset: "110px" }} />
         </svg>
       </div>
+      </EducationalLift>
     </div>
   );
 }
 
 /** Warm floor light following the strips' fronts (FLOOR_PARTS), over its standby. */
-function EducationalFloorParts({ src, name, standby }: { src: string; name: string; standby: number }) {
+function EducationalFloorParts({ src, name, standby, share }: { src: string; name: string; standby: number; share?: StripShare }) {
   return (
     <>
       {standby > 0 ? (
@@ -341,10 +415,11 @@ function EducationalFloorParts({ src, name, standby }: { src: string; name: stri
             key={k}
             data-zone={ID}
             data-floor-part={k}
-            className="edu-floor absolute overflow-hidden"
-            style={{ ...box(p.box), ["--edu-standby" as string]: standby, maskImage: mask, WebkitMaskImage: mask, mixBlendMode: "plus-lighter" }}
+            data-strip-share={share}
+            className={`edu-floor absolute overflow-hidden${share === "edge" ? " edu-rise" : ""}`}
+            style={{ ...box(p.box), ...(share && clipTo(shareBox(share, k), p.box)), ["--edu-standby" as string]: standby, ["--edu-soften" as string]: share === "spill" ? SPILL_SOFTEN : 0, maskImage: mask, WebkitMaskImage: mask, mixBlendMode: "plus-lighter" }}
           >
-            <Frame src={src} box={p.box} />
+            <Frame src={src} box={p.box} style={share ? shareMask(share, k) : footFade(k)} />
           </div>
         );
       })}
@@ -360,7 +435,9 @@ function EducationalFloorParts({ src, name, standby }: { src: string; name: stri
 /** Its floor light in this cycle's wrapper (station-cycle.ts). */
 export const EducationalFloor = () => (
   <div data-zone={ID} className="edu-cycle contents">
-    <Floor />
+    <EducationalLift>
+      <Floor />
+    </EducationalLift>
   </div>
 );
 

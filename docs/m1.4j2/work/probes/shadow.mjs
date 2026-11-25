@@ -1,0 +1,12 @@
+// Floor in the exposed gap: luminance with and without the soft shadow (and the contact), lifted, 1:1 pixels.
+import { open, sleep } from "../../../m1.4i/work/lib.mjs";
+const p = await open(process.argv[2] ?? "/lab-v2", { gpu: true });
+const c = await p.page.center('[data-hotspot="educational"]');
+await p.page.mouseMove(c.x, c.y); await sleep(3000);
+const cap = async (css) => { await p.page.eval(`(() => { let e = document.getElementById("jj"); if (!e) { e = document.createElement("style"); e.id = "jj"; document.head.append(e); } e.textContent = ${JSON.stringify(css)}; return 1; })()`); await sleep(400); return (await p.page.send("Page.captureScreenshot", { format: "png" })).data; };
+const on = await cap(""), off = await cap('[data-v2-ground="educational"]{visibility:hidden}'), off2 = await cap('[data-v2-ground="educational"],[data-v2-floor="contact-educational"]{visibility:hidden}');
+console.log(await p.page.eval(`(async () => { const L = async (s) => { const b = atob(s), u = new Uint8Array(b.length); for (let i = 0; i < b.length; i++) u[i] = b.charCodeAt(i); const im = await createImageBitmap(new Blob([u])); const c = new OffscreenCanvas(im.width, im.height), g = c.getContext("2d"); g.drawImage(im, 0, 0); return g.getImageData(0, 0, im.width, im.height); };
+ const A = await L("${on}"), B = await L("${off}"), C = await L("${off2}"); const K = ${p.cam.k}, X0 = ${p.cam.x}, Y0 = ${p.cam.y};
+ const st = (I, x0, y0, x1, y1) => { let s = 0, q = 0, n = 0; for (let y = Math.round(Y0 + y0 * K); y < Y0 + y1 * K; y++) for (let x = Math.round(X0 + x0 * K); x < X0 + x1 * K; x++) { const i = (y * I.width + x) * 4, l = 0.299 * I.data[i] + 0.587 * I.data[i + 1] + 0.114 * I.data[i + 2]; s += l; q += l * l; n++; } return [+(s / n).toFixed(1), +Math.sqrt(q / n - (s / n) ** 2).toFixed(1)]; };
+ const rows = []; for (const [n, ...r] of [["gap, left", 700, 483, 740, 491], ["gap, middle left", 760, 487, 825, 494], ["gap, middle right", 852, 487, 915, 494], ["gap, right", 930, 485, 965, 491], ["directly under the stone", 760, 486, 825, 488], ["at the old contour", 760, 494, 825, 497], ["just outside", 760, 498, 825, 502], ["right end", 985, 479, 994, 486], ["floor far", 760, 515, 825, 530]]) rows.push(n + ": no shadow " + st(C, ...r) + " | contact only " + st(B, ...r) + " | both " + st(A, ...r) + "  => " + Math.round((1 - st(A, ...r)[0] / st(C, ...r)[0]) * 100) + "% darker"); return rows.join(String.fromCharCode(10)); })()`));
+await p.page.close(); process.exit(0);

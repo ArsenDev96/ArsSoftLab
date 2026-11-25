@@ -2,6 +2,7 @@ import type { CSSProperties } from "react";
 import type { ZoneId } from "@/data/zones";
 import { SCENE, u, type SceneRect } from "@/lib/scene";
 import { CHARGE_EDGE, CHARGE_HALF, CHARGE_LEAD, CHARGE_LINES, type ChargeSegment } from "./scene-fx";
+import { EducationalLift, EducationalLine } from "./EducationalLift";
 import { EngineeringLift, EngineeringLinePart, isEngineeringLineEnd, type LineStroke } from "./EngineeringLift";
 import { LAB_LAYERED } from "./scene-25d";
 import { CONNECTION_LAYERS } from "./scene-25d-data";
@@ -194,6 +195,10 @@ function VectorContent({ id, k, kind }: { id: ZoneId; k: number; kind: "dim" | "
   // its windows stay, empty, as the charge position's drivers.
   if (id === "playground") return null;
   const c = kind === "dim" ? V2_DIM : BOOST;
+  const looks = [
+    { color: c.glow, width: kind === "dim" ? 4.5 : 7 },
+    { color: c.core, width: kind === "dim" ? 1.4 : CORE_STROKE },
+  ];
   // M1.4J.1: its end hands over to the run beneath the raised platform.
   if (kind === "boost" && isEngineeringLineEnd(id, k))
     return (
@@ -203,8 +208,12 @@ function VectorContent({ id, k, kind }: { id: ZoneId; k: number; kind: "dim" | "
     );
   return (
     <svg className="absolute overflow-visible" style={boxStyle(box)} viewBox={`0 0 ${box.w} ${box.h}`} aria-hidden="true" data-v2-line={id}>
-      <path d={d} fill="none" stroke={c.glow} strokeWidth={kind === "dim" ? 4.5 : 7} strokeLinecap="round" strokeLinejoin="round" />
-      <path d={d} fill="none" stroke={c.core} strokeWidth={kind === "dim" ? 1.4 : CORE_STROKE} strokeLinecap="round" strokeLinejoin="round" />
+      {id === "educational" ? (
+        // M1.4J.2: its end rises with the stone's channel.
+        <EducationalLine strokes={looks} />
+      ) : (
+        looks.map((l, i) => <path key={i} d={d} fill="none" stroke={l.color} strokeWidth={l.width} strokeLinecap="round" strokeLinejoin="round" />)
+      )}
     </svg>
   );
 }
@@ -378,7 +387,9 @@ export function ChargeLines({ variant = "plate" }: { variant?: "plate" | "v2" })
             </div>
           );
         });
-        return variant === "v2" && id === "engineering" ? <EngineeringLift key={id}>{parts}</EngineeringLift> : parts;
+        if (variant === "v2" && id === "engineering") return <EngineeringLift key={id}>{parts}</EngineeringLift>;
+        if (variant === "v2" && id === "educational") return <EducationalLift key={id}>{parts}</EducationalLift>;
+        return parts;
       })}
     </>
   );

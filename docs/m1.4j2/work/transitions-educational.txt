@@ -1,0 +1,14 @@
+educational {"art-label":{"runs":8,"bad":0,"drops":0,"restarts":0},"label-art":{"runs":8,"bad":0,"drops":0,"restarts":0},"platform-chip":{"runs":16,"bad":0,"drops":0,"restarts":0},"chip-platform":{"runs":16,"bad":0,"drops":0,"restarts":0},"in-label":{"runs":6,"bad":0,"drops":0,"restarts":0},"repeated":{"runs":4,"bad":0,"drops":0,"restarts":0},"still":{"runs":4,"bad":0,"drops":0,"restarts":0}} 
+    {"group":"still","name":"lower edge of chip","ms":5000,"state":"from rest","drops":0,"restarts":0,"other":[],"ends":"educational","under":"chip"}
+    {"group":"still","name":"chip centre","ms":5000,"state":"from rest","drops":0,"restarts":0,"other":[],"ends":"educational","under":"chip"}
+    {"group":"still","name":"title","ms":5000,"state":"from rest","drops":0,"restarts":0,"other":[],"ends":"educational","under":"title"}
+    {"group":"still","name":"title lower edge","ms":5000,"state":"from rest","drops":0,"restarts":0,"other":[],"ends":"educational","under":"title"}
+    {"group":"leave","name":"artwork","ms":0,"state":"powered","before":"educational","afterMs":140,"ends":"-","rest":true,"sparks":0}
+    {"group":"leave","name":"title","ms":0,"state":"powered","before":"educational","afterMs":157,"ends":"-","rest":true,"sparks":0}
+    {"group":"leave","name":"chip","ms":0,"state":"powered","before":"educational","afterMs":120,"ends":"-","rest":true,"sparks":0}
+    {"group":"leave","name":"platform","ms":0,"state":"powered","before":"educational","afterMs":150,"ends":"-","rest":true,"sparks":0}
+    {"group":"leave","name":"between chip and platform","ms":0,"state":"powered","before":"educational","afterMs":127,"ends":"-","rest":true,"sparks":0}
+    {"group":"switch","name":"label -> playground","ms":200,"state":"powered","h":["educational","playground"],"sparks":1,"ok":true}
+    {"group":"switch","name":"label -> playground","ms":900,"state":"powered","h":["educational","-","playground"],"sparks":1,"ok":true}
+    {"group":"switch","name":"platform -> playground","ms":200,"state":"powered","h":["educational","-","playground"],"sparks":1,"ok":true}
+    {"group":"switch","name":"platform -> playground","ms":900,"state":"powered","h":["educational","-","playground"],"sparks":1,"ok":true}

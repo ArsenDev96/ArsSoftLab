@@ -3,11 +3,13 @@ import { SCENE, u } from "@/lib/scene";
 import { ArcadeScreen } from "./ArcadeScreen";
 import { BOOST_STROKES } from "./ChargeLine";
 import { CreativeFloor, CreativeV2 } from "./CreativeV2";
+import { EDU_CONTACT, EDU_LIFT_CSS, EducationalGround } from "./EducationalLift";
 import { EducationalFloor, EducationalV2 } from "./EducationalV2";
-import { CONTACT_OTHERS, ENG_LIFT_CSS, EngineeringGround, EngineeringLift } from "./EngineeringLift";
+import { ENG_CONTACT, ENG_LIFT_CSS, EngineeringGround, EngineeringLift } from "./EngineeringLift";
 import { EngineeringFloor, EngineeringV2 } from "./EngineeringV2";
 import { ExperienceFloor, ExperienceV2 } from "./ExperienceV2";
 import { SceneImage } from "./SceneImage";
+import { contactWithout } from "./station-lift";
 import { V2_ENVIRONMENT, V2_OBJECTS, V2_PLAYGROUND_SCREEN, type V2Object } from "./scene-v2-data";
 
 /**
@@ -86,6 +88,8 @@ const M14G1 = "/scene/v2/m14g1";
  */
 const M14H4 = "/scene/v2/m14h4";
 const FLOOR_TONE = "rgb(236 222 212)";
+/** M1.4J: M1.4G's contact shadows without the lifted stations' own (EngineeringGround, EducationalGround). */
+const CONTACT_OTHERS = contactWithout(ENG_CONTACT, EDU_CONTACT);
 
 function FloorLayer({ src, name, blend, clip }: { src: string; name: string; blend?: CSSProperties["mixBlendMode"]; clip?: CSSProperties }) {
   return (
@@ -292,7 +296,7 @@ export function SceneV2({ floorTone = false }: { floorTone?: boolean } = {}) {
       {/* M1.4G: the floor's tone (optional), rings and reflections, contact shadows. The hub carries its approved contact. */}
       {floorTone && <FloorTone />}
       <FloorLayer src={`${M14H4}/floor-light.png`} name="light" blend="plus-lighter" />
-      <style>{ENG_LIFT_CSS}</style>
+      <style>{ENG_LIFT_CSS + EDU_LIFT_CSS}</style>
       <EngineeringLift>
         <EngineeringFloor />
       </EngineeringLift>
@@ -304,6 +308,8 @@ export function SceneV2({ floorTone = false }: { floorTone?: boolean } = {}) {
       <FloorLayer src={`${M14G}/contact.png`} name="contact" clip={CONTACT_OTHERS} />
       {/* M1.4J.1: Engineering's grounding, which answers its lift, and its connection beneath it. */}
       <EngineeringGround line={BOOST_STROKES} />
+      {/* M1.4J.2: Educational's grounding, which answers its lift. */}
+      <EducationalGround />
       {/* M1.4E.1: Playground's own height-responsive grounding. */}
       <PlaygroundGround />
       {V2_OBJECTS.map((o) =>

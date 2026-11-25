@@ -1,0 +1,10 @@
+== educational j2
+first {"times":{"pool":[90,173],"crest":[173,457],"orbit":[390,690]},"stableAt":823,"bad":false,"rest":true}
+first {"times":{"pool":[90,190],"crest":[123,473],"orbit":[273,723]},"stableAt":807,"bad":false,"rest":true}
+first {"times":{"pool":[90,190],"crest":[123,423],"orbit":[257,740]},"stableAt":823,"bad":false,"rest":true}
+first {"times":{"pool":[90,173],"crest":[123,473],"orbit":[240,723]},"stableAt":807,"bad":false,"rest":true}
+# mouse {"runs":11,"bad":0,"premature":0,"lightBefore":{"pool":0,"crest":0,"orbit":0},"pulseBefore":0,"shimmerBefore":0,"rose":0,"heldThroughCharge":0,"resumesPartWay":0,"litAtArrivalNoReplay":0,"frozenAfterArrival":{"pool":0,"crest":0,"orbit":0},"frozenPulseAfter":0,"notPowered":0,"runBackFinishing":8,"notAtRest":0,"roseAfterLeaving":0} errors []
+# grid {"runs":91,"bad":2,"premature":2,"lightBefore":{"pool":0,"crest":0,"orbit":0},"pulseBefore":1,"shimmerBefore":0,"rose":1,"heldThroughCharge":1,"resumesPartWay":1,"litAtArrivalNoReplay":0,"frozenAfterArrival":{"pool":0,"crest":0,"orbit":0},"frozenPulseAfter":1,"notPowered":0,"runBackFinishing":56,"notAtRest":0,"roseAfterLeaving":0} errors []
+    {"at":170,"gap":50,"light":{"pool":0,"crest":0,"orbit":0},"pulse":1,"held":0,"atArrival":{"--gp":0,"--gs":0,"--go":0},"frozen":{"pool":0,"crest":0,"orbit":0},"fp":0,"powered":true,"kept":false,"others":0,"rest":true}
+    {"at":1300,"gap":0,"light":{"pool":0,"crest":0,"orbit":0},"pulse":0,"held":1,"atArrival":{"--gp":0.118,"--gs":0,"--go":0},"frozen":{"pool":0,"crest":0,"orbit":0},"fp":3,"powered":true,"kept":false,"others":0,"rest":true}
+# sequences {"runs":20,"bad":0,"premature":0,"lightBefore":{"pool":0,"crest":0,"orbit":0},"pulseBefore":0,"shimmerBefore":0,"rose":0,"heldThroughCharge":0,"resumesPartWay":0,"litAtArrivalNoReplay":0,"frozenAfterArrival":{"pool":0,"crest":0,"orbit":0},"frozenPulseAfter":0,"notPowered":0,"runBackFinishing":9,"notAtRest":0,"roseAfterLeaving":0} errors []

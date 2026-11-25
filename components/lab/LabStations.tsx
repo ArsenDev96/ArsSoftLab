@@ -7,6 +7,16 @@ import { useLabState } from "./LabState";
 import { ProjectStation } from "./ProjectStation";
 import { hasStationLayer, hotspotBox, hotspotClip, STATION_LAYOUT, type HotspotShape } from "./scene-layout";
 
+/** A hotspot's outline between its two, at its station's own lift number. */
+const followClipCss = (id: ZoneId, { rest, raised }: HotspotShape, v: string): string => {
+  const b = hotspotBox([...rest, ...raised]);
+  const pct = (n: number, size: number) => +((n / size) * 100).toFixed(3);
+  const at = (from: number, to: number, o: number, size: number) =>
+    from === to ? `${pct(from - o, size)}%` : `calc(${pct(from - o, size)}% + ${pct(to - from, size)}% * var(${v}))`;
+  const points = rest.map((p, i) => `${at(p.x, raised[i].x, b.x, b.w)} ${at(p.y, raised[i].y, b.y, b.h)}`);
+  return `[data-hotspot="${id}"]{clip-path:polygon(${points.join(", ")})}`;
+};
+
 /** A hotspot's two outlines, on the lift's own timing (globals.css, .lab-lift). */
 const liftClipCss = (id: ZoneId, { rest, raised, on = "450ms var(--ease-heavy) var(--arrive-now)", off = "420ms var(--ease-lift-out)" }: HotspotShape): string => {
   const b = hotspotBox([...rest, ...raised]);
@@ -88,7 +98,7 @@ export function LabStations({ hideIcons = [], hotspots = {}, bridges = {}, still
           the chip interiors shift by up to 5/255. Nothing is painted. */}
       <div aria-hidden="true" data-compositing-anchor className="pointer-events-none absolute inset-0 opacity-0 mix-blend-screen" />
       {Object.entries(hotspots).map(([id, shape]) => (
-        <style key={id}>{liftClipCss(id as ZoneId, shape)}</style>
+        <style key={id}>{shape.follows ? followClipCss(id as ZoneId, shape, shape.follows.v) : liftClipCss(id as ZoneId, shape)}</style>
       ))}
       {(Object.entries(bridges) as [ZoneId, readonly ScenePoint[]][]).map(([id, shape]) => (
         <Fragment key={`${id}-bridge`}>
@@ -106,7 +116,7 @@ export function LabStations({ hideIcons = [], hotspots = {}, bridges = {}, still
       {LAB_ZONES.map((zone) => {
         const shape = STATION_LAYOUT[zone.id].hotspot;
         const own = hotspots[zone.id];
-        return (
+        const hotspot = (
           <div
             key={`${zone.id}-hotspot`}
             aria-hidden="true"
@@ -120,6 +130,16 @@ export function LabStations({ hideIcons = [], hotspots = {}, bridges = {}, still
             // title button (or Back to Lab / Escape) returns to the lab.
             onClick={() => selectStation(zone.id)}
           />
+        );
+        const lift = own?.follows?.cls;
+        return lift ? (
+          <div key={`${zone.id}-hotspot`} data-zone={zone.id} className={`${lift}-lift-cycle contents`}>
+            <div data-zone={zone.id} className={`${lift}-lift contents`}>
+              {hotspot}
+            </div>
+          </div>
+        ) : (
+          hotspot
         );
       })}
 
