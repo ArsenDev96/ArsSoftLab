@@ -1,0 +1,4 @@
+#### 01:23:35 node j1/lift.mjs final interrupt,switching
+interrupt: 56 runs, flagged 0; held 0; largest step in a 60 Hz frame 1.31 px; hung frames 0
+switching: 16, flagged 0
+#### exit 0 01:29:03

@@ -8,13 +8,13 @@ import { ProjectStation } from "./ProjectStation";
 import { hasStationLayer, hotspotBox, hotspotClip, STATION_LAYOUT, type HotspotShape } from "./scene-layout";
 
 /** A hotspot's two outlines, on the lift's own timing (globals.css, .lab-lift). */
-const liftClipCss = (id: ZoneId, { rest, raised }: HotspotShape): string => {
+const liftClipCss = (id: ZoneId, { rest, raised, on = "450ms var(--ease-heavy) var(--arrive-now)", off = "420ms var(--ease-lift-out)" }: HotspotShape): string => {
   const b = hotspotBox([...rest, ...raised]);
   const el = `[data-hotspot="${id}"]`;
   return (
     `${el}{clip-path:${hotspotClip(rest, b)}}` +
-    `@media (prefers-reduced-motion: no-preference){${el}{transition:clip-path 420ms var(--ease-lift-out)}` +
-    `:is([data-lab-hover="${id}"],[data-lab-selected="${id}"]) ${el}{clip-path:${hotspotClip(raised, b)};transition:clip-path 450ms var(--ease-heavy) var(--arrive-now)}}`
+    `@media (prefers-reduced-motion: no-preference){${el}{transition:clip-path ${off}}` +
+    `:is([data-lab-hover="${id}"],[data-lab-selected="${id}"]) ${el}{clip-path:${hotspotClip(raised, b)};transition:clip-path ${on}}}`
   );
 };
 
@@ -32,10 +32,24 @@ const bridgeCss = (id: ZoneId): string =>
  * under the pointer keeps the strip it rises out of (18 px, x1.01), so its
  * hover and click stay its own. Only while it is hovered: approaching from
  * below there is nothing under the visible chip.
+ *
+ * M1.4I.2.1: a chip is a pill, and beside its round ends a strip below its box
+ * leaves a notch that the rise carries across the pointer. Its strip starts at
+ * its middle instead and is round like it, so together they are the pill along
+ * its way; 1 px more on the left, where the x1.01 moves it off the pointer.
  */
 const LABEL_RISE = 20;
-const risingLabelCss = (id: ZoneId): string =>
-  `@media (prefers-reduced-motion: no-preference){[data-lab-hover="${id}"]:not([data-lab-selected="${id}"]) #lab-stations [data-lift="${id}"] button:hover::after{content:"";position:absolute;left:0;right:0;top:100%;height:calc(var(--u) * ${LABEL_RISE})}}`;
+/** Half a chip's height (ProjectStation). */
+const CHIP_RADIUS = 13;
+const risingLabelCss = (id: ZoneId): string => {
+  const label = `[data-lab-hover="${id}"]:not([data-lab-selected="${id}"]) #lab-stations [data-lift="${id}"]`;
+  const px = (n: number) => `calc(var(--u) * ${n})`;
+  return (
+    `@media (prefers-reduced-motion: no-preference){` +
+    `${label} button:hover::after{content:"";position:absolute;left:0;right:0;top:100%;height:${px(LABEL_RISE)}}` +
+    `${label} .lab-chip:hover::after{left:${px(-1)};top:50%;height:calc(50% + ${px(LABEL_RISE)});border-radius:0 0 ${px(CHIP_RADIUS)} ${px(CHIP_RADIUS)}}}`
+  );
+};
 
 interface LabStationsProps {
   hideIcons?: readonly ZoneId[];

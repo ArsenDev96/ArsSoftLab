@@ -1,0 +1,1 @@
+candidate-1920 candidate 1920x1080 box 1477.89,408.50,1546.00,438.34 outline px 162 lost 1 [[1477,423,"bridge",1]] errors []

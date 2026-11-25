@@ -1,0 +1,2 @@
+candidate candidate chip 1287.0,356.0,1346.3,382.0 {"lifted":{"runs":45,"failed":0,"skipped":0,"bySide":{}},"before":{"runs":13,"failed":0,"skipped":0,"bySide":{}},"during":{"runs":65,"failed":0,"skipped":0,"bySide":{}},"duringReal":{"runs":10,"failed":0,"skipped":0,"bySide":{}},"returning":{"runs":34,"failed":0,"skipped":1,"bySide":{}},"reentry":{"runs":49,"failed":0,"skipped":0,"bySide":{}},"keyboard":{"runs":12,"failed":0,"skipped":0,"bySide":{}}} errors []
+BASEDONE

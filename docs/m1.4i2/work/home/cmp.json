@@ -1,0 +1,115 @@
+{
+ "tone": {
+  "max": 43,
+  "changed": 504477,
+  "over2": 477514,
+  "box": [
+   59,
+   423,
+   1647,
+   927
+  ]
+ },
+ "lumDefault": {
+  "mean": 60.38,
+  "blackShare": 0.013
+ },
+ "lumTone": {
+  "mean": 57.72,
+  "blackShare": 0.013
+ },
+ "rest": {
+  "engineering": {
+   "max": 1,
+   "changed": 9,
+   "over2": 0,
+   "box": null
+  },
+  "educational": {
+   "max": 1,
+   "changed": 44,
+   "over2": 0,
+   "box": null
+  },
+  "playground": {
+   "max": 66,
+   "changed": 40348,
+   "over2": 11799,
+   "box": [
+    1045,
+    315,
+    1355,
+    539
+   ]
+  },
+  "creative": {
+   "max": 1,
+   "changed": 24,
+   "over2": 0,
+   "box": null
+  },
+  "experience": {
+   "max": 1,
+   "changed": 68,
+   "over2": 0,
+   "box": null
+  }
+ },
+ "powered": {
+  "engineering": {
+   "max": 198,
+   "changed": 46388,
+   "over2": 35331,
+   "box": [
+    235,
+    312,
+    772,
+    659
+   ]
+  },
+  "educational": {
+   "max": 200,
+   "changed": 50945,
+   "over2": 41617,
+   "box": [
+    654,
+    216,
+    998,
+    565
+   ]
+  },
+  "playground": {
+   "max": 251,
+   "changed": 99496,
+   "over2": 80372,
+   "box": [
+    825,
+    294,
+    1382,
+    673
+   ]
+  },
+  "creative": {
+   "max": 191,
+   "changed": 46756,
+   "over2": 38029,
+   "box": [
+    50,
+    541,
+    714,
+    858
+   ]
+  },
+  "experience": {
+   "max": 212,
+   "changed": 50341,
+   "over2": 37956,
+   "box": [
+    944,
+    555,
+    1647,
+    882
+   ]
+  }
+ }
+}

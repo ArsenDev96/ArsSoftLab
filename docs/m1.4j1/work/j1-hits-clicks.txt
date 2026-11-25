@@ -1,0 +1,9 @@
+clicks: 64, failed 0
+   ["raised lid, hover held","hotspot engineering","-,engineering"]
+   ["raised lid, click","?station=engineering"]
+   ["wall above the resting lid","nothing","-",0]
+   ["foot of the platform, raised","hotspot engineering","-,engineering",1]
+   ["...click","?station=engineering"]
+   ["keyboard Enter on chip 1, lift 8.4","?station=engineering&project=sqlorbit"]
+   ["keyboard Space on chip 1, lift 8.8","?station=engineering&project=sqlorbit"]
+errors []

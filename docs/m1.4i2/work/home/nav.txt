@@ -1,0 +1,137 @@
+#### 19:50:29 node docs/m1.4i1/work/nav.mjs home
+
+# direct  
+OK    direct / | 1501 ms op=1,1 img=29/29 rules=1 script=text/javascript timers=pending dec=78 lis=160 ro=2 doc=8jamq5g0732 err=[]
+      activation {"poweredMs":948,"arcade":"running","rafPerFrame":1,"restMs":534,"arcadeAfter":"off","rafAtRest":0,"errors":[]}
+
+# direct  
+OK    direct /lab-v2 | 1343 ms op=1,1 img=18/18 rules=1 script=text/javascript timers=pending dec=84 lis=160 ro=4 doc=2woyulohq94 err=[]
+      activation {"poweredMs":1147,"arcade":"running","rafPerFrame":1,"restMs":600,"arcadeAfter":"off","rafAtRest":0,"errors":[]}
+
+# client  
+OK    /nope -> / (client) | 1253 ms op=1,1 img=29/29 rules=1 script=text/plain timers=cleared,cleared dec=349 lis=160 ro=2 doc=8eu2cjw8yve err=[]
+      activation {"poweredMs":949,"arcade":"running","rafPerFrame":1,"restMs":533,"arcadeAfter":"off","rafAtRest":0,"errors":[]}
+OK    reload / | 551 ms op=1,1 img=29/29 rules=1 script=text/javascript timers=pending dec=78 lis=160 ro=2 doc=qmjt0fvdbv err=[]
+
+# client  
+OK    /nope -> /lab-v2 (client) | 1059 ms op=1,1 img=18/18 rules=1 script=text/plain timers=cleared,cleared dec=168 lis=160 ro=4 doc=3jh65rlu164 err=[]
+      activation {"poweredMs":1147,"arcade":"running","rafPerFrame":1,"restMs":536,"arcadeAfter":"off","rafAtRest":0,"errors":[]}
+OK    reload /lab-v2 | 850 ms op=1,1 img=18/18 rules=1 script=text/javascript timers=pending dec=84 lis=160 ro=4 doc=dajr96vga4h err=[]
+
+# roundtrip from direct  
+OK    direct / | 1231 ms op=1,1 img=29/29 rules=1 script=text/javascript timers=pending dec=78 lis=160 ro=2 doc=82mojx8vd4a err=[]
+      activation {"poweredMs":949,"arcade":"running","rafPerFrame":1,"restMs":533,"arcadeAfter":"off","rafAtRest":0,"errors":[]}
+OK    -> /lab-v2 | 204 ms op=1,1 img=18/18 rules=1 script=text/plain timers=fired dec=78 lis=160 ro=4 doc=82mojx8vd4a err=[]
+      activation {"poweredMs":1151,"arcade":"running","rafPerFrame":1,"restMs":600,"arcadeAfter":"off","rafAtRest":0,"errors":[]}
+OK    -> / | 156 ms op=1,1 img=29/29 rules=1 script=text/plain timers=fired dec=369 lis=160 ro=2 doc=82mojx8vd4a err=[]
+      activation {"poweredMs":951,"arcade":"running","rafPerFrame":1,"restMs":469,"arcadeAfter":"off","rafAtRest":0,"errors":[]}
+
+# roundtrip from client  
+OK    /nope -> / | 1136 ms op=1,1 img=29/29 rules=1 script=text/plain timers=cleared,cleared dec=349 lis=160 ro=2 doc=gdxobr25ain err=[]
+      activation {"poweredMs":948,"arcade":"running","rafPerFrame":1,"restMs":467,"arcadeAfter":"off","rafAtRest":0,"errors":[]}
+OK    -> /lab-v2 | 188 ms op=1,1 img=18/18 rules=1 script=text/plain timers=cleared,cleared dec=349 lis=160 ro=4 doc=gdxobr25ain err=[]
+      activation {"poweredMs":1149,"arcade":"running","rafPerFrame":1,"restMs":535,"arcadeAfter":"off","rafAtRest":0,"errors":[]}
+OK    -> / | 150 ms op=1,1 img=29/29 rules=1 script=text/plain timers=cleared,cleared dec=640 lis=160 ro=2 doc=gdxobr25ain err=[]
+      activation {"poweredMs":950,"arcade":"running","rafPerFrame":1,"restMs":535,"arcadeAfter":"off","rafAtRest":0,"errors":[]}
+
+# history  
+OK    /nope -> / | 988 ms op=1,1 img=29/29 rules=1 script=text/plain timers=cleared,cleared dec=349 lis=160 ro=2 doc=yb00b8r81cd err=[]
+      activation {"poweredMs":951,"arcade":"running","rafPerFrame":1,"restMs":468,"arcadeAfter":"off","rafAtRest":0,"errors":[]}
+OK    Forward to / | 516 ms op=1,1 img=29/29 rules=1 script=text/plain timers=cleared,cleared dec=349 lis=160 ro=2 doc=cth4r7paomi err=[]
+      activation {"poweredMs":951,"arcade":"running","rafPerFrame":1,"restMs":467,"arcadeAfter":"off","rafAtRest":0,"errors":[]}
+OK    -> /lab-v2 | 207 ms op=1,1 img=18/18 rules=1 script=text/plain timers=cleared,cleared dec=349 lis=160 ro=4 doc=cth4r7paomi err=[]
+      activation {"poweredMs":1151,"arcade":"running","rafPerFrame":1,"restMs":536,"arcadeAfter":"off","rafAtRest":0,"errors":[]}
+OK    Back to / | 53 ms op=1,1 img=29/29 rules=1 script=text/plain timers=cleared,cleared dec=350 lis=160 ro=2 doc=cth4r7paomi err=[]
+      activation {"poweredMs":950,"arcade":"running","rafPerFrame":1,"restMs":468,"arcadeAfter":"off","rafAtRest":0,"errors":[]}
+OK    Forward to /lab-v2 | 52 ms op=1,1 img=18/18 rules=1 script=text/plain timers=cleared,cleared dec=374 lis=160 ro=4 doc=cth4r7paomi err=[]
+      activation {"poweredMs":1149,"arcade":"running","rafPerFrame":1,"restMs":535,"arcadeAfter":"off","rafAtRest":0,"errors":[]}
+
+# left and back  
+OK    direct / | 1416 ms op=1,1 img=29/29 rules=1 script=text/javascript timers=pending dec=78 lis=160 ro=2 doc=8wnch2bit2y err=[]
+OK    Back to / | 702 ms op=1,1 img=29/29 rules=1 script=text/javascript timers=pending dec=78 lis=161 ro=2 doc=b08wspxt7fn err=[]
+      activation {"poweredMs":950,"arcade":"running","rafPerFrame":1,"restMs":534,"arcadeAfter":"off","rafAtRest":0,"errors":[]}
+
+# left and back  
+OK    direct /lab-v2 | 1330 ms op=1,1 img=18/18 rules=1 script=text/javascript timers=pending dec=84 lis=160 ro=4 doc=6bt1t7ddkaw err=[]
+OK    Back to /lab-v2 | 783 ms op=1,1 img=18/18 rules=1 script=text/javascript timers=pending dec=84 lis=161 ro=4 doc=xmrz4w8j5qq err=[]
+      activation {"poweredMs":1167,"arcade":"running","rafPerFrame":1,"restMs":535,"arcadeAfter":"off","rafAtRest":0,"errors":[]}
+
+# remount /  
+OK    mount 1: /nope -> / | 1427 ms op=1,1 img=29/29 rules=1 script=text/plain timers=cleared,cleared dec=131 lis=160 ro=2 doc=tmoxmdhs94 err=[]
+      activation {"poweredMs":951,"arcade":"running","rafPerFrame":1,"restMs":467,"arcadeAfter":"off","rafAtRest":0,"errors":[]}
+      afterUnmount {"listeners":156,"observers":1,"animations":0,"timers":[]}
+OK    mount 2: /nope -> / | 617 ms op=1,1 img=29/29 rules=1 script=text/plain timers=cleared,cleared dec=118 lis=160 ro=2 doc=ade6lre40dp err=[]
+      activation {"poweredMs":950,"arcade":"running","rafPerFrame":1,"restMs":533,"arcadeAfter":"off","rafAtRest":0,"errors":[]}
+      afterUnmount {"listeners":156,"observers":1,"animations":0,"timers":[]}
+OK    mount 3: /nope -> / | 501 ms op=1,1 img=29/29 rules=1 script=text/plain timers=cleared,cleared dec=349 lis=160 ro=2 doc=6qeza4fvsxb err=[]
+      activation {"poweredMs":950,"arcade":"running","rafPerFrame":1,"restMs":467,"arcadeAfter":"off","rafAtRest":0,"errors":[]}
+      afterUnmount {"listeners":156,"observers":1,"animations":0,"timers":[]}
+OK    mount 4: /nope -> / | 483 ms op=1,1 img=29/29 rules=1 script=text/plain timers=cleared,cleared dec=349 lis=160 ro=2 doc=3yavravtp2w err=[]
+      activation {"poweredMs":950,"arcade":"running","rafPerFrame":1,"restMs":467,"arcadeAfter":"off","rafAtRest":0,"errors":[]}
+      afterUnmount {"listeners":156,"observers":1,"animations":0,"timers":[]}
+OK    mount 5: /nope -> / | 516 ms op=1,1 img=29/29 rules=1 script=text/plain timers=cleared,cleared dec=349 lis=160 ro=2 doc=pjvmdhn0ew err=[]
+      activation {"poweredMs":951,"arcade":"running","rafPerFrame":1,"restMs":468,"arcadeAfter":"off","rafAtRest":0,"errors":[]}
+      afterUnmount {"listeners":156,"observers":1,"animations":0,"timers":[]}
+OK    mount 6: /nope -> / | 452 ms op=1,1 img=29/29 rules=1 script=text/plain timers=cleared,cleared dec=349 lis=160 ro=2 doc=7rg5at81p9c err=[]
+      activation {"poweredMs":950,"arcade":"running","rafPerFrame":1,"restMs":468,"arcadeAfter":"off","rafAtRest":0,"errors":[]}
+      afterUnmount {"listeners":156,"observers":1,"animations":0,"timers":[]}
+
+# remount /lab-v2  
+OK    mount 1: /nope -> /lab-v2 | 1055 ms op=1,1 img=18/18 rules=1 script=text/plain timers=cleared,cleared dec=168 lis=160 ro=4 doc=7q9jqt2fxca err=[]
+      activation {"poweredMs":1148,"arcade":"running","rafPerFrame":1,"restMs":608,"arcadeAfter":"off","rafAtRest":0,"errors":[]}
+      afterUnmount {"listeners":156,"observers":1,"animations":0,"timers":[]}
+OK    mount 2: /nope -> /lab-v2 | 536 ms op=1,1 img=18/18 rules=1 script=text/plain timers=cleared,cleared dec=168 lis=160 ro=4 doc=c0qctl1g1zc err=[]
+      activation {"poweredMs":1150,"arcade":"running","rafPerFrame":1,"restMs":534,"arcadeAfter":"off","rafAtRest":0,"errors":[]}
+      afterUnmount {"listeners":156,"observers":1,"animations":0,"timers":[]}
+OK    mount 3: /nope -> /lab-v2 | 519 ms op=1,1 img=18/18 rules=1 script=text/plain timers=cleared,cleared dec=168 lis=160 ro=4 doc=oca4k1zmvad err=[]
+      activation {"poweredMs":1139,"arcade":"running","rafPerFrame":1,"restMs":536,"arcadeAfter":"off","rafAtRest":0,"errors":[]}
+      afterUnmount {"listeners":156,"observers":1,"animations":0,"timers":[]}
+OK    mount 4: /nope -> /lab-v2 | 534 ms op=1,1 img=18/18 rules=1 script=text/plain timers=cleared,cleared dec=168 lis=160 ro=4 doc=nqzo7mnmnz9 err=[]
+      activation {"poweredMs":1150,"arcade":"running","rafPerFrame":1,"restMs":536,"arcadeAfter":"off","rafAtRest":0,"errors":[]}
+      afterUnmount {"listeners":156,"observers":1,"animations":0,"timers":[]}
+OK    mount 5: /nope -> /lab-v2 | 550 ms op=1,1 img=18/18 rules=1 script=text/plain timers=cleared,cleared dec=168 lis=160 ro=4 doc=vflz7mjbxz err=[]
+      activation {"poweredMs":1149,"arcade":"running","rafPerFrame":1,"restMs":600,"arcadeAfter":"off","rafAtRest":0,"errors":[]}
+      afterUnmount {"listeners":156,"observers":1,"animations":0,"timers":[]}
+OK    mount 6: /nope -> /lab-v2 | 588 ms op=1,1 img=18/18 rules=1 script=text/plain timers=cleared,cleared dec=168 lis=160 ro=4 doc=g76cb8h6opd err=[]
+      activation {"poweredMs":1150,"arcade":"running","rafPerFrame":1,"restMs":536,"arcadeAfter":"off","rafAtRest":0,"errors":[]}
+      afterUnmount {"listeners":156,"observers":1,"animations":0,"timers":[]}
+
+# deep FAILED Error: TypeError: Cannot read properties of undefined (reading 'router')
+    at <anonymous>:1:14 
+
+# left before the gate opened  {"during":{"opacity":"0,0","loaded":0,"of":29,"timers":["cleared","pending"]},"away":{"timers":[],"rules":0},"later":{"timers":[],"rules":0}}
+OK    / again after leaving early | 535 ms op=1,1 img=29/29 rules=1 script=text/plain timers=cleared,cleared dec=349 lis=160 ro=2 doc=cu5fik9cnmc err=[]
+      activation {"poweredMs":1014,"arcade":"running","rafPerFrame":1,"restMs":467,"arcadeAfter":"off","rafAtRest":0,"errors":[]}
+
+# left before the gate opened  {"during":{"opacity":"0,0","loaded":0,"of":18,"timers":["cleared","pending"]},"away":{"timers":[],"rules":0},"later":{"timers":[],"rules":0}}
+OK    /lab-v2 again after leaving early | 599 ms op=1,1 img=18/18 rules=1 script=text/plain timers=cleared,cleared dec=168 lis=160 ro=4 doc=lkc2bh1ve err=[]
+      activation {"poweredMs":1149,"arcade":"running","rafPerFrame":1,"restMs":537,"arcadeAfter":"off","rafAtRest":0,"errors":[]}
+
+# stalled images  
+OK    stalled, direct / | 5570 ms op=1,1 img=0/29 rules=1 script=text/javascript timers=fired dec=0 lis=160 ro=2 doc=ac9z1ln2ljo err=[]
+
+# stalled images  
+OK    stalled, client / | 4484 ms op=1,1 img=0/29 rules=1 script=text/plain timers=cleared,fired dec=58 lis=160 ro=2 doc=vfliftcxbce err=[]
+
+# stalled images  
+OK    stalled, direct /lab-v2 | 4622 ms op=1,1 img=0/18 rules=1 script=text/javascript timers=fired dec=0 lis=160 ro=4 doc=4uoebbylh5n err=[]
+
+# stalled images  
+OK    stalled, client /lab-v2 | 4647 ms op=1,1 img=0/18 rules=1 script=text/plain timers=cleared,fired dec=168 lis=160 ro=4 doc=99s7y0n1z3k err=[]
+
+# reduced  
+OK    reduced: direct / | 1334 ms op=1,1 img=29/29 rules=1 script=text/javascript timers=pending dec=78 lis=160 ro=2 doc=kyz6bd5agd err=[]
+      reduced {"hover":"playground","arcade":"still","lift":"none","surgeRunning":0}
+
+# reduced  
+OK    reduced: /nope -> / | 981 ms op=1,1 img=29/29 rules=1 script=text/plain timers=cleared,cleared dec=349 lis=160 ro=2 doc=dgq5utug0qv err=[]
+      reduced {"hover":"playground","arcade":"still","lift":"none","surgeRunning":0}
+
+# reduced  
+OK    reduced: direct /lab-v2 | 2125 ms op=1,1 img=18/18 rules=1 script=text/javascript timers=pending dec=84 lis=160 ro=4 doc=t20xkkpcf2e err=[]
+      reduced {"hover":"playground","arcade":"still","lift":"none","surgeRunning":0}
+
+# reduced  
+OK    reduced: /nope -> /lab-v2 | 1024 ms op=1,1 img=18/18 rules=1 script=text/plain timers=cleared,cleared dec=168 lis=160 ro=4 doc=8tq4aglg4hf err=[]
+      reduced {"hover":"playground","arcade":"still","lift":"none","surgeRunning":0}
+#### exit 0 19:54:39

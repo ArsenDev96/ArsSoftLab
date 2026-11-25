@@ -1,0 +1,394 @@
+[
+ {
+  "start": "/",
+  "how": "push",
+  "to": "/",
+  "shownMs": 1385,
+  "sameDocument": true,
+  "gates": 2,
+  "animations": 6,
+  "lum": {
+   "mean": 55.02,
+   "blackShare": 0.013
+  },
+  "errors": []
+ },
+ {
+  "start": "/",
+  "how": "push",
+  "to": "/lab-v2",
+  "shownMs": 325,
+  "sameDocument": true,
+  "gates": 2,
+  "animations": 0,
+  "lum": {
+   "mean": 60.37,
+   "blackShare": 0.013
+  },
+  "errors": []
+ },
+ {
+  "start": "/",
+  "how": "push",
+  "to": "/",
+  "shownMs": 117,
+  "sameDocument": true,
+  "gates": 2,
+  "animations": 6,
+  "lum": {
+   "mean": 55.02,
+   "blackShare": 0.013
+  },
+  "errors": []
+ },
+ {
+  "start": "/",
+  "how": "push",
+  "to": "/lab-v2",
+  "shownMs": 146,
+  "sameDocument": true,
+  "gates": 2,
+  "animations": 0,
+  "lum": {
+   "mean": 60.37,
+   "blackShare": 0.013
+  },
+  "errors": []
+ },
+ {
+  "start": "/",
+  "how": "push",
+  "to": "/",
+  "shownMs": 111,
+  "sameDocument": true,
+  "gates": 2,
+  "animations": 6,
+  "lum": {
+   "mean": 55.02,
+   "blackShare": 0.013
+  },
+  "errors": []
+ },
+ {
+  "start": "/",
+  "how": "push",
+  "to": "/lab-v2",
+  "shownMs": 140,
+  "sameDocument": true,
+  "gates": 2,
+  "animations": 0,
+  "lum": {
+   "mean": 60.37,
+   "blackShare": 0.013
+  },
+  "errors": []
+ },
+ {
+  "start": "/",
+  "how": "push",
+  "to": "/",
+  "shownMs": 87,
+  "sameDocument": true,
+  "gates": 2,
+  "animations": 6,
+  "lum": {
+   "mean": 55.02,
+   "blackShare": 0.013
+  },
+  "errors": []
+ },
+ {
+  "start": "/",
+  "how": "push",
+  "to": "/lab-v2",
+  "shownMs": 162,
+  "sameDocument": true,
+  "gates": 2,
+  "animations": 0,
+  "lum": {
+   "mean": 60.37,
+   "blackShare": 0.013
+  },
+  "errors": []
+ },
+ {
+  "start": "/",
+  "how": "push",
+  "to": "/",
+  "shownMs": 148,
+  "sameDocument": true,
+  "gates": 2,
+  "animations": 6,
+  "lum": {
+   "mean": 55.02,
+   "blackShare": 0.013
+  },
+  "errors": []
+ },
+ {
+  "start": "/",
+  "how": "back",
+  "to": "/lab-v2",
+  "shownMs": 50,
+  "sameDocument": true,
+  "gates": 2,
+  "animations": 0,
+  "lum": {
+   "mean": 60.37,
+   "blackShare": 0.013
+  },
+  "errors": []
+ },
+ {
+  "start": "/",
+  "how": "back",
+  "to": "/",
+  "shownMs": 46,
+  "sameDocument": true,
+  "gates": 2,
+  "animations": 6,
+  "lum": {
+   "mean": 55.02,
+   "blackShare": 0.013
+  },
+  "errors": []
+ },
+ {
+  "start": "/",
+  "how": "forward",
+  "to": "/lab-v2",
+  "shownMs": 46,
+  "sameDocument": true,
+  "gates": 2,
+  "animations": 0,
+  "lum": {
+   "mean": 60.37,
+   "blackShare": 0.013
+  },
+  "errors": []
+ },
+ {
+  "start": "/",
+  "how": "forward",
+  "to": "/",
+  "shownMs": 42,
+  "sameDocument": true,
+  "gates": 2,
+  "animations": 6,
+  "lum": {
+   "mean": 55.02,
+   "blackShare": 0.013
+  },
+  "errors": []
+ },
+ {
+  "start": "/",
+  "how": "back",
+  "to": "/lab-v2",
+  "shownMs": 45,
+  "sameDocument": true,
+  "gates": 2,
+  "animations": 0,
+  "lum": {
+   "mean": 60.37,
+   "blackShare": 0.013
+  },
+  "errors": []
+ },
+ {
+  "start": "/lab-v2",
+  "how": "push",
+  "to": "/lab-v2",
+  "shownMs": 1959,
+  "sameDocument": true,
+  "gates": 2,
+  "animations": 0,
+  "lum": {
+   "mean": 60.36,
+   "blackShare": 0.013
+  },
+  "errors": []
+ },
+ {
+  "start": "/lab-v2",
+  "how": "push",
+  "to": "/",
+  "shownMs": 168,
+  "sameDocument": true,
+  "gates": 2,
+  "animations": 6,
+  "lum": {
+   "mean": 55.02,
+   "blackShare": 0.013
+  },
+  "errors": []
+ },
+ {
+  "start": "/lab-v2",
+  "how": "push",
+  "to": "/lab-v2",
+  "shownMs": 127,
+  "sameDocument": true,
+  "gates": 2,
+  "animations": 0,
+  "lum": {
+   "mean": 60.36,
+   "blackShare": 0.013
+  },
+  "errors": []
+ },
+ {
+  "start": "/lab-v2",
+  "how": "push",
+  "to": "/",
+  "shownMs": 124,
+  "sameDocument": true,
+  "gates": 2,
+  "animations": 6,
+  "lum": {
+   "mean": 55.02,
+   "blackShare": 0.013
+  },
+  "errors": []
+ },
+ {
+  "start": "/lab-v2",
+  "how": "push",
+  "to": "/lab-v2",
+  "shownMs": 143,
+  "sameDocument": true,
+  "gates": 2,
+  "animations": 0,
+  "lum": {
+   "mean": 60.36,
+   "blackShare": 0.013
+  },
+  "errors": []
+ },
+ {
+  "start": "/lab-v2",
+  "how": "push",
+  "to": "/",
+  "shownMs": 107,
+  "sameDocument": true,
+  "gates": 2,
+  "animations": 6,
+  "lum": {
+   "mean": 55.02,
+   "blackShare": 0.013
+  },
+  "errors": []
+ },
+ {
+  "start": "/lab-v2",
+  "how": "push",
+  "to": "/lab-v2",
+  "shownMs": 151,
+  "sameDocument": true,
+  "gates": 2,
+  "animations": 0,
+  "lum": {
+   "mean": 60.36,
+   "blackShare": 0.013
+  },
+  "errors": []
+ },
+ {
+  "start": "/lab-v2",
+  "how": "push",
+  "to": "/",
+  "shownMs": 90,
+  "sameDocument": true,
+  "gates": 2,
+  "animations": 6,
+  "lum": {
+   "mean": 55.02,
+   "blackShare": 0.013
+  },
+  "errors": []
+ },
+ {
+  "start": "/lab-v2",
+  "how": "push",
+  "to": "/lab-v2",
+  "shownMs": 146,
+  "sameDocument": true,
+  "gates": 2,
+  "animations": 0,
+  "lum": {
+   "mean": 60.36,
+   "blackShare": 0.013
+  },
+  "errors": []
+ },
+ {
+  "start": "/lab-v2",
+  "how": "back",
+  "to": "/",
+  "shownMs": 48,
+  "sameDocument": true,
+  "gates": 2,
+  "animations": 6,
+  "lum": {
+   "mean": 55.02,
+   "blackShare": 0.013
+  },
+  "errors": []
+ },
+ {
+  "start": "/lab-v2",
+  "how": "back",
+  "to": "/lab-v2",
+  "shownMs": 48,
+  "sameDocument": true,
+  "gates": 2,
+  "animations": 0,
+  "lum": {
+   "mean": 60.36,
+   "blackShare": 0.013
+  },
+  "errors": []
+ },
+ {
+  "start": "/lab-v2",
+  "how": "forward",
+  "to": "/",
+  "shownMs": 47,
+  "sameDocument": true,
+  "gates": 2,
+  "animations": 6,
+  "lum": {
+   "mean": 55.02,
+   "blackShare": 0.013
+  },
+  "errors": []
+ },
+ {
+  "start": "/lab-v2",
+  "how": "forward",
+  "to": "/lab-v2",
+  "shownMs": 53,
+  "sameDocument": true,
+  "gates": 2,
+  "animations": 0,
+  "lum": {
+   "mean": 60.36,
+   "blackShare": 0.013
+  },
+  "errors": []
+ },
+ {
+  "start": "/lab-v2",
+  "how": "back",
+  "to": "/",
+  "shownMs": 50,
+  "sameDocument": true,
+  "gates": 2,
+  "animations": 6,
+  "lum": {
+   "mean": 55.02,
+   "blackShare": 0.013
+  },
+  "errors": []
+ }
+]

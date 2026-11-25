@@ -1,0 +1,20 @@
+#### 21:02:59 node docs/m1.4i1/work/nav-ready.mjs homedeep deep
+
+# deep links  
+OK    /nope -> /?station=experience | 2127 ms op=1,1 img=29/29 rules=1 script=text/plain timers=cleared,cleared dec=349 lis=161 ro=2 doc=oq2kxp64v3h err=[]
+      selected "experience"
+OK    Back, Forward | 536 ms op=1,1 img=29/29 rules=1 script=text/plain timers=cleared,cleared dec=349 lis=161 ro=2 doc=yrcz27reb0i err=[]
+      selected "experience"
+OK    /nope -> / | 497 ms op=1,1 img=29/29 rules=1 script=text/plain timers=cleared,cleared dec=349 lis=160 ro=2 doc=hxpyfg7i34o err=[]
+      afterClick "educational"
+OK    Back closes the station | 1 ms op=1,1 img=29/29 rules=1 script=text/plain timers=cleared,cleared dec=349 lis=160 ro=2 doc=hxpyfg7i34o err=[]
+
+# deep links  
+OK    /nope -> /lab-v2?station=experience | 1559 ms op=1,1 img=18/18 rules=1 script=text/plain timers=cleared,cleared dec=168 lis=161 ro=4 doc=2cp0pxiu4p4 err=[]
+      selected "experience"
+OK    Back, Forward | 639 ms op=1,1 img=18/18 rules=1 script=text/plain timers=cleared,cleared dec=168 lis=161 ro=4 doc=t6k6uqr81nn err=[]
+      selected "experience"
+OK    /nope -> /lab-v2 | 576 ms op=1,1 img=18/18 rules=1 script=text/plain timers=cleared,cleared dec=168 lis=160 ro=4 doc=azmg9a6b5po err=[]
+      afterClick "educational"
+OK    Back closes the station | 1 ms op=1,1 img=18/18 rules=1 script=text/plain timers=cleared,cleared dec=168 lis=160 ro=4 doc=azmg9a6b5po err=[]
+#### exit 0 21:03:18

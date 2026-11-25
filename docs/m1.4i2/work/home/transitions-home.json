@@ -1,0 +1,1952 @@
+{
+ "playground": {
+  "rows": [
+   {
+    "group": "art-label",
+    "name": "artwork -> title",
+    "ms": 400,
+    "state": "charging",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "playground"
+   },
+   {
+    "group": "label-art",
+    "name": "title -> artwork",
+    "ms": 400,
+    "state": "charging",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "playground"
+   },
+   {
+    "group": "platform-chip",
+    "name": "platform -> chip 1",
+    "ms": 400,
+    "state": "charging",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "playground"
+   },
+   {
+    "group": "chip-platform",
+    "name": "chip 1 -> platform",
+    "ms": 400,
+    "state": "charging",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "playground"
+   },
+   {
+    "group": "in-label",
+    "name": "icon, title, chips",
+    "ms": 400,
+    "state": "charging",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "playground"
+   },
+   {
+    "group": "art-label",
+    "name": "artwork -> title",
+    "ms": 1500,
+    "state": "charging",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "playground"
+   },
+   {
+    "group": "label-art",
+    "name": "title -> artwork",
+    "ms": 1500,
+    "state": "charging",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "playground"
+   },
+   {
+    "group": "platform-chip",
+    "name": "platform -> chip 1",
+    "ms": 1500,
+    "state": "charging",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "playground"
+   },
+   {
+    "group": "chip-platform",
+    "name": "chip 1 -> platform",
+    "ms": 1500,
+    "state": "charging",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "playground"
+   },
+   {
+    "group": "in-label",
+    "name": "icon, title, chips",
+    "ms": 1500,
+    "state": "charging",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "playground"
+   },
+   {
+    "group": "repeated",
+    "name": "artwork <-> title x3, platform <-> chip x3",
+    "ms": 450,
+    "state": "charging",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "playground"
+   },
+   {
+    "group": "art-label",
+    "name": "artwork -> title",
+    "ms": 400,
+    "state": "lifting",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "playground"
+   },
+   {
+    "group": "label-art",
+    "name": "title -> artwork",
+    "ms": 400,
+    "state": "lifting",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "playground"
+   },
+   {
+    "group": "platform-chip",
+    "name": "platform -> chip 1",
+    "ms": 400,
+    "state": "lifting",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "playground"
+   },
+   {
+    "group": "chip-platform",
+    "name": "chip 1 -> platform",
+    "ms": 400,
+    "state": "lifting",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "playground"
+   },
+   {
+    "group": "in-label",
+    "name": "icon, title, chips",
+    "ms": 400,
+    "state": "lifting",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "playground"
+   },
+   {
+    "group": "art-label",
+    "name": "artwork -> title",
+    "ms": 1500,
+    "state": "lifting",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "playground"
+   },
+   {
+    "group": "label-art",
+    "name": "title -> artwork",
+    "ms": 1500,
+    "state": "lifting",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "playground"
+   },
+   {
+    "group": "platform-chip",
+    "name": "platform -> chip 1",
+    "ms": 1500,
+    "state": "lifting",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "playground"
+   },
+   {
+    "group": "chip-platform",
+    "name": "chip 1 -> platform",
+    "ms": 1500,
+    "state": "lifting",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "playground"
+   },
+   {
+    "group": "in-label",
+    "name": "icon, title, chips",
+    "ms": 1500,
+    "state": "lifting",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "playground"
+   },
+   {
+    "group": "repeated",
+    "name": "artwork <-> title x3, platform <-> chip x3",
+    "ms": 450,
+    "state": "lifting",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "playground"
+   },
+   {
+    "group": "art-label",
+    "name": "artwork -> title",
+    "ms": 150,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "playground"
+   },
+   {
+    "group": "label-art",
+    "name": "title -> artwork",
+    "ms": 150,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "playground"
+   },
+   {
+    "group": "platform-chip",
+    "name": "platform -> chip 1",
+    "ms": 150,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "playground"
+   },
+   {
+    "group": "chip-platform",
+    "name": "chip 1 -> platform",
+    "ms": 150,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "playground"
+   },
+   {
+    "group": "in-label",
+    "name": "icon, title, chips",
+    "ms": 150,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "playground"
+   },
+   {
+    "group": "art-label",
+    "name": "artwork -> title",
+    "ms": 400,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "playground"
+   },
+   {
+    "group": "label-art",
+    "name": "title -> artwork",
+    "ms": 400,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "playground"
+   },
+   {
+    "group": "platform-chip",
+    "name": "platform -> chip 1",
+    "ms": 400,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "playground"
+   },
+   {
+    "group": "chip-platform",
+    "name": "chip 1 -> platform",
+    "ms": 400,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "playground"
+   },
+   {
+    "group": "in-label",
+    "name": "icon, title, chips",
+    "ms": 400,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "playground"
+   },
+   {
+    "group": "art-label",
+    "name": "artwork -> title",
+    "ms": 1000,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "playground"
+   },
+   {
+    "group": "label-art",
+    "name": "title -> artwork",
+    "ms": 1000,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "playground"
+   },
+   {
+    "group": "platform-chip",
+    "name": "platform -> chip 1",
+    "ms": 1000,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "playground"
+   },
+   {
+    "group": "chip-platform",
+    "name": "chip 1 -> platform",
+    "ms": 1000,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "playground"
+   },
+   {
+    "group": "in-label",
+    "name": "icon, title, chips",
+    "ms": 1000,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "playground"
+   },
+   {
+    "group": "art-label",
+    "name": "artwork -> title",
+    "ms": 2200,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "playground"
+   },
+   {
+    "group": "label-art",
+    "name": "title -> artwork",
+    "ms": 2200,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "playground"
+   },
+   {
+    "group": "platform-chip",
+    "name": "platform -> chip 1",
+    "ms": 2200,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "playground"
+   },
+   {
+    "group": "chip-platform",
+    "name": "chip 1 -> platform",
+    "ms": 2200,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "playground"
+   },
+   {
+    "group": "in-label",
+    "name": "icon, title, chips",
+    "ms": 2200,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "playground"
+   },
+   {
+    "group": "art-label",
+    "name": "artwork edge -> title",
+    "ms": 400,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "playground"
+   },
+   {
+    "group": "label-art",
+    "name": "title -> artwork edge",
+    "ms": 400,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "playground"
+   },
+   {
+    "group": "platform-chip",
+    "name": "platform corner -> chip 1",
+    "ms": 400,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "playground"
+   },
+   {
+    "group": "chip-platform",
+    "name": "chip 1 -> platform corner",
+    "ms": 400,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "playground"
+   },
+   {
+    "group": "platform-chip",
+    "name": "far corner -> chip 1",
+    "ms": 400,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "playground"
+   },
+   {
+    "group": "chip-platform",
+    "name": "chip 1 -> far corner",
+    "ms": 400,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "playground"
+   },
+   {
+    "group": "art-label",
+    "name": "artwork edge -> title",
+    "ms": 1500,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "playground"
+   },
+   {
+    "group": "label-art",
+    "name": "title -> artwork edge",
+    "ms": 1500,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "playground"
+   },
+   {
+    "group": "platform-chip",
+    "name": "platform corner -> chip 1",
+    "ms": 1500,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "playground"
+   },
+   {
+    "group": "chip-platform",
+    "name": "chip 1 -> platform corner",
+    "ms": 1500,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "playground"
+   },
+   {
+    "group": "platform-chip",
+    "name": "far corner -> chip 1",
+    "ms": 1500,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "playground"
+   },
+   {
+    "group": "chip-platform",
+    "name": "chip 1 -> far corner",
+    "ms": 1500,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "playground"
+   },
+   {
+    "group": "repeated",
+    "name": "artwork <-> title x3, platform <-> chip x3",
+    "ms": 150,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "playground"
+   },
+   {
+    "group": "repeated",
+    "name": "artwork <-> title x3, platform <-> chip x3",
+    "ms": 450,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "playground"
+   },
+   {
+    "group": "repeated",
+    "name": "artwork <-> title x3, platform <-> chip x3",
+    "ms": 900,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "playground"
+   },
+   {
+    "group": "still",
+    "name": "lower edge of chip",
+    "ms": 5000,
+    "state": "from rest",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "playground",
+    "under": "chip"
+   },
+   {
+    "group": "still",
+    "name": "chip centre",
+    "ms": 5000,
+    "state": "from rest",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "playground",
+    "under": "chip"
+   },
+   {
+    "group": "still",
+    "name": "title",
+    "ms": 5000,
+    "state": "from rest",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "playground",
+    "under": "chip"
+   },
+   {
+    "group": "still",
+    "name": "title lower edge",
+    "ms": 5000,
+    "state": "from rest",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "playground",
+    "under": "chip"
+   },
+   {
+    "group": "leave",
+    "name": "artwork",
+    "ms": 0,
+    "state": "powered",
+    "before": "playground",
+    "afterMs": 118,
+    "ends": "-",
+    "rest": true,
+    "sparks": 0
+   },
+   {
+    "group": "leave",
+    "name": "title",
+    "ms": 0,
+    "state": "powered",
+    "before": "playground",
+    "afterMs": 122,
+    "ends": "-",
+    "rest": true,
+    "sparks": 0
+   },
+   {
+    "group": "leave",
+    "name": "chip",
+    "ms": 0,
+    "state": "powered",
+    "before": "playground",
+    "afterMs": 119,
+    "ends": "-",
+    "rest": true,
+    "sparks": 0
+   },
+   {
+    "group": "leave",
+    "name": "platform",
+    "ms": 0,
+    "state": "powered",
+    "before": "playground",
+    "afterMs": 121,
+    "ends": "-",
+    "rest": true,
+    "sparks": 0
+   },
+   {
+    "group": "leave",
+    "name": "between chip and platform",
+    "ms": 0,
+    "state": "powered",
+    "before": "playground",
+    "afterMs": 123,
+    "ends": "-",
+    "rest": true,
+    "sparks": 0
+   },
+   {
+    "group": "switch",
+    "name": "label -> experience",
+    "ms": 200,
+    "state": "powered",
+    "h": [
+     "playground",
+     "experience"
+    ],
+    "sparks": 1,
+    "ok": true
+   },
+   {
+    "group": "switch",
+    "name": "label -> experience",
+    "ms": 900,
+    "state": "powered",
+    "h": [
+     "playground",
+     "-",
+     "experience"
+    ],
+    "sparks": 1,
+    "ok": true
+   },
+   {
+    "group": "switch",
+    "name": "platform -> experience",
+    "ms": 200,
+    "state": "powered",
+    "h": [
+     "playground",
+     "experience"
+    ],
+    "sparks": 1,
+    "ok": true
+   },
+   {
+    "group": "switch",
+    "name": "platform -> experience",
+    "ms": 900,
+    "state": "powered",
+    "h": [
+     "playground",
+     "-",
+     "experience"
+    ],
+    "sparks": 1,
+    "ok": true
+   }
+  ],
+  "errors": []
+ },
+ "creative": {
+  "rows": [
+   {
+    "group": "art-label",
+    "name": "artwork -> title",
+    "ms": 400,
+    "state": "charging",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "creative"
+   },
+   {
+    "group": "label-art",
+    "name": "title -> artwork",
+    "ms": 400,
+    "state": "charging",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "creative"
+   },
+   {
+    "group": "platform-chip",
+    "name": "platform -> chip 1",
+    "ms": 400,
+    "state": "charging",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "creative"
+   },
+   {
+    "group": "chip-platform",
+    "name": "chip 1 -> platform",
+    "ms": 400,
+    "state": "charging",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "creative"
+   },
+   {
+    "group": "in-label",
+    "name": "icon, title, chips",
+    "ms": 400,
+    "state": "charging",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "creative"
+   },
+   {
+    "group": "art-label",
+    "name": "artwork -> title",
+    "ms": 1500,
+    "state": "charging",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "creative"
+   },
+   {
+    "group": "label-art",
+    "name": "title -> artwork",
+    "ms": 1500,
+    "state": "charging",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "creative"
+   },
+   {
+    "group": "platform-chip",
+    "name": "platform -> chip 1",
+    "ms": 1500,
+    "state": "charging",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "creative"
+   },
+   {
+    "group": "chip-platform",
+    "name": "chip 1 -> platform",
+    "ms": 1500,
+    "state": "charging",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "creative"
+   },
+   {
+    "group": "in-label",
+    "name": "icon, title, chips",
+    "ms": 1500,
+    "state": "charging",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "creative"
+   },
+   {
+    "group": "repeated",
+    "name": "artwork <-> title x3, platform <-> chip x3",
+    "ms": 450,
+    "state": "charging",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "creative"
+   },
+   {
+    "group": "art-label",
+    "name": "artwork -> title",
+    "ms": 150,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "creative"
+   },
+   {
+    "group": "label-art",
+    "name": "title -> artwork",
+    "ms": 150,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "creative"
+   },
+   {
+    "group": "platform-chip",
+    "name": "platform -> chip 1",
+    "ms": 150,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "creative"
+   },
+   {
+    "group": "chip-platform",
+    "name": "chip 1 -> platform",
+    "ms": 150,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "creative"
+   },
+   {
+    "group": "in-label",
+    "name": "icon, title, chips",
+    "ms": 150,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "creative"
+   },
+   {
+    "group": "art-label",
+    "name": "artwork -> title",
+    "ms": 400,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "creative"
+   },
+   {
+    "group": "label-art",
+    "name": "title -> artwork",
+    "ms": 400,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "creative"
+   },
+   {
+    "group": "platform-chip",
+    "name": "platform -> chip 1",
+    "ms": 400,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "creative"
+   },
+   {
+    "group": "chip-platform",
+    "name": "chip 1 -> platform",
+    "ms": 400,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "creative"
+   },
+   {
+    "group": "in-label",
+    "name": "icon, title, chips",
+    "ms": 400,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "creative"
+   },
+   {
+    "group": "art-label",
+    "name": "artwork -> title",
+    "ms": 1000,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "creative"
+   },
+   {
+    "group": "label-art",
+    "name": "title -> artwork",
+    "ms": 1000,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "creative"
+   },
+   {
+    "group": "platform-chip",
+    "name": "platform -> chip 1",
+    "ms": 1000,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "creative"
+   },
+   {
+    "group": "chip-platform",
+    "name": "chip 1 -> platform",
+    "ms": 1000,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "creative"
+   },
+   {
+    "group": "in-label",
+    "name": "icon, title, chips",
+    "ms": 1000,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "creative"
+   },
+   {
+    "group": "art-label",
+    "name": "artwork -> title",
+    "ms": 2200,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "creative"
+   },
+   {
+    "group": "label-art",
+    "name": "title -> artwork",
+    "ms": 2200,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "creative"
+   },
+   {
+    "group": "platform-chip",
+    "name": "platform -> chip 1",
+    "ms": 2200,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "creative"
+   },
+   {
+    "group": "chip-platform",
+    "name": "chip 1 -> platform",
+    "ms": 2200,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "creative"
+   },
+   {
+    "group": "in-label",
+    "name": "icon, title, chips",
+    "ms": 2200,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "creative"
+   },
+   {
+    "group": "art-label",
+    "name": "artwork edge -> title",
+    "ms": 400,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "creative"
+   },
+   {
+    "group": "label-art",
+    "name": "title -> artwork edge",
+    "ms": 400,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "creative"
+   },
+   {
+    "group": "platform-chip",
+    "name": "platform corner -> chip 1",
+    "ms": 400,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "creative"
+   },
+   {
+    "group": "chip-platform",
+    "name": "chip 1 -> platform corner",
+    "ms": 400,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "creative"
+   },
+   {
+    "group": "platform-chip",
+    "name": "far corner -> chip 1",
+    "ms": 400,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "creative"
+   },
+   {
+    "group": "chip-platform",
+    "name": "chip 1 -> far corner",
+    "ms": 400,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "creative"
+   },
+   {
+    "group": "art-label",
+    "name": "artwork edge -> title",
+    "ms": 1500,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "creative"
+   },
+   {
+    "group": "label-art",
+    "name": "title -> artwork edge",
+    "ms": 1500,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "creative"
+   },
+   {
+    "group": "platform-chip",
+    "name": "platform corner -> chip 1",
+    "ms": 1500,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "creative"
+   },
+   {
+    "group": "chip-platform",
+    "name": "chip 1 -> platform corner",
+    "ms": 1500,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "creative"
+   },
+   {
+    "group": "platform-chip",
+    "name": "far corner -> chip 1",
+    "ms": 1500,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "creative"
+   },
+   {
+    "group": "chip-platform",
+    "name": "chip 1 -> far corner",
+    "ms": 1500,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "creative"
+   },
+   {
+    "group": "repeated",
+    "name": "artwork <-> title x3, platform <-> chip x3",
+    "ms": 150,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "creative"
+   },
+   {
+    "group": "repeated",
+    "name": "artwork <-> title x3, platform <-> chip x3",
+    "ms": 450,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "creative"
+   },
+   {
+    "group": "repeated",
+    "name": "artwork <-> title x3, platform <-> chip x3",
+    "ms": 900,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "creative"
+   },
+   {
+    "group": "still",
+    "name": "lower edge of chip",
+    "ms": 5000,
+    "state": "from rest",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "creative",
+    "under": "chip"
+   },
+   {
+    "group": "still",
+    "name": "chip centre",
+    "ms": 5000,
+    "state": "from rest",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "creative",
+    "under": "chip"
+   },
+   {
+    "group": "still",
+    "name": "title",
+    "ms": 5000,
+    "state": "from rest",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "creative",
+    "under": "title"
+   },
+   {
+    "group": "still",
+    "name": "title lower edge",
+    "ms": 5000,
+    "state": "from rest",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "creative",
+    "under": "title"
+   },
+   {
+    "group": "leave",
+    "name": "artwork",
+    "ms": 0,
+    "state": "powered",
+    "before": "creative",
+    "afterMs": 108,
+    "ends": "-",
+    "rest": true,
+    "sparks": 0
+   },
+   {
+    "group": "leave",
+    "name": "title",
+    "ms": 0,
+    "state": "powered",
+    "before": "creative",
+    "afterMs": 111,
+    "ends": "-",
+    "rest": true,
+    "sparks": 0
+   },
+   {
+    "group": "leave",
+    "name": "chip",
+    "ms": 0,
+    "state": "powered",
+    "before": "creative",
+    "afterMs": 107,
+    "ends": "-",
+    "rest": true,
+    "sparks": 0
+   },
+   {
+    "group": "leave",
+    "name": "platform",
+    "ms": 0,
+    "state": "powered",
+    "before": "creative",
+    "afterMs": 105,
+    "ends": "-",
+    "rest": true,
+    "sparks": 0
+   },
+   {
+    "group": "leave",
+    "name": "between chip and platform",
+    "ms": 0,
+    "state": "powered",
+    "before": "creative",
+    "afterMs": 107,
+    "ends": "-",
+    "rest": true,
+    "sparks": 0
+   },
+   {
+    "group": "switch",
+    "name": "label -> engineering",
+    "ms": 200,
+    "state": "powered",
+    "h": [
+     "creative",
+     "engineering"
+    ],
+    "sparks": 1,
+    "ok": true
+   },
+   {
+    "group": "switch",
+    "name": "label -> engineering",
+    "ms": 900,
+    "state": "powered",
+    "h": [
+     "creative",
+     "-",
+     "engineering"
+    ],
+    "sparks": 1,
+    "ok": true
+   },
+   {
+    "group": "switch",
+    "name": "platform -> engineering",
+    "ms": 200,
+    "state": "powered",
+    "h": [
+     "creative",
+     "engineering"
+    ],
+    "sparks": 1,
+    "ok": true
+   },
+   {
+    "group": "switch",
+    "name": "platform -> engineering",
+    "ms": 900,
+    "state": "powered",
+    "h": [
+     "creative",
+     "engineering"
+    ],
+    "sparks": 1,
+    "ok": true
+   }
+  ],
+  "errors": []
+ },
+ "experience": {
+  "rows": [
+   {
+    "group": "art-label",
+    "name": "artwork -> title",
+    "ms": 400,
+    "state": "charging",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "experience"
+   },
+   {
+    "group": "label-art",
+    "name": "title -> artwork",
+    "ms": 400,
+    "state": "charging",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "experience"
+   },
+   {
+    "group": "platform-chip",
+    "name": "platform -> chip 1",
+    "ms": 400,
+    "state": "charging",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "experience"
+   },
+   {
+    "group": "chip-platform",
+    "name": "chip 1 -> platform",
+    "ms": 400,
+    "state": "charging",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "experience"
+   },
+   {
+    "group": "in-label",
+    "name": "icon, title, chips",
+    "ms": 400,
+    "state": "charging",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "experience"
+   },
+   {
+    "group": "art-label",
+    "name": "artwork -> title",
+    "ms": 1500,
+    "state": "charging",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "experience"
+   },
+   {
+    "group": "label-art",
+    "name": "title -> artwork",
+    "ms": 1500,
+    "state": "charging",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "experience"
+   },
+   {
+    "group": "platform-chip",
+    "name": "platform -> chip 1",
+    "ms": 1500,
+    "state": "charging",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "experience"
+   },
+   {
+    "group": "chip-platform",
+    "name": "chip 1 -> platform",
+    "ms": 1500,
+    "state": "charging",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "experience"
+   },
+   {
+    "group": "in-label",
+    "name": "icon, title, chips",
+    "ms": 1500,
+    "state": "charging",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "experience"
+   },
+   {
+    "group": "repeated",
+    "name": "artwork <-> title x3, platform <-> chip x3",
+    "ms": 450,
+    "state": "charging",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "experience"
+   },
+   {
+    "group": "art-label",
+    "name": "artwork -> title",
+    "ms": 150,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "experience"
+   },
+   {
+    "group": "label-art",
+    "name": "title -> artwork",
+    "ms": 150,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "experience"
+   },
+   {
+    "group": "platform-chip",
+    "name": "platform -> chip 1",
+    "ms": 150,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "experience"
+   },
+   {
+    "group": "chip-platform",
+    "name": "chip 1 -> platform",
+    "ms": 150,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "experience"
+   },
+   {
+    "group": "in-label",
+    "name": "icon, title, chips",
+    "ms": 150,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "experience"
+   },
+   {
+    "group": "art-label",
+    "name": "artwork -> title",
+    "ms": 400,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "experience"
+   },
+   {
+    "group": "label-art",
+    "name": "title -> artwork",
+    "ms": 400,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "experience"
+   },
+   {
+    "group": "platform-chip",
+    "name": "platform -> chip 1",
+    "ms": 400,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "experience"
+   },
+   {
+    "group": "chip-platform",
+    "name": "chip 1 -> platform",
+    "ms": 400,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "experience"
+   },
+   {
+    "group": "in-label",
+    "name": "icon, title, chips",
+    "ms": 400,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "experience"
+   },
+   {
+    "group": "art-label",
+    "name": "artwork -> title",
+    "ms": 1000,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "experience"
+   },
+   {
+    "group": "label-art",
+    "name": "title -> artwork",
+    "ms": 1000,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "experience"
+   },
+   {
+    "group": "platform-chip",
+    "name": "platform -> chip 1",
+    "ms": 1000,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "experience"
+   },
+   {
+    "group": "chip-platform",
+    "name": "chip 1 -> platform",
+    "ms": 1000,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "experience"
+   },
+   {
+    "group": "in-label",
+    "name": "icon, title, chips",
+    "ms": 1000,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "experience"
+   },
+   {
+    "group": "art-label",
+    "name": "artwork -> title",
+    "ms": 2200,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "experience"
+   },
+   {
+    "group": "label-art",
+    "name": "title -> artwork",
+    "ms": 2200,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "experience"
+   },
+   {
+    "group": "platform-chip",
+    "name": "platform -> chip 1",
+    "ms": 2200,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "experience"
+   },
+   {
+    "group": "chip-platform",
+    "name": "chip 1 -> platform",
+    "ms": 2200,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "experience"
+   },
+   {
+    "group": "in-label",
+    "name": "icon, title, chips",
+    "ms": 2200,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "experience"
+   },
+   {
+    "group": "art-label",
+    "name": "artwork edge -> title",
+    "ms": 400,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "experience"
+   },
+   {
+    "group": "label-art",
+    "name": "title -> artwork edge",
+    "ms": 400,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "experience"
+   },
+   {
+    "group": "platform-chip",
+    "name": "platform corner -> chip 1",
+    "ms": 400,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "experience"
+   },
+   {
+    "group": "chip-platform",
+    "name": "chip 1 -> platform corner",
+    "ms": 400,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "experience"
+   },
+   {
+    "group": "platform-chip",
+    "name": "far corner -> chip 1",
+    "ms": 400,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "experience"
+   },
+   {
+    "group": "chip-platform",
+    "name": "chip 1 -> far corner",
+    "ms": 400,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "experience"
+   },
+   {
+    "group": "art-label",
+    "name": "artwork edge -> title",
+    "ms": 1500,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "experience"
+   },
+   {
+    "group": "label-art",
+    "name": "title -> artwork edge",
+    "ms": 1500,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "experience"
+   },
+   {
+    "group": "platform-chip",
+    "name": "platform corner -> chip 1",
+    "ms": 1500,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "experience"
+   },
+   {
+    "group": "chip-platform",
+    "name": "chip 1 -> platform corner",
+    "ms": 1500,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "experience"
+   },
+   {
+    "group": "platform-chip",
+    "name": "far corner -> chip 1",
+    "ms": 1500,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "experience"
+   },
+   {
+    "group": "chip-platform",
+    "name": "chip 1 -> far corner",
+    "ms": 1500,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "experience"
+   },
+   {
+    "group": "repeated",
+    "name": "artwork <-> title x3, platform <-> chip x3",
+    "ms": 150,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "experience"
+   },
+   {
+    "group": "repeated",
+    "name": "artwork <-> title x3, platform <-> chip x3",
+    "ms": 450,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "experience"
+   },
+   {
+    "group": "repeated",
+    "name": "artwork <-> title x3, platform <-> chip x3",
+    "ms": 900,
+    "state": "powered",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "experience"
+   },
+   {
+    "group": "still",
+    "name": "lower edge of chip",
+    "ms": 5000,
+    "state": "from rest",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "experience",
+    "under": "chip"
+   },
+   {
+    "group": "still",
+    "name": "chip centre",
+    "ms": 5000,
+    "state": "from rest",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "experience",
+    "under": "chip"
+   },
+   {
+    "group": "still",
+    "name": "title",
+    "ms": 5000,
+    "state": "from rest",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "experience",
+    "under": "title"
+   },
+   {
+    "group": "still",
+    "name": "title lower edge",
+    "ms": 5000,
+    "state": "from rest",
+    "drops": 0,
+    "restarts": 0,
+    "other": [],
+    "ends": "experience",
+    "under": "title"
+   },
+   {
+    "group": "leave",
+    "name": "artwork",
+    "ms": 0,
+    "state": "powered",
+    "before": "experience",
+    "afterMs": 106,
+    "ends": "-",
+    "rest": true,
+    "sparks": 0
+   },
+   {
+    "group": "leave",
+    "name": "title",
+    "ms": 0,
+    "state": "powered",
+    "before": "experience",
+    "afterMs": 107,
+    "ends": "-",
+    "rest": true,
+    "sparks": 0
+   },
+   {
+    "group": "leave",
+    "name": "chip",
+    "ms": 0,
+    "state": "powered",
+    "before": "experience",
+    "afterMs": 108,
+    "ends": "-",
+    "rest": true,
+    "sparks": 0
+   },
+   {
+    "group": "leave",
+    "name": "platform",
+    "ms": 0,
+    "state": "powered",
+    "before": "experience",
+    "afterMs": 105,
+    "ends": "-",
+    "rest": true,
+    "sparks": 0
+   },
+   {
+    "group": "leave",
+    "name": "between chip and platform",
+    "ms": 0,
+    "state": "powered",
+    "before": "experience",
+    "afterMs": 107,
+    "ends": "-",
+    "rest": true,
+    "sparks": 0
+   },
+   {
+    "group": "switch",
+    "name": "label -> playground",
+    "ms": 200,
+    "state": "powered",
+    "h": [
+     "experience",
+     "playground"
+    ],
+    "sparks": 1,
+    "ok": true
+   },
+   {
+    "group": "switch",
+    "name": "label -> playground",
+    "ms": 900,
+    "state": "powered",
+    "h": [
+     "experience",
+     "-",
+     "playground"
+    ],
+    "sparks": 1,
+    "ok": true
+   },
+   {
+    "group": "switch",
+    "name": "platform -> playground",
+    "ms": 200,
+    "state": "powered",
+    "h": [
+     "experience",
+     "playground"
+    ],
+    "sparks": 1,
+    "ok": true
+   },
+   {
+    "group": "switch",
+    "name": "platform -> playground",
+    "ms": 900,
+    "state": "powered",
+    "h": [
+     "experience",
+     "playground"
+    ],
+    "sparks": 1,
+    "ok": true
+   }
+  ],
+  "errors": []
+ }
+}

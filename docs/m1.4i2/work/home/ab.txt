@@ -1,0 +1,17 @@
+#### 21:20:15 node extra/ab.mjs
+crops 43, differing 0 []
+idle {"images":67,"wrappers":9,"cropsVsFull":{"max":66,"changed":45926,"over2":11798,"box":[1045,315,1355,539]},"noise":{"max":66,"changed":40366,"over2":11799,"box":[1045,315,1355,539]}}
+idle-tone {"images":67,"wrappers":9,"cropsVsFull":{"max":2,"changed":5563,"over2":0,"box":null},"noise":{"max":1,"changed":21,"over2":0,"box":null}}
+engineering-mid-280 {"images":67,"wrappers":9,"cropsVsFull":{"max":2,"changed":5666,"over2":0,"box":null},"noise":{"max":1,"changed":20,"over2":0,"box":null}}
+engineering-powered {"images":67,"wrappers":9,"cropsVsFull":{"max":2,"changed":5495,"over2":0,"box":null},"noise":{"max":0,"changed":0,"over2":0,"box":null}}
+educational-mid-450 {"images":67,"wrappers":9,"cropsVsFull":{"max":2,"changed":6168,"over2":0,"box":null},"noise":{"max":1,"changed":33,"over2":0,"box":null}}
+educational-powered {"images":67,"wrappers":9,"cropsVsFull":{"max":2,"changed":6204,"over2":0,"box":null},"noise":{"max":0,"changed":0,"over2":0,"box":null}}
+playground-mid-120 {"images":67,"wrappers":9,"cropsVsFull":{"max":2,"changed":8736,"over2":0,"box":null},"noise":{"max":1,"changed":20,"over2":0,"box":null}}
+playground-mid-220 {"images":67,"wrappers":9,"cropsVsFull":{"max":2,"changed":9549,"over2":0,"box":null},"noise":{"max":0,"changed":0,"over2":0,"box":null}}
+playground-mid-320 {"images":67,"wrappers":9,"cropsVsFull":{"max":2,"changed":5632,"over2":0,"box":null},"noise":{"max":0,"changed":0,"over2":0,"box":null}}
+playground-powered {"images":67,"wrappers":9,"cropsVsFull":{"max":2,"changed":5617,"over2":0,"box":null},"noise":{"max":0,"changed":0,"over2":0,"box":null}}
+creative-mid-370 {"images":67,"wrappers":9,"cropsVsFull":{"max":2,"changed":5369,"over2":0,"box":null},"noise":{"max":1,"changed":15,"over2":0,"box":null}}
+creative-powered {"images":67,"wrappers":9,"cropsVsFull":{"max":2,"changed":4896,"over2":0,"box":null},"noise":{"max":0,"changed":0,"over2":0,"box":null}}
+experience-mid-430 {"images":67,"wrappers":9,"cropsVsFull":{"max":2,"changed":5348,"over2":0,"box":null},"noise":{"max":1,"changed":12,"over2":0,"box":null}}
+experience-powered {"images":67,"wrappers":9,"cropsVsFull":{"max":2,"changed":5298,"over2":0,"box":null},"noise":{"max":0,"changed":0,"over2":0,"box":null}}
+#### exit 0 21:21:42

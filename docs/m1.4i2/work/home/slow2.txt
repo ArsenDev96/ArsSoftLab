@@ -1,0 +1,12 @@
+#### 21:04:06 node extra/slow2.mjs
+ref / {"mean":55.04,"blackShare":0.013}
+{"page":"/","how":"direct","delayMs":1500,"held":73,"shownMs":2127,"sceneFilesLoadedAtOpen":73,"sameDocument":null,"lum":{"mean":55.04,"blackShare":0.013},"diffToRef":{"max":1,"changed":30,"over2":0,"box":null},"errors":[]}
+{"page":"/","how":"direct","delayMs":6000,"held":73,"shownMs":4531,"sceneFilesLoadedAtOpen":0,"sameDocument":null,"lum":{"mean":55.08,"blackShare":0.013},"diffToRef":{"max":37,"changed":857977,"over2":47763,"box":[0,0,1647,927]},"errors":[]}
+{"page":"/","how":"client","delayMs":1500,"held":73,"shownMs":2182,"sceneFilesLoadedAtOpen":73,"sameDocument":true,"lum":{"mean":55.04,"blackShare":0.013},"diffToRef":{"max":0,"changed":0,"over2":0,"box":null},"errors":[]}
+{"page":"/","how":"client","delayMs":6000,"held":73,"shownMs":4619,"sceneFilesLoadedAtOpen":0,"sameDocument":true,"lum":{"mean":55.04,"blackShare":0.013},"diffToRef":{"max":1,"changed":30,"over2":0,"box":null},"errors":[]}
+ref /lab-v2 {"mean":60.38,"blackShare":0.013}
+{"page":"/lab-v2","how":"direct","delayMs":1500,"held":84,"shownMs":3388,"sceneFilesLoadedAtOpen":84,"sameDocument":null,"lum":{"mean":60.38,"blackShare":0.013},"diffToRef":{"max":1,"changed":63,"over2":0,"box":null},"errors":[]}
+{"page":"/lab-v2","how":"direct","delayMs":6000,"held":84,"shownMs":4651,"sceneFilesLoadedAtOpen":0,"sameDocument":null,"lum":{"mean":60.38,"blackShare":0.013},"diffToRef":{"max":1,"changed":95,"over2":0,"box":null},"errors":[]}
+{"page":"/lab-v2","how":"client","delayMs":1500,"held":84,"shownMs":2368,"sceneFilesLoadedAtOpen":84,"sameDocument":true,"lum":{"mean":60.38,"blackShare":0.013},"diffToRef":{"max":1,"changed":63,"over2":0,"box":null},"errors":[]}
+{"page":"/lab-v2","how":"client","delayMs":6000,"held":84,"shownMs":4601,"sceneFilesLoadedAtOpen":0,"sameDocument":true,"lum":{"mean":60.38,"blackShare":0.013},"diffToRef":{"max":1,"changed":59,"over2":0,"box":null},"errors":[]}
+#### exit 0 21:06:02

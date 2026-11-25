@@ -1,0 +1,32 @@
+#### 20:16:26 node docs/m1.4i1/work/eng-return.mjs home
+first {"framesBefore":33,"scan":0,"caps":0,"pulse":0,"shimmer":0,"tail":0,"held":0,"rose":0,"heldAtArrival":{"es":0,"ef":0,"bars":0,"off":0.68,"shade":0},"after":{"scanFrom":0.04,"scanFirst":147,"scanLast":447,"capsFirst":197,"capsLast":547,"stableAt":580,"esDone":480,"barsDone":580,"frozenPulse":0,"frozenScan":0},"powered":true,"kept":false,"premature":false,"ending":{"rose":0,"rest":true},"frames":159}
+first {"framesBefore":38,"scan":0,"caps":0,"pulse":0,"shimmer":0,"tail":0,"held":0,"rose":0,"heldAtArrival":{"es":0,"ef":0,"bars":0,"off":0.68,"shade":0},"after":{"scanFrom":0.006,"scanFirst":113,"scanLast":447,"capsFirst":197,"capsLast":547,"stableAt":580,"esDone":480,"barsDone":580,"frozenPulse":0,"frozenScan":0},"powered":true,"kept":false,"premature":false,"ending":{"rose":0,"rest":true},"frames":170}
+first {"framesBefore":38,"scan":0,"caps":0,"pulse":0,"shimmer":0,"tail":0,"held":0,"rose":0,"heldAtArrival":{"es":0,"ef":0,"bars":0,"off":0.68,"shade":0},"after":{"scanFrom":0.007,"scanFirst":114,"scanLast":447,"capsFirst":197,"capsLast":547,"stableAt":580,"esDone":464,"barsDone":580,"frozenPulse":0,"frozenScan":0},"powered":true,"kept":false,"premature":false,"ending":{"rose":0,"rest":true},"frames":169}
+first {"framesBefore":38,"scan":0,"caps":0,"pulse":0,"shimmer":0,"tail":0,"held":0,"rose":0,"heldAtArrival":{"es":0,"ef":0,"bars":0,"off":0.68,"shade":0},"after":{"scanFrom":0.007,"scanFirst":114,"scanLast":447,"capsFirst":197,"capsLast":497,"stableAt":580,"esDone":463,"barsDone":580,"frozenPulse":0,"frozenScan":0},"powered":true,"kept":false,"premature":false,"ending":{"rose":0,"rest":true},"frames":167}
+
+# grid: 130 runs | premature 0 | scan 0 caps 0 pulse 0 shimmer 0 held 0 (run-back finishing 56) rose 0 | frozen scan after arrival 0 | frozen pulse 0 | scan not from the top 0 | no scan 0 | no caps 0 | not powered 0 | not at rest 0 | rose after leaving 0 | first visit premature 0 | errors []
+
+# mouse: 10 runs | premature 0 | scan 0 caps 0 pulse 0 shimmer 0 held 0 (run-back finishing 8) rose 0 | frozen scan after arrival 0 | frozen pulse 0 | scan not from the top 0 | no scan 0 | no caps 0 | not powered 0 | not at rest 0 | rose after leaving 0 | first visit premature 0 | errors []
+
+# sequences: 20 runs, premature 0, not powered 0, not at rest 0 errors []
+  engineering -> educational -> engineering 800,60 visits 2 premature 0 powered true rest true 
+  engineering -> educational -> engineering 800,160 visits 2 premature 0 powered true rest true 
+  engineering -> educational -> engineering 900,30 visits 2 premature 0 powered true rest true 
+  engineering -> educational -> engineering 950,120 visits 2 premature 0 powered true rest true 
+  engineering -> educational -> engineering 1000,250 visits 2 premature 0 powered true rest true 
+  engineering -> educational -> engineering 1150,90 visits 2 premature 0 powered true rest true 
+  engineering -> educational -> engineering 1600,120 visits 2 premature 0 powered true rest true 
+  engineering -> educational -> engineering 400,100 visits 2 premature 0 powered true rest true 
+  four returns in a row 150,30 visits 5 premature 0 powered true rest true 
+  four returns in a row 250,90 visits 5 premature 0 powered true rest true 
+  four returns in a row 350,150 visits 5 premature 0 powered true rest true 
+  four returns in a row 60,40 visits 5 premature 0 powered true rest true 
+  left during the second charge 180,60 visits 3 premature 0 powered true rest true 
+  left during the second charge 250,200 visits 3 premature 0 powered true rest true 
+  left during the second charge 300,420 visits 3 premature 0 powered true rest true 
+  left during the second charge 700,150 visits 3 premature 0 powered true rest true 
+  left before any arrival 100,20 visits 2 premature 0 powered true rest true 
+  left before any arrival 300,60 visits 2 premature 0 powered true rest true 
+  left before any arrival 500,20 visits 2 premature 0 powered true rest true 
+  left before any arrival 525,5 visits 2 premature 0 powered true rest true 
+#### exit 0 20:26:43

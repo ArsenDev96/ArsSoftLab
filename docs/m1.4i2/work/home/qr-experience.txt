@@ -1,0 +1,17 @@
+#### 20:47:47 node docs/m1.4i1/work/qr-run.mjs home experience
+== experience home
+first {"times":{"trail":[40,973]},"stableAt":990,"bad":false,"rest":true}
+first {"times":{"trail":[40,973]},"stableAt":990,"bad":false,"rest":true}
+first {"times":{"trail":[40,974]},"stableAt":990,"bad":false,"rest":true}
+first {"times":{"trail":[40,973]},"stableAt":990,"bad":false,"rest":true}
+# mouse {"runs":11,"bad":0,"premature":0,"lightBefore":{"trail":0},"pulseBefore":0,"shimmerBefore":0,"rose":0,"heldThroughCharge":0,"resumesPartWay":0,"litAtArrivalNoReplay":0,"frozenAfterArrival":{"trail":0},"frozenPulseAfter":0,"notPowered":0,"runBackFinishing":10,"notAtRest":0,"roseAfterLeaving":0} errors []
+# grid {"runs":91,"bad":0,"premature":0,"lightBefore":{"trail":0},"pulseBefore":0,"shimmerBefore":0,"rose":0,"heldThroughCharge":0,"resumesPartWay":0,"litAtArrivalNoReplay":0,"frozenAfterArrival":{"trail":0},"frozenPulseAfter":0,"notPowered":0,"runBackFinishing":64,"notAtRest":0,"roseAfterLeaving":0} errors []
+# sequences {"runs":20,"bad":0,"premature":0,"lightBefore":{"trail":0},"pulseBefore":0,"shimmerBefore":0,"rose":0,"heldThroughCharge":0,"resumesPartWay":0,"litAtArrivalNoReplay":0,"frozenAfterArrival":{"trail":0},"frozenPulseAfter":0,"notPowered":0,"runBackFinishing":13,"notAtRest":0,"roseAfterLeaving":0} errors []
+# escape {"runs":7,"bad":0,"premature":0,"lightBefore":{"trail":0},"pulseBefore":0,"shimmerBefore":0,"rose":0,"heldThroughCharge":1,"resumesPartWay":0,"litAtArrivalNoReplay":1,"frozenAfterArrival":{"trail":0},"frozenPulseAfter":0,"notPowered":0,"runBackFinishing":6,"notAtRest":0,"roseAfterLeaving":0} errors []
+# keyboard {"focus":{"min":{"--xs":0},"lights":{"trail":57},"pulse":18,"end":["experience",null,1,1]},"enter":{"min":{"--xs":1},"lights":{"trail":0},"pulse":0,"end":[null,"experience",1,1]},"escape":{"min":{"--xs":1},"lights":{"trail":0},"pulse":1,"end":["experience",null,1,1]},"focusBack":"station-experience-trigger"}
+# escapePointerOver {"min":{"--xs":1},"lights":{"trail":0},"pulse":0,"end":["experience",null,1,1]}
+# browserBack {"min":{"--xs":1},"lights":{"trail":0},"pulse":1,"end":["experience",null,1,1]}
+# backToLab {"min":{"--xs":0},"lights":{"trail":0},"pulse":0,"end":[null,null,0,0],"rest":true}
+# direct {"powered":true,"lights":{"trail":0},"rest":true,"quickReturn":{"bad":false,"premature":false,"stale":false,"froze":false,"powered":true},"errors":[]}
+# reduced [{"on":60,"gap":5,"drawn":[],"powered":true,"rest":true},{"on":120,"gap":40,"drawn":[],"powered":true,"rest":true},{"on":300,"gap":60,"drawn":[],"powered":true,"rest":true},{"on":300,"gap":140,"drawn":[],"powered":true,"rest":true},{"on":600,"gap":250,"drawn":[],"powered":true,"rest":true}]
+#### exit 0 20:58:45

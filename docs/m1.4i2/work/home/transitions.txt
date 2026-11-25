@@ -1,0 +1,43 @@
+playground {"art-label":{"runs":10,"bad":0,"drops":0,"restarts":0},"label-art":{"runs":10,"bad":0,"drops":0,"restarts":0},"platform-chip":{"runs":12,"bad":0,"drops":0,"restarts":0},"chip-platform":{"runs":12,"bad":0,"drops":0,"restarts":0},"in-label":{"runs":8,"bad":0,"drops":0,"restarts":0},"repeated":{"runs":5,"bad":0,"drops":0,"restarts":0},"still":{"runs":4,"bad":0,"drops":0,"restarts":0}} 
+    {"group":"still","name":"lower edge of chip","ms":5000,"state":"from rest","drops":0,"restarts":0,"other":[],"ends":"playground","under":"chip"}
+    {"group":"still","name":"chip centre","ms":5000,"state":"from rest","drops":0,"restarts":0,"other":[],"ends":"playground","under":"chip"}
+    {"group":"still","name":"title","ms":5000,"state":"from rest","drops":0,"restarts":0,"other":[],"ends":"playground","under":"chip"}
+    {"group":"still","name":"title lower edge","ms":5000,"state":"from rest","drops":0,"restarts":0,"other":[],"ends":"playground","under":"chip"}
+    {"group":"leave","name":"artwork","ms":0,"state":"powered","before":"playground","afterMs":118,"ends":"-","rest":true,"sparks":0}
+    {"group":"leave","name":"title","ms":0,"state":"powered","before":"playground","afterMs":122,"ends":"-","rest":true,"sparks":0}
+    {"group":"leave","name":"chip","ms":0,"state":"powered","before":"playground","afterMs":119,"ends":"-","rest":true,"sparks":0}
+    {"group":"leave","name":"platform","ms":0,"state":"powered","before":"playground","afterMs":121,"ends":"-","rest":true,"sparks":0}
+    {"group":"leave","name":"between chip and platform","ms":0,"state":"powered","before":"playground","afterMs":123,"ends":"-","rest":true,"sparks":0}
+    {"group":"switch","name":"label -> experience","ms":200,"state":"powered","h":["playground","experience"],"sparks":1,"ok":true}
+    {"group":"switch","name":"label -> experience","ms":900,"state":"powered","h":["playground","-","experience"],"sparks":1,"ok":true}
+    {"group":"switch","name":"platform -> experience","ms":200,"state":"powered","h":["playground","experience"],"sparks":1,"ok":true}
+    {"group":"switch","name":"platform -> experience","ms":900,"state":"powered","h":["playground","-","experience"],"sparks":1,"ok":true}
+creative {"art-label":{"runs":8,"bad":0,"drops":0,"restarts":0},"label-art":{"runs":8,"bad":0,"drops":0,"restarts":0},"platform-chip":{"runs":10,"bad":0,"drops":0,"restarts":0},"chip-platform":{"runs":10,"bad":0,"drops":0,"restarts":0},"in-label":{"runs":6,"bad":0,"drops":0,"restarts":0},"repeated":{"runs":4,"bad":0,"drops":0,"restarts":0},"still":{"runs":4,"bad":0,"drops":0,"restarts":0}} 
+    {"group":"still","name":"lower edge of chip","ms":5000,"state":"from rest","drops":0,"restarts":0,"other":[],"ends":"creative","under":"chip"}
+    {"group":"still","name":"chip centre","ms":5000,"state":"from rest","drops":0,"restarts":0,"other":[],"ends":"creative","under":"chip"}
+    {"group":"still","name":"title","ms":5000,"state":"from rest","drops":0,"restarts":0,"other":[],"ends":"creative","under":"title"}
+    {"group":"still","name":"title lower edge","ms":5000,"state":"from rest","drops":0,"restarts":0,"other":[],"ends":"creative","under":"title"}
+    {"group":"leave","name":"artwork","ms":0,"state":"powered","before":"creative","afterMs":108,"ends":"-","rest":true,"sparks":0}
+    {"group":"leave","name":"title","ms":0,"state":"powered","before":"creative","afterMs":111,"ends":"-","rest":true,"sparks":0}
+    {"group":"leave","name":"chip","ms":0,"state":"powered","before":"creative","afterMs":107,"ends":"-","rest":true,"sparks":0}
+    {"group":"leave","name":"platform","ms":0,"state":"powered","before":"creative","afterMs":105,"ends":"-","rest":true,"sparks":0}
+    {"group":"leave","name":"between chip and platform","ms":0,"state":"powered","before":"creative","afterMs":107,"ends":"-","rest":true,"sparks":0}
+    {"group":"switch","name":"label -> engineering","ms":200,"state":"powered","h":["creative","engineering"],"sparks":1,"ok":true}
+    {"group":"switch","name":"label -> engineering","ms":900,"state":"powered","h":["creative","-","engineering"],"sparks":1,"ok":true}
+    {"group":"switch","name":"platform -> engineering","ms":200,"state":"powered","h":["creative","engineering"],"sparks":1,"ok":true}
+    {"group":"switch","name":"platform -> engineering","ms":900,"state":"powered","h":["creative","engineering"],"sparks":1,"ok":true}
+experience {"art-label":{"runs":8,"bad":0,"drops":0,"restarts":0},"label-art":{"runs":8,"bad":0,"drops":0,"restarts":0},"platform-chip":{"runs":10,"bad":0,"drops":0,"restarts":0},"chip-platform":{"runs":10,"bad":0,"drops":0,"restarts":0},"in-label":{"runs":6,"bad":0,"drops":0,"restarts":0},"repeated":{"runs":4,"bad":0,"drops":0,"restarts":0},"still":{"runs":4,"bad":0,"drops":0,"restarts":0}} 
+    {"group":"still","name":"lower edge of chip","ms":5000,"state":"from rest","drops":0,"restarts":0,"other":[],"ends":"experience","under":"chip"}
+    {"group":"still","name":"chip centre","ms":5000,"state":"from rest","drops":0,"restarts":0,"other":[],"ends":"experience","under":"chip"}
+    {"group":"still","name":"title","ms":5000,"state":"from rest","drops":0,"restarts":0,"other":[],"ends":"experience","under":"title"}
+    {"group":"still","name":"title lower edge","ms":5000,"state":"from rest","drops":0,"restarts":0,"other":[],"ends":"experience","under":"title"}
+    {"group":"leave","name":"artwork","ms":0,"state":"powered","before":"experience","afterMs":106,"ends":"-","rest":true,"sparks":0}
+    {"group":"leave","name":"title","ms":0,"state":"powered","before":"experience","afterMs":107,"ends":"-","rest":true,"sparks":0}
+    {"group":"leave","name":"chip","ms":0,"state":"powered","before":"experience","afterMs":108,"ends":"-","rest":true,"sparks":0}
+    {"group":"leave","name":"platform","ms":0,"state":"powered","before":"experience","afterMs":105,"ends":"-","rest":true,"sparks":0}
+    {"group":"leave","name":"between chip and platform","ms":0,"state":"powered","before":"experience","afterMs":107,"ends":"-","rest":true,"sparks":0}
+    {"group":"switch","name":"label -> playground","ms":200,"state":"powered","h":["experience","playground"],"sparks":1,"ok":true}
+    {"group":"switch","name":"label -> playground","ms":900,"state":"powered","h":["experience","-","playground"],"sparks":1,"ok":true}
+    {"group":"switch","name":"platform -> playground","ms":200,"state":"powered","h":["experience","playground"],"sparks":1,"ok":true}
+    {"group":"switch","name":"platform -> playground","ms":900,"state":"powered","h":["experience","playground"],"sparks":1,"ok":true}
+19:50:28

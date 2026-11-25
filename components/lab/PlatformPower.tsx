@@ -85,6 +85,7 @@ export function PowerPart({
   side,
   origin = { x: 0, y: 0 },
   pad = 0,
+  className = "",
   children,
 }: {
   id: ZoneId;
@@ -92,6 +93,7 @@ export function PowerPart({
   side: "dim" | "powered";
   origin?: ScenePoint;
   pad?: number;
+  className?: string;
   children: ReactNode;
 }) {
   const p = PLATFORM_POWER[id].parts[index];
@@ -107,7 +109,7 @@ export function PowerPart({
       data-zone={id}
       data-power={id}
       data-part={index}
-      className={`lab-power ${side === "dim" ? "lab-power-dim" : "lab-power-on"} pointer-events-none absolute overflow-hidden`}
+      className={`lab-power ${side === "dim" ? "lab-power-dim" : "lab-power-on"} pointer-events-none absolute overflow-hidden${className && ` ${className}`}`}
       style={{ ...rel(box, origin), clipPath: pad ? undefined : clip, maskImage: mask, WebkitMaskImage: mask }}
     >
       {children}

@@ -1,0 +1,79 @@
+#### 23:37:23 node docs/m1.4i1e/work/behaviour.mjs hold,ownership,lift,keyboard,clicks,reduced
+hold {
+ "engineering": { "restUnder": "nothing", "startsFromEmpty": 0, "holds": { "under": "bridge engineering", "changes": [ "-", "engineering" ], "sparks": 1, "powered": true }, "cursor": "auto", "clickSelects": null, "backWithinGrace": [ "engineering" ], "leavesToRest": true, "afterUnder": "nothing", "restartsFromBridge": 0
+ },
+ "educational": { "restUnder": "nothing", "startsFromEmpty": 0, "holds": { "under": "bridge educational", "changes": [ "-", "educational" ], "sparks": 1, "powered": true }, "cursor": "auto", "clickSelects": null, "backWithinGrace": [ "educational" ], "leavesToRest": true, "afterUnder": "nothing", "restartsFromBridge": 0
+ },
+ "playground": { "restUnder": "nothing", "startsFromEmpty": 0, "holds": { "under": "bridge playground", "changes": [ "-", "playground" ], "sparks": 1, "powered": true }, "cursor": "auto", "clickSelects": null, "backWithinGrace": [ "playground" ], "leavesToRest": true, "afterUnder": "nothing", "restartsFromBridge": 0
+ },
+ "creative": { "restUnder": "nothing", "startsFromEmpty": 0, "holds": { "under": "bridge creative", "changes": [ "-", "creative" ], "sparks": 1, "powered": true }, "cursor": "auto", "clickSelects": null, "backWithinGrace": [ "creative" ], "leavesToRest": true, "afterUnder": "nothing", "restartsFromBridge": 0
+ },
+ "experience": { "restUnder": "nothing", "startsFromEmpty": 0, "holds": { "under": "bridge experience", "changes": [ "-", "experience" ], "sparks": 1, "powered": true }, "cursor": "auto", "clickSelects": null, "backWithinGrace": [ "experience" ], "leavesToRest": true, "afterUnder": "nothing", "restartsFromBridge": 0
+ },
+ "errors": []
+}
+ownership {
+ "routePoints": 133,
+ "restBridgePoints": 0,
+ "engineering": { "bridgePx": 16060, "otherStationsPointsChanged": 0, "ownPointsMoved": 0, "bridgePointsOverHub": 0, "routePointsInBridge": 0, "bridgesOnForOthers": []
+ },
+ "educational": { "bridgePx": 9048, "otherStationsPointsChanged": 0, "ownPointsMoved": 0, "bridgePointsOverHub": 0, "routePointsInBridge": 0, "bridgesOnForOthers": []
+ },
+ "playground": { "bridgePx": 14852, "otherStationsPointsChanged": 0, "ownPointsMoved": 1999, "bridgePointsOverHub": 0, "routePointsInBridge": 0, "bridgesOnForOthers": []
+ },
+ "creative": { "bridgePx": 12600, "otherStationsPointsChanged": 0, "ownPointsMoved": 0, "bridgePointsOverHub": 0, "routePointsInBridge": 0, "bridgesOnForOthers": []
+ },
+ "experience": { "bridgePx": 10028, "otherStationsPointsChanged": 0, "ownPointsMoved": 0, "bridgePointsOverHub": 0, "routePointsInBridge": 0, "bridgesOnForOthers": []
+ },
+ "errors": []
+}
+lift {
+ "steps": { "600": { "lift": 0, "holes": 12, "total": 24166, "hover": "playground" }, "650": { "lift": 0, "holes": 12, "total": 24166, "hover": "playground" }, "700": { "lift": 0.7, "holes": 12, "total": 24166, "hover": "playground" }, "750": { "lift": 2.73, "holes": 12, "total": 24166, "hover": "playground" }, "800": { "lift": 6, "holes": 12, "total": 24166, "hover": "playground" }, "850": { "lift": 9.64, "holes": 12, "total": 24166, "hover": "playground" }, "900": { "lift": 13.25, "holes": 12, "total": 24166, "hover": "playground" }, "950": { "lift": 15.97, "holes": 12, "total": 24166, "hover": "playground" }, "1000": { "lift": 17.39, "holes": 12, "total": 24166, "hover": "playground" }, "1050": { "lift": 17.92, "holes": 12, "total": 24166, "hover": "playground" }, "1100": { "lift": 18, "holes": 12, "total": 24166, "hover": "playground" }
+ },
+ "still": { "tried": 18, "started": 16, "restarted": 0, "after": [ "1292,328: title", "1330,328: title", "1292,334: title", "1330,334: title", "1292,340: chip", "1330,340: chip", "1292,346: chip", "1330,346: chip", "1292,352: nothing (not a start)", "1330,352: nothing (not a start)", "1292,358: chip", "1330,358: chip", "1292,364: chip", "1330,364: chip", "1292,370: chip", "1330,370: chip", "1292,376: chip", "1330,376: chip" ]
+ },
+ "errors": []
+}
+keyboard {
+ "tabWithMouseInBridge": { "stops": 12, "wrong": []
+ },
+ "engineering": { "lit": "engineering", "enter": "engineering", "url": "/lab-v2?station=engineering", "focus": "station-engineering-panel-title", "afterEscape": null, "backFocus": "station-engineering-trigger"
+ },
+ "educational": { "lit": "educational", "enter": "educational", "url": "/lab-v2?station=educational", "focus": "station-educational-panel-title", "afterEscape": null, "backFocus": "station-educational-trigger"
+ },
+ "playground": { "lit": "playground", "enter": "playground", "url": "/lab-v2?station=playground", "focus": "station-playground-panel-title", "afterEscape": null, "backFocus": "station-playground-trigger"
+ },
+ "creative": { "lit": "creative", "enter": "creative", "url": "/lab-v2?station=creative", "focus": "station-creative-panel-title", "afterEscape": null, "backFocus": "station-creative-trigger"
+ },
+ "experience": { "lit": "experience", "enter": "experience", "url": "/lab-v2?station=experience", "focus": "station-experience-panel-title", "afterEscape": null, "backFocus": "station-experience-trigger"
+ },
+ "controls": { "bridges": [ [ "educational", "true", -1, null, 0 ], [ "engineering", "true", -1, null, 0 ], [ "playground", "true", -1, null, 0 ], [ "creative", "true", -1, null, 0 ], [ "experience", "true", -1, null, 0 ] ], "stationButtons": 12
+ },
+ "errors": []
+}
+clicks {
+ "engineering": { "chip 1": { "url": "/lab-v2?station=engineering&project=sqlorbit", "sparks": 1, "errors": [] }, "chip 2": { "url": "/lab-v2?station=engineering&project=tablerefresh", "sparks": 1, "errors": [] }, "title": "/lab-v2?station=engineering", "escape": [ "/lab-v2", "station-engineering-trigger" ], "platform": "/lab-v2?station=engineering"
+ },
+ "educational": { "chip 1": { "url": "/lab-v2?station=educational&project=arimap", "sparks": 1, "errors": [] }, "chip 2": { "url": "/lab-v2?station=educational&project=armat", "sparks": 1, "errors": [] }, "title": "/lab-v2?station=educational", "escape": [ "/lab-v2", "station-educational-trigger" ], "platform": "/lab-v2?station=educational"
+ },
+ "playground": { "chip 1": { "url": "/lab-v2?station=playground&project=aziz", "sparks": 1, "errors": [] }, "title": "/lab-v2?station=playground", "escape": [ "/lab-v2", "station-playground-trigger" ], "platform": "/lab-v2?station=playground"
+ },
+ "creative": { "chip 1": { "url": "/lab-v2?station=creative&project=wallpapers", "sparks": 1, "errors": [] }, "title": "/lab-v2?station=creative", "escape": [ "/lab-v2", "station-creative-trigger" ], "platform": "/lab-v2?station=creative"
+ },
+ "experience": { "chip 1": { "url": "/lab-v2?station=experience&project=koreez", "sparks": 1, "errors": [] }, "title": "/lab-v2?station=experience", "escape": [ "/lab-v2", "station-experience-trigger" ], "platform": "/lab-v2?station=experience"
+ }
+}
+reduced {
+ "engineering": { "changes": [ "-", "engineering" ], "sparks": 0, "lift": 0, "label": "none"
+ },
+ "educational": { "changes": [ "-", "educational" ], "sparks": 0, "lift": 0, "label": "none"
+ },
+ "playground": { "changes": [ "-", "playground" ], "sparks": 0, "lift": 0, "label": "none"
+ },
+ "creative": { "changes": [ "-", "creative" ], "sparks": 0, "lift": 0, "label": "none"
+ },
+ "experience": { "changes": [ "-", "experience" ], "sparks": 0, "lift": 0, "label": "none"
+ },
+ "errors": []
+}
+#### exit 0 23:42:44

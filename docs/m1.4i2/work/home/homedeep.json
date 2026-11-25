@@ -1,0 +1,190 @@
+[
+ {
+  "scenario": "deep links",
+  "log": [
+   {
+    "entry": "/nope -> /?station=experience",
+    "ok": true,
+    "ms": 2127,
+    "routeMs": null,
+    "path": "/?station=experience",
+    "doc": "oq2kxp64v3h",
+    "opacity": "1,1",
+    "gateImages": 29,
+    "loaded": 29,
+    "gateRules": 1,
+    "script": "text/plain",
+    "timers": [
+     "cleared",
+     "cleared"
+    ],
+    "decodes": 349,
+    "listeners": 161,
+    "observers": 2,
+    "errors": [],
+    "selected": "experience"
+   },
+   {
+    "entry": "Back, Forward",
+    "ok": true,
+    "ms": 536,
+    "routeMs": 156,
+    "path": "/?station=experience",
+    "doc": "yrcz27reb0i",
+    "opacity": "1,1",
+    "gateImages": 29,
+    "loaded": 29,
+    "gateRules": 1,
+    "script": "text/plain",
+    "timers": [
+     "cleared",
+     "cleared"
+    ],
+    "decodes": 349,
+    "listeners": 161,
+    "observers": 2,
+    "errors": [],
+    "selected": "experience"
+   },
+   {
+    "entry": "/nope -> /",
+    "ok": true,
+    "ms": 497,
+    "routeMs": 138,
+    "path": "/",
+    "doc": "hxpyfg7i34o",
+    "opacity": "1,1",
+    "gateImages": 29,
+    "loaded": 29,
+    "gateRules": 1,
+    "script": "text/plain",
+    "timers": [
+     "cleared",
+     "cleared"
+    ],
+    "decodes": 349,
+    "listeners": 160,
+    "observers": 2,
+    "errors": [],
+    "selected": null,
+    "afterClick": "educational"
+   },
+   {
+    "entry": "Back closes the station",
+    "ok": true,
+    "ms": 1,
+    "routeMs": 138,
+    "path": "/",
+    "doc": "hxpyfg7i34o",
+    "opacity": "1,1",
+    "gateImages": 29,
+    "loaded": 29,
+    "gateRules": 1,
+    "script": "text/plain",
+    "timers": [
+     "cleared",
+     "cleared"
+    ],
+    "decodes": 349,
+    "listeners": 160,
+    "observers": 2,
+    "errors": [],
+    "selected": null
+   }
+  ]
+ },
+ {
+  "scenario": "deep links",
+  "log": [
+   {
+    "entry": "/nope -> /lab-v2?station=experience",
+    "ok": true,
+    "ms": 1559,
+    "routeMs": null,
+    "path": "/lab-v2?station=experience",
+    "doc": "2cp0pxiu4p4",
+    "opacity": "1,1",
+    "gateImages": 18,
+    "loaded": 18,
+    "gateRules": 1,
+    "script": "text/plain",
+    "timers": [
+     "cleared",
+     "cleared"
+    ],
+    "decodes": 168,
+    "listeners": 161,
+    "observers": 4,
+    "errors": [],
+    "selected": "experience"
+   },
+   {
+    "entry": "Back, Forward",
+    "ok": true,
+    "ms": 639,
+    "routeMs": 238,
+    "path": "/lab-v2?station=experience",
+    "doc": "t6k6uqr81nn",
+    "opacity": "1,1",
+    "gateImages": 18,
+    "loaded": 18,
+    "gateRules": 1,
+    "script": "text/plain",
+    "timers": [
+     "cleared",
+     "cleared"
+    ],
+    "decodes": 168,
+    "listeners": 161,
+    "observers": 4,
+    "errors": [],
+    "selected": "experience"
+   },
+   {
+    "entry": "/nope -> /lab-v2",
+    "ok": true,
+    "ms": 576,
+    "routeMs": 161,
+    "path": "/lab-v2",
+    "doc": "azmg9a6b5po",
+    "opacity": "1,1",
+    "gateImages": 18,
+    "loaded": 18,
+    "gateRules": 1,
+    "script": "text/plain",
+    "timers": [
+     "cleared",
+     "cleared"
+    ],
+    "decodes": 168,
+    "listeners": 160,
+    "observers": 4,
+    "errors": [],
+    "selected": null,
+    "afterClick": "educational"
+   },
+   {
+    "entry": "Back closes the station",
+    "ok": true,
+    "ms": 1,
+    "routeMs": 161,
+    "path": "/lab-v2",
+    "doc": "azmg9a6b5po",
+    "opacity": "1,1",
+    "gateImages": 18,
+    "loaded": 18,
+    "gateRules": 1,
+    "script": "text/plain",
+    "timers": [
+     "cleared",
+     "cleared"
+    ],
+    "decodes": 168,
+    "listeners": 160,
+    "observers": 4,
+    "errors": [],
+    "selected": null
+   }
+  ]
+ }
+]

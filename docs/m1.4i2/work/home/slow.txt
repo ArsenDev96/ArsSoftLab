@@ -1,0 +1,12 @@
+#### 19:54:39 node extra/slow.mjs
+ref / {"mean":55.04,"blackShare":0.013}
+{"page":"/","how":"direct","delayMs":1500,"held":73,"shownMs":3152,"sceneFilesLoadedAtOpen":73,"sameDocument":null,"lum":{"mean":55.04,"blackShare":0.013},"diffToRef":{"max":1,"changed":30,"over2":0,"box":null},"errors":[]}
+{"page":"/","how":"direct","delayMs":6000,"held":75,"shownMs":217,"sceneFilesLoadedAtOpen":0,"sameDocument":null,"lum":{"mean":55.04,"blackShare":0.013},"diffToRef":{"max":1,"changed":30,"over2":0,"box":null},"errors":[]}
+{"page":"/","how":"client","delayMs":1500,"held":73,"shownMs":1919,"sceneFilesLoadedAtOpen":73,"sameDocument":true,"lum":{"mean":55.04,"blackShare":0.013},"diffToRef":{"max":1,"changed":30,"over2":0,"box":null},"errors":[]}
+{"page":"/","how":"client","delayMs":6000,"held":73,"shownMs":4484,"sceneFilesLoadedAtOpen":0,"sameDocument":true,"lum":{"mean":55.04,"blackShare":0.013},"diffToRef":{"max":1,"changed":30,"over2":0,"box":null},"errors":[]}
+ref /lab-v2 {"mean":60.38,"blackShare":0.013}
+{"page":"/lab-v2","how":"direct","delayMs":1500,"held":84,"shownMs":2300,"sceneFilesLoadedAtOpen":84,"sameDocument":null,"lum":{"mean":60.38,"blackShare":0.013},"diffToRef":{"max":14,"changed":2399,"over2":426,"box":[1065,497,1352,528]},"errors":[]}
+{"page":"/lab-v2","how":"direct","delayMs":6000,"held":84,"shownMs":4667,"sceneFilesLoadedAtOpen":0,"sameDocument":null,"lum":{"mean":60.38,"blackShare":0.013},"diffToRef":{"max":14,"changed":2411,"over2":426,"box":[1065,497,1352,528]},"errors":[]}
+{"page":"/lab-v2","how":"client","delayMs":1500,"held":84,"shownMs":2181,"sceneFilesLoadedAtOpen":84,"sameDocument":true,"lum":{"mean":60.38,"blackShare":0.013},"diffToRef":{"max":14,"changed":2399,"over2":426,"box":[1065,497,1352,528]},"errors":[]}
+{"page":"/lab-v2","how":"client","delayMs":6000,"held":84,"shownMs":4567,"sceneFilesLoadedAtOpen":0,"sameDocument":true,"lum":{"mean":60.38,"blackShare":0.013},"diffToRef":{"max":14,"changed":2824,"over2":426,"box":[1065,497,1352,528]},"errors":[]}
+#### exit 0 19:56:29

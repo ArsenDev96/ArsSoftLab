@@ -1,0 +1,31 @@
+creative-0370.png            after vs nearest before {"max":2,"over2":0,"box":null} | noise [1,0]
+creative-powered.png         after vs nearest before {"max":2,"over2":0,"box":null} | noise [1,0]
+creative-rest-after.png      after vs nearest before {"max":2,"over2":0,"box":null} | noise [1,0]
+educational-0450.png         after vs nearest before {"max":2,"over2":0,"box":null} | noise [0,0]
+educational-powered.png      after vs nearest before {"max":2,"over2":0,"box":null} | noise [0,0]
+educational-rest-after.png   after vs nearest before {"max":2,"over2":0,"box":null} | noise [0,0]
+engineering-0280.png         after vs nearest before {"max":250,"over2":42117,"box":[254,303,981,552]} | noise [1,0]
+engineering-powered.png      after vs nearest before {"max":231,"over2":45294,"box":[248,303,981,553]} | noise [1,0]
+engineering-rest-after.png   after vs nearest before {"max":2,"over2":0,"box":null} | noise [1,0]
+experience-0430.png          after vs nearest before {"max":2,"over2":0,"box":null} | noise [0,0]
+experience-powered.png       after vs nearest before {"max":2,"over2":0,"box":null} | noise [0,0]
+experience-rest-after.png    after vs nearest before {"max":2,"over2":0,"box":null} | noise [0,0]
+idle-tone.png                after vs nearest before {"max":1,"over2":0,"box":null} | noise [1,0]
+idle.png                     after vs nearest before {"max":2,"over2":0,"box":null} | noise [1,0]
+playground-0220.png          after vs nearest before {"max":1,"over2":0,"box":null} | noise [1,0]
+playground-powered.png       after vs nearest before {"max":2,"over2":0,"box":null} | noise [1,0]
+playground-rest-after.png    after vs nearest before {"max":2,"over2":0,"box":null} | noise [1,0]
+idle 1648 {"max":2,"over2":0,"box":null} | noise {"max":1,"over2":0,"box":null}
+idle 1920 {"max":1,"over2":0,"box":null} | noise {"max":1,"over2":0,"box":null}
+idle 1366 {"max":1,"over2":0,"box":null} | noise {"max":1,"over2":0,"box":null}
+idle 1024 {"max":1,"over2":0,"box":null} | noise {"max":0,"over2":0,"box":null}
+idle home {"max":0,"over2":0,"box":null} | noise {"max":0,"over2":0,"box":null}
+hit map rest 0 {}
+hit map engineering 918 {"1>e":850,".>e":68}
+hit map educational 0 {}
+hit map playground 0 {}
+hit map creative 0 {}
+hit map experience 0 {}
+hit map home 0 {}
+hit map homeEng 0 {}
+focus same true home markup same true errors []

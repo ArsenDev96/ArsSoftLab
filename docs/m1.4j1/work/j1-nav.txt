@@ -1,0 +1,36 @@
+#### 01:17:35 node docs/m1.4i1/work/nav.mjs j1 direct client roundtrip
+
+# direct  
+OK    direct / | 1594 ms op=1,1 img=29/29 rules=1 script=text/javascript timers=pending dec=78 lis=160 ro=2 doc=x1cozfn68dn err=[]
+      activation {"poweredMs":967,"arcade":"running","rafPerFrame":1,"restMs":536,"arcadeAfter":"off","rafAtRest":0,"errors":[]}
+
+# direct  
+OK    direct /lab-v2 | 2910 ms op=1,1 img=18/18 rules=1 script=text/javascript timers=pending dec=85 lis=160 ro=4 doc=a3ypj50cadl err=[]
+      activation {"poweredMs":1218,"arcade":"running","rafPerFrame":1,"restMs":612,"arcadeAfter":"off","rafAtRest":0,"errors":[]}
+
+# client  
+OK    /nope -> / (client) | 1370 ms op=1,1 img=29/29 rules=1 script=text/plain timers=cleared,cleared dec=349 lis=160 ro=2 doc=8bdzzehh1ns err=[]
+      activation {"poweredMs":951,"arcade":"running","rafPerFrame":1,"restMs":533,"arcadeAfter":"off","rafAtRest":0,"errors":[]}
+OK    reload / | 764 ms op=1,1 img=29/29 rules=1 script=text/javascript timers=pending dec=78 lis=160 ro=2 doc=ixgsklkv2mo err=[]
+
+# client  
+OK    /nope -> /lab-v2 (client) | 1203 ms op=1,1 img=18/18 rules=1 script=text/plain timers=cleared,cleared dec=170 lis=160 ro=4 doc=w1ydtf8u89q err=[]
+      activation {"poweredMs":1161,"arcade":"running","rafPerFrame":1,"restMs":603,"arcadeAfter":"off","rafAtRest":0,"errors":[]}
+OK    reload /lab-v2 | 915 ms op=1,1 img=18/18 rules=1 script=text/javascript timers=pending dec=85 lis=160 ro=4 doc=rj183z3ra99 err=[]
+
+# roundtrip from direct  
+OK    direct / | 1637 ms op=1,1 img=29/29 rules=1 script=text/javascript timers=pending dec=78 lis=160 ro=2 doc=kmgbalsev4p err=[]
+      activation {"poweredMs":953,"arcade":"running","rafPerFrame":1,"restMs":484,"arcadeAfter":"off","rafAtRest":0,"errors":[]}
+OK    -> /lab-v2 | 279 ms op=1,1 img=18/18 rules=1 script=text/plain timers=fired dec=78 lis=160 ro=4 doc=kmgbalsev4p err=[]
+      activation {"poweredMs":1135,"arcade":"running","rafPerFrame":1,"restMs":553,"arcadeAfter":"off","rafAtRest":0,"errors":[]}
+OK    -> / | 131 ms op=1,1 img=29/29 rules=1 script=text/plain timers=fired dec=369 lis=160 ro=2 doc=kmgbalsev4p err=[]
+      activation {"poweredMs":952,"arcade":"running","rafPerFrame":1,"restMs":483,"arcadeAfter":"off","rafAtRest":0,"errors":[]}
+
+# roundtrip from client  
+OK    /nope -> / | 1400 ms op=1,1 img=29/29 rules=1 script=text/plain timers=cleared,cleared dec=349 lis=160 ro=2 doc=z622fwwtez err=[]
+      activation {"poweredMs":977,"arcade":"running","rafPerFrame":1,"restMs":542,"arcadeAfter":"off","rafAtRest":0,"errors":[]}
+OK    -> /lab-v2 | 262 ms op=1,1 img=18/18 rules=1 script=text/plain timers=cleared,cleared dec=349 lis=160 ro=4 doc=z622fwwtez err=[]
+      activation {"poweredMs":1173,"arcade":"running","rafPerFrame":1,"restMs":570,"arcadeAfter":"off","rafAtRest":0,"errors":[]}
+OK    -> / | 160 ms op=1,1 img=29/29 rules=1 script=text/plain timers=cleared,cleared dec=640 lis=160 ro=2 doc=z622fwwtez err=[]
+      activation {"poweredMs":951,"arcade":"running","rafPerFrame":1,"restMs":532,"arcadeAfter":"off","rafAtRest":0,"errors":[]}
+#### exit 0 01:18:52

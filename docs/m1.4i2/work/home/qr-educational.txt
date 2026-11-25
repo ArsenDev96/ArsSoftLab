@@ -1,0 +1,17 @@
+#### 20:38:13 node docs/m1.4i1/work/qr-run.mjs home educational
+== educational home
+first {"times":{"pool":[73,223],"crest":[140,490],"orbit":[207,740]},"stableAt":807,"bad":false,"rest":true}
+first {"times":{"pool":[73,223],"crest":[123,490],"orbit":[207,740]},"stableAt":807,"bad":false,"rest":true}
+first {"times":{"pool":[73,223],"crest":[123,490],"orbit":[206,740]},"stableAt":806,"bad":false,"rest":true}
+first {"times":{"pool":[73,223],"crest":[123,490],"orbit":[207,740]},"stableAt":807,"bad":false,"rest":true}
+# mouse {"runs":11,"bad":0,"premature":0,"lightBefore":{"pool":0,"crest":0,"orbit":0},"pulseBefore":0,"shimmerBefore":0,"rose":0,"heldThroughCharge":0,"resumesPartWay":0,"litAtArrivalNoReplay":0,"frozenAfterArrival":{"pool":0,"crest":0,"orbit":0},"frozenPulseAfter":0,"notPowered":0,"runBackFinishing":8,"notAtRest":0,"roseAfterLeaving":0} errors []
+# grid {"runs":91,"bad":0,"premature":0,"lightBefore":{"pool":0,"crest":0,"orbit":0},"pulseBefore":0,"shimmerBefore":0,"rose":0,"heldThroughCharge":0,"resumesPartWay":0,"litAtArrivalNoReplay":0,"frozenAfterArrival":{"pool":0,"crest":0,"orbit":0},"frozenPulseAfter":0,"notPowered":0,"runBackFinishing":56,"notAtRest":0,"roseAfterLeaving":0} errors []
+# sequences {"runs":20,"bad":0,"premature":0,"lightBefore":{"pool":0,"crest":0,"orbit":0},"pulseBefore":0,"shimmerBefore":0,"rose":0,"heldThroughCharge":0,"resumesPartWay":0,"litAtArrivalNoReplay":0,"frozenAfterArrival":{"pool":0,"crest":0,"orbit":0},"frozenPulseAfter":0,"notPowered":0,"runBackFinishing":12,"notAtRest":0,"roseAfterLeaving":0} errors []
+# escape {"runs":7,"bad":0,"premature":0,"lightBefore":{"pool":0,"crest":0,"orbit":0},"pulseBefore":0,"shimmerBefore":0,"rose":0,"heldThroughCharge":1,"resumesPartWay":0,"litAtArrivalNoReplay":1,"frozenAfterArrival":{"pool":0,"crest":0,"orbit":0},"frozenPulseAfter":0,"notPowered":0,"runBackFinishing":6,"notAtRest":0,"roseAfterLeaving":0} errors []
+# keyboard {"focus":{"min":{"--gp":0,"--gs":0,"--go":0},"lights":{"pool":10,"crest":23,"orbit":33},"pulse":17,"end":["educational",null,1,1,1,1]},"enter":{"min":{"--gp":1,"--gs":1,"--go":1},"lights":{"pool":0,"crest":0,"orbit":0},"pulse":0,"end":[null,"educational",1,1,1,1]},"escape":{"min":{"--gp":1,"--gs":1,"--go":1},"lights":{"pool":0,"crest":0,"orbit":0},"pulse":1,"end":["educational",null,1,1,1,1]},"focusBack":"station-educational-trigger"}
+# escapePointerOver {"min":{"--gp":1,"--gs":1,"--go":1},"lights":{"pool":0,"crest":0,"orbit":0},"pulse":0,"end":["educational",null,1,1,1,1]}
+# browserBack {"min":{"--gp":1,"--gs":1,"--go":1},"lights":{"pool":0,"crest":0,"orbit":0},"pulse":1,"end":["educational",null,1,1,1,1]}
+# backToLab {"min":{"--gp":0,"--gs":0,"--go":0},"lights":{"pool":0,"crest":0,"orbit":0},"pulse":0,"end":[null,null,0,0,0,0],"rest":true}
+# direct {"powered":true,"lights":{"pool":0,"crest":0,"orbit":0},"rest":true,"quickReturn":{"bad":false,"premature":false,"stale":false,"froze":false,"powered":true},"errors":[]}
+# reduced [{"on":60,"gap":5,"drawn":[],"powered":true,"rest":true},{"on":120,"gap":40,"drawn":[],"powered":true,"rest":true},{"on":300,"gap":60,"drawn":[],"powered":true,"rest":true},{"on":300,"gap":140,"drawn":[],"powered":true,"rest":true},{"on":600,"gap":250,"drawn":[],"powered":true,"rest":true}]
+#### exit 0 20:47:47

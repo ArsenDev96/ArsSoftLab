@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { SCENE } from "@/lib/scene";
 import { ChargeLines } from "./ChargeLine";
+import { ENGINEERING_HOTSPOT_V2 } from "./EngineeringLift";
 import { EnergySurge } from "./EnergySurge";
 import { surgeStations } from "./scene-fx";
 import { hasStationLayer } from "./scene-layout";
@@ -146,8 +147,9 @@ function LabSceneV2({ floorTone }: { floorTone: boolean }) {
         <SceneLayer name="stations" depth={0.5} className="z-10">
           {/* M1.4E.3: no floating gamepad over the v2 cabinet's marquee. */}
           {/* M1.4I.1C: Playground's target includes the v2 cabinet's sign. */}
-          {/* M1.4I.1E: hover holds between platform and label; Engineering's platform doesn't lift, so its label doesn't. */}
-          <LabStations hideIcons={["playground"]} hotspots={{ playground: PLAYGROUND_HOTSPOT_V2 }} bridges={STATION_BRIDGES_V2} stillLabels={["engineering"]} />
+          {/* M1.4I.1E: hover holds between platform and label. Engineering's label stays where it is. */}
+          {/* M1.4J.1: Engineering's target follows its lift. */}
+          <LabStations hideIcons={["playground"]} hotspots={{ playground: PLAYGROUND_HOTSPOT_V2, engineering: ENGINEERING_HOTSPOT_V2 }} bridges={STATION_BRIDGES_V2} stillLabels={["engineering"]} />
         </SceneLayer>
       </LabCamera>
     </div>

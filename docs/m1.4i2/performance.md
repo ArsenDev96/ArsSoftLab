@@ -82,7 +82,7 @@ Frames drawn during each station's own sequence, and the longest single frame. "
 ## 6. What is hardware and what was ours
 - **Ours, now fixed:** repeated decoding (section 2), and Engineering's seven screen-sized layers for a 146 × 85 px display. Four stations now run close to 60 Hz on this old card.
 - **Still limited by the card:** Playground. Its first visit still has one frame of about 320 ms (the cabinet is drawn at a new scale when the lift begins; it was there before), and its lift stays at 8–11 of 27 frames. The drop in memory does not change that.
-- **Not measured:** a production build, a real network, other GPUs, touch.
+- **Not measured:** a production build, a real network, touch. Another GPU: section 8.
 
 ## 7. Floor tone (after the optimization; 5 pages default, 3 pages `?floor=approved`)
 
@@ -98,3 +98,42 @@ Frames drawn during each station's own sequence, and the longest single frame. "
 | Experience | 55 → 55 | 56 → 56 |
 
 At 1920 × 1080 the tone costs a few frames on some first visits (Creative Studio 40 → 35, Experience 51 → 45) and 8 MB; later visits differ by at most 4 frames.
+
+## 8. Home computer, optimized build
+
+Chrome 158 headless, NVIDIA GeForce RTX 4060 (driver 32.0.16.1088), Intel i5-12400, 15.7 GB, Windows 11, 60 Hz, dev server on the same machine. Same script and method: 5 pages per viewport, medians, ranges in brackets. **The office GPU is an AMD Radeon HD 5450: differences between the columns are hardware, not the optimization.** Data: `work/home/perf-home*.json`.
+
+| 1648 × 928 | Office, before | Office, optimized | Home, optimized |
+|---|---|---|---|
+| Decoded image memory | 416.7 MB | 173.5 MB | **173.5 MB** |
+| Scene files | 5,942 kB | 5,605 kB | 5,605 kB |
+| Image textures on the GPU, idle / all five visited | 298.1 / 422.7 MB | 119.4 / 173.5 MB | **114.9 / 169 MB** |
+| Tile memory, idle | 324 MB | 264 MB | 265 MB |
+| GPU process, idle / all five visited | 758 / 684 MB | 582 / 577 MB | 780 (774–838) / 734 (664–737) MB |
+| Renderer process, idle / all five visited | 271 / 192 MB | 274 / 221 MB | 267 / 291 MB |
+| Engineering frames (of 36), first → later | 12 → 12 | 34 → 35 | **36 → 36** |
+| Educational (of 49) | 33 → 37 | 48 → 49 | **49 → 49** |
+| Playground (of 54) | 11 → 14 | 12 → 22 | **39 → 54** |
+| – its lift (of 27) | 9 → 10 | 8 → 11 | **12 → 27** |
+| Creative Studio (of 48) | 30 → 33 | 43 → 44 | **48 → 48** |
+| Experience (of 60) | 41 → 43 | 55 → 55 | **60 → 60** |
+| Longest frame, later visits | 83–150 ms | 17–83 ms | **17 ms** |
+| – first visit, Playground | 317 ms | 333 ms | 150 ms (134–167) |
+| Decodes: load / first hovers / second hovers | 73–103 / 40–42 / 54–60 | 88–89 / 7 / 0 | 80 / 7 / **0** |
+| Scene shown | 2.69 s | 2.41 s | 1.19 s |
+
+- **First hover:** the first frame follows the input within 17 ms. On a new page the very first hover has one frame of 83–117 ms (10 of 10 pages, any station). Later visits stay at 17 ms.
+- **1920 × 1080:** the same frames (Playground's lift 11 → 27); GPU process 924 MB idle.
+- **240 switches in a row:** from round 2 no frame above 17.1 ms; heap 11.1 → 11.3 MB; nodes, listeners and GPU process do not grow.
+- **`?floor=approved`** (3 pages): 85 files, 5,614 kB, 179.5 MB decoded, GPU process 802 MB idle, frames unchanged (at most one fewer on a first visit).
+
+**Is 780 MB a regression? No.** In the same build and on the same card, the app's own fallback drew the full-frame files (3 pages each, in turn). The clipped wrappers are the same on both sides, so this isolates the crops; it is not the pre-optimization code.
+
+| Home, 1648 × 928 | Full-frame files | Crops |
+|---|---|---|
+| GPU process, idle | 1,179 MB (1,177–1,374) | **778 MB** (773–844) |
+| ...after visiting all five | 893 MB (885–895) | **688 MB** (678–706) |
+| Image textures, idle / all five visited | 293.8 / 412.4 MB | **114.9 / 169 MB** |
+| Frames, later visits | Full, all five stations | Full, all five stations |
+
+On this card the crops save memory. They do not change the frame rate, which is already full without them.

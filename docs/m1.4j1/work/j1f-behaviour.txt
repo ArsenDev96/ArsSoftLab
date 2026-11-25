@@ -1,0 +1,52 @@
+#### 01:29:22 node docs/m1.4i1e/work/behaviour.mjs clicks,hold,direct,reduced
+hold {
+ "engineering": { "restUnder": "nothing", "startsFromEmpty": 0, "holds": { "under": "bridge engineering", "changes": [ "-", "engineering" ], "sparks": 1, "powered": true }, "cursor": "auto", "clickSelects": null, "backWithinGrace": [ "engineering" ], "leavesToRest": true, "afterUnder": "nothing", "restartsFromBridge": 0
+ },
+ "educational": { "restUnder": "nothing", "startsFromEmpty": 0, "holds": { "under": "bridge educational", "changes": [ "-", "educational" ], "sparks": 1, "powered": true }, "cursor": "auto", "clickSelects": null, "backWithinGrace": [ "educational" ], "leavesToRest": true, "afterUnder": "nothing", "restartsFromBridge": 0
+ },
+ "playground": { "restUnder": "nothing", "startsFromEmpty": 0, "holds": { "under": "bridge playground", "changes": [ "-", "playground" ], "sparks": 1, "powered": true }, "cursor": "auto", "clickSelects": null, "backWithinGrace": [ "playground" ], "leavesToRest": true, "afterUnder": "nothing", "restartsFromBridge": 0
+ },
+ "creative": { "restUnder": "nothing", "startsFromEmpty": 0, "holds": { "under": "bridge creative", "changes": [ "-", "creative" ], "sparks": 1, "powered": true }, "cursor": "auto", "clickSelects": null, "backWithinGrace": [ "creative" ], "leavesToRest": true, "afterUnder": "nothing", "restartsFromBridge": 0
+ },
+ "experience": { "restUnder": "nothing", "startsFromEmpty": 0, "holds": { "under": "bridge experience", "changes": [ "-", "experience" ], "sparks": 1, "powered": true }, "cursor": "auto", "clickSelects": null, "backWithinGrace": [ "experience" ], "leavesToRest": true, "afterUnder": "nothing", "restartsFromBridge": 0
+ },
+ "errors": []
+}
+clicks {
+ "engineering": { "chip 1": { "url": "/lab-v2?station=engineering&project=sqlorbit", "sparks": 1, "errors": [] }, "chip 2": { "url": "/lab-v2?station=engineering&project=tablerefresh", "sparks": 1, "errors": [] }, "title": "/lab-v2?station=engineering", "escape": [ "/lab-v2", "station-engineering-trigger" ], "platform": "/lab-v2?station=engineering"
+ },
+ "educational": { "chip 1": { "url": "/lab-v2?station=educational&project=arimap", "sparks": 1, "errors": [] }, "chip 2": { "url": "/lab-v2?station=educational&project=armat", "sparks": 1, "errors": [] }, "title": "/lab-v2?station=educational", "escape": [ "/lab-v2", "station-educational-trigger" ], "platform": "/lab-v2?station=educational"
+ },
+ "playground": { "chip 1": { "url": "/lab-v2?station=playground&project=aziz", "sparks": 1, "errors": [] }, "title": "/lab-v2?station=playground", "escape": [ "/lab-v2", "station-playground-trigger" ], "platform": "/lab-v2?station=playground"
+ },
+ "creative": { "chip 1": { "url": "/lab-v2?station=creative&project=wallpapers", "sparks": 1, "errors": [] }, "title": "/lab-v2?station=creative", "escape": [ "/lab-v2", "station-creative-trigger" ], "platform": "/lab-v2?station=creative"
+ },
+ "experience": { "chip 1": { "url": "/lab-v2?station=experience&project=koreez", "sparks": 1, "errors": [] }, "title": "/lab-v2?station=experience", "escape": [ "/lab-v2", "station-experience-trigger" ], "platform": "/lab-v2?station=experience"
+ }
+}
+direct {
+ "engineering": { "selected": "engineering", "powered": true, "sparks": 0, "rest": true, "errors": []
+ },
+ "educational": { "selected": "educational", "powered": true, "sparks": 0, "rest": true, "errors": []
+ },
+ "playground": { "selected": "playground", "powered": true, "sparks": 0, "rest": true, "errors": []
+ },
+ "creative": { "selected": "creative", "powered": true, "sparks": 0, "rest": true, "errors": []
+ },
+ "experience": { "selected": "experience", "powered": true, "sparks": 0, "rest": true, "errors": []
+ }
+}
+reduced {
+ "engineering": { "changes": [ "-", "engineering" ], "sparks": 0, "lift": 0, "label": "none"
+ },
+ "educational": { "changes": [ "-", "educational" ], "sparks": 0, "lift": 0, "label": "none"
+ },
+ "playground": { "changes": [ "-", "playground" ], "sparks": 0, "lift": 0, "label": "none"
+ },
+ "creative": { "changes": [ "-", "creative" ], "sparks": 0, "lift": 0, "label": "none"
+ },
+ "experience": { "changes": [ "-", "experience" ], "sparks": 0, "lift": 0, "label": "none"
+ },
+ "errors": []
+}
+#### exit 0 01:32:57

@@ -1,0 +1,8 @@
+#### 23:47:27 node docs/m1.4i1e/work/still-click.mjs
+chip top ?station=playground&project=aziz []
+  below the raised chip, from the platform: bridge
+chip centre ?station=playground&project=aziz []
+chip lower edge ?station=playground&project=aziz []
+title, right of the chip ?station=playground []
+title over the raised chip ?station=playground&project=aziz []
+#### exit 0 23:48:04

@@ -1,0 +1,2 @@
+crops fps 61 {"1290":["chip","chip","chip","chip","chip"],"1292":["chip","chip","chip","chip","chip"],"1316":["chip","chip","chip","chip","chip"],"1343":["chip","chip","chip","chip","chip"]}
+throttle20 fps 27 {"1290":["chip","chip","chip","chip","chip"],"1292":["chip","chip","chip","chip","chip"],"1316":["chip","chip","chip","chip","chip"],"1343":["chip","chip","chip","chip","chip"]}

@@ -47,6 +47,9 @@ export function hotspotBox(shape: readonly ScenePoint[]): SceneRect {
 export interface HotspotShape {
   rest: readonly ScenePoint[];
   raised: readonly ScenePoint[];
+  /** Its transitions (clip-path), when not Playground's: up after the arrival, and down. */
+  on?: string;
+  off?: string;
 }
 
 /** CSS clip-path for a hotspot polygon, relative to its bounding box (or the element's own box). */

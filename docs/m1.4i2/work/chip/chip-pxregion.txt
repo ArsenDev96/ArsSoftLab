@@ -1,0 +1,2 @@
+chip {"label (title and chip, with margins)":[0,0],"left of it: cabinet":[63,356],"below it":[58,321]}
+title {"label (title and chip, with margins)":[0,0],"left of it: cabinet":[63,356],"below it":[58,321]}

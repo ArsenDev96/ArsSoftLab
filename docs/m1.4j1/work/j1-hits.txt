@@ -1,0 +1,14 @@
+#### 00:58:16 node j1/hits.mjs
+still on the hotspot: 56, flagged 0
+SQLOrbit: outline 180 px, tested 60, lost 0 []
+TableRefresh: outline 220 px, tested 74, lost 0 []
+title: outline 264 px, tested 66, lost 0 []
+file:///C:/Users/DoC/AppData/Local/Temp/claude/34afb1cb2745211e/ed6054d4-478c-4d46-9556-f7cee57bfd52/scratchpad/probe/j1/hits.mjs:63
+      const r = { chip: i + 1, side, t, lift: +h.toFixed(1), url: s.url, ok: s.url === url[i] }; out.clicks.push(r); if (!r.ok) console.log("!! click", JSON.stringify(r));
+                                                 ^
+
+TypeError: Cannot read properties of undefined (reading 'toFixed')
+    at file:///C:/Users/DoC/AppData/Local/Temp/claude/34afb1cb2745211e/ed6054d4-478c-4d46-9556-f7cee57bfd52/scratchpad/probe/j1/hits.mjs:63:50
+
+Node.js v22.22.3
+#### exit 1 01:08:42

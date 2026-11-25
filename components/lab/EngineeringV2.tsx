@@ -1,6 +1,7 @@
 import type { CSSProperties } from "react";
 import { SCENE, u, type SceneRect } from "@/lib/scene";
 import { ENG_BARS, ENG_CHART_BOX } from "./engineering-v2";
+import { ENG_DISC_FADE, EngineeringLift } from "./EngineeringLift";
 import { ENG_DISPLAY_CLIP, EngineeringScreenLayer } from "./EngineeringScreen";
 import { PLATFORM_POWER, POWER_FRONT } from "./platform-power";
 import { partFrame, PowerPart, powerCss } from "./PlatformPower";
@@ -47,6 +48,9 @@ const SCREEN_STANDBY = 0.68;
 const CHART_STANDBY = 0.28;
 /** At rest the floor keeps this much of Engineering's ring and reflections (unlit metal, the room's light). */
 const FLOOR_STANDBY = 0.2;
+
+/** M1.4J.1: raised, the strips' reflection close to the base is this much weaker. */
+const REFLECTION_SOFTEN = 0.25;
 
 /** Timing after the energy's arrival (ms). */
 export const ENG_TIMING = {
@@ -149,7 +153,7 @@ const ENG_CSS =
   `.eng-pulse{opacity:0}` +
   STRIP_PARTS.map((k) => `${ON} .eng-pulse[data-part="${k}"]{opacity:calc(min(1, var(--pw) * 12) * min(1, (1 - var(--pw)) * 10) * 0.9 * var(--ep${k}-on))}`).join("") +
   // The floor's share: the powered part over the standby part.
-  `.eng-floor{opacity:calc(1 - var(--eng-standby, 0))}` +
+  `.eng-floor{opacity:calc((1 - var(--eng-standby, 0)) * (1 - var(--eng-soften, 0) * var(--el)))}` +
   FLOOR_PARTS.map(
     (p, k) =>
       `.eng-floor[data-floor-part="${k}"]{--pw:0;transition:--pw ${p.off.dur}ms linear ${p.off.delay}ms}` +
@@ -177,13 +181,13 @@ function Frame({ src, box, style }: { src: string; box: SceneRect; style?: CSSPr
   return <SceneImage src={src} className="absolute max-w-none select-none" style={{ ...partFrame(box), ...style }} />;
 }
 
-function Full({ src, name, add, swap }: { src: string; name: string; add?: boolean; swap?: "anim" | "stable" }) {
+function Full({ src, name, add, swap, rise }: { src: string; name: string; add?: boolean; swap?: "anim" | "stable"; rise?: boolean }) {
   return (
     <SceneImage
       src={src}
       data-eng={name}
       data-eng-swap={swap}
-      className="pointer-events-none absolute inset-0 h-full w-full max-w-none select-none"
+      className={`pointer-events-none absolute inset-0 h-full w-full max-w-none select-none${rise ? " eng-rise" : ""}`}
       style={add ? { mixBlendMode: "plus-lighter" } : undefined}
     />
   );
@@ -244,7 +248,7 @@ function chartMask(base: boolean): CSSProperties {
  */
 function ChartLayer({ src, name, base, add }: { src: string; name: string; base: boolean; add?: boolean }) {
   return (
-    <div data-eng={name} data-eng-swap="anim" className="absolute inset-0" style={{ ...chartMask(base), ...CHART_CLIP, mixBlendMode: add ? "plus-lighter" : undefined }}>
+    <div data-eng={name} data-eng-swap="anim" className="eng-rise absolute inset-0" style={{ ...chartMask(base), ...CHART_CLIP, mixBlendMode: add ? "plus-lighter" : undefined }}>
       <Full src={src} name={`${name}-image`} />
     </div>
   );
@@ -262,7 +266,7 @@ function Pulse({ index }: { index: number }) {
       data-zone={ID}
       data-power={ID}
       data-part={index}
-      className="lab-power eng-pulse pointer-events-none absolute overflow-hidden"
+      className="lab-power eng-pulse eng-rise pointer-events-none absolute overflow-hidden"
       style={{ ...box(p.box), clipPath: clip, maskImage: mask, WebkitMaskImage: mask, mixBlendMode: "plus-lighter" }}
     >
       <Frame src={`${M14H1}/engineering-strip-light.png`} box={p.box} />
@@ -275,16 +279,18 @@ export function EngineeringV2() {
     <div data-zone={ID} className="eng-cycle contents">
     <div aria-hidden="true" data-zone={ID} data-v2-station={ID} data-v2-station-source="approved" className="eng-v2 pointer-events-none absolute inset-0">
       <style>{ENG_CSS}</style>
+      <EngineeringLift>
       {/* The station: its body (the chart is its own layer) while anything moves; once every bar has risen, the
           recovered station itself (M1.4F.1's file), so the stable state draws exactly as before (two layers
           meeting at a pixel boundary resample a little differently from one). */}
-      <Full src={`${M14H1}/engineering-body.png`} name="body" swap="anim" />
-      <Full src={`${M14F1}/engineering.png`} name="station-stable" swap="stable" />
-      <Full src={`${M14H1}/engineering-body-light.png`} name="body-light" add />
+      <Full src={`${M14H1}/engineering-body.png`} name="body" swap="anim" rise />
+      <Full src={`${M14F1}/engineering.png`} name="station-stable" swap="stable" rise />
+      <Full src={`${M14H1}/engineering-body-light.png`} name="body-light" add rise />
+      {/* On the floor: it stays. */}
       <EngineeringFloor src={`${M14H1}/engineering-strip-floor.png`} name="strip-floor" standby={0} />
       {/* The strips: unpowered ahead of each front (PowerPart, the established fronts), a pulse riding it. */}
       {STRIP_PARTS.map((k) => (
-        <PowerPart key={`off-${k}`} id={ID} index={k} side="dim">
+        <PowerPart key={`off-${k}`} id={ID} index={k} side="dim" className="eng-rise">
           <Frame src={`${M14H1}/engineering-strip-off.png`} box={PLATFORM_POWER[ID].parts[k].box} />
         </PowerPart>
       ))}
@@ -294,17 +300,17 @@ export function EngineeringV2() {
       {/* The display: standby, then the scan's shade, then (above) the bars painted on it. */}
       <div
         data-eng="screen-off"
-        className="eng-screen-off absolute inset-0"
+        className="eng-screen-off eng-rise absolute inset-0"
         style={{ background: "rgb(3 6 9)", ...clipTo(ENG_DISPLAY_CLIP), maskImage: `url(${M14H1}/engineering-screen-mask.png)`, WebkitMaskImage: `url(${M14H1}/engineering-screen-mask.png)`, maskSize: "100% 100%", WebkitMaskSize: "100% 100%" }}
       />
-      <EngineeringScreenLayer kind="shade" />
+      <EngineeringScreenLayer kind="shade" className="eng-rise" />
       <ChartLayer src={`${M14H1}/engineering-screen-bars.png`} name="screen-bars" base={false} />
       <ChartLayer src={`${M14H1}/engineering-chart.png`} name="chart" base />
       <ChartLayer src={`${M14H1}/engineering-chart-light.png`} name="chart-light" base add />
       {/* Stable: the chart's glow unmasked (its solid part is in the station image below). */}
-      <Full src={`${M14H1}/engineering-chart-light.png`} name="chart-light-stable" add swap="stable" />
+      <Full src={`${M14H1}/engineering-chart-light.png`} name="chart-light-stable" add swap="stable" rise />
       {/* Each bar's rising edge: a crisp cap, only while it moves. */}
-      <div className="eng-caps absolute inset-0" style={{ ...CHART_CLIP, mixBlendMode: "plus-lighter" }}>
+      <div className="eng-caps eng-rise absolute inset-0" style={{ ...CHART_CLIP, mixBlendMode: "plus-lighter" }}>
         {ENG_BARS.map((b, k) => (
           <div key={k} className="absolute" style={box({ x: b.x + 1, y: b.y, w: b.w - 2, h: b.h })}>
             <span
@@ -319,10 +325,10 @@ export function EngineeringV2() {
           </div>
         ))}
       </div>
-      <EngineeringScreenLayer kind="band" />
+      <EngineeringScreenLayer kind="band" className="eng-rise" />
       {/* Stable: a faint line up the hologram's own pixels (its mask is the chart layer). */}
       <div
-        className="eng-shimmer absolute overflow-hidden"
+        className="eng-shimmer eng-rise absolute overflow-hidden"
         style={{
           ...box(C),
           mixBlendMode: "plus-lighter",
@@ -341,6 +347,7 @@ export function EngineeringV2() {
           style={{ top: "100%", height: u(6), background: "linear-gradient(180deg, rgb(150 235 255 / 0.9), rgb(80 200 255 / 0.25) 45%, transparent)" }}
         />
       </div>
+      </EngineeringLift>
     </div>
     </div>
   );
@@ -373,9 +380,9 @@ export function EngineeringFloor({ src = `${M14H1}/engineering-floor.png`, name 
             data-zone={ID}
             data-floor-part={k}
             className="eng-floor absolute overflow-hidden"
-            style={{ ...box(p.box), ["--eng-standby" as string]: standby, maskImage: mask, WebkitMaskImage: mask, mixBlendMode: "plus-lighter" }}
+            style={{ ...box(p.box), ["--eng-standby" as string]: standby, ["--eng-soften" as string]: standby > 0 ? 0 : REFLECTION_SOFTEN, maskImage: mask, WebkitMaskImage: mask, mixBlendMode: "plus-lighter" }}
           >
-            <Frame src={src} box={p.box} />
+            <Frame src={src} box={p.box} style={standby > 0 && k === 0 ? ENG_DISC_FADE : undefined} />
           </div>
         );
       })}

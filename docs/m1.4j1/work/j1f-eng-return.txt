@@ -1,0 +1,26 @@
+#### 01:32:57 node docs/m1.4i1/work/eng-return.mjs j1 mouse sequences
+
+# mouse: 10 runs | premature 0 | scan 0 caps 0 pulse 0 shimmer 0 held 0 (run-back finishing 8) rose 0 | frozen scan after arrival 0 | frozen pulse 0 | scan not from the top 0 | no scan 0 | no caps 0 | not powered 0 | not at rest 0 | rose after leaving 0 | first visit premature 0 | errors []
+
+# sequences: 20 runs, premature 0, not powered 0, not at rest 0 errors []
+  engineering -> educational -> engineering 800,60 visits 2 premature 0 powered true rest true 
+  engineering -> educational -> engineering 800,160 visits 2 premature 0 powered true rest true 
+  engineering -> educational -> engineering 900,30 visits 2 premature 0 powered true rest true 
+  engineering -> educational -> engineering 950,120 visits 2 premature 0 powered true rest true 
+  engineering -> educational -> engineering 1000,250 visits 2 premature 0 powered true rest true 
+  engineering -> educational -> engineering 1150,90 visits 2 premature 0 powered true rest true 
+  engineering -> educational -> engineering 1600,120 visits 2 premature 0 powered true rest true 
+  engineering -> educational -> engineering 400,100 visits 2 premature 0 powered true rest true 
+  four returns in a row 150,30 visits 5 premature 0 powered true rest true 
+  four returns in a row 250,90 visits 5 premature 0 powered true rest true 
+  four returns in a row 350,150 visits 5 premature 0 powered true rest true 
+  four returns in a row 60,40 visits 5 premature 0 powered true rest true 
+  left during the second charge 180,60 visits 3 premature 0 powered true rest true 
+  left during the second charge 250,200 visits 3 premature 0 powered true rest true 
+  left during the second charge 300,420 visits 3 premature 0 powered true rest true 
+  left during the second charge 700,150 visits 3 premature 0 powered true rest true 
+  left before any arrival 100,20 visits 2 premature 0 powered true rest true 
+  left before any arrival 300,60 visits 2 premature 0 powered true rest true 
+  left before any arrival 500,20 visits 2 premature 0 powered true rest true 
+  left before any arrival 525,5 visits 2 premature 0 powered true rest true 
+#### exit 0 01:35:08

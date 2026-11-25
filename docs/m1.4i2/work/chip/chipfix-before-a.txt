@@ -1,0 +1,18 @@
+  !! {"phase":"lifted","side":"left","q":[1290.4,361],"lift":18,"under":"label","clicks":["label"],"url":"","sparks":1,"h":["-","playground"],"ok":false}
+  !! {"phase":"lifted","side":"right","q":[1342.9,361],"lift":18,"under":"label","clicks":["label"],"url":"","sparks":1,"h":["-","playground"],"ok":false}
+  !! {"phase":"lifted","side":"left","q":[1288.2,364.7],"lift":18,"under":"bridge","clicks":["bridge"],"url":"","sparks":1,"h":["-","playground"],"ok":false}
+  !! {"phase":"lifted","side":"right","q":[1345,364.7],"lift":18,"under":"bridge","clicks":["bridge"],"url":"","sparks":1,"h":["-","playground"],"ok":false}
+  !! {"phase":"lifted","side":"left","q":[1287.5,369],"lift":18,"under":"bridge","clicks":["bridge"],"url":"","sparks":1,"h":["-","playground"],"ok":false}
+  !! {"phase":"lifted","side":"right","q":[1345.8,369],"lift":18,"under":"bridge","clicks":["bridge"],"url":"","sparks":1,"h":["-","playground"],"ok":false}
+  !! {"phase":"lifted","side":"left","q":[1288.2,373.3],"lift":18,"under":"bridge","clicks":["bridge"],"url":"","sparks":1,"h":["-","playground"],"ok":false}
+  !! {"phase":"lifted","side":"right","q":[1345,373.3],"lift":18,"under":"bridge","clicks":["bridge"],"url":"","sparks":1,"h":["-","playground"],"ok":false}
+  !! {"phase":"lifted","side":"left","q":[1290.4,377],"lift":18,"under":"bridge","clicks":["bridge"],"url":"","sparks":1,"h":["-","playground"],"ok":false}
+  !! {"phase":"lifted","side":"right","q":[1342.9,377],"lift":18,"under":"bridge","clicks":["bridge"],"url":"","sparks":1,"h":["-","playground"],"ok":false}
+  !! {"phase":"lifted","side":"right","q":[1339.5,379.8],"lift":18,"under":"bridge","clicks":["bridge"],"url":"","sparks":1,"h":["-","playground"],"ok":false}
+  !! {"phase":"lifted","side":"left","q":[1291.9,363.1],"lift":18,"under":"bridge","clicks":["bridge"],"url":"","sparks":1,"h":["-","playground"],"ok":false}
+  !! {"phase":"lifted","side":"right","q":[1341.4,363.1],"lift":18,"under":"bridge","clicks":["bridge"],"url":"","sparks":1,"h":["-","playground"],"ok":false}
+  !! {"phase":"lifted","side":"left","q":[1290,369],"lift":18,"under":"bridge","clicks":["bridge"],"url":"","sparks":1,"h":["-","playground"],"ok":false}
+  !! {"phase":"lifted","side":"right","q":[1343.3,369],"lift":18,"under":"bridge","clicks":["bridge"],"url":"","sparks":1,"h":["-","playground"],"ok":false}
+  !! {"phase":"lifted","side":"left","q":[1291.9,374.9],"lift":18,"under":"bridge","clicks":["bridge"],"url":"","sparks":1,"h":["-","playground"],"ok":false}
+  !! {"phase":"lifted","side":"right","q":[1341.4,374.9],"lift":18,"under":"bridge","clicks":["bridge"],"url":"","sparks":1,"h":["-","playground"],"ok":false}
+before none chip 1287.0,356.0,1346.3,382.0 {"lifted":{"runs":45,"failed":17,"skipped":0,"bySide":{"left":8,"right":9}},"before":{"runs":13,"failed":0,"skipped":0,"bySide":{}}} errors []

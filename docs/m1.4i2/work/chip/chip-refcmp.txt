@@ -1,0 +1,26 @@
+v2 restWhole after vs before: 0 | before vs before: 0
+v2 restNear after vs before: 0 | before vs before: 0
+v2 chipChargingNear after vs before: 138 {"1>A":24,"P>A":53,"A>1":61} box(px) 1285,368,1346,401 | before vs before: 0
+v2 chipLiftedNear after vs before: 140 {"p>A":4,"1>A":21,"P>A":46,"A>1":69} box(px) 1286,348,1347,382 | before vs before: 0
+v2 chipLiftedWhole after vs before: 14 {"p>A":1,"1>A":5,"P>A":2,"A>1":6} box(px) 1561,377,1576,385 | before vs before: 0
+v2 titleLiftedNear after vs before: 0 | before vs before: 0
+v2 titleLiftedWhole after vs before: 0 | before vs before: 0
+v2 cabinetLiftedNear after vs before: 0 | before vs before: 0
+v2 cabinetLiftedWhole after vs before: 0 | before vs before: 0
+v2 focusable 12 12 markup same: false noise true css rule length 15833 16093
+v2 markup without <style> same: true
+home restWhole after vs before: 0 | before vs before: 0
+home restNear after vs before: 0 | before vs before: 0
+home chipChargingNear after vs before: 0 | before vs before: 0
+home chipLiftedNear after vs before: 0 | before vs before: 0
+home chipLiftedWhole after vs before: 0 | before vs before: 0
+home titleLiftedNear after vs before: 0 | before vs before: 3 {"P>A":2,"A>P":1} box(px) 1288,349,1342,371
+home titleLiftedWhole after vs before: 0 | before vs before: 0
+home cabinetLiftedNear after vs before: 0 | before vs before: 0
+home cabinetLiftedWhole after vs before: 0 | before vs before: 0
+home focusable 12 12 markup same: true noise true css rule length 13060 13060
+home markup without <style> same: true
+pixels v2 chip after vs before {"max":63,"changed":2966,"over2":677,"box":[0,15,74,147]} noise {"max":0,"changed":0,"over2":0,"box":null}
+pixels v2 title after vs before {"max":63,"changed":2966,"over2":677,"box":[0,15,74,147]} noise {"max":0,"changed":0,"over2":0,"box":null}
+pixels home chip after vs before {"max":2,"changed":1225,"over2":0,"box":null} noise {"max":1,"changed":346,"over2":0,"box":null}
+pixels home title after vs before {"max":10,"changed":2314,"over2":472,"box":[0,30,128,144]} noise {"max":3,"changed":1216,"over2":51,"box":[26,36,127,74]}

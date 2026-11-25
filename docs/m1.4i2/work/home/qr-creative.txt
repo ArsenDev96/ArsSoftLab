@@ -1,0 +1,18 @@
+#### 20:26:43 node docs/m1.4i1/work/qr-run.mjs home creative
+== creative home
+first {"times":{"warm":[177,360],"crest":[177,577],"glint":[360,727]},"stableAt":793,"bad":false,"rest":true}
+first {"times":{"warm":[110,376],"crest":[160,576],"glint":[360,727]},"stableAt":793,"bad":false,"rest":true}
+first {"times":{"warm":[110,360],"crest":[160,577],"glint":[360,726]},"stableAt":793,"bad":false,"rest":true}
+first {"times":{"warm":[110,360],"crest":[160,577],"glint":[360,727]},"stableAt":793,"bad":false,"rest":true}
+# mouse {"runs":11,"bad":0,"premature":0,"lightBefore":{"warm":0,"crest":0,"glint":0},"pulseBefore":0,"shimmerBefore":0,"rose":0,"heldThroughCharge":0,"resumesPartWay":0,"litAtArrivalNoReplay":0,"frozenAfterArrival":{"warm":0,"crest":0,"glint":0},"frozenPulseAfter":0,"notPowered":0,"runBackFinishing":9,"notAtRest":0,"roseAfterLeaving":0} errors []
+# grid {"runs":91,"bad":0,"premature":0,"lightBefore":{"warm":0,"crest":0,"glint":0},"pulseBefore":0,"shimmerBefore":0,"rose":0,"heldThroughCharge":0,"resumesPartWay":0,"litAtArrivalNoReplay":0,"frozenAfterArrival":{"warm":0,"crest":0,"glint":0},"frozenPulseAfter":0,"notPowered":0,"runBackFinishing":57,"notAtRest":0,"roseAfterLeaving":0} errors []
+# sequences {"runs":20,"bad":0,"premature":0,"lightBefore":{"warm":0,"crest":0,"glint":0},"pulseBefore":0,"shimmerBefore":0,"rose":0,"heldThroughCharge":0,"resumesPartWay":0,"litAtArrivalNoReplay":0,"frozenAfterArrival":{"warm":0,"crest":0,"glint":0},"frozenPulseAfter":0,"notPowered":0,"runBackFinishing":13,"notAtRest":0,"roseAfterLeaving":0} errors []
+# escape {"runs":7,"bad":1,"premature":0,"lightBefore":{"warm":0,"crest":0,"glint":0},"pulseBefore":0,"shimmerBefore":0,"rose":0,"heldThroughCharge":1,"resumesPartWay":0,"litAtArrivalNoReplay":1,"frozenAfterArrival":{"warm":0,"crest":0,"glint":0},"frozenPulseAfter":0,"notPowered":1,"runBackFinishing":6,"notAtRest":0,"roseAfterLeaving":0} errors []
+    {"click":200,"esc":100,"light":{"warm":0,"crest":0,"glint":0},"pulse":0,"held":0,"atArrival":{"--cw":0,"--cs":0,"--cg":0},"frozen":{"warm":0,"crest":0,"glint":0},"fp":0,"powered":false,"kept":false,"rest":true}
+# keyboard {"focus":{"min":{"--cw":0,"--cs":0,"--cg":0},"lights":{"warm":17,"crest":26,"glint":23},"pulse":16,"end":["creative",null,1,1,1,1]},"enter":{"min":{"--cw":1,"--cs":1,"--cg":1},"lights":{"warm":0,"crest":0,"glint":0},"pulse":0,"end":[null,"creative",1,1,1,1]},"escape":{"min":{"--cw":1,"--cs":1,"--cg":1},"lights":{"warm":0,"crest":0,"glint":0},"pulse":0,"end":["creative",null,1,1,1,1]},"focusBack":"station-creative-trigger"}
+# escapePointerOver {"min":{"--cw":1,"--cs":1,"--cg":1},"lights":{"warm":0,"crest":0,"glint":0},"pulse":0,"end":["creative",null,1,1,1,1]}
+# browserBack {"min":{"--cw":1,"--cs":1,"--cg":1},"lights":{"warm":0,"crest":0,"glint":0},"pulse":0,"end":["creative",null,1,1,1,1]}
+# backToLab {"min":{"--cw":0,"--cs":0,"--cg":0},"lights":{"warm":0,"crest":0,"glint":0},"pulse":0,"end":[null,null,0,0,0,0],"rest":true}
+# direct {"powered":true,"lights":{"warm":0,"crest":0,"glint":0},"rest":true,"quickReturn":{"bad":false,"premature":false,"stale":false,"froze":false,"powered":true},"errors":[]}
+# reduced [{"on":60,"gap":5,"drawn":[],"powered":true,"rest":true},{"on":120,"gap":40,"drawn":[],"powered":true,"rest":true},{"on":300,"gap":60,"drawn":[],"powered":true,"rest":true},{"on":300,"gap":140,"drawn":[],"powered":true,"rest":true},{"on":600,"gap":250,"drawn":[],"powered":true,"rest":true}]
+#### exit 0 20:38:13

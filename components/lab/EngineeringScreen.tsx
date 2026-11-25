@@ -54,7 +54,7 @@ const CLIP_PATH = `inset(${u(D.y)} ${u(SCENE.width - D.x - D.w)} ${u(SCENE.heigh
 
 const MASK = "url(/scene/v2/m14h1/engineering-screen-mask.png)";
 
-export function EngineeringScreenLayer({ kind }: { kind: "shade" | "band" }) {
+export function EngineeringScreenLayer({ kind, className = "" }: { kind: "shade" | "band"; className?: string }) {
   const wrapRef = useRef<HTMLDivElement>(null);
   const boxRef = useRef<HTMLDivElement>(null);
 
@@ -77,7 +77,7 @@ export function EngineeringScreenLayer({ kind }: { kind: "shade" | "band" }) {
       ref={wrapRef}
       aria-hidden="true"
       data-eng-screen={kind}
-      className="pointer-events-none absolute inset-0"
+      className={`pointer-events-none absolute inset-0 ${className}`}
       style={{
         clipPath: CLIP_PATH,
         maskImage: MASK,

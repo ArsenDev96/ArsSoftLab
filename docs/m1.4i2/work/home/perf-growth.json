@@ -1,0 +1,187 @@
+{
+ "snaps": [
+  {
+   "label": "after load",
+   "heap_mb": 10.35,
+   "nodes": 4173,
+   "listeners": 831,
+   "documents": 1,
+   "animations": 0,
+   "dom": 840,
+   "commits": 10,
+   "layout_shift": 0,
+   "rafs_in_1s": 60,
+   "memory_mb": {
+    "browser": 53,
+    "crashpad-handler": 3,
+    "gpu-process": 702,
+    "utility": 23,
+    "renderer": 223
+   }
+  },
+  {
+   "label": "after 40 switches",
+   "heap_mb": 11.05,
+   "nodes": 4165,
+   "listeners": 836,
+   "documents": 1,
+   "animations": 75,
+   "dom": 840,
+   "commits": 59,
+   "layout_shift": 0.00046,
+   "rafs_in_1s": 61,
+   "memory_mb": {
+    "browser": 63,
+    "crashpad-handler": 3,
+    "gpu-process": 726,
+    "utility": 23,
+    "renderer": 200
+   }
+  },
+  {
+   "label": "after 80 switches",
+   "heap_mb": 11.09,
+   "nodes": 4165,
+   "listeners": 836,
+   "documents": 1,
+   "animations": 75,
+   "dom": 840,
+   "commits": 108,
+   "layout_shift": 0.00092,
+   "rafs_in_1s": 60,
+   "memory_mb": {
+    "browser": 58,
+    "crashpad-handler": 3,
+    "gpu-process": 681,
+    "utility": 22,
+    "renderer": 186
+   }
+  },
+  {
+   "label": "after 120 switches",
+   "heap_mb": 11.17,
+   "nodes": 4165,
+   "listeners": 836,
+   "documents": 1,
+   "animations": 75,
+   "dom": 840,
+   "commits": 157,
+   "layout_shift": 0.00138,
+   "rafs_in_1s": 60,
+   "memory_mb": {
+    "browser": 57,
+    "crashpad-handler": 3,
+    "gpu-process": 686,
+    "utility": 22,
+    "renderer": 187
+   }
+  },
+  {
+   "label": "after 160 switches",
+   "heap_mb": 11.27,
+   "nodes": 4165,
+   "listeners": 836,
+   "documents": 1,
+   "animations": 75,
+   "dom": 840,
+   "commits": 206,
+   "layout_shift": 0.00182,
+   "rafs_in_1s": 60,
+   "memory_mb": {
+    "browser": 57,
+    "crashpad-handler": 3,
+    "gpu-process": 758,
+    "utility": 22,
+    "renderer": 196
+   }
+  },
+  {
+   "label": "after 200 switches",
+   "heap_mb": 11.28,
+   "nodes": 4165,
+   "listeners": 836,
+   "documents": 1,
+   "animations": 75,
+   "dom": 840,
+   "commits": 255,
+   "layout_shift": 0.00228,
+   "rafs_in_1s": 60,
+   "memory_mb": {
+    "browser": 57,
+    "crashpad-handler": 3,
+    "gpu-process": 687,
+    "utility": 22,
+    "renderer": 190
+   }
+  },
+  {
+   "label": "after 240 switches",
+   "heap_mb": 11.31,
+   "nodes": 4165,
+   "listeners": 836,
+   "documents": 1,
+   "animations": 75,
+   "dom": 840,
+   "commits": 304,
+   "layout_shift": 0.00274,
+   "rafs_in_1s": 60,
+   "memory_mb": {
+    "browser": 59,
+    "crashpad-handler": 3,
+    "gpu-process": 686,
+    "utility": 23,
+    "renderer": 204
+   }
+  }
+ ],
+ "pace": [
+  {
+   "round": 1,
+   "frames": 1399,
+   "median_ms": 16.7,
+   "p95_ms": 16.9,
+   "max_ms": 150.3,
+   "over_50ms": 4
+  },
+  {
+   "round": 2,
+   "frames": 1423,
+   "median_ms": 16.7,
+   "p95_ms": 16.9,
+   "max_ms": 17.1,
+   "over_50ms": 0
+  },
+  {
+   "round": 3,
+   "frames": 1423,
+   "median_ms": 16.7,
+   "p95_ms": 16.9,
+   "max_ms": 17,
+   "over_50ms": 0
+  },
+  {
+   "round": 4,
+   "frames": 1421,
+   "median_ms": 16.7,
+   "p95_ms": 16.9,
+   "max_ms": 17.1,
+   "over_50ms": 0
+  },
+  {
+   "round": 5,
+   "frames": 1421,
+   "median_ms": 16.7,
+   "p95_ms": 16.9,
+   "max_ms": 17.1,
+   "over_50ms": 0
+  },
+  {
+   "round": 6,
+   "frames": 1423,
+   "median_ms": 16.7,
+   "p95_ms": 16.9,
+   "max_ms": 17,
+   "over_50ms": 0
+  }
+ ]
+}

@@ -1,0 +1,9 @@
+#### 21:46:22 node docs/m1.4i1/work/qr-run.mjs home2 creative edge
+== creative home2
+# escape {"runs":7,"bad":0,"premature":0,"lightBefore":{"warm":0,"crest":0,"glint":0},"pulseBefore":0,"shimmerBefore":0,"rose":0,"heldThroughCharge":1,"resumesPartWay":0,"litAtArrivalNoReplay":1,"frozenAfterArrival":{"warm":0,"crest":0,"glint":0},"frozenPulseAfter":0,"notPowered":0,"runBackFinishing":6,"notAtRest":0,"roseAfterLeaving":0} errors []
+# keyboard {"focus":{"min":{"--cw":0,"--cs":0,"--cg":0},"lights":{"warm":16,"crest":26,"glint":23},"pulse":16,"end":["creative",null,1,1,1,1]},"enter":{"min":{"--cw":1,"--cs":1,"--cg":1},"lights":{"warm":0,"crest":0,"glint":0},"pulse":0,"end":[null,"creative",1,1,1,1]},"escape":{"min":{"--cw":1,"--cs":1,"--cg":1},"lights":{"warm":0,"crest":0,"glint":0},"pulse":1,"end":["creative",null,1,1,1,1]},"focusBack":"station-creative-trigger"}
+# escapePointerOver {"min":{"--cw":1,"--cs":1,"--cg":1},"lights":{"warm":0,"crest":0,"glint":0},"pulse":0,"end":["creative",null,1,1,1,1]}
+# browserBack {"min":{"--cw":1,"--cs":1,"--cg":1},"lights":{"warm":0,"crest":0,"glint":0},"pulse":0,"end":["creative",null,1,1,1,1]}
+# backToLab {"min":{"--cw":0,"--cs":0,"--cg":0},"lights":{"warm":0,"crest":0,"glint":0},"pulse":0,"end":[null,null,0,0,0,0],"rest":true}
+# direct {"powered":true,"lights":{"warm":0,"crest":0,"glint":0},"rest":true,"quickReturn":{"bad":false,"premature":false,"stale":false,"froze":false,"powered":true},"errors":[]}
+#### exit 0 21:47:28

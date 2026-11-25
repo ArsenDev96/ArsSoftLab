@@ -1,11 +1,11 @@
 # M1.4I.2: Lossless rendering optimization
 
-**Recommendation: GO, once the remaining regression checks (section 6) pass.** In Chrome `/lab-v2` draws the same scene with **58 % less decoded image memory** and **176 MB less in the GPU process** at 1648 × 928 (251 MB less at 1920 × 1080). Four of the five station sequences now run close to 60 Hz on this old card. **Playground's lift does not run at a reliably higher frame rate.** Nothing committed or pushed.
+**Recommendation: GO.** The remaining regression checks (section 6) have run on the home computer: `final-verification.md`. One minor M1.4I.1E defect was found (Playground's chip, section 6); it did not come from the crops and is **fixed in M1.4I.2.1** (`chip-click-fix.md`). In Chrome `/lab-v2` draws the same scene with **58 % less decoded image memory** and **176 MB less in the GPU process** at 1648 × 928 (251 MB less at 1920 × 1080). Four of the five station sequences now run close to 60 Hz on this old card. **Playground's lift does not run at a reliably higher frame rate.** The figures here are the office computer's; home figures are in `performance.md`, section 8.
 
 | Decision criterion | Result |
 |---|---|
 | 1. Approved visuals unchanged | Yes: at most 6 of 255 levels, no visible difference (`visual-equivalence.md`) |
-| 2. Animations and interactions work | So far, yes; some checks are still to run (section 6) |
+| 2. Animations and interactions work | Yes (section 6). The one exception, a still click on the rounded end of Playground's chip (1E), is fixed in M1.4I.2.1 |
 | 3. Less texture area or memory | 416.7 → 173.5 MB decoded; GPU image textures 298 → 119 MB idle (`performance.md`) |
 | 4. No new artifacts | None found |
 | 5. Complexity in proportion | One component, one generated map, one generator script |
@@ -55,7 +55,7 @@ Reasons and sizes: `asset-audit.md`. In short: 11 images that Chrome composites 
 
 ## 6. Functional regressions
 
-**Not finished: the session ended before all checks had run.** Output: `work/regress/functional.txt`.
+**Finished on the home computer** (RTX 4060, Chrome 158): `final-verification.md`, data in `work/home/`. The office session had ended before all checks had run; its output: `work/regress/functional.txt`. "Home" marks what was completed later.
 
 | Check | Result |
 |---|---|
@@ -67,18 +67,20 @@ Reasons and sizes: `asset-audit.md`. In short: 11 images that Chrome composites 
 | Reduced motion | 5 of 5: no spark, nothing lifts |
 | 1E: bridges hold and never start a hover | 5 of 5 |
 | 1E: hit area through Playground's lift, still pointer | As in 1E (12 of 24,166 at every height; 16 start, 0 restart) |
-| 1E: platform, title and chip transitions | Engineering and Educational: 96 runs, 0 interrupted. **Playground, Creative Studio and Experience: not run** |
+| 1E: platform, title and chip transitions | Engineering and Educational: 96 runs, 0 interrupted. Home: Playground, Creative Studio and Experience, 161 moves, **0 interrupted**; leaving 15 of 15, switching 12 of 12 |
 | 1A: direct load of `/lab-v2`, and `/` to `/lab-v2` to `/` by link | Opens and activates |
-| 1A: entering from a page without the lab, history, remount | **Not run:** the probe's test address was wrong on this shell, so these lines in the output say FAILED; that is not a finding about the page |
-| 1C: Playground's sign (clicks, timing, paths) | **Not run** (its hit map is unchanged) |
-| 1B: Engineering's quick return | 10 runs, 0 flags, 0 errors |
-| 1D: quick return, Creative Studio, Educational, Experience | **Not run** (stopped; no timing or state code changed) |
-| One performance page after the browser test (section 3) was added | **Not run** |
+| 1A: entering from a page without the lab, history, remount | Home: **51 of 51 entries shown**, 31 of 31 activations, plus 28 mounts in one document and 8 slow loads; never black. (The office's FAILED lines: the shell had rewritten the probe's test address) |
+| 1C: Playground's sign (clicks, timing, paths) | Home: as in 1C, paths 45 of 45, hit map 0 of 98,230 points changed |
+| 1B: Engineering's quick return | 10 runs, 0 flags, 0 errors. Home: 160 runs, 0 flags |
+| Playground's quick return | Home: 80 runs, 0 flags (lift, sparks, sign) |
+| 1D: quick return, Creative Studio, Educational, Experience | Home: 387 runs, 1 flag (Creative Studio, Escape), not reproduced in 25 repeats |
+| Performance after the browser test (section 3) was added | Home: 16 pages, `performance.md` section 8 |
+| **Found at home:** a still pointer on the outer 5–7 px of the AZIZ chip, clicked after the lift | **The click can be lost (minor, 1E).** Same without the crops; shows more often the smoother the lift. **Fixed in M1.4I.2.1:** 67 of 228 failed before, 0 of 227 after; `chip-click-fix.md` |
 
-**The GO above is conditional on these.** Commands, with the dev server on port 3002 (copy `docs/m1.4i1` and `docs/m1.4i1e` first: these probes write there):
+Commands used, with the dev server on port 3002 (copy `docs/m1.4i1` and `docs/m1.4i1e` first: these probes write there):
 ```
 node docs/m1.4i1e/work/transitions.mjs i2 playground,creative,experience label,chip
-MSYS_NO_PATHCONV=1 OTHER=/nope node docs/m1.4i1/work/nav.mjs i2
+MSYS_NO_PATHCONV=1 OTHER=/nope node docs/m1.4i1/work/nav.mjs i2        # deep: wait for ready() before router.push
 node docs/m1.4i1/work/sign-probe.mjs i2 timing click paths
 node docs/m1.4i1/work/qr-run.mjs i2 creative mouse        (then educational, experience)
 node docs/m1.4i2/work/perf.mjs check 1
@@ -91,7 +93,8 @@ node docs/m1.4i2/work/perf.mjs check 1
 - **Chrome's layer decisions:** which images it composites on their own is its own heuristic. A later version could draw a few layers slightly softer or sharper, as it can today.
 - **Window sizes at exactly half a device pixel, and unlisted zoom levels:** cropped layers can sit up to half a device pixel off at the scene's far edge.
 - **Windows below about 1180 px:** Chrome samples smaller mip levels; at 1024 × 640 the largest difference was 3 levels.
-- **Playground's first visit** keeps its one frame of about 320 ms.
+- **Playground's first visit** keeps its one frame of about 320 ms (about 150 ms at home).
+- **Playground's chip, rounded ends** (1E): fixed in M1.4I.2.1 (`chip-click-fix.md`). What remains is its title's leftmost pixel column.
 - **Renderer process** about 25–30 MB larger after use.
 - **Sources changed later:** run the generator again after editing any source image, or the old crop stays. `--check` fails if they differ.
 - **Not tested:** production build, Safari (draws full frames by the same rule), touch, 2560 × 1080 captures.

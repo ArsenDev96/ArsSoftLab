@@ -1,0 +1,10 @@
+#### 20:58:45 node docs/m1.4i/work/p3-switch.mjs
+!! engineering->educational (mid-sequence) | light without hover {"engineering":6} | 125 frames
+!! engineering: leave mid-sequence (early) | light without hover {"engineering":7} | 158 frames
+!! engineering: leave mid-sequence (middle) | light without hover {"engineering":6} | 167 frames
+!! engineering: slip off mid-sequence, back after 160 ms | light without hover {"engineering":5} | 137 frames
+!! engineering: slip off mid-sequence, back after 260 ms | light without hover {"engineering":6} | 146 frames
+!! engineering: slip off mid-sequence, back after 420 ms | light without hover {"engineering":6} | 155 frames
+!! engineering: enter and leave 6 times | light without hover {"engineering":19} | 291 frames
+73 scenarios, 7 flagged; max sparks at once 5 errors 0
+#### exit 0 21:02:47
