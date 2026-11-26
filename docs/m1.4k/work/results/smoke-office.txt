@@ -1,0 +1,9 @@
+!! 1366x768 keys experience {"enter":"?station=experience","selected":"experience","powered":false,"escape":"","focusBack":"station-experience-trigger","rest":true}
+1366x768 {"layout":{"scroll":[false,false],"n":12,"clipped":[],"unreachable":[],"small":["Educational 16.4","AriMap 21.2","Armat 21.2","Engineering 16.8","SQLOrbit 21.2","TableRefresh 21.2","Playground 17.1","AZIZ 21.2","Creative Studio 18.1","Wallpapers 21.2","Experience 17.6","Koreez 21.2"]},"tab":true,"keys":false,"chip":{"opened":"?station=engineering&project=sqlorbit","back":""},"mail":1}
+!! 1920x1080 keys creative {"enter":"?station=creative","selected":"creative","powered":false,"escape":"","focusBack":"station-creative-trigger","rest":true}
+!! 1920x1080 keys experience {"enter":"?station=experience","selected":"experience","powered":false,"escape":"","focusBack":"station-experience-trigger","rest":true}
+1920x1080 {"layout":{"scroll":[false,false],"n":12,"clipped":[],"unreachable":[],"small":["Educational 23.1","Engineering 23.5"]},"tab":true,"keys":false,"chip":{"opened":"?station=engineering&project=sqlorbit","back":""},"mail":1}
+direct {"selected":"creative","powered":true,"errors":[]}
+home {"requests":94,"sceneV2":0,"mail":[["Let’s Talk","mailto:arsmanukyandev@gmail.com?subject=Let's%20Talk"]],"errors":[]}
+smoke FAILED 3 http://localhost:3002
+follow-up: the 3 'not powered' lines are the probe's 1200 ms read. smoke-enter-check-office.txt: powered after Enter in 973-1491 ms, 12 of 12 (Experience's journey is the longest). Keyboard: 10 of 10.

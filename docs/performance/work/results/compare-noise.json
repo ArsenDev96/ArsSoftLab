@@ -1,0 +1,162 @@
+{
+ "default-1648x928-chart": {
+  "max": 0,
+  "px_any": 0,
+  "px_over2": 0,
+  "over2_box": null,
+  "eng_max": 0,
+  "eng_px_over2": 0
+ },
+ "default-1648x928-full": {
+  "max": 0,
+  "px_any": 0,
+  "px_over2": 0,
+  "over2_box": null,
+  "eng_max": 0,
+  "eng_px_over2": 0
+ },
+ "default-1648x928-half": {
+  "max": 0,
+  "px_any": 0,
+  "px_over2": 0,
+  "over2_box": null,
+  "eng_max": 0,
+  "eng_px_over2": 0
+ },
+ "default-1648x928-rest": {
+  "max": 0,
+  "px_any": 0,
+  "px_over2": 0,
+  "over2_box": null,
+  "eng_max": 0,
+  "eng_px_over2": 0
+ },
+ "default-1648x928-stable": {
+  "max": 0,
+  "px_any": 0,
+  "px_over2": 0,
+  "over2_box": null,
+  "eng_max": 0,
+  "eng_px_over2": 0
+ },
+ "default-1920x1080-chart": {
+  "max": 0,
+  "px_any": 0,
+  "px_over2": 0,
+  "over2_box": null,
+  "eng_max": 0,
+  "eng_px_over2": 0
+ },
+ "default-1920x1080-full": {
+  "max": 0,
+  "px_any": 0,
+  "px_over2": 0,
+  "over2_box": null,
+  "eng_max": 0,
+  "eng_px_over2": 0
+ },
+ "default-1920x1080-half": {
+  "max": 0,
+  "px_any": 0,
+  "px_over2": 0,
+  "over2_box": null,
+  "eng_max": 0,
+  "eng_px_over2": 0
+ },
+ "default-1920x1080-rest": {
+  "max": 0,
+  "px_any": 0,
+  "px_over2": 0,
+  "over2_box": null,
+  "eng_max": 0,
+  "eng_px_over2": 0
+ },
+ "default-1920x1080-stable": {
+  "max": 0,
+  "px_any": 0,
+  "px_over2": 0,
+  "over2_box": null,
+  "eng_max": 0,
+  "eng_px_over2": 0
+ },
+ "gpu-1648x928-chart": {
+  "max": 2,
+  "px_any": 164,
+  "px_over2": 0,
+  "over2_box": null,
+  "eng_max": 1,
+  "eng_px_over2": 0
+ },
+ "gpu-1648x928-full": {
+  "max": 1,
+  "px_any": 13,
+  "px_over2": 0,
+  "over2_box": null,
+  "eng_max": 1,
+  "eng_px_over2": 0
+ },
+ "gpu-1648x928-half": {
+  "max": 2,
+  "px_any": 178,
+  "px_over2": 0,
+  "over2_box": null,
+  "eng_max": 1,
+  "eng_px_over2": 0
+ },
+ "gpu-1648x928-rest": {
+  "max": 0,
+  "px_any": 0,
+  "px_over2": 0,
+  "over2_box": null,
+  "eng_max": 0,
+  "eng_px_over2": 0
+ },
+ "gpu-1648x928-stable": {
+  "max": 0,
+  "px_any": 0,
+  "px_over2": 0,
+  "over2_box": null,
+  "eng_max": 0,
+  "eng_px_over2": 0
+ },
+ "gpu-1920x1080-chart": {
+  "max": 2,
+  "px_any": 1628,
+  "px_over2": 0,
+  "over2_box": null,
+  "eng_max": 1,
+  "eng_px_over2": 0
+ },
+ "gpu-1920x1080-full": {
+  "max": 1,
+  "px_any": 618,
+  "px_over2": 0,
+  "over2_box": null,
+  "eng_max": 1,
+  "eng_px_over2": 0
+ },
+ "gpu-1920x1080-half": {
+  "max": 2,
+  "px_any": 3376,
+  "px_over2": 0,
+  "over2_box": null,
+  "eng_max": 1,
+  "eng_px_over2": 0
+ },
+ "gpu-1920x1080-rest": {
+  "max": 1,
+  "px_any": 11,
+  "px_over2": 0,
+  "over2_box": null,
+  "eng_max": 0,
+  "eng_px_over2": 0
+ },
+ "gpu-1920x1080-stable": {
+  "max": 2,
+  "px_any": 1274,
+  "px_over2": 0,
+  "over2_box": null,
+  "eng_max": 1,
+  "eng_px_over2": 0
+ }
+}

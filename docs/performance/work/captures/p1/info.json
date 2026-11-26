@@ -1,0 +1,52 @@
+{
+ "default-1648x928-rest": {
+  "y": 0,
+  "imgs": "IMG:body,IMG:station-stable,IMG:body-light,IMG:chart-light-stable",
+  "errors": 0
+ },
+ "default-1648x928-half": {
+  "y": 6.664,
+  "imgs": "IMG:body,IMG:station-stable,IMG:body-light,IMG:chart-light-stable",
+  "errors": 0
+ },
+ "default-1648x928-chart": {
+  "y": 11.273,
+  "imgs": "IMG:body,IMG:station-stable,IMG:body-light,IMG:chart-light-stable",
+  "errors": 0
+ },
+ "default-1648x928-full": {
+  "y": 12.167,
+  "imgs": "IMG:body,IMG:station-stable,IMG:body-light,IMG:chart-light-stable",
+  "errors": 0
+ },
+ "default-1648x928-stable": {
+  "y": 12.167,
+  "imgs": "IMG:body,IMG:station-stable,IMG:body-light,IMG:chart-light-stable",
+  "errors": 0
+ },
+ "gpu-1648x928-rest": {
+  "y": 0,
+  "imgs": "IMG:body,IMG:station-stable,IMG:body-light,IMG:chart-light-stable",
+  "errors": 0
+ },
+ "gpu-1648x928-half": {
+  "y": 6.664,
+  "imgs": "IMG:body,IMG:station-stable,IMG:body-light,IMG:chart-light-stable",
+  "errors": 0
+ },
+ "gpu-1648x928-chart": {
+  "y": 11.273,
+  "imgs": "IMG:body,IMG:station-stable,IMG:body-light,IMG:chart-light-stable",
+  "errors": 0
+ },
+ "gpu-1648x928-full": {
+  "y": 12.167,
+  "imgs": "IMG:body,IMG:station-stable,IMG:body-light,IMG:chart-light-stable",
+  "errors": 0
+ },
+ "gpu-1648x928-stable": {
+  "y": 12.167,
+  "imgs": "IMG:body,IMG:station-stable,IMG:body-light,IMG:chart-light-stable",
+  "errors": 0
+ }
+}

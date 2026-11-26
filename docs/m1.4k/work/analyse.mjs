@@ -8,7 +8,10 @@ export function visits(frames) {
     const id = f.sel ? null : f.hover, c = v.at(-1);
     if (!id) { if (c) c.open = false; return; }
     const sp = f[id].spark;
-    if (!c?.open || c.id !== id || (c.spark !== null && sp !== null && sp !== c.spark && f.t - c.t0 > 34)) { if (c) c.open = false; v.push({ id, open: true, i0: i, t0: f.t, spark: null, frames: [] }); }
+    const bySpark = c?.open && c.id === id && c.spark !== null && sp !== null && sp !== c.spark && f.t - c.t0 > 34;
+    // M1.4K (office): a visit opened because a new spark appeared owns that spark, even when a long frame
+    // (133-150 ms on the Radeon HD 5450) put the first frame that shows it more than 40 ms after its start.
+    if (!c?.open || c.id !== id || bySpark) { if (c) c.open = false; v.push({ id, open: true, i0: i, t0: f.t, spark: bySpark ? sp : null, frames: [] }); }
     const n = v.at(-1);
     n.frames.push(f);
     // A spark older than this visit belongs to the last one.

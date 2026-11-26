@@ -1,0 +1,14 @@
+!! {"k":0,"wait":120,"delay":30,"where":"left end","y0":17.719,"y1":7.071,"chipMoved":11.61,"under0":"chip","underAtPress":"label","sparks":1,"ok":false,"url":""}
+!! {"k":0,"wait":120,"delay":150,"where":"left end","y0":17.72,"y1":5.729,"chipMoved":13.07,"under0":"chip","underAtPress":"label","sparks":1,"ok":false,"url":""}
+!! {"k":1,"wait":120,"delay":0,"where":"left end","y0":17.311,"y1":7.078,"chipMoved":11.16,"under0":"chip","underAtPress":"label","sparks":1,"ok":false,"url":""}
+!! {"k":1,"wait":120,"delay":30,"where":"left end","y0":17.72,"y1":7.069,"chipMoved":11.61,"under0":"chip","underAtPress":"label","sparks":1,"ok":false,"url":""}
+!! {"k":1,"wait":120,"delay":150,"where":"left end","y0":17.309,"y1":5.731,"chipMoved":12.62,"under0":"chip","underAtPress":"label","sparks":1,"ok":false,"url":""}
+!! {"k":2,"wait":120,"delay":0,"where":"left end","y0":17.31,"y1":4.617,"chipMoved":13.84,"under0":"chip","underAtPress":"label","sparks":1,"ok":false,"url":""}
+!! {"k":2,"wait":120,"delay":150,"where":"left end","y0":17.719,"y1":7.061,"chipMoved":11.62,"under0":"chip","underAtPress":"label","sparks":1,"ok":false,"url":""}
+press 0 ms after arriving, left end: 7 of 9 opened AZIZ | chip moved max 13.84 px | not under the pointer at the press 2
+press 0 ms after arriving, centre: 9 of 9 opened AZIZ | chip moved max 13.08 px | not under the pointer at the press 0
+press 30 ms after arriving, left end: 7 of 9 opened AZIZ | chip moved max 11.61 px | not under the pointer at the press 2
+press 30 ms after arriving, centre: 9 of 9 opened AZIZ | chip moved max 13.09 px | not under the pointer at the press 0
+press 150 ms after arriving, left end: 6 of 9 opened AZIZ | chip moved max 13.07 px | not under the pointer at the press 3
+press 150 ms after arriving, centre: 9 of 9 opened AZIZ | chip moved max 13.09 px | not under the pointer at the press 0
+errors []

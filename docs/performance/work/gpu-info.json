@@ -1,0 +1,107 @@
+{
+ "probe flags (--enable-gpu --ignore-gpu-blocklist)": {
+  "devices": [
+   {
+    "vendor": 4098,
+    "device": "AMD Radeon HD 5450",
+    "driver": "8.17.10.1404"
+   },
+   {
+    "vendor": 5140,
+    "device": "Microsoft Basic Render Driver",
+    "driver": "10.0.19041.5794"
+   }
+  ],
+  "featureStatus": {
+   "2d_canvas": "enabled",
+   "direct_rendering_display_compositor": "disabled_off_ok",
+   "gpu_compositing": "enabled",
+   "multiple_raster_threads": "enabled_on",
+   "opengl": "enabled_on",
+   "rasterization": "enabled",
+   "skia_graphite": "enabled_on",
+   "trees_in_viz": "disabled_off",
+   "video_decode": "enabled",
+   "video_encode": "enabled",
+   "webgl": "enabled",
+   "webgpu": "enabled",
+   "webnn": "disabled_off"
+  },
+  "glRenderer": "ANGLE (AMD, AMD Radeon HD 5450 (0x000068F9) Direct3D11 vs_5_0 ps_5_0, D3D11-8.17.10.1404)",
+  "glVersion": "OpenGL ES 3.0 (ANGLE 2.1.29257 git hash: 1f6526a566c2)",
+  "angle": "ANGLE_D3D11",
+  "skia": "GraphiteDawnD3D11",
+  "softwareRendering": null,
+  "workarounds": 22
+ },
+ "Chrome defaults": {
+  "devices": [
+   {
+    "vendor": 5140,
+    "device": "Microsoft Basic Render Driver",
+    "driver": "10.0.19041.5794"
+   },
+   {
+    "vendor": 4098,
+    "device": "AMD Radeon HD 5450",
+    "driver": "8.17.10.1404"
+   }
+  ],
+  "featureStatus": {
+   "2d_canvas": "unavailable_software",
+   "direct_rendering_display_compositor": "disabled_off_ok",
+   "gpu_compositing": "disabled_software",
+   "multiple_raster_threads": "enabled_on",
+   "opengl": "disabled_off",
+   "rasterization": "disabled_software",
+   "skia_graphite": "disabled_off",
+   "trees_in_viz": "disabled_off",
+   "video_decode": "disabled_software",
+   "video_encode": "disabled_software",
+   "webgl": "unavailable_software",
+   "webgpu": "unavailable_software",
+   "webnn": "unavailable_software"
+  },
+  "glRenderer": "ANGLE (Microsoft, Microsoft Basic Render Driver (0x0000008C) Direct3D11 vs_5_0 ps_5_0, D3D11-10.0.19041.5794)",
+  "glVersion": "OpenGL ES 3.0 (ANGLE 2.1.29257 git hash: 1f6526a566c2)",
+  "angle": "ANGLE_D3D11_WARP",
+  "skia": "None",
+  "softwareRendering": null,
+  "workarounds": 0
+ },
+ "Chrome defaults, headed": {
+  "devices": [
+   {
+    "vendor": 5140,
+    "device": "Microsoft Basic Render Driver",
+    "driver": "10.0.19041.5794"
+   },
+   {
+    "vendor": 4098,
+    "device": "AMD Radeon HD 5450",
+    "driver": "8.17.10.1404"
+   }
+  ],
+  "featureStatus": {
+   "2d_canvas": "unavailable_software",
+   "direct_rendering_display_compositor": "disabled_off_ok",
+   "gpu_compositing": "disabled_software",
+   "multiple_raster_threads": "enabled_on",
+   "opengl": "disabled_off",
+   "rasterization": "disabled_software",
+   "skia_graphite": "disabled_off",
+   "trees_in_viz": "disabled_off",
+   "video_decode": "disabled_software",
+   "video_encode": "disabled_software",
+   "webgl": "unavailable_software",
+   "webgpu": "unavailable_software",
+   "webnn": "unavailable_software"
+  },
+  "glRenderer": "ANGLE (Microsoft, Microsoft Basic Render Driver (0x0000008C) Direct3D11 vs_5_0 ps_5_0, D3D11-10.0.19041.5794)",
+  "glVersion": "OpenGL ES 3.0 (ANGLE 2.1.29257 git hash: 1f6526a566c2)",
+  "angle": "ANGLE_D3D11_WARP",
+  "skia": "None",
+  "softwareRendering": null,
+  "workarounds": 0
+ }
+}

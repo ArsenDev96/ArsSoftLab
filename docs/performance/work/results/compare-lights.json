@@ -1,0 +1,197 @@
+{
+ "default-1648x928-chart": {
+  "max": 7,
+  "px_any": 544,
+  "px_over2": 25,
+  "over2_box": [
+   299,
+   447,
+   348,
+   472
+  ],
+  "eng_max": 7,
+  "eng_px_over2": 25
+ },
+ "default-1648x928-full": {
+  "max": 11,
+  "px_any": 3155,
+  "px_over2": 662,
+  "over2_box": [
+   299,
+   387,
+   547,
+   471
+  ],
+  "eng_max": 11,
+  "eng_px_over2": 662
+ },
+ "default-1648x928-half": {
+  "max": 4,
+  "px_any": 516,
+  "px_over2": 46,
+  "over2_box": [
+   299,
+   447,
+   348,
+   475
+  ],
+  "eng_max": 4,
+  "eng_px_over2": 46
+ },
+ "default-1648x928-rest": {
+  "max": 6,
+  "px_any": 486,
+  "px_over2": 15,
+  "over2_box": [
+   299,
+   458,
+   348,
+   483
+  ],
+  "eng_max": 6,
+  "eng_px_over2": 15
+ },
+ "default-1648x928-stable": {
+  "max": 11,
+  "px_any": 3155,
+  "px_over2": 662,
+  "over2_box": [
+   299,
+   387,
+   547,
+   471
+  ],
+  "eng_max": 11,
+  "eng_px_over2": 662
+ },
+ "default-1920x1080-chart": {
+  "max": 9,
+  "px_any": 715,
+  "px_over2": 53,
+  "over2_box": [
+   348,
+   518,
+   406,
+   550
+  ],
+  "eng_max": 9,
+  "eng_px_over2": 53
+ },
+ "default-1920x1080-full": {
+  "max": 9,
+  "px_any": 4094,
+  "px_over2": 589,
+  "over2_box": [
+   348,
+   458,
+   638,
+   549
+  ],
+  "eng_max": 9,
+  "eng_px_over2": 589
+ },
+ "default-1920x1080-half": {
+  "max": 8,
+  "px_any": 694,
+  "px_over2": 63,
+  "over2_box": [
+   348,
+   526,
+   406,
+   554
+  ],
+  "eng_max": 8,
+  "eng_px_over2": 63
+ },
+ "default-1920x1080-rest": {
+  "max": 9,
+  "px_any": 725,
+  "px_over2": 50,
+  "over2_box": [
+   348,
+   535,
+   406,
+   563
+  ],
+  "eng_max": 9,
+  "eng_px_over2": 50
+ },
+ "default-1920x1080-stable": {
+  "max": 9,
+  "px_any": 4094,
+  "px_over2": 589,
+  "over2_box": [
+   348,
+   458,
+   638,
+   549
+  ],
+  "eng_max": 9,
+  "eng_px_over2": 589
+ },
+ "gpu-1648x928-chart": {
+  "max": 7,
+  "px_any": 801,
+  "px_over2": 24,
+  "over2_box": [
+   299,
+   446,
+   348,
+   472
+  ],
+  "eng_max": 7,
+  "eng_px_over2": 24
+ },
+ "gpu-1648x928-full": {
+  "max": 10,
+  "px_any": 3405,
+  "px_over2": 708,
+  "over2_box": [
+   299,
+   387,
+   546,
+   471
+  ],
+  "eng_max": 10,
+  "eng_px_over2": 708
+ },
+ "gpu-1648x928-half": {
+  "max": 6,
+  "px_any": 768,
+  "px_over2": 53,
+  "over2_box": [
+   299,
+   447,
+   337,
+   475
+  ],
+  "eng_max": 6,
+  "eng_px_over2": 53
+ },
+ "gpu-1648x928-rest": {
+  "max": 6,
+  "px_any": 626,
+  "px_over2": 16,
+  "over2_box": [
+   299,
+   457,
+   348,
+   483
+  ],
+  "eng_max": 6,
+  "eng_px_over2": 16
+ },
+ "gpu-1648x928-stable": {
+  "max": 10,
+  "px_any": 3408,
+  "px_over2": 708,
+  "over2_box": [
+   299,
+   387,
+   546,
+   471
+  ],
+  "eng_max": 10,
+  "eng_px_over2": 708
+ }
+}

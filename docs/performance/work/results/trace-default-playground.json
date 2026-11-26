@@ -1,0 +1,77 @@
+{
+ "first": {
+  "windowMs": 1691,
+  "threadBusyMs": {
+   "Browser / ThreadPoolBackgroundWorker": 3217,
+   "Browser / ThreadPoolForegroundWorker": 2987,
+   "GPU Process / VizCompositorThread": 1501,
+   "Renderer / CrRendererMain": 199,
+   "Renderer / ThreadPoolForegroundWorker": 172,
+   "Browser / CrBrowserMain": 147,
+   "Browser / CacheThread_BlockFile": 123,
+   "Browser / ThreadPoolSingleThreadCOMSTASharedForegroundBlocking": 109,
+   "Browser / ThreadPoolSingleThreadCOMSTASharedBackgroundBlocking": 100,
+   "Browser / Chrome_IOThread": 83,
+   "Renderer / Compositor": 65,
+   "Browser / ThreadPoolSingleThreadForegroundBlocking": 32,
+   "GPU Process / Chrome_ChildIOThread": 14,
+   "Browser / PerfettoTrace": 9,
+   "GPU Process / CrGpuMain": 7,
+   "Renderer / Chrome_ChildIOThread": 5,
+   "Renderer / PerfettoTrace": 5,
+   "Browser / ThreadPoolSingleThreadSharedBackgroundBlocking": 5
+  },
+  "topEventsMs": {
+   "GPU Process / VizCompositorThread :: Graphics.Pipeline": 1496,
+   "GPU Process / VizCompositorThread :: Display::DrawAndSwap": 1485,
+   "GPU Process / VizCompositorThread :: DirectRenderer::DrawFrame": 1478,
+   "GPU Process / VizCompositorThread :: SoftwareRenderer::DoDrawQuad": 1405,
+   "Renderer / ThreadPoolForegroundWorker :: RasterTask": 160,
+   "Renderer / CrRendererMain :: FunctionCall": 140,
+   "Renderer / CrRendererMain :: UpdateLayoutTree": 116,
+   "Renderer / CrRendererMain :: ProxyMain::BeginMainFrame": 65,
+   "Renderer / Compositor :: Graphics.Pipeline": 43,
+   "Renderer / CrRendererMain :: Commit": 12,
+   "Renderer / CrRendererMain :: Layerize": 10,
+   "Renderer / Compositor :: LayerTreeHostImpl::PrepareToDraw": 10,
+   "Renderer / Compositor :: LayerTreeHostImpl::CommitComplete": 9,
+   "Renderer / CrRendererMain :: Paint": 6,
+   "Renderer / CrRendererMain :: FireAnimationFrame": 5
+  },
+  "frameReporter": {
+   "?": 113
+  }
+ },
+ "repeat": {
+  "windowMs": 1668,
+  "threadBusyMs": {
+   "GPU Process / VizCompositorThread": 1481,
+   "Renderer / ThreadPoolForegroundWorker": 227,
+   "Renderer / CrRendererMain": 197,
+   "Renderer / Compositor": 69,
+   "Browser / ThreadPoolForegroundWorker": 15,
+   "GPU Process / Chrome_ChildIOThread": 6
+  },
+  "topEventsMs": {
+   "GPU Process / VizCompositorThread :: SoftwareRenderer::DoDrawQuad": 1407,
+   "GPU Process / VizCompositorThread :: Graphics.Pipeline": 1308,
+   "GPU Process / VizCompositorThread :: Display::DrawAndSwap": 1296,
+   "GPU Process / VizCompositorThread :: DirectRenderer::DrawFrame": 1289,
+   "Renderer / ThreadPoolForegroundWorker :: RasterTask": 185,
+   "Renderer / CrRendererMain :: FunctionCall": 107,
+   "Renderer / CrRendererMain :: UpdateLayoutTree": 94,
+   "Renderer / CrRendererMain :: ProxyMain::BeginMainFrame": 59,
+   "Renderer / Compositor :: Graphics.Pipeline": 43,
+   "Renderer / CrRendererMain :: Commit": 12,
+   "Renderer / Compositor :: LayerTreeHostImpl::PrepareToDraw": 11,
+   "Renderer / Compositor :: LayerTreeHostImpl::CommitComplete": 9,
+   "Renderer / CrRendererMain :: Paint": 8,
+   "Renderer / CrRendererMain :: Layerize": 7,
+   "Renderer / Compositor :: LayerTreeHostImpl::ActivateSyncTree": 5,
+   "Renderer / Compositor :: LayerTreeHostImpl::CalculateRenderPasses": 5
+  },
+  "frameReporter": {
+   "?": 97
+  }
+ }
+}

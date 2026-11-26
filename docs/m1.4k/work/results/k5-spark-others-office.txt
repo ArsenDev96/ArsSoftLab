@@ -1,0 +1,5 @@
+others-office try 0 engineering  runs 28 flagged 0 | light before the 2nd arrival max 1 | height before it max 9.369 | longest frame 233
+others-office try 0 educational  runs 28 flagged 0 | light before the 2nd arrival max 0 | height before it max 6.195 | longest frame 167
+others-office try 0 creative     runs 28 flagged 0 | light before the 2nd arrival max 0 | height before it max 4.024 | longest frame 184
+others-office try 0 experience   runs 28 flagged 0 | light before the 2nd arrival max 0 | height before it max 4.953 | longest frame 200
+errors []

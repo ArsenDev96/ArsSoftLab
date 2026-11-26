@@ -1,0 +1,262 @@
+{
+ "default-1648x928-chart": {
+  "max": 39,
+  "px_any": 30219,
+  "px_over2": 11993,
+  "over2_box": [
+   257,
+   367,
+   591,
+   533
+  ],
+  "eng_max": 39,
+  "eng_px_over2": 11993
+ },
+ "default-1648x928-full": {
+  "max": 34,
+  "px_any": 33494,
+  "px_over2": 12002,
+  "over2_box": [
+   257,
+   366,
+   591,
+   532
+  ],
+  "eng_max": 34,
+  "eng_px_over2": 12002
+ },
+ "default-1648x928-half": {
+  "max": 55,
+  "px_any": 28744,
+  "px_over2": 11631,
+  "over2_box": [
+   257,
+   371,
+   591,
+   538
+  ],
+  "eng_max": 55,
+  "eng_px_over2": 11631
+ },
+ "default-1648x928-rest": {
+  "max": 46,
+  "px_any": 20923,
+  "px_over2": 3701,
+  "over2_box": [
+   257,
+   379,
+   591,
+   542
+  ],
+  "eng_max": 46,
+  "eng_px_over2": 3701
+ },
+ "default-1648x928-stable": {
+  "max": 34,
+  "px_any": 33494,
+  "px_over2": 12002,
+  "over2_box": [
+   257,
+   366,
+   591,
+   532
+  ],
+  "eng_max": 34,
+  "eng_px_over2": 12002
+ },
+ "default-1920x1080-chart": {
+  "max": 41,
+  "px_any": 33620,
+  "px_over2": 6111,
+  "over2_box": [
+   302,
+   427,
+   687,
+   621
+  ],
+  "eng_max": 41,
+  "eng_px_over2": 6111
+ },
+ "default-1920x1080-full": {
+  "max": 37,
+  "px_any": 41895,
+  "px_over2": 9222,
+  "over2_box": [
+   302,
+   426,
+   687,
+   620
+  ],
+  "eng_max": 37,
+  "eng_px_over2": 9222
+ },
+ "default-1920x1080-half": {
+  "max": 24,
+  "px_any": 32489,
+  "px_over2": 6400,
+  "over2_box": [
+   302,
+   432,
+   687,
+   625
+  ],
+  "eng_max": 24,
+  "eng_px_over2": 6400
+ },
+ "default-1920x1080-rest": {
+  "max": 27,
+  "px_any": 32167,
+  "px_over2": 7108,
+  "over2_box": [
+   302,
+   440,
+   688,
+   634
+  ],
+  "eng_max": 27,
+  "eng_px_over2": 7108
+ },
+ "default-1920x1080-stable": {
+  "max": 37,
+  "px_any": 41895,
+  "px_over2": 9222,
+  "over2_box": [
+   302,
+   426,
+   687,
+   620
+  ],
+  "eng_max": 37,
+  "eng_px_over2": 9222
+ },
+ "gpu-1648x928-chart": {
+  "max": 41,
+  "px_any": 30469,
+  "px_over2": 12170,
+  "over2_box": [
+   257,
+   367,
+   591,
+   533
+  ],
+  "eng_max": 41,
+  "eng_px_over2": 12170
+ },
+ "gpu-1648x928-full": {
+  "max": 36,
+  "px_any": 33320,
+  "px_over2": 11552,
+  "over2_box": [
+   257,
+   366,
+   591,
+   532
+  ],
+  "eng_max": 36,
+  "eng_px_over2": 11552
+ },
+ "gpu-1648x928-half": {
+  "max": 51,
+  "px_any": 28843,
+  "px_over2": 11417,
+  "over2_box": [
+   257,
+   371,
+   591,
+   538
+  ],
+  "eng_max": 51,
+  "eng_px_over2": 11417
+ },
+ "gpu-1648x928-rest": {
+  "max": 41,
+  "px_any": 21718,
+  "px_over2": 3928,
+  "over2_box": [
+   257,
+   379,
+   591,
+   542
+  ],
+  "eng_max": 41,
+  "eng_px_over2": 3928
+ },
+ "gpu-1648x928-stable": {
+  "max": 36,
+  "px_any": 33320,
+  "px_over2": 11553,
+  "over2_box": [
+   257,
+   366,
+   591,
+   532
+  ],
+  "eng_max": 36,
+  "eng_px_over2": 11553
+ },
+ "gpu-1920x1080-chart": {
+  "max": 21,
+  "px_any": 33402,
+  "px_over2": 4586,
+  "over2_box": [
+   302,
+   427,
+   687,
+   621
+  ],
+  "eng_max": 21,
+  "eng_px_over2": 4586
+ },
+ "gpu-1920x1080-full": {
+  "max": 37,
+  "px_any": 38187,
+  "px_over2": 8950,
+  "over2_box": [
+   302,
+   427,
+   687,
+   620
+  ],
+  "eng_max": 37,
+  "eng_px_over2": 8950
+ },
+ "gpu-1920x1080-half": {
+  "max": 22,
+  "px_any": 32060,
+  "px_over2": 5545,
+  "over2_box": [
+   302,
+   433,
+   687,
+   626
+  ],
+  "eng_max": 22,
+  "eng_px_over2": 5545
+ },
+ "gpu-1920x1080-rest": {
+  "max": 26,
+  "px_any": 32102,
+  "px_over2": 6555,
+  "over2_box": [
+   303,
+   440,
+   687,
+   634
+  ],
+  "eng_max": 26,
+  "eng_px_over2": 6555
+ },
+ "gpu-1920x1080-stable": {
+  "max": 37,
+  "px_any": 38504,
+  "px_over2": 8950,
+  "over2_box": [
+   302,
+   427,
+   687,
+   620
+  ],
+  "eng_max": 37,
+  "eng_px_over2": 8950
+ }
+}

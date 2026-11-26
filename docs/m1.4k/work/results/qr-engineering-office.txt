@@ -1,0 +1,39 @@
+
+# grid: 130 runs | premature 2 | scan 0 caps 0 pulse 0 shimmer 0 held 2 (run-back finishing 39) rose 0 | frozen scan after arrival 0 | frozen pulse 0 | scan not from the top 10 | no scan 0 | no caps 0 | not powered 0 | not at rest 11 | rose after leaving 0 | first visit premature 0 | errors []
+  at -60 gap 240 (left -303, back 417) scan 0 caps 0 pulse 0 shim 0 held 0 tail 0 rose 0 /24 atArrival {"es":0,"ef":0,"bars":0,"off":0.68,"shade":0} from 0.019 frozen 0 powered true rest false
+  at -60 gap 360 (left -303, back 483) scan 0 caps 0 pulse 0 shim 0 held 0 tail 0 rose 0 /22 atArrival {"es":0,"ef":0,"bars":0,"off":0.68,"shade":0} from 0.04 frozen 0 powered true rest false
+  at 450 gap 180 (left 163, back 267) scan 0 caps 0 pulse 0 shim 0 held 0 tail 3 rose 0 /6 atArrival {"es":0,"ef":0,"bars":0,"off":0.68,"shade":0} from 0.272 frozen 0 powered true rest false
+  at 450 gap 500 (left 180, back 650) scan 0 caps 0 pulse 0 shim 0 held 0 tail 0 rose 0 /5 atArrival {"es":0,"ef":0,"bars":0,"off":0.68,"shade":0} from 0.006 frozen 0 powered true rest false
+  at 560 gap 5 (left 447, back 100) scan 0 caps 0 pulse 0 shim 0 held 0 tail 4 rose 0 /6 atArrival {"es":0,"ef":0,"bars":0,"off":0.68,"shade":0} from 0.069 frozen 0 powered true rest false
+  at 560 gap 180 (left 180, back 367) scan 0 caps 0 pulse 0 shim 0 held 0 tail 2 rose 0 /6 atArrival {"es":0,"ef":0,"bars":0,"off":0.68,"shade":0} from 0.21 frozen 0 powered true rest false
+  at 560 gap 500 (left 280, back 617) scan 0 caps 0 pulse 0 shim 0 held 0 tail 0 rose 0 /5 atArrival {"es":0,"ef":0,"bars":0,"off":0.68,"shade":0} from 0.006 frozen 0 powered true rest false
+  at 700 gap 80 (left 363, back 284) scan 0 caps 0 pulse 0 shim 0 held 1 tail 3 rose 0 /7 atArrival {"es":0,"ef":0,"bars":0,"off":0.68,"shade":0} from 0.209 frozen 0 powered true rest true
+  at 700 gap 180 (left 447, back 317) scan 0 caps 0 pulse 0 shim 0 held 0 tail 2 rose 0 /6 atArrival {"es":0,"ef":0,"bars":0,"off":0.68,"shade":0} from 0.21 frozen 0 powered true rest false
+  at 700 gap 240 (left 313, back 450) scan 0 caps 0 pulse 0 shim 0 held 0 tail 1 rose 0 /6 atArrival {"es":0,"ef":0,"bars":0,"off":0.68,"shade":0} from 0.006 frozen 0 powered true rest false
+  at 700 gap 360 (left 297, back 617) scan 0 caps 0 pulse 0 shim 0 held 0 tail 0 rose 0 /5 atArrival {"es":0,"ef":0,"bars":0,"off":0.68,"shade":0} from 0.006 frozen 0 powered true rest false
+  at 700 gap 420 (left 297, back 633) scan 0 caps 0 pulse 0 shim 0 held 0 tail 0 rose 0 /5 atArrival {"es":0,"ef":0,"bars":0,"off":0.68,"shade":0} from 0.019 frozen 0 powered true rest false
+  at 1200 gap 240 (left 880, back 350) scan 0 caps 0 pulse 0 shim 0 held 1 tail 3 rose 0 /6 atArrival {"es":0,"ef":0,"bars":0,"off":0.68,"shade":0} from 0.154 frozen 0 powered true rest true
+
+# mouse: 10 runs | premature 0 | scan 0 caps 0 pulse 0 shimmer 0 held 0 (run-back finishing 5) rose 0 | frozen scan after arrival 0 | frozen pulse 0 | scan not from the top 2 | no scan 0 | no caps 0 | not powered 0 | not at rest 0 | rose after leaving 0 | first visit premature 0 | errors []
+
+# sequences: 20 runs, premature 1, not powered 0, not at rest 0 errors []
+  engineering -> educational -> engineering 800,60 visits 2 premature 0 powered true rest true 
+  engineering -> educational -> engineering 800,160 visits 2 premature 0 powered true rest true 
+  engineering -> educational -> engineering 900,30 visits 2 premature 0 powered true rest true 
+  engineering -> educational -> engineering 950,120 visits 2 premature 0 powered true rest true 
+  engineering -> educational -> engineering 1000,250 visits 2 premature 0 powered true rest true 
+  engineering -> educational -> engineering 1150,90 visits 2 premature 0 powered true rest true 
+  engineering -> educational -> engineering 1600,120 visits 2 premature 0 powered true rest true 
+  engineering -> educational -> engineering 400,100 visits 2 premature 0 powered true rest true 
+  four returns in a row 150,30 visits 5 premature 0 powered true rest true 
+  four returns in a row 250,90 visits 5 premature 0 powered true rest true 
+  four returns in a row 350,150 visits 5 premature 0 powered true rest true 
+  four returns in a row 60,40 visits 5 premature 0 powered true rest true 
+  left during the second charge 180,60 visits 3 premature 0 powered true rest true 
+  left during the second charge 250,200 visits 3 premature 0 powered true rest true 
+  left during the second charge 300,420 visits 3 premature 0 powered true rest true 
+  left during the second charge 700,150 visits 3 premature 1 powered true rest true [{"scan":0,"caps":0,"pulse":0,"shimmer":0,"held":0,"tail":0,"rose":0},{"scan":0,"caps":0,"pulse":0,"shimmer":0,"held":1,"tail":3,"rose":0},{"scan":0,"caps":0,"pulse":0,"shimmer":0,"held":0,"tail":0,"rose":0}]
+  left before any arrival 100,20 visits 1 premature 0 powered true rest true 
+  left before any arrival 300,60 visits 2 premature 0 powered true rest true 
+  left before any arrival 500,20 visits 2 premature 0 powered true rest true 
+  left before any arrival 525,5 visits 2 premature 0 powered true rest true 

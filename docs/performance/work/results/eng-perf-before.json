@@ -1,0 +1,317 @@
+{
+ "label": "before",
+ "runs": [
+  {
+   "round": 0,
+   "mode": "default",
+   "memIdle": {
+    "shared_images": 436.5,
+    "cc/tile_memory": 213.6,
+    "cc/image_memory": 138.1,
+    "gpu/shared_images": 218.3,
+    "skia/gpu_resources": 0,
+    "discardable": 0,
+    "malloc": 0,
+    "partition_alloc": 0
+   },
+   "windows": [
+    {
+     "name": "first",
+     "fps": 10.9,
+     "medianMs": 66.7,
+     "p95Ms": 200.1,
+     "maxMs": 200.1,
+     "over50": 12,
+     "hoverMs": 35,
+     "longestFirst300": 200
+    },
+    {
+     "name": "repeat 1",
+     "fps": 10.4,
+     "medianMs": 66.7,
+     "p95Ms": 200,
+     "maxMs": 200,
+     "over50": 12,
+     "hoverMs": 33,
+     "longestFirst300": 200
+    },
+    {
+     "name": "repeat 2",
+     "fps": 9.7,
+     "medianMs": 83.3,
+     "p95Ms": 183.4,
+     "maxMs": 183.4,
+     "over50": 12,
+     "hoverMs": 46,
+     "longestFirst300": 183
+    },
+    {
+     "name": "repeat 3",
+     "fps": 10.8,
+     "medianMs": 83.4,
+     "p95Ms": 199.9,
+     "maxMs": 199.9,
+     "over50": 11,
+     "hoverMs": 38,
+     "longestFirst300": 183
+    }
+   ],
+   "memAfter": {
+    "shared_images": 333.8,
+    "cc/tile_memory": 164.1,
+    "cc/image_memory": 144.1,
+    "gpu/shared_images": 166.9,
+    "skia/gpu_resources": 0,
+    "discardable": 0,
+    "malloc": 0,
+    "partition_alloc": 0
+   },
+   "trace": {
+    "vizMs": 1526,
+    "gpuMainMs": 8,
+    "rendererMainMs": 212,
+    "drawQuadMs": 1450,
+    "swapMs": 0,
+    "rasterMs": 281
+   },
+   "errors": []
+  },
+  {
+   "round": 0,
+   "mode": "gpu",
+   "memIdle": {
+    "shared_images": 470.2,
+    "image_gpu": 113.9,
+    "image_cpu": 21.2,
+    "tiles": 173.7,
+    "cc/tile_memory": 173.7,
+    "cc/image_memory": 135,
+    "gpu/shared_images": 235.1,
+    "skia/gpu_resources": 151.3,
+    "discardable": 0,
+    "malloc": 0,
+    "partition_alloc": 0
+   },
+   "windows": [
+    {
+     "name": "first",
+     "fps": 14.6,
+     "medianMs": 33.3,
+     "p95Ms": 233.3,
+     "maxMs": 259.3,
+     "over50": 8,
+     "hoverMs": 34,
+     "longestFirst300": 22
+    },
+    {
+     "name": "repeat 1",
+     "fps": 24.4,
+     "medianMs": 16.7,
+     "p95Ms": 150.1,
+     "maxMs": 150.1,
+     "over50": 8,
+     "hoverMs": 35,
+     "longestFirst300": 150
+    },
+    {
+     "name": "repeat 2",
+     "fps": 23.5,
+     "medianMs": 16.7,
+     "p95Ms": 149.8,
+     "maxMs": 150,
+     "over50": 8,
+     "hoverMs": 31,
+     "longestFirst300": 150
+    },
+    {
+     "name": "repeat 3",
+     "fps": 25.7,
+     "medianMs": 16.7,
+     "p95Ms": 149.9,
+     "maxMs": 150,
+     "over50": 8,
+     "hoverMs": 53,
+     "longestFirst300": 150
+    }
+   ],
+   "memAfter": {
+    "shared_images": 532,
+    "image_gpu": 127.4,
+    "image_cpu": 13.6,
+    "tiles": 211.3,
+    "cc/tile_memory": 211.3,
+    "cc/image_memory": 141,
+    "gpu/shared_images": 266,
+    "skia/gpu_resources": 255.3,
+    "discardable": 0,
+    "malloc": 0,
+    "partition_alloc": 0
+   },
+   "trace": {
+    "vizMs": 102,
+    "gpuMainMs": 1394,
+    "rendererMainMs": 255,
+    "drawQuadMs": 0,
+    "swapMs": 1204,
+    "rasterMs": 10
+   },
+   "errors": []
+  },
+  {
+   "round": 1,
+   "mode": "default",
+   "memIdle": {
+    "shared_images": 437.3,
+    "tiles": 213.6,
+    "cc/tile_memory": 213.6,
+    "cc/image_memory": 138.1,
+    "gpu/shared_images": 218.7,
+    "skia/gpu_resources": 0,
+    "discardable": 0,
+    "malloc": 0,
+    "partition_alloc": 0
+   },
+   "windows": [
+    {
+     "name": "first",
+     "fps": 12.1,
+     "medianMs": 66.7,
+     "p95Ms": 183.3,
+     "maxMs": 183.3,
+     "over50": 12,
+     "hoverMs": 66,
+     "longestFirst300": 50
+    },
+    {
+     "name": "repeat 1",
+     "fps": 10.1,
+     "medianMs": 83.3,
+     "p95Ms": 200,
+     "maxMs": 200,
+     "over50": 12,
+     "hoverMs": 25,
+     "longestFirst300": 183
+    },
+    {
+     "name": "repeat 2",
+     "fps": 11.1,
+     "medianMs": 66.7,
+     "p95Ms": 183.4,
+     "maxMs": 183.4,
+     "over50": 11,
+     "hoverMs": 33,
+     "longestFirst300": 167
+    },
+    {
+     "name": "repeat 3",
+     "fps": 11.3,
+     "medianMs": 66.7,
+     "p95Ms": 183.4,
+     "maxMs": 183.4,
+     "over50": 13,
+     "hoverMs": 38,
+     "longestFirst300": 167
+    }
+   ],
+   "memAfter": {
+    "shared_images": 319.9,
+    "tiles": 157.1,
+    "cc/tile_memory": 157.1,
+    "cc/image_memory": 144.1,
+    "gpu/shared_images": 160,
+    "skia/gpu_resources": 0,
+    "discardable": 0,
+    "malloc": 0,
+    "partition_alloc": 0
+   },
+   "trace": {
+    "vizMs": 1620,
+    "gpuMainMs": 11,
+    "rendererMainMs": 174,
+    "drawQuadMs": 1543,
+    "swapMs": 0,
+    "rasterMs": 258
+   },
+   "errors": []
+  },
+  {
+   "round": 1,
+   "mode": "gpu",
+   "memIdle": {
+    "shared_images": 504.5,
+    "image_cpu": 21.2,
+    "image_gpu": 113.9,
+    "cc/tile_memory": 192.4,
+    "cc/image_memory": 135,
+    "gpu/shared_images": 252.3,
+    "skia/gpu_resources": 165.8,
+    "discardable": 0,
+    "malloc": 0,
+    "partition_alloc": 0
+   },
+   "windows": [
+    {
+     "name": "first",
+     "fps": 15.6,
+     "medianMs": 16.7,
+     "p95Ms": 199.5,
+     "maxMs": 249.9,
+     "over50": 8,
+     "hoverMs": 39,
+     "longestFirst300": 17
+    },
+    {
+     "name": "repeat 1",
+     "fps": 23.2,
+     "medianMs": 16.7,
+     "p95Ms": 150,
+     "maxMs": 166.7,
+     "over50": 9,
+     "hoverMs": 20,
+     "longestFirst300": 150
+    },
+    {
+     "name": "repeat 2",
+     "fps": 23.4,
+     "medianMs": 16.7,
+     "p95Ms": 150,
+     "maxMs": 150.1,
+     "over50": 7,
+     "hoverMs": 26,
+     "longestFirst300": 150
+    },
+    {
+     "name": "repeat 3",
+     "fps": 24.5,
+     "medianMs": 16.7,
+     "p95Ms": 166.5,
+     "maxMs": 166.6,
+     "over50": 8,
+     "hoverMs": 34,
+     "longestFirst300": 167
+    }
+   ],
+   "memAfter": {
+    "shared_images": 514.7,
+    "image_cpu": 13.6,
+    "image_gpu": 127.4,
+    "cc/tile_memory": 202.6,
+    "cc/image_memory": 141,
+    "gpu/shared_images": 257.3,
+    "skia/gpu_resources": 152.9,
+    "discardable": 0,
+    "malloc": 0,
+    "partition_alloc": 0
+   },
+   "trace": {
+    "vizMs": 112,
+    "gpuMainMs": 1457,
+    "rendererMainMs": 223,
+    "drawQuadMs": 0,
+    "swapMs": 1237,
+    "rasterMs": 11
+   },
+   "errors": []
+  }
+ ]
+}

@@ -1,0 +1,81 @@
+{
+ "first": {
+  "windowMs": 1630,
+  "threadBusyMs": {
+   "GPU Process / GpuVSyncThread": 1640,
+   "GPU Process / CrGpuMain": 1502,
+   "GPU Process / ThreadPoolForegroundWorker": 613,
+   "Renderer / CrRendererMain": 422,
+   "Browser / ThreadPoolBackgroundWorker": 177,
+   "Renderer / Compositor": 116,
+   "Renderer / ThreadPoolForegroundWorker": 108,
+   "Browser / ThreadPoolForegroundWorker": 106,
+   "GPU Process / VizCompositorThread": 99,
+   "Browser / CrBrowserMain": 17,
+   "Renderer / Chrome_ChildIOThread": 16,
+   "Browser / Chrome_IOThread": 12,
+   "GPU Process / Chrome_ChildIOThread": 9
+  },
+  "topEventsMs": {
+   "GPU Process / CrGpuMain :: SkiaOutputSurfaceImplOnGpu::SwapBuffers": 852,
+   "GPU Process / CrGpuMain :: Graphics.Pipeline": 634,
+   "GPU Process / CrGpuMain :: GPUTask": 598,
+   "Renderer / CrRendererMain :: UpdateLayoutTree": 253,
+   "Renderer / CrRendererMain :: ProxyMain::BeginMainFrame": 233,
+   "Renderer / CrRendererMain :: FunctionCall": 148,
+   "GPU Process / VizCompositorThread :: Graphics.Pipeline": 94,
+   "Renderer / Compositor :: Graphics.Pipeline": 72,
+   "GPU Process / VizCompositorThread :: Display::DrawAndSwap": 72,
+   "GPU Process / VizCompositorThread :: DirectRenderer::DrawFrame": 60,
+   "GPU Process / CrGpuMain :: SkiaOutputSurfaceImplOnGpu::FinishPaintRenderPass": 22,
+   "Renderer / Compositor :: LayerTreeHostImpl::PrepareToDraw": 20,
+   "Renderer / CrRendererMain :: Layerize": 17,
+   "Renderer / CrRendererMain :: Paint": 13,
+   "Renderer / CrRendererMain :: PrePaint": 12,
+   "Renderer / CrRendererMain :: Commit": 12
+  },
+  "frameReporter": {
+   "?": 123
+  }
+ },
+ "repeat": {
+  "windowMs": 1638,
+  "threadBusyMs": {
+   "GPU Process / GpuVSyncThread": 1630,
+   "GPU Process / CrGpuMain": 1240,
+   "Browser / ThreadPoolSingleThreadCOMSTASharedForegroundBlocking": 539,
+   "Renderer / CrRendererMain": 365,
+   "Renderer / Compositor": 137,
+   "GPU Process / VizCompositorThread": 117,
+   "Browser / Chrome_IOThread": 65,
+   "Browser / ThreadPoolBackgroundWorker": 55,
+   "Browser / ThreadPoolForegroundWorker": 48,
+   "Browser / ThreadPoolSingleThreadForegroundBlocking": 38,
+   "Renderer / ThreadPoolForegroundWorker": 25,
+   "Browser / CrBrowserMain": 21,
+   "Renderer / Chrome_ChildIOThread": 9,
+   "GPU Process / Chrome_ChildIOThread": 7
+  },
+  "topEventsMs": {
+   "GPU Process / CrGpuMain :: SkiaOutputSurfaceImplOnGpu::SwapBuffers": 1100,
+   "GPU Process / CrGpuMain :: Graphics.Pipeline": 877,
+   "Renderer / CrRendererMain :: UpdateLayoutTree": 247,
+   "Renderer / CrRendererMain :: ProxyMain::BeginMainFrame": 215,
+   "Renderer / CrRendererMain :: FunctionCall": 148,
+   "GPU Process / VizCompositorThread :: Graphics.Pipeline": 114,
+   "Renderer / Compositor :: Graphics.Pipeline": 93,
+   "GPU Process / CrGpuMain :: GPUTask": 91,
+   "GPU Process / VizCompositorThread :: Display::DrawAndSwap": 87,
+   "GPU Process / VizCompositorThread :: DirectRenderer::DrawFrame": 68,
+   "GPU Process / CrGpuMain :: SkiaOutputSurfaceImplOnGpu::FinishPaintRenderPass": 29,
+   "Renderer / Compositor :: LayerTreeHostImpl::PrepareToDraw": 26,
+   "Renderer / CrRendererMain :: Layerize": 16,
+   "Renderer / CrRendererMain :: Paint": 14,
+   "Renderer / ThreadPoolForegroundWorker :: RasterTask": 14,
+   "Renderer / CrRendererMain :: Commit": 13
+  },
+  "frameReporter": {
+   "?": 112
+  }
+ }
+}

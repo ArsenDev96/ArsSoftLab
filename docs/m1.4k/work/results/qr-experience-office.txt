@@ -1,0 +1,21 @@
+== experience k-office
+# mouse {"runs":11,"bad":1,"premature":0,"lightBefore":{"trail":0},"pulseBefore":0,"shimmerBefore":0,"rose":0,"heldThroughCharge":1,"resumesPartWay":0,"litAtArrivalNoReplay":0,"frozenAfterArrival":{"trail":0},"frozenPulseAfter":0,"notPowered":0,"runBackFinishing":9,"notAtRest":0,"roseAfterLeaving":0} errors []
+    {"at":1100,"gap":100,"light":{"trail":0},"pulse":0,"held":1,"atArrival":{"--xs":0},"frozen":{"trail":0},"fp":0,"powered":true,"kept":false,"others":0,"rest":true}
+# grid {"runs":91,"bad":6,"premature":0,"lightBefore":{"trail":0},"pulseBefore":0,"shimmerBefore":0,"rose":0,"heldThroughCharge":6,"resumesPartWay":0,"litAtArrivalNoReplay":0,"frozenAfterArrival":{"trail":0},"frozenPulseAfter":0,"notPowered":0,"runBackFinishing":65,"notAtRest":0,"roseAfterLeaving":0} errors []
+    {"at":720,"gap":200,"light":{"trail":0},"pulse":0,"held":1,"atArrival":{"--xs":0},"frozen":{"trail":0},"fp":0,"powered":true,"kept":false,"others":0,"rest":true}
+    {"at":960,"gap":50,"light":{"trail":0},"pulse":0,"held":1,"atArrival":{"--xs":0},"frozen":{"trail":0},"fp":0,"powered":true,"kept":false,"others":0,"rest":true}
+    {"at":960,"gap":100,"light":{"trail":0},"pulse":0,"held":1,"atArrival":{"--xs":0},"frozen":{"trail":0},"fp":0,"powered":true,"kept":false,"others":0,"rest":true}
+    {"at":960,"gap":450,"light":{"trail":0},"pulse":0,"held":1,"atArrival":{"--xs":0},"frozen":{"trail":0},"fp":0,"powered":true,"kept":false,"others":0,"rest":true}
+    {"at":1060,"gap":350,"light":{"trail":0},"pulse":0,"held":1,"atArrival":{"--xs":0},"frozen":{"trail":0},"fp":0,"powered":true,"kept":false,"others":0,"rest":true}
+    {"at":1060,"gap":450,"light":{"trail":0},"pulse":0,"held":1,"atArrival":{"--xs":0},"frozen":{"trail":0},"fp":0,"powered":true,"kept":false,"others":0,"rest":true}
+# sequences {"runs":20,"bad":0,"premature":0,"lightBefore":{"trail":0},"pulseBefore":0,"shimmerBefore":0,"rose":0,"heldThroughCharge":0,"resumesPartWay":0,"litAtArrivalNoReplay":0,"frozenAfterArrival":{"trail":0},"frozenPulseAfter":0,"notPowered":0,"runBackFinishing":12,"notAtRest":0,"roseAfterLeaving":0} errors []
+# escape {"runs":7,"bad":3,"premature":0,"lightBefore":{"trail":0},"pulseBefore":0,"shimmerBefore":0,"rose":0,"heldThroughCharge":4,"resumesPartWay":0,"litAtArrivalNoReplay":1,"frozenAfterArrival":{"trail":0},"frozenPulseAfter":0,"notPowered":0,"runBackFinishing":5,"notAtRest":1,"roseAfterLeaving":0} errors []
+    {"click":200,"esc":100,"light":{"trail":0},"pulse":0,"held":0,"atArrival":{"--xs":0},"frozen":{"trail":0},"fp":0,"powered":true,"kept":false,"rest":false}
+    {"click":740,"esc":150,"light":{"trail":0},"pulse":0,"held":1,"atArrival":{"--xs":0},"frozen":{"trail":0},"fp":0,"powered":true,"kept":false,"rest":true}
+    {"click":840,"esc":200,"light":{"trail":0},"pulse":0,"held":2,"atArrival":{"--xs":0},"frozen":{"trail":0},"fp":0,"powered":true,"kept":false,"rest":true}
+    {"click":1080,"esc":200,"light":{"trail":0},"pulse":0,"held":1,"atArrival":{"--xs":0.004},"frozen":{"trail":0},"fp":0,"powered":true,"kept":false,"rest":true}
+# keyboard {"focus":{"min":{"--xs":0},"lights":{"trail":7},"pulse":3,"end":["experience",null,1,1]},"enter":{"min":{"--xs":1},"lights":{"trail":0},"pulse":0,"end":[null,"experience",1,1]},"escape":{"min":{"--xs":1},"lights":{"trail":0},"pulse":1,"end":["experience",null,1,1]},"focusBack":"station-experience-trigger"}
+# escapePointerOver {"min":{"--xs":1},"lights":{"trail":0},"pulse":0,"end":["experience",null,1,1]}
+# browserBack {"min":{"--xs":1},"lights":{"trail":0},"pulse":1,"end":["experience",null,1,1]}
+# backToLab {"min":{"--xs":0},"lights":{"trail":0},"pulse":0,"end":[null,null,0,0],"rest":true}
+# direct {"powered":true,"lights":{"trail":0},"rest":true,"quickReturn":{"bad":false,"premature":false,"stale":false,"froze":false,"powered":true},"errors":[]}

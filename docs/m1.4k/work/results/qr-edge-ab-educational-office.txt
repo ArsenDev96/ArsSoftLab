@@ -1,0 +1,8 @@
+round 0 lifts on  {"runs":7,"bad":4,"premature":0,"held":5,"resumesPartWay":4,"notAtRest":0} | at arrival 0/0/0 0/0/0 0/0.23/0.11 0/0.23/0.13 0/0.25/0.17 0/0.17/0.15 1/1/1 | frames before 5,4,4,4,4,4,5 errors []
+round 0 lifts off {"runs":7,"bad":5,"premature":0,"held":6,"resumesPartWay":5,"notAtRest":0} | at arrival 0/0/0 0/0.03/0 0/0.23/0.07 0/0.33/0.19 0/0.34/0.23 0/0.34/0.32 1/1/1 | frames before 4,4,4,5,5,4,5 errors []
+round 1 lifts on  {"runs":7,"bad":4,"premature":0,"held":5,"resumesPartWay":2,"notAtRest":0} | at arrival 0/0/0 0/0/0 0/0.23/0.11 0/0/0 0/0.44/0.27 0/0/0 1/1/1 | frames before 5,4,4,5,4,5,4 errors []
+round 1 lifts off {"runs":7,"bad":4,"premature":0,"held":5,"resumesPartWay":4,"notAtRest":0} | at arrival 0/0/0 0/0/0 0/0.18/0.06 0/0.21/0.09 0/0.23/0.13 0/0.34/0.31 1/1/1 | frames before 5,4,4,4,4,4,5 errors []
+round 2 lifts on  {"runs":7,"bad":4,"premature":0,"held":5,"resumesPartWay":4,"notAtRest":0} | at arrival 0/0/0 0/0/0 0/0.18/0.06 0/0.23/0.13 0/0.24/0.15 0/0.17/0.15 1/1/1 | frames before 4,4,4,4,4,4,5 errors []
+round 2 lifts off {"runs":7,"bad":5,"premature":0,"held":6,"resumesPartWay":4,"notAtRest":0} | at arrival 0/0.02/0 0/0/0 0/0.2/0.07 0/0.23/0.13 0/0.35/0.25 0/0.34/0.31 1/1/1 | frames before 5,4,5,4,4,4,6 errors []
+lifts on: 21 runs, bad 12, resumes part-way 10, held 15
+lifts off: 21 runs, bad 14, resumes part-way 13, held 17

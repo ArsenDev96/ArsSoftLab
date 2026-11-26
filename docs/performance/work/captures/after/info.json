@@ -1,0 +1,102 @@
+{
+ "default-1648x928-rest": {
+  "y": 0,
+  "imgs": "svg:body,svg:station-stable,svg:body-light,svg:chart-light-stable",
+  "errors": 0
+ },
+ "default-1648x928-half": {
+  "y": 6.664,
+  "imgs": "svg:body,svg:station-stable,svg:body-light,svg:chart-light-stable",
+  "errors": 0
+ },
+ "default-1648x928-chart": {
+  "y": 11.273,
+  "imgs": "svg:body,svg:station-stable,svg:body-light,svg:chart-light-stable",
+  "errors": 0
+ },
+ "default-1648x928-full": {
+  "y": 12.167,
+  "imgs": "svg:body,svg:station-stable,svg:body-light,svg:chart-light-stable",
+  "errors": 0
+ },
+ "default-1648x928-stable": {
+  "y": 12.167,
+  "imgs": "svg:body,svg:station-stable,svg:body-light,svg:chart-light-stable",
+  "errors": 0
+ },
+ "default-1920x1080-rest": {
+  "y": 0,
+  "imgs": "svg:body,svg:station-stable,svg:body-light,svg:chart-light-stable",
+  "errors": 0
+ },
+ "default-1920x1080-half": {
+  "y": 6.677,
+  "imgs": "svg:body,svg:station-stable,svg:body-light,svg:chart-light-stable",
+  "errors": 0
+ },
+ "default-1920x1080-chart": {
+  "y": 11.296,
+  "imgs": "svg:body,svg:station-stable,svg:body-light,svg:chart-light-stable",
+  "errors": 0
+ },
+ "default-1920x1080-full": {
+  "y": 12.192,
+  "imgs": "svg:body,svg:station-stable,svg:body-light,svg:chart-light-stable",
+  "errors": 0
+ },
+ "default-1920x1080-stable": {
+  "y": 12.192,
+  "imgs": "svg:body,svg:station-stable,svg:body-light,svg:chart-light-stable",
+  "errors": 0
+ },
+ "gpu-1648x928-rest": {
+  "y": 0,
+  "imgs": "svg:body,svg:station-stable,svg:body-light,svg:chart-light-stable",
+  "errors": 0
+ },
+ "gpu-1648x928-half": {
+  "y": 6.664,
+  "imgs": "svg:body,svg:station-stable,svg:body-light,svg:chart-light-stable",
+  "errors": 0
+ },
+ "gpu-1648x928-chart": {
+  "y": 11.273,
+  "imgs": "svg:body,svg:station-stable,svg:body-light,svg:chart-light-stable",
+  "errors": 0
+ },
+ "gpu-1648x928-full": {
+  "y": 12.167,
+  "imgs": "svg:body,svg:station-stable,svg:body-light,svg:chart-light-stable",
+  "errors": 0
+ },
+ "gpu-1648x928-stable": {
+  "y": 12.167,
+  "imgs": "svg:body,svg:station-stable,svg:body-light,svg:chart-light-stable",
+  "errors": 0
+ },
+ "gpu-1920x1080-rest": {
+  "y": 0,
+  "imgs": "svg:body,svg:station-stable,svg:body-light,svg:chart-light-stable",
+  "errors": 0
+ },
+ "gpu-1920x1080-half": {
+  "y": 6.677,
+  "imgs": "svg:body,svg:station-stable,svg:body-light,svg:chart-light-stable",
+  "errors": 0
+ },
+ "gpu-1920x1080-chart": {
+  "y": 11.296,
+  "imgs": "svg:body,svg:station-stable,svg:body-light,svg:chart-light-stable",
+  "errors": 0
+ },
+ "gpu-1920x1080-full": {
+  "y": 12.192,
+  "imgs": "svg:body,svg:station-stable,svg:body-light,svg:chart-light-stable",
+  "errors": 0
+ },
+ "gpu-1920x1080-stable": {
+  "y": 12.192,
+  "imgs": "svg:body,svg:station-stable,svg:body-light,svg:chart-light-stable",
+  "errors": 0
+ }
+}

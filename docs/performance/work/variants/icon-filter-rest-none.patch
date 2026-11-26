@@ -1,0 +1,31 @@
+diff --git a/app/globals.css b/app/globals.css
+index 1b88bba..23553d4 100644
+--- a/app/globals.css
++++ b/app/globals.css
+@@ -240,8 +240,10 @@ body {
+     color 220ms ease,
+     text-shadow 260ms ease;
+ }
++/* M1.4K.3: no filter at rest (brightness(1) drew nothing, but made each icon an
++   offscreen pass on every frame); brightness(1.3) while hovered or selected comes
++   from LabState's per-station rules. `none` animates as brightness(1). */
+ .lab-station-icon {
+-  filter: brightness(calc(1 + 0.3 * max(var(--zone-hover), var(--zone-selected))));
+   transition: filter 260ms ease;
+ }
+ 
+diff --git a/components/lab/LabState.tsx b/components/lab/LabState.tsx
+index 38b8b18..8e39f7d 100644
+--- a/components/lab/LabState.tsx
++++ b/components/lab/LabState.tsx
+@@ -148,7 +148,9 @@ const HOVER_GRACE_MS = 90;
+  */
+ const ZONE_STATE_CSS = LAB_ZONES.map(({ id }) => {
+   const own = `:is([data-zone="${id}"],[data-connection="${id}"])`;
+-  return `[data-lab-hover="${id}"] ${own}{--zone-hover:1}[data-lab-selected="${id}"] ${own}{--zone-selected:1}`;
++  // M1.4K.3: the icon brightens here (globals.css: no filter at rest).
++  const icon = `:is([data-lab-hover="${id}"],[data-lab-selected="${id}"]) [data-zone="${id}"] .lab-station-icon{filter:brightness(1.3)}`;
++  return `[data-lab-hover="${id}"] ${own}{--zone-hover:1}[data-lab-selected="${id}"] ${own}{--zone-selected:1}${icon}`;
+ }).join("");
+ 
+ const initSelection = (loc: LabLocation): Selection =>

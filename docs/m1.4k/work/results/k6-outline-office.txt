@@ -1,0 +1,7 @@
+outline engineering Engineering px 264 tested 33 lost 0 []
+outline engineering SQLOrbit px 180 tested 30 lost 0 []
+outline engineering TableRefresh px 220 tested 32 lost 0 []
+outline educational Educational px 256 tested 32 lost 0 []
+outline educational AriMap px 166 tested 34 lost 0 []
+outline educational Armat px 156 tested 32 lost 0 []
+stopped by request: exhaustive cycle ended during k6-hits outline (results above are complete lines)

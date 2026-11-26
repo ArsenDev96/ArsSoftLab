@@ -1,0 +1,122 @@
+{
+ "default-1648x928-chart": {
+  "max": 1,
+  "px_any": 275,
+  "px_over2": 0,
+  "over2_box": null,
+  "eng_max": 1,
+  "eng_px_over2": 0
+ },
+ "default-1648x928-full": {
+  "max": 1,
+  "px_any": 275,
+  "px_over2": 0,
+  "over2_box": null,
+  "eng_max": 1,
+  "eng_px_over2": 0
+ },
+ "default-1648x928-half": {
+  "max": 1,
+  "px_any": 261,
+  "px_over2": 0,
+  "over2_box": null,
+  "eng_max": 1,
+  "eng_px_over2": 0
+ },
+ "default-1648x928-rest": {
+  "max": 1,
+  "px_any": 331,
+  "px_over2": 0,
+  "over2_box": null,
+  "eng_max": 1,
+  "eng_px_over2": 0
+ },
+ "default-1648x928-stable": {
+  "max": 1,
+  "px_any": 275,
+  "px_over2": 0,
+  "over2_box": null,
+  "eng_max": 1,
+  "eng_px_over2": 0
+ },
+ "default-1920x1080-chart": {
+  "max": 1,
+  "px_any": 387,
+  "px_over2": 0,
+  "over2_box": null,
+  "eng_max": 1,
+  "eng_px_over2": 0
+ },
+ "default-1920x1080-full": {
+  "max": 1,
+  "px_any": 387,
+  "px_over2": 0,
+  "over2_box": null,
+  "eng_max": 1,
+  "eng_px_over2": 0
+ },
+ "default-1920x1080-half": {
+  "max": 1,
+  "px_any": 370,
+  "px_over2": 0,
+  "over2_box": null,
+  "eng_max": 1,
+  "eng_px_over2": 0
+ },
+ "default-1920x1080-rest": {
+  "max": 1,
+  "px_any": 469,
+  "px_over2": 0,
+  "over2_box": null,
+  "eng_max": 1,
+  "eng_px_over2": 0
+ },
+ "default-1920x1080-stable": {
+  "max": 1,
+  "px_any": 387,
+  "px_over2": 0,
+  "over2_box": null,
+  "eng_max": 1,
+  "eng_px_over2": 0
+ },
+ "gpu-1648x928-chart": {
+  "max": 2,
+  "px_any": 191,
+  "px_over2": 0,
+  "over2_box": null,
+  "eng_max": 1,
+  "eng_px_over2": 0
+ },
+ "gpu-1648x928-full": {
+  "max": 1,
+  "px_any": 36,
+  "px_over2": 0,
+  "over2_box": null,
+  "eng_max": 1,
+  "eng_px_over2": 0
+ },
+ "gpu-1648x928-half": {
+  "max": 2,
+  "px_any": 208,
+  "px_over2": 0,
+  "over2_box": null,
+  "eng_max": 1,
+  "eng_px_over2": 0
+ },
+ "gpu-1648x928-rest": {
+  "max": 1,
+  "px_any": 34,
+  "px_over2": 0,
+  "over2_box": null,
+  "eng_max": 1,
+  "eng_px_over2": 0
+ },
+ "gpu-1648x928-stable": {
+  "max": 1,
+  "px_any": 31,
+  "px_over2": 0,
+  "over2_box": null,
+  "eng_max": 1,
+  "eng_px_over2": 0
+ }
+}
