@@ -1,0 +1,132 @@
+{
+ "1648x928 sqlorbit": {
+  "textRight": 543,
+  "panelBottom": 355,
+  "sentenceBottom": 304,
+  "engLabel": {
+   "left": 456,
+   "top": 338,
+   "right": 658,
+   "bottom": 398
+  },
+  "horizontalOverlap": true,
+  "gapBelowPanelToEngLabel": -17
+ },
+ "1648x928 armat": {
+  "textRight": 543,
+  "panelBottom": 355,
+  "sentenceBottom": 304,
+  "engLabel": {
+   "left": 380,
+   "top": 347,
+   "right": 581,
+   "bottom": 407
+  },
+  "horizontalOverlap": true,
+  "gapBelowPanelToEngLabel": -8
+ },
+ "1648x928 aziz": {
+  "textRight": 543,
+  "panelBottom": 355,
+  "sentenceBottom": 304,
+  "engLabel": {
+   "left": 367,
+   "top": 346,
+   "right": 569,
+   "bottom": 407
+  },
+  "horizontalOverlap": true,
+  "gapBelowPanelToEngLabel": -9
+ },
+ "1648x928 wallpapers": {
+  "textRight": 543,
+  "panelBottom": 355,
+  "sentenceBottom": 304,
+  "engLabel": {
+   "left": 456,
+   "top": 315,
+   "right": 658,
+   "bottom": 375
+  },
+  "horizontalOverlap": true,
+  "gapBelowPanelToEngLabel": -40
+ },
+ "1648x928 koreez": {
+  "textRight": 543,
+  "panelBottom": 355,
+  "sentenceBottom": 304,
+  "engLabel": {
+   "left": 382,
+   "top": 314,
+   "right": 572,
+   "bottom": 371
+  },
+  "horizontalOverlap": true,
+  "gapBelowPanelToEngLabel": -41
+ },
+ "1366x768 sqlorbit": {
+  "textRight": 450,
+  "panelBottom": 294,
+  "sentenceBottom": 252,
+  "engLabel": {
+   "left": 378,
+   "top": 279,
+   "right": 545,
+   "bottom": 330
+  },
+  "horizontalOverlap": true,
+  "gapBelowPanelToEngLabel": -15
+ },
+ "1366x768 armat": {
+  "textRight": 450,
+  "panelBottom": 294,
+  "sentenceBottom": 252,
+  "engLabel": {
+   "left": 315,
+   "top": 287,
+   "right": 482,
+   "bottom": 337
+  },
+  "horizontalOverlap": true,
+  "gapBelowPanelToEngLabel": -7
+ },
+ "1366x768 aziz": {
+  "textRight": 450,
+  "panelBottom": 294,
+  "sentenceBottom": 252,
+  "engLabel": {
+   "left": 305,
+   "top": 286,
+   "right": 471,
+   "bottom": 337
+  },
+  "horizontalOverlap": true,
+  "gapBelowPanelToEngLabel": -8
+ },
+ "1366x768 wallpapers": {
+  "textRight": 450,
+  "panelBottom": 294,
+  "sentenceBottom": 252,
+  "engLabel": {
+   "left": 378,
+   "top": 260,
+   "right": 545,
+   "bottom": 311
+  },
+  "horizontalOverlap": true,
+  "gapBelowPanelToEngLabel": -34
+ },
+ "1366x768 koreez": {
+  "textRight": 450,
+  "panelBottom": 294,
+  "sentenceBottom": 252,
+  "engLabel": {
+   "left": 317,
+   "top": 259,
+   "right": 474,
+   "bottom": 307
+  },
+  "horizontalOverlap": true,
+  "gapBelowPanelToEngLabel": -35
+ }
+}

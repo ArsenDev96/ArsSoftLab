@@ -1,0 +1,170 @@
+{
+ "sqlorbit": {
+  "panel": {
+   "x": 119,
+   "y": 143,
+   "w": 424,
+   "h": 213
+  },
+  "heading": "Engineering",
+  "sentence": "A Node.js developer tool for identifying slow, repeated, and N+1 SQL queries.",
+  "sentencePx": 14.7847,
+  "sentenceColor": "rgb(210, 211, 213)",
+  "lines": 2,
+  "sentenceBox": {
+   "x": 119,
+   "y": 265,
+   "w": 375,
+   "h": 39
+  },
+  "openRow": "Open project SQLOrbit Project page Coming soon",
+  "openHref": null,
+  "labelOverlaps": [
+   "engineering"
+  ]
+ },
+ "tablerefresh": {
+  "panel": {
+   "x": 119,
+   "y": 143,
+   "w": 424,
+   "h": 213
+  },
+  "heading": "Engineering",
+  "sentence": "A WordPress plugin that synchronizes TablePress tables with CSV files and Google Sheets.",
+  "sentencePx": 14.7847,
+  "sentenceColor": "rgb(210, 211, 213)",
+  "lines": 2,
+  "sentenceBox": {
+   "x": 119,
+   "y": 265,
+   "w": 375,
+   "h": 39
+  },
+  "openRow": "Open project TableRefresh Project page Coming soon",
+  "openHref": null,
+  "labelOverlaps": [
+   "engineering"
+  ]
+ },
+ "arimap": {
+  "panel": {
+   "x": 119,
+   "y": 143,
+   "w": 424,
+   "h": 213
+  },
+  "heading": "Educational",
+  "sentence": "An interactive geography-learning game built around exploration, lessons, and challenges.",
+  "sentencePx": 14.7847,
+  "sentenceColor": "rgb(210, 211, 213)",
+  "lines": 2,
+  "sentenceBox": {
+   "x": 119,
+   "y": 265,
+   "w": 375,
+   "h": 39
+  },
+  "openRow": "Open project AriMap Project page Coming soon",
+  "openHref": null,
+  "labelOverlaps": [
+   "engineering"
+  ]
+ },
+ "armat": {
+  "panel": {
+   "x": 119,
+   "y": 143,
+   "w": 424,
+   "h": 213
+  },
+  "heading": "Educational",
+  "sentence": "A multilingual platform for discovering Armenian history, literature, culture, and places.",
+  "sentencePx": 14.7847,
+  "sentenceColor": "rgb(210, 211, 213)",
+  "lines": 2,
+  "sentenceBox": {
+   "x": 119,
+   "y": 265,
+   "w": 375,
+   "h": 39
+  },
+  "openRow": "Open project Armat Project page Coming soon",
+  "openHref": null,
+  "labelOverlaps": [
+   "engineering"
+  ]
+ },
+ "aziz": {
+  "panel": {
+   "x": 119,
+   "y": 143,
+   "w": 424,
+   "h": 213
+  },
+  "heading": "Playground",
+  "sentence": "A party-game app designed around creative questions, unexpected answers, and group play.",
+  "sentencePx": 14.7847,
+  "sentenceColor": "rgb(210, 211, 213)",
+  "lines": 2,
+  "sentenceBox": {
+   "x": 119,
+   "y": 265,
+   "w": 375,
+   "h": 39
+  },
+  "openRow": "Open project AZIZ Project page Coming soon",
+  "openHref": null,
+  "labelOverlaps": [
+   "engineering"
+  ]
+ },
+ "wallpapers": {
+  "panel": {
+   "x": 119,
+   "y": 143,
+   "w": 424,
+   "h": 213
+  },
+  "heading": "Creative Studio",
+  "sentence": "A collection of message-driven wallpapers combining typography, visual storytelling, and design.",
+  "sentencePx": 14.7847,
+  "sentenceColor": "rgb(210, 211, 213)",
+  "lines": 2,
+  "sentenceBox": {
+   "x": 119,
+   "y": 265,
+   "w": 375,
+   "h": 39
+  },
+  "openRow": "Open project Wallpapers Project page Coming soon",
+  "openHref": null,
+  "labelOverlaps": [
+   "engineering"
+  ]
+ },
+ "koreez": {
+  "panel": {
+   "x": 119,
+   "y": 143,
+   "w": 424,
+   "h": 213
+  },
+  "heading": "Experience",
+  "sentence": "An educational platform involving web applications, backend services, and production systems.",
+  "sentencePx": 14.7847,
+  "sentenceColor": "rgb(210, 211, 213)",
+  "lines": 2,
+  "sentenceBox": {
+   "x": 119,
+   "y": 265,
+   "w": 375,
+   "h": 39
+  },
+  "openRow": "Open project Koreez Project page Coming soon",
+  "openHref": null,
+  "labelOverlaps": [
+   "engineering"
+  ]
+ }
+}
