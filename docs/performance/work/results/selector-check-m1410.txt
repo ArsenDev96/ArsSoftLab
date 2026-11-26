@@ -1,0 +1,15 @@
+PASS default is Cinematic {"search":"?station=engineering&project=sqlorbit&floor=approved","lite":false,"shown":"full","checked":"full","selected":"engineering","project":"sqlorbit","tone":true,"sameDocument":true}
+PASS Lite: no reload, parameters kept, selection kept {"search":"?station=engineering&project=sqlorbit&floor=approved&render=lite","lite":true,"shown":"lite","checked":"lite","selected":"engineering","project":"sqlorbit","tone":true,"sameDocument":true,"ms":190,"switchMs":190}
+PASS Back -> Cinematic {"search":"?station=engineering&project=sqlorbit&floor=approved","lite":false,"shown":"full","checked":"full","selected":"engineering","project":"sqlorbit","tone":true,"sameDocument":true,"ms":89}
+PASS Forward -> Lite {"search":"?station=engineering&project=sqlorbit&floor=approved&render=lite","lite":true,"shown":"lite","checked":"lite","selected":"engineering","project":"sqlorbit","tone":true,"sameDocument":true,"ms":86}
+PASS Lite: Escape returns to the lab, mode kept {"search":"?floor=approved&render=lite","lite":true,"shown":"lite","checked":"lite","selected":null,"project":null,"tone":true,"sameDocument":true}
+PASS Cinematic again: parameter removed, others kept {"search":"?floor=approved","lite":false,"shown":"full","checked":"full","selected":null,"project":null,"tone":true,"sameDocument":true,"ms":205}
+PASS Back -> Lite, lab home {"search":"?floor=approved&render=lite","lite":true,"shown":"lite","checked":"lite","selected":null,"project":null,"tone":true,"sameDocument":true,"ms":86}
+PASS Back -> Lite with Engineering selected (the lab's entry) {"search":"?station=engineering&project=sqlorbit&floor=approved&render=lite","lite":true,"shown":"lite","checked":"lite","selected":"engineering","project":"sqlorbit","tone":true,"sameDocument":true,"ms":1}
+PASS no console errors (mouse) {"errors":[]}
+PASS Tab reaches the selector with a visible focus ring {"tabs":7,"on":"full","outline":"solid 2px rgb(255, 197, 108)","focusVisible":true}
+PASS ArrowRight chooses Lite, focus stays on the selector {"search":"?station=playground&render=lite","lite":true,"shown":"lite","checked":"lite","selected":"playground","project":null,"tone":false,"sameDocument":true,"ms":355,"focusKept":"lite"}
+PASS ArrowLeft chooses Cinematic {"search":"?station=playground","lite":false,"shown":"full","checked":"full","selected":"playground","project":null,"tone":true,"sameDocument":true,"ms":232}
+PASS no console errors (keyboard) {"errors":[]}
+PASS reduced motion: both modes, no transitions on the selector {"transitionDuration":"0s","errors":[]}
+ALL PASS

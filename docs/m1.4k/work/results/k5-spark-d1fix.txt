@@ -1,0 +1,2 @@
+d1fix try 0 playground   runs 28 flagged 0 | light before the 2nd arrival max 1 | height before it max 16.975 | longest frame 233
+errors []

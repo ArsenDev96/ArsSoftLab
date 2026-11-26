@@ -1,0 +1,107 @@
+{
+ "probe flags (--enable-gpu --ignore-gpu-blocklist)": {
+  "devices": [
+   {
+    "vendor": 4318,
+    "device": "NVIDIA GeForce RTX 4060",
+    "driver": "32.0.16.1088"
+   },
+   {
+    "vendor": 5140,
+    "device": "Microsoft Basic Render Driver",
+    "driver": "10.0.26100.9818"
+   }
+  ],
+  "featureStatus": {
+   "2d_canvas": "enabled",
+   "direct_rendering_display_compositor": "disabled_off_ok",
+   "gpu_compositing": "enabled",
+   "multiple_raster_threads": "enabled_on",
+   "opengl": "enabled_on",
+   "rasterization": "enabled",
+   "skia_graphite": "enabled_on",
+   "trees_in_viz": "disabled_off",
+   "video_decode": "enabled",
+   "video_encode": "enabled",
+   "webgl": "enabled",
+   "webgpu": "enabled",
+   "webnn": "disabled_off"
+  },
+  "glRenderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4060 (0x00002882) Direct3D11 vs_5_0 ps_5_0, D3D11-32.0.16.1088)",
+  "glVersion": "OpenGL ES 3.0 (ANGLE 2.1.29257 git hash: 1f6526a566c2)",
+  "angle": "ANGLE_D3D11",
+  "skia": "GraphiteDawnD3D11",
+  "softwareRendering": null,
+  "workarounds": 7
+ },
+ "Chrome defaults": {
+  "devices": [
+   {
+    "vendor": 4318,
+    "device": "NVIDIA GeForce RTX 4060",
+    "driver": "32.0.16.1088"
+   },
+   {
+    "vendor": 5140,
+    "device": "Microsoft Basic Render Driver",
+    "driver": "10.0.26100.9818"
+   }
+  ],
+  "featureStatus": {
+   "2d_canvas": "enabled",
+   "direct_rendering_display_compositor": "disabled_off_ok",
+   "gpu_compositing": "enabled",
+   "multiple_raster_threads": "enabled_on",
+   "opengl": "enabled_on",
+   "rasterization": "enabled",
+   "skia_graphite": "enabled_on",
+   "trees_in_viz": "disabled_off",
+   "video_decode": "enabled",
+   "video_encode": "enabled",
+   "webgl": "enabled",
+   "webgpu": "enabled",
+   "webnn": "disabled_off"
+  },
+  "glRenderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4060 (0x00002882) Direct3D11 vs_5_0 ps_5_0, D3D11-32.0.16.1088)",
+  "glVersion": "OpenGL ES 3.0 (ANGLE 2.1.29257 git hash: 1f6526a566c2)",
+  "angle": "ANGLE_D3D11",
+  "skia": "GraphiteDawnD3D11",
+  "softwareRendering": null,
+  "workarounds": 7
+ },
+ "Chrome defaults, headed": {
+  "devices": [
+   {
+    "vendor": 4318,
+    "device": "NVIDIA GeForce RTX 4060",
+    "driver": "32.0.16.1088"
+   },
+   {
+    "vendor": 5140,
+    "device": "Microsoft Basic Render Driver",
+    "driver": "10.0.26100.9818"
+   }
+  ],
+  "featureStatus": {
+   "2d_canvas": "enabled",
+   "direct_rendering_display_compositor": "disabled_off_ok",
+   "gpu_compositing": "enabled",
+   "multiple_raster_threads": "enabled_on",
+   "opengl": "enabled_on",
+   "rasterization": "enabled",
+   "skia_graphite": "enabled_on",
+   "trees_in_viz": "disabled_off",
+   "video_decode": "enabled",
+   "video_encode": "enabled",
+   "webgl": "enabled",
+   "webgpu": "enabled",
+   "webnn": "disabled_off"
+  },
+  "glRenderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4060 (0x00002882) Direct3D11 vs_5_0 ps_5_0, D3D11-32.0.16.1088)",
+  "glVersion": "OpenGL ES 3.0 (ANGLE 2.1.29257 git hash: 1f6526a566c2)",
+  "angle": "ANGLE_D3D11",
+  "skia": "GraphiteDawnD3D11",
+  "softwareRendering": null,
+  "workarounds": 7
+ }
+}

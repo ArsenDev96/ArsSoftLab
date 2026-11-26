@@ -1,0 +1,12 @@
+r0 full engineering hover fps 52.2/60/60 p95 17 max 100 >50ms 2/0/0 | hover 30/32/33 half 730/732/733 full 997/998/999 | viz 133 ms drawQuad 0
+r0 full playground hover  fps 50.4/60/60 p95 17 max 150.3 >50ms 2/0/0 | hover 31/31/33 half 881/764/766 full 1047/931/932 | viz 124 ms drawQuad 0
+r0 full switch            fps 60 p95 17 max 17.1 >50ms 0 | [729,767,734,783] end {"hover":"playground","engineeringLit":0,"playgroundLit":1} | viz 379 ms drawQuad 0
+r0 full chip engineering moved 0px selected 6 ms -> ?station=engineering&project=sqlorbit&render=full pressed true | fps 57.3 max 67
+r0 full chip playground  moved 19.5px selected 3 ms -> ?station=playground&project=aziz&render=full pressed true | fps 58.6 max 50
+r0 full home "?render=full" errors 0
+r0 lite engineering hover fps 55.2/60/60 p95 17 max 150 >50ms 1/0/0 | hover 30/32/18 half 197/81/68 full 197/181/168 | viz 25 ms drawQuad 0
+r0 lite playground hover  fps 55.2/59.4/60 p95 16.9 max 149.6 >50ms 1/0/0 | hover 32/31/30 half 198/98/80 full 198/198/180 | viz 21 ms drawQuad 0
+r0 lite switch            fps 60 p95 17 max 17.1 >50ms 0 | [79,67,83,83] end {"hover":"playground","engineeringLit":0,"playgroundLit":1} | viz 96 ms drawQuad 0
+r0 lite chip engineering moved 0px selected 4 ms -> ?station=engineering&project=sqlorbit&render=lite pressed true | fps 58.6 max 50.2
+r0 lite chip playground  moved 0px selected 5 ms -> ?station=playground&project=aziz&render=lite pressed true | fps 59.3 max 33
+r0 lite home "?render=lite" errors 0

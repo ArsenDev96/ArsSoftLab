@@ -1,0 +1,160 @@
+{
+ "steps": [
+  {
+   "name": "direct /lab-v2",
+   "pass": true,
+   "search": "",
+   "tone": true,
+   "lite": false,
+   "selected": null,
+   "project": null,
+   "same": true
+  },
+  {
+   "name": "direct /lab-v2?render=lite",
+   "pass": true,
+   "search": "?render=lite",
+   "tone": false,
+   "lite": true,
+   "selected": null,
+   "project": null,
+   "same": true
+  },
+  {
+   "name": "direct /lab-v2?floor=original",
+   "pass": true,
+   "search": "?floor=original",
+   "tone": false,
+   "lite": false,
+   "selected": null,
+   "project": null,
+   "same": true
+  },
+  {
+   "name": "direct /lab-v2?floor=approved&render=lite",
+   "pass": true,
+   "search": "?floor=approved&render=lite",
+   "tone": true,
+   "lite": true,
+   "selected": null,
+   "project": null,
+   "same": true
+  },
+  {
+   "name": "direct /lab-v2?floor=original&render=lite",
+   "pass": true,
+   "search": "?floor=original&render=lite",
+   "tone": false,
+   "lite": true,
+   "selected": null,
+   "project": null,
+   "same": true
+  },
+  {
+   "name": "direct /lab-v2?station=engineering&project=sqlorbit",
+   "pass": true,
+   "search": "?station=engineering&project=sqlorbit",
+   "tone": true,
+   "lite": false,
+   "selected": "engineering",
+   "project": "sqlorbit",
+   "same": true
+  },
+  {
+   "name": "Lite: untoned, selection and parameters kept, no reload",
+   "pass": true,
+   "search": "?station=engineering&project=sqlorbit&render=lite",
+   "tone": false,
+   "lite": true,
+   "selected": "engineering",
+   "project": "sqlorbit",
+   "same": true
+  },
+  {
+   "name": "Cinematic: toned again, render removed",
+   "pass": true,
+   "search": "?station=engineering&project=sqlorbit",
+   "tone": true,
+   "lite": false,
+   "selected": "engineering",
+   "project": "sqlorbit",
+   "same": true
+  },
+  {
+   "name": "Back -> Lite, untoned",
+   "pass": true,
+   "search": "?station=engineering&project=sqlorbit&render=lite",
+   "tone": false,
+   "lite": true,
+   "selected": "engineering",
+   "project": "sqlorbit",
+   "same": true
+  },
+  {
+   "name": "Forward -> Cinematic, toned",
+   "pass": true,
+   "search": "?station=engineering&project=sqlorbit",
+   "tone": true,
+   "lite": false,
+   "selected": "engineering",
+   "project": "sqlorbit",
+   "same": true
+  },
+  {
+   "name": "Escape: lab home, toned",
+   "pass": true,
+   "search": "",
+   "tone": true,
+   "lite": false,
+   "selected": null,
+   "project": null,
+   "same": true
+  },
+  {
+   "name": "Back -> Engineering / SQLOrbit again, toned",
+   "pass": true,
+   "search": "?station=engineering&project=sqlorbit",
+   "tone": true,
+   "lite": false,
+   "selected": "engineering",
+   "project": "sqlorbit",
+   "same": true
+  },
+  {
+   "name": "floor=original -> Lite: untoned, floor kept",
+   "pass": true,
+   "search": "?floor=original&render=lite",
+   "tone": false,
+   "lite": true,
+   "selected": null,
+   "project": null,
+   "same": true
+  },
+  {
+   "name": "floor=original -> Cinematic: still untoned",
+   "pass": true,
+   "search": "?floor=original",
+   "tone": false,
+   "lite": false,
+   "selected": null,
+   "project": null,
+   "same": true
+  },
+  {
+   "name": "floor=approved, Lite -> Cinematic: toned, floor kept",
+   "pass": true,
+   "search": "?floor=approved",
+   "tone": true,
+   "lite": false,
+   "selected": null,
+   "project": null,
+   "same": true
+  },
+  {
+   "name": "no console errors",
+   "pass": true,
+   "errors": []
+  }
+ ],
+ "pass": true
+}

@@ -1,0 +1,2 @@
+reenter runs 10 flagged 0 | most stations not at rest at once 1 sparks at once 2 | largest step %/60Hz frame 10.9 longest frame 167 | one-shot light on an inactive station (frames, max) {} | spark clock after the hover, ms: max 16.8
+errors []

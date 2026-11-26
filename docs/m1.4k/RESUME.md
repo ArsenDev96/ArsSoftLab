@@ -1,5 +1,7 @@
 # M1.4K: paused, how to resume
 
+> **Later status (2026-11-26):** **superseded.** The review was completed and its findings closed in M1.4K.6–M1.4K.10. See `NOTES.md` (status) and `defects.md`. The commands below remain valid for re-running the probes.
+
 **The review is not finished. No GO / NO-GO can be given yet.** Paused 2026-11-26, 00:45, on the home computer at the owner's request. Review only: no application code, artwork or animation was changed.
 
 **Not written yet:** `NOTES.md`, `defects.md`, `performance.md`, the six sheets and the video. Two scripts for them do not exist yet either (section 4).

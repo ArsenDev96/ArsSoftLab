@@ -1,0 +1,11 @@
+gap   0 ms #0 | screen at return 1 rise 0 last 200 ms 1 at arrival 1 full +0.08300000097369775 | ring last 200 ms 1 full +0.08300000097369775 | game SAME (clock 2642 -> 2642, game time 1600 -> 3450 ms) | states running
+gap   0 ms #1 | screen at return 1 rise 0 last 200 ms 1 at arrival 1 full +0.4100000007165363 | ring last 200 ms 1 full +0.4100000007165363 | game SAME (clock 7176 -> 7176, game time 1567 -> 3417 ms) | states running
+gap  60 ms #0 | screen at return 0.953 rise 0 last 200 ms 0.953 at arrival 0.953 full +33.721999999921536 | ring last 200 ms 1 full +16.721999999921536 | game SAME (clock 11676 -> 11676, game time 1633 -> 3483 ms) | states running
+gap  60 ms #1 | screen at return 0.954 rise 0 last 200 ms 0.954 at arrival 0.954 full +33.455000001209555 | ring last 200 ms 1 full +0.4550000012095552 | game SAME (clock 16242 -> 16242, game time 1617 -> 3484 ms) | states running
+gap 150 ms #0 | screen at return 0.377 rise 0 last 200 ms 0.377 at arrival 0.377 full +100.40600000118138 | ring last 200 ms 1 full +0.4060000011813827 | game SAME (clock 20792 -> 20792, game time 1700 -> 3550 ms) | states running
+gap 150 ms #1 | screen at return 0.377 rise 0 last 200 ms 0.377 at arrival 0.377 full +100.38600000132283 | ring last 200 ms 1 full +0.3860000013228273 | game SAME (clock 25343 -> 25343, game time 1750 -> 3600 ms) | states running
+gap 250 ms #0 | screen at return 0.054 rise 0 last 200 ms 0.054 at arrival 0.054 full +150.34900000007474 | ring last 200 ms 0.322 full +116.34900000007474 | game SAME (clock 30142 -> 30142, game time 1850 -> 3700 ms) | states running
+gap 250 ms #1 | screen at return 0.054 rise 0 last 200 ms 0.054 at arrival 0.054 full +150.0200000012992 | ring last 200 ms 0.324 full +117.0200000012992 | game SAME (clock 34926 -> 34926, game time 1800 -> 3650 ms) | states running
+gap 600 ms #0 | screen at return 0 rise 0 last 200 ms 0 at arrival 0 full +199.5860000011744 | ring last 200 ms 0 full +233.5860000011744 | game NEW (clock null -> 41842, game time null -> 1866 ms) | states charging>booting>running
+gap 600 ms #1 | screen at return 0 rise 0 last 200 ms 0 at arrival 0 full +199.99800000039977 | ring last 200 ms 0 full +232.99800000039977 | game NEW (clock null -> 46959, game time null -> 1833 ms) | states charging>booting>running
+errors []

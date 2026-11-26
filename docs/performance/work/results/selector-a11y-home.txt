@@ -1,0 +1,8 @@
+crop after {"x":1145,"y":16,"width":144,"height":40,"scale":1}
+PASS group named {"role":"group","name":"Rendering mode","description":null,"checked":null}
+PASS Cinematic: radio, name, description {"role":"radio","name":"Cinematic","description":"Full lighting and motion","checked":"true"}
+PASS Lite: radio, name, description {"role":"radio","name":"Lite","description":"Lighter rendering for slower computers: stations light up at once, nothing moves","checked":"false"}
+PASS Tab reaches the group, focus ring visible {"tabs":7,"focusVisible":true,"outline":"solid 2px"}
+PASS arrows switch both ways, focus stays on the group {"delays":{"toLite":[178,161,131],"toCinematic":[301,181,161]},"end":""}
+PASS no console errors {"errors":[]}
+ALL PASS

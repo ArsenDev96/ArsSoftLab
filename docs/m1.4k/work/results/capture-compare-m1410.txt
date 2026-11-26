@@ -1,0 +1,21 @@
+# M1.4K.10 captures (scene below the header). Default floor now = old ?floor=approved; ?floor=original = old default.
+m1410-default   rest         vs home-head-tone: max  66, px>2  11779 | vs home-approved-tone: max  66, px>2  12140
+m1410-default   engineering  vs home-head-tone: max  66, px>2  11849 | vs home-approved-tone: max   1, px>2      0
+m1410-default   playground   vs home-head-tone: max   1, px>2      0 | vs home-approved-tone: max   1, px>2      0
+m1410-original  rest         vs home-head: max  66, px>2  11799 | vs home-head2: max  66, px>2  11799 | vs m149-after: max  66, px>2  11799 | vs d1fix-full: max   0, px>2      0
+m1410-original  engineering  vs home-head: max   0, px>2      0 | vs home-head2: max   1, px>2      0 | vs d1fix-full: max  66, px>2  12233
+m1410-original  playground   vs home-head: max   1, px>2      0 | vs home-head2: max  63, px>2  11497 | vs m149-after: max   1, px>2      0 | vs d1fix-full: max   1, px>2      0
+m1410-lite      rest         vs d1fix-lite: max  66, px>2  12165 | vs d1-lite-before: max  66, px>2  12165
+m1410-lite      playground   vs d1fix-lite: max  66, px>2  11208 | vs d1-lite-before: max  66, px>2  11208
+m1410-default   vs home-head-tone      rest        max  66, px>2  11779, box [1044, 315, 1355, 539]
+m1410-default2  vs home-head-tone      rest        max  14, px>2    428, box [1065, 497, 1352, 528]
+m1410-default2  vs home-approved-tone  rest        max   1, px>2      0, box None
+m1410-default   vs m1410-default2      rest        max  66, px>2  12140, box [1044, 315, 1355, 539]
+m1410-lite      vs d1fix-lite          rest        max  66, px>2  12165, box [1045, 315, 1355, 539]
+m1410-lite2     vs d1fix-lite          rest        max  66, px>2  12165, box [1045, 315, 1355, 539]
+m1410-lite      vs m1410-lite2         rest        max   0, px>2      0, box None
+m1410-lite      vs d1fix-lite          playground  max  66, px>2  11208, box [1043, 315, 1355, 539]
+m1410-lite2     vs d1fix-lite          playground  max  66, px>2  11208, box [1043, 315, 1355, 539]
+m1410-lite      vs m1410-lite2         playground  max   0, px>2      0, box None
+pre-change build (f233593) Lite rest        vs new Lite: max   0, px>2      0 | vs earlier Lite (d1fix-lite): max  66, px>2  12165
+pre-change build (f233593) Lite playground  vs new Lite: max  66, px>2  11208 | vs earlier Lite (d1fix-lite): max   1, px>2      0

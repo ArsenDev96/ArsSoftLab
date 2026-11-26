@@ -1,0 +1,159 @@
+{
+ "steps": [
+  {
+   "name": "default is Cinematic",
+   "pass": true,
+   "search": "?station=engineering&project=sqlorbit&floor=approved",
+   "lite": false,
+   "shown": "full",
+   "checked": "full",
+   "selected": "engineering",
+   "project": "sqlorbit",
+   "tone": true,
+   "sameDocument": true
+  },
+  {
+   "name": "Lite: no reload, parameters kept, selection kept",
+   "pass": true,
+   "search": "?station=engineering&project=sqlorbit&floor=approved&render=lite",
+   "lite": true,
+   "shown": "lite",
+   "checked": "lite",
+   "selected": "engineering",
+   "project": "sqlorbit",
+   "tone": true,
+   "sameDocument": true,
+   "ms": 396,
+   "switchMs": 396
+  },
+  {
+   "name": "Back -> Cinematic",
+   "pass": true,
+   "search": "?station=engineering&project=sqlorbit&floor=approved",
+   "lite": false,
+   "shown": "full",
+   "checked": "full",
+   "selected": "engineering",
+   "project": "sqlorbit",
+   "tone": true,
+   "sameDocument": true,
+   "ms": 80
+  },
+  {
+   "name": "Forward -> Lite",
+   "pass": true,
+   "search": "?station=engineering&project=sqlorbit&floor=approved&render=lite",
+   "lite": true,
+   "shown": "lite",
+   "checked": "lite",
+   "selected": "engineering",
+   "project": "sqlorbit",
+   "tone": true,
+   "sameDocument": true,
+   "ms": 64
+  },
+  {
+   "name": "Lite: Escape returns to the lab, mode kept",
+   "pass": true,
+   "search": "?floor=approved&render=lite",
+   "lite": true,
+   "shown": "lite",
+   "checked": "lite",
+   "selected": null,
+   "project": null,
+   "tone": true,
+   "sameDocument": true
+  },
+  {
+   "name": "Cinematic again: parameter removed, others kept",
+   "pass": true,
+   "search": "?floor=approved",
+   "lite": false,
+   "shown": "full",
+   "checked": "full",
+   "selected": null,
+   "project": null,
+   "tone": true,
+   "sameDocument": true,
+   "ms": 192
+  },
+  {
+   "name": "Back -> Lite, lab home",
+   "pass": true,
+   "search": "?floor=approved&render=lite",
+   "lite": true,
+   "shown": "lite",
+   "checked": "lite",
+   "selected": null,
+   "project": null,
+   "tone": true,
+   "sameDocument": true,
+   "ms": 66
+  },
+  {
+   "name": "Back -> Lite with Engineering selected (the lab's entry)",
+   "pass": true,
+   "search": "?station=engineering&project=sqlorbit&floor=approved&render=lite",
+   "lite": true,
+   "shown": "lite",
+   "checked": "lite",
+   "selected": "engineering",
+   "project": "sqlorbit",
+   "tone": true,
+   "sameDocument": true,
+   "ms": 1
+  },
+  {
+   "name": "no console errors (mouse)",
+   "pass": true,
+   "errors": []
+  },
+  {
+   "name": "Tab reaches the selector with a visible focus ring",
+   "pass": true,
+   "tabs": 7,
+   "on": "full",
+   "outline": "solid 2px rgb(255, 197, 108)",
+   "focusVisible": true
+  },
+  {
+   "name": "ArrowRight chooses Lite, focus stays on the selector",
+   "pass": true,
+   "search": "?station=playground&render=lite",
+   "lite": true,
+   "shown": "lite",
+   "checked": "lite",
+   "selected": "playground",
+   "project": null,
+   "tone": false,
+   "sameDocument": true,
+   "ms": 362,
+   "focusKept": "lite"
+  },
+  {
+   "name": "ArrowLeft chooses Cinematic",
+   "pass": true,
+   "search": "?station=playground",
+   "lite": false,
+   "shown": "full",
+   "checked": "full",
+   "selected": "playground",
+   "project": null,
+   "tone": false,
+   "sameDocument": true,
+   "ms": 206
+  },
+  {
+   "name": "no console errors (keyboard)",
+   "pass": true,
+   "errors": []
+  },
+  {
+   "name": "reduced motion: both modes, no transitions on the selector",
+   "pass": true,
+   "transitionDuration": "0s",
+   "errors": []
+  }
+ ],
+ "pass": true
+}

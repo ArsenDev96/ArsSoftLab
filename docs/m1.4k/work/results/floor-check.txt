@@ -1,0 +1,17 @@
+PASS direct /lab-v2 {"search":"","tone":true,"lite":false,"selected":null,"project":null,"same":true}
+PASS direct /lab-v2?render=lite {"search":"?render=lite","tone":false,"lite":true,"selected":null,"project":null,"same":true}
+PASS direct /lab-v2?floor=original {"search":"?floor=original","tone":false,"lite":false,"selected":null,"project":null,"same":true}
+PASS direct /lab-v2?floor=approved&render=lite {"search":"?floor=approved&render=lite","tone":true,"lite":true,"selected":null,"project":null,"same":true}
+PASS direct /lab-v2?floor=original&render=lite {"search":"?floor=original&render=lite","tone":false,"lite":true,"selected":null,"project":null,"same":true}
+PASS direct /lab-v2?station=engineering&project=sqlorbit {"search":"?station=engineering&project=sqlorbit","tone":true,"lite":false,"selected":"engineering","project":"sqlorbit","same":true}
+PASS Lite: untoned, selection and parameters kept, no reload {"search":"?station=engineering&project=sqlorbit&render=lite","tone":false,"lite":true,"selected":"engineering","project":"sqlorbit","same":true}
+PASS Cinematic: toned again, render removed {"search":"?station=engineering&project=sqlorbit","tone":true,"lite":false,"selected":"engineering","project":"sqlorbit","same":true}
+PASS Back -> Lite, untoned {"search":"?station=engineering&project=sqlorbit&render=lite","tone":false,"lite":true,"selected":"engineering","project":"sqlorbit","same":true}
+PASS Forward -> Cinematic, toned {"search":"?station=engineering&project=sqlorbit","tone":true,"lite":false,"selected":"engineering","project":"sqlorbit","same":true}
+PASS Escape: lab home, toned {"search":"","tone":true,"lite":false,"selected":null,"project":null,"same":true}
+PASS Back -> Engineering / SQLOrbit again, toned {"search":"?station=engineering&project=sqlorbit","tone":true,"lite":false,"selected":"engineering","project":"sqlorbit","same":true}
+PASS floor=original -> Lite: untoned, floor kept {"search":"?floor=original&render=lite","tone":false,"lite":true,"selected":null,"project":null,"same":true}
+PASS floor=original -> Cinematic: still untoned {"search":"?floor=original","tone":false,"lite":false,"selected":null,"project":null,"same":true}
+PASS floor=approved, Lite -> Cinematic: toned, floor kept {"search":"?floor=approved","tone":true,"lite":false,"selected":null,"project":null,"same":true}
+PASS no console errors {"errors":[]}
+ALL PASS

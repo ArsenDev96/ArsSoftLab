@@ -1,0 +1,20 @@
+trial 0 ok   | k3: powered 14 ms after the return, read at 375 ms: y 0 (k3 FLAG) | floor 316 ms after the return | --el-on starts 700 | spark 0 | end y 12.167 --el [1,1,1,1]  | longest 17
+trial 1 ok   | k3: powered 14 ms after the return, read at 366 ms: y 0 (k3 FLAG) | floor 334 ms after the return | --el-on starts 700 | spark 17 | end y 12.167 --el [1,1,1,1]  | longest 50
+trial 2 ok   | k3: powered 15 ms after the return, read at 367 ms: y 0 (k3 FLAG) | floor 317 ms after the return | --el-on starts 700 | spark 16 | end y 12.167 --el [1,1,1,1]  | longest 50
+trial 3 ok   | k3: powered 16 ms after the return, read at 369 ms: y 0 (k3 FLAG) | floor 317 ms after the return | --el-on starts 716 | spark 16 | end y 12.167 --el [1,1,1,1]  | longest 50
+sweep-60: 4 of 4 reached 12 px
+trial 0 ok   | k3: powered 15 ms after the return, read at 368 ms: y 0 (k3 FLAG) | floor 300 ms after the return | --el-on starts 683 | spark -1 | end y 12.167 --el [1,1,1,1]  | longest 17
+trial 1 ok   | k3: powered 1282 ms after the return, read at 1635 ms: y 12.167 | floor 267 ms after the return | --el-on starts 701 | spark 17 | end y 12.167 --el [1,1,1,1]  | longest 50
+trial 2 ok   | k3: powered 1233 ms after the return, read at 1601 ms: y 12.167 | floor 266 ms after the return | --el-on starts 683 | spark 0 | end y 12.167 --el [1,1,1,1]  | longest 17
+trial 3 ok   | k3: powered 15 ms after the return, read at 368 ms: y 0 (k3 FLAG) | floor 300 ms after the return | --el-on starts 717 | spark 16 | end y 12.167 --el [1,1,1,1]  | longest 50
+sweep-110: 4 of 4 reached 12 px
+trial 0 ok   | k3: powered 1233 ms after the return, read at 1600 ms: y 12.167 | floor 217 ms after the return | --el-on starts 717 | spark 17 | end y 12.167 --el [1,1,1,1]  | longest 18
+trial 1 ok   | k3: powered 1222 ms after the return, read at 1583 ms: y 12.167 | floor 234 ms after the return | --el-on starts 701 | spark 17 | end y 12.167 --el [1,1,1,1]  | longest 17
+trial 2 ok   | k3: powered 1248 ms after the return, read at 1601 ms: y 12.167 | floor 233 ms after the return | --el-on starts 683 | spark 0 | end y 12.167 --el [1,1,1,1]  | longest 17
+trial 3 ok   | k3: powered 1247 ms after the return, read at 1601 ms: y 12.167 | floor 234 ms after the return | --el-on starts 700 | spark 17 | end y 12.167 --el [1,1,1,1]  | longest 17
+sweep-160: 4 of 4 reached 12 px
+trial 0 ok   | k3: powered 1239 ms after the return, read at 1602 ms: y 12.167 | floor 117 ms after the return | --el-on starts 683 | spark 0 | end y 12.167 --el [1,1,1,1]  | longest 33
+trial 1 ok   | k3: powered 1284 ms after the return, read at 1645 ms: y 12.167 | floor 117 ms after the return | --el-on starts 717 | spark 17 | end y 12.167 --el [1,1,1,1]  | longest 17
+trial 2 ok   | k3: powered 1272 ms after the return, read at 1636 ms: y 12.167 | floor 117 ms after the return | --el-on starts 684 | spark 0 | end y 12.167 --el [1,1,1,1]  | longest 17
+trial 3 ok   | k3: powered 1232 ms after the return, read at 1584 ms: y 12.167 | floor 117 ms after the return | --el-on starts 700 | spark 16 | end y 12.167 --el [1,1,1,1]  | longest 17
+sweep-260: 4 of 4 reached 12 px

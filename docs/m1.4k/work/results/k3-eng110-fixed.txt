@@ -1,0 +1,8 @@
+fixed check 1 flag false heights true eng y 12.167 powered+raised true sparks 2 bad 0
+fixed check 2 flag false heights true eng y 12.167 powered+raised true sparks 2 bad 0
+fixed check 3 flag false heights true eng y 12.167 powered+raised true sparks 2 bad 0
+fixed check 4 flag false heights true eng y 12.167 powered+raised true sparks 2 bad 0
+fixed check 5 flag false heights true eng y 12.167 powered+raised true sparks 2 bad 0
+fixed check 6 flag false heights true eng y 12.167 powered+raised true sparks 2 bad 0
+fixed check 7 flag false heights true eng y 12.167 powered+raised true sparks 2 bad 0
+fixed check 8 flag false heights true eng y 12.167 powered+raised true sparks 2 bad 0

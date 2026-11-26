@@ -85,6 +85,8 @@ The proposed SQLOrbit block structure is in the audit, §5.
 
 ## Other open items (unchanged by this checkpoint)
 
+> **Closed since (2026-11-26, M1.4K.6–M1.4K.10):** the RTX 4060 checks, D1 (fixed), D2 (accepted as P3), the selector delay (31–49 ms in production) and the floor tone (Cinematic default). See `docs/m1.4k/NOTES.md`.
+
 - **RTX 4060 (home):**
   - full mode unchanged: `docs/performance/work/lite-capture.mjs` with `compare.py`;
   - lite measured once: `lite-perf.mjs`;

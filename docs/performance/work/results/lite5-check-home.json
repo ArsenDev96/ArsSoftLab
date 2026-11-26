@@ -1,0 +1,124 @@
+{
+ "lite": {
+  "activate": {
+   "engineering": {
+    "pass": true,
+    "litAt400ms": 1,
+    "maxLiftPx": 0
+   },
+   "educational": {
+    "pass": true,
+    "litAt400ms": 1,
+    "maxLiftPx": 0
+   },
+   "playground": {
+    "pass": true,
+    "litAt400ms": 1,
+    "maxLiftPx": 0
+   },
+   "creative": {
+    "pass": true,
+    "litAt400ms": 1,
+    "maxLiftPx": 0
+   },
+   "experience": {
+    "pass": true,
+    "litAt400ms": 1,
+    "maxLiftPx": 0
+   }
+  },
+  "chips": {
+   "engineering": {
+    "pass": true,
+    "search": "?station=engineering&project=sqlorbit&render=lite",
+    "camera": "none",
+    "chipMovedPx": 0,
+    "maxLiftPx": 0
+   },
+   "educational": {
+    "pass": true,
+    "search": "?station=educational&project=arimap&render=lite",
+    "camera": "none",
+    "chipMovedPx": 0,
+    "maxLiftPx": 0
+   },
+   "playground": {
+    "pass": true,
+    "search": "?station=playground&project=aziz&render=lite",
+    "camera": "none",
+    "chipMovedPx": 0,
+    "maxLiftPx": 0
+   },
+   "creative": {
+    "pass": true,
+    "search": "?station=creative&project=wallpapers&render=lite",
+    "camera": "none",
+    "chipMovedPx": 0,
+    "maxLiftPx": 0
+   },
+   "experience": {
+    "pass": true,
+    "search": "?station=experience&project=koreez&render=lite",
+    "camera": "none",
+    "chipMovedPx": 0,
+    "maxLiftPx": 0
+   }
+  },
+  "errors": [],
+  "switching": {
+   "pass": true,
+   "lit": {
+    "engineering": 0,
+    "educational": 0,
+    "playground": 0,
+    "creative": 0,
+    "experience": 1
+   }
+  },
+  "pulsesFired": 0,
+  "home": "?render=lite"
+ },
+ "full": {
+  "activate": {},
+  "chips": {
+   "engineering": {
+    "pass": true,
+    "search": "?station=engineering&project=sqlorbit&render=full",
+    "camera": "moved",
+    "chipMovedPx": 0,
+    "maxLiftPx": 12
+   },
+   "educational": {
+    "pass": true,
+    "search": "?station=educational&project=arimap&render=full",
+    "camera": "moved",
+    "chipMovedPx": 0,
+    "maxLiftPx": 10
+   },
+   "playground": {
+    "pass": true,
+    "search": "?station=playground&project=aziz&render=full",
+    "camera": "moved",
+    "chipMovedPx": 19.5,
+    "maxLiftPx": 17.75
+   },
+   "creative": {
+    "pass": true,
+    "search": "?station=creative&project=wallpapers&render=full",
+    "camera": "moved",
+    "chipMovedPx": 0,
+    "maxLiftPx": 10
+   },
+   "experience": {
+    "pass": true,
+    "search": "?station=experience&project=koreez&render=full",
+    "camera": "moved",
+    "chipMovedPx": 0,
+    "maxLiftPx": 10
+   }
+  },
+  "errors": [],
+  "pulsesFired": 40,
+  "home": "?render=full"
+ }
+}

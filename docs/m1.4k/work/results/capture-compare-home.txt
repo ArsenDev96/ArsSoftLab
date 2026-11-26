@@ -1,0 +1,57 @@
+# M1.4K.6 home: whole frame and scene below the header (y >= 72). Captures: docs/performance/work/captures/lite/home-*
+== home-approved home-head
+creative.png     whole: max 255 px>0    4017 px>2    3936 box>0 [1149, 21, 1283, 51] | scene(y>=72): max   0 px>0       0 px>2       0
+educational.png  whole: max 255 px>0    6395 px>2    4355 box>0 [106, 21, 1625, 764] | scene(y>=72): max  14 px>0    2378 px>2     419
+engineering.png  whole: max 255 px>0   45674 px>2   16169 box>0 [65, 15, 1625, 764] | scene(y>=72): max  66 px>0   41629 px>2   12233
+experience.png   whole: max 255 px>0   45731 px>2   16101 box>0 [65, 15, 1625, 764] | scene(y>=72): max  66 px>0   41686 px>2   12165
+playground.png   whole: max 255 px>0    4638 px>2    3936 box>0 [106, 21, 1625, 764] | scene(y>=72): max   1 px>0     621 px>2       0
+rest.png         whole: max 255 px>0    6415 px>2    4362 box>0 [65, 15, 1625, 764] | scene(y>=72): max  14 px>0    2370 px>2     426
+== home-approved2 home-head2
+creative.png     whole: max 255 px>0   45085 px>2   16101 box>0 [1042, 21, 1418, 604] | scene(y>=72): max  66 px>0   41068 px>2   12165
+educational.png  whole: max 255 px>0    5808 px>2    4355 box>0 [680, 21, 1356, 529] | scene(y>=72): max  14 px>0    1791 px>2     419
+engineering.png  whole: max 255 px>0   44554 px>2   15818 box>0 [244, 21, 1442, 604] | scene(y>=72): max  66 px>0   40537 px>2   11882
+experience.png   whole: max 255 px>0    6462 px>2    4362 box>0 [65, 15, 1625, 751] | scene(y>=72): max  14 px>0    2417 px>2     426
+playground.png   whole: max 255 px>0   42839 px>2   15433 box>0 [1040, 21, 1360, 579] | scene(y>=72): max  63 px>0   38822 px>2   11497
+rest.png         whole: max 255 px>0    4017 px>2    3936 box>0 [1149, 21, 1283, 51] | scene(y>=72): max   0 px>0       0 px>2       0
+== home-approved home-head2
+creative.png     whole: max 255 px>0   45085 px>2   16101 box>0 [1042, 21, 1418, 604] | scene(y>=72): max  66 px>0   41068 px>2   12165
+educational.png  whole: max 255 px>0    4037 px>2    3936 box>0 [680, 21, 1283, 481] | scene(y>=72): max   2 px>0      20 px>2       0
+engineering.png  whole: max 255 px>0   45881 px>2   16169 box>0 [65, 15, 1625, 764] | scene(y>=72): max  66 px>0   41836 px>2   12233
+experience.png   whole: max 255 px>0    6462 px>2    4362 box>0 [65, 15, 1625, 751] | scene(y>=72): max  14 px>0    2417 px>2     426
+playground.png   whole: max 255 px>0   42839 px>2   15433 box>0 [1040, 21, 1360, 579] | scene(y>=72): max  63 px>0   38822 px>2   11497
+rest.png         whole: max 255 px>0    6415 px>2    4362 box>0 [65, 15, 1625, 764] | scene(y>=72): max  14 px>0    2370 px>2     426
+== home-approved2 home-head
+creative.png     whole: max 255 px>0    4017 px>2    3936 box>0 [1149, 21, 1283, 51] | scene(y>=72): max   0 px>0       0 px>2       0
+educational.png  whole: max 255 px>0    4624 px>2    3936 box>0 [106, 21, 1625, 764] | scene(y>=72): max   2 px>0     607 px>2       0
+engineering.png  whole: max 255 px>0   44347 px>2   15818 box>0 [1043, 21, 1358, 604] | scene(y>=72): max  66 px>0   40330 px>2   11882
+experience.png   whole: max 255 px>0   45731 px>2   16101 box>0 [65, 15, 1625, 764] | scene(y>=72): max  66 px>0   41686 px>2   12165
+playground.png   whole: max 255 px>0    4638 px>2    3936 box>0 [106, 21, 1625, 764] | scene(y>=72): max   1 px>0     621 px>2       0
+rest.png         whole: max 255 px>0    4017 px>2    3936 box>0 [1149, 21, 1283, 51] | scene(y>=72): max   0 px>0       0 px>2       0
+== home-approved-tone home-head-tone
+creative.png     whole: max 255 px>0    5779 px>2    4364 box>0 [1064, 21, 1356, 528] | scene(y>=72): max  14 px>0    1762 px>2     428
+educational.png  whole: max 255 px>0    5784 px>2    4360 box>0 [1064, 21, 1356, 529] | scene(y>=72): max  14 px>0    1767 px>2     424
+engineering.png  whole: max 255 px>0   44558 px>2   15785 box>0 [244, 21, 1442, 604] | scene(y>=72): max  66 px>0   40541 px>2   11849
+experience.png   whole: max 255 px>0    4482 px>2    3936 box>0 [321, 21, 1625, 741] | scene(y>=72): max   1 px>0     465 px>2       0
+playground.png   whole: max 255 px>0    4656 px>2    3936 box>0 [113, 21, 1625, 751] | scene(y>=72): max   1 px>0     639 px>2       0
+rest.png         whole: max 255 px>0    5791 px>2    4364 box>0 [674, 21, 1356, 608] | scene(y>=72): max  14 px>0    1774 px>2     428
+== home-head home-head2
+creative.png     whole: max  66 px>0   41068 px>2   12165 box>0 [1042, 263, 1418, 604] | scene(y>=72): max  66 px>0   41068 px>2   12165
+educational.png  whole: max  14 px>0    2358 px>2     419 box>0 [106, 496, 1625, 764] | scene(y>=72): max  14 px>0    2358 px>2     419
+engineering.png  whole: max   1 px>0     207 px>2       0 box>0 [244, 255, 1442, 503] | scene(y>=72): max   1 px>0     207 px>2       0
+experience.png   whole: max  66 px>0   40383 px>2   11799 box>0 [280, 263, 1418, 764] | scene(y>=72): max  66 px>0   40383 px>2   11799
+playground.png   whole: max  63 px>0   39443 px>2   11497 box>0 [106, 231, 1625, 764] | scene(y>=72): max  63 px>0   39443 px>2   11497
+rest.png         whole: max   0 px>0       0 px>2       0 box>0 None | scene(y>=72): max   0 px>0       0 px>2       0
+== home-approved home-approved2
+creative.png     whole: max   0 px>0       0 px>2       0 box>0 None | scene(y>=72): max   0 px>0       0 px>2       0
+educational.png  whole: max  14 px>0    1771 px>2     419 box>0 [1064, 496, 1356, 529] | scene(y>=72): max  14 px>0    1771 px>2     419
+engineering.png  whole: max  14 px>0    2383 px>2     419 box>0 [65, 15, 1625, 764] | scene(y>=72): max  14 px>0    2355 px>2     419
+experience.png   whole: max   0 px>0       0 px>2       0 box>0 None | scene(y>=72): max   0 px>0       0 px>2       0
+playground.png   whole: max   0 px>0       0 px>2       0 box>0 None | scene(y>=72): max   0 px>0       0 px>2       0
+rest.png         whole: max  14 px>0    2398 px>2     426 box>0 [65, 15, 1625, 764] | scene(y>=72): max  14 px>0    2370 px>2     426
+== home-head home-head-tone (floor tone, whole frame)
+creative.png     whole: max  66 px>0  534546 px>2  488829 box>0 [0, 263, 1647, 927] | scene(y>=0): max  66 px>0  534546 px>2  488829
+educational.png  whole: max  43 px>0  507736 px>2  480412 box>0 [0, 421, 1647, 927] | scene(y>=0): max  43 px>0  507736 px>2  480412
+engineering.png  whole: max  43 px>0  504613 px>2  478138 box>0 [0, 421, 1647, 927] | scene(y>=0): max  43 px>0  504613 px>2  478138
+experience.png   whole: max  66 px>0  535018 px>2  489474 box>0 [0, 263, 1647, 927] | scene(y>=0): max  66 px>0  535018 px>2  489474
+playground.png   whole: max  43 px>0  506444 px>2  480251 box>0 [0, 384, 1647, 927] | scene(y>=0): max  43 px>0  506444 px>2  480251
+rest.png         whole: max  43 px>0  504323 px>2  477516 box>0 [0, 421, 1647, 927] | scene(y>=0): max  43 px>0  504323 px>2  477516

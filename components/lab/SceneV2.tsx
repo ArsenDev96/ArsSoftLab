@@ -118,12 +118,62 @@ function FloorTone() {
 
 /**
  * M1.4G.1: what follows Playground's power uses the strips' own timing (the
- * unpowered-strip overlay, PG_STRIP_CSS): up when the energy arrives
- * (--arrive-now), down 160 ms after the pointer leaves.
+ * unpowered-strip overlay): up when the energy arrives (--arrive-now), down
+ * 160 ms after the pointer leaves.
+ *
+ * M1.4K.7 (D1): one number, --pgl (0 dark, 1 powered), drives the ring, its
+ * reflection's lit share (.lab-v2-power-lit) and the strips (.lab-v2-strip-off,
+ * inverted). Plain opacity transitions held whatever level a quick return
+ * interrupted through the new spark's whole travel. So, as station-cycle.ts
+ * (M1.4I.1D) does for the other four, it is two numbers:
+ *   --pgl-on (.pg-cycle, an ancestor that carries Playground's --arrive-now)
+ *            this cycle's progress: 0 until the energy arrives, back to 0 at once
+ *   --pgl    (on the lit layers themselves) what is shown: follows --pgl-on; on
+ *            leaving it runs back with the old timing, and a return doesn't touch
+ *            that (--pgl-on is still 0), so the new spark always lights from dark
+ * --pglh: fully powered; keeps the light through Escape / Back's instant with
+ * neither hover nor selection (LabState `returning`), as station-cycle.ts.
+ * Reduced motion: no spark to wait for, so the previous cross-fade (260 ms in,
+ * 240 ms out after 160 ms). Lite: PG_LITE_CSS.
  */
+const PG_RETURN_HOLD = 20;
+const PG_ON = ':is([data-lab-hover="playground"],[data-lab-selected="playground"])';
+
+/**
+ * M1.4K.9: the arcade screen's light, the same two numbers with its own timing (ACTIVATION_CSS and globals.css): on
+ * 160 ms from the arrival + GAME_DELAY_MS, off 340 ms at once. Its plain opacity transition, like the ring's, held a
+ * quick return's level through the new spark's travel, lit on a dark station. Only the light: ArcadeScreen keeps its
+ * game (clock, loop, progress) while the station is hovered whatever the opacity, so a quick return still continues
+ * the same game, now dark until the new spark arrives. Here, not in the shared files, so the homepage's plate scene
+ * (StationActivation) keeps its own. Reduced motion and lite keep their 150 ms cross-fade of the opacity
+ * (globals.css, PG_LITE_CSS); the numbers just follow at once.
+ *   --pga-on (.pga-cycle, inside Playground's .lab-activation)  --pga, --pgah  as --pgl-on, --pgl, --pglh
+ */
+const PG_SCREEN = '.lab-activation[data-zone="playground"] .lab-arcade[data-arcade="playground"]';
+const PG_SCREEN_ON_MS = 160;
+/** ArcadeScreen's GAME_DELAY_MS. ArcadeScreen.tsx is a client module: imported here (a server component) its constants
+ *  arrive as client references, not numbers, so the value is repeated; keep the two equal. */
+const GAME_DELAY_MS = 50;
+const PG_SCREEN_CSS =
+  ["--pga-on", "--pgah", "--pga"].map((v) => `@property ${v}{syntax:"<number>";inherits:true;initial-value:0}`).join("") +
+  ".pga-cycle{--pga-on:0;--pgah:0;transition:none}" +
+  `[data-lab-returning="playground"] .pga-cycle{transition:--pgah 0ms linear ${PG_RETURN_HOLD}ms}` +
+  `${PG_ON} .pga-cycle{--pga-on:1;--pgah:1;transition:--pga-on ${PG_SCREEN_ON_MS}ms var(--ease-glow) calc(var(--arrive-now) + ${GAME_DELAY_MS}ms),--pgah 0ms linear calc(var(--arrive-now) + ${GAME_DELAY_MS + PG_SCREEN_ON_MS}ms)}` +
+  `${PG_SCREEN}{--pga:max(var(--pga-on),var(--pgah));opacity:var(--pga);transition:--pga 340ms var(--ease-camera-out)}` +
+  // Over ACTIVATION_CSS's hovered rule (one class more). Follows at once; naming the property lets a fade in progress finish.
+  `${PG_ON} ${PG_SCREEN}{opacity:var(--pga);transition:--pga 0s}` +
+  "@media (prefers-reduced-motion: reduce){.pga-cycle{transition:none!important}}";
 const PG_POWER_CSS =
-  ".lab-v2-power-lit{opacity:0;transition:opacity 240ms var(--ease-glow) 160ms}" +
-  ':is([data-lab-hover="playground"],[data-lab-selected="playground"]) .lab-v2-power-lit{opacity:1;transition:opacity 260ms var(--ease-glow) var(--arrive-now)}';
+  ["--pgl-on", "--pglh", "--pgl"].map((v) => `@property ${v}{syntax:"<number>";inherits:true;initial-value:0}`).join("") +
+  ".pg-cycle{--pgl-on:0;--pglh:0;transition:none}" +
+  `[data-lab-returning="playground"] .pg-cycle{transition:--pglh 0ms linear ${PG_RETURN_HOLD}ms}` +
+  `${PG_ON} .pg-cycle{--pgl-on:1;--pglh:1;transition:--pgl-on 260ms var(--ease-glow) var(--arrive-now),--pglh 0ms linear calc(var(--arrive-now) + 260ms)}` +
+  ":is(.lab-v2-power-lit,.lab-v2-strip-off){--pgl:max(var(--pgl-on),var(--pglh));transition:--pgl 240ms var(--ease-glow) 160ms}" +
+  // Follows at once; naming the property (not `none`) lets a run-back in progress finish.
+  `${PG_ON} :is(.lab-v2-power-lit,.lab-v2-strip-off){transition:--pgl 0s}` +
+  ".lab-v2-power-lit{opacity:var(--pgl)}.lab-v2-strip-off{opacity:calc(1 - var(--pgl))}" +
+  `@media (prefers-reduced-motion: reduce){.pg-cycle{transition:none!important}${PG_ON} :is(.lab-v2-power-lit,.lab-v2-strip-off){transition:--pgl 260ms var(--ease-glow)}}` +
+  PG_SCREEN_CSS;
 
 /**
  * M1.4G: Playground's reflection, on the floor under the station. A point h px
@@ -153,8 +203,11 @@ function PlaygroundReflection() {
       >
         <FloorLayer src={`${M14G1}/playground-reflection.png`} name="playground-reflection" />
         {/* plus-lighter on the fading span itself (its opacity isolates it), so it adds to the rest reflection */}
-        <span className="lab-v2-power-lit absolute inset-0" style={{ mixBlendMode: "plus-lighter" }}>
-          <FloorLayer src={`${M14G1}/playground-reflection-lit.png`} name="playground-reflection-lit" />
+        {/* M1.4K.7: the light's cycle (PG_POWER_CSS) without a box: .lab-depth already transitions --lp. */}
+        <span className="pg-cycle contents">
+          <span className="lab-v2-power-lit absolute inset-0" style={{ mixBlendMode: "plus-lighter" }}>
+            <FloorLayer src={`${M14G1}/playground-reflection-lit.png`} name="playground-reflection-lit" />
+          </span>
         </span>
       </div>
     </>
@@ -167,7 +220,7 @@ function PlaygroundReflection() {
  */
 function PlaygroundRing() {
   return (
-    <div aria-hidden="true" data-zone="playground" data-v2-ring="playground" className="pointer-events-none absolute inset-0">
+    <div aria-hidden="true" data-zone="playground" data-v2-ring="playground" className="pg-cycle pointer-events-none absolute inset-0">
       <FloorLayer src={`${M14G1}/playground-ring.png`} name="playground-ring" blend="plus-lighter" />
       <span className="lab-v2-power-lit absolute inset-0" style={{ mixBlendMode: "plus-lighter" }}>
         <FloorLayer src={`${M14G1}/playground-ring-lit.png`} name="playground-ring-lit" />
@@ -279,12 +332,10 @@ function PlaygroundGround({ lite = false }: { lite?: boolean }) {
  * station asset itself), over the lit strips; they fade out only once the
  * energy has arrived (--arrive-now, set on the lift wrapper), so the order is
  * A -> spark -> line charges -> strips light -> station rises. On leave the
- * station lowers first, then the strips go dark.
+ * station lowers first, then the strips go dark. M1.4K.7: their timing is
+ * the ring's (--pgl, PG_POWER_CSS).
  */
 const PG_STRIP_OFF = "/scene/v2/m14e1/playground-strip-off.png";
-const PG_STRIP_CSS =
-  ".lab-v2-strip-off{opacity:1;transition:opacity 240ms var(--ease-glow) 160ms}" +
-  ':is([data-lab-hover="playground"],[data-lab-selected="playground"]) .lab-v2-strip-off{opacity:0;transition:opacity 260ms var(--ease-glow) var(--arrive-now)}';
 
 /**
  * M1.4K.4 lite mode (/lab-v2?render=lite): Playground answers as with reduced motion, whatever the preference: it
@@ -294,8 +345,10 @@ const PG_STRIP_CSS =
 const PG_LITE_CSS =
   `.lab-lift[data-lift="playground"]{transform:none!important}` +
   `.lab-depth[data-depth="playground"]{--lp:0!important;transition:none!important}` +
-  `:is(.lab-v2-strip-off,.lab-v2-power-lit){transition-duration:150ms!important;transition-delay:0ms!important}` +
-  `.lab-arcade[data-arcade="playground"]{transition:opacity 150ms ease!important}`;
+  // M1.4K.7: the light's number (PG_POWER_CSS) follows at once and cross-fades both ways, as the opacity did.
+  `.pg-cycle{transition:none!important}:is(.lab-v2-strip-off,.lab-v2-power-lit){transition:--pgl 150ms var(--ease-glow)!important}` +
+  // M1.4K.9: the screen's number (PG_SCREEN_CSS) follows at once; its opacity keeps this cross-fade.
+  `.pga-cycle{transition:none!important}.lab-arcade[data-arcade="playground"]{transition:opacity 150ms ease!important}`;
 
 /**
  * M1.4K.4 / M1.4K.5A `lite`: all five stations in lite mode (each station's own lite CSS, and PG_LITE_CSS).
@@ -351,11 +404,16 @@ export function SceneV2({ floorTone = false, lite = false }: { floorTone?: boole
             style={{ transformOrigin: `${u(o.base.cx)} ${u(o.base.bottom)}` }}
           >
             <Layer o={o} />
-            <style>{PG_STRIP_CSS}</style>
-            {/* eslint-disable-next-line @next/next/no-img-element -- the station's own frame, placed like the station */}
-            <img src={PG_STRIP_OFF} alt="" draggable={false} data-gate="" className="lab-v2-strip-off absolute max-w-none select-none" style={place(o)} />
+            {/* M1.4K.7: the strips' cycle (PG_POWER_CSS) without a box: the lift itself transitions its transform. */}
+            <span className="pg-cycle contents">
+              {/* eslint-disable-next-line @next/next/no-img-element -- the station's own frame, placed like the station */}
+              <img src={PG_STRIP_OFF} alt="" draggable={false} data-gate="" className="lab-v2-strip-off absolute max-w-none select-none" style={place(o)} />
+            </span>
             <div aria-hidden="true" data-zone="playground" className="lab-activation pointer-events-none absolute inset-0">
-              <ArcadeScreen id="playground" quad={V2_PLAYGROUND_SCREEN} box={FRAME} still={lite} />
+              {/* M1.4K.9: the screen light's cycle (PG_SCREEN_CSS) without a box. */}
+              <span className="pga-cycle contents">
+                <ArcadeScreen id="playground" quad={V2_PLAYGROUND_SCREEN} box={FRAME} still={lite} />
+              </span>
             </div>
           </div>
         ) : o.id === "engineering" ? (

@@ -1,5 +1,19 @@
 # M1.4K: defects
 
+## Status (2026-11-26, after M1.4K.6–M1.4K.10)
+
+| Defect | Status | Record |
+|---|---|---|
+| **D1** (P2): Playground's ring and strip lit before the new spark on a quick return | **Fixed** (M1.4K.7): two-number cycle as the other stations' (`SceneV2.tsx`). Reproduced on the RTX 4060 first, then: lit at the new arrival 15 of 16 → **0 of 16** | `PLAYGROUND-D1-FIX.md` |
+| **D1′**: Playground's lift restarting before the new spark | **Closed: not reproduced** on the RTX 4060 (0 of 28; the spark starts within one frame). Office GPU timing | `HOME-VERIFICATION.md` §4 |
+| **D2** (P3): AZIZ chip sliding from under the pointer while Playground sinks | **Accepted as a documented P3.** Not reproduced on the RTX 4060 (54 of 54): there the platform is already low when the pointer arrives. Remains possible with a slow GPU's late frames; clicking again works | `HOME-VERIFICATION.md` §4 |
+| Arcade screen lit on a quick return while the ring and strip are dark (found after D1) | **Fixed** (M1.4K.9): dark until the new spark, same game continues | `PLAYGROUND-SCREEN-LIGHTING.md` |
+| Engineering "powered but not lifted" on a quick return (M1.4K.7 caveat) | **Closed: test false positive** (M1.4K.8). `k3-switching`'s end check corrected; no application change | `ENGINEERING-QUICK-RETURN.md` |
+
+The text below is the review's original record (office computer), kept as it was.
+
+---
+
 Two confirmed defects, both Playground's. **No P0 or P1.** Application code was not changed.
 
 Reproduced on the office computer (Chrome 158, AMD Radeon HD 5450, 1648 × 928, dev server on :3002). Both still have to be confirmed on the RTX 4060 (commands below). Scripts and data are in `work/` and `work/results/`.

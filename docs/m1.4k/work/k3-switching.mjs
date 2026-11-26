@@ -5,12 +5,17 @@ const only = process.argv[2]?.split(",");
 const L = await lab();
 const res = { runs: [] };
 const stable = (id, ms = 6000) => L.settle((s) => s.hover === id && POWERED[id](s[id]) && IDS.filter((o) => o !== id).every((o) => REST[o](s[o])), ms);
+// M1.4K.8: the end check also waits for the height. POWERED leaves it out, and a return early in the descent can still
+// read as powered (the previous visit not yet run back), so the height used to be read before the new arrival had
+// raised the station again: a false "heights" flag (ENGINEERING-QUICK-RETURN.md). A lift that never arrives still fails.
+const raised = async (id, ms = 6000) => { for (let t = 0; t < ms; t += 50) { if (Math.abs((await L.st())[id].y - HEIGHT[id]) < 0.25) return true; await sleep(50); } return false; };
+const settled = async (id) => (await stable(id)) && (await raised(id));
 const run = async (group, name, fn, finalId, sparks) => {
   if (only && !only.includes(group)) return;
   const clean = await L.rest();
   await L.start();
   await fn();
-  const ok = finalId ? await stable(finalId) : true;
+  const ok = finalId ? await settled(finalId) : true;
   await sleep(finalId ? 350 : 0);
   const s = await L.st();
   const yEnd = Object.fromEntries(IDS.map((o) => [o, s[o].y]));

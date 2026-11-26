@@ -1,0 +1,7 @@
+{"round":0,"to":"Lite","radioMs":13,"sceneMs":296,"search":"?render=lite","frames":108,"fps":58.9,"p95Ms":17,"maxMs":33.7,"over50":0,"over100":0}
+{"round":0,"to":"Cinematic","radioMs":15,"sceneMs":149,"search":"","frames":98,"fps":57.6,"p95Ms":16.8,"maxMs":49.8,"over50":0,"over100":0}
+{"round":1,"to":"Lite","radioMs":15,"sceneMs":115,"search":"?render=lite","frames":98,"fps":60,"p95Ms":16.9,"maxMs":17,"over50":0,"over100":0}
+{"round":1,"to":"Cinematic","radioMs":13,"sceneMs":180,"search":"","frames":98,"fps":57.6,"p95Ms":16.9,"maxMs":33.5,"over50":0,"over100":0}
+{"round":2,"to":"Lite","radioMs":15,"sceneMs":115,"search":"?render=lite","frames":96,"fps":57.6,"p95Ms":17,"maxMs":66.7,"over50":1,"over100":0}
+{"round":2,"to":"Cinematic","radioMs":12,"sceneMs":162,"search":"","frames":101,"fps":59.4,"p95Ms":16.8,"maxMs":33.3,"over50":0,"over100":0}
+errors []

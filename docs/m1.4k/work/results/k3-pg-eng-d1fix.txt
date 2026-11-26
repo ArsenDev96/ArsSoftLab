@@ -1,0 +1,4 @@
+!! reenter engineering (stable) -> empty, back 110 ms after the drop {"clean":true,"ok":true,"heights":false,"back":true,"sparks":2,"visits":2,"yEnd":{"engineering":0,"educational":0,"playground":0,"creative":0,"experience":0},"bad":[],"note":{"maxNotRest":1,"sparksAtOnce":1,"inactiveOnceFrames":{},"inactiveOnceMax":{},"lag":[0,16.6],"oneFrame":0,"step":10.9,"longest":17}}
+pairs runs 8 flagged 0 | most stations not at rest at once 1 sparks at once 2 | largest step %/60Hz frame 10.9 longest frame 167 | one-shot light on an inactive station (frames, max) {"engineering":[6,1]} | spark clock after the hover, ms: max 17
+reenter runs 10 flagged 1 | most stations not at rest at once 1 sparks at once 2 | largest step %/60Hz frame 10.9 longest frame 50 | one-shot light on an inactive station (frames, max) {} | spark clock after the hover, ms: max 16.9
+errors []

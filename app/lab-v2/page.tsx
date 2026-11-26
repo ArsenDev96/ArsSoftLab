@@ -24,10 +24,11 @@ type SearchParams = Promise<Record<string, string | string[] | undefined>>;
 export default async function LabV2Page({ searchParams }: { searchParams: SearchParams }) {
   const query = await searchParams;
   const initial = resolveLabLocation(query[STATION_PARAM], query[PROJECT_PARAM]);
-  // M1.4G (optional, until reviewed): `?floor=approved` tones the v2 floor towards the approved atmosphere.
-  const floorTone = query.floor === "approved";
   // M1.4K.4 (prototype): `?render=lite` is a lighter rendering for software compositing and weak GPUs. Full is the default.
   const lite = query.render === "lite";
+  // M1.4G's floor tone (towards the approved atmosphere). M1.4K.10: approved as Cinematic's default; Lite keeps the
+  // untoned floor. `?floor=approved` / `?floor=original` choose either explicitly, in both modes.
+  const floorTone = query.floor === "approved" ? true : query.floor === "original" ? false : !lite;
 
   return (
     <>

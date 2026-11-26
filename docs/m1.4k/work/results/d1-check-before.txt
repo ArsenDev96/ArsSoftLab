@@ -1,0 +1,13 @@
+ -60 ms 1 frame | ring at return 0 last 200 ms 0 at arrival 0 rise 0 | strip 0 / 0 / 0 / 0 | arcade 0 / 0 / 0 / 0 | half 200 full 383 | lift rose 0 end 17.999 | ok
+ -60 ms 150 ms  | ring at return 0 last 200 ms 0 at arrival 0 rise 0 | strip 0 / 0 / 0 / 0 | arcade 0 / 0 / 0 / 0 | half 84 full 234 | lift rose 0 end 17.999 | ok
+   0 ms 1 frame | ring at return 0 last 200 ms 0 at arrival 0 rise 0 | strip 0 / 0 / 0 / 0 | arcade 0 / 0 / 0 / 0 | half 50 full 200 | lift rose 0 end 17.999 | ok
+   0 ms 150 ms  | ring at return 0 last 200 ms 0 at arrival 0 rise 0 | strip 0 / 0 / 0 / 0 | arcade 0 / 0 / 0 / 0 | half 83 full 233 | lift rose 0 end 17.999 | ok
+  40 ms 1 frame | ring at return 0.152 last 200 ms 0.152 at arrival 0.152 rise 0 | strip 0.152 / 0.152 / 0.152 / 0 | arcade 0 / 0 / 0 / 0 | half 33 full 167 | lift rose 0 end 17.999 | FLAG
+  40 ms 150 ms  | ring at return 0.111 last 200 ms 0.111 at arrival 0.111 rise 0 | strip 0.111 / 0.111 / 0.111 / 0 | arcade 0 / 0 / 0 / 0 | half 33 full 167 | lift rose 0 end 17.999 | FLAG
+  80 ms 1 frame | ring at return 0.591 last 200 ms 0.591 at arrival 0.591 rise 0 | strip 0.591 / 0.591 / 0.591 / 0 | arcade 0.267 / 0.267 / 0.267 / 0 | half -16 full 67 | lift rose 0 end 17.999 | FLAG
+  80 ms 150 ms  | ring at return 0.589 last 200 ms 0.589 at arrival 0.589 rise 0 | strip 0.589 / 0.589 / 0.589 / 0 | arcade 0 / 0 / 0 / 0 | half -16 full 67 | lift rose 0 end 17.999 | FLAG
+ 150 ms 1 frame | ring at return 0.921 last 200 ms 0.921 at arrival 0.921 rise 0.001 | strip 0.921 / 0.921 / 0.921 / 0 | arcade 0.938 / 0.938 / 0.938 / 0 | half -16 full -16 | lift rose 0 end 17.999 | FLAG
+ 150 ms 150 ms  | ring at return 0.868 last 200 ms 0.868 at arrival 0.868 rise 0 | strip 0.868 / 0.868 / 0.868 / 0 | arcade 0.199 / 0.199 / 0.199 / 0 | half -17 full 0 | lift rose 0 end 17.999 | FLAG
+ 300 ms 1 frame | ring at return 1 last 200 ms 1 at arrival 1 rise 0 | strip 1 / 1 / 1 / 0 | arcade 1 / 1 / 1 / 0 | half -17 full -17 | lift rose 0 end 17.999 | FLAG
+ 300 ms 150 ms  | ring at return 1 last 200 ms 1 at arrival 1 rise 0 | strip 1 / 1 / 1 / 0 | arcade 0.614 / 0.614 / 0.614 / 0 | half -16 full -16 | lift rose 0 end 17.999 | FLAG
+before: 4 of 12 ok | ring or strip lit in the last 200 ms: 8 | arcade lit in the last 200 ms: 5 | errors []

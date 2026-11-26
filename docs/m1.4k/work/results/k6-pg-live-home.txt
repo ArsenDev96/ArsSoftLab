@@ -1,0 +1,7 @@
+press 0 ms after arriving, left end: 9 of 9 opened AZIZ | chip moved max 4.04 px | not under the pointer at the press 0
+press 0 ms after arriving, centre: 9 of 9 opened AZIZ | chip moved max 4.03 px | not under the pointer at the press 0
+press 30 ms after arriving, left end: 9 of 9 opened AZIZ | chip moved max 2.13 px | not under the pointer at the press 0
+press 30 ms after arriving, centre: 9 of 9 opened AZIZ | chip moved max 4.04 px | not under the pointer at the press 0
+press 150 ms after arriving, left end: 9 of 9 opened AZIZ | chip moved max 4.04 px | not under the pointer at the press 0
+press 150 ms after arriving, centre: 9 of 9 opened AZIZ | chip moved max 4.04 px | not under the pointer at the press 0
+errors []

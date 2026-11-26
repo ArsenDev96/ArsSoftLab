@@ -1,0 +1,35 @@
+{"id":"playground","x":0,"gap":"1 frame","spark2Lag":17,"lightAtDrop":0.05,"light50":200,"light90":200,"lightAtArrival":0,"liftStart":17,"returnAt":-667,"early":false}
+{"id":"playground","x":0,"gap":"50 ms","spark2Lag":17,"lightAtDrop":0,"light50":83,"light90":167,"lightAtArrival":0,"liftStart":17,"returnAt":-667,"early":false}
+{"id":"playground","x":40,"gap":"1 frame","spark2Lag":17,"lightAtDrop":0.3,"light50":84,"light90":167,"lightAtArrival":0,"liftStart":17,"returnAt":-667,"early":false}
+{"id":"playground","x":40,"gap":"50 ms","spark2Lag":17,"lightAtDrop":0.31,"light50":84,"light90":167,"lightAtArrival":0,"liftStart":17,"returnAt":-667,"early":false}
+{"id":"playground","x":80,"gap":"1 frame","spark2Lag":17,"lightAtDrop":0.59,"light50":-667,"light90":167,"lightAtArrival":0,"liftStart":-17,"returnAt":-667,"early":false}
+{"id":"playground","x":80,"gap":"50 ms","spark2Lag":17,"lightAtDrop":0.59,"light50":-667,"light90":167,"lightAtArrival":0,"liftStart":17,"returnAt":-667,"early":false}
+{"id":"playground","x":150,"gap":"1 frame","spark2Lag":16,"lightAtDrop":0.92,"light50":-666,"light90":-666,"lightAtArrival":0,"liftStart":-666,"returnAt":-666,"early":true}
+{"id":"playground","x":150,"gap":"50 ms","spark2Lag":17,"lightAtDrop":0.88,"light50":-667,"light90":167,"lightAtArrival":0,"liftStart":-667,"returnAt":-667,"early":false}
+{"id":"creative","x":0,"gap":"1 frame","spark2Lag":0,"lightAtDrop":0,"light50":160,"light90":160,"lightAtArrival":0,"liftStart":143,"returnAt":-640,"early":false}
+{"id":"creative","x":0,"gap":"50 ms","spark2Lag":0,"lightAtDrop":0,"light50":160,"light90":160,"lightAtArrival":0,"liftStart":127,"returnAt":-640,"early":false}
+{"id":"creative","x":40,"gap":"1 frame","spark2Lag":0,"lightAtDrop":0,"light50":160,"light90":160,"lightAtArrival":0,"liftStart":127,"returnAt":-640,"early":false}
+{"id":"creative","x":40,"gap":"50 ms","spark2Lag":0,"lightAtDrop":0,"light50":160,"light90":160,"lightAtArrival":0,"liftStart":127,"returnAt":-640,"early":false}
+{"id":"creative","x":80,"gap":"1 frame","spark2Lag":0,"lightAtDrop":0,"light50":160,"light90":160,"lightAtArrival":0,"liftStart":127,"returnAt":-640,"early":false}
+{"id":"creative","x":80,"gap":"50 ms","spark2Lag":0,"lightAtDrop":0,"light50":160,"light90":160,"lightAtArrival":0,"liftStart":126,"returnAt":-640,"early":false}
+{"id":"creative","x":150,"gap":"1 frame","spark2Lag":0,"lightAtDrop":0,"light50":160,"light90":160,"lightAtArrival":0,"liftStart":-640,"returnAt":-640,"early":false}
+{"id":"creative","x":150,"gap":"50 ms","spark2Lag":0,"lightAtDrop":0,"light50":160,"light90":160,"lightAtArrival":0,"liftStart":-640,"returnAt":-640,"early":false}
+{"id":"playground","x":0,"gap":"1 frame","spark2Lag":17,"lightAtDrop":0,"light50":83,"light90":167,"lightAtArrival":0,"liftStart":17,"returnAt":-667,"early":false}
+{"id":"playground","x":0,"gap":"50 ms","spark2Lag":17,"lightAtDrop":0,"light50":83,"light90":166,"lightAtArrival":0,"liftStart":17,"returnAt":-667,"early":false}
+{"id":"playground","x":40,"gap":"1 frame","spark2Lag":17,"lightAtDrop":0.3,"light50":83,"light90":167,"lightAtArrival":0,"liftStart":17,"returnAt":-667,"early":false}
+{"id":"playground","x":40,"gap":"50 ms","spark2Lag":17,"lightAtDrop":0.3,"light50":83,"light90":167,"lightAtArrival":0,"liftStart":17,"returnAt":-667,"early":false}
+{"id":"playground","x":80,"gap":"1 frame","spark2Lag":17,"lightAtDrop":0.69,"light50":-667,"light90":167,"lightAtArrival":0,"liftStart":-667,"returnAt":-667,"early":false}
+{"id":"playground","x":80,"gap":"50 ms","spark2Lag":17,"lightAtDrop":0.59,"light50":-667,"light90":167,"lightAtArrival":0,"liftStart":17,"returnAt":-667,"early":false}
+{"id":"playground","x":150,"gap":"1 frame","spark2Lag":16,"lightAtDrop":0.88,"light50":-666,"light90":167,"lightAtArrival":0,"liftStart":-666,"returnAt":-666,"early":false}
+{"id":"playground","x":150,"gap":"50 ms","spark2Lag":17,"lightAtDrop":0.88,"light50":-667,"light90":167,"lightAtArrival":0,"liftStart":-667,"returnAt":-667,"early":false}
+{"id":"creative","x":0,"gap":"1 frame","spark2Lag":0,"lightAtDrop":0,"light50":160,"light90":160,"lightAtArrival":0,"liftStart":127,"returnAt":-640,"early":false}
+{"id":"creative","x":0,"gap":"50 ms","spark2Lag":0,"lightAtDrop":0,"light50":160,"light90":160,"lightAtArrival":0,"liftStart":127,"returnAt":-640,"early":false}
+{"id":"creative","x":40,"gap":"1 frame","spark2Lag":0,"lightAtDrop":0,"light50":160,"light90":160,"lightAtArrival":0,"liftStart":126,"returnAt":-640,"early":false}
+{"id":"creative","x":40,"gap":"50 ms","spark2Lag":0,"lightAtDrop":0,"light50":160,"light90":160,"lightAtArrival":0,"liftStart":127,"returnAt":-640,"early":false}
+{"id":"creative","x":80,"gap":"1 frame","spark2Lag":0,"lightAtDrop":0,"light50":160,"light90":160,"lightAtArrival":0,"liftStart":126,"returnAt":-640,"early":false}
+{"id":"creative","x":80,"gap":"50 ms","spark2Lag":0,"lightAtDrop":0,"light50":160,"light90":160,"lightAtArrival":0,"liftStart":126,"returnAt":-640,"early":false}
+{"id":"creative","x":150,"gap":"1 frame","spark2Lag":0,"lightAtDrop":0,"light50":160,"light90":160,"lightAtArrival":0,"liftStart":-640,"returnAt":-640,"early":false}
+{"id":"creative","x":150,"gap":"50 ms","spark2Lag":0,"lightAtDrop":0,"light50":160,"light90":160,"lightAtArrival":0,"liftStart":-640,"returnAt":-640,"early":false}
+playground runs 16 light at 90 % before the new spark 1 | median light at arrival 0 | lift started before it 5
+creative runs 16 light at 90 % before the new spark 0 | median light at arrival 0 | lift started before it 4
+errors []

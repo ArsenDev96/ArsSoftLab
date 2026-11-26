@@ -1,0 +1,13 @@
+ -60 ms 1 frame | ring at return 0 last 200 ms 0 at arrival 0 rise 0 | strip 0 / 0 / 0 / 0 | arcade 0 / 0 / 0 / 0 | half 217 full 233 | lift rose 0 end 17.999 | ok
+ -60 ms 150 ms  | ring at return 0 last 200 ms 0 at arrival 0 rise 0 | strip 0 / 0 / 0 / 0 | arcade 0 / 0 / 0 / 0 | half 83 full 233 | lift rose 0 end 17.999 | ok
+   0 ms 1 frame | ring at return 0 last 200 ms 0 at arrival 0 rise 0 | strip 0 / 0 / 0 / 0 | arcade 0 / 0 / 0 / 0 | half 83 full 233 | lift rose 0 end 17.999 | ok
+   0 ms 150 ms  | ring at return 0.049 last 200 ms 0 at arrival 0 rise 0 | strip 0.049 / 0 / 0 / 0 | arcade 0 / 0 / 0 / 0 | half 83 full 233 | lift rose 0 end 17.999 | ok
+  40 ms 1 frame | ring at return 0.306 last 200 ms 0 at arrival 0 rise 0 | strip 0.306 / 0 / 0 / 0 | arcade 0.001 / 0 / 0 / 0 | half 83 full 233 | lift rose 0 end 17.999 | ok
+  40 ms 150 ms  | ring at return 0.155 last 200 ms 0 at arrival 0 rise 0 | strip 0.155 / 0 / 0 / 0 | arcade 0 / 0 / 0 / 0 | half 83 full 233 | lift rose 0 end 17.999 | ok
+  80 ms 1 frame | ring at return 0.589 last 200 ms 0 at arrival 0 rise 0 | strip 0.589 / 0 / 0 / 0 | arcade 0.342 / 0 / 0 / 0 | half 83 full 233 | lift rose 0 end 17.999 | ok
+  80 ms 150 ms  | ring at return 0.588 last 200 ms 0 at arrival 0 rise 0 | strip 0.588 / 0 / 0 / 0 | arcade 0.129 / 0 / 0 / 0 | half 83 full 233 | lift rose 0 end 17.999 | ok
+ 150 ms 1 frame | ring at return 0.921 last 200 ms 0 at arrival 0 rise 0 | strip 0.921 / 0 / 0 / 0 | arcade 0.954 / 0 / 0 / 0 | half 83 full 233 | lift rose 0 end 17.999 | ok
+ 150 ms 150 ms  | ring at return 0.883 last 200 ms 0 at arrival 0 rise 0 | strip 0.883 / 0 / 0 / 0 | arcade 0.344 / 0 / 0 / 0 | half 83 full 233 | lift rose 0 end 17.999 | ok
+ 300 ms 1 frame | ring at return 1 last 200 ms 0 at arrival 0 rise 0 | strip 1 / 0 / 0 / 0 | arcade 0.996 / 0 / 0 / 0 | half 83 full 233 | lift rose 0 end 17.999 | ok
+ 300 ms 150 ms  | ring at return 0.985 last 200 ms 0 at arrival 0 rise 0 | strip 0.985 / 0 / 0 / 0 | arcade 0.286 / 0 / 0 / 0 | half 83 full 233 | lift rose 0 end 17.999 | ok
+m149: 12 of 12 ok | ring or strip lit in the last 200 ms: 0 | arcade lit in the last 200 ms: 0 | errors []
