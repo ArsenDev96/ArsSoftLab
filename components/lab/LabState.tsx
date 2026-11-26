@@ -199,21 +199,43 @@ export function LabStateProvider({ children, initial = LAB_HOME }: { children: R
     return () => Object.values(timers).forEach((t) => window.clearTimeout(t));
   }, []);
 
+  // M1.4L.2: the selection the address bar showed when the provider mounted,
+  // while the state has not caught up with it yet (see below).
+  const adopting = useRef<LabLocation | null>(null);
+
   // URL → state: tidy the address on load, follow Back / Forward.
+  //
+  // On mount the address bar wins (M1.4L.2). `initial` comes from the URL the
+  // page was rendered for, so normally they agree. They differ when the
+  // router mounts the lab from a cached render after browser Back from
+  // another route (the lab's own pushState entries carry the render of the
+  // URL the page was loaded at): the state then adopts the address, and
+  // nothing is pushed until it has.
   useEffect(() => {
     canonicalizeUrl();
+    const loc = locationFromSearch(window.location.search);
+    if (!sameLocation(loc, { station: sel.station, project: sel.project })) {
+      adopting.current = loc;
+      dispatch({ type: "restore", ...loc });
+    }
     const onPop = () => {
       canonicalizeUrl();
       dispatch({ type: "restore", ...locationFromSearch(window.location.search) });
     };
     window.addEventListener("popstate", onPop);
     return () => window.removeEventListener("popstate", onPop);
+    // Mount only: `sel` here is the initial selection.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // State → URL: one entry per selection the address bar doesn't show yet.
   // Initial and restored selections already match it, so they push nothing.
   useEffect(() => {
     const want = { station: sel.station, project: sel.project };
+    if (adopting.current) {
+      if (!sameLocation(adopting.current, want)) return;
+      adopting.current = null;
+    }
     const { pathname, search } = window.location;
     if (sameLocation(locationFromSearch(search), want)) return;
     window.history.pushState(null, "", pathname + labSearch(want, search));

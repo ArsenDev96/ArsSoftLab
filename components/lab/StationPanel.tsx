@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { Fragment, useEffect, useRef, useState } from "react";
 import { getProject, projectSummary, type ProjectId } from "@/data/projects";
 import { getZone, type ZoneId } from "@/data/zones";
@@ -13,7 +14,14 @@ import { stationPanelId, useLabState } from "./LabState";
  * the heading rather than floating over the scene. Every station has one;
  * only the selected station's panel is visible (the others are inert).
  */
-export function StationPanel({ zoneId }: { zoneId: ZoneId }) {
+export function StationPanel({
+  zoneId,
+  projectPages,
+}: {
+  zoneId: ZoneId;
+  /** M1.4L.2 (`/lab-v2` only): "Open project" destinations of projects that have a page. */
+  projectPages?: Partial<Record<ProjectId, string>>;
+}) {
   const { station, project, toggleProject, backToLab } = useLabState();
   const zone = getZone(zoneId);
   const open = station === zoneId;
@@ -86,7 +94,7 @@ export function StationPanel({ zoneId }: { zoneId: ZoneId }) {
             </Fragment>
           ))}
         </ul>
-        {selected ? <OpenProject key={selected} id={selected} /> : null}
+        {selected ? <OpenProject key={selected} id={selected} page={projectPages?.[selected]} /> : null}
       </div>
 
       <div id={detailId}>
@@ -140,8 +148,11 @@ export function StationPanel({ zoneId }: { zoneId: ZoneId }) {
  * plainly instead of linking anywhere: it stays focusable (aria-disabled,
  * not disabled) so the "coming soon" state can be discovered, and
  * activating it repeats that in words.
+ *
+ * `page` (M1.4L.2, `/lab-v2` only): the project's page in this app, opened
+ * with a client-side navigation (Next.js Link).
  */
-function OpenProject({ id }: { id: ProjectId }) {
+function OpenProject({ id, page }: { id: ProjectId; page?: string }) {
   const project = getProject(id);
   const [notice, setNotice] = useState("");
   const soonId = `project-${id}-soon`;
@@ -168,7 +179,16 @@ function OpenProject({ id }: { id: ProjectId }) {
   return (
     <div data-open-row={id} className="lab-project-detail flex items-center" style={{ gap: u(8) }}>
       <span aria-hidden="true" className="block bg-white/20" style={{ width: 1, height: u(14), marginRight: u(4) }} />
-      {project.href ? (
+      {page ? (
+        <Link
+          href={page}
+          data-open-project={id}
+          className="lab-transition pointer-events-auto flex items-center rounded-md whitespace-nowrap text-amber-glow hover:text-lab-text"
+          style={style}
+        >
+          {label}
+        </Link>
+      ) : project.href ? (
         <a href={project.href} className="lab-transition pointer-events-auto flex items-center rounded-md whitespace-nowrap text-amber-glow hover:text-lab-text" style={style}>
           {label}
         </a>

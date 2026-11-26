@@ -1,3 +1,4 @@
+import type { ProjectId } from "@/data/projects";
 import { HERO } from "@/data/site";
 import { u } from "@/lib/scene";
 import { HeroRule } from "./HeroRule";
@@ -11,8 +12,12 @@ import { StationPanel } from "./StationPanel";
  * is selected, the heading block fades out and that station's info fades in
  * at the same position (see .lab-hero-heading / .lab-station-info). The
  * eyebrow stays.
+ *
+ * `projectPages` (M1.4L.2, `/lab-v2` only): projects whose "Open project"
+ * links to a page. Without it (the homepage) every project keeps its own
+ * `href`, and "Coming soon" where it has none.
  */
-export function LabHero() {
+export function LabHero({ projectPages }: { projectPages?: Partial<Record<ProjectId, string>> } = {}) {
   return (
     <section
       id="lab-intro"
@@ -62,7 +67,8 @@ export function LabHero() {
         </div>
 
         {LAB_ZONES.map((zone) => (
-          <StationPanel key={zone.id} zoneId={zone.id} />
+          // Passed only when set, so the homepage's server payload stays exactly as before.
+          <StationPanel key={zone.id} zoneId={zone.id} {...(projectPages ? { projectPages } : null)} />
         ))}
       </div>
     </section>

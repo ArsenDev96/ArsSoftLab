@@ -1,0 +1,14 @@
+PASS  select Engineering: one entry  ({"url":"/?station=engineering","len":3,"open":"engineering","project":null})
+PASS  select SQLOrbit: one entry  ({"url":"/?station=engineering&project=sqlorbit","len":4,"open":"engineering","project":"SQLOrbit"})
+PASS  Back: station only, no entry added  ({"url":"/?station=engineering","len":4,"open":"engineering","project":null})
+PASS  Back: the lab  ({"url":"/","len":4,"open":null,"project":null})
+PASS  Forward: station  ({"url":"/?station=engineering","len":4,"open":"engineering","project":null})
+PASS  Forward: station and project  ({"url":"/?station=engineering&project=sqlorbit","len":4,"open":"engineering","project":"SQLOrbit"})
+PASS  deep link: selected, nothing pushed on load  ({"url":"/?station=engineering&project=sqlorbit","len":4,"open":"engineering","project":"SQLOrbit"})
+PASS  Escape: back to the lab, one entry  ({"url":"/","len":5,"open":null,"project":null})
+PASS  Back: the deep link again  ({"url":"/?station=engineering&project=sqlorbit","len":5,"open":"engineering","project":"SQLOrbit"})
+PASS  Forward: the lab  ({"url":"/","len":5,"open":null,"project":null})
+PASS  no project-page links on /  ({"links":0})
+PASS  no console errors or exceptions
+
+12 passed, 0 failed

@@ -51,6 +51,11 @@ body {
   overflow: hidden;
 }
 
+/* M1.4L.2: a project page scrolls; the lab itself stays one fixed screen. */
+body:has([data-project-page]) {
+  overflow-y: auto;
+}
+
 @layer base {
   :focus-visible {
     outline: 2px solid var(--color-amber-glow);

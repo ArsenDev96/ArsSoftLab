@@ -6,6 +6,7 @@ import { LabStateProvider } from "@/components/lab/LabState";
 import { RenderModeSelector } from "@/components/lab/RenderModeSelector";
 import { SiteHeader } from "@/components/ui/SiteHeader";
 import { PROJECT_PARAM, resolveLabLocation, STATION_PARAM } from "@/lib/lab-url";
+import { labV2ProjectPages, labViewQuery } from "@/lib/lab-v2-pages";
 
 /** M1.4D: experimental, not linked from anywhere and not indexed. */
 export const metadata: Metadata = {
@@ -43,7 +44,8 @@ export default async function LabV2Page({ searchParams }: { searchParams: Search
       <main className="relative h-svh w-full overflow-hidden bg-lab-ink">
         <LabStateProvider initial={initial}>
           <LabScene variant="v2" floorTone={floorTone} lite={lite} />
-          <LabHero />
+          {/* M1.4L.2: "Open project" links to the projects that have a page; the view parameters go with it. */}
+          <LabHero projectPages={labV2ProjectPages(labViewQuery(query))} />
           <ExploreCue />
         </LabStateProvider>
       </main>

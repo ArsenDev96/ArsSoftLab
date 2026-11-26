@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
-import { NAV_ITEMS, SITE, type NavIconName } from "@/data/site";
+import { NAV_ITEMS, SITE, type NavIconName, type NavItem } from "@/data/site";
 import { u } from "@/lib/scene";
 import { Monogram } from "./Monogram";
 import { SearchTrigger } from "./SearchTrigger";
@@ -16,8 +16,17 @@ const NAV_ICONS: Record<NavIconName, typeof HomeIcon> = {
 /**
  * Positions are reference pixels; see reference/approved-lab-design.png.
  * `utilities` (M1.4K.5B, /lab-v2): extra controls before the search, in the header's own row; none elsewhere.
+ * `nav` (M1.4L.2, /lab-v2 project pages): the same entries pointing into `/lab-v2`; the site's own by default.
  */
-export function SiteHeader({ activeHref = "/", utilities }: { activeHref?: string; utilities?: ReactNode }) {
+export function SiteHeader({
+  activeHref = "/",
+  utilities,
+  nav = NAV_ITEMS,
+}: {
+  activeHref?: string;
+  utilities?: ReactNode;
+  nav?: readonly NavItem[];
+}) {
   return (
     <header className="lab-header-scrim pointer-events-none absolute inset-x-0 top-0 z-30" style={{ height: u(78) }}>
       {/* Brand */}
@@ -51,7 +60,7 @@ export function SiteHeader({ activeHref = "/", utilities }: { activeHref?: strin
         style={{ left: `calc(50% + ${u(597 - 836)})`, top: u(13) }}
       >
         <ul className="flex items-start">
-          {NAV_ITEMS.map((item) => {
+          {nav.map((item) => {
             const Icon = NAV_ICONS[item.icon];
             const active = item.href === activeHref;
             return (
