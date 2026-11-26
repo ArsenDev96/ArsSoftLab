@@ -1,0 +1,362 @@
+{
+ "1648x928": {
+  "docWidth": 1648,
+  "viewport": 1648,
+  "docHeight": 4555,
+  "scrollable": "auto",
+  "pastRightEdge": [],
+  "header": [
+   "site"
+  ],
+  "h1": {
+   "text": "AriMap",
+   "px": 92
+  },
+  "headings": [
+   "H1 AriMap",
+   "H2 Overview",
+   "H2 Learning experience",
+   "H2 Engineering contributions",
+   "H2 Accessibility",
+   "H2 Technology stack",
+   "H2 Related project",
+   "H3 Armat"
+  ],
+  "smallestText": [
+   {
+    "t": "Software Engineer",
+    "px": 11.3349
+   },
+   {
+    "t": "Status",
+    "px": 11.5
+   },
+   {
+    "t": "Release",
+    "px": 11.5
+   }
+  ],
+  "sections": [
+   {
+    "h": 581,
+    "x": 290,
+    "y": 792,
+    "w": 1068
+   },
+   {
+    "h": 1224,
+    "x": 290,
+    "y": 1374,
+    "w": 1068
+   },
+   {
+    "h": 640,
+    "x": 290,
+    "y": 2598,
+    "w": 1068
+   },
+   {
+    "h": 506,
+    "x": 290,
+    "y": 3237,
+    "w": 1068
+   },
+   {
+    "h": 227,
+    "x": 290,
+    "y": 3743,
+    "w": 1068
+   },
+   {
+    "h": 394,
+    "x": 290,
+    "y": 3970,
+    "w": 1068
+   }
+  ],
+  "scene": false,
+  "images": [
+   {
+    "src": "/_next/image?url=%2Fprojects%2Farimap%2Fhome.webp&w=256&q=75",
+    "ok": true,
+    "alt": 210,
+    "w": 198,
+    "h": 351,
+    "ratio": 1.775
+   },
+   {
+    "src": "/_next/image?url=%2Fprojects%2Farimap%2Ffind.webp&w=256&q=75",
+    "ok": true,
+    "alt": 116,
+    "w": 198,
+    "h": 351,
+    "ratio": 1.775
+   },
+   {
+    "src": "/_next/image?url=%2Fprojects%2Farimap%2Ftravel.webp&w=256&q=75",
+    "ok": true,
+    "alt": 158,
+    "w": 198,
+    "h": 351,
+    "ratio": 1.775
+   },
+   {
+    "src": "/_next/image?url=%2Fprojects%2Farimap%2Fquick-challenge.webp&w=256&q=7",
+    "ok": true,
+    "alt": 110,
+    "w": 198,
+    "h": 351,
+    "ratio": 1.775
+   },
+   {
+    "src": "/_next/image?url=%2Fprojects%2Farimap%2Fresults.webp&w=256&q=75",
+    "ok": true,
+    "alt": 120,
+    "w": 198,
+    "h": 351,
+    "ratio": 1.775
+   }
+  ],
+  "errors": []
+ },
+ "1366x768": {
+  "docWidth": 1366,
+  "viewport": 1366,
+  "docHeight": 4555,
+  "scrollable": "auto",
+  "pastRightEdge": [],
+  "header": [
+   "site"
+  ],
+  "h1": {
+   "text": "AriMap",
+   "px": 92
+  },
+  "headings": [
+   "H1 AriMap",
+   "H2 Overview",
+   "H2 Learning experience",
+   "H2 Engineering contributions",
+   "H2 Accessibility",
+   "H2 Technology stack",
+   "H2 Related project",
+   "H3 Armat"
+  ],
+  "smallestText": [
+   {
+    "t": "Software Engineer",
+    "px": 9.38576
+   },
+   {
+    "t": "Status",
+    "px": 11.5
+   },
+   {
+    "t": "Release",
+    "px": 11.5
+   }
+  ],
+  "sections": [
+   {
+    "h": 581,
+    "x": 149,
+    "y": 792,
+    "w": 1068
+   },
+   {
+    "h": 1224,
+    "x": 149,
+    "y": 1374,
+    "w": 1068
+   },
+   {
+    "h": 640,
+    "x": 149,
+    "y": 2598,
+    "w": 1068
+   },
+   {
+    "h": 506,
+    "x": 149,
+    "y": 3237,
+    "w": 1068
+   },
+   {
+    "h": 227,
+    "x": 149,
+    "y": 3743,
+    "w": 1068
+   },
+   {
+    "h": 394,
+    "x": 149,
+    "y": 3970,
+    "w": 1068
+   }
+  ],
+  "scene": false,
+  "images": [
+   {
+    "src": "/_next/image?url=%2Fprojects%2Farimap%2Fhome.webp&w=256&q=75",
+    "ok": true,
+    "alt": 210,
+    "w": 198,
+    "h": 351,
+    "ratio": 1.775
+   },
+   {
+    "src": "/_next/image?url=%2Fprojects%2Farimap%2Ffind.webp&w=256&q=75",
+    "ok": true,
+    "alt": 116,
+    "w": 198,
+    "h": 351,
+    "ratio": 1.775
+   },
+   {
+    "src": "/_next/image?url=%2Fprojects%2Farimap%2Ftravel.webp&w=256&q=75",
+    "ok": true,
+    "alt": 158,
+    "w": 198,
+    "h": 351,
+    "ratio": 1.775
+   },
+   {
+    "src": "/_next/image?url=%2Fprojects%2Farimap%2Fquick-challenge.webp&w=256&q=7",
+    "ok": true,
+    "alt": 110,
+    "w": 198,
+    "h": 351,
+    "ratio": 1.775
+   },
+   {
+    "src": "/_next/image?url=%2Fprojects%2Farimap%2Fresults.webp&w=256&q=75",
+    "ok": true,
+    "alt": 120,
+    "w": 198,
+    "h": 351,
+    "ratio": 1.775
+   }
+  ],
+  "errors": []
+ },
+ "390x844": {
+  "docWidth": 390,
+  "viewport": 390,
+  "docHeight": 6946,
+  "scrollable": "auto",
+  "pastRightEdge": [],
+  "header": [
+   "compact"
+  ],
+  "h1": {
+   "text": "AriMap",
+   "px": 48
+  },
+  "headings": [
+   "H1 AriMap",
+   "H2 Overview",
+   "H2 Learning experience",
+   "H2 Engineering contributions",
+   "H2 Accessibility",
+   "H2 Technology stack",
+   "H2 Related project",
+   "H3 Armat"
+  ],
+  "smallestText": [
+   {
+    "t": "Software Engineer",
+    "px": 10
+   },
+   {
+    "t": "Status",
+    "px": 11.5
+   },
+   {
+    "t": "Release",
+    "px": 11.5
+   }
+  ],
+  "sections": [
+   {
+    "h": 913,
+    "x": 24,
+    "y": 925,
+    "w": 342
+   },
+   {
+    "h": 2361,
+    "x": 24,
+    "y": 1838,
+    "w": 342
+   },
+   {
+    "h": 987,
+    "x": 24,
+    "y": 4200,
+    "w": 342
+   },
+   {
+    "h": 840,
+    "x": 24,
+    "y": 5187,
+    "w": 342
+   },
+   {
+    "h": 306,
+    "x": 24,
+    "y": 6028,
+    "w": 342
+   },
+   {
+    "h": 417,
+    "x": 24,
+    "y": 6333,
+    "w": 342
+   }
+  ],
+  "scene": false,
+  "images": [
+   {
+    "src": "/_next/image?url=%2Fprojects%2Farimap%2Fhome.webp&w=256&q=75",
+    "ok": true,
+    "alt": 210,
+    "w": 163,
+    "h": 290,
+    "ratio": 1.7765
+   },
+   {
+    "src": "/_next/image?url=%2Fprojects%2Farimap%2Ffind.webp&w=256&q=75",
+    "ok": true,
+    "alt": 116,
+    "w": 163,
+    "h": 290,
+    "ratio": 1.7765
+   },
+   {
+    "src": "/_next/image?url=%2Fprojects%2Farimap%2Ftravel.webp&w=256&q=75",
+    "ok": true,
+    "alt": 158,
+    "w": 163,
+    "h": 290,
+    "ratio": 1.7765
+   },
+   {
+    "src": "/_next/image?url=%2Fprojects%2Farimap%2Fquick-challenge.webp&w=256&q=7",
+    "ok": true,
+    "alt": 110,
+    "w": 163,
+    "h": 290,
+    "ratio": 1.7765
+   },
+   {
+    "src": "/_next/image?url=%2Fprojects%2Farimap%2Fresults.webp&w=256&q=75",
+    "ok": true,
+    "alt": 120,
+    "w": 163,
+    "h": 290,
+    "ratio": 1.7765
+   }
+  ],
+  "errors": []
+ }
+}

@@ -6,7 +6,7 @@ import { Monogram } from "@/components/ui/Monogram";
 import { SiteHeader } from "@/components/ui/SiteHeader";
 import { getProject, projectSummary, type Project, type ProjectDetail as Detail } from "@/data/projects";
 import { NAV_ITEMS, SITE, type NavItem } from "@/data/site";
-import { getZone } from "@/data/zones";
+import { getZone, type StationAccent } from "@/data/zones";
 import { LAB_HOME } from "@/lib/lab-url";
 import { LAB_V2_PATH, labV2Href, projectPageHref } from "@/lib/lab-v2-pages";
 
@@ -22,25 +22,44 @@ import { LAB_V2_PATH, labV2Href, projectPageHref } from "@/lib/lab-v2-pages";
  * `view` is the lab's view query (render, floor) the visitor came with, so
  * every way back to the lab returns to the same mode.
  */
+/** The eyebrow's dot in the station's accent (M1.4L.3B; Engineering's cyan as before). */
+const ACCENT_DOT: Record<StationAccent, string> = {
+  cyan: "bg-cyan-glow shadow-[0_0_10px_rgb(85_230_246/0.65)]",
+  amber: "bg-amber-glow shadow-[0_0_10px_rgb(255_197_108/0.6)]",
+  violet: "bg-violet-glow shadow-[0_0_10px_rgb(229_124_243/0.6)]",
+};
+
 export function ProjectDetail({ project, view }: { project: Project & { detail: Detail }; view: string }) {
   const { detail } = project;
   const zone = getZone(project.zone);
   const backHref = labV2Href({ station: project.zone, project: project.id }, view);
   const labHref = labV2Href(LAB_HOME, view);
 
-  const sections: { id: string; title: string; body: ReactNode }[] = [];
+  const sections: { id: string; title: string; body: ReactNode; wide?: ReactNode }[] = [];
+  // M1.4L.3B: extra text sections, after the Overview or after the contributions; one of them may hold the screenshots.
+  const media = detail.media?.length ? <Media items={detail.media} notes={detail.mediaNotes} /> : null;
+  const extra = (after: "overview" | "contributions") =>
+    (detail.sections ?? [])
+      .filter((s) => (s.after ?? "overview") === after)
+      .forEach((s) =>
+        sections.push({ id: s.id, title: s.title, body: <TextSection section={s} />, wide: s.showMedia ? media : undefined }),
+      );
+  const mediaInSection = Boolean(media && detail.sections?.some((s) => s.showMedia));
+
   sections.push({ id: "overview", title: "Overview", body: <Overview project={project} /> });
+  extra("overview");
   if (detail.problem || detail.solution) {
     sections.push({ id: "problem", title: "Problem and solution", body: <ProblemSolution detail={detail} /> });
   }
   if (detail.contributions?.length) {
     sections.push({ id: "contributions", title: "Engineering contributions", body: <Contributions items={detail.contributions} /> });
   }
+  extra("contributions");
   if (detail.stack?.length) {
     sections.push({ id: "stack", title: "Technology stack", body: <Stack items={detail.stack} /> });
   }
-  if (detail.media?.length) {
-    sections.push({ id: "media", title: "Screenshots", body: <Media items={detail.media} /> });
+  if (media && !mediaInSection) {
+    sections.push({ id: "media", title: "Screenshots", body: media });
   }
   if (detail.links?.length) {
     sections.push({ id: "links", title: "Links", body: <Links items={detail.links} /> });
@@ -81,13 +100,12 @@ export function ProjectDetail({ project, view }: { project: Project & { detail: 
         <BackLink href={backHref} />
 
         <article aria-labelledby="project-title" className="mt-10 lg:mt-14">
-          <header className="grid gap-10 pb-14 lg:grid-cols-[minmax(0,1fr)_minmax(300px,360px)] lg:items-end lg:gap-16 lg:pb-20">
+          <header
+            className={`grid gap-10 pb-14 lg:grid-cols-[minmax(0,1fr)_minmax(300px,360px)] ${factRows(detail).length > LONG_FACTS ? "lg:items-start" : "lg:items-end"} lg:gap-16 lg:pb-20`}
+          >
             <div>
               <p className="flex items-center gap-3 text-[12px] leading-none font-medium tracking-[0.26em] text-lab-text uppercase">
-                <span
-                  aria-hidden="true"
-                  className="block size-1.5 rounded-full bg-cyan-glow shadow-[0_0_10px_rgb(85_230_246/0.65)]"
-                />
+                <span aria-hidden="true" className={`block size-1.5 rounded-full ${ACCENT_DOT[zone.accent]}`} />
                 {zone.title}
                 <span aria-hidden="true" className="text-amber">
                   ·
@@ -110,7 +128,7 @@ export function ProjectDetail({ project, view }: { project: Project & { detail: 
           </header>
 
           {sections.map((s, i) => (
-            <Section key={s.id} id={s.id} index={i + 1} title={s.title}>
+            <Section key={s.id} id={s.id} index={i + 1} title={s.title} wide={s.wide}>
               {s.body}
             </Section>
           ))}
@@ -182,14 +200,28 @@ function BackLink({ href }: { href: string }) {
   );
 }
 
-/** Status, category and role: a short definition list beside the title. */
-function Facts({ detail }: { detail: Detail }) {
-  const rows = [
+/** The facts beside the title, in order: status, release milestone, category, role, platforms, languages. */
+function factRows(detail: Detail) {
+  return [
     detail.status ? { term: "Status", value: detail.status, status: true } : null,
+    detail.milestone ? { term: "Release", value: detail.milestone } : null,
     detail.category ? { term: "Category", value: detail.category } : null,
     detail.role ? { term: "Role", value: detail.role } : null,
+    detail.platforms?.length ? { term: "Platforms", value: detail.platforms.join(" · ") } : null,
+    detail.languages?.length ? { term: "Languages", value: detail.languages.join(" · ") } : null,
   ].filter((r) => r !== null);
+}
+
+/**
+ * A short definition list beside the title. Up to three rows (SQLOrbit) it is as tall as the title block and both
+ * end on one line; a longer list (M1.4L.3B) has tighter rows, and the title aligns with its top instead.
+ */
+const LONG_FACTS = 3;
+
+function Facts({ detail }: { detail: Detail }) {
+  const rows = factRows(detail);
   if (!rows.length) return null;
+  const pad = rows.length > LONG_FACTS ? "py-4" : "py-5";
 
   return (
     <dl className="relative overflow-hidden rounded-2xl bg-[linear-gradient(180deg,rgb(255_255_255/0.045),rgb(255_255_255/0.015))] px-6 shadow-[inset_0_0_0_1px_rgb(255_255_255/0.09)] sm:px-7">
@@ -198,7 +230,7 @@ function Facts({ detail }: { detail: Detail }) {
         className="absolute inset-x-6 top-0 h-px bg-[linear-gradient(90deg,transparent,rgb(255_197_108/0.55),transparent)]"
       />
       {rows.map((r, i) => (
-        <div key={r.term} className={`py-5 ${i > 0 ? "border-t border-white/[0.07]" : ""}`}>
+        <div key={r.term} className={`${pad} ${i > 0 ? "border-t border-white/[0.07]" : ""}`}>
           <dt className="text-[11.5px] leading-none tracking-[0.2em] text-lab-subtle uppercase">{r.term}</dt>
           <dd className="mt-2.5 flex items-center gap-2.5 text-[16px] leading-snug text-lab-text">
             {"status" in r ? (
@@ -212,8 +244,23 @@ function Facts({ detail }: { detail: Detail }) {
   );
 }
 
-/** A numbered section: its heading in the left column on wide screens, its content on the right. */
-function Section({ id, index, title, children }: { id: string; index: number; title: string; children: ReactNode }) {
+/**
+ * A numbered section: its heading in the left column on wide screens, its content on the right. `wide` (M1.4L.3B)
+ * is a row under both, at the content's full width (the screenshots).
+ */
+function Section({
+  id,
+  index,
+  title,
+  wide,
+  children,
+}: {
+  id: string;
+  index: number;
+  title: string;
+  wide?: ReactNode;
+  children: ReactNode;
+}) {
   const headingId = `project-${id}`;
   return (
     <section
@@ -229,7 +276,34 @@ function Section({ id, index, title, children }: { id: string; index: number; ti
         </h2>
       </div>
       <div className="min-w-0">{children}</div>
+      {wide ? <div className="min-w-0 pt-3 lg:col-span-2 lg:pt-0">{wide}</div> : null}
     </section>
+  );
+}
+
+/** An extra text section (M1.4L.3B): paragraphs, then a short list whose items may lead with a term. */
+function TextSection({ section }: { section: NonNullable<Detail["sections"]>[number] }) {
+  return (
+    <div className="max-w-[760px]">
+      {section.paragraphs?.map((p, i) => (
+        <p key={p} className={`text-[17px] leading-[1.65] text-lab-muted ${i > 0 ? "mt-5" : ""}`}>
+          {p}
+        </p>
+      ))}
+      {section.items?.length ? (
+        <ul className={section.paragraphs?.length ? "mt-8" : undefined}>
+          {section.items.map((item, i) => (
+            <li
+              key={item.term ?? item.text}
+              className={`grid gap-1.5 py-4 sm:grid-cols-[168px_minmax(0,1fr)] sm:gap-6 ${i > 0 ? "border-t border-white/[0.07]" : "pt-0"} last:pb-0`}
+            >
+              {item.term ? <span className="text-[16px] leading-[1.55] font-[460] text-lab-heading">{item.term}</span> : null}
+              <span className={`text-[16px] leading-[1.55] text-lab-muted ${item.term ? "" : "sm:col-span-2"}`}>{item.text}</span>
+            </li>
+          ))}
+        </ul>
+      ) : null}
+    </div>
   );
 }
 
@@ -303,24 +377,82 @@ function Stack({ items }: { items: string[] }) {
   );
 }
 
-/** Only real assets with alt text (none yet for SQLOrbit). */
-function Media({ items }: { items: NonNullable<Detail["media"]> }) {
+/**
+ * Only real assets with alt text (none for SQLOrbit). Portrait screens (phone screenshots) form one numbered row
+ * (M1.4L.3B); other images stack at full width. `notes` (source and required credits) follow in small print.
+ */
+function Media({ items, notes }: { items: NonNullable<Detail["media"]>; notes?: string[] }) {
+  const portrait = items.every((m) => m.height > m.width);
   return (
-    <div className="grid gap-6">
-      {items.map((m) => (
-        <figure key={m.src}>
-          <Image
-            src={m.src}
-            alt={m.alt}
-            width={m.width}
-            height={m.height}
-            sizes="(min-width: 1024px) 820px, 100vw"
-            className="h-auto w-full rounded-xl shadow-[0_0_0_1px_rgb(255_255_255/0.09)]"
-          />
-          {m.caption ? <figcaption className="mt-3 text-[14px] text-lab-subtle">{m.caption}</figcaption> : null}
-        </figure>
-      ))}
+    <div>
+      {portrait ? (
+        <ScreenRow items={items} />
+      ) : (
+        <div className="grid gap-6">
+          {items.map((m) => (
+            <figure key={m.src}>
+              <Image
+                src={m.src}
+                alt={m.alt}
+                width={m.width}
+                height={m.height}
+                sizes="(min-width: 1024px) 820px, 100vw"
+                className="h-auto w-full rounded-xl shadow-[0_0_0_1px_rgb(255_255_255/0.09)]"
+              />
+              {m.caption ? <figcaption className="mt-3 text-[14px] text-lab-subtle">{m.caption}</figcaption> : null}
+            </figure>
+          ))}
+        </div>
+      )}
+      {notes?.length ? (
+        <div className="mt-10 grid max-w-[880px] gap-1.5 text-[12.5px] leading-[1.6] text-lab-subtle">
+          {notes.map((n) => (
+            <p key={n}>{n}</p>
+          ))}
+        </div>
+      ) : null}
     </div>
+  );
+}
+
+/**
+ * Phone screens in order, all in view at once (no carousel, no motion): five across on wide screens, every other one
+ * set a little lower for an editorial rhythm; three, then two, across on narrower screens. Each keeps its own
+ * proportions inside a hairline frame, with a numbered title and one line under it.
+ */
+function ScreenRow({ items }: { items: NonNullable<Detail["media"]> }) {
+  return (
+    <ol className="grid grid-cols-2 gap-x-4 gap-y-9 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-5 lg:gap-x-5">
+      {items.map((m, i) => (
+        <li key={m.src} className={i % 2 === 1 ? "lg:mt-14" : undefined}>
+          <figure>
+            <div className="overflow-hidden rounded-[18px] bg-white/[0.03] shadow-[0_0_0_1px_rgb(255_255_255/0.1),0_24px_48px_-24px_rgb(0_0_0/0.9)]">
+              <Image
+                src={m.src}
+                alt={m.alt}
+                width={m.width}
+                height={m.height}
+                sizes="(min-width: 1180px) 200px, (min-width: 1024px) 17vw, (min-width: 640px) 30vw, 46vw"
+                className="block h-auto w-full"
+              />
+            </div>
+            {m.title || m.caption ? (
+              <figcaption className="mt-4">
+                {m.title ? (
+                  <span className="flex items-baseline gap-2.5">
+                    <span aria-hidden="true" className="text-[12px] leading-none text-amber tabular-nums">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    <span className="text-[15px] leading-snug font-[460] text-lab-heading">{m.title}</span>
+                  </span>
+                ) : null}
+                {m.caption ? <span className="mt-1.5 block text-[13.5px] leading-[1.5] text-lab-muted">{m.caption}</span> : null}
+              </figcaption>
+            ) : null}
+          </figure>
+        </li>
+      ))}
+    </ol>
   );
 }
 

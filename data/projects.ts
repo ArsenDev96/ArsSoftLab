@@ -52,7 +52,25 @@ export interface ProjectMedia {
   alt: string;
   width: number;
   height: number;
+  /** M1.4L.3B: short name shown with the image (for example the screen it shows). */
+  title?: string;
   caption?: string;
+}
+
+/**
+ * M1.4L.3B: an extra text section of the project page, for content that the
+ * fixed sections don't cover. Placed after the Overview, or after the
+ * Engineering contributions.
+ */
+export interface ProjectSection {
+  id: string;
+  title: string;
+  paragraphs?: string[];
+  /** A short list; each item may lead with a term. */
+  items?: { term?: string; text: string }[];
+  /** Show the project's screenshots in this section (instead of a section of their own). */
+  showMedia?: boolean;
+  after?: "overview" | "contributions";
 }
 
 export interface ProjectDetail {
@@ -66,11 +84,18 @@ export interface ProjectDetail {
   category?: string;
   role?: string;
   status?: string;
+  /** M1.4L.3B: where the project stands towards release, beside the status. */
+  milestone?: string;
+  platforms?: string[];
+  languages?: string[];
   problem?: string;
   solution?: string;
   contributions?: string[];
   stack?: string[];
   media?: ProjectMedia[];
+  /** Lines shown under the screenshots: where they come from, and the credits their content requires. */
+  mediaNotes?: string[];
+  sections?: ProjectSection[];
   links?: ProjectLink[];
   /** Other projects offered at the end of the page. */
   related?: ProjectId[];
@@ -83,6 +108,110 @@ export const PROJECTS: Record<ProjectId, Project> = {
     slug: "arimap",
     zone: "educational",
     summary: "An interactive geography-learning game built around exploration, lessons, and challenges.",
+    // M1.4L.3B: owner-approved decisions and the facts verified in docs/m1.4l/ARIMAP-CONTENT-AUDIT.md.
+    // Not on Google Play; no public links yet; no screenshots with the unresolved AI illustrations; English screens only.
+    detail: {
+      tagline: "Learn geography by exploring, remembering and playing.",
+      overview: [
+        "Geography is often taught through lists of countries, capitals and locations. But memorizing those facts doesn't always mean understanding where places are or how they relate to one another.",
+        "I created AriMap to turn geography learning into an interactive experience. Instead of only reading about places, learners explore maps, identify countries, discover their neighbors and test what they remember through short challenges.",
+        "The experience combines structured lessons, map-based interactions and progression mechanics. Its Android application also supports offline learning activities, making the core experience available without a constant internet connection.",
+        "From an engineering perspective, AriMap brings together interactive geographical rendering, game-state management, mobile performance and accessibility. The project is currently preparing for release, with real-device validation and publication requirements still outstanding.",
+      ],
+      category: "Education / Geography game",
+      role: "Creator & Full-stack Engineer",
+      status: "In development",
+      milestone: "Android 1.0.0 release candidate built; real-device release validation pending",
+      platforms: ["Android", "Web"],
+      languages: ["English", "Eastern Armenian"],
+      sections: [
+        {
+          id: "learning",
+          title: "Learning experience",
+          paragraphs: [
+            "Europe has twelve levels of five countries each, unlocked one after another. Asia, Africa, North America and South America are planned.",
+          ],
+          items: [
+            { term: "Discover", text: "Tap a country to see its name, its capital and a landmark, with a short fact." },
+            { term: "Find", text: "Five questions, one per country, with three levels of optional help." },
+            { term: "Travel", text: "Cross borders from start to destination within the fewest possible crossings, with Hint, Undo and Restart." },
+            { term: "Results", text: "Up to three stars for answers found without hints and a journey completed without help; levels have no timers or speed bonuses." },
+            { term: "Quick Challenge", text: "Fifteen countries on the map of Europe in 60 seconds, with a shareable result card." },
+          ],
+          showMedia: true,
+        },
+        {
+          id: "accessibility",
+          title: "Accessibility",
+          after: "contributions",
+          paragraphs: [
+            "Accessibility is part of both apps, checked with automated tests and on an Android emulator. Screen-reader testing on a physical phone is still in progress.",
+          ],
+          items: [
+            { term: "Text size", text: "Layouts adapt to 150% and 200% text, down to 320 px phones and in landscape; on Android no text has scaling turned off." },
+            { term: "Not colour alone", text: "Level status is given in words and icons, and stars differ in shape." },
+            { term: "Input", text: "Visible keyboard focus on the website. On Android, touch targets of at least 48 dp and an answer-by-description mode as an alternative to tapping the map." },
+            { term: "Motion and time", text: "Reduced-motion settings are respected, and the timed neighbours round can be extended to ten minutes." },
+          ],
+        },
+      ],
+      contributions: [
+        "Designed a framework-independent TypeScript core for lessons, game rules, progress and translations, shared by the website and the Android app.",
+        "Modelled each level as a border graph checked against the map data, with breadth-first search for journey budgets.",
+        "Built a reproducible map-data pipeline from Natural Earth, with one shared projection and generated relief and forest layers.",
+        "Implemented versioned, validated saved progress with migrations, so earlier saves keep working as levels change.",
+        "Diagnosed and reduced map-rendering cost on Android, and evaluated an experimental GPU map renderer on a test device.",
+        "Kept the Android release build free of network access and data collection.",
+      ],
+      stack: ["TypeScript", "React", "Next.js", "React Native", "Expo", "D3", "TopoJSON", "SQLite"],
+      media: [
+        {
+          src: "/projects/arimap/home.webp",
+          width: 720,
+          height: 1280,
+          title: "Home",
+          caption: "Continents, Europe's progress and the Quick Challenge.",
+          alt: "AriMap's home screen on Android: a Quick Challenge card reading “Find 15 countries on the map of Europe”, a world map with each continent in its own colour, and the Europe card showing 0 of 12 levels completed.",
+        },
+        {
+          src: "/projects/arimap/find.webp",
+          width: 720,
+          height: 1280,
+          title: "Find",
+          caption: "Five questions, one per country, with optional help.",
+          alt: "Find, question 1 of 5: “Find Germany” under a map of western Europe, with a switch to answer by description instead.",
+        },
+        {
+          src: "/projects/arimap/travel.webp",
+          width: 720,
+          height: 1280,
+          title: "Travel",
+          caption: "Cross borders within the fewest crossings.",
+          alt: "Travel: the player has crossed from France into Belgium; buttons offer the Netherlands, Luxembourg and Germany as next crossings, with Hint, Undo and Restart.",
+        },
+        {
+          src: "/projects/arimap/quick-challenge.webp",
+          width: 720,
+          height: 1280,
+          title: "Quick Challenge",
+          caption: "Fifteen countries on the map of Europe in 60 seconds.",
+          alt: "Quick Challenge, question 1 of 15: find Switzerland on a map of Europe, with 58 seconds left and a score of 0.",
+        },
+        {
+          src: "/projects/arimap/results.webp",
+          width: 720,
+          height: 1280,
+          title: "Results",
+          caption: "Stars for answers without hints and a journey without help.",
+          alt: "Results: “Journey complete!” with 3 of 3 stars, and the route from France through Belgium to the Netherlands on the map.",
+        },
+      ],
+      mediaNotes: [
+        "Screenshots: AriMap's Android 1.0.0 release candidate on an Android emulator, in English.",
+        "Map data: Natural Earth. Relief: Terrain Tiles by Mapzen. Forests: © ESA WorldCover project 2021 / Contains modified Copernicus Sentinel data (2021) processed by ESA WorldCover consortium (CC BY 4.0).",
+      ],
+      related: ["armat"],
+    },
   },
   armat: {
     id: "armat",

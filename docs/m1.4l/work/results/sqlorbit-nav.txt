@@ -1,6 +1,6 @@
 PASS  lab-v2 deep link: SQLOrbit Open project links to its page  (/lab-v2/projects/sqlorbit)
 PASS  lab-v2: TableRefresh keeps the disabled Coming soon action  ({"link":false,"disabled":"true","soon":true})
-PASS  Open project opens /lab-v2/projects/sqlorbit with a client-side navigation  ({"marker":true,"h1":"SQLOrbit","scene":false,"scroll":"auto","title":""})
+PASS  Open project opens /lab-v2/projects/sqlorbit with a client-side navigation  ({"marker":true,"h1":"SQLOrbit","scene":false,"scroll":"auto","title":"SQLOrbit — Lab v2 (experimental)"})
 PASS  the project page does not keep the lab scene mounted, and scrolls
 PASS  Back to the lab returns to the station and project  (/lab-v2?station=engineering&project=sqlorbit)
 PASS  back in the lab: Engineering open, SQLOrbit selected, no reload  ({"url":"/lab-v2?station=engineering&project=sqlorbit","marker":true,"pressed":["SQLOrbit"],"scroll":"hidden"})
