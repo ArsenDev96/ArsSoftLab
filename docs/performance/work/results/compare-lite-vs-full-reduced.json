@@ -1,0 +1,41 @@
+{
+ "engineering": {
+  "max": 4,
+  "px_any": 18382,
+  "px_over2": 3,
+  "over2_box": [
+   1412,
+   571,
+   1488,
+   655
+  ],
+  "eng_max": 0,
+  "eng_px_over2": 0
+ },
+ "playground": {
+  "max": 9,
+  "px_any": 18425,
+  "px_over2": 35,
+  "over2_box": [
+   508,
+   428,
+   1488,
+   655
+  ],
+  "eng_max": 9,
+  "eng_px_over2": 32
+ },
+ "rest": {
+  "max": 9,
+  "px_any": 18425,
+  "px_over2": 35,
+  "over2_box": [
+   508,
+   428,
+   1488,
+   655
+  ],
+  "eng_max": 9,
+  "eng_px_over2": 32
+ }
+}

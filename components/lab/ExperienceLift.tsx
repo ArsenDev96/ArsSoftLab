@@ -2,7 +2,7 @@ import type { ReactNode } from "react";
 import { u, type ScenePoint, type SceneRect } from "@/lib/scene";
 import { STATION_LAYOUT, type HotspotShape } from "./scene-layout";
 import { SceneImage } from "./SceneImage";
-import { contactOnly, liftCss, type LiftSpec } from "./station-lift";
+import { contactOnly, liftCss, liftReducedCss, type LiftSpec } from "./station-lift";
 
 /**
  * M1.4J.4 (/lab-v2 only): Experience's lift. The stone, the terrain, the
@@ -39,9 +39,12 @@ const L = EXP_LIFT;
 
 /** .exp-aloft: what is only seen off the floor (as Creative Studio's). */
 const ON = `:is([data-lab-hover="${ID}"],[data-lab-selected="${ID}"])`;
-const ALOFT_CSS = `.exp-aloft{visibility:hidden;transition:visibility 0s linear ${L.offMs + 200}ms}${ON} .exp-aloft{visibility:visible;transition:visibility 0s}@media (prefers-reduced-motion: reduce){.exp-aloft{visibility:hidden!important}}`;
+const ALOFT_REDUCED_CSS = `.exp-aloft{visibility:hidden!important}`;
+const ALOFT_CSS = `.exp-aloft{visibility:hidden;transition:visibility 0s linear ${L.offMs + 200}ms}${ON} .exp-aloft{visibility:visible;transition:visibility 0s}@media (prefers-reduced-motion: reduce){${ALOFT_REDUCED_CSS}}`;
 
 export const EXP_LIFT_CSS = liftCss({ id: ID, cls: "exp", v: "--xl", spec: L }) + ALOFT_CSS;
+/** M1.4K.5A lite mode: reduced motion's lift (it stays on the floor, and what shows only aloft stays hidden). */
+export const EXP_LIFT_REDUCED_CSS = liftReducedCss("exp", "--xl") + ALOFT_REDUCED_CSS;
 
 /** The scope that carries --xl (box-less: geometry and stacking stay as they are). */
 export function ExperienceLift({ children }: { children: ReactNode }) {

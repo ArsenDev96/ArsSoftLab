@@ -25,6 +25,8 @@ export default async function LabV2Page({ searchParams }: { searchParams: Search
   const initial = resolveLabLocation(query[STATION_PARAM], query[PROJECT_PARAM]);
   // M1.4G (optional, until reviewed): `?floor=approved` tones the v2 floor towards the approved atmosphere.
   const floorTone = query.floor === "approved";
+  // M1.4K.4 (prototype): `?render=lite` is a lighter rendering for software compositing and weak GPUs. Full is the default.
+  const lite = query.render === "lite";
 
   return (
     <>
@@ -37,7 +39,7 @@ export default async function LabV2Page({ searchParams }: { searchParams: Search
       <SiteHeader activeHref="/" />
       <main className="relative h-svh w-full overflow-hidden bg-lab-ink">
         <LabStateProvider initial={initial}>
-          <LabScene variant="v2" floorTone={floorTone} />
+          <LabScene variant="v2" floorTone={floorTone} lite={lite} />
           <LabHero />
           <ExploreCue />
         </LabStateProvider>

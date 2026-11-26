@@ -1,0 +1,821 @@
+{
+ "rounds": 2,
+ "runs": [
+  {
+   "round": 0,
+   "mode": "full",
+   "windows": [
+    {
+     "scenario": "engineering hover",
+     "name": "first",
+     "frames": 20,
+     "fps": 11.2,
+     "medianMs": 83.3,
+     "p95Ms": 183.4,
+     "maxMs": 183.4,
+     "over50": 12,
+     "over100": 7,
+     "litAtMove": 0,
+     "hoverMs": 36,
+     "poweredHalfMs": 836,
+     "poweredFullMs": 1136,
+     "longestFirst300": 183
+    },
+    {
+     "scenario": "engineering hover",
+     "name": "repeat 1",
+     "frames": 17,
+     "fps": 9.9,
+     "medianMs": 66.7,
+     "p95Ms": 366.6,
+     "maxMs": 366.6,
+     "over50": 11,
+     "over100": 5,
+     "litAtMove": 0,
+     "hoverMs": 27,
+     "poweredHalfMs": 777,
+     "poweredFullMs": 1077,
+     "longestFirst300": 183
+    },
+    {
+     "scenario": "engineering hover",
+     "name": "repeat 2",
+     "frames": 20,
+     "fps": 11.4,
+     "medianMs": 66.7,
+     "p95Ms": 200.1,
+     "maxMs": 200.1,
+     "over50": 13,
+     "over100": 6,
+     "litAtMove": 0,
+     "hoverMs": 25,
+     "poweredHalfMs": 792,
+     "poweredFullMs": 1108,
+     "longestFirst300": 200
+    },
+    {
+     "scenario": "playground hover",
+     "name": "first",
+     "frames": 16,
+     "fps": 10.3,
+     "medianMs": 66.7,
+     "p95Ms": 266.6,
+     "maxMs": 266.6,
+     "over50": 11,
+     "over100": 4,
+     "litAtMove": 0,
+     "hoverMs": 37,
+     "poweredHalfMs": 1037,
+     "poweredFullMs": 1037,
+     "longestFirst300": 183
+    },
+    {
+     "scenario": "playground hover",
+     "name": "repeat 1",
+     "frames": 17,
+     "fps": 10.3,
+     "medianMs": 66.8,
+     "p95Ms": 216.6,
+     "maxMs": 216.6,
+     "over50": 10,
+     "over100": 5,
+     "litAtMove": 0,
+     "hoverMs": 18,
+     "poweredHalfMs": 968,
+     "poweredFullMs": 968,
+     "longestFirst300": 200
+    },
+    {
+     "scenario": "playground hover",
+     "name": "repeat 2",
+     "frames": 19,
+     "fps": 10.9,
+     "medianMs": 83.3,
+     "p95Ms": 266.7,
+     "maxMs": 266.7,
+     "over50": 9,
+     "over100": 6,
+     "litAtMove": 0,
+     "hoverMs": 32,
+     "poweredHalfMs": 1016,
+     "poweredFullMs": 1016,
+     "longestFirst300": 183
+    },
+    {
+     "scenario": "switch",
+     "name": "E-P-E-P",
+     "frames": 37,
+     "fps": 8.5,
+     "medianMs": 100,
+     "p95Ms": 316.8,
+     "maxMs": 333.3,
+     "over50": 29,
+     "over100": 15,
+     "switches": [
+      {
+       "id": "engineering",
+       "litAtMove": 0,
+       "hoverMs": 33,
+       "poweredHalfMs": 833,
+       "poweredFullMs": null
+      },
+      {
+       "id": "playground",
+       "litAtMove": 0,
+       "hoverMs": 213,
+       "poweredHalfMs": null,
+       "poweredFullMs": null
+      },
+      {
+       "id": "engineering",
+       "litAtMove": 0,
+       "hoverMs": 335,
+       "poweredHalfMs": null,
+       "poweredFullMs": null
+      },
+      {
+       "id": "playground",
+       "litAtMove": 0,
+       "hoverMs": 310,
+       "poweredHalfMs": 1327,
+       "poweredFullMs": 1327
+      }
+     ],
+     "end": {
+      "hover": "playground",
+      "engineeringLit": 0,
+      "playgroundLit": 1
+     }
+    }
+   ],
+   "errors": [],
+   "trace": {
+    "engineering hover": {
+     "vizMs": 1599,
+     "rendererMainMs": 172,
+     "drawQuadMs": 1524,
+     "rasterMs": 230
+    },
+    "playground hover": {
+     "vizMs": 1569,
+     "rendererMainMs": 92,
+     "drawQuadMs": 1484,
+     "rasterMs": 161
+    },
+    "switch": {
+     "vizMs": 4205,
+     "rendererMainMs": 381,
+     "drawQuadMs": 3986,
+     "rasterMs": 645
+    }
+   },
+   "chips": [
+    {
+     "id": "engineering",
+     "chipMovedPx": 0,
+     "selectedMs": 36,
+     "search": "?station=engineering&project=sqlorbit&render=full",
+     "selected": "engineering",
+     "project": "sqlorbit",
+     "chipPressed": "true",
+     "frames": 10,
+     "fps": 6.2,
+     "medianMs": 183.4,
+     "p95Ms": 216.6,
+     "maxMs": 216.6,
+     "over50": 7,
+     "over100": 7
+    },
+    {
+     "id": "playground",
+     "chipMovedPx": 19.5,
+     "selectedMs": 17,
+     "search": "?station=playground&project=aziz&render=full",
+     "selected": "playground",
+     "project": "aziz",
+     "chipPressed": "true",
+     "frames": 11,
+     "fps": 6.6,
+     "medianMs": 183.3,
+     "p95Ms": 200,
+     "maxMs": 200,
+     "over50": 9,
+     "over100": 8
+    }
+   ],
+   "home": "?render=full"
+  },
+  {
+   "round": 0,
+   "mode": "lite",
+   "windows": [
+    {
+     "scenario": "engineering hover",
+     "name": "first",
+     "frames": 57,
+     "fps": 33.6,
+     "medianMs": 16.7,
+     "p95Ms": 150,
+     "maxMs": 166.7,
+     "over50": 5,
+     "over100": 5,
+     "litAtMove": 0,
+     "hoverMs": 20,
+     "poweredHalfMs": 220,
+     "poweredFullMs": 220,
+     "longestFirst300": 150
+    },
+    {
+     "scenario": "engineering hover",
+     "name": "repeat 1",
+     "frames": 59,
+     "fps": 34.8,
+     "medianMs": 16.7,
+     "p95Ms": 150,
+     "maxMs": 166.7,
+     "over50": 5,
+     "over100": 5,
+     "litAtMove": 0,
+     "hoverMs": 18,
+     "poweredHalfMs": 185,
+     "poweredFullMs": 334,
+     "longestFirst300": 133
+    },
+    {
+     "scenario": "engineering hover",
+     "name": "repeat 2",
+     "frames": 64,
+     "fps": 35.3,
+     "medianMs": 16.7,
+     "p95Ms": 150,
+     "maxMs": 166.6,
+     "over50": 6,
+     "over100": 5,
+     "litAtMove": 0,
+     "hoverMs": 26,
+     "poweredHalfMs": 210,
+     "poweredFullMs": 210,
+     "longestFirst300": 150
+    },
+    {
+     "scenario": "playground hover",
+     "name": "first",
+     "frames": 49,
+     "fps": 28.2,
+     "medianMs": 16.7,
+     "p95Ms": 183.3,
+     "maxMs": 216.6,
+     "over50": 5,
+     "over100": 5,
+     "litAtMove": 0,
+     "hoverMs": 43,
+     "poweredHalfMs": 260,
+     "poweredFullMs": 260,
+     "longestFirst300": 183
+    },
+    {
+     "scenario": "playground hover",
+     "name": "repeat 1",
+     "frames": 55,
+     "fps": 32.7,
+     "medianMs": 16.7,
+     "p95Ms": 166.7,
+     "maxMs": 183.4,
+     "over50": 5,
+     "over100": 5,
+     "litAtMove": 0,
+     "hoverMs": 22,
+     "poweredHalfMs": 222,
+     "poweredFullMs": 222,
+     "longestFirst300": 167
+    },
+    {
+     "scenario": "playground hover",
+     "name": "repeat 2",
+     "frames": 57,
+     "fps": 33.6,
+     "medianMs": 16.7,
+     "p95Ms": 166.7,
+     "maxMs": 183.3,
+     "over50": 5,
+     "over100": 5,
+     "litAtMove": 0,
+     "hoverMs": 22,
+     "poweredHalfMs": 222,
+     "poweredFullMs": 222,
+     "longestFirst300": 167
+    },
+    {
+     "scenario": "switch",
+     "name": "E-P-E-P",
+     "frames": 82,
+     "fps": 19.3,
+     "medianMs": 16.7,
+     "p95Ms": 183.3,
+     "maxMs": 200,
+     "over50": 21,
+     "over100": 19,
+     "switches": [
+      {
+       "id": "engineering",
+       "litAtMove": 0,
+       "hoverMs": 24,
+       "poweredHalfMs": 191,
+       "poweredFullMs": 341
+      },
+      {
+       "id": "playground",
+       "litAtMove": 0,
+       "hoverMs": 21,
+       "poweredHalfMs": 238,
+       "poweredFullMs": 238
+      },
+      {
+       "id": "engineering",
+       "litAtMove": 0,
+       "hoverMs": 23,
+       "poweredHalfMs": 256,
+       "poweredFullMs": 256
+      },
+      {
+       "id": "playground",
+       "litAtMove": 0,
+       "hoverMs": 24,
+       "poweredHalfMs": 224,
+       "poweredFullMs": 224
+      }
+     ],
+     "end": {
+      "hover": "playground",
+      "engineeringLit": 0,
+      "playgroundLit": 1
+     }
+    }
+   ],
+   "errors": [],
+   "trace": {
+    "engineering hover": {
+     "vizMs": 821,
+     "rendererMainMs": 47,
+     "drawQuadMs": 785,
+     "rasterMs": 91
+    },
+    "playground hover": {
+     "vizMs": 844,
+     "rendererMainMs": 40,
+     "drawQuadMs": 799,
+     "rasterMs": 96
+    },
+    "switch": {
+     "vizMs": 3499,
+     "rendererMainMs": 136,
+     "drawQuadMs": 3332,
+     "rasterMs": 532
+    }
+   },
+   "chips": [
+    {
+     "id": "engineering",
+     "chipMovedPx": 0,
+     "selectedMs": 42,
+     "search": "?station=engineering&project=sqlorbit&render=lite",
+     "selected": "engineering",
+     "project": "sqlorbit",
+     "chipPressed": "true",
+     "frames": 12,
+     "fps": 7.3,
+     "medianMs": 166.7,
+     "p95Ms": 200,
+     "maxMs": 200,
+     "over50": 8,
+     "over100": 8
+    },
+    {
+     "id": "playground",
+     "chipMovedPx": 0,
+     "selectedMs": 28,
+     "search": "?station=playground&project=aziz&render=lite",
+     "selected": "playground",
+     "project": "aziz",
+     "chipPressed": "true",
+     "frames": 13,
+     "fps": 8.4,
+     "medianMs": 150.1,
+     "p95Ms": 166.7,
+     "maxMs": 166.7,
+     "over50": 9,
+     "over100": 8
+    }
+   ],
+   "home": "?render=lite"
+  },
+  {
+   "round": 1,
+   "mode": "lite",
+   "windows": [
+    {
+     "scenario": "engineering hover",
+     "name": "first",
+     "frames": 62,
+     "fps": 37,
+     "medianMs": 16.7,
+     "p95Ms": 133.3,
+     "maxMs": 166.7,
+     "over50": 5,
+     "over100": 4,
+     "litAtMove": 0,
+     "hoverMs": 29,
+     "poweredHalfMs": 229,
+     "poweredFullMs": 229,
+     "longestFirst300": 167
+    },
+    {
+     "scenario": "engineering hover",
+     "name": "repeat 1",
+     "frames": 59,
+     "fps": 34.8,
+     "medianMs": 16.7,
+     "p95Ms": 150,
+     "maxMs": 166.7,
+     "over50": 5,
+     "over100": 5,
+     "litAtMove": 0,
+     "hoverMs": 31,
+     "poweredHalfMs": 198,
+     "poweredFullMs": 348,
+     "longestFirst300": 133
+    },
+    {
+     "scenario": "engineering hover",
+     "name": "repeat 2",
+     "frames": 59,
+     "fps": 34.5,
+     "medianMs": 16.7,
+     "p95Ms": 150,
+     "maxMs": 166.7,
+     "over50": 5,
+     "over100": 5,
+     "litAtMove": 0,
+     "hoverMs": 32,
+     "poweredHalfMs": 199,
+     "poweredFullMs": 349,
+     "longestFirst300": 133
+    },
+    {
+     "scenario": "playground hover",
+     "name": "first",
+     "frames": 47,
+     "fps": 28.5,
+     "medianMs": 16.7,
+     "p95Ms": 166.7,
+     "maxMs": 200,
+     "over50": 5,
+     "over100": 5,
+     "litAtMove": 0,
+     "hoverMs": 25,
+     "poweredHalfMs": 225,
+     "poweredFullMs": 225,
+     "longestFirst300": 167
+    },
+    {
+     "scenario": "playground hover",
+     "name": "repeat 1",
+     "frames": 56,
+     "fps": 33,
+     "medianMs": 16.7,
+     "p95Ms": 166.8,
+     "maxMs": 183.3,
+     "over50": 5,
+     "over100": 5,
+     "litAtMove": 0,
+     "hoverMs": 17,
+     "poweredHalfMs": 217,
+     "poweredFullMs": 217,
+     "longestFirst300": 167
+    },
+    {
+     "scenario": "playground hover",
+     "name": "repeat 2",
+     "frames": 56,
+     "fps": 33.3,
+     "medianMs": 16.7,
+     "p95Ms": 166.7,
+     "maxMs": 183.3,
+     "over50": 5,
+     "over100": 5,
+     "litAtMove": 0,
+     "hoverMs": 16,
+     "poweredHalfMs": 217,
+     "poweredFullMs": 217,
+     "longestFirst300": 167
+    },
+    {
+     "scenario": "switch",
+     "name": "E-P-E-P",
+     "frames": 78,
+     "fps": 18.3,
+     "medianMs": 16.7,
+     "p95Ms": 183.3,
+     "maxMs": 200,
+     "over50": 21,
+     "over100": 19,
+     "switches": [
+      {
+       "id": "engineering",
+       "litAtMove": 0,
+       "hoverMs": 22,
+       "poweredHalfMs": 205,
+       "poweredFullMs": 205
+      },
+      {
+       "id": "playground",
+       "litAtMove": 0,
+       "hoverMs": 21,
+       "poweredHalfMs": 221,
+       "poweredFullMs": 221
+      },
+      {
+       "id": "engineering",
+       "litAtMove": 0,
+       "hoverMs": 35,
+       "poweredHalfMs": 268,
+       "poweredFullMs": 268
+      },
+      {
+       "id": "playground",
+       "litAtMove": 0,
+       "hoverMs": 32,
+       "poweredHalfMs": 232,
+       "poweredFullMs": 232
+      }
+     ],
+     "end": {
+      "hover": "playground",
+      "engineeringLit": 0,
+      "playgroundLit": 1
+     }
+    }
+   ],
+   "errors": [],
+   "trace": {
+    "engineering hover": {
+     "vizMs": 796,
+     "rendererMainMs": 52,
+     "drawQuadMs": 761,
+     "rasterMs": 80
+    },
+    "playground hover": {
+     "vizMs": 827,
+     "rendererMainMs": 43,
+     "drawQuadMs": 785,
+     "rasterMs": 102
+    },
+    "switch": {
+     "vizMs": 3294,
+     "rendererMainMs": 155,
+     "drawQuadMs": 3129,
+     "rasterMs": 564
+    }
+   },
+   "chips": [
+    {
+     "id": "engineering",
+     "chipMovedPx": 0,
+     "selectedMs": 3,
+     "search": "?station=engineering&project=sqlorbit&render=lite",
+     "selected": "engineering",
+     "project": "sqlorbit",
+     "chipPressed": "true",
+     "frames": 11,
+     "fps": 6.4,
+     "medianMs": 183.3,
+     "p95Ms": 216.7,
+     "maxMs": 216.7,
+     "over50": 9,
+     "over100": 8
+    },
+    {
+     "id": "playground",
+     "chipMovedPx": 0,
+     "selectedMs": 14,
+     "search": "?station=playground&project=aziz&render=lite",
+     "selected": "playground",
+     "project": "aziz",
+     "chipPressed": "true",
+     "frames": 12,
+     "fps": 7.4,
+     "medianMs": 166.6,
+     "p95Ms": 166.7,
+     "maxMs": 166.7,
+     "over50": 10,
+     "over100": 8
+    }
+   ],
+   "home": "?render=lite"
+  },
+  {
+   "round": 1,
+   "mode": "full",
+   "windows": [
+    {
+     "scenario": "engineering hover",
+     "name": "first",
+     "frames": 18,
+     "fps": 11.9,
+     "medianMs": 66.6,
+     "p95Ms": 199.9,
+     "maxMs": 199.9,
+     "over50": 11,
+     "over100": 5,
+     "litAtMove": 0,
+     "hoverMs": 26,
+     "poweredHalfMs": 775,
+     "poweredFullMs": 1075,
+     "longestFirst300": 183
+    },
+    {
+     "scenario": "engineering hover",
+     "name": "repeat 1",
+     "frames": 17,
+     "fps": 11.9,
+     "medianMs": 66.7,
+     "p95Ms": 183.3,
+     "maxMs": 183.3,
+     "over50": 9,
+     "over100": 5,
+     "litAtMove": 0,
+     "hoverMs": 29,
+     "poweredHalfMs": 795,
+     "poweredFullMs": 1029,
+     "longestFirst300": 183
+    },
+    {
+     "scenario": "engineering hover",
+     "name": "repeat 2",
+     "frames": 19,
+     "fps": 11,
+     "medianMs": 66.7,
+     "p95Ms": 233.3,
+     "maxMs": 233.3,
+     "over50": 11,
+     "over100": 6,
+     "litAtMove": 0,
+     "hoverMs": 19,
+     "poweredHalfMs": 769,
+     "poweredFullMs": 1102,
+     "longestFirst300": 183
+    },
+    {
+     "scenario": "playground hover",
+     "name": "first",
+     "frames": 18,
+     "fps": 10.6,
+     "medianMs": 66.7,
+     "p95Ms": 216.6,
+     "maxMs": 216.6,
+     "over50": 10,
+     "over100": 5,
+     "litAtMove": 0,
+     "hoverMs": 24,
+     "poweredHalfMs": 941,
+     "poweredFullMs": 1141,
+     "longestFirst300": 183
+    },
+    {
+     "scenario": "playground hover",
+     "name": "repeat 1",
+     "frames": 19,
+     "fps": 11.5,
+     "medianMs": 50,
+     "p95Ms": 383.4,
+     "maxMs": 383.4,
+     "over50": 7,
+     "over100": 5,
+     "litAtMove": 0,
+     "hoverMs": 30,
+     "poweredHalfMs": 979,
+     "poweredFullMs": 979,
+     "longestFirst300": 183
+    },
+    {
+     "scenario": "playground hover",
+     "name": "repeat 2",
+     "frames": 17,
+     "fps": 10.3,
+     "medianMs": 66.7,
+     "p95Ms": 200,
+     "maxMs": 200,
+     "over50": 10,
+     "over100": 5,
+     "litAtMove": 0,
+     "hoverMs": 27,
+     "poweredHalfMs": 961,
+     "poweredFullMs": 961,
+     "longestFirst300": 200
+    },
+    {
+     "scenario": "switch",
+     "name": "E-P-E-P",
+     "frames": 41,
+     "fps": 9.6,
+     "medianMs": 66.7,
+     "p95Ms": 216.8,
+     "maxMs": 349.9,
+     "over50": 26,
+     "over100": 17,
+     "switches": [
+      {
+       "id": "engineering",
+       "litAtMove": 0,
+       "hoverMs": 43,
+       "poweredHalfMs": 792,
+       "poweredFullMs": null
+      },
+      {
+       "id": "playground",
+       "litAtMove": 0,
+       "hoverMs": 67,
+       "poweredHalfMs": null,
+       "poweredFullMs": null
+      },
+      {
+       "id": "engineering",
+       "litAtMove": 0,
+       "hoverMs": 541,
+       "poweredHalfMs": null,
+       "poweredFullMs": null
+      },
+      {
+       "id": "playground",
+       "litAtMove": 0,
+       "hoverMs": 277,
+       "poweredHalfMs": 1460,
+       "poweredFullMs": null
+      }
+     ],
+     "end": {
+      "hover": "playground",
+      "engineeringLit": 0,
+      "playgroundLit": 0.995
+     }
+    }
+   ],
+   "errors": [],
+   "trace": {
+    "engineering hover": {
+     "vizMs": 1589,
+     "rendererMainMs": 161,
+     "drawQuadMs": 1513,
+     "rasterMs": 205
+    },
+    "playground hover": {
+     "vizMs": 1558,
+     "rendererMainMs": 77,
+     "drawQuadMs": 1476,
+     "rasterMs": 174
+    },
+    "switch": {
+     "vizMs": 4219,
+     "rendererMainMs": 369,
+     "drawQuadMs": 4011,
+     "rasterMs": 592
+    }
+   },
+   "chips": [
+    {
+     "id": "engineering",
+     "chipMovedPx": 0,
+     "selectedMs": 3,
+     "search": "?station=engineering&project=sqlorbit&render=full",
+     "selected": "engineering",
+     "project": "sqlorbit",
+     "chipPressed": "true",
+     "frames": 10,
+     "fps": 6.4,
+     "medianMs": 166.7,
+     "p95Ms": 233.4,
+     "maxMs": 233.4,
+     "over50": 9,
+     "over100": 7
+    },
+    {
+     "id": "playground",
+     "chipMovedPx": 19.5,
+     "selectedMs": 46,
+     "search": "?station=playground&project=aziz&render=full",
+     "selected": "playground",
+     "project": "aziz",
+     "chipPressed": "true",
+     "frames": 11,
+     "fps": 7,
+     "medianMs": 166.7,
+     "p95Ms": 183.3,
+     "maxMs": 183.3,
+     "over50": 8,
+     "over100": 8
+    }
+   ],
+   "home": "?render=full"
+  }
+ ]
+}

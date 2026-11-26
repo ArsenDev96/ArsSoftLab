@@ -2,7 +2,7 @@ import type { CSSProperties, ReactNode } from "react";
 import { SCENE, u, type ScenePoint, type SceneRect } from "@/lib/scene";
 import { STATION_LAYOUT, type HotspotShape } from "./scene-layout";
 import { SceneImage } from "./SceneImage";
-import { contactOnly, liftCss, type LiftSpec } from "./station-lift";
+import { contactOnly, liftCss, liftReducedCss, type LiftSpec } from "./station-lift";
 
 /**
  * M1.4J.3 (/lab-v2 only): Creative Studio's lift. The stone, the easel and the
@@ -48,9 +48,12 @@ export const OFF_FLOOR = "clamp(0, (var(--cl) - 0.012) * 25, 1)";
  * so at rest and for the other stations it costs nothing.
  */
 const ON = `:is([data-lab-hover="${ID}"],[data-lab-selected="${ID}"])`;
-const ALOFT_CSS = `.cre-aloft{visibility:hidden;transition:visibility 0s linear ${L.offMs + 200}ms}${ON} .cre-aloft{visibility:visible;transition:visibility 0s}@media (prefers-reduced-motion: reduce){.cre-aloft{visibility:hidden!important}}`;
+const ALOFT_REDUCED_CSS = `.cre-aloft{visibility:hidden!important}`;
+const ALOFT_CSS = `.cre-aloft{visibility:hidden;transition:visibility 0s linear ${L.offMs + 200}ms}${ON} .cre-aloft{visibility:visible;transition:visibility 0s}@media (prefers-reduced-motion: reduce){${ALOFT_REDUCED_CSS}}`;
 
 export const CRE_LIFT_CSS = liftCss({ id: ID, cls: "cre", v: "--cl", spec: L }) + ALOFT_CSS;
+/** M1.4K.5A lite mode: reduced motion's lift (it stays on the floor, and what shows only aloft stays hidden). */
+export const CRE_LIFT_REDUCED_CSS = liftReducedCss("cre", "--cl") + ALOFT_REDUCED_CSS;
 
 /** The scope that carries --cl (box-less: geometry and stacking stay as they are). */
 export function CreativeLift({ children }: { children: ReactNode }) {

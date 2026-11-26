@@ -1,0 +1,164 @@
+{
+ "keyboard full engineering": {
+  "pass": true,
+  "found": true,
+  "lit": {
+   "hover": "engineering",
+   "engLit": 0,
+   "pgLit": 0,
+   "engY": "matrix(1, 0, 0, 1, 0, -0.0794812)",
+   "pgTransform": "none"
+  },
+  "selected": "?station=engineering&render=full",
+  "chipFocused": true,
+  "project": "?station=engineering&project=sqlorbit&render=full",
+  "back": {
+   "search": "?render=full",
+   "focus": "SQLOrbit"
+  }
+ },
+ "keyboard full playground": {
+  "pass": true,
+  "found": true,
+  "lit": {
+   "hover": "playground",
+   "engLit": 0,
+   "pgLit": 0,
+   "engY": "matrix(1, 0, 0, 1, 0, 0)",
+   "pgTransform": "matrix(1, 0, 0, 1, 0, 0)"
+  },
+  "selected": "?station=playground&render=full",
+  "chipFocused": true,
+  "project": "?station=playground&project=aziz&render=full",
+  "back": {
+   "search": "?render=full",
+   "focus": "AZIZ"
+  }
+ },
+ "keyboard full errors": {
+  "pass": true,
+  "errors": []
+ },
+ "keyboard lite engineering": {
+  "pass": true,
+  "found": true,
+  "lit": {
+   "hover": "engineering",
+   "engLit": 1,
+   "pgLit": 0,
+   "engY": "matrix(1, 0, 0, 1, 0, 0)",
+   "pgTransform": "none"
+  },
+  "selected": "?station=engineering&render=lite",
+  "chipFocused": true,
+  "project": "?station=engineering&project=sqlorbit&render=lite",
+  "back": {
+   "search": "?render=lite",
+   "focus": "SQLOrbit"
+  }
+ },
+ "keyboard lite playground": {
+  "pass": true,
+  "found": true,
+  "lit": {
+   "hover": "playground",
+   "engLit": 0,
+   "pgLit": 1,
+   "engY": "matrix(1, 0, 0, 1, 0, 0)",
+   "pgTransform": "none"
+  },
+  "selected": "?station=playground&render=lite",
+  "chipFocused": true,
+  "project": "?station=playground&project=aziz&render=lite",
+  "back": {
+   "search": "?render=lite",
+   "focus": "AZIZ"
+  }
+ },
+ "keyboard lite errors": {
+  "pass": true,
+  "errors": []
+ },
+ "deep link ?station=engineering&render=lite": {
+  "pass": true,
+  "search": "?station=engineering&render=lite",
+  "selected": "engineering",
+  "project": null,
+  "engLit": 1,
+  "pgLit": 0,
+  "engY": "matrix(1, 0, 0, 1, 0, 0)",
+  "pgTransform": "none",
+  "floorTone": false,
+  "errors": []
+ },
+ "deep link ?station=playground&project=aziz&render=lite": {
+  "pass": true,
+  "search": "?station=playground&project=aziz&render=lite",
+  "selected": "playground",
+  "project": "aziz",
+  "engLit": 0,
+  "pgLit": 1,
+  "engY": "matrix(1, 0, 0, 1, 0, 0)",
+  "pgTransform": "none",
+  "floorTone": false,
+  "errors": []
+ },
+ "deep link ?render=lite&station=engineering&project=sqlorbit": {
+  "pass": true,
+  "search": "?station=engineering&project=sqlorbit&render=lite",
+  "selected": "engineering",
+  "project": "sqlorbit",
+  "engLit": 1,
+  "pgLit": 0,
+  "engY": "matrix(1, 0, 0, 1, 0, 0)",
+  "pgTransform": "none",
+  "floorTone": false,
+  "errors": []
+ },
+ "deep link ?floor=approved&render=lite": {
+  "pass": true,
+  "search": "?floor=approved&render=lite",
+  "selected": null,
+  "project": null,
+  "engLit": 0,
+  "pgLit": 0,
+  "engY": "matrix(1, 0, 0, 1, 0, 0)",
+  "pgTransform": "none",
+  "floorTone": true,
+  "errors": []
+ },
+ "reduced motion lite": {
+  "pass": true,
+  "engineering": {
+   "engLit": 1,
+   "engY": "matrix(1, 0, 0, 1, 0, 0)"
+  },
+  "playground": {
+   "pgLit": 1,
+   "pgTransform": "none"
+  },
+  "errors": []
+ },
+ "other stations unchanged in lite": {
+  "pass": true,
+  "pulseFired": {
+   "educational": [
+    "educational"
+   ],
+   "creative": [
+    "creative"
+   ],
+   "experience": [
+    "experience"
+   ],
+   "engineering": [],
+   "playground": []
+  },
+  "surgeGroupsMounted": [
+   "educational",
+   "creative",
+   "experience"
+  ],
+  "errors": []
+ }
+}

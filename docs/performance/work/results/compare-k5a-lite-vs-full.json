@@ -1,0 +1,80 @@
+{
+ "creative": {
+  "max": 231,
+  "px_any": 94948,
+  "px_over2": 68653,
+  "over2_box": [
+   89,
+   408,
+   1488,
+   788
+  ],
+  "eng_max": 204,
+  "eng_px_over2": 4985
+ },
+ "educational": {
+  "max": 236,
+  "px_any": 78048,
+  "px_over2": 64193,
+  "over2_box": [
+   479,
+   255,
+   1488,
+   687
+  ],
+  "eng_max": 9,
+  "eng_px_over2": 43
+ },
+ "engineering": {
+  "max": 231,
+  "px_any": 80440,
+  "px_over2": 47684,
+  "over2_box": [
+   248,
+   269,
+   1488,
+   687
+  ],
+  "eng_max": 231,
+  "eng_px_over2": 45226
+ },
+ "experience": {
+  "max": 234,
+  "px_any": 111617,
+  "px_over2": 85903,
+  "over2_box": [
+   479,
+   408,
+   1647,
+   788
+  ],
+  "eng_max": 9,
+  "eng_px_over2": 43
+ },
+ "playground": {
+  "max": 251,
+  "px_any": 121048,
+  "px_over2": 76718,
+  "over2_box": [
+   479,
+   294,
+   1488,
+   687
+  ],
+  "eng_max": 9,
+  "eng_px_over2": 43
+ },
+ "rest": {
+  "max": 9,
+  "px_any": 21675,
+  "px_over2": 46,
+  "over2_box": [
+   479,
+   408,
+   1488,
+   655
+  ],
+  "eng_max": 9,
+  "eng_px_over2": 43
+ }
+}

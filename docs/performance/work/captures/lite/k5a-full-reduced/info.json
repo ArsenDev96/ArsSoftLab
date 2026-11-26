@@ -1,0 +1,17 @@
+{
+ "educational": {
+  "hover": "educational",
+  "errors": [],
+  "layers": 917
+ },
+ "creative": {
+  "hover": "creative",
+  "errors": [],
+  "layers": 917
+ },
+ "experience": {
+  "hover": "experience",
+  "errors": [],
+  "layers": 917
+ }
+}

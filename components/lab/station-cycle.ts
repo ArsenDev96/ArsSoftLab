@@ -32,6 +32,9 @@ const RETURN_HOLD = 20;
  * so this keeps it through that instant (only then, and only once the sequence
  * had finished) and nothing is replayed.
  */
+/** Reduced motion: this cycle's numbers follow at once. M1.4K.5A: also lite mode's, without the media query. */
+export const cycleReducedCss = (cls: string): string => `.${cls}-cycle{transition:none!important}`;
+
 export function cycleCss({ id, cls, key, numbers, doneMs, pulse }: { id: ZoneId; cls: string; key: string; numbers: readonly CycleNumber[]; doneMs: number; pulse: number }): string {
   const on = `:is([data-lab-hover="${id}"],[data-lab-selected="${id}"])`;
   const held = `--${key}h`;
@@ -47,7 +50,7 @@ export function cycleCss({ id, cls, key, numbers, doneMs, pulse }: { id: ZoneId;
     `.${cls}-cycle{${cycle.map((c) => `${c.v}:0`).join(";")};transition:none}` +
     `[data-lab-returning="${id}"] .${cls}-cycle{transition:${held} 0ms linear ${RETURN_HOLD}ms}` +
     `${on} .${cls}-cycle{${cycle.map((c) => `${c.v}:1`).join(";")};transition:${cycle.map((c) => `${c.v} ${c.on}`).join(",")}}` +
-    `@media (prefers-reduced-motion: reduce){.${cls}-cycle{transition:none!important}}` +
+    `@media (prefers-reduced-motion: reduce){${cycleReducedCss(cls)}}` +
     `.${cls}-seq{${numbers.map((n) => `${n.v}:max(var(${n.v}-on),var(${held}))`).join(";")};transition:${numbers.map((n) => `${n.v} ${n.off}`).join(",")}}` +
     // Follows at once; naming the properties (not `none`) lets a run-back in progress finish.
     `${on} .${cls}-seq{transition:${numbers.map((n) => `${n.v} 0s`).join(",")}}` +

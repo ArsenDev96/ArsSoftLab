@@ -45,6 +45,16 @@ export const POWER_LIGHT = "/scene/power/light.png";
 const part = (id: ZoneId, k: number) => `.lab-power[data-power="${id}"][data-part="${k}"]`;
 
 /** One station's part of POWER_CSS (M1.4H.1: /lab-v2 powers Engineering's recovered strips with it). */
+/** Reduced motion: the unpowered overlay fades out while the station is lit. */
+const powerReducedCss = (id: ZoneId) => `:is([data-lab-hover="${id}"],[data-lab-selected="${id}"]) .lab-power-dim[data-power="${id}"]{opacity:0}`;
+
+/**
+ * M1.4K.4 / M1.4K.5A lite mode: reduced motion's strips for one station, whatever the preference (powerCss's rule and
+ * globals.css's, for its parts): the unpowered overlay cross-fades away, unmasked, so no front spreads.
+ */
+export const powerLiteCss = (id: ZoneId): string =>
+  powerReducedCss(id) + `.lab-power[data-power="${id}"]{mask-image:none!important;-webkit-mask-image:none!important;transition:opacity 150ms ease!important}`;
+
 export function powerCss(id: ZoneId): string {
   const on = `:is([data-lab-hover="${id}"],[data-lab-selected="${id}"])`;
   return (
@@ -54,7 +64,7 @@ export function powerCss(id: ZoneId): string {
           `${part(id, k)}{transition:--pw ${p.off.dur}ms linear ${p.off.delay}ms}` +
           `${on} ${part(id, k)}{--pw:1;transition:--pw ${p.on.dur}ms linear calc(var(--arrive-now) + ${p.on.delay}ms)}`,
       )
-      .join("") + `@media (prefers-reduced-motion: reduce){${on} .lab-power-dim[data-power="${id}"]{opacity:0}}`
+      .join("") + `@media (prefers-reduced-motion: reduce){${powerReducedCss(id)}}`
   );
 }
 

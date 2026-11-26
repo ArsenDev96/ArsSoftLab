@@ -244,21 +244,24 @@ function Recovered({ src, light, name }: { src: string; light: boolean; name: st
  */
 const PG_FOOT = { cx: 1217.5, cy: 522.8, rx: 157, ry: 23.7 };
 
-function PlaygroundGround() {
+function PlaygroundGround({ lite = false }: { lite?: boolean }) {
   const f = PG_FOOT;
   const ell = (rx: number, ry: number, cy: number): CSSProperties => ({ left: u(f.cx - rx), top: u(cy - ry), width: u(2 * rx), height: u(2 * ry) });
   return (
     <div aria-hidden="true" data-zone="playground" data-depth="playground" className="lab-depth pointer-events-none absolute inset-0" data-v2-ground="playground">
-      <div
-        className="lab-v2-shadow lab-v2-shadow-ambient absolute"
-        style={{
-          ...ell(f.rx, f.ry, f.cy),
-          transformOrigin: "50% 50%",
-          transform: "translateY(calc(var(--u) * 3 * var(--lp))) scale(calc(0.96 + 0.12 * var(--lp)), calc(0.85 + 0.62 * var(--lp)))",
-          opacity: "calc(0.9 * var(--lp))",
-          background: "radial-gradient(closest-side, rgb(6 4 3 / 0.9), rgb(6 4 3 / 0.8) 40%, rgb(6 4 3 / 0.5) 68%, rgb(6 4 3 / 0.2) 86%, transparent)",
-        }}
-      />
+      {/* M1.4K.4 lite: no lift, so the ambient shadow (transparent on the floor) is not mounted. */}
+      {lite ? null : (
+        <div
+          className="lab-v2-shadow lab-v2-shadow-ambient absolute"
+          style={{
+            ...ell(f.rx, f.ry, f.cy),
+            transformOrigin: "50% 50%",
+            transform: "translateY(calc(var(--u) * 3 * var(--lp))) scale(calc(0.96 + 0.12 * var(--lp)), calc(0.85 + 0.62 * var(--lp)))",
+            opacity: "calc(0.9 * var(--lp))",
+            background: "radial-gradient(closest-side, rgb(6 4 3 / 0.9), rgb(6 4 3 / 0.8) 40%, rgb(6 4 3 / 0.5) 68%, rgb(6 4 3 / 0.2) 86%, transparent)",
+          }}
+        />
+      )}
       <div
         className="lab-v2-shadow lab-v2-shadow-contact absolute"
         style={{
@@ -283,7 +286,21 @@ const PG_STRIP_CSS =
   ".lab-v2-strip-off{opacity:1;transition:opacity 240ms var(--ease-glow) 160ms}" +
   ':is([data-lab-hover="playground"],[data-lab-selected="playground"]) .lab-v2-strip-off{opacity:0;transition:opacity 260ms var(--ease-glow) var(--arrive-now)}';
 
-export function SceneV2({ floorTone = false }: { floorTone?: boolean } = {}) {
+/**
+ * M1.4K.4 lite mode (/lab-v2?render=lite): Playground answers as with reduced motion, whatever the preference: it
+ * stays on the floor (the lift's transform and --lp held, as globals.css does for reduced motion), its strips, ring
+ * and reflection light at once in a short cross-fade, and its game shows one still frame (ArcadeScreen `still`).
+ */
+const PG_LITE_CSS =
+  `.lab-lift[data-lift="playground"]{transform:none!important}` +
+  `.lab-depth[data-depth="playground"]{--lp:0!important;transition:none!important}` +
+  `:is(.lab-v2-strip-off,.lab-v2-power-lit){transition-duration:150ms!important;transition-delay:0ms!important}` +
+  `.lab-arcade[data-arcade="playground"]{transition:opacity 150ms ease!important}`;
+
+/**
+ * M1.4K.4 / M1.4K.5A `lite`: all five stations in lite mode (each station's own lite CSS, and PG_LITE_CSS).
+ */
+export function SceneV2({ floorTone = false, lite = false }: { floorTone?: boolean; lite?: boolean } = {}) {
   return (
     <div className="absolute inset-0" data-scene-variant="v2">
       {/* eslint-disable-next-line @next/next/no-img-element -- the environment at the scene's own geometry */}
@@ -298,6 +315,7 @@ export function SceneV2({ floorTone = false }: { floorTone?: boolean } = {}) {
       {floorTone && <FloorTone />}
       <FloorLayer src={`${M14H4}/floor-light.png`} name="light" blend="plus-lighter" />
       <style>{ENG_LIFT_CSS + EDU_LIFT_CSS + CRE_LIFT_CSS + EXP_LIFT_CSS}</style>
+      {lite ? <style>{PG_LITE_CSS}</style> : null}
       <EngineeringLift>
         <EngineeringFloor />
       </EngineeringLift>
@@ -308,7 +326,7 @@ export function SceneV2({ floorTone = false }: { floorTone?: boolean } = {}) {
       <PlaygroundReflection />
       <FloorLayer src={`${M14G}/contact.png`} name="contact" clip={CONTACT_OTHERS} />
       {/* M1.4J.1: Engineering's grounding, which answers its lift, and its connection beneath it. */}
-      <EngineeringGround line={BOOST_STROKES} />
+      <EngineeringGround line={BOOST_STROKES} lite={lite} />
       {/* M1.4J.2: Educational's grounding, which answers its lift. */}
       <EducationalGround />
       {/* M1.4J.3: Creative Studio's grounding, which answers its lift. */}
@@ -316,7 +334,7 @@ export function SceneV2({ floorTone = false }: { floorTone?: boolean } = {}) {
       {/* M1.4J.4: Experience's grounding, which answers its lift. */}
       <ExperienceGround />
       {/* M1.4E.1: Playground's own height-responsive grounding. */}
-      <PlaygroundGround />
+      <PlaygroundGround lite={lite} />
       {V2_OBJECTS.map((o) =>
         o.id === "hub" ? (
           // M1.4E: the approved central A replaces the generated one, in the same depth order.
@@ -337,21 +355,21 @@ export function SceneV2({ floorTone = false }: { floorTone?: boolean } = {}) {
             {/* eslint-disable-next-line @next/next/no-img-element -- the station's own frame, placed like the station */}
             <img src={PG_STRIP_OFF} alt="" draggable={false} data-gate="" className="lab-v2-strip-off absolute max-w-none select-none" style={place(o)} />
             <div aria-hidden="true" data-zone="playground" className="lab-activation pointer-events-none absolute inset-0">
-              <ArcadeScreen id="playground" quad={V2_PLAYGROUND_SCREEN} box={FRAME} />
+              <ArcadeScreen id="playground" quad={V2_PLAYGROUND_SCREEN} box={FRAME} still={lite} />
             </div>
           </div>
         ) : o.id === "engineering" ? (
           // M1.4H.1: the recovered Engineering, split so it can power on.
-          <EngineeringV2 key={o.id} />
+          <EngineeringV2 key={o.id} lite={lite} />
         ) : o.id === "educational" ? (
           // M1.4H.2: the recovered Educational, split so its globe can awaken.
-          <EducationalV2 key={o.id} />
+          <EducationalV2 key={o.id} lite={lite} />
         ) : o.id === "creative" ? (
           // M1.4H.3: the recovered Creative Studio, its painting awakening.
-          <CreativeV2 key={o.id} />
+          <CreativeV2 key={o.id} lite={lite} />
         ) : o.id === "experience" ? (
           // M1.4H.4: the recovered Experience, the energy travelling its mountain route.
-          <ExperienceV2 key={o.id} />
+          <ExperienceV2 key={o.id} lite={lite} />
         ) : RECOVERED_STATIONS[o.id] ? (
           <div key={o.id} className="pointer-events-none absolute inset-0" data-v2-station={o.id} data-v2-station-source="approved">
             <Recovered src={`${RECOVERED_STATIONS[o.id]}.png`} light={false} name={o.id} />

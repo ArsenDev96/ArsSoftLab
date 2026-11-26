@@ -4,7 +4,7 @@ import { CHARGE_ROUTES } from "./charge-routes";
 import { CONNECTION_LAYERS } from "./scene-25d-data";
 import { STATION_LAYOUT, type HotspotShape } from "./scene-layout";
 import { SceneImage } from "./SceneImage";
-import { contactOnly, frameMask, liftCss, type LiftSpec } from "./station-lift";
+import { contactOnly, frameMask, liftCss, liftReducedCss, type LiftSpec } from "./station-lift";
 
 /**
  * M1.4J.2 (/lab-v2 only): Educational's lift. The stone, the island and church,
@@ -32,6 +32,8 @@ export const EDU_LIFT: LiftSpec = {
 const L = EDU_LIFT;
 
 export const EDU_LIFT_CSS = liftCss({ id: ID, cls: "edu", v: "--dl", spec: L });
+/** M1.4K.5A lite mode: reduced motion's lift (it stays on the floor). */
+export const EDU_LIFT_REDUCED_CSS = liftReducedCss("edu", "--dl");
 
 /** The scope that carries --dl (box-less: geometry and stacking stay as they are). */
 export function EducationalLift({ children }: { children: ReactNode }) {

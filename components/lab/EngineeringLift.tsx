@@ -62,6 +62,9 @@ const DOWN = `${L.offMs}ms ${L.offEase}`;
 /** Chromium (as SceneImage's crops). */
 const TWO_NUMBERS = "(object-view-box:none)";
 
+/** Reduced motion: it stays on the floor. M1.4K.4: also lite mode's (EngineeringV2's ENG_LITE_CSS), without the media query. */
+export const ENG_LIFT_REDUCED_CSS = `.eng-lift-cycle,.eng-lift{transition:none!important}.eng-lift{--el:0!important}`;
+
 export const ENG_LIFT_CSS =
   ["--el-on", "--elh", "--el"].map((v) => `@property ${v}{syntax:"<number>";inherits:true;initial-value:0}`).join("") +
   `.eng-lift{--eng-rise:${u(L.rise)};--el:0;--eng-join:clamp(0,(var(--el) - 0.012) * 25,1);transition:--el ${DOWN}}` +
@@ -77,7 +80,7 @@ export const ENG_LIFT_CSS =
   // Follows at once; naming the property (not `none`) lets a descent in progress finish.
   `${ON} .eng-lift{--el:max(var(--el-on),var(--elh));transition:--el 0s}}` +
   `.eng-rise{transform:translateY(calc(var(--eng-rise) * -1 * var(--el)))}` +
-  `@media (prefers-reduced-motion: reduce){.eng-lift-cycle,.eng-lift{transition:none!important}.eng-lift{--el:0!important}}`;
+  `@media (prefers-reduced-motion: reduce){${ENG_LIFT_REDUCED_CSS}}`;
 
 /** The scope that carries --el (box-less: geometry and stacking stay as they are). */
 export function EngineeringLift({ children }: { children: ReactNode }) {
@@ -124,7 +127,7 @@ export const ENG_DISC_FADE: CSSProperties = (() => {
  * over, a little wider and lower with height. Both are light enough for the
  * floor's texture to show.
  */
-export function EngineeringGround({ line }: { line: readonly LineStroke[] }) {
+export function EngineeringGround({ line, lite = false }: { line: readonly LineStroke[]; lite?: boolean }) {
   return (
     <EngineeringLift>
       <SceneImage
@@ -133,26 +136,29 @@ export function EngineeringGround({ line }: { line: readonly LineStroke[] }) {
         className="pointer-events-none absolute inset-0 h-full w-full max-w-none select-none"
         style={{ ...contactOnly(ENG_CONTACT), opacity: "calc(1 - 0.7 * var(--el))" }}
       />
-      <svg
-        aria-hidden="true"
-        data-v2-ground={ID}
-        className="pointer-events-none absolute overflow-visible"
-        style={{
-          left: u(FOOT_BOX.x),
-          top: u(FOOT_BOX.y),
-          width: u(FOOT_BOX.w),
-          height: u(FOOT_BOX.h),
-          transformOrigin: `${u(FOOT_CENTRE.x - FOOT_BOX.x)} ${u(FOOT_CENTRE.y - FOOT_BOX.y)}`,
-          transform: "translateY(calc(var(--u) * 1.5 * var(--el))) scale(calc(0.985 + 0.03 * var(--el)), calc(0.96 + 0.12 * var(--el)))",
-          opacity: "calc(0.3 * var(--el))",
-        }}
-        viewBox={`${FOOT_BOX.x} ${FOOT_BOX.y} ${FOOT_BOX.w} ${FOOT_BOX.h}`}
-      >
-        <filter id="eng-foot-soft" filterUnits="userSpaceOnUse" x={FOOT_BOX.x} y={FOOT_BOX.y} width={FOOT_BOX.w} height={FOOT_BOX.h}>
-          <feGaussianBlur stdDeviation="6 4.5" />
-        </filter>
-        <path d={FOOT} fill="rgb(5 4 3)" filter="url(#eng-foot-soft)" />
-      </svg>
+      {/* M1.4K.4 lite: no lift, so the soft shadow it spreads (transparent on the floor) is not mounted. */}
+      {lite ? null : (
+        <svg
+          aria-hidden="true"
+          data-v2-ground={ID}
+          className="pointer-events-none absolute overflow-visible"
+          style={{
+            left: u(FOOT_BOX.x),
+            top: u(FOOT_BOX.y),
+            width: u(FOOT_BOX.w),
+            height: u(FOOT_BOX.h),
+            transformOrigin: `${u(FOOT_CENTRE.x - FOOT_BOX.x)} ${u(FOOT_CENTRE.y - FOOT_BOX.y)}`,
+            transform: "translateY(calc(var(--u) * 1.5 * var(--el))) scale(calc(0.985 + 0.03 * var(--el)), calc(0.96 + 0.12 * var(--el)))",
+            opacity: "calc(0.3 * var(--el))",
+          }}
+          viewBox={`${FOOT_BOX.x} ${FOOT_BOX.y} ${FOOT_BOX.w} ${FOOT_BOX.h}`}
+        >
+          <filter id="eng-foot-soft" filterUnits="userSpaceOnUse" x={FOOT_BOX.x} y={FOOT_BOX.y} width={FOOT_BOX.w} height={FOOT_BOX.h}>
+            <feGaussianBlur stdDeviation="6 4.5" />
+          </filter>
+          <path d={FOOT} fill="rgb(5 4 3)" filter="url(#eng-foot-soft)" />
+        </svg>
+      )}
       <EngineeringLineEnd strokes={line} />
     </EngineeringLift>
   );

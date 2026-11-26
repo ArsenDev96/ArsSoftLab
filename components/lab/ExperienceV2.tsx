@@ -2,10 +2,10 @@ import type { CSSProperties } from "react";
 import { SCENE, u, type SceneRect } from "@/lib/scene";
 import { EXP_BOX, EXP_CLOCK, EXP_GRID, EXP_STEPS } from "./experience-v2";
 import { PLATFORM_POWER, POWER_FRONT } from "./platform-power";
-import { ExperienceLift, M14J4 } from "./ExperienceLift";
-import { partFrame, PowerPart, powerCss } from "./PlatformPower";
+import { EXP_LIFT_REDUCED_CSS, ExperienceLift, M14J4 } from "./ExperienceLift";
+import { partFrame, PowerPart, powerCss, powerLiteCss } from "./PlatformPower";
 import { SceneImage } from "./SceneImage";
-import { cycleCss } from "./station-cycle";
+import { cycleCss, cycleReducedCss } from "./station-cycle";
 
 /**
  * M1.4H.4 (/lab-v2 only): Experience's activation: the energy travels the
@@ -91,6 +91,25 @@ const SPILL_CLIP = clipTo({ x: 1032, y: 655, w: 640, h: 257 });
 const prop = (name: string) => `@property ${name}{syntax:"<number>";inherits:true;initial-value:0}`;
 const floorSel = (k: number) => `.exp-floor[data-floor-part="${k}"]`;
 
+/**
+ * Reduced motion: the powered appearance, cross-faded whole; nothing travels. M1.4K.5A: also lite mode's
+ * (EXP_LITE_CSS), without the media query.
+ */
+export const EXP_REDUCED_CSS =
+  `.exp-seq,${ON} .exp-seq{transition:--xr 150ms ease}` +
+  `[data-exp="standby"]{mask-image:none!important;-webkit-mask-image:none!important;opacity:calc(1 - var(--xr))}` +
+  `.exp-floor-top{opacity:calc(${FLOOR_TOP_STANDBY} + ${1 - FLOOR_TOP_STANDBY} * var(--xr))}` +
+  `[data-exp-swap],${ON} [data-exp-swap]{transition:opacity 150ms linear}` +
+  `.exp-gate,.exp-pulse{display:none}` +
+  `.exp-floor{mask-image:none!important;-webkit-mask-image:none!important;opacity:0!important;transition:opacity 150ms ease!important}` +
+  `${ON} .exp-floor{opacity:calc(1 - var(--exp-standby, 0))!important}`;
+
+/**
+ * M1.4K.5A lite mode: reduced motion's response for this station alone, whatever the preference: its own rules
+ * (EXP_REDUCED_CSS), its cycle's, its lift's and its strips'.
+ */
+const EXP_LITE_CSS = EXP_REDUCED_CSS + cycleReducedCss("exp") + EXP_LIFT_REDUCED_CSS + powerLiteCss(ID);
+
 const EXP_CSS =
   prop("--xr") +
   powerCss(ID) +
@@ -121,14 +140,7 @@ const EXP_CSS =
   ).join("") +
   `.exp-floor-top{opacity:calc(${FLOOR_TOP_STANDBY} + ${1 - FLOOR_TOP_STANDBY} * min(1, max(0, var(--xs) - 0.1) * 1.5))}` +
   // Reduced motion: the powered appearance, cross-faded whole; nothing travels.
-  `@media (prefers-reduced-motion: reduce){` +
-  `.exp-seq,${ON} .exp-seq{transition:--xr 150ms ease}` +
-  `[data-exp="standby"]{mask-image:none!important;-webkit-mask-image:none!important;opacity:calc(1 - var(--xr))}` +
-  `.exp-floor-top{opacity:calc(${FLOOR_TOP_STANDBY} + ${1 - FLOOR_TOP_STANDBY} * var(--xr))}` +
-  `[data-exp-swap],${ON} [data-exp-swap]{transition:opacity 150ms linear}` +
-  `.exp-gate,.exp-pulse{display:none}` +
-  `.exp-floor{mask-image:none!important;-webkit-mask-image:none!important;opacity:0!important;transition:opacity 150ms ease!important}` +
-  `${ON} .exp-floor{opacity:calc(1 - var(--exp-standby, 0))!important}}`;
+  `@media (prefers-reduced-motion: reduce){${EXP_REDUCED_CSS}}`;
 
 function Full({ src, name, add, swap, className = "", style }: { src: string; name: string; add?: boolean; swap?: "stable"; className?: string; style?: CSSProperties }) {
   return (
@@ -197,18 +209,24 @@ function Pulse({ index }: { index: number }) {
 /** The strips' pieces on the stone (the reflection parts are the floor's: ExperienceFloor). */
 const STRIP_PARTS = PLATFORM_POWER[ID].parts.flatMap((p, k) => (p.kind === "strip" ? [k] : []));
 
-/** The station in this cycle's wrapper (station-cycle.ts). */
-export const ExperienceV2 = () => (
+/**
+ * The station in this cycle's wrapper (station-cycle.ts).
+ *
+ * M1.4K.5A `lite` (/lab-v2?render=lite): the station answers as with reduced motion (EXP_LITE_CSS): it powers on at
+ * once, nothing travels or lifts. The layers only the sequence draws (the strips' pulse, the light travelling the route) are not mounted.
+ */
+export const ExperienceV2 = ({ lite = false }: { lite?: boolean } = {}) => (
   <div data-zone={ID} className="exp-cycle contents">
-    <Station />
+    <Station lite={lite} />
   </div>
 );
 
-function Station() {
+function Station({ lite }: { lite: boolean }) {
   const light = frame({ x: 0, y: 0 });
   return (
     <div aria-hidden="true" data-zone={ID} data-v2-station={ID} data-v2-station-source="approved" className="exp-v2 exp-seq pointer-events-none absolute inset-0">
       <style>{EXP_CSS}</style>
+      {lite ? <style>{EXP_LITE_CSS}</style> : null}
       <ExperienceLift>
       {/* M1.4J.4: what the strips throw on the floor stays, under the station (M1.4F's experience-light but for its edge). */}
       <div data-exp-swap="anim" className="absolute inset-0" style={{ ...SPILL_CLIP, mixBlendMode: "plus-lighter" }}>
@@ -234,20 +252,22 @@ function Station() {
           <Frame src={`${M14H4}/experience-strip-off.png`} box={PLATFORM_POWER[ID].parts[k].box} />
         </PowerPart>
       ))}
-      {STRIP_PARTS.map((k) => (
-        <Pulse key={`pulse-${k}`} index={k} />
-      ))}
+      {lite ? null : STRIP_PARTS.map((k) => <Pulse key={`pulse-${k}`} index={k} />)}
       {/* Standby: the dim route and the terrain without its light, removed along the route by the journey. */}
       <div data-exp="standby" className="exp-rise absolute inset-0" style={{ ...revealMask(), ...CLIP }}>
         <Full src={`${M14H4}/experience-standby.png`} name="standby-image" />
       </div>
-      {/* The light that travels: the start, the head, the terrain and flags it passes, the destination. */}
-      <div data-exp="light" className="exp-gate exp-rise absolute inset-0" style={{ ...CLIP, mixBlendMode: "plus-lighter" }}>
-        <div
-          className="exp-light absolute"
-          style={{ ...box(EXP_BOX), backgroundImage: `url(${M14H4}/experience-light.png)`, backgroundSize: light.size, backgroundPosition: light.position, backgroundRepeat: "no-repeat" }}
-        />
-      </div>
+      {lite ? null : (
+        <>
+          {/* The light that travels: the start, the head, the terrain and flags it passes, the destination. */}
+          <div data-exp="light" className="exp-gate exp-rise absolute inset-0" style={{ ...CLIP, mixBlendMode: "plus-lighter" }}>
+            <div
+              className="exp-light absolute"
+              style={{ ...box(EXP_BOX), backgroundImage: `url(${M14H4}/experience-light.png)`, backgroundSize: light.size, backgroundPosition: light.position, backgroundRepeat: "no-repeat" }}
+            />
+          </div>
+        </>
+      )}
       </ExperienceLift>
     </div>
   );

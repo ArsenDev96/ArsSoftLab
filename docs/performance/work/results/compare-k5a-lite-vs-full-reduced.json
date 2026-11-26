@@ -1,0 +1,41 @@
+{
+ "creative": {
+  "max": 9,
+  "px_any": 43,
+  "px_over2": 32,
+  "over2_box": [
+   508,
+   428,
+   508,
+   467
+  ],
+  "eng_max": 9,
+  "eng_px_over2": 32
+ },
+ "educational": {
+  "max": 9,
+  "px_any": 43,
+  "px_over2": 32,
+  "over2_box": [
+   508,
+   428,
+   508,
+   467
+  ],
+  "eng_max": 9,
+  "eng_px_over2": 32
+ },
+ "experience": {
+  "max": 9,
+  "px_any": 43,
+  "px_over2": 32,
+  "over2_box": [
+   508,
+   428,
+   508,
+   467
+  ],
+  "eng_max": 9,
+  "eng_px_over2": 32
+ }
+}

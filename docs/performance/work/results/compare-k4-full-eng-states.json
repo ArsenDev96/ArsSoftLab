@@ -1,0 +1,42 @@
+{
+ "default-1648x928-chart": {
+  "max": 0,
+  "px_any": 0,
+  "px_over2": 0,
+  "over2_box": null,
+  "eng_max": 0,
+  "eng_px_over2": 0
+ },
+ "default-1648x928-full": {
+  "max": 0,
+  "px_any": 0,
+  "px_over2": 0,
+  "over2_box": null,
+  "eng_max": 0,
+  "eng_px_over2": 0
+ },
+ "default-1648x928-half": {
+  "max": 0,
+  "px_any": 0,
+  "px_over2": 0,
+  "over2_box": null,
+  "eng_max": 0,
+  "eng_px_over2": 0
+ },
+ "default-1648x928-rest": {
+  "max": 0,
+  "px_any": 0,
+  "px_over2": 0,
+  "over2_box": null,
+  "eng_max": 0,
+  "eng_px_over2": 0
+ },
+ "default-1648x928-stable": {
+  "max": 0,
+  "px_any": 0,
+  "px_over2": 0,
+  "over2_box": null,
+  "eng_max": 0,
+  "eng_px_over2": 0
+ }
+}

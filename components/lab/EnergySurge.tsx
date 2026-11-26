@@ -181,6 +181,23 @@ function pathKeyframes(path: readonly (readonly [number, number])[], box: SceneR
   return { move, turn };
 }
 
+/** The connection's charge windows at full charge, in `scope`. */
+const poweredLine = (id: ZoneId, scope: string) =>
+  (CHARGE_LINES[id]?.segments ?? [])
+    .map((seg, k) => {
+      const t = chargeTransforms(seg, "boost", segmentOffset(seg, Infinity, true, 0));
+      const w = `${scope} [data-charge-window="${id}"][data-charge-seg="${k}"][data-charge-kind="boost"]`;
+      return `${w}{transform:${t.window}!important}${w}>[data-charge-content]{transform:${t.content}!important}`;
+    })
+    .join("");
+
+/**
+ * The connection fully powered while its station is hovered: reduced motion's (ACTIVATION_CSS), and M1.4K.4's
+ * lite mode (LabSceneV2), without the media query. "" for a station without a charge line.
+ */
+export const hoverPoweredLineCss = (id: ZoneId) =>
+  CHARGE_LINES[id] ? `[data-lab-hover="${id}"] .lab-charge-dim[data-zone="${id}"] .lab-charge-unpowered{opacity:0}${poweredLine(id, `[data-lab-hover="${id}"]`)}` : "";
+
 /**
  * Sequencing for each station: `--arrive-now` is its arrival time while it
  * is hovered but not selected, 0 otherwise (so leaving, selection and
@@ -204,17 +221,9 @@ export const ACTIVATION_CSS = surgeStations
     // floor-only connection light is replaced by the route's own glow.
     const line = CHARGE_LINES[id];
     if (line) {
-      const powered = (scope: string) =>
-        line.segments
-          .map((seg, k) => {
-            const t = chargeTransforms(seg, "boost", segmentOffset(seg, Infinity, true, 0));
-            const w = `${scope} [data-charge-window="${id}"][data-charge-seg="${k}"][data-charge-kind="boost"]`;
-            return `${w}{transform:${t.window}!important}${w}>[data-charge-content]{transform:${t.content}!important}`;
-          })
-          .join("");
       css += `[data-lab-selected="${id}"] .lab-charge-dim[data-zone="${id}"] .lab-charge-unpowered{opacity:0}`;
-      css += powered(`[data-lab-selected="${id}"]`);
-      css += `@media (prefers-reduced-motion: reduce){[data-lab-hover="${id}"] .lab-charge-dim[data-zone="${id}"] .lab-charge-unpowered{opacity:0}${powered(`[data-lab-hover="${id}"]`)}}`;
+      css += poweredLine(id, `[data-lab-selected="${id}"]`);
+      css += `@media (prefers-reduced-motion: reduce){${hoverPoweredLineCss(id)}}`;
       css += `.lab-connection-light[data-zone="${id}"]{display:none}`;
       // M1.4E.3 (/lab-v2): Playground's continuous line, in the same two states.
       if (id === "playground")
@@ -238,9 +247,21 @@ const V2_ROUTE_MASKS: Partial<Record<ZoneId, { core: string; glow: string; wide:
   },
 };
 
-export function EnergySurge({ variant = "plate" }: { variant?: "plate" | "v2" }) {
+const NO_SKIP: readonly ZoneId[] = [];
+/** M1.4K.4: a skipped station answers at once (no arrival to wait for) and its connection is powered while hovered, as with reduced motion. */
+const skipCss = (id: ZoneId) =>
+  `:is([data-zone="${id}"],[data-lift="${id}"],[data-station-layer="${id}"]){--arrive-now:0ms!important}` +
+  hoverPoweredLineCss(id) +
+  (id === "playground" ? pgV2PoweredCss(`[data-lab-hover="${id}"]`) : "");
+
+/**
+ * M1.4K.4 `skip` (/lab-v2?render=lite): stations that send no pulse (nothing is fired for them, and their spark's
+ * layers are not mounted); they answer at once, as with reduced motion.
+ */
+export function EnergySurge({ variant = "plate", skip = NO_SKIP }: { variant?: "plate" | "v2"; skip?: readonly ZoneId[] }) {
   const root = useRef<HTMLDivElement>(null);
   const { onHoverChange } = useLabState();
+  const skipKey = skip.join();
 
   useEffect(() => {
     const el = root.current;
@@ -426,10 +447,11 @@ export function EnergySurge({ variant = "plate" }: { variant?: "plate" | "v2" })
     };
 
     let lastSelected: ZoneId | null = null;
+    const skipped = new Set(skipKey ? (skipKey.split(",") as ZoneId[]) : []);
     const unsubscribe = onHoverChange((hovered, selected) => {
       const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
       // A selected station is already powered: hovering it sends nothing.
-      const target = hovered && hovered !== selected && !reduced && PATHS[hovered] ? hovered : null;
+      const target = hovered && hovered !== selected && !reduced && PATHS[hovered] && !skipped.has(hovered) ? hovered : null;
       // Deselected but still hovered / focused (e.g. Escape returns focus to
       // its title): it never lost power, so no second pulse.
       const charged = target !== null && target === lastSelected;
@@ -443,11 +465,11 @@ export function EnergySurge({ variant = "plate" }: { variant?: "plate" | "v2" })
       unsubscribe();
       for (const id of runs.keys()) cancel(id);
     };
-  }, [onHoverChange]);
+  }, [onHoverChange, skipKey]);
 
   return (
     <div ref={root} aria-hidden="true" className="lab-surge pointer-events-none absolute inset-0">
-      <style>{ACTIVATION_CSS}</style>
+      <style>{ACTIVATION_CSS + skip.map(skipCss).join("")}</style>
       <div className="absolute overflow-hidden" style={sceneRect(CORE_FLASH_BOX)}>
         {/* eslint-disable-next-line @next/next/no-img-element -- full-frame overlay at the plate's geometry */}
         <img
@@ -460,6 +482,7 @@ export function EnergySurge({ variant = "plate" }: { variant?: "plate" | "v2" })
         />
       </div>
       {surgeStations.map((id) => {
+        if (skip.includes(id)) return null;
         const path = PATHS[id];
         const trailLen = path.length + 60;
         const line = CHARGE_LINES[id];

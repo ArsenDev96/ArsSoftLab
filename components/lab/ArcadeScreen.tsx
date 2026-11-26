@@ -83,7 +83,8 @@ function grow(quad: readonly Pt[], d: number): Pt[] {
   });
 }
 
-export function ArcadeScreen({ id, quad, box }: { id: ZoneId; quad: ScreenQuad; box: SceneRect }) {
+/** M1.4K.4 `still` (/lab-v2?render=lite): the reduced-motion screen, one static frame and no loop, whatever the preference. */
+export function ArcadeScreen({ id, quad, box, still = false }: { id: ZoneId; quad: ScreenQuad; box: SceneRect; still?: boolean }) {
   const wrapRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const { onHoverChange, station } = useLabState();
@@ -178,7 +179,7 @@ export function ArcadeScreen({ id, quad, box }: { id: ZoneId; quad: ScreenQuad; 
         if (clock && Number(clock.currentTime) < bootAt) stop();
         return;
       }
-      if (reducedQ.matches) {
+      if (still || reducedQ.matches) {
         if (clock) stop();
         fit();
         paint(STILL_G);
@@ -229,7 +230,7 @@ export function ArcadeScreen({ id, quad, box }: { id: ZoneId; quad: ScreenQuad; 
     };
     // The quad is static configuration.
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [id, onHoverChange]);
+  }, [id, onHoverChange, still]);
 
   return (
     <div

@@ -1,0 +1,36 @@
+{
+ "50": [
+  "opacity DIV.eng-floor.absolute[engineering] 110x163",
+  "opacity DIV.eng-floor.absolute[engineering] 284x163",
+  "opacity SPAN.lab-v2-power-lit.absolute 1649x928",
+  "opacity SPAN.lab-v2-power-lit.absolute 1649x928",
+  "opacity IMG.lab-v2-strip-off.absolute 641x361",
+  "opacity DIV.lab-arcade.absolute 88x53",
+  "--ef DIV.eng-v2.pointer-events-none[engineering] 1649x928",
+  "opacity DIV.eng-floor.absolute[engineering] 110x163",
+  "opacity DIV.eng-floor.absolute[engineering] 284x163",
+  "opacity DIV.lab-power.lab-power-dim[engineering] 45x30",
+  "opacity DIV.lab-power.lab-power-dim[engineering] 130x25",
+  "opacity DIV.eng-screen-off.eng-rise 1649x928",
+  "opacity DIV.lab-charge-unpowered.absolute 127x44",
+  "opacity DIV.lab-charge-unpowered.absolute 189x77",
+  "opacity DIV.lab-charge-unpowered.absolute 126x45",
+  "opacity DIV.lab-charge-unpowered.absolute 194x73",
+  "clip-path DIV.absolute.cursor-pointer[engineering] 333x178",
+  "filter SPAN.lab-station-icon.absolute 46x33",
+  "text-shadow BUTTON.lab-station-title.lab-copy-shadow 108x20",
+  "text-shadow BUTTON.lab-station-title.lab-copy-shadow 105x21"
+ ],
+ "250": [
+  "opacity DIV.lab-charge-unpowered.absolute 127x44",
+  "opacity DIV.lab-charge-unpowered.absolute 189x77",
+  "opacity DIV.lab-charge-unpowered.absolute 126x45",
+  "opacity DIV.lab-charge-unpowered.absolute 194x73",
+  "clip-path DIV.absolute.cursor-pointer[engineering] 333x178",
+  "filter SPAN.lab-station-icon.absolute 46x33",
+  "text-shadow BUTTON.lab-station-title.lab-copy-shadow 108x20",
+  "text-shadow BUTTON.lab-station-title.lab-copy-shadow 105x21"
+ ],
+ "450": [],
+ "700": []
+}

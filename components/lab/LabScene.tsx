@@ -1,4 +1,5 @@
 import Image from "next/image";
+import type { ZoneId } from "@/data/zones";
 import { SCENE } from "@/lib/scene";
 import { ChargeLines } from "./ChargeLine";
 import { CREATIVE_HOTSPOT_V2 } from "./CreativeLift";
@@ -45,8 +46,8 @@ import { SceneV2 } from "./SceneV2";
  * Station information is shown in the hero slot (LabHero), outside the stage,
  * so it is never scaled by the camera.
  */
-export function LabScene({ variant = "plate", floorTone = false }: { variant?: "plate" | "v2"; floorTone?: boolean }) {
-  if (variant === "v2") return <LabSceneV2 floorTone={floorTone} />;
+export function LabScene({ variant = "plate", floorTone = false, lite = false }: { variant?: "plate" | "v2"; floorTone?: boolean; lite?: boolean }) {
+  if (variant === "v2") return <LabSceneV2 floorTone={floorTone} lite={lite} />;
   return (
     <div
       className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 overflow-hidden"
@@ -124,9 +125,26 @@ export function LabScene({ variant = "plate", floorTone = false }: { variant?: "
  * reflections, StationLights, the activation glows and GlobeOrbit. The
  * connections keep their accurate routes, drawn as vectors.
  */
-function LabSceneV2({ floorTone }: { floorTone: boolean }) {
+/**
+ * M1.4K.4 / M1.4K.5A (prototype, /lab-v2?render=lite): every station answers at once, as with reduced motion: no
+ * pulse (EnergySurge `skip`), no lift (labels and targets stay at rest), and the layers only their sequences draw are
+ * not mounted (SceneV2 `lite`). Educational's, Creative Studio's and Experience's targets follow their lift's number,
+ * which lite mode holds at 0.
+ */
+const LITE_STATIONS: readonly ZoneId[] = ["engineering", "educational", "playground", "creative", "experience"];
+/**
+ * Lite mode's camera: reduced motion's (globals.css), whatever the preference. A selection stays in the room's own
+ * shot, focused by the vignette and the hero's information, with no whole-stage move to recomposite.
+ */
+const LITE_CAMERA_CSS = ".lab-camera,[data-lab-selected] .lab-camera{transform:none!important;transition:none}";
+/** Their targets without the raised outline (and so without its clip-path transition): they never lift in lite mode. */
+const PLAYGROUND_HOTSPOT_LITE = { rest: PLAYGROUND_HOTSPOT_V2.rest, raised: PLAYGROUND_HOTSPOT_V2.rest };
+const ENGINEERING_HOTSPOT_LITE = { rest: ENGINEERING_HOTSPOT_V2.rest, raised: ENGINEERING_HOTSPOT_V2.rest };
+
+function LabSceneV2({ floorTone, lite }: { floorTone: boolean; lite: boolean }) {
   return (
     <div
+      data-lab-render={lite ? "lite" : undefined}
       className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 overflow-hidden"
       style={{
         ["--u" as string]: "var(--su)",
@@ -135,16 +153,17 @@ function LabSceneV2({ floorTone }: { floorTone: boolean }) {
       }}
     >
       <style>{SCENE_IMAGE_CSS}</style>
+      {lite ? <style>{LITE_CAMERA_CSS}</style> : null}
       <LabCamera>
         <SceneLayer name="plate" depth={0} className="lab-plate-gate">
-          <SceneV2 floorTone={floorTone} />
+          <SceneV2 floorTone={floorTone} lite={lite} />
         </SceneLayer>
         <SceneLayer name="lights" depth={0.3} className="lab-plate-gate">
           <ChargeLines variant="v2" />
         </SceneLayer>
         <PlateGate svgImages />
         <SceneLayer name="fx" depth={0.4}>
-          <EnergySurge variant="v2" />
+          <EnergySurge variant="v2" skip={lite ? LITE_STATIONS : undefined} />
         </SceneLayer>
         <FocusVignette />
         <SceneLayer name="stations" depth={0.5} className="z-10">
@@ -152,7 +171,8 @@ function LabSceneV2({ floorTone }: { floorTone: boolean }) {
           {/* M1.4I.1C: Playground's target includes the v2 cabinet's sign. */}
           {/* M1.4I.1E: hover holds between platform and label. Engineering's label stays where it is. */}
           {/* M1.4J: Engineering's, Educational's, Creative Studio's and Experience's targets follow their lifts. */}
-          <LabStations hideIcons={["playground"]} hotspots={{ playground: PLAYGROUND_HOTSPOT_V2, engineering: ENGINEERING_HOTSPOT_V2, educational: EDUCATIONAL_HOTSPOT_V2, creative: CREATIVE_HOTSPOT_V2, experience: EXPERIENCE_HOTSPOT_V2 }} bridges={STATION_BRIDGES_V2} stillLabels={["engineering"]} />
+          {/* M1.4K.4 / M1.4K.5A lite: every label and target stays where it is. */}
+          <LabStations hideIcons={["playground"]} hotspots={{ playground: lite ? PLAYGROUND_HOTSPOT_LITE : PLAYGROUND_HOTSPOT_V2, engineering: lite ? ENGINEERING_HOTSPOT_LITE : ENGINEERING_HOTSPOT_V2, educational: EDUCATIONAL_HOTSPOT_V2, creative: CREATIVE_HOTSPOT_V2, experience: EXPERIENCE_HOTSPOT_V2 }} bridges={STATION_BRIDGES_V2} stillLabels={lite ? LITE_STATIONS : ["engineering"]} />
         </SceneLayer>
       </LabCamera>
     </div>

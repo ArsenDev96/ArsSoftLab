@@ -1,0 +1,26 @@
+{
+ "engineering": {
+  "max": 0,
+  "px_any": 0,
+  "px_over2": 0,
+  "over2_box": null,
+  "eng_max": 0,
+  "eng_px_over2": 0
+ },
+ "playground": {
+  "max": 0,
+  "px_any": 0,
+  "px_over2": 0,
+  "over2_box": null,
+  "eng_max": 0,
+  "eng_px_over2": 0
+ },
+ "rest": {
+  "max": 0,
+  "px_any": 0,
+  "px_over2": 0,
+  "over2_box": null,
+  "eng_max": 0,
+  "eng_px_over2": 0
+ }
+}

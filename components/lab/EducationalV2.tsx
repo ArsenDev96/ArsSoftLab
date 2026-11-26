@@ -1,11 +1,11 @@
 import type { CSSProperties } from "react";
 import { SCENE, u, type SceneRect } from "@/lib/scene";
 import { EDU_LIGHT_BOX, EDU_LIGHT_GRID, EDU_LIGHT_STEPS, EDU_LIGHT_TAIL, EDU_RING_LENGTH, EDU_RING_PATH, EDU_WAVE_BOX, EDU_WAVE_STEPS } from "./educational-v2";
-import { EducationalLift } from "./EducationalLift";
+import { EDU_LIFT_REDUCED_CSS, EducationalLift } from "./EducationalLift";
 import { PLATFORM_POWER, POWER_FRONT } from "./platform-power";
-import { partFrame, PowerPart, powerCss } from "./PlatformPower";
+import { partFrame, PowerPart, powerCss, powerLiteCss } from "./PlatformPower";
 import { SceneImage, SceneImageInSvg } from "./SceneImage";
-import { cycleCss } from "./station-cycle";
+import { cycleCss, cycleReducedCss } from "./station-cycle";
 import { frameMask } from "./station-lift";
 
 /**
@@ -140,6 +140,27 @@ const FOOT_CLIP = clipTo({ x: 656, y: 386, w: 352, h: 58 });
 const prop = (name: string) => `@property ${name}{syntax:"<number>";inherits:true;initial-value:0}`;
 const level = (a: string | number) => `linear-gradient(rgb(0 0 0 / ${a}), rgb(0 0 0 / ${a}))`;
 
+/**
+ * Reduced motion: the powered appearance, cross-faded whole; nothing travels. M1.4K.5A: also lite mode's
+ * (EDU_LITE_CSS), without the media query.
+ */
+export const EDU_REDUCED_CSS =
+  `.edu-seq,${ON} .edu-seq{transition:--gr 150ms ease}` +
+  `[data-edu-wave]{mask-image:none!important;-webkit-mask-image:none!important;opacity:calc(${GLOBE_STANDBY} + ${1 - GLOBE_STANDBY} * var(--gr))}` +
+  `.edu-orbit-lit{opacity:calc(${1 - ORBIT_STANDBY} * var(--gr))!important}` +
+  `.edu-orbit-rest{opacity:calc(${ORBIT_STANDBY} + ${1 - ORBIT_STANDBY} * var(--gr))}` +
+  `.edu-floor-cyan{opacity:calc(${GLOBE_STANDBY} + ${1 - GLOBE_STANDBY} * var(--gr))}` +
+  `${ON} [data-edu-swap]{transition:visibility 0s linear 150ms}` +
+  `.edu-gate,.edu-pulse,.edu-shimmer{display:none}` +
+  `.edu-floor{mask-image:none!important;-webkit-mask-image:none!important;opacity:0!important;transition:opacity 150ms ease!important}` +
+  `${ON} .edu-floor{opacity:calc(1 - var(--edu-standby, 0))!important}`;
+
+/**
+ * M1.4K.5A lite mode: reduced motion's response for this station alone, whatever the preference: its own rules
+ * (EDU_REDUCED_CSS), its cycle's, its lift's and its strips'.
+ */
+const EDU_LITE_CSS = EDU_REDUCED_CSS + cycleReducedCss("edu") + EDU_LIFT_REDUCED_CSS + powerLiteCss(ID);
+
 const EDU_CSS =
   prop("--gr") +
   powerCss(ID) +
@@ -183,16 +204,7 @@ const EDU_CSS =
   `@keyframes edu-shimmer{0%{stroke-dashoffset:110px}38%,100%{stroke-dashoffset:${-(EDU_RING_LENGTH + 10)}px}}` +
   `${ON} .edu-shimmer-line{animation:edu-shimmer ${T.shimmerPeriod}ms linear calc(var(--arrive-now) + ${T.shimmerDelay}ms) infinite backwards}` +
   // Reduced motion: the powered appearance, cross-faded whole; nothing travels.
-  `@media (prefers-reduced-motion: reduce){` +
-  `.edu-seq,${ON} .edu-seq{transition:--gr 150ms ease}` +
-  `[data-edu-wave]{mask-image:none!important;-webkit-mask-image:none!important;opacity:calc(${GLOBE_STANDBY} + ${1 - GLOBE_STANDBY} * var(--gr))}` +
-  `.edu-orbit-lit{opacity:calc(${1 - ORBIT_STANDBY} * var(--gr))!important}` +
-  `.edu-orbit-rest{opacity:calc(${ORBIT_STANDBY} + ${1 - ORBIT_STANDBY} * var(--gr))}` +
-  `.edu-floor-cyan{opacity:calc(${GLOBE_STANDBY} + ${1 - GLOBE_STANDBY} * var(--gr))}` +
-  `${ON} [data-edu-swap]{transition:visibility 0s linear 150ms}` +
-  `.edu-gate,.edu-pulse,.edu-shimmer{display:none}` +
-  `.edu-floor{mask-image:none!important;-webkit-mask-image:none!important;opacity:0!important;transition:opacity 150ms ease!important}` +
-  `${ON} .edu-floor{opacity:calc(1 - var(--edu-standby, 0))!important}}`;
+  `@media (prefers-reduced-motion: reduce){${EDU_REDUCED_CSS}}`;
 
 function Full({ src, name, add, swap, className = "", style }: { src: string; name: string; add?: boolean; swap?: "anim" | "stable"; className?: string; style?: CSSProperties }) {
   return (
@@ -290,17 +302,24 @@ function Pulse({ index }: { index: number }) {
 
 const PARTS = PLATFORM_POWER[ID].parts.map((_, k) => k);
 
-/** The station in this cycle's wrapper (station-cycle.ts). */
-export const EducationalV2 = () => (
+/**
+ * The station in this cycle's wrapper (station-cycle.ts).
+ *
+ * M1.4K.5A `lite` (/lab-v2?render=lite): the station answers as with reduced motion (EDU_LITE_CSS): it powers on at
+ * once, nothing travels or lifts. The layers only the sequence draws (the strips' pulse, the pool's pulse, the wave's
+ * crest, the light round the ring, the shimmer) are not mounted.
+ */
+export const EducationalV2 = ({ lite = false }: { lite?: boolean } = {}) => (
   <div data-zone={ID} className="edu-cycle contents">
-    <Station />
+    <Station lite={lite} />
   </div>
 );
 
-function Station() {
+function Station({ lite }: { lite: boolean }) {
   return (
     <div aria-hidden="true" data-zone={ID} data-v2-station={ID} data-v2-station-source="approved" className="edu-v2 edu-seq pointer-events-none absolute inset-0">
       <style>{EDU_CSS}</style>
+      {lite ? <style>{EDU_LITE_CSS}</style> : null}
       <EducationalLift>
       {/* The station, while anything moves: body + globe + ring, summed in an isolated group (colour and alpha, so the
           room shows through the dimmed glass and no seam appears where the parts meet). */}
@@ -366,30 +385,32 @@ function Station() {
           <Frame src={`${M14H2}/educational-strip-off.png`} box={PLATFORM_POWER[ID].parts[k].box} />
         </PowerPart>
       ))}
-      {PARTS.map((k) => (
-        <Pulse key={`pulse-${k}`} index={k} />
-      ))}
-      {/* The pool at the globe's foot: one pulse of its own light. */}
-      <div className="edu-gate edu-rise absolute inset-0" style={{ ...FOOT_CLIP, mixBlendMode: "plus-lighter" }}>
-        <div className="edu-pulse-base absolute inset-0">
-          <Full src={`${M14H2}/educational-base.png`} name="base" />
-        </div>
-      </div>
-      {/* The wave's crest: the globe's own light, brighter where the wave is passing. */}
-      <div className="edu-gate edu-rise absolute inset-0" style={{ ...CLIP, mixBlendMode: "plus-lighter" }}>
-        <div data-edu="crest" className="edu-crest absolute inset-0" style={waveMask(`${M14H2}/educational-crest.png`)}>
-          <Full src={`${M14H2}/educational-flare.png`} name="flare" />
-        </div>
-      </div>
-      {/* The light round the ring, through the ring's visible pixels (the island, church and dome hide it behind). */}
-      <div data-edu="light" className="edu-gate edu-rise absolute inset-0" style={{ ...RING_CLIP, mixBlendMode: "plus-lighter" }}>
-        <RingLight />
-      </div>
-      <div data-edu="shimmer" className="edu-shimmer edu-rise absolute inset-0" style={{ ...ringMask(`${M14H2}/educational-ring-core.png`), ...RING_CLIP, mixBlendMode: "plus-lighter" }}>
-        <svg {...SVG_FRAME} aria-hidden="true">
-          <path className="edu-shimmer-line" d={EDU_RING_PATH} fill="none" stroke="rgb(255 226 170)" strokeWidth={3} strokeLinecap="round" style={{ strokeDasharray: "90px 9999px", strokeDashoffset: "110px" }} />
-        </svg>
-      </div>
+      {lite ? null : PARTS.map((k) => <Pulse key={`pulse-${k}`} index={k} />)}
+      {lite ? null : (
+        <>
+          {/* The pool at the globe's foot: one pulse of its own light. */}
+          <div className="edu-gate edu-rise absolute inset-0" style={{ ...FOOT_CLIP, mixBlendMode: "plus-lighter" }}>
+            <div className="edu-pulse-base absolute inset-0">
+              <Full src={`${M14H2}/educational-base.png`} name="base" />
+            </div>
+          </div>
+          {/* The wave's crest: the globe's own light, brighter where the wave is passing. */}
+          <div className="edu-gate edu-rise absolute inset-0" style={{ ...CLIP, mixBlendMode: "plus-lighter" }}>
+            <div data-edu="crest" className="edu-crest absolute inset-0" style={waveMask(`${M14H2}/educational-crest.png`)}>
+              <Full src={`${M14H2}/educational-flare.png`} name="flare" />
+            </div>
+          </div>
+          {/* The light round the ring, through the ring's visible pixels (the island, church and dome hide it behind). */}
+          <div data-edu="light" className="edu-gate edu-rise absolute inset-0" style={{ ...RING_CLIP, mixBlendMode: "plus-lighter" }}>
+            <RingLight />
+          </div>
+          <div data-edu="shimmer" className="edu-shimmer edu-rise absolute inset-0" style={{ ...ringMask(`${M14H2}/educational-ring-core.png`), ...RING_CLIP, mixBlendMode: "plus-lighter" }}>
+            <svg {...SVG_FRAME} aria-hidden="true">
+              <path className="edu-shimmer-line" d={EDU_RING_PATH} fill="none" stroke="rgb(255 226 170)" strokeWidth={3} strokeLinecap="round" style={{ strokeDasharray: "90px 9999px", strokeDashoffset: "110px" }} />
+            </svg>
+          </div>
+        </>
+      )}
       </EducationalLift>
     </div>
   );

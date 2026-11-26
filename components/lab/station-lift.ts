@@ -34,6 +34,10 @@ const TWO_NUMBERS = "(object-view-box:none)";
  * device pixels at full height (--dp: SceneImage). Reduced motion: it stays on
  * the floor.
  */
+/** Reduced motion: the station stays on the floor. M1.4K.5A: also lite mode's, without the media query. */
+export const liftReducedCss = (cls: string, v: string): string =>
+  `.${cls}-lift-cycle,.${cls}-lift{transition:none!important}.${cls}-lift{${v}:0!important}`;
+
 export function liftCss({ id, cls, v, spec }: { id: ZoneId; cls: string; v: string; spec: LiftSpec }): string {
   const on = `:is([data-lab-hover="${id}"],[data-lab-selected="${id}"])`;
   const returning = `[data-lab-returning="${id}"]`;
@@ -57,7 +61,7 @@ export function liftCss({ id, cls, v, spec }: { id: ZoneId; cls: string; v: stri
     // Follows at once; naming the property (not `none`) lets a descent in progress finish.
     `${on} ${lift}{${sum};transition:${v} 0s}}` +
     `.${cls}-rise{transform:translateY(calc(var(${rise}) * -1 * var(${v})))}` +
-    `@media (prefers-reduced-motion: reduce){${cycle},${lift}{transition:none!important}${lift}{${v}:0!important}}`
+    `@media (prefers-reduced-motion: reduce){${liftReducedCss(cls, v)}}`
   );
 }
 

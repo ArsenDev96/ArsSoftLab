@@ -1,10 +1,10 @@
 import type { CSSProperties } from "react";
 import { SCENE, u, type SceneRect } from "@/lib/scene";
 import { ENG_BARS, ENG_CHART_BOX } from "./engineering-v2";
-import { ENG_DISC_FADE, EngineeringLift } from "./EngineeringLift";
+import { ENG_DISC_FADE, ENG_LIFT_REDUCED_CSS, EngineeringLift } from "./EngineeringLift";
 import { ENG_DISPLAY_CLIP, EngineeringScreenLayer } from "./EngineeringScreen";
 import { PLATFORM_POWER, POWER_FRONT } from "./platform-power";
-import { partFrame, PowerPart, powerCss } from "./PlatformPower";
+import { partFrame, PowerPart, powerCss, powerLiteCss } from "./PlatformPower";
 import { SceneImage } from "./SceneImage";
 
 /**
@@ -127,6 +127,21 @@ const PULSE_ON = PLATFORM_POWER[ID].parts.map((p, k) => ({ v: `--ep${k}-on`, on:
 const CYCLE = [...SEQ.map((s) => ({ v: `${s.v}-on`, on: s.on })), ...PULSE_ON, { v: "--eh", on: `0ms linear calc(var(--arrive-now) + ${CHART_DONE}ms)` }];
 const RETURN_HOLD = 20;
 
+/**
+ * Reduced motion: the powered appearance, cross-faded; nothing travels. M1.4K.4: also lite mode's response
+ * (ENG_LITE_CSS), without the media query.
+ */
+export const ENG_REDUCED_CSS =
+  // The chart cross-fades whole (no bar rises): its masks off, its strength on --ef; the display's bars come up
+  // with the display (the standby overlay fades).
+  `.eng-cycle{transition:none!important}.eng-v2{transition:--ef 150ms ease!important}` +
+  `.eng-screen-off{transition:opacity 150ms ease!important}` +
+  `${ON} [data-eng-swap]{transition:visibility 0s linear 150ms!important}` +
+  `.eng-scan-shade,.eng-scan-band,.eng-caps,.eng-pulse,.eng-shimmer,[data-eng="screen-bars"]{display:none}` +
+  `:is([data-eng="chart"],[data-eng="chart-light"]){mask-image:none!important;-webkit-mask-image:none!important;opacity:calc(${CHART_STANDBY} + ${1 - CHART_STANDBY} * var(--ef))}` +
+  `.eng-floor{mask-image:none!important;-webkit-mask-image:none!important;opacity:0!important;transition:opacity 150ms ease!important}` +
+  `${ON} .eng-floor{opacity:calc(1 - var(--eng-standby, 0))!important}`;
+
 const ENG_CSS =
   [...SEQ, ...CYCLE].map((s) => prop(s.v)).join("") +
   powerCss(ID) +
@@ -165,16 +180,17 @@ const ENG_CSS =
   `@keyframes eng-shimmer{0%{transform:translateY(0)}24%,100%{transform:translateY(calc(var(--u) * ${-(C.h + 8)}))}}` +
   `${ON} .eng-shimmer-line{animation:eng-shimmer ${T.shimmerPeriod}ms cubic-bezier(0.4,0,0.6,1) calc(var(--arrive-now) + ${T.shimmerDelay}ms) infinite}` +
   // Reduced motion: the powered appearance, cross-faded; nothing travels.
-  `@media (prefers-reduced-motion: reduce){` +
-  // The chart cross-fades whole (no bar rises): its masks off, its strength on --ef; the display's bars come up
-  // with the display (the standby overlay fades).
-  `.eng-cycle{transition:none!important}.eng-v2{transition:--ef 150ms ease!important}` +
-  `.eng-screen-off{transition:opacity 150ms ease!important}` +
-  `${ON} [data-eng-swap]{transition:visibility 0s linear 150ms!important}` +
-  `.eng-scan-shade,.eng-scan-band,.eng-caps,.eng-pulse,.eng-shimmer,[data-eng="screen-bars"]{display:none}` +
-  `:is([data-eng="chart"],[data-eng="chart-light"]){mask-image:none!important;-webkit-mask-image:none!important;opacity:calc(${CHART_STANDBY} + ${1 - CHART_STANDBY} * var(--ef))}` +
-  `.eng-floor{mask-image:none!important;-webkit-mask-image:none!important;opacity:0!important;transition:opacity 150ms ease!important}` +
-  `${ON} .eng-floor{opacity:calc(1 - var(--eng-standby, 0))!important}}`;
+  `@media (prefers-reduced-motion: reduce){${ENG_REDUCED_CSS}}`;
+
+/**
+ * M1.4K.4 lite mode: reduced motion's response for this station alone, whatever the preference: its own rules
+ * (ENG_REDUCED_CSS), its lift's (ENG_LIFT_REDUCED_CSS) and its strips' (powerCss and globals.css, for its parts):
+ * the unpowered strips cross-fade away, unmasked, so no front spreads.
+ */
+const ENG_LITE_CSS =
+  ENG_REDUCED_CSS +
+  ENG_LIFT_REDUCED_CSS +
+  powerLiteCss(ID);
 
 /** A full-frame image placed in a box (the box clips it). */
 function Frame({ src, box, style }: { src: string; box: SceneRect; style?: CSSProperties }) {
@@ -274,11 +290,17 @@ function Pulse({ index }: { index: number }) {
   );
 }
 
-export function EngineeringV2() {
+/**
+ * M1.4K.4 `lite` (/lab-v2?render=lite): the station answers as with reduced motion (ENG_LITE_CSS): it powers on at
+ * once, nothing travels or lifts. The layers only the sequence draws (the strips'
+ * pulse, the scan, the display's rising bars, the caps, the shimmer) are not mounted.
+ */
+export function EngineeringV2({ lite = false }: { lite?: boolean } = {}) {
   return (
     <div data-zone={ID} className="eng-cycle contents">
     <div aria-hidden="true" data-zone={ID} data-v2-station={ID} data-v2-station-source="approved" className="eng-v2 pointer-events-none absolute inset-0">
       <style>{ENG_CSS}</style>
+      {lite ? <style>{ENG_LITE_CSS}</style> : null}
       <EngineeringLift>
       {/* The station: its body (the chart is its own layer) while anything moves; once every bar has risen, the
           recovered station itself (M1.4F.1's file), so the stable state draws exactly as before (two layers
@@ -294,59 +316,66 @@ export function EngineeringV2() {
           <Frame src={`${M14H1}/engineering-strip-off.png`} box={PLATFORM_POWER[ID].parts[k].box} />
         </PowerPart>
       ))}
-      {STRIP_PARTS.map((k) => (
-        <Pulse key={`pulse-${k}`} index={k} />
-      ))}
+      {lite ? null : STRIP_PARTS.map((k) => <Pulse key={`pulse-${k}`} index={k} />)}
       {/* The display: standby, then the scan's shade, then (above) the bars painted on it. */}
       <div
         data-eng="screen-off"
         className="eng-screen-off eng-rise absolute inset-0"
         style={{ background: "rgb(3 6 9)", ...clipTo(ENG_DISPLAY_CLIP), maskImage: `url(${M14H1}/engineering-screen-mask.png)`, WebkitMaskImage: `url(${M14H1}/engineering-screen-mask.png)`, maskSize: "100% 100%", WebkitMaskSize: "100% 100%" }}
       />
-      <EngineeringScreenLayer kind="shade" className="eng-rise" />
-      <ChartLayer src={`${M14H1}/engineering-screen-bars.png`} name="screen-bars" base={false} />
+      {lite ? null : (
+        <>
+          <EngineeringScreenLayer kind="shade" className="eng-rise" />
+          <ChartLayer src={`${M14H1}/engineering-screen-bars.png`} name="screen-bars" base={false} />
+        </>
+      )}
       <ChartLayer src={`${M14H1}/engineering-chart.png`} name="chart" base />
       <ChartLayer src={`${M14H1}/engineering-chart-light.png`} name="chart-light" base add />
       {/* Stable: the chart's glow unmasked (its solid part is in the station image below). */}
       <Full src={`${M14H1}/engineering-chart-light.png`} name="chart-light-stable" add swap="stable" rise />
-      {/* Each bar's rising edge: a crisp cap, only while it moves. */}
-      <div className="eng-caps eng-rise absolute inset-0" style={{ ...CHART_CLIP, mixBlendMode: "plus-lighter" }}>
-        {ENG_BARS.map((b, k) => (
-          <div key={k} className="absolute" style={box({ x: b.x + 1, y: b.y, w: b.w - 2, h: b.h })}>
+      {/* Each bar's rising edge, the scan's band and the shimmer: only the sequence draws them. */}
+      {lite ? null : (
+        <>
+          {/* Each bar's rising edge: a crisp cap, only while it moves. */}
+          <div className="eng-caps eng-rise absolute inset-0" style={{ ...CHART_CLIP, mixBlendMode: "plus-lighter" }}>
+            {ENG_BARS.map((b, k) => (
+              <div key={k} className="absolute" style={box({ x: b.x + 1, y: b.y, w: b.w - 2, h: b.h })}>
+                <span
+                  className="absolute inset-x-0"
+                  style={{
+                    bottom: `calc(var(${BAR_VARS[k]}) * 100%)`,
+                    height: u(1.2),
+                    background: "rgb(210 250 255 / 0.95)",
+                    opacity: `calc(min(1, var(${BAR_VARS[k]}) * 10) * min(1, (1 - var(${BAR_VARS[k]})) * 10))`,
+                  }}
+                />
+              </div>
+            ))}
+          </div>
+          <EngineeringScreenLayer kind="band" className="eng-rise" />
+          {/* Stable: a faint line up the hologram's own pixels (its mask is the chart layer). */}
+          <div
+            className="eng-shimmer eng-rise absolute overflow-hidden"
+            style={{
+              ...box(C),
+              mixBlendMode: "plus-lighter",
+              maskImage: `url(${M14H1}/engineering-chart.png)`,
+              WebkitMaskImage: `url(${M14H1}/engineering-chart.png)`,
+              maskSize: `${u(SCENE.width)} ${u(SCENE.height)}`,
+              WebkitMaskSize: `${u(SCENE.width)} ${u(SCENE.height)}`,
+              maskPosition: `${u(-C.x)} ${u(-C.y)}`,
+              WebkitMaskPosition: `${u(-C.x)} ${u(-C.y)}`,
+              maskRepeat: "no-repeat",
+              WebkitMaskRepeat: "no-repeat",
+            }}
+          >
             <span
-              className="absolute inset-x-0"
-              style={{
-                bottom: `calc(var(${BAR_VARS[k]}) * 100%)`,
-                height: u(1.2),
-                background: "rgb(210 250 255 / 0.95)",
-                opacity: `calc(min(1, var(${BAR_VARS[k]}) * 10) * min(1, (1 - var(${BAR_VARS[k]})) * 10))`,
-              }}
+              className="eng-shimmer-line absolute inset-x-0"
+              style={{ top: "100%", height: u(6), background: "linear-gradient(180deg, rgb(150 235 255 / 0.9), rgb(80 200 255 / 0.25) 45%, transparent)" }}
             />
           </div>
-        ))}
-      </div>
-      <EngineeringScreenLayer kind="band" className="eng-rise" />
-      {/* Stable: a faint line up the hologram's own pixels (its mask is the chart layer). */}
-      <div
-        className="eng-shimmer eng-rise absolute overflow-hidden"
-        style={{
-          ...box(C),
-          mixBlendMode: "plus-lighter",
-          maskImage: `url(${M14H1}/engineering-chart.png)`,
-          WebkitMaskImage: `url(${M14H1}/engineering-chart.png)`,
-          maskSize: `${u(SCENE.width)} ${u(SCENE.height)}`,
-          WebkitMaskSize: `${u(SCENE.width)} ${u(SCENE.height)}`,
-          maskPosition: `${u(-C.x)} ${u(-C.y)}`,
-          WebkitMaskPosition: `${u(-C.x)} ${u(-C.y)}`,
-          maskRepeat: "no-repeat",
-          WebkitMaskRepeat: "no-repeat",
-        }}
-      >
-        <span
-          className="eng-shimmer-line absolute inset-x-0"
-          style={{ top: "100%", height: u(6), background: "linear-gradient(180deg, rgb(150 235 255 / 0.9), rgb(80 200 255 / 0.25) 45%, transparent)" }}
-        />
-      </div>
+        </>
+      )}
       </EngineeringLift>
     </div>
     </div>
