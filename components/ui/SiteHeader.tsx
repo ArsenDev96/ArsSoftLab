@@ -1,4 +1,5 @@
 import Link from "next/link";
+import type { ReactNode } from "react";
 import { NAV_ITEMS, SITE, type NavIconName } from "@/data/site";
 import { u } from "@/lib/scene";
 import { Monogram } from "./Monogram";
@@ -12,8 +13,11 @@ const NAV_ICONS: Record<NavIconName, typeof HomeIcon> = {
   user: UserIcon,
 };
 
-/** Positions are reference pixels; see reference/approved-lab-design.png. */
-export function SiteHeader({ activeHref = "/" }: { activeHref?: string }) {
+/**
+ * Positions are reference pixels; see reference/approved-lab-design.png.
+ * `utilities` (M1.4K.5B, /lab-v2): extra controls before the search, in the header's own row; none elsewhere.
+ */
+export function SiteHeader({ activeHref = "/", utilities }: { activeHref?: string; utilities?: ReactNode }) {
   return (
     <header className="lab-header-scrim pointer-events-none absolute inset-x-0 top-0 z-30" style={{ height: u(78) }}>
       {/* Brand */}
@@ -97,6 +101,7 @@ export function SiteHeader({ activeHref = "/" }: { activeHref?: string }) {
 
       {/* Utilities */}
       <div className="pointer-events-auto absolute flex items-start" style={{ right: u(48), top: u(17) }}>
+        {utilities}
         <SearchTrigger />
         <Link
           href={SITE.contactHref}

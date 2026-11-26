@@ -1,0 +1,67 @@
+{
+ "steps": [
+  {
+   "name": "Rendering mode",
+   "pass": true,
+   "role": "group",
+   "description": null,
+   "checked": null
+  },
+  {
+   "name": "Cinematic",
+   "pass": true,
+   "role": "radio",
+   "description": "Full lighting and motion",
+   "checked": "true"
+  },
+  {
+   "name": "Lite",
+   "pass": true,
+   "role": "radio",
+   "description": "Lighter rendering for slower computers: stations light up at once, nothing moves",
+   "checked": "false"
+  },
+  {
+   "name": "Tab reaches the group, focus ring visible",
+   "pass": true,
+   "tabs": 7,
+   "focusVisible": true,
+   "outline": "solid 2px"
+  },
+  {
+   "name": "arrows switch both ways, focus stays on the group",
+   "pass": true,
+   "delays": {
+    "toLite": [
+     673,
+     654,
+     809
+    ],
+    "toCinematic": [
+     913,
+     689,
+     802
+    ]
+   },
+   "end": ""
+  },
+  {
+   "name": "no console errors",
+   "pass": true,
+   "errors": []
+  }
+ ],
+ "delays": {
+  "toLite": [
+   673,
+   654,
+   809
+  ],
+  "toCinematic": [
+   913,
+   689,
+   802
+  ]
+ },
+ "pass": true
+}

@@ -3,6 +3,7 @@ import { ExploreCue } from "@/components/lab/ExploreCue";
 import { LabHero } from "@/components/lab/LabHero";
 import { LabScene } from "@/components/lab/LabScene";
 import { LabStateProvider } from "@/components/lab/LabState";
+import { RenderModeSelector } from "@/components/lab/RenderModeSelector";
 import { SiteHeader } from "@/components/ui/SiteHeader";
 import { PROJECT_PARAM, resolveLabLocation, STATION_PARAM } from "@/lib/lab-url";
 
@@ -36,7 +37,8 @@ export default async function LabV2Page({ searchParams }: { searchParams: Search
       >
         Skip to lab stations
       </a>
-      <SiteHeader activeHref="/" />
+      {/* M1.4K.5B: Cinematic / Lite, in the header's row (clear of every station, label and chip). */}
+      <SiteHeader activeHref="/" utilities={<RenderModeSelector mode={lite ? "lite" : "full"} />} />
       <main className="relative h-svh w-full overflow-hidden bg-lab-ink">
         <LabStateProvider initial={initial}>
           <LabScene variant="v2" floorTone={floorTone} lite={lite} />
