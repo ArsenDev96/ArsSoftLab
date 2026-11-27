@@ -1,6 +1,6 @@
 # M1.4L.3B: AriMap project page (prototype)
 
-**State:** implemented and checked on the RTX 4060 (Chrome 158, dev server on :3002). **Not committed.**
+**State:** M1.4L.3B committed (`e8d6e98`). **M1.4L.3C (gallery finalization) implemented and checked, not committed;** see [M1.4L.3C](#m14l3c-gallery-finalization) below.
 
 ## Summary
 
@@ -13,6 +13,122 @@
   - AriMap navigation: **27 of 27**;
   - SQLOrbit regression: **25 of 25**;
   - captures at 1648 × 928, 1366 × 768 and 390 × 844: no horizontal overflow, no console errors.
+
+## M1.4L.3C: gallery finalization
+
+**Two changes, both approved in `ARIMAP-HANDOFF.md`:**
+1. On a phone, screen 05 (Results) is **centred** on its own row, at the same size as the others.
+2. Every screenshot **opens full size** in an accessible viewer.
+
+Nothing else on the page changed: the hero, the Overview and other sections, the five images and their captions, and the five-across and three-across layouts. SQLOrbit's markup is identical to a baseline saved before this work. The lab, the rendering modes and `/` don't use these files.
+
+### Files
+
+| File | Change |
+|---|---|
+| `components/project/ScreenshotViewer.tsx` (new) | The viewer, a small client component (no new dependency). It wraps any server-rendered gallery and opens on links marked `data-viewer-index`, so other case studies can reuse it with their own `media` and `mediaNotes` |
+| `components/project/ProjectDetail.tsx` | `Media` wraps the portrait row in `ScreenshotViewer`. In `ScreenRow`, each image's frame is now a link to its WebP file, and an odd last screen gets three `max-sm:` classes that centre it |
+| `docs/m1.4l/work/arimap-viewer.mjs` (new) | The focused check below; results in `work/results/arimap-viewer.{txt,json}` |
+
+### Mobile alignment
+
+- Below 640 px, the last screen of an odd-numbered row spans both columns, is centred (`mx-auto`), and keeps one column's width (`calc(50% - 0.5rem)`, half the row less half the 1 rem gap).
+- Order, captions, the 163 × 290 size and the 9:16 proportions are unchanged.
+- Nothing changes from 640 px: the three-across row, the five-across row and its 56 px stagger stay as they were.
+
+### Viewer behaviour
+
+- **Opening:**
+  - each screenshot is a real link to its file (`/projects/arimap/find.webp` and so on);
+  - with JavaScript, a click, Enter or Space opens the viewer instead. Space opens on release, like a button, so the same key press can't reach the Close button;
+  - Ctrl, Cmd, Shift or middle click keep the browser's behaviour (for example, a new tab);
+  - without JavaScript, the link opens the image itself;
+  - the link's accessible name is the image's alt text followed by "(view full size)". The pointer becomes a zoom cursor; there is no other hover change.
+- **Presentation:**
+  - a native modal `<dialog>` covers the viewport in lab ink at 98%;
+  - the original 720 × 1280 file is centred and fitted to the space at 9:16, never above its own size, with no horizontal scroll: 384 × 683 at 1648 × 928, and 358 × 636 at 390 × 844;
+  - it has the gallery's 18 px rounded hairline frame;
+  - under the image: the amber number and the screen's name, then its caption;
+  - at the top left, a counter (`2 / 5`, the current number in amber).
+- **Credits:**
+  - from 640 px, both notes (the source line and the map attribution) are always shown under the caption;
+  - on a phone, they fold behind an **Image credits** disclosure (a native `<details>`), so the image can take the screen's width. Expanded, the image shrinks to fit;
+  - the page's own notes under the gallery are unchanged.
+- **Navigation:**
+  - Previous and Next buttons (round, with chevrons, named "Previous screenshot" and "Next screenshot"). They flank the image from 640 px, and sit beside the counter in the top bar on a phone;
+  - the Left and Right arrow keys do the same;
+  - both wrap around (1 → 5, 5 → 1), so a button never becomes disabled while it has focus;
+  - the neighbouring originals are fetched ahead, so a step shows its image at once.
+- **Closing:**
+  - the Close button (an icon and the word "Close"), Escape (the dialog's own cancel), or a click or tap on empty space;
+  - a click on the image, caption, credits or controls doesn't close it. Press and release must both land on empty space, so selecting caption text doesn't close it.
+- **Accessibility:**
+  - the dialog is modal, so the page behind is inert;
+  - it is named by the screen's name ("Find") and described by its caption;
+  - a polite live region announces "Screenshot 3 of 5: Travel" on each step;
+  - focus moves to Close on opening;
+  - Tab and Shift+Tab cycle through the viewer's controls only (Previous, Next, Close, and Image credits on a phone);
+  - on closing, focus returns to the screenshot that opened it, with its focus ring if the keyboard was used;
+  - every control shows the site's amber focus ring;
+  - the page doesn't scroll behind the viewer (the body's overflow is locked, with the scrollbar's width compensated), and the scroll position is kept;
+  - the URL and history don't change.
+- **Motion:**
+  - none: no animation when opening, closing or changing image;
+  - the controls' hover colour uses the shared `lab-transition`, which is off with reduced motion.
+
+### Verification (dev server :3002, headless Chrome)
+
+| Check | Result |
+|---|---|
+| TypeScript (`npm run typecheck`) | Pass |
+| Viewer and gallery (`work/arimap-viewer.mjs`, `results/arimap-viewer.txt`) | **41 of 41** (breakdown below) |
+| SQLOrbit smoke | Renders with its five sections, no viewer links, no dialog, no overflow, no errors. Server markup of `/lab-v2/projects/sqlorbit` and `?render=lite` **identical** to baselines saved before the change |
+| AriMap markup | Differs from its baseline only by the gallery wrapper, the five links (each with "(view full size)") and the centring classes on screen 05 |
+| Accessibility tree (Chrome, one-off) | Gallery links: alt text + "(view full size)". With the viewer open, only the dialog is exposed: `dialog "Find"` (modal, described by the caption), the three buttons, the heading and the image with its alt text |
+
+**The 41 checks:**
+- **Desktop, 1648 × 928:**
+  - the gallery is still five across at 198 × 351, offset 0/56/0/56/0 px, in order, with no overflow;
+  - the links point to the five WebP files;
+  - a click opens a modal dialog with its name, caption, counter and announcement;
+  - it shows the original 720 × 1280 file, fitted at 9:16 inside the viewport and not upscaled;
+  - focus is on Close; there's no horizontal overflow and no motion;
+  - the mouse wheel doesn't scroll the page;
+  - Next and Previous work, and so do the arrow keys, wrapping both ways;
+  - with 8 Tabs and 4 Shift+Tabs, focus never leaves the viewer, and every stop shows the ring;
+  - a click on the image keeps the viewer open;
+  - a backdrop click closes it, returns focus, and restores scrolling at the same position;
+  - Enter opens; Escape closes, with focus and ring returned;
+  - Space opens; Close closes, with focus returned.
+- **Mobile, 390 × 844 with touch:**
+  - two across, in order, with 05 centred (its centre at 171.0 px of a 342 px row) and the same 163 × 290 size; no overflow;
+  - a tap opens 05;
+  - the image is 358 × 636, inside the viewport, with the caption and Image credits visible;
+  - a swipe doesn't scroll the page;
+  - the credits expand to the map attribution and still fit;
+  - a backdrop tap closes, and focus returns to 05.
+- **Reduced motion:** opens and steps with no animation; the controls' transition is 0 s.
+- **Without JavaScript:** the Travel link opens `/projects/arimap/travel.webp` (`image/webp`), and there's no dialog.
+- **SQLOrbit smoke**, and **no console errors or exceptions** in any run.
+
+**Captures** (`work/captures/`, ignored by Git):
+- `arimap-viewer-desktop.png`: the viewer open on 02 Find at 1648 × 928;
+- `arimap-viewer-mobile.png`: 05 Results at 390 × 844;
+- `arimap-gallery-mobile-centred.png`: the gallery at 390 px, with 05 centred.
+
+### Remaining limitations
+
+- **Checked in headless Chrome only:**
+  - no Safari, Firefox or physical phone;
+  - no screen reader in use (the accessibility tree was inspected instead).
+  - Native `<dialog>` and `:has()` are supported in current versions of all three engines, but are not verified here.
+- **"Full size" is limited by the viewport.** At 1648 × 928 the 720 × 1280 file is shown at 384 × 683. No pinch-zoom or zoom control is built in (the browser's own zoom still works). On high-density phones the source has fewer pixels than the screen, so it is slightly soft. No larger assets were created, by design.
+- **No swipe between screens:** buttons and arrow keys only, which keeps every action available without gestures.
+- **On a phone the credits start folded**, behind one line. They are visible in full on the page, and from 640 px.
+- **Not run (out of scope for this milestone):**
+  - `arimap-nav.mjs`, `sqlorbit-nav.mjs`, `home-history-smoke.mjs`;
+  - the lab's animation and performance suites;
+  - a production build.
 
 ## Files changed
 
@@ -135,7 +251,7 @@ All five come from AriMap's proposed store set:
 - **Width:**
   - from 1024 px, five across, 198 × 351 px each at 1648 × 928, and every other screen set 56 px lower for an editorial rhythm;
   - 640–1023 px, three across;
-  - below 640 px, two across (163 × 290 at 390 px), the fifth on its own row.
+  - below 640 px, two across (163 × 290 at 390 px), the fifth on its own row, centred since M1.4L.3C.
 - **Frame:** each screen keeps its own proportions inside an 18 px rounded hairline frame, white at 10%, with a soft shadow. No device frame, glow or colour treatment.
 - **Captions:** an amber number and the screen's name (15 px), with one line (13.5 px) under it.
 - **Loading:** the images load lazily, as next/image does by default, so a visitor fetches them only on scrolling near.
@@ -175,8 +291,8 @@ All five come from AriMap's proposed store set:
   - Longer lists now align with the title's top, with slightly tighter rows.
   - SQLOrbit's three-row hero is unchanged.
 - **The screenshot row reads as the flow of a level,** not a store carousel. The light app screens stand out on the dark page, so they are kept small, framed and captioned.
-- **On a phone, the fifth screen sits alone** in the left column. That's acceptable; centring it, or showing three in the last row, is a possible refinement.
-- **The screenshots' own text is too small to read in the row** (198 px wide on desktop, 163 px on a phone). Captions and alt text carry the meaning. Opening a screen full size would need a link or a viewer, which wasn't in scope.
+- **On a phone, the fifth screen sat alone** in the left column. M1.4L.3C centres it.
+- **The screenshots' own text is too small to read in the row** (198 px wide on desktop, 163 px on a phone). Captions and alt text carry the meaning. Since M1.4L.3C, each screen opens full size in the viewer.
 - **Contrast:** captions 13.4:1, numerals 9.7:1, notes 6.1:1. All above WCAG AA.
 
 ## Remaining publication limitations

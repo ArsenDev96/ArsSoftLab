@@ -1,0 +1,179 @@
+{
+ "desktopGallery": {
+  "r": [
+   [
+    290,
+    1929,
+    198,
+    351
+   ],
+   [
+    508,
+    1985,
+    198,
+    351
+   ],
+   [
+    725,
+    1929,
+    198,
+    351
+   ],
+   [
+    943,
+    1985,
+    198,
+    351
+   ],
+   [
+    1160,
+    1929,
+    198,
+    351
+   ]
+  ],
+  "titles": [
+   "Home",
+   "Find",
+   "Travel",
+   "Quick Challenge",
+   "Results"
+  ],
+  "hrefs": [
+   "/projects/arimap/home.webp",
+   "/projects/arimap/find.webp",
+   "/projects/arimap/travel.webp",
+   "/projects/arimap/quick-challenge.webp",
+   "/projects/arimap/results.webp"
+  ],
+  "overflow": false
+ },
+ "desktopOpen": {
+  "open": true,
+  "modal": true,
+  "name": "02Find",
+  "description": "Five questions, one per country, with optional help.",
+  "counter": "2 / 5",
+  "live": "Screenshot 2 of 5: Find",
+  "src": "/projects/arimap/find.webp",
+  "alt": 116,
+  "natural": [
+   720,
+   1280
+  ],
+  "box": [
+   632,
+   84,
+   384,
+   683
+  ],
+  "ratio": 1.778,
+  "inViewport": true,
+  "notUpscaled": true,
+  "hOverflow": false,
+  "activeInside": true,
+  "active": "Close",
+  "ring": false,
+  "bodyOverflow": "hidden",
+  "scrollY": 1697,
+  "motion": "0s/none 0s/none 0s/none",
+  "cssAnimations": 0,
+  "imageTransitions": 0,
+  "buttonTransition": "0.22s, 0.22s, 0.22s, 0.22s, 0.22s"
+ },
+ "mobileGallery": {
+  "ol": [
+   24,
+   2735,
+   342,
+   1251
+  ],
+  "r": [
+   [
+    0,
+    0,
+    163,
+    289.7
+   ],
+   [
+    179,
+    0,
+    163,
+    289.7
+   ],
+   [
+    0,
+    429,
+    163,
+    289.7
+   ],
+   [
+    179,
+    429,
+    163,
+    289.7
+   ],
+   [
+    89.5,
+    858,
+    163,
+    289.7
+   ]
+  ],
+  "titles": [
+   "Home",
+   "Find",
+   "Travel",
+   "Quick Challenge",
+   "Results"
+  ],
+  "overflow": false
+ },
+ "mobileOpen": {
+  "open": true,
+  "modal": true,
+  "name": "05Results",
+  "description": "Stars for answers without hints and a journey without help.",
+  "counter": "5 / 5",
+  "live": "Screenshot 5 of 5: Results",
+  "src": "/projects/arimap/results.webp",
+  "alt": 120,
+  "natural": [
+   720,
+   1280
+  ],
+  "box": [
+   16,
+   75,
+   358,
+   636
+  ],
+  "ratio": 1.778,
+  "inViewport": true,
+  "notUpscaled": true,
+  "hOverflow": false,
+  "activeInside": true,
+  "active": "Close",
+  "ring": false,
+  "bodyOverflow": "hidden",
+  "scrollY": 3316,
+  "motion": "0s/none 0s/none 0s/none",
+  "cssAnimations": 0,
+  "imageTransitions": 0,
+  "buttonTransition": "0.22s, 0.22s, 0.22s, 0.22s, 0.22s"
+ },
+ "sqlorbit": {
+  "h1": "SQLOrbit",
+  "page": "sqlorbit",
+  "viewerLinks": 0,
+  "dialog": false,
+  "sections": [
+   "Overview",
+   "Problem and solution",
+   "Engineering contributions",
+   "Technology stack",
+   "Related project"
+  ],
+  "overflow": false
+ }
+}

@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { HeroRule } from "@/components/lab/HeroRule";
+import { ScreenshotViewer } from "@/components/project/ScreenshotViewer";
 import { Monogram } from "@/components/ui/Monogram";
 import { SiteHeader } from "@/components/ui/SiteHeader";
 import { getProject, projectSummary, type Project, type ProjectDetail as Detail } from "@/data/projects";
@@ -386,7 +387,9 @@ function Media({ items, notes }: { items: NonNullable<Detail["media"]>; notes?: 
   return (
     <div>
       {portrait ? (
-        <ScreenRow items={items} />
+        <ScreenshotViewer items={items} notes={notes}>
+          <ScreenRow items={items} />
+        </ScreenshotViewer>
       ) : (
         <div className="grid gap-6">
           {items.map((m) => (
@@ -419,23 +422,36 @@ function Media({ items, notes }: { items: NonNullable<Detail["media"]>; notes?: 
  * Phone screens in order, all in view at once (no carousel, no motion): five across on wide screens, every other one
  * set a little lower for an editorial rhythm; three, then two, across on narrower screens. Each keeps its own
  * proportions inside a hairline frame, with a numbered title and one line under it.
+ *
+ * M1.4L.3C: two across, an odd last screen is centred in its row at the same width (gap-x-4: half the row less half
+ * the gap). Each image links to its full-size file, which `ScreenshotViewer` opens in place (`data-viewer-index`).
  */
 function ScreenRow({ items }: { items: NonNullable<Detail["media"]> }) {
+  const lone = items.length % 2 === 1 ? items.length - 1 : -1;
   return (
     <ol className="grid grid-cols-2 gap-x-4 gap-y-9 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-5 lg:gap-x-5">
       {items.map((m, i) => (
-        <li key={m.src} className={i % 2 === 1 ? "lg:mt-14" : undefined}>
+        <li
+          key={m.src}
+          className={
+            `${i % 2 === 1 ? "lg:mt-14" : ""} ${i === lone ? "max-sm:col-span-2 max-sm:mx-auto max-sm:w-[calc(50%-0.5rem)]" : ""}`.trim() ||
+            undefined
+          }
+        >
           <figure>
-            <div className="overflow-hidden rounded-[18px] bg-white/[0.03] shadow-[0_0_0_1px_rgb(255_255_255/0.1),0_24px_48px_-24px_rgb(0_0_0/0.9)]">
-              <Image
-                src={m.src}
-                alt={m.alt}
-                width={m.width}
-                height={m.height}
-                sizes="(min-width: 1180px) 200px, (min-width: 1024px) 17vw, (min-width: 640px) 30vw, 46vw"
-                className="block h-auto w-full"
-              />
-            </div>
+            <a href={m.src} data-viewer-index={i} className="block cursor-zoom-in rounded-[18px]">
+              <div className="overflow-hidden rounded-[18px] bg-white/[0.03] shadow-[0_0_0_1px_rgb(255_255_255/0.1),0_24px_48px_-24px_rgb(0_0_0/0.9)]">
+                <Image
+                  src={m.src}
+                  alt={m.alt}
+                  width={m.width}
+                  height={m.height}
+                  sizes="(min-width: 1180px) 200px, (min-width: 1024px) 17vw, (min-width: 640px) 30vw, 46vw"
+                  className="block h-auto w-full"
+                />
+              </div>
+              <span className="sr-only"> (view full size)</span>
+            </a>
             {m.title || m.caption ? (
               <figcaption className="mt-4">
                 {m.title ? (

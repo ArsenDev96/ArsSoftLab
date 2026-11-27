@@ -1,0 +1,43 @@
+PASS  desktop gallery: five across in one row, original order  (Home · Find · Travel · Quick Challenge · Results)
+PASS  desktop gallery: 198 x 351 each, stagger 0/56/0/56/0 px  (198x351, offsets 0/56/0/56/0)
+PASS  each screenshot links to its 720 x 1280 WebP  (/projects/arimap/find.webp)
+PASS  desktop gallery: no horizontal overflow
+PASS  click opens a modal dialog  (name "02Find")
+PASS  dialog named by the screen, described by its caption  (Five questions, one per country, with optional help.)
+PASS  counter 2 / 5, announced as 'Screenshot 2 of 5: Find'  (2 / 5)
+PASS  shows the original file, with alt text  (/projects/arimap/find.webp 720x1280)
+PASS  image fits the viewport, keeps 9:16, never upscaled  (384x683 at 632,84, ratio 1.778)
+PASS  no horizontal overflow while open
+PASS  focus moves to Close  (Close)
+PASS  no opening motion (no animation or transition on dialog or image)  (0s/none 0s/none 0s/none)
+PASS  page does not scroll behind the viewer  (scrollY 1697 -> 1697)
+PASS  Next button: 3 / 5 Travel; Previous button: back to 2 / 5  (3 / 5 03Travel -> 2 / 5)
+PASS  no image-switching motion
+PASS  Right / Left arrows step through the screens  (3 / 5, 1 / 5)
+PASS  arrows wrap: 1 -> 5 -> 1  (5 / 5, 1 / 5)
+PASS  Tab and Shift+Tab stay inside the viewer  (Next screenshot | Close | Previous screenshot | Next screenshot)
+PASS  every control in the viewer shows the focus ring  (Next screenshot, Close, Previous screenshot)
+PASS  clicking the image does not close
+PASS  backdrop click closes, focus returns to screenshot 02  (point on backdrop: true, focus on index 1)
+PASS  scrolling restored after close, position kept  (scrollY 1697)
+PASS  Enter on screenshot 04 opens it  (4 / 5)
+PASS  Escape closes, focus returns to screenshot 04 with its focus ring  (focus on index 3, ring true)
+PASS  Space opens (and the same key press does not close it)  (4 / 5)
+PASS  Close button closes, focus returns to screenshot 04  (focus on index 3)
+PASS  mobile gallery: two across, original order  (rows at 0, 429, 858)
+PASS  mobile gallery: screen 05 centred on its own row  (05 centre 171.0 of row 342 (half 171))
+PASS  mobile gallery: 05 the same size as the others (163 x 290), 9:16  (163x289.7)
+PASS  mobile gallery: no horizontal overflow
+PASS  tap opens screenshot 05 (5 / 5 Results)  (5 / 5)
+PASS  mobile: image fits the viewport at 9:16, nearly the full width  (358x636 at 16,75)
+PASS  mobile: caption and credits line visible below the image
+PASS  mobile: no horizontal overflow while open
+PASS  mobile: swipe does not scroll the page behind  (scrollY 3316 -> 3316)
+PASS  mobile: Image credits expand to the map attribution, still within the screen  ({"open":true,"text":true,"fits":true})
+PASS  mobile: backdrop tap closes, focus returns to screenshot 05  (focus on index 4)
+PASS  reduced motion: opens and steps with no animation; control transitions off  (button transition 0s)
+PASS  without JavaScript the screenshot opens its full-size file  (/projects/arimap/travel.webp (image/webp))
+PASS  SQLOrbit smoke: page renders, no gallery or viewer, no overflow  (Overview · Problem and solution · Engineering contributions · Technology stack · Related project)
+PASS  no console errors or exceptions  (none)
+
+41 passed, 0 failed
