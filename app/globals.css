@@ -139,6 +139,19 @@ body:has([data-project-page]) {
   transition: transform 850ms var(--ease-camera-in);
 }
 
+/* M1.4O: the stage (LabScene's cover-scaled frame, the camera's parent) clips
+   with overflow: clip rather than its overflow-hidden class. The clipping is
+   the same, but a hidden box is still a scroll container: its energy tracks
+   reach 51–95 px below it, so following the header's #station-experience (an
+   in-scene label) scrolled the stage up and left a black band at the bottom.
+   A clipped box can't be scrolled. Set here because LabScene.tsx is watched by
+   the Static Lite check; nothing drawn changes. Where :has() or clip isn't
+   supported the rule is ignored and the stage stays as it was.
+   docs/m1.4l/EXPERIENCE-SCROLL-FIX.md */
+div:has(> .lab-camera) {
+  overflow: clip;
+}
+
 .lab-focus-vignette {
   opacity: 0;
   transition: opacity 600ms var(--ease-camera-out);

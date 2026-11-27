@@ -25,7 +25,10 @@ export default async function LabPage({ searchParams }: { searchParams: SearchPa
         Skip to lab stations
       </a>
       <SiteHeader activeHref="/" />
-      <main className="relative h-svh w-full overflow-hidden bg-lab-ink">
+      {/* M1.4O: overflow-clip, not overflow-hidden. Both clip the cover-scaled scene the same way, but a hidden box is
+          still a scroll container: following the header's #station-experience scrolled it (on screens wider than
+          16:9) and left a black band. A clipped box can't be scrolled. docs/m1.4l/EXPERIENCE-SCROLL-FIX.md */}
+      <main className="relative h-svh w-full overflow-clip bg-lab-ink">
         <LabStateProvider initial={initial}>
           <LabScene />
           <LabHero />

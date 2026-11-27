@@ -54,7 +54,8 @@ export default async function LabV2Page({ searchParams }: { searchParams: Search
       </div>
       <LabCompactHeader mode={lite ? "lite" : "full"} />
       {/* M1.4N.2: data-lab-mobile scopes the mobile rules (globals.css) to this page; the homepage has no such attribute. */}
-      <main data-lab-mobile="" className="relative h-svh w-full overflow-hidden bg-lab-ink">
+      {/* M1.4O: overflow-clip, not overflow-hidden, as on the homepage (docs/m1.4l/EXPERIENCE-SCROLL-FIX.md). */}
+      <main data-lab-mobile="" className="relative h-svh w-full overflow-clip bg-lab-ink">
         <LabStateProvider initial={initial}>
           {lite && !layeredLite ? <LabSceneStatic /> : <LabScene variant="v2" floorTone={floorTone} lite={lite} />}
           {/* M1.4L.2: "Open project" links to the projects that have a page; the view parameters go with it. */}
