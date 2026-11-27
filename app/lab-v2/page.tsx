@@ -4,6 +4,7 @@ import { LabHero } from "@/components/lab/LabHero";
 import { LabScene } from "@/components/lab/LabScene";
 import { LabSceneStatic } from "@/components/lab/LabSceneStatic";
 import { LabStateProvider } from "@/components/lab/LabState";
+import { LabCompactHeader, LabStationDock } from "@/components/lab/MobileLab";
 import { RenderModeSelector } from "@/components/lab/RenderModeSelector";
 import { SiteHeader } from "@/components/ui/SiteHeader";
 import { PROJECT_PARAM, resolveLabLocation, STATION_PARAM } from "@/lib/lab-url";
@@ -45,14 +46,22 @@ export default async function LabV2Page({ searchParams }: { searchParams: Search
       >
         Skip to lab stations
       </a>
-      {/* M1.4K.5B: Cinematic / Lite, in the header's row (clear of every station, label and chip). */}
-      <SiteHeader activeHref="/" utilities={<RenderModeSelector mode={lite ? "lite" : "full"} />} />
-      <main className="relative h-svh w-full overflow-hidden bg-lab-ink">
+      {/* M1.4K.5B: Cinematic / Lite, in the header's row (clear of every station, label and chip).
+          M1.4N.2: on narrow and portrait screens CSS swaps this header (a display: contents wrapper, so nothing
+          changes on desktop) for LabCompactHeader. */}
+      <div className="lab-desktop-header contents">
+        <SiteHeader activeHref="/" utilities={<RenderModeSelector mode={lite ? "lite" : "full"} />} />
+      </div>
+      <LabCompactHeader mode={lite ? "lite" : "full"} />
+      {/* M1.4N.2: data-lab-mobile scopes the mobile rules (globals.css) to this page; the homepage has no such attribute. */}
+      <main data-lab-mobile="" className="relative h-svh w-full overflow-hidden bg-lab-ink">
         <LabStateProvider initial={initial}>
           {lite && !layeredLite ? <LabSceneStatic /> : <LabScene variant="v2" floorTone={floorTone} lite={lite} />}
           {/* M1.4L.2: "Open project" links to the projects that have a page; the view parameters go with it. */}
           <LabHero projectPages={labV2ProjectPages(labViewQuery(query))} />
           <ExploreCue />
+          {/* M1.4N.2: the five stations, in station mode (portrait) only. */}
+          <LabStationDock />
         </LabStateProvider>
       </main>
     </>

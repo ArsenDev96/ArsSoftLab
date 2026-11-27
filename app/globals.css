@@ -599,3 +599,364 @@ body:has([data-project-page]) {
       visibility 0s linear 0s;
   }
 }
+
+/* ---------------------------------------------------------------------------
+   M1.4N.2 mobile lab (prototype, /lab-v2 only)
+   docs/m1.4l/MOBILE-DOCK-PROTOTYPE.md. Every rule below hangs off an element
+   only /lab-v2 renders (.lab-desktop-header, .lab-compact-header, .lab-dock)
+   or its [data-lab-mobile] <main>; the homepage has none of them. Two media
+   queries, kept in step with components/lab/MobileLab.tsx:
+     compact header  (max-width: 1023.98px), (max-aspect-ratio: 5/4)
+     station mode    (max-aspect-ratio: 5/4)
+   `!important` only where an inline style (reference units, u()) is
+   overridden. Desktop (at least 1024 px wide and wider than 5:4) matches
+   neither query: nothing here applies there.
+--------------------------------------------------------------------------- */
+.lab-compact-header,
+.lab-dock {
+  display: none;
+}
+
+/* Compact header: SiteHeader's three sections are placed for a frame at least
+   1037 px wide (the 0.62 px minimum of --vu); they meet at about 996 px. */
+@media (max-width: 1023.98px), (max-aspect-ratio: 5/4) {
+  .lab-desktop-header {
+    display: none;
+  }
+  .lab-compact-header {
+    position: absolute;
+    inset-inline: 0;
+    top: 0;
+    z-index: 40;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    height: calc(60px + env(safe-area-inset-top, 0px));
+    padding: env(safe-area-inset-top, 0px) max(10px, env(safe-area-inset-right, 0px)) 0 max(14px, env(safe-area-inset-left, 0px));
+    background: linear-gradient(180deg, rgb(7 8 10 / 0.82), rgb(7 8 10 / 0.4) 70%, transparent);
+  }
+}
+.lab-compact-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  min-height: 44px;
+  border-radius: 10px;
+}
+.lab-compact-name {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+}
+.lab-compact-owner {
+  font-size: 15px;
+  font-weight: 460;
+  line-height: 1;
+  white-space: nowrap;
+  color: var(--color-lab-text);
+}
+.lab-compact-role {
+  margin-top: 5px;
+  font-size: 9.5px;
+  line-height: 1;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--color-lab-muted);
+}
+@media (max-width: 479.98px) {
+  .lab-compact-role {
+    display: none;
+  }
+}
+/* Below 360 px the brand is its mark alone (the link keeps its full name). */
+@media (max-width: 359.98px) {
+  .lab-compact-name {
+    display: none;
+  }
+}
+.lab-compact-mode-track {
+  background: rgb(16 16 18 / 0.6);
+  box-shadow: inset 0 0 0 1px rgb(255 255 255 / 0.18);
+}
+.lab-compact-mode-on {
+  background: rgb(255 255 255 / 0.1);
+  box-shadow: inset 0 0 0 1px rgb(255 255 255 / 0.14);
+}
+.lab-compact-menu-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 9999px;
+  color: var(--color-lab-text);
+  background: rgb(16 16 18 / 0.55);
+  box-shadow: inset 0 0 0 1px rgb(255 255 255 / 0.22);
+  cursor: pointer;
+}
+.lab-compact-menu-button[aria-expanded="true"] {
+  color: var(--color-amber-glow);
+  box-shadow: inset 0 0 0 1px rgb(247 178 92 / 0.5);
+}
+.lab-compact-menu {
+  position: absolute;
+  top: calc(100% - 6px);
+  right: max(10px, env(safe-area-inset-right, 0px));
+  width: min(260px, calc(100vw - 20px));
+  padding: 6px;
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgb(30 27 24 / 0.94), rgb(13 12 11 / 0.96));
+  box-shadow:
+    inset 0 0 0 1px rgb(255 255 255 / 0.09),
+    inset 0 1px 0 rgb(255 214 160 / 0.07),
+    0 18px 40px rgb(0 0 0 / 0.55);
+  backdrop-filter: blur(14px);
+}
+.lab-compact-menu li:last-child {
+  margin-top: 4px;
+  padding-top: 4px;
+  border-top: 1px solid rgb(255 255 255 / 0.08);
+}
+.lab-compact-menu-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 44px;
+  padding-inline: 12px;
+  border-radius: 10px;
+  font-size: 15px;
+  color: #e2e2e4;
+}
+.lab-compact-menu-link:hover {
+  background: rgb(255 255 255 / 0.06);
+  color: var(--color-lab-text);
+}
+.lab-compact-menu-link[aria-current="page"] {
+  background: rgb(255 255 255 / 0.05);
+  color: var(--color-lab-text);
+}
+
+/* Station mode: portrait and near-square screens, where the cover-scaled scene
+   shows only Educational. The dock picks the station; its existing panel opens
+   as a sheet above the dock; the in-scene labels (unreachable here) are hidden;
+   the camera and the off-screen spotlight are held still. */
+@media (max-aspect-ratio: 5/4) {
+  [data-lab-mobile] {
+    /* One column for the hero, the sheet and the dock: full width on phones, 600 px on tablets. */
+    --lab-col-pad: max(10px, calc((100vw - 600px) / 2));
+    --lab-top: calc(60px + env(safe-area-inset-top, 0px));
+    /* The dock (64 px), its gap above, and its distance from the bottom edge. */
+    --lab-dock-space: calc(74px + max(8px, env(safe-area-inset-bottom, 0px)));
+  }
+  [data-lab-mobile] #lab-stations,
+  [data-lab-mobile] .lab-explore {
+    display: none;
+  }
+  [data-lab-mobile] .lab-camera {
+    transform: none !important;
+  }
+  [data-lab-mobile] .lab-focus-vignette {
+    background: rgb(4 5 7 / 0.5) !important;
+  }
+  [data-lab-mobile] .lab-dock {
+    position: absolute;
+    z-index: 30;
+    left: var(--lab-col-pad);
+    right: var(--lab-col-pad);
+    bottom: max(8px, env(safe-area-inset-bottom, 0px));
+    display: block;
+  }
+
+  /* The hero: between the header and the dock; its type scales with the width (a 27 px heading at 320, 37 px at most). */
+  [data-lab-mobile] #lab-intro {
+    --u: clamp(0.62px, calc(100vw / 470), 0.92px);
+    left: 0 !important;
+    right: 0;
+    top: var(--lab-top) !important;
+    bottom: var(--lab-dock-space);
+    padding: 12px calc(var(--lab-col-pad) + 8px) 0;
+  }
+  /* The heading slot stops being the panels' frame: they anchor to the hero box instead. */
+  [data-lab-mobile] #lab-intro > div {
+    position: static;
+  }
+
+  /* The selected station's panel, as a sheet above the dock. */
+  [data-lab-mobile] .lab-station-info {
+    --u: 1px;
+    top: auto;
+    left: var(--lab-col-pad);
+    right: var(--lab-col-pad);
+    bottom: 0;
+    width: auto !important;
+    /* Clear of the eyebrow, which stays at the top. */
+    max-height: calc(100% - 30px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding: 18px 18px 6px;
+    border-radius: 18px;
+    background: linear-gradient(180deg, rgb(30 27 24 / 0.9), rgb(13 12 11 / 0.93));
+    box-shadow:
+      inset 0 0 0 1px rgb(255 255 255 / 0.09),
+      inset 0 1px 0 rgb(255 214 160 / 0.08),
+      0 18px 40px rgb(0 0 0 / 0.5);
+    backdrop-filter: blur(12px);
+  }
+  [data-lab-mobile] .lab-station-info[data-open] {
+    pointer-events: auto;
+  }
+  [data-lab-mobile] .lab-station-info > h2 {
+    font-size: 26px !important;
+    line-height: 30px !important;
+  }
+  [data-lab-mobile] .lab-station-info > p {
+    margin-top: 4px !important;
+    font-size: 15px !important;
+    line-height: 21px !important;
+  }
+  /* Touch targets: project names, Open project and Back to Lab at least 44 px tall. */
+  [data-lab-mobile] .lab-station-info .lab-hero-project {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+    padding-inline: 6px !important;
+    margin-inline: -6px !important;
+  }
+  [data-lab-mobile] .lab-station-info [data-open-project] {
+    min-height: 44px;
+  }
+  [data-lab-mobile] .lab-station-info > button {
+    min-height: 44px;
+    margin-top: 2px !important;
+  }
+  /* No Escape key to hint at on touch screens. */
+  [data-lab-mobile] .lab-station-info kbd {
+    display: none;
+  }
+}
+/* Below 360 px: a narrower margin and tighter dock, so the full names fit a
+   fifth of the width (the longest, "Engineering", is 54 px at 10 px). */
+@media (max-aspect-ratio: 5/4) and (max-width: 359.98px) {
+  [data-lab-mobile] {
+    --lab-col-pad: 6px;
+  }
+  [data-lab-mobile] .lab-dock-list {
+    gap: 2px;
+    padding: 3px;
+  }
+}
+
+/* The dock: five stations in one row, on a dark stone surface with an amber
+   mark on the selected one (mark, ring, surface and weight: not colour alone). */
+.lab-dock-list {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 4px;
+  padding: 4px;
+  border-radius: 18px;
+  background: linear-gradient(180deg, rgb(30 27 24 / 0.86), rgb(13 12 11 / 0.92));
+  box-shadow:
+    inset 0 0 0 1px rgb(255 255 255 / 0.09),
+    inset 0 1px 0 rgb(255 214 160 / 0.07),
+    0 14px 34px rgb(0 0 0 / 0.55);
+  backdrop-filter: blur(12px);
+}
+.lab-dock-button {
+  position: relative;
+  display: flex;
+  width: 100%;
+  min-width: 44px;
+  min-height: 56px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px 0 7px;
+  border-radius: 14px;
+  color: #c9c9cc;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition:
+    background-color 220ms ease,
+    color 220ms ease,
+    box-shadow 220ms ease;
+}
+.lab-dock-button:focus-visible {
+  outline-offset: -2px;
+}
+.lab-dock-icon {
+  display: flex;
+  height: 20px;
+  align-items: center;
+  opacity: 0.68;
+  transition: opacity 220ms ease;
+}
+.lab-dock-label {
+  max-width: 100%;
+  font-size: clamp(10px, 2.9vw, 12px);
+  line-height: 1;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+}
+/* "Creative Studio": in full from 520 px; below that "Creative" is shown and
+   the full name stays the accessible name (visually hidden, not removed). */
+.lab-dock-short {
+  display: none;
+}
+@media (max-width: 519.98px) {
+  .lab-dock-full {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+  .lab-dock-short {
+    display: inline;
+  }
+}
+.lab-dock-mark {
+  position: absolute;
+  top: 3px;
+  left: 50%;
+  width: 18px;
+  height: 3px;
+  margin-left: -9px;
+  border-radius: 3px;
+}
+@media (hover: hover) {
+  .lab-dock-button:hover {
+    background: rgb(255 255 255 / 0.05);
+    color: var(--color-lab-text);
+  }
+  .lab-dock-button:hover .lab-dock-icon {
+    opacity: 0.95;
+  }
+}
+.lab-dock-button:active {
+  background: rgb(0 0 0 / 0.32);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .lab-dock-button:active {
+    transform: translateY(1px);
+  }
+}
+.lab-dock-button[aria-expanded="true"] {
+  color: var(--color-amber-glow);
+  background: linear-gradient(180deg, rgb(255 180 90 / 0.15), rgb(255 160 70 / 0.05));
+  box-shadow: inset 0 0 0 1px rgb(247 178 92 / 0.4);
+}
+.lab-dock-button[aria-expanded="true"] .lab-dock-icon {
+  opacity: 1;
+}
+.lab-dock-button[aria-expanded="true"] .lab-dock-label {
+  font-weight: 500;
+}
+.lab-dock-button[aria-expanded="true"] .lab-dock-mark {
+  background: linear-gradient(90deg, #f6b05a, #ffe3a8, #f6b05a);
+  box-shadow: 0 0 8px rgb(255 175 80 / 0.85);
+}

@@ -36,7 +36,12 @@ function renderSearch(mode: RenderMode, search: string): string {
   return s ? `?${s}` : "";
 }
 
-export function RenderModeSelector({ mode }: { mode: RenderMode }) {
+/**
+ * `variant` (M1.4N.2): "compact" is the same control for the mobile lab header (LabCompactHeader): px sizes instead
+ * of reference units, each option a 44 px tall touch target around a smaller visible pill, and its own radio group
+ * name, so it never joins the (hidden) header instance's group. The default, "header", is unchanged.
+ */
+export function RenderModeSelector({ mode, variant = "header" }: { mode: RenderMode; variant?: "header" | "compact" }) {
   const router = useRouter();
   const [pending, startTransition] = useTransition();
   const [shown, setShown] = useOptimistic(mode);
@@ -51,6 +56,49 @@ export function RenderModeSelector({ mode }: { mode: RenderMode }) {
       router.push(pathname + renderSearch(next, search) + hash, { scroll: false });
     });
   };
+
+  if (variant === "compact") {
+    return (
+      <fieldset data-render-selector={shown} aria-busy={pending || undefined} className="lab-compact-mode relative flex h-11 items-center px-[3px]">
+        <legend className="sr-only">Rendering mode</legend>
+        <span aria-hidden="true" className="lab-compact-mode-track pointer-events-none absolute inset-x-0 inset-y-[5px] rounded-full" />
+        {OPTIONS.map((o) => {
+          const on = o.mode === shown;
+          return (
+            <label
+              key={o.mode}
+              title={o.hint}
+              className="group relative flex h-11 min-w-11 cursor-pointer items-center justify-center leading-none select-none"
+            >
+              <input
+                type="radio"
+                name="lab-render-mode-compact"
+                value={o.mode}
+                checked={on}
+                onChange={() => choose(o.mode)}
+                aria-describedby={`${id}-${o.mode}`}
+                className="peer sr-only"
+              />
+              <span
+                className={[
+                  "lab-transition flex h-7 items-center rounded-full px-3 text-[13px]",
+                  "peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-amber-glow peer-focus-visible:outline-solid",
+                  on ? "lab-compact-mode-on text-lab-text" : "text-[#bdbdc0] group-hover:text-lab-text",
+                ].join(" ")}
+              >
+                {o.label}
+              </span>
+            </label>
+          );
+        })}
+        {OPTIONS.map((o) => (
+          <span key={o.mode} id={`${id}-${o.mode}`} hidden>
+            {o.hint}
+          </span>
+        ))}
+      </fieldset>
+    );
+  }
 
   return (
     <fieldset
