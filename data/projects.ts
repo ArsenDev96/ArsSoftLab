@@ -223,6 +223,106 @@ export const PROJECTS: Record<ProjectId, Project> = {
     slug: "armat",
     zone: "educational",
     summary: "A multilingual platform for discovering Armenian history, literature, culture, and places.",
+    // M1.4L.5B: owner-approved decisions and the facts verified in docs/m1.4l/ARMAT-CONTENT-AUDIT.md (armedu at
+    // fdcd43c and the live site). No screenshots until image provenance and reuse rights are established; no
+    // repository link; no indexing, traffic or test-count claims.
+    detail: {
+      tagline: "Explore Armenian culture, history and literature in three languages.",
+      overview: [
+        "Armenian history, literature and culture are spread across many sources, making it difficult to explore related people, places, works and traditions in one structured experience.",
+        "I created Armat to bring this knowledge together in a multilingual educational website, with content available in Eastern Armenian, Western Armenian and English.",
+        "The project organizes articles about history, writers, literary works, cuisine and places, with consistent navigation and browser-based search to help visitors discover related topics.",
+        "From an engineering perspective, Armat focuses on multilingual content organization, statically generated pages and search-engine discoverability. The site includes canonical URLs, language alternatives, structured data and a sitemap designed to help search engines understand its content.",
+        "Armat is publicly accessible and continues to evolve. Content quality, editorial verification and search visibility remain areas for further improvement.",
+      ],
+      category: "Education / Multilingual Publishing",
+      role: "Creator & Full-stack Engineer",
+      status: "Public website · Ongoing development",
+      languages: ["Eastern Armenian", "Western Armenian", "English"],
+      sections: [
+        {
+          id: "multilingual",
+          title: "Multilingual content architecture",
+          paragraphs: [
+            "All 55 articles are published in Eastern Armenian, Western Armenian and English. Each edition is built from the same content structure, and Eastern Armenian is the default.",
+          ],
+          items: [
+            {
+              term: "Routing",
+              text: "Each language is a path prefix (/hy, /hyw, /en) over the same pages, and every page declares its own language. Unsupported language paths return a 404.",
+            },
+            {
+              term: "Typed content",
+              text: "Articles, listings and interface text live in typed TypeScript modules for each language, with no CMS or database. Every edition must define every interface string, so a missing translation is a type error.",
+            },
+            {
+              term: "Shared slugs",
+              text: "An article has the same URL slug in every language, so switching language opens the same article, and the same search.",
+            },
+            {
+              term: "Bibliography",
+              text: "Sources are kept in one bibliography keyed by article slug and shared by all three editions. Every citation carries an ISBN, DOI, stable link or archival reference.",
+            },
+            {
+              term: "No silent fallback",
+              text: "Pages are rendered only from their own edition. An article missing from one language is never filled in from another or advertised as a translation.",
+            },
+          ],
+        },
+        {
+          id: "discovery",
+          title: "Content discovery and search",
+          paragraphs: [
+            "Articles are organized into five sections: history, writers, literary works, cuisine and places, each with its own listing page.",
+          ],
+          items: [
+            {
+              term: "Site search",
+              text: "One search covers every article in the current language and groups the results by type. It runs entirely in the browser, with no search server, and never mixes in results from another language.",
+            },
+            {
+              term: "Listing filters",
+              text: "Section listings combine a text filter with category filters. Their state is kept in the URL, so a filtered view can be shared, and Back and Forward step through it.",
+            },
+            {
+              term: "Related reading",
+              text: "Each article links to related articles in the same language, and these links are checked automatically.",
+            },
+          ],
+        },
+        {
+          id: "editorial",
+          title: "Editorial status",
+          after: "stack",
+          paragraphs: [
+            "Content review is ongoing. Every article lists its sources so that claims can be checked, but not every published article has received professional editorial review, and corrections continue as errors are found.",
+          ],
+          items: [
+            {
+              term: "Western Armenian",
+              text: "The Western Armenian edition has been reviewed with AI assistance. It has not yet received comprehensive review by a native Western Armenian editor.",
+            },
+            {
+              term: "Illustrations",
+              text: "Article images on the site are AI-generated illustrations and are labeled as such.",
+            },
+          ],
+        },
+      ],
+      contributions: [
+        "Built a statically generated Next.js App Router site with locale-prefixed routing for Eastern Armenian, Western Armenian and English, declaring the correct language on every page.",
+        "Designed a typed, translation-first content model with shared article slugs, a shared bibliography and no silent fallback between languages.",
+        "Implemented browser-based search and URL-synced listing filters that stay within the reader's language.",
+        "Generated per-language metadata, canonical URLs and language alternates that list only the translations that exist.",
+        "Produced structured data for articles, breadcrumbs, the publisher and the website, including source citations, restating only what each page shows.",
+        "Generated a multilingual XML sitemap with language alternates, article images and modification dates taken from the content.",
+        "Wrote a content validation script that checks cross-references, translation coverage, Western Armenian spelling and that every article cites an identifiable source.",
+        "Covered routing, language switching, search, structured data and content pages with Playwright browser tests at desktop and mobile sizes.",
+      ],
+      stack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Supabase", "Leaflet", "Playwright"],
+      links: [{ label: "armat.site", href: "https://armat.site" }],
+      related: ["arimap"],
+    },
   },
   sqlorbit: {
     id: "sqlorbit",

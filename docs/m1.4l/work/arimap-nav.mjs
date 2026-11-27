@@ -19,16 +19,21 @@ const watch = (page) => page.on((m) => { if (m.method === "Runtime.exceptionThro
 const PANEL = `document.querySelector('[data-station-panel="educational"]')`;
 const openLink = `document.querySelector('[data-open-row="arimap"] a[data-open-project="arimap"]')`;
 
-// 1. Deep link in the lab: Open project is a link to the page; Armat keeps "Coming soon".
+// 1. Deep link in the lab: Open project is a link to the page; so is Armat's (M1.4L.5B); a project without a page
+//    (AZIZ, since Armat has one) keeps "Coming soon".
 {
   const page = await launch(); watch(page);
   await page.goto(`${BASE}/lab-v2?station=educational&project=arimap`); await hideOverlay(page);
   const href = await page.eval(`${openLink}?.getAttribute("href") ?? null`);
   check("lab-v2 deep link: AriMap Open project links to its page", href === "/lab-v2/projects/arimap", href);
   await page.eval(`[...${PANEL}.querySelectorAll("button[aria-pressed]")].find((b) => b.textContent === "Armat").click()`);
-  await until(page, `!!document.querySelector('[data-open-row="armat"]')`);
-  const tr = await page.eval(`(() => { const r = document.querySelector('[data-open-row="armat"]'); return { link: !!r.querySelector("a"), disabled: r.querySelector("button")?.getAttribute("aria-disabled"), soon: r.textContent.includes("Coming soon") }; })()`);
-  check("lab-v2: Armat keeps the disabled Coming soon action", !tr.link && tr.disabled === "true" && tr.soon, JSON.stringify(tr));
+  await until(page, `!!document.querySelector('[data-open-row="armat"] a[data-open-project="armat"]')`);
+  const ar = await page.eval(`document.querySelector('[data-open-row="armat"] a[data-open-project="armat"]')?.getAttribute("href") ?? null`);
+  check("lab-v2: Armat's Open project now links to its page", ar === "/lab-v2/projects/armat", ar);
+  await page.goto(`${BASE}/lab-v2?station=playground&project=aziz`); await hideOverlay(page);
+  await until(page, `!!document.querySelector('[data-open-row="aziz"]')`);
+  const tr = await page.eval(`(() => { const r = document.querySelector('[data-open-row="aziz"]'); return { link: !!r.querySelector("a"), disabled: r.querySelector("button")?.getAttribute("aria-disabled"), soon: r.textContent.includes("Coming soon") }; })()`);
+  check("lab-v2: a project without a page (AZIZ) keeps the disabled Coming soon action", !tr.link && tr.disabled === "true" && tr.soon, JSON.stringify(tr));
   await page.close();
 }
 
@@ -44,8 +49,8 @@ const openLink = `document.querySelector('[data-open-row="arimap"] a[data-open-p
   check("the project page does not keep the lab scene mounted, and scrolls", !onPage.scene && onPage.scroll === "auto");
   const imgs = await page.eval(`(async () => { for (let y = 0; y < document.documentElement.scrollHeight; y += 300) { scrollTo(0, y); await new Promise((r) => setTimeout(r, 60)); } scrollTo(0, 0); await new Promise((r) => setTimeout(r, 800)); return [...document.querySelectorAll("main img")].map((i) => ({ ok: i.complete && i.naturalWidth > 0, alt: i.alt.length > 40, ratio: Math.abs(i.getBoundingClientRect().height / i.getBoundingClientRect().width - 1280 / 720) < 0.02 })); })()`);
   check("five screenshots load, each with a description and its own proportions", imgs.length === 5 && imgs.every((i) => i.ok && i.alt && i.ratio), JSON.stringify(imgs));
-  const related = await page.eval(`[...document.querySelectorAll("main a")].find((a) => a.textContent.includes("View Armat"))?.getAttribute("href") ?? null`);
-  check("Related project: Armat links to its lab preview", related === "/lab-v2?station=educational&project=armat", related);
+  const related = await page.eval(`[...document.querySelectorAll("main a")].find((a) => a.textContent.includes("Open Armat"))?.getAttribute("href") ?? null`);
+  check("Related project: Open Armat links to its page (M1.4L.5B)", related === "/lab-v2/projects/armat", related);
   const back = await page.eval(`document.querySelector("main a[href^='/lab-v2?']").getAttribute("href")`);
   check("Back to the lab returns to the station and project", back === "/lab-v2?station=educational&project=arimap", back);
   await page.eval(`document.querySelector("main a[href^='/lab-v2?']").click()`);
@@ -97,7 +102,7 @@ for (const view of ["render=lite", "render=lite&floor=original", "floor=approved
 }
 
 // 5. Unknown or unapproved slugs are 404s; view parameters are validated.
-for (const [p, want] of [["/lab-v2/projects/arimap", 200], ["/lab-v2/projects/armat", 404], ["/lab-v2/projects/koreez", 404], ["/lab-v2/projects/nope", 404], ["/projects/arimap", 404]]) {
+for (const [p, want] of [["/lab-v2/projects/arimap", 200], ["/lab-v2/projects/armat", 200], ["/lab-v2/projects/aziz", 404], ["/lab-v2/projects/koreez", 404], ["/lab-v2/projects/nope", 404], ["/projects/arimap", 404]]) {
   const r = await fetch(BASE + p);
   check(`${p} -> ${want}`, r.status === want, String(r.status));
 }
@@ -112,12 +117,13 @@ for (const [p, want] of [["/lab-v2/projects/arimap", 200], ["/lab-v2/projects/ar
   const page = await launch(); watch(page);
   await page.goto(`${BASE}/lab-v2/projects/arimap`); await hideOverlay(page);
   const seen = [];
-  for (let i = 0; i < 14; i++) {
+  // 20 presses (was 14): since M1.4L.3C the five screenshots are focusable viewer links before the related card.
+  for (let i = 0; i < 20; i++) {
     await page.key("Tab", "Tab", 9);
     seen.push(await page.eval(`(() => { const e = document.activeElement; if (e === document.body) return { t: "(body)", ring: true }; const cs = getComputedStyle(e); return { t: (e.textContent || e.getAttribute("aria-label") || "").trim().replace(/\\s+/g, " ").slice(0, 32), ring: e.matches(":focus-visible") && cs.outlineStyle !== "none" && parseFloat(cs.outlineWidth) >= 2 }; })()`));
   }
   const names = seen.map((s) => s.t);
-  const want = ["Skip to content", "Back to the lab", "View Armat in the lab"];
+  const want = ["Skip to content", "Back to the lab", "Open Armat"];
   check("Tab order reaches skip link, Back to the lab and the related project", want.every((w) => names.includes(w)), names.join(" | "));
   check("every focused control shows the focus ring", seen.every((s) => s.ring), seen.filter((s) => !s.ring).map((s) => s.t).join(", ") || "all");
   await page.close();

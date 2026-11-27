@@ -1,0 +1,885 @@
+{
+ "1648x928": {
+  "docWidth": 1648,
+  "viewport": 1648,
+  "docHeight": 4552,
+  "scrollable": "auto",
+  "pastRightEdge": [],
+  "header": [
+   "site"
+  ],
+  "h1": {
+   "text": "Armat",
+   "px": 92
+  },
+  "tagline": [
+   "Explore Armenian culture, history and",
+   "literature in three languages."
+  ],
+  "facts": [
+   {
+    "term": "Status",
+    "value": "Public website · Ongoing development",
+    "lines": 1,
+    "inside": true
+   },
+   {
+    "term": "Category",
+    "value": "Education / Multilingual Publishing",
+    "lines": 1,
+    "inside": true
+   },
+   {
+    "term": "Role",
+    "value": "Creator & Full-stack Engineer",
+    "lines": 1,
+    "inside": true
+   },
+   {
+    "term": "Languages",
+    "value": "Eastern Armenian · Western Armenian · English",
+    "lines": 2,
+    "inside": true
+   }
+  ],
+  "factsBox": {
+   "x": 998,
+   "y": 232,
+   "w": 360,
+   "h": 327
+  },
+  "headings": [
+   "H1 Armat",
+   "H2 Overview",
+   "H2 Multilingual content architecture",
+   "H2 Content discovery and search",
+   "H2 Engineering contributions",
+   "H2 Technology stack",
+   "H2 Editorial status",
+   "H2 Links",
+   "H2 Related project",
+   "H3 AriMap"
+  ],
+  "sections": [
+   {
+    "title": "Overview",
+    "x": 290,
+    "y": 639,
+    "w": 1068,
+    "h": 601
+   },
+   {
+    "title": "Multilingual content architecture",
+    "x": 290,
+    "y": 1241,
+    "w": 1068,
+    "h": 638
+   },
+   {
+    "title": "Content discovery and search",
+    "x": 290,
+    "y": 1879,
+    "w": 1068,
+    "h": 473
+   },
+   {
+    "title": "Engineering contributions",
+    "x": 290,
+    "y": 2351,
+    "w": 1068,
+    "h": 854
+   },
+   {
+    "title": "Technology stack",
+    "x": 290,
+    "y": 3205,
+    "w": 1068,
+    "h": 197
+   },
+   {
+    "title": "Editorial status",
+    "x": 290,
+    "y": 3401,
+    "w": 1068,
+    "h": 369
+   },
+   {
+    "title": "Links",
+    "x": 290,
+    "y": 3770,
+    "w": 1068,
+    "h": 197
+   },
+   {
+    "title": "Related project",
+    "x": 290,
+    "y": 3966,
+    "w": 1068,
+    "h": 394
+   }
+  ],
+  "smallestText": [
+   {
+    "t": "Status",
+    "px": 11.5
+   },
+   {
+    "t": "Category",
+    "px": 11.5
+   },
+   {
+    "t": "Role",
+    "px": 11.5
+   }
+  ],
+  "smallestHeaderText": [
+   {
+    "t": "Software Engineer",
+    "px": 11.3349
+   },
+   {
+    "t": "Ctrl K",
+    "px": 14.2919
+   }
+  ],
+  "images": 0,
+  "scene": false,
+  "errors": []
+ },
+ "1366x768": {
+  "docWidth": 1366,
+  "viewport": 1366,
+  "docHeight": 4552,
+  "scrollable": "auto",
+  "pastRightEdge": [],
+  "header": [
+   "site"
+  ],
+  "h1": {
+   "text": "Armat",
+   "px": 92
+  },
+  "tagline": [
+   "Explore Armenian culture, history and",
+   "literature in three languages."
+  ],
+  "facts": [
+   {
+    "term": "Status",
+    "value": "Public website · Ongoing development",
+    "lines": 1,
+    "inside": true
+   },
+   {
+    "term": "Category",
+    "value": "Education / Multilingual Publishing",
+    "lines": 1,
+    "inside": true
+   },
+   {
+    "term": "Role",
+    "value": "Creator & Full-stack Engineer",
+    "lines": 1,
+    "inside": true
+   },
+   {
+    "term": "Languages",
+    "value": "Eastern Armenian · Western Armenian · English",
+    "lines": 2,
+    "inside": true
+   }
+  ],
+  "factsBox": {
+   "x": 857,
+   "y": 232,
+   "w": 360,
+   "h": 327
+  },
+  "headings": [
+   "H1 Armat",
+   "H2 Overview",
+   "H2 Multilingual content architecture",
+   "H2 Content discovery and search",
+   "H2 Engineering contributions",
+   "H2 Technology stack",
+   "H2 Editorial status",
+   "H2 Links",
+   "H2 Related project",
+   "H3 AriMap"
+  ],
+  "sections": [
+   {
+    "title": "Overview",
+    "x": 149,
+    "y": 639,
+    "w": 1068,
+    "h": 601
+   },
+   {
+    "title": "Multilingual content architecture",
+    "x": 149,
+    "y": 1241,
+    "w": 1068,
+    "h": 638
+   },
+   {
+    "title": "Content discovery and search",
+    "x": 149,
+    "y": 1879,
+    "w": 1068,
+    "h": 473
+   },
+   {
+    "title": "Engineering contributions",
+    "x": 149,
+    "y": 2351,
+    "w": 1068,
+    "h": 854
+   },
+   {
+    "title": "Technology stack",
+    "x": 149,
+    "y": 3205,
+    "w": 1068,
+    "h": 197
+   },
+   {
+    "title": "Editorial status",
+    "x": 149,
+    "y": 3401,
+    "w": 1068,
+    "h": 369
+   },
+   {
+    "title": "Links",
+    "x": 149,
+    "y": 3770,
+    "w": 1068,
+    "h": 197
+   },
+   {
+    "title": "Related project",
+    "x": 149,
+    "y": 3966,
+    "w": 1068,
+    "h": 394
+   }
+  ],
+  "smallestText": [
+   {
+    "t": "Status",
+    "px": 11.5
+   },
+   {
+    "t": "Category",
+    "px": 11.5
+   },
+   {
+    "t": "Role",
+    "px": 11.5
+   }
+  ],
+  "smallestHeaderText": [
+   {
+    "t": "Software Engineer",
+    "px": 9.38576
+   },
+   {
+    "t": "Ctrl K",
+    "px": 11.8342
+   }
+  ],
+  "images": 0,
+  "scene": false,
+  "errors": []
+ },
+ "1024x768": {
+  "docWidth": 1024,
+  "viewport": 1024,
+  "docHeight": 4957,
+  "scrollable": "auto",
+  "pastRightEdge": [],
+  "header": [
+   "site"
+  ],
+  "h1": {
+   "text": "Armat",
+   "px": 73.728
+  },
+  "tagline": [
+   "Explore Armenian culture, history and",
+   "literature in three languages."
+  ],
+  "facts": [
+   {
+    "term": "Status",
+    "value": "Public website · Ongoing development",
+    "lines": 1,
+    "inside": true
+   },
+   {
+    "term": "Category",
+    "value": "Education / Multilingual Publishing",
+    "lines": 1,
+    "inside": true
+   },
+   {
+    "term": "Role",
+    "value": "Creator & Full-stack Engineer",
+    "lines": 1,
+    "inside": true
+   },
+   {
+    "term": "Languages",
+    "value": "Eastern Armenian · Western Armenian · English",
+    "lines": 2,
+    "inside": true
+   }
+  ],
+  "factsBox": {
+   "x": 608,
+   "y": 232,
+   "w": 360,
+   "h": 327
+  },
+  "headings": [
+   "H1 Armat",
+   "H2 Overview",
+   "H2 Multilingual content architecture",
+   "H2 Content discovery and search",
+   "H2 Engineering contributions",
+   "H2 Technology stack",
+   "H2 Editorial status",
+   "H2 Links",
+   "H2 Related project",
+   "H3 AriMap"
+  ],
+  "sections": [
+   {
+    "title": "Overview",
+    "x": 56,
+    "y": 639,
+    "w": 912,
+    "h": 648
+   },
+   {
+    "title": "Multilingual content architecture",
+    "x": 56,
+    "y": 1287,
+    "w": 912,
+    "h": 790
+   },
+   {
+    "title": "Content discovery and search",
+    "x": 56,
+    "y": 2077,
+    "w": 912,
+    "h": 522
+   },
+   {
+    "title": "Engineering contributions",
+    "x": 56,
+    "y": 2599,
+    "w": 912,
+    "h": 906
+   },
+   {
+    "title": "Technology stack",
+    "x": 56,
+    "y": 3506,
+    "w": 912,
+    "h": 227
+   },
+   {
+    "title": "Editorial status",
+    "x": 56,
+    "y": 3733,
+    "w": 912,
+    "h": 418
+   },
+   {
+    "title": "Links",
+    "x": 56,
+    "y": 4151,
+    "w": 912,
+    "h": 197
+   },
+   {
+    "title": "Related project",
+    "x": 56,
+    "y": 4347,
+    "w": 912,
+    "h": 419
+   }
+  ],
+  "smallestText": [
+   {
+    "t": "Status",
+    "px": 11.5
+   },
+   {
+    "t": "Category",
+    "px": 11.5
+   },
+   {
+    "t": "Role",
+    "px": 11.5
+   }
+  ],
+  "smallestHeaderText": [
+   {
+    "t": "Software Engineer",
+    "px": 7.13
+   },
+   {
+    "t": "Ctrl K",
+    "px": 8.99
+   }
+  ],
+  "images": 0,
+  "scene": false,
+  "errors": []
+ },
+ "768x1024": {
+  "docWidth": 768,
+  "viewport": 768,
+  "docHeight": 5058,
+  "scrollable": "auto",
+  "pastRightEdge": [],
+  "header": [
+   "compact"
+  ],
+  "h1": {
+   "text": "Armat",
+   "px": 55.296
+  },
+  "tagline": [
+   "Explore Armenian culture, history and",
+   "literature in three languages."
+  ],
+  "facts": [
+   {
+    "term": "Status",
+    "value": "Public website · Ongoing development",
+    "lines": 1,
+    "inside": true
+   },
+   {
+    "term": "Category",
+    "value": "Education / Multilingual Publishing",
+    "lines": 1,
+    "inside": true
+   },
+   {
+    "term": "Role",
+    "value": "Creator & Full-stack Engineer",
+    "lines": 1,
+    "inside": true
+   },
+   {
+    "term": "Languages",
+    "value": "Eastern Armenian · Western Armenian · English",
+    "lines": 1,
+    "inside": true
+   }
+  ],
+  "factsBox": {
+   "x": 40,
+   "y": 396,
+   "w": 688,
+   "h": 305
+  },
+  "headings": [
+   "H1 Armat",
+   "H2 Overview",
+   "H2 Multilingual content architecture",
+   "H2 Content discovery and search",
+   "H2 Engineering contributions",
+   "H2 Technology stack",
+   "H2 Editorial status",
+   "H2 Links",
+   "H2 Related project",
+   "H3 AriMap"
+  ],
+  "sections": [
+   {
+    "title": "Overview",
+    "x": 40,
+    "y": 757,
+    "w": 688,
+    "h": 623
+   },
+   {
+    "title": "Multilingual content architecture",
+    "x": 40,
+    "y": 1380,
+    "w": 688,
+    "h": 744
+   },
+   {
+    "title": "Content discovery and search",
+    "x": 40,
+    "y": 2124,
+    "w": 688,
+    "h": 529
+   },
+   {
+    "title": "Engineering contributions",
+    "x": 40,
+    "y": 2653,
+    "w": 688,
+    "h": 911
+   },
+   {
+    "title": "Technology stack",
+    "x": 40,
+    "y": 3564,
+    "w": 688,
+    "h": 259
+   },
+   {
+    "title": "Editorial status",
+    "x": 40,
+    "y": 3823,
+    "w": 688,
+    "h": 450
+   },
+   {
+    "title": "Links",
+    "x": 40,
+    "y": 4273,
+    "w": 688,
+    "h": 201
+   },
+   {
+    "title": "Related project",
+    "x": 40,
+    "y": 4473,
+    "w": 688,
+    "h": 425
+   }
+  ],
+  "smallestText": [
+   {
+    "t": "Status",
+    "px": 11.5
+   },
+   {
+    "t": "Category",
+    "px": 11.5
+   },
+   {
+    "t": "Role",
+    "px": 11.5
+   }
+  ],
+  "smallestHeaderText": [
+   {
+    "t": "Software Engineer",
+    "px": 10
+   },
+   {
+    "t": "Lab",
+    "px": 14
+   }
+  ],
+  "images": 0,
+  "scene": false,
+  "errors": []
+ },
+ "390x844": {
+  "docWidth": 390,
+  "viewport": 390,
+  "docHeight": 6682,
+  "scrollable": "auto",
+  "pastRightEdge": [],
+  "header": [
+   "compact"
+  ],
+  "h1": {
+   "text": "Armat",
+   "px": 48
+  },
+  "tagline": [
+   "Explore Armenian culture, history and",
+   "literature in three languages."
+  ],
+  "facts": [
+   {
+    "term": "Status",
+    "value": "Public website · Ongoing development",
+    "lines": 1,
+    "inside": true
+   },
+   {
+    "term": "Category",
+    "value": "Education / Multilingual Publishing",
+    "lines": 1,
+    "inside": true
+   },
+   {
+    "term": "Role",
+    "value": "Creator & Full-stack Engineer",
+    "lines": 1,
+    "inside": true
+   },
+   {
+    "term": "Languages",
+    "value": "Eastern Armenian · Western Armenian · English",
+    "lines": 2,
+    "inside": true
+   }
+  ],
+  "factsBox": {
+   "x": 24,
+   "y": 389,
+   "w": 342,
+   "h": 327
+  },
+  "headings": [
+   "H1 Armat",
+   "H2 Overview",
+   "H2 Multilingual content architecture",
+   "H2 Content discovery and search",
+   "H2 Engineering contributions",
+   "H2 Technology stack",
+   "H2 Editorial status",
+   "H2 Links",
+   "H2 Related project",
+   "H3 AriMap"
+  ],
+  "sections": [
+   {
+    "title": "Overview",
+    "x": 24,
+    "y": 772,
+    "w": 342,
+    "h": 961
+   },
+   {
+    "title": "Multilingual content architecture",
+    "x": 24,
+    "y": 1734,
+    "w": 342,
+    "h": 1131
+   },
+   {
+    "title": "Content discovery and search",
+    "x": 24,
+    "y": 2864,
+    "w": 342,
+    "h": 749
+   },
+   {
+    "title": "Engineering contributions",
+    "x": 24,
+    "y": 3613,
+    "w": 342,
+    "h": 1359
+   },
+   {
+    "title": "Technology stack",
+    "x": 24,
+    "y": 4972,
+    "w": 342,
+    "h": 306
+   },
+   {
+    "title": "Editorial status",
+    "x": 24,
+    "y": 5277,
+    "w": 342,
+    "h": 592
+   },
+   {
+    "title": "Links",
+    "x": 24,
+    "y": 5870,
+    "w": 342,
+    "h": 201
+   },
+   {
+    "title": "Related project",
+    "x": 24,
+    "y": 6070,
+    "w": 342,
+    "h": 417
+   }
+  ],
+  "smallestText": [
+   {
+    "t": "Status",
+    "px": 11.5
+   },
+   {
+    "t": "Category",
+    "px": 11.5
+   },
+   {
+    "t": "Role",
+    "px": 11.5
+   }
+  ],
+  "smallestHeaderText": [
+   {
+    "t": "Software Engineer",
+    "px": 10
+   },
+   {
+    "t": "Lab",
+    "px": 14
+   }
+  ],
+  "images": 0,
+  "scene": false,
+  "errors": []
+ },
+ "320x640": {
+  "docWidth": 320,
+  "viewport": 320,
+  "docHeight": 7681,
+  "scrollable": "auto",
+  "pastRightEdge": [],
+  "header": [
+   "compact"
+  ],
+  "h1": {
+   "text": "Armat",
+   "px": 48
+  },
+  "tagline": [
+   "Explore Armenian culture,",
+   "history and literature in three",
+   "languages."
+  ],
+  "facts": [
+   {
+    "term": "Status",
+    "value": "Public website · Ongoing development",
+    "lines": 2,
+    "inside": true
+   },
+   {
+    "term": "Category",
+    "value": "Education / Multilingual Publishing",
+    "lines": 2,
+    "inside": true
+   },
+   {
+    "term": "Role",
+    "value": "Creator & Full-stack Engineer",
+    "lines": 1,
+    "inside": true
+   },
+   {
+    "term": "Languages",
+    "value": "Eastern Armenian · Western Armenian · English",
+    "lines": 2,
+    "inside": true
+   }
+  ],
+  "factsBox": {
+   "x": 24,
+   "y": 422,
+   "w": 272,
+   "h": 371
+  },
+  "headings": [
+   "H1 Armat",
+   "H2 Overview",
+   "H2 Multilingual content architecture",
+   "H2 Content discovery and search",
+   "H2 Engineering contributions",
+   "H2 Technology stack",
+   "H2 Editorial status",
+   "H2 Links",
+   "H2 Related project",
+   "H3 AriMap"
+  ],
+  "sections": [
+   {
+    "title": "Overview",
+    "x": 24,
+    "y": 849,
+    "w": 272,
+    "h": 1130
+   },
+   {
+    "title": "Multilingual content architecture",
+    "x": 24,
+    "y": 1980,
+    "w": 272,
+    "h": 1310
+   },
+   {
+    "title": "Content discovery and search",
+    "x": 24,
+    "y": 3290,
+    "w": 272,
+    "h": 854
+   },
+   {
+    "title": "Engineering contributions",
+    "x": 24,
+    "y": 4144,
+    "w": 272,
+    "h": 1649
+   },
+   {
+    "title": "Technology stack",
+    "x": 24,
+    "y": 5793,
+    "w": 272,
+    "h": 353
+   },
+   {
+    "title": "Editorial status",
+    "x": 24,
+    "y": 6145,
+    "w": 272,
+    "h": 698
+   },
+   {
+    "title": "Links",
+    "x": 24,
+    "y": 6843,
+    "w": 272,
+    "h": 201
+   },
+   {
+    "title": "Related project",
+    "x": 24,
+    "y": 7044,
+    "w": 272,
+    "h": 442
+   }
+  ],
+  "smallestText": [
+   {
+    "t": "Status",
+    "px": 11.5
+   },
+   {
+    "t": "Category",
+    "px": 11.5
+   },
+   {
+    "t": "Role",
+    "px": 11.5
+   }
+  ],
+  "smallestHeaderText": [
+   {
+    "t": "Software Engineer",
+    "px": 10
+   },
+   {
+    "t": "Lab",
+    "px": 14
+   }
+  ],
+  "images": 0,
+  "scene": false,
+  "errors": []
+ }
+}

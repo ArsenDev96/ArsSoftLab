@@ -1,6 +1,6 @@
 PASS  lab-v2 deep link: TableRefresh Open project links to its page  (/lab-v2/projects/tablerefresh)
 PASS  lab-v2: SQLOrbit's Open project still links to its page
-PASS  lab-v2: a project without a page (Armat) keeps the disabled Coming soon action  ({"link":false,"disabled":"true","soon":true})
+PASS  lab-v2: a project without a page (AZIZ) keeps the disabled Coming soon action  ({"link":false,"disabled":"true","soon":true})
 PASS  Open project opens the TableRefresh page with a client-side navigation  ({"marker":true,"h1":"TableRefresh","scene":false,"scroll":"auto","title":"TableRefresh — Lab v2 (experimental)","robots":"noindex, nofollow"})
 PASS  the project page does not keep the lab scene mounted, and scrolls
 PASS  title and noindex like the other project pages  (TableRefresh — Lab v2 (experimental) | noindex, nofollow)
@@ -26,7 +26,8 @@ PASS  floor=approved: kept to the page, back to the lab and to SQLOrbit  (/lab-v
 PASS  /lab-v2/projects/tablerefresh -> 200  (200)
 PASS  /lab-v2/projects/sqlorbit -> 200  (200)
 PASS  /lab-v2/projects/arimap -> 200  (200)
-PASS  /lab-v2/projects/armat -> 404  (404)
+PASS  /lab-v2/projects/armat -> 200  (200)
+PASS  /lab-v2/projects/aziz -> 404  (404)
 PASS  /lab-v2/projects/nope -> 404  (404)
 PASS  /projects/tablerefresh -> 404  (404)
 PASS  unknown view values are dropped from every lab link  (/lab-v2 /lab-v2#lab-stations /lab-v2#station-experience /lab-v2#lab-intro /lab-v2 /lab-v2?station=engineering&amp;project=tablerefresh /lab-v2/projects/sqlorbit /lab-v2?station=engineering&amp;project=tablerefresh)
@@ -38,4 +39,4 @@ PASS  /: TableRefresh's Open project is still disabled with Coming soon  ({"link
 PASS  /: header navigation unchanged  (/ #lab-stations #station-experience #lab-intro)
 PASS  no console errors or exceptions
 
-39 passed, 0 failed
+40 passed, 0 failed
