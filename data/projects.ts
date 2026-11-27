@@ -68,9 +68,13 @@ export interface ProjectSection {
   paragraphs?: string[];
   /** A short list; each item may lead with a term. */
   items?: { term?: string; text: string }[];
-  /** Show the project's screenshots in this section (instead of a section of their own). */
+  /**
+   * Show the project's screenshots in this section (instead of a section of their own): under its text at full
+   * width, or, for a section with no paragraphs or items (M1.4L.4B), as its content.
+   */
   showMedia?: boolean;
-  after?: "overview" | "contributions";
+  /** Where the section goes; default after the Overview. M1.4L.4B: or after the Technology stack. */
+  after?: "overview" | "contributions" | "stack";
 }
 
 export interface ProjectDetail {
@@ -259,6 +263,117 @@ export const PROJECTS: Record<ProjectId, Project> = {
     slug: "tablerefresh",
     zone: "engineering",
     summary: "A WordPress plugin that synchronizes TablePress tables with CSV files and Google Sheets.",
+    // M1.4L.4B: owner-approved decisions and the facts verified in docs/m1.4l/TABLEREFRESH-CONTENT-AUDIT.md.
+    // Published on WordPress.org (1.0.1); no GitHub link yet; no install, rating or review figures.
+    detail: {
+      tagline: "Keep TablePress tables updated without losing control of your data.",
+      overview: [
+        "Keeping website tables updated sounds simple until the source data changes, a scheduled task fails, or someone edits the table directly in WordPress.",
+        "I created TableRefresh to automate CSV and Google Sheets synchronization for existing TablePress tables, while giving site administrators control over when and how their data is replaced.",
+        "The most challenging part wasn't importing rows. It was making synchronization reliable: validating external data, preventing conflicting updates, recovering from interrupted operations, and preserving manual edits until an administrator decides what should happen.",
+        "TableRefresh is publicly available through the WordPress plugin directory. Its development focuses on predictable behavior, compatibility and making synchronization failures understandable rather than silently overwriting data.",
+      ],
+      category: "WordPress Plugin / Developer Tools",
+      role: "Creator & Full-stack Engineer",
+      status: "Published",
+      milestone: "Version 1.0.1 on WordPress.org",
+      platforms: ["WordPress", "TablePress"],
+      sections: [
+        {
+          id: "synchronization",
+          title: "How synchronization works",
+          paragraphs: [
+            "TableRefresh is an independent add-on for TablePress, not made by or affiliated with it, and requires the free TablePress plugin. It fills an existing table from one source and keeps it up to date.",
+          ],
+          items: [
+            {
+              term: "Source",
+              text: "A CSV file at any web address, or a public Google Sheet, whose sharing link works as it is, including the chosen tab. Private sheets and sources that require signing in are not supported.",
+            },
+            {
+              term: "Schedule",
+              text: "Hourly, daily or weekly through WordPress's scheduled tasks, or at once with Sync now. WP-CLI commands run a sync or recover an interrupted one.",
+            },
+            {
+              term: "Update",
+              text: "One way, from the source to the table. The complete file is downloaded and checked first; then the rows and columns are replaced in a single database transaction, or not at all. The table's ID, shortcode, name and options stay the same.",
+            },
+            {
+              term: "Edits in TablePress",
+              text: "A table changed in TablePress after the last sync is not overwritten: automatic sync pauses until an administrator keeps the changes or replaces them with the source data. A table open in the editor is not synchronized.",
+            },
+            {
+              term: "Failures",
+              text: "A failed sync leaves the table unchanged. Each table shows its last result and its ten most recent attempts in plain language; after five failures in a row, automatic sync pauses until a manual sync succeeds.",
+            },
+          ],
+        },
+        { id: "screenshots", title: "Screenshots", showMedia: true },
+        {
+          id: "testing",
+          title: "Testing and compatibility",
+          after: "stack",
+          paragraphs: [
+            "The project's tooling includes integration tests that run against real WordPress and TablePress installations in Docker, mutation testing, compatibility runs, WordPress.org's Plugin Check and a browser workflow. The recorded results differ between the two published versions.",
+          ],
+          items: [
+            {
+              term: "Requirements",
+              text: "WordPress 6.7 or newer, PHP 7.4 or newer and TablePress 3.0 or newer, on MySQL or MariaDB with InnoDB tables (the WordPress default). Tested with WordPress up to 7.1 and with TablePress 3.0 and 3.4.1.",
+            },
+            {
+              term: "Version 1.0.0",
+              text: "Recorded release checks: 251 integration tests passing on PHP 7.4 and 8.3; targeted runs with TablePress 3.0, WordPress 6.7 and PHP 8.4; mutation testing; an upgrade check; WordPress.org's Plugin Check with no errors; and the browser workflow from the release package.",
+            },
+            {
+              term: "Version 1.0.1",
+              text: "Version 1.0.1 has a recorded run of 273 tests, with 269 passing, 4 skipped and no failures. The broader verification documented for version 1.0.0 has not been independently confirmed for this release.",
+            },
+          ],
+        },
+      ],
+      contributions: [
+        "Designed an all-or-nothing update path: the complete source is downloaded and validated, written in a single database transaction, verified, and rolled back on failure, with a journal to finish or undo an interrupted update.",
+        "Built conflict detection between synchronized data and edits made in TablePress, with a keep-or-replace decision and a guard against older editor sessions saving over newer data.",
+        "Implemented per-table locking and a WP-Cron scheduler for hourly, daily and weekly syncs. In 1.0.1 it gained a time budget per web request, longest-waiting-first ordering, and repair of overlapping cron runs.",
+        "Hardened source handling: blocked requests to internal networks, restricted ports, refused proxies, size and time limits, HTML filtering, and formulas and shortcodes shown as text.",
+        "Made Google Sheets sharing links work directly, and added WP-CLI commands for scripted sync and recovery.",
+        "Took the plugin through the WordPress.org review: a vendor namespace, notices limited to the Plugins screen, and a complete uninstall.",
+        "Built the test and release tooling: integration tests against real WordPress and TablePress, mutation testing, compatibility matrices, Plugin Check, browser workflow checks and reproducible release builds.",
+      ],
+      stack: ["PHP", "WordPress", "TablePress", "WP-Cron", "WP-CLI", "MySQL / MariaDB", "PHPUnit", "Docker"],
+      media: [
+        {
+          src: "/projects/tablerefresh/tables.webp",
+          width: 1280,
+          height: 900,
+          title: "Tables",
+          caption: "Every synchronized table with its schedule and last result.",
+          alt: "The TableRefresh screen in the WordPress admin, in its own menu below TablePress: one table, “Class roster” (table ID 1), synchronized from Google Sheets every hour, next sync in about 60 minutes, last sync “Updated” 1 second ago, with Sync now and Settings and history buttons.",
+        },
+        {
+          src: "/projects/tablerefresh/setup.webp",
+          width: 1280,
+          height: 900,
+          title: "Setup",
+          caption: "Choose a table, paste a CSV or Google Sheets link, and choose how often to sync.",
+          alt: "Set up table sync: the table “Class roster (ID 1)”, a Google Sheets sharing link as the data source with the note that private Google Sheets are not supported, How often set to Every hour (or once a day, or once a week), Sync automatically checked, the confirmation to replace the table's current content checked, and a Save and sync now button.",
+        },
+        {
+          src: "/projects/tablerefresh/conflict.webp",
+          width: 1280,
+          height: 1664,
+          title: "Edit conflict",
+          caption: "A table changed in TablePress waits for a decision instead of being overwritten.",
+          alt: "Settings and history of “Class roster”: a notice reads “This table was changed in TablePress” and offers Keep the changes, or Replace with source data after confirming that the edits will be lost. Below, the status “Paused: needs your decision” and the recent syncs, the latest “Not updated” because the table was changed in TablePress, earlier ones “No changes” and “Updated”.",
+        },
+      ],
+      mediaNotes: [
+        "Screenshots: TableRefresh's official WordPress.org screenshots, on WordPress 7.1 with TablePress, using Google's public sample sheet (fictional data).",
+      ],
+      links: [{ label: "TableRefresh on WordPress.org", href: "https://wordpress.org/plugins/tablerefresh/" }],
+      related: ["sqlorbit"],
+    },
   },
   aziz: {
     id: "aziz",

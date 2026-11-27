@@ -1,0 +1,356 @@
+{
+ "1648x928": {
+  "docWidth": 1648,
+  "viewport": 1648,
+  "docHeight": 6971,
+  "scrollable": "auto",
+  "pastRightEdge": [],
+  "header": [
+   "site"
+  ],
+  "h1": {
+   "text": "TableRefresh",
+   "px": 92
+  },
+  "headings": [
+   "H1 TableRefresh",
+   "H2 Overview",
+   "H2 How synchronization works",
+   "H2 Screenshots",
+   "H2 Engineering contributions",
+   "H2 Technology stack",
+   "H2 Testing and compatibility",
+   "H2 Links",
+   "H2 Related project",
+   "H3 SQLOrbit"
+  ],
+  "smallestText": [
+   {
+    "t": "Software Engineer",
+    "px": 11.3349
+   },
+   {
+    "t": "Status",
+    "px": 11.5
+   },
+   {
+    "t": "Release",
+    "px": 11.5
+   }
+  ],
+  "sections": [
+   {
+    "h": 549,
+    "x": 290,
+    "y": 694,
+    "w": 1068
+   },
+   {
+    "h": 737,
+    "x": 290,
+    "y": 1243,
+    "w": 1068
+   },
+   {
+    "h": 2592,
+    "x": 290,
+    "y": 1980,
+    "w": 1068
+   },
+   {
+    "h": 839,
+    "x": 290,
+    "y": 4573,
+    "w": 1068
+   },
+   {
+    "h": 227,
+    "x": 290,
+    "y": 5412,
+    "w": 1068
+   },
+   {
+    "h": 575,
+    "x": 290,
+    "y": 5639,
+    "w": 1068
+   },
+   {
+    "h": 197,
+    "x": 290,
+    "y": 6214,
+    "w": 1068
+   },
+   {
+    "h": 369,
+    "x": 290,
+    "y": 6410,
+    "w": 1068
+   }
+  ],
+  "scene": false,
+  "images": [
+   {
+    "src": "/_next/image?url=%2Fprojects%2Ftablerefresh%2Ftables.webp&w=828&q=75",
+    "ok": true,
+    "alt": 278,
+    "w": 764,
+    "h": 537,
+    "ratio": 0.7029
+   },
+   {
+    "src": "/_next/image?url=%2Fprojects%2Ftablerefresh%2Fsetup.webp&w=828&q=75",
+    "ok": true,
+    "alt": 345,
+    "w": 764,
+    "h": 537,
+    "ratio": 0.7029
+   },
+   {
+    "src": "/_next/image?url=%2Fprojects%2Ftablerefresh%2Fconflict.webp&w=828&q=75",
+    "ok": true,
+    "alt": 377,
+    "w": 764,
+    "h": 993,
+    "ratio": 1.2984
+   }
+  ],
+  "errors": []
+ },
+ "1366x768": {
+  "docWidth": 1366,
+  "viewport": 1366,
+  "docHeight": 6971,
+  "scrollable": "auto",
+  "pastRightEdge": [],
+  "header": [
+   "site"
+  ],
+  "h1": {
+   "text": "TableRefresh",
+   "px": 92
+  },
+  "headings": [
+   "H1 TableRefresh",
+   "H2 Overview",
+   "H2 How synchronization works",
+   "H2 Screenshots",
+   "H2 Engineering contributions",
+   "H2 Technology stack",
+   "H2 Testing and compatibility",
+   "H2 Links",
+   "H2 Related project",
+   "H3 SQLOrbit"
+  ],
+  "smallestText": [
+   {
+    "t": "Software Engineer",
+    "px": 9.38576
+   },
+   {
+    "t": "Status",
+    "px": 11.5
+   },
+   {
+    "t": "Release",
+    "px": 11.5
+   }
+  ],
+  "sections": [
+   {
+    "h": 549,
+    "x": 149,
+    "y": 694,
+    "w": 1068
+   },
+   {
+    "h": 737,
+    "x": 149,
+    "y": 1243,
+    "w": 1068
+   },
+   {
+    "h": 2592,
+    "x": 149,
+    "y": 1980,
+    "w": 1068
+   },
+   {
+    "h": 839,
+    "x": 149,
+    "y": 4573,
+    "w": 1068
+   },
+   {
+    "h": 227,
+    "x": 149,
+    "y": 5412,
+    "w": 1068
+   },
+   {
+    "h": 575,
+    "x": 149,
+    "y": 5639,
+    "w": 1068
+   },
+   {
+    "h": 197,
+    "x": 149,
+    "y": 6214,
+    "w": 1068
+   },
+   {
+    "h": 369,
+    "x": 149,
+    "y": 6410,
+    "w": 1068
+   }
+  ],
+  "scene": false,
+  "images": [
+   {
+    "src": "/_next/image?url=%2Fprojects%2Ftablerefresh%2Ftables.webp&w=828&q=75",
+    "ok": true,
+    "alt": 278,
+    "w": 764,
+    "h": 537,
+    "ratio": 0.7029
+   },
+   {
+    "src": "/_next/image?url=%2Fprojects%2Ftablerefresh%2Fsetup.webp&w=828&q=75",
+    "ok": true,
+    "alt": 345,
+    "w": 764,
+    "h": 537,
+    "ratio": 0.7029
+   },
+   {
+    "src": "/_next/image?url=%2Fprojects%2Ftablerefresh%2Fconflict.webp&w=828&q=75",
+    "ok": true,
+    "alt": 377,
+    "w": 764,
+    "h": 993,
+    "ratio": 1.2984
+   }
+  ],
+  "errors": []
+ },
+ "390x844": {
+  "docWidth": 390,
+  "viewport": 390,
+  "docHeight": 8093,
+  "scrollable": "auto",
+  "pastRightEdge": [],
+  "header": [
+   "compact"
+  ],
+  "h1": {
+   "text": "TableRefresh",
+   "px": 48
+  },
+  "headings": [
+   "H1 TableRefresh",
+   "H2 Overview",
+   "H2 How synchronization works",
+   "H2 Screenshots",
+   "H2 Engineering contributions",
+   "H2 Technology stack",
+   "H2 Testing and compatibility",
+   "H2 Links",
+   "H2 Related project",
+   "H3 SQLOrbit"
+  ],
+  "smallestText": [
+   {
+    "t": "Software Engineer",
+    "px": 10
+   },
+   {
+    "t": "Status",
+    "px": 11.5
+   },
+   {
+    "t": "Release",
+    "px": 11.5
+   }
+  ],
+  "sections": [
+   {
+    "h": 857,
+    "x": 24,
+    "y": 853,
+    "w": 342
+   },
+   {
+    "h": 1255,
+    "x": 24,
+    "y": 1710,
+    "w": 342
+   },
+   {
+    "h": 1527,
+    "x": 24,
+    "y": 2964,
+    "w": 342
+   },
+   {
+    "h": 1476,
+    "x": 24,
+    "y": 4491,
+    "w": 342
+   },
+   {
+    "h": 353,
+    "x": 24,
+    "y": 5967,
+    "w": 342
+   },
+   {
+    "h": 985,
+    "x": 24,
+    "y": 6320,
+    "w": 342
+   },
+   {
+    "h": 201,
+    "x": 24,
+    "y": 7305,
+    "w": 342
+   },
+   {
+    "h": 393,
+    "x": 24,
+    "y": 7505,
+    "w": 342
+   }
+  ],
+  "scene": false,
+  "images": [
+   {
+    "src": "/_next/image?url=%2Fprojects%2Ftablerefresh%2Ftables.webp&w=384&q=75",
+    "ok": true,
+    "alt": 278,
+    "w": 342,
+    "h": 240,
+    "ratio": 0.7018
+   },
+   {
+    "src": "/_next/image?url=%2Fprojects%2Ftablerefresh%2Fsetup.webp&w=384&q=75",
+    "ok": true,
+    "alt": 345,
+    "w": 342,
+    "h": 240,
+    "ratio": 0.7018
+   },
+   {
+    "src": "/_next/image?url=%2Fprojects%2Ftablerefresh%2Fconflict.webp&w=384&q=75",
+    "ok": true,
+    "alt": 377,
+    "w": 342,
+    "h": 444,
+    "ratio": 1.2982
+   }
+  ],
+  "errors": []
+ }
+}

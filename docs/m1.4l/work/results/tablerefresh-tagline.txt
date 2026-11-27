@@ -1,0 +1,11 @@
+PASS  1648x928: tagline text is the approved line  (Keep TablePress tables updated without losing control of your data.)
+PASS  1648x928: wraps into 2 or 3 lines, none a single word  ("Keep TablePress tables updated without" / "losing control of your data.")
+PASS  1648x928: no horizontal overflow
+      1648x928: font 28px, max-width 551.04px, tagline box 290,380,551,74, hero 290,232,1068,462
+PASS  390x844: tagline text is the approved line  (Keep TablePress tables updated without losing control of your data.)
+PASS  390x844: wraps into 2 or 3 lines, none a single word  ("Keep TablePress tables updated" / "without losing control of your data.")
+PASS  390x844: no horizontal overflow
+      390x844: font 20px, max-width 393.6px, tagline box 24,276,342,53, hero 24,170,342,656
+PASS  no console errors or exceptions  (none)
+
+7 passed, 0 failed

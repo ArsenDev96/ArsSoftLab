@@ -1,0 +1,46 @@
+PASS  desktop: three screenshots stacked in order, numbered, with titles  (Tables · Setup · Edit conflict)
+PASS  desktop: each at the content column's full width, in its own proportions  (764x537, 764x537, 764x992.8 in a 764 px column)
+PASS  each screenshot links to its original WebP; link named by its alt text + (view full size)  (/projects/tablerefresh/tables.webp /projects/tablerefresh/setup.webp /projects/tablerefresh/conflict.webp)
+PASS  desktop: no horizontal overflow
+PASS  click opens a modal dialog  (name "02Setup")
+PASS  dialog named by the screen, described by its caption  (Choose a table, paste a CSV or Google Sheets link, and choose how often to sync.)
+PASS  counter 2 / 3, announced as 'Screenshot 2 of 3: Setup'  (2 / 3)
+PASS  shows the original file, with alt text  (/projects/tablerefresh/setup.webp 1280x900)
+PASS  wide image fits the viewport, keeps its proportions, never upscaled  (1000x703 at 324,84, ratio 0.703)
+PASS  no horizontal overflow while open
+PASS  focus moves to Close  (Close)
+PASS  no opening motion (no animation or transition on dialog or image)  (0s/none 0s/none 0s/none)
+PASS  credits shown under the caption (desktop)
+PASS  page does not scroll behind the viewer  (scrollY 2514 -> 2514)
+PASS  Next button: 3 / 3 Edit conflict  (3 / 3 03Edit conflict)
+PASS  tall image (1280 x 1664) fits the viewport height, keeps its proportions  (541x703)
+PASS  Previous button: back to 2 / 3  (2 / 3)
+PASS  no image-switching motion
+PASS  Right / Left arrows step through the screens  (3 / 3)
+PASS  arrows wrap: 3 -> 1 -> 3  (1 / 3, 3 / 3)
+PASS  Tab and Shift+Tab stay inside the viewer  (Next screenshot | Close | Previous screenshot | Next screenshot)
+PASS  every control in the viewer shows the focus ring  (Next screenshot, Close, Previous screenshot)
+PASS  clicking the image does not close
+PASS  backdrop click closes, focus returns to screenshot 02  (point on backdrop: true, focus on index 1)
+PASS  scrolling restored after close, position kept  (scrollY 2514)
+PASS  Enter on screenshot 03 opens it  (3 / 3)
+PASS  Escape closes, focus returns to screenshot 03 with its focus ring  (focus on index 2, ring true)
+PASS  Space opens (and the same key press does not close it)  (3 / 3)
+PASS  Close button closes, focus returns to screenshot 03  (focus on index 2)
+PASS  URL unchanged by the viewer
+PASS  mobile: three stacked at the content width (342 px), in order, own proportions  (342x240.5, 342x240.5, 342x444.4)
+PASS  mobile: no horizontal overflow
+PASS  tap opens screenshot 03 (3 / 3 Edit conflict)  (3 / 3)
+PASS  mobile: tall image fits the viewport in its proportions  (358x465 at 16,160)
+PASS  mobile: caption and credits line visible below the image
+PASS  mobile: no horizontal overflow while open
+PASS  mobile: swipe does not scroll the page behind  (scrollY 3616 -> 3616)
+PASS  mobile: Image credits expand to the source line, still within the screen  ({"open":true,"text":true,"fits":true})
+PASS  mobile: backdrop tap closes, focus returns to screenshot 03  (focus on index 2)
+PASS  reduced motion: opens and steps with no animation; control transitions off  (button transition 0s)
+PASS  without JavaScript the screenshot opens its full-size file  (/projects/tablerefresh/tables.webp (image/webp))
+PASS  AriMap smoke: five-screen row still opens the viewer (2 / 5 Find)  (5 links, 2 / 5)
+PASS  SQLOrbit smoke: page renders, no gallery or viewer, no overflow  (Overview · Problem and solution · Engineering contributions · Technology stack · Related project)
+PASS  no console errors or exceptions  (none)
+
+44 passed, 0 failed

@@ -37,14 +37,20 @@ export function ProjectDetail({ project, view }: { project: Project & { detail: 
   const labHref = labV2Href(LAB_HOME, view);
 
   const sections: { id: string; title: string; body: ReactNode; wide?: ReactNode }[] = [];
-  // M1.4L.3B: extra text sections, after the Overview or after the contributions; one of them may hold the screenshots.
+  // M1.4L.3B: extra text sections, after the Overview, the contributions or (M1.4L.4B) the stack; one of them may hold
+  // the screenshots: under its text at full width, or (M1.4L.4B) as its only content, in the content column.
   const media = detail.media?.length ? <Media items={detail.media} notes={detail.mediaNotes} /> : null;
-  const extra = (after: "overview" | "contributions") =>
+  const extra = (after: NonNullable<NonNullable<Detail["sections"]>[number]["after"]>) =>
     (detail.sections ?? [])
       .filter((s) => (s.after ?? "overview") === after)
-      .forEach((s) =>
-        sections.push({ id: s.id, title: s.title, body: <TextSection section={s} />, wide: s.showMedia ? media : undefined }),
-      );
+      .forEach((s) => {
+        const textless = !s.paragraphs?.length && !s.items?.length;
+        sections.push(
+          s.showMedia && textless
+            ? { id: s.id, title: s.title, body: media }
+            : { id: s.id, title: s.title, body: <TextSection section={s} />, wide: s.showMedia ? media : undefined },
+        );
+      });
   const mediaInSection = Boolean(media && detail.sections?.some((s) => s.showMedia));
 
   sections.push({ id: "overview", title: "Overview", body: <Overview project={project} /> });
@@ -59,6 +65,7 @@ export function ProjectDetail({ project, view }: { project: Project & { detail: 
   if (detail.stack?.length) {
     sections.push({ id: "stack", title: "Technology stack", body: <Stack items={detail.stack} /> });
   }
+  extra("stack");
   if (media && !mediaInSection) {
     sections.push({ id: "media", title: "Screenshots", body: media });
   }
@@ -380,33 +387,16 @@ function Stack({ items }: { items: string[] }) {
 
 /**
  * Only real assets with alt text (none for SQLOrbit). Portrait screens (phone screenshots) form one numbered row
- * (M1.4L.3B); other images stack at full width. `notes` (source and required credits) follow in small print.
+ * (M1.4L.3B); other images stack at full width (M1.4L.4B: numbered too). Either way each opens full size in
+ * `ScreenshotViewer`. `notes` (source and required credits) follow in small print.
  */
 function Media({ items, notes }: { items: NonNullable<Detail["media"]>; notes?: string[] }) {
   const portrait = items.every((m) => m.height > m.width);
   return (
     <div>
-      {portrait ? (
-        <ScreenshotViewer items={items} notes={notes}>
-          <ScreenRow items={items} />
-        </ScreenshotViewer>
-      ) : (
-        <div className="grid gap-6">
-          {items.map((m) => (
-            <figure key={m.src}>
-              <Image
-                src={m.src}
-                alt={m.alt}
-                width={m.width}
-                height={m.height}
-                sizes="(min-width: 1024px) 820px, 100vw"
-                className="h-auto w-full rounded-xl shadow-[0_0_0_1px_rgb(255_255_255/0.09)]"
-              />
-              {m.caption ? <figcaption className="mt-3 text-[14px] text-lab-subtle">{m.caption}</figcaption> : null}
-            </figure>
-          ))}
-        </div>
-      )}
+      <ScreenshotViewer items={items} notes={notes}>
+        {portrait ? <ScreenRow items={items} /> : <ScreenStack items={items} />}
+      </ScreenshotViewer>
       {notes?.length ? (
         <div className="mt-10 grid max-w-[880px] gap-1.5 text-[12.5px] leading-[1.6] text-lab-subtle">
           {notes.map((n) => (
@@ -452,23 +442,59 @@ function ScreenRow({ items }: { items: NonNullable<Detail["media"]> }) {
               </div>
               <span className="sr-only"> (view full size)</span>
             </a>
-            {m.title || m.caption ? (
-              <figcaption className="mt-4">
-                {m.title ? (
-                  <span className="flex items-baseline gap-2.5">
-                    <span aria-hidden="true" className="text-[12px] leading-none text-amber tabular-nums">
-                      {String(i + 1).padStart(2, "0")}
-                    </span>
-                    <span className="text-[15px] leading-snug font-[460] text-lab-heading">{m.title}</span>
-                  </span>
-                ) : null}
-                {m.caption ? <span className="mt-1.5 block text-[13.5px] leading-[1.5] text-lab-muted">{m.caption}</span> : null}
-              </figcaption>
-            ) : null}
+            <ScreenCaption item={m} index={i} />
           </figure>
         </li>
       ))}
     </ol>
+  );
+}
+
+/**
+ * M1.4L.4B: desktop screenshots (wide or tall), one under another at the content column's width, each at its own
+ * proportions in a hairline frame, with the same numbered title and caption as `ScreenRow`. Each image links to its
+ * full-size file, which `ScreenshotViewer` opens in place.
+ */
+function ScreenStack({ items }: { items: NonNullable<Detail["media"]> }) {
+  return (
+    <ol className="grid gap-12 lg:gap-14">
+      {items.map((m, i) => (
+        <li key={m.src}>
+          <figure>
+            <a href={m.src} data-viewer-index={i} className="block cursor-zoom-in rounded-xl">
+              <Image
+                src={m.src}
+                alt={m.alt}
+                width={m.width}
+                height={m.height}
+                sizes="(min-width: 1180px) 764px, (min-width: 1024px) calc(100vw - 416px), (min-width: 640px) calc(100vw - 80px), calc(100vw - 48px)"
+                className="block h-auto w-full rounded-xl shadow-[0_0_0_1px_rgb(255_255_255/0.1),0_24px_48px_-24px_rgb(0_0_0/0.9)]"
+              />
+              <span className="sr-only"> (view full size)</span>
+            </a>
+            <ScreenCaption item={m} index={i} />
+          </figure>
+        </li>
+      ))}
+    </ol>
+  );
+}
+
+/** A screenshot's amber number and title, with its one-line caption under it. */
+function ScreenCaption({ item: m, index: i }: { item: NonNullable<Detail["media"]>[number]; index: number }) {
+  if (!m.title && !m.caption) return null;
+  return (
+    <figcaption className="mt-4">
+      {m.title ? (
+        <span className="flex items-baseline gap-2.5">
+          <span aria-hidden="true" className="text-[12px] leading-none text-amber tabular-nums">
+            {String(i + 1).padStart(2, "0")}
+          </span>
+          <span className="text-[15px] leading-snug font-[460] text-lab-heading">{m.title}</span>
+        </span>
+      ) : null}
+      {m.caption ? <span className="mt-1.5 block text-[13.5px] leading-[1.5] text-lab-muted">{m.caption}</span> : null}
+    </figcaption>
   );
 }
 

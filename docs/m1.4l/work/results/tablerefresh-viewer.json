@@ -1,0 +1,238 @@
+{
+ "desktopGallery": {
+  "ol": [
+   594,
+   2053,
+   764
+  ],
+  "column": [
+   594,
+   764
+  ],
+  "r": [
+   [
+    594,
+    2053,
+    764,
+    537
+   ],
+   [
+    594,
+    2709,
+    764,
+    537
+   ],
+   [
+    594,
+    3365,
+    764,
+    992.8
+   ]
+  ],
+  "ratios": [
+   0.703,
+   0.703,
+   1.3
+  ],
+  "titles": [
+   "Tables",
+   "Setup",
+   "Edit conflict"
+  ],
+  "numbers": [
+   "01",
+   "02",
+   "03"
+  ],
+  "hrefs": [
+   "/projects/tablerefresh/tables.webp",
+   "/projects/tablerefresh/setup.webp",
+   "/projects/tablerefresh/conflict.webp"
+  ],
+  "names": [
+   "(view full size)",
+   "(view full size)",
+   "(view full size)"
+  ],
+  "current": [
+   "/_next/image?url=%2Fprojects%2Ftablerefresh%2Ftables.webp&w=828&q=75",
+   "/_next/image?url=%2Fprojects%2Ftablerefresh%2Fsetup.webp&w=828&q=75",
+   "/_next/image?url=%2Fprojects%2Ftablerefresh%2Fconflict.webp&w=828&q=75"
+  ],
+  "overflow": false
+ },
+ "desktopOpen": {
+  "open": true,
+  "modal": true,
+  "name": "02Setup",
+  "description": "Choose a table, paste a CSV or Google Sheets link, and choose how often to sync.",
+  "counter": "2 / 3",
+  "live": "Screenshot 2 of 3: Setup",
+  "src": "/projects/tablerefresh/setup.webp",
+  "alt": 345,
+  "natural": [
+   1280,
+   900
+  ],
+  "box": [
+   324,
+   84,
+   1000,
+   703
+  ],
+  "ratio": 0.703,
+  "inViewport": true,
+  "notUpscaled": true,
+  "hOverflow": false,
+  "activeInside": true,
+  "active": "Close",
+  "ring": false,
+  "bodyOverflow": "hidden",
+  "scrollY": 2514,
+  "motion": "0s/none 0s/none 0s/none",
+  "cssAnimations": 0,
+  "imageTransitions": 0,
+  "buttonTransition": "0.22s, 0.22s, 0.22s, 0.22s, 0.22s"
+ },
+ "desktopTall": {
+  "open": true,
+  "modal": true,
+  "name": "03Edit conflict",
+  "description": "A table changed in TablePress waits for a decision instead of being overwritten.",
+  "counter": "3 / 3",
+  "live": "Screenshot 3 of 3: Edit conflict",
+  "src": "/projects/tablerefresh/conflict.webp",
+  "alt": 377,
+  "natural": [
+   1280,
+   1664
+  ],
+  "box": [
+   553,
+   84,
+   541,
+   703
+  ],
+  "ratio": 1.3,
+  "inViewport": true,
+  "notUpscaled": true,
+  "hOverflow": false,
+  "activeInside": true,
+  "active": "Next screenshot",
+  "ring": false,
+  "bodyOverflow": "hidden",
+  "scrollY": 2514,
+  "motion": "0s/none 0s/none 0s/none",
+  "cssAnimations": 0,
+  "imageTransitions": 0,
+  "buttonTransition": "0.22s, 0.22s, 0.22s, 0.22s, 0.22s"
+ },
+ "mobileGallery": {
+  "ol": [
+   24,
+   3093,
+   342
+  ],
+  "column": [
+   24,
+   342
+  ],
+  "r": [
+   [
+    24,
+    3093,
+    342,
+    240.5
+   ],
+   [
+    24,
+    3444,
+    342,
+    240.5
+   ],
+   [
+    24,
+    3816,
+    342,
+    444.4
+   ]
+  ],
+  "ratios": [
+   0.703,
+   0.703,
+   1.299
+  ],
+  "titles": [
+   "Tables",
+   "Setup",
+   "Edit conflict"
+  ],
+  "numbers": [
+   "01",
+   "02",
+   "03"
+  ],
+  "hrefs": [
+   "/projects/tablerefresh/tables.webp",
+   "/projects/tablerefresh/setup.webp",
+   "/projects/tablerefresh/conflict.webp"
+  ],
+  "names": [
+   "(view full size)",
+   "(view full size)",
+   "(view full size)"
+  ],
+  "current": [
+   "/_next/image?url=%2Fprojects%2Ftablerefresh%2Ftables.webp&w=384&q=75",
+   "/_next/image?url=%2Fprojects%2Ftablerefresh%2Fsetup.webp&w=384&q=75",
+   "/_next/image?url=%2Fprojects%2Ftablerefresh%2Fconflict.webp&w=384&q=75"
+  ],
+  "overflow": false
+ },
+ "mobileOpen": {
+  "open": true,
+  "modal": true,
+  "name": "03Edit conflict",
+  "description": "A table changed in TablePress waits for a decision instead of being overwritten.",
+  "counter": "3 / 3",
+  "live": "Screenshot 3 of 3: Edit conflict",
+  "src": "/projects/tablerefresh/conflict.webp",
+  "alt": 377,
+  "natural": [
+   1280,
+   1664
+  ],
+  "box": [
+   16,
+   160,
+   358,
+   465
+  ],
+  "ratio": 1.3,
+  "inViewport": true,
+  "notUpscaled": true,
+  "hOverflow": false,
+  "activeInside": true,
+  "active": "Close",
+  "ring": false,
+  "bodyOverflow": "hidden",
+  "scrollY": 3616,
+  "motion": "0s/none 0s/none 0s/none",
+  "cssAnimations": 0,
+  "imageTransitions": 0,
+  "buttonTransition": "0.22s, 0.22s, 0.22s, 0.22s, 0.22s"
+ },
+ "sqlorbit": {
+  "h1": "SQLOrbit",
+  "viewerLinks": 0,
+  "dialog": false,
+  "sections": [
+   "Overview",
+   "Problem and solution",
+   "Engineering contributions",
+   "Technology stack",
+   "Related project"
+  ],
+  "overflow": false
+ }
+}
