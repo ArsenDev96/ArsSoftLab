@@ -1,0 +1,78 @@
+{
+ "restRepeatMaxDiff": 0,
+ "plate": {
+  "size": [
+   1672,
+   941
+  ],
+  "bytes": 1657900
+ },
+ "sprites": {
+  "engineering": {
+   "box": {
+    "x": 238,
+    "y": 390,
+    "w": 546,
+    "h": 281
+   },
+   "changedPx": 41386,
+   "boxShareOfFrame": 0.098,
+   "maxChange": 198,
+   "bytes": 171384,
+   "roundTripMaxDiff": 0
+  },
+  "educational": {
+   "box": {
+    "x": 663,
+    "y": 269,
+    "w": 351,
+    "h": 311
+   },
+   "changedPx": 44602,
+   "boxShareOfFrame": 0.069,
+   "maxChange": 200,
+   "bytes": 146122,
+   "roundTripMaxDiff": 0
+  },
+  "playground": {
+   "box": {
+    "x": 887,
+    "y": 371,
+    "w": 502,
+    "h": 229
+   },
+   "changedPx": 19026,
+   "boxShareOfFrame": 0.073,
+   "maxChange": 226,
+   "bytes": 136814,
+   "roundTripMaxDiff": 0
+  },
+  "creative": {
+   "box": {
+    "x": 51,
+    "y": 549,
+    "w": 675,
+    "h": 325
+   },
+   "changedPx": 37437,
+   "boxShareOfFrame": 0.139,
+   "maxChange": 194,
+   "bytes": 250888,
+   "roundTripMaxDiff": 0
+  },
+  "experience": {
+   "box": {
+    "x": 958,
+    "y": 567,
+    "w": 714,
+    "h": 330
+   },
+   "changedPx": 43856,
+   "boxShareOfFrame": 0.15,
+   "maxChange": 214,
+   "bytes": 275200,
+   "roundTripMaxDiff": 0
+  }
+ },
+ "pixelsChangedByTwoStations": 1421
+}

@@ -1,0 +1,106 @@
+{
+ "rest": {
+  "max": 164,
+  "over2": 639378,
+  "over8": 217986,
+  "over24": 46055,
+  "share_over2": 0.4181,
+  "box_over8": [
+   0,
+   0,
+   1647,
+   927
+  ]
+ },
+ "hover-engineering": {
+  "max": 164,
+  "over2": 648243,
+  "over8": 225831,
+  "over24": 49269,
+  "share_over2": 0.4239,
+  "box_over8": [
+   0,
+   0,
+   1647,
+   927
+  ]
+ },
+ "hover-educational": {
+  "max": 164,
+  "over2": 640985,
+  "over8": 220261,
+  "over24": 47317,
+  "share_over2": 0.4191,
+  "box_over8": [
+   0,
+   0,
+   1647,
+   927
+  ]
+ },
+ "hover-playground": {
+  "max": 164,
+  "over2": 641568,
+  "over8": 220797,
+  "over24": 47367,
+  "share_over2": 0.4195,
+  "box_over8": [
+   0,
+   0,
+   1647,
+   927
+  ]
+ },
+ "hover-creative": {
+  "max": 164,
+  "over2": 638833,
+  "over8": 218434,
+  "over24": 46723,
+  "share_over2": 0.4177,
+  "box_over8": [
+   0,
+   0,
+   1647,
+   927
+  ]
+ },
+ "hover-experience": {
+  "max": 164,
+  "over2": 646874,
+  "over8": 226093,
+  "over24": 49428,
+  "share_over2": 0.423,
+  "box_over8": [
+   0,
+   0,
+   1647,
+   927
+  ]
+ },
+ "selected-engineering": {
+  "max": 164,
+  "over2": 401195,
+  "over8": 93804,
+  "over24": 12937,
+  "share_over2": 0.2623,
+  "box_over8": [
+   0,
+   0,
+   1647,
+   899
+  ]
+ },
+ "selected-sqlorbit": {
+  "max": 164,
+  "over2": 400802,
+  "over8": 93659,
+  "over24": 12912,
+  "share_over2": 0.2621,
+  "box_over8": [
+   0,
+   0,
+   1647,
+   899
+  ]
+ }
+}

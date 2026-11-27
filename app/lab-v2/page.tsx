@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { ExploreCue } from "@/components/lab/ExploreCue";
 import { LabHero } from "@/components/lab/LabHero";
 import { LabScene } from "@/components/lab/LabScene";
+import { LabSceneStatic } from "@/components/lab/LabSceneStatic";
 import { LabStateProvider } from "@/components/lab/LabState";
 import { RenderModeSelector } from "@/components/lab/RenderModeSelector";
 import { SiteHeader } from "@/components/ui/SiteHeader";
@@ -27,8 +28,13 @@ export default async function LabV2Page({ searchParams }: { searchParams: Search
   const initial = resolveLabLocation(query[STATION_PARAM], query[PROJECT_PARAM]);
   // M1.4K.4 (prototype): `?render=lite` is a lighter rendering for software compositing and weak GPUs. Full is the default.
   const lite = query.render === "lite";
+  // Static Lite (docs/performance/STATIC-LITE-INTEGRATION.md): Lite is the flattened scene, LabSceneStatic. The layered
+  // Lite scene it is baked from (LabScene `lite`) stays reachable on a development server only, as the bake's source:
+  // `?render=lite&lite=layered` (scripts/static-lite/bake.mjs). In production that parameter is ignored.
+  const layeredLite = lite && query.lite === "layered" && process.env.NODE_ENV === "development";
   // M1.4G's floor tone (towards the approved atmosphere). M1.4K.10: approved as Cinematic's default; Lite keeps the
-  // untoned floor. `?floor=approved` / `?floor=original` choose either explicitly, in both modes.
+  // untoned floor. `?floor=approved` / `?floor=original` choose either explicitly in Cinematic. Static Lite has one,
+  // untoned, floor: there `floor` has no effect, but stays in the URL (it applies again on switching to Cinematic).
   const floorTone = query.floor === "approved" ? true : query.floor === "original" ? false : !lite;
 
   return (
@@ -43,7 +49,7 @@ export default async function LabV2Page({ searchParams }: { searchParams: Search
       <SiteHeader activeHref="/" utilities={<RenderModeSelector mode={lite ? "lite" : "full"} />} />
       <main className="relative h-svh w-full overflow-hidden bg-lab-ink">
         <LabStateProvider initial={initial}>
-          <LabScene variant="v2" floorTone={floorTone} lite={lite} />
+          {lite && !layeredLite ? <LabSceneStatic /> : <LabScene variant="v2" floorTone={floorTone} lite={lite} />}
           {/* M1.4L.2: "Open project" links to the projects that have a page; the view parameters go with it. */}
           <LabHero projectPages={labV2ProjectPages(labViewQuery(query))} />
           <ExploreCue />

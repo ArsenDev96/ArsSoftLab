@@ -1,0 +1,488 @@
+{
+ "rounds": 1,
+ "viewport": "1648x928",
+ "chrome": "default flags (software compositing on this computer)",
+ "runs": [
+  {
+   "round": 0,
+   "mode": "lite",
+   "errors": [],
+   "load": {
+    "domContentLoadedMs": 373,
+    "loadMs": 720,
+    "sceneShownMs": 472,
+    "lcp": {
+     "t": 660,
+     "what": "SPAN "
+    },
+    "sceneRequests": 6,
+    "sceneKB": 2578,
+    "sceneDecodedMpx": 2.4,
+    "lastSceneResponseMs": 404,
+    "mainElements": 185,
+    "mainThreadTaskMs": 484,
+    "scriptMs": 158,
+    "layoutStyleMs": 113
+   },
+   "hover": [
+    {
+     "id": "engineering",
+     "name": "first",
+     "frames": 61,
+     "fps": 60,
+     "medianMs": 16.7,
+     "p95Ms": 16.7,
+     "maxMs": 16.8,
+     "over50": 0,
+     "over100": 0,
+     "over150": 0,
+     "hoverMs": 23,
+     "poweredHalfMs": 23,
+     "poweredFullMs": 23,
+     "nextPaintMs": "<16"
+    },
+    {
+     "id": "engineering",
+     "name": "repeat",
+     "frames": 64,
+     "fps": 60,
+     "medianMs": 16.7,
+     "p95Ms": 16.7,
+     "maxMs": 16.8,
+     "over50": 0,
+     "over100": 0,
+     "over150": 0,
+     "hoverMs": 56,
+     "poweredHalfMs": 56,
+     "poweredFullMs": 56,
+     "nextPaintMs": "<16"
+    },
+    {
+     "id": "educational",
+     "name": "first",
+     "frames": 61,
+     "fps": 60,
+     "medianMs": 16.7,
+     "p95Ms": 16.8,
+     "maxMs": 16.8,
+     "over50": 0,
+     "over100": 0,
+     "over150": 0,
+     "hoverMs": 27,
+     "poweredHalfMs": 27,
+     "poweredFullMs": 27,
+     "nextPaintMs": "<16"
+    },
+    {
+     "id": "educational",
+     "name": "repeat",
+     "frames": 62,
+     "fps": 60,
+     "medianMs": 16.7,
+     "p95Ms": 16.7,
+     "maxMs": 16.8,
+     "over50": 0,
+     "over100": 0,
+     "over150": 0,
+     "hoverMs": 31,
+     "poweredHalfMs": 31,
+     "poweredFullMs": 31,
+     "nextPaintMs": 16
+    },
+    {
+     "id": "playground",
+     "name": "first",
+     "frames": 63,
+     "fps": 60,
+     "medianMs": 16.7,
+     "p95Ms": 16.8,
+     "maxMs": 16.8,
+     "over50": 0,
+     "over100": 0,
+     "over150": 0,
+     "hoverMs": 34,
+     "poweredHalfMs": 34,
+     "poweredFullMs": 34,
+     "nextPaintMs": 16
+    },
+    {
+     "id": "playground",
+     "name": "repeat",
+     "frames": 61,
+     "fps": 60,
+     "medianMs": 16.7,
+     "p95Ms": 16.7,
+     "maxMs": 16.8,
+     "over50": 0,
+     "over100": 0,
+     "over150": 0,
+     "hoverMs": 27,
+     "poweredHalfMs": 27,
+     "poweredFullMs": 27,
+     "nextPaintMs": "<16"
+    },
+    {
+     "id": "creative",
+     "name": "first",
+     "frames": 61,
+     "fps": 60,
+     "medianMs": 16.7,
+     "p95Ms": 16.8,
+     "maxMs": 16.8,
+     "over50": 0,
+     "over100": 0,
+     "over150": 0,
+     "hoverMs": 26,
+     "poweredHalfMs": 26,
+     "poweredFullMs": 26,
+     "nextPaintMs": "<16"
+    },
+    {
+     "id": "creative",
+     "name": "repeat",
+     "frames": 61,
+     "fps": 60,
+     "medianMs": 16.7,
+     "p95Ms": 16.7,
+     "maxMs": 16.8,
+     "over50": 0,
+     "over100": 0,
+     "over150": 0,
+     "hoverMs": 21,
+     "poweredHalfMs": 21,
+     "poweredFullMs": 21,
+     "nextPaintMs": "<16"
+    },
+    {
+     "id": "experience",
+     "name": "first",
+     "frames": 62,
+     "fps": 60,
+     "medianMs": 16.7,
+     "p95Ms": 16.7,
+     "maxMs": 16.8,
+     "over50": 0,
+     "over100": 0,
+     "over150": 0,
+     "hoverMs": 30,
+     "poweredHalfMs": 30,
+     "poweredFullMs": 30,
+     "nextPaintMs": 16
+    },
+    {
+     "id": "experience",
+     "name": "repeat",
+     "frames": 61,
+     "fps": 60,
+     "medianMs": 16.7,
+     "p95Ms": 16.8,
+     "maxMs": 16.8,
+     "over50": 0,
+     "over100": 0,
+     "over150": 0,
+     "hoverMs": 20,
+     "poweredHalfMs": 20,
+     "poweredFullMs": 20,
+     "nextPaintMs": "<16"
+    }
+   ],
+   "sweep": {
+    "frames": 212,
+    "fps": 60,
+    "medianMs": 16.7,
+    "p95Ms": 16.7,
+    "maxMs": 16.8,
+    "over50": 0,
+    "over100": 0,
+    "over150": 0,
+    "visits": [
+     {
+      "id": "engineering",
+      "hoverMs": 30,
+      "poweredHalfMs": 30,
+      "poweredFullMs": 30
+     },
+     {
+      "id": "educational",
+      "hoverMs": 21,
+      "poweredHalfMs": 21,
+      "poweredFullMs": 21
+     },
+     {
+      "id": "playground",
+      "hoverMs": 25,
+      "poweredHalfMs": 25,
+      "poweredFullMs": 25
+     },
+     {
+      "id": "creative",
+      "hoverMs": 17,
+      "poweredHalfMs": 17,
+      "poweredFullMs": 17
+     },
+     {
+      "id": "experience",
+      "hoverMs": 34,
+      "poweredHalfMs": 34,
+      "poweredFullMs": 34
+     },
+     {
+      "id": "experience",
+      "hoverMs": 7,
+      "poweredHalfMs": 7,
+      "poweredFullMs": 7
+     },
+     {
+      "id": "creative",
+      "hoverMs": 30,
+      "poweredHalfMs": 30,
+      "poweredFullMs": 30
+     },
+     {
+      "id": "playground",
+      "hoverMs": 20,
+      "poweredHalfMs": 20,
+      "poweredFullMs": 20
+     },
+     {
+      "id": "educational",
+      "hoverMs": 21,
+      "poweredHalfMs": 21,
+      "poweredFullMs": 21
+     },
+     {
+      "id": "engineering",
+      "hoverMs": 25,
+      "poweredHalfMs": 25,
+      "poweredFullMs": 25
+     }
+    ],
+    "end": {
+     "hover": "engineering",
+     "lit": {
+      "engineering": 1,
+      "educational": 0,
+      "playground": 0,
+      "creative": 0,
+      "experience": 0
+     }
+    }
+   },
+   "select": [
+    {
+     "id": "engineering",
+     "search": "?station=engineering&render=lite",
+     "selected": "engineering",
+     "frames": 78,
+     "fps": 59.2,
+     "medianMs": 16.7,
+     "p95Ms": 16.8,
+     "maxMs": 33.4,
+     "over50": 0,
+     "over100": 0,
+     "over150": 0,
+     "nextPaintMs": 80,
+     "escape": {
+      "frames": 64,
+      "fps": 60,
+      "medianMs": 16.7,
+      "p95Ms": 16.7,
+      "maxMs": 16.8,
+      "over50": 0,
+      "over100": 0,
+      "over150": 0
+     }
+    },
+    {
+     "id": "educational",
+     "search": "?station=educational&render=lite",
+     "selected": "educational",
+     "frames": 76,
+     "fps": 60,
+     "medianMs": 16.7,
+     "p95Ms": 16.8,
+     "maxMs": 16.8,
+     "over50": 0,
+     "over100": 0,
+     "over150": 0,
+     "nextPaintMs": 64,
+     "escape": {
+      "frames": 64,
+      "fps": 60,
+      "medianMs": 16.7,
+      "p95Ms": 16.7,
+      "maxMs": 16.8,
+      "over50": 0,
+      "over100": 0,
+      "over150": 0
+     }
+    },
+    {
+     "id": "playground",
+     "search": "?station=playground&render=lite",
+     "selected": "playground",
+     "frames": 76,
+     "fps": 60,
+     "medianMs": 16.7,
+     "p95Ms": 16.8,
+     "maxMs": 16.8,
+     "over50": 0,
+     "over100": 0,
+     "over150": 0,
+     "nextPaintMs": 56,
+     "escape": {
+      "frames": 64,
+      "fps": 60,
+      "medianMs": 16.7,
+      "p95Ms": 16.8,
+      "maxMs": 16.8,
+      "over50": 0,
+      "over100": 0,
+      "over150": 0
+     }
+    },
+    {
+     "id": "creative",
+     "search": "?station=creative&render=lite",
+     "selected": "creative",
+     "frames": 75,
+     "fps": 59.2,
+     "medianMs": 16.7,
+     "p95Ms": 16.8,
+     "maxMs": 33.4,
+     "over50": 0,
+     "over100": 0,
+     "over150": 0,
+     "nextPaintMs": 80,
+     "escape": {
+      "frames": 64,
+      "fps": 60,
+      "medianMs": 16.7,
+      "p95Ms": 16.8,
+      "maxMs": 16.8,
+      "over50": 0,
+      "over100": 0,
+      "over150": 0
+     }
+    },
+    {
+     "id": "experience",
+     "search": "?station=experience&render=lite",
+     "selected": "experience",
+     "frames": 75,
+     "fps": 60,
+     "medianMs": 16.7,
+     "p95Ms": 16.7,
+     "maxMs": 16.8,
+     "over50": 0,
+     "over100": 0,
+     "over150": 0,
+     "nextPaintMs": 48,
+     "escape": {
+      "frames": 64,
+      "fps": 60,
+      "medianMs": 16.7,
+      "p95Ms": 16.8,
+      "maxMs": 16.8,
+      "over50": 0,
+      "over100": 0,
+      "over150": 0
+     }
+    }
+   ],
+   "chips": [
+    {
+     "id": "engineering",
+     "search": "?station=engineering&project=sqlorbit&render=lite",
+     "pressedFrameMs": 66,
+     "nextPaintMs": 104,
+     "frames": 64,
+     "fps": 58.2,
+     "medianMs": 16.7,
+     "p95Ms": 16.8,
+     "maxMs": 33.3,
+     "over50": 0,
+     "over100": 0,
+     "over150": 0
+    },
+    {
+     "id": "educational",
+     "search": "?station=educational&project=arimap&render=lite",
+     "pressedFrameMs": 48,
+     "nextPaintMs": 64,
+     "frames": 63,
+     "fps": 60,
+     "medianMs": 16.7,
+     "p95Ms": 16.8,
+     "maxMs": 16.8,
+     "over50": 0,
+     "over100": 0,
+     "over150": 0
+    },
+    {
+     "id": "playground",
+     "search": "?station=playground&project=aziz&render=lite",
+     "pressedFrameMs": 44,
+     "nextPaintMs": 64,
+     "frames": 63,
+     "fps": 60,
+     "medianMs": 16.7,
+     "p95Ms": 16.7,
+     "maxMs": 16.8,
+     "over50": 0,
+     "over100": 0,
+     "over150": 0
+    },
+    {
+     "id": "creative",
+     "search": "?station=creative&project=wallpapers&render=lite",
+     "pressedFrameMs": 56,
+     "nextPaintMs": 64,
+     "frames": 65,
+     "fps": 60,
+     "medianMs": 16.7,
+     "p95Ms": 16.8,
+     "maxMs": 16.8,
+     "over50": 0,
+     "over100": 0,
+     "over150": 0
+    },
+    {
+     "id": "experience",
+     "search": "?station=experience&project=koreez&render=lite",
+     "pressedFrameMs": 29,
+     "nextPaintMs": 48,
+     "frames": 63,
+     "fps": 60,
+     "medianMs": 16.7,
+     "p95Ms": 16.7,
+     "maxMs": 16.8,
+     "over50": 0,
+     "over100": 0,
+     "over150": 0
+    }
+   ],
+   "trace": {
+    "hover": {
+     "vizMs": 16,
+     "rendererMainMs": 34,
+     "drawQuadMs": 8,
+     "rasterMs": 10
+    },
+    "sweep": {
+     "vizMs": 111,
+     "rendererMainMs": 136,
+     "drawQuadMs": 79,
+     "rasterMs": 62
+    },
+    "select": {
+     "vizMs": 269,
+     "rendererMainMs": 90,
+     "drawQuadMs": 235,
+     "rasterMs": 39
+    }
+   },
+   "home": "?render=lite"
+  }
+ ]
+}

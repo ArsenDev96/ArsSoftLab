@@ -8,6 +8,7 @@
     "build": "next build",
     "start": "next start",
     "typecheck": "tsc --noEmit",
+    "static-lite:check": "node scripts/static-lite/check.mjs",
     "visual": "node scripts/visual/check.mjs",
     "visual:lift": "node scripts/visual/station-lift.mjs",
     "visual:stations": "node scripts/visual/stations-evidence.mjs",

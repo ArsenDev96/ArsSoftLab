@@ -1,0 +1,22 @@
+PASS  render=lite draws the static scene  (renderer static, layered scene false)
+PASS  six baked images loaded, nothing else from /scene/  (6 scene requests)
+PASS  at rest nothing is animating  (0 running)
+PASS  selector shows Lite
+PASS  render=static is no longer a mode (Cinematic, as any unknown value)  (cinematic, selector full)
+PASS  dev server: render=lite&lite=layered is the bake's layered source (development only)  (layered-lite)
+PASS  engineering: hotspot hover powers it; click selects; stays powered when the pointer leaves; Escape returns (focus on its title); off once focus leaves  (lit engineering, url /lab-v2?station=engineering&render=lite, after Escape /lab-v2?render=lite (focus on title true), after blur lit none)
+PASS  educational: hotspot hover powers it; click selects; stays powered when the pointer leaves; Escape returns (focus on its title); off once focus leaves  (lit educational, url /lab-v2?station=educational&render=lite, after Escape /lab-v2?render=lite (focus on title true), after blur lit none)
+PASS  playground: hotspot hover powers it; click selects; stays powered when the pointer leaves; Escape returns (focus on its title); off once focus leaves  (lit playground, url /lab-v2?station=playground&render=lite, after Escape /lab-v2?render=lite (focus on title true), after blur lit none)
+PASS  creative: hotspot hover powers it; click selects; stays powered when the pointer leaves; Escape returns (focus on its title); off once focus leaves  (lit creative, url /lab-v2?station=creative&render=lite, after Escape /lab-v2?render=lite (focus on title true), after blur lit none)
+PASS  experience: hotspot hover powers it; click selects; stays powered when the pointer leaves; Escape returns (focus on its title); off once focus leaves  (lit experience, url /lab-v2?station=experience&render=lite, after Escape /lab-v2?render=lite (focus on title true), after blur lit none)
+PASS  every station's first chip selects its project, in Lite  (engineering:sqlorbit educational:arimap playground:aziz creative:wallpapers experience:koreez)
+PASS  Open project sqlorbit -> its page -> Back to the lab returns to Lite  (/lab-v2/projects/sqlorbit?render=lite; back at /lab-v2?station=engineering&project=sqlorbit&render=lite)
+PASS  Open project arimap -> its page -> Back to the lab returns to Lite  (/lab-v2/projects/arimap?render=lite; back at /lab-v2?station=educational&project=arimap&render=lite)
+PASS  Back / Forward: project -> station -> lab -> station -> project, all in Lite  (engineering/sqlorbit/engineering > engineering/-/engineering > -/-/none > engineering/-/engineering > engineering/sqlorbit/engineering)
+PASS  keyboard: Tab to Educational lights it (focus ring); Enter selects; Tab + Enter on AriMap; Escape returns, focus on its title  (11 Tabs; /lab-v2?station=educational&render=lite > /lab-v2?station=educational&project=arimap&render=lite > /lab-v2?render=lite; focus Educational)
+PASS  selector: Cinematic -> Lite without a reload, Playground kept and lit  (/lab-v2?station=playground&render=lite)
+PASS  selector: Lite -> Cinematic removes render; Back returns to Lite  (/lab-v2?station=playground | back: /lab-v2?station=playground&render=lite)
+PASS  floor=approved in Lite: static scene (one, untoned floor), URL kept; Cinematic then shows the tone  (/lab-v2?render=lite&floor=approved -> /lab-v2?floor=approved, tone true)
+PASS  no console errors or exceptions  (none)
+
+20 passed, 0 failed

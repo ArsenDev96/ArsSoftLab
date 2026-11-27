@@ -1,0 +1,133 @@
+{
+ "summary": {
+  "rendered": [
+   "lite",
+   "static"
+  ],
+  "hitRegionsRest": {
+   "cells": 42625,
+   "differ": 4,
+   "stations": "h:creative h:educational h:engineering h:experience h:playground l:creative l:educational l:engineering l:experience l:playground"
+  },
+  "hitRegionsHoverPlayground": {
+   "cells": 42625,
+   "differ": 4,
+   "stations": "b:playground h:creative h:educational h:engineering h:experience h:playground l:creative l:educational l:engineering l:experience l:playground"
+  },
+  "errors": []
+ },
+ "lite": {
+  "mode": "lite",
+  "rendered": "lite",
+  "selected": {
+   "search": "?station=engineering&render=lite",
+   "selected": "engineering",
+   "camera": "none"
+  },
+  "project": "?station=engineering&project=sqlorbit&render=lite",
+  "afterEscape": "?render=lite",
+  "chips": [
+   {
+    "id": "engineering",
+    "search": "?station=engineering&project=sqlorbit&render=lite",
+    "pressed": "true"
+   },
+   {
+    "id": "educational",
+    "search": "?station=educational&project=arimap&render=lite",
+    "pressed": "true"
+   },
+   {
+    "id": "playground",
+    "search": "?station=playground&project=aziz&render=lite",
+    "pressed": "true"
+   },
+   {
+    "id": "creative",
+    "search": "?station=creative&project=wallpapers&render=lite",
+    "pressed": "true"
+   },
+   {
+    "id": "experience",
+    "search": "?station=experience&project=koreez&render=lite",
+    "pressed": "true"
+   }
+  ],
+  "keyboard": {
+   "focusLit": "educational",
+   "enter": "?station=educational&render=lite",
+   "chipFocused": "AriMap",
+   "chipEnter": "?station=educational&project=arimap&render=lite",
+   "escape": "?render=lite"
+  },
+  "deepLink": {
+   "search": "?station=engineering&project=sqlorbit&render=lite",
+   "selected": "engineering",
+   "project": "sqlorbit",
+   "power": "1"
+  },
+  "projectRoundTrip": {
+   "open": "/lab-v2/projects/sqlorbit?render=lite",
+   "back": "/lab-v2?station=engineering&project=sqlorbit&render=lite",
+   "landed": "/lab-v2?station=engineering&project=sqlorbit&render=lite",
+   "rendered": "lite"
+  }
+ },
+ "static": {
+  "mode": "static",
+  "rendered": "static",
+  "selected": {
+   "search": "?station=engineering&render=static",
+   "selected": "engineering",
+   "camera": "none"
+  },
+  "project": "?station=engineering&project=sqlorbit&render=static",
+  "afterEscape": "?render=static",
+  "chips": [
+   {
+    "id": "engineering",
+    "search": "?station=engineering&project=sqlorbit&render=static",
+    "pressed": "true"
+   },
+   {
+    "id": "educational",
+    "search": "?station=educational&project=arimap&render=static",
+    "pressed": "true"
+   },
+   {
+    "id": "playground",
+    "search": "?station=playground&project=aziz&render=static",
+    "pressed": "true"
+   },
+   {
+    "id": "creative",
+    "search": "?station=creative&project=wallpapers&render=static",
+    "pressed": "true"
+   },
+   {
+    "id": "experience",
+    "search": "?station=experience&project=koreez&render=static",
+    "pressed": "true"
+   }
+  ],
+  "keyboard": {
+   "focusLit": "educational",
+   "enter": "?station=educational&render=static",
+   "chipFocused": "AriMap",
+   "chipEnter": "?station=educational&project=arimap&render=static",
+   "escape": "?render=static"
+  },
+  "deepLink": {
+   "search": "?station=engineering&project=sqlorbit&render=static",
+   "selected": "engineering",
+   "project": "sqlorbit",
+   "power": "1"
+  },
+  "projectRoundTrip": {
+   "open": "/lab-v2/projects/sqlorbit?render=static",
+   "back": "/lab-v2?station=engineering&project=sqlorbit&render=static",
+   "landed": "/lab-v2?station=engineering&project=sqlorbit&render=static",
+   "rendered": "static"
+  }
+ }
+}
