@@ -481,6 +481,82 @@ export const PROJECTS: Record<ProjectId, Project> = {
     slug: "aziz",
     zone: "playground",
     summary: "A party-game app designed around creative questions, unexpected answers, and group play.",
+    // M1.4L.6B: owner-approved decisions and the facts verified in docs/m1.4l/AZIZ-CONTENT-AUDIT.md (aziz at
+    // aa691b0 and the public Google Play listing). No screenshots until current-build captures exist; no GitHub
+    // link; no download, rating or playtest figures; no claims about the Play track, versionCode or countries.
+    detail: {
+      tagline: "Three party games. One phone. A lot of unexpected answers.",
+      overview: [
+        "The best party games don't need complicated setups. They need simple rules, quick decisions and moments that get everyone involved.",
+        "I created AZIZ as a collection of three party games that friends can play together using a single phone. Players take turns giving deliberately wrong answers, trying to think alike, or acting out words for their teammates.",
+        "Each game has its own rules, timing and scoring system. The experience is designed for face-to-face play, with large controls, short rounds and content available in Armenian and English.",
+        "From an engineering perspective, AZIZ combines independent TypeScript game engines, bilingual game decks, timed interactions and a fully offline mobile experience.",
+        "AZIZ is available on Google Play for Android, with no account or internet connection required.",
+      ],
+      category: "Mobile Game / Party Game",
+      role: "Creator & Mobile Engineer",
+      status: "Available on Google Play",
+      milestone: "Version 1.0.0 on Google Play",
+      platforms: ["Android"],
+      languages: ["Armenian", "English"],
+      sections: [
+        {
+          id: "modes",
+          title: "Game modes",
+          paragraphs: [
+            "All three games are played on one phone passed around the table, from a shared roster of 2 to 8 players. Every question, prompt and card exists in Armenian and English, 200 for each game.",
+          ],
+          items: [
+            {
+              term: "Wrong Answer Only",
+              text: "Each player gets five simple questions and a 3, 3.5 or 4 second clock to answer each one wrong on purpose. The group judges every answer with Pass or Fail, and a tie at the top is settled by a single sudden-death round on a clock half a second shorter.",
+            },
+            {
+              term: "Same Answer",
+              text: "Four to eight players form two to four teams. After five seconds of silent thinking, teammates say their answers at the same moment. Only the largest group that matched counts, scoring one point less than its size.",
+            },
+            {
+              term: "Act It!",
+              text: "One teammate guesses while the rest of the team acts out the card without speaking. Each turn lasts 45 seconds, every correct guess scores a point, and up to two cards can be skipped per turn.",
+            },
+          ],
+        },
+        {
+          id: "release",
+          title: "Testing and release",
+          after: "stack",
+          paragraphs: [
+            "Automated unit tests, run with Node's test runner, cover the game engines and all six content decks, alongside TypeScript type checking and linting.",
+          ],
+          items: [
+            {
+              term: "Game rules",
+              text: "Turn order, scoring, sudden death, team schedules and timer arithmetic are tested in the pure engines, without a phone.",
+            },
+            {
+              term: "Content",
+              text: "Each deck must hold exactly 200 entries, every Armenian entry needs an English twin with the same ID, and entries must be non-empty, unique and short enough to read in time.",
+            },
+            {
+              term: "Release",
+              text: "Version 1.0.0 is publicly available on Google Play for Android. Gameplay requires neither an account nor an internet connection.",
+            },
+          ],
+        },
+      ],
+      contributions: [
+        "Kept each game's rules in a separate, framework-independent TypeScript engine, free of React, storage and Expo code, with its rule values held apart from the game logic.",
+        "Implemented three distinct timing and scoring systems: 3 to 4 second answer clocks with a one-round sudden death, a silent five-second thinking phase scored by the largest matching group, and 45-second team turns with limited skips.",
+        "Organized 200 questions, prompts and cards per game into Armenian and English decks paired by ID, with every interface string translated and player names inflected correctly in Armenian sentences.",
+        "Built the app to run fully offline on Android with Expo and React Native, with no account or backend, and with settings, players and teams saved on the device.",
+        "Made interactions reliable at a lively table: a guard against accidental double taps, whole-millisecond timer arithmetic for half-second clocks, and the screen kept awake during play.",
+        "Designed the mobile interface for passing one phone around: large answer buttons, haptic feedback, a bundled font for Armenian and Latin text that device fonts can't override, and confirmation before leaving a game.",
+        "Automated validation of game rules and content with unit tests, including checks that every entry has its translation and that every question fits the shortest timer.",
+      ],
+      stack: ["Expo", "React Native", "TypeScript", "Expo Router", "React Native Reanimated", "AsyncStorage", "EAS Build"],
+      links: [{ label: "AZIZ on Google Play", href: "https://play.google.com/store/apps/details?id=am.aziz.party" }],
+      related: ["arimap"],
+    },
   },
   wallpapers: {
     id: "wallpapers",

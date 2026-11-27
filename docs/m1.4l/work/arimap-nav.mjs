@@ -20,7 +20,7 @@ const PANEL = `document.querySelector('[data-station-panel="educational"]')`;
 const openLink = `document.querySelector('[data-open-row="arimap"] a[data-open-project="arimap"]')`;
 
 // 1. Deep link in the lab: Open project is a link to the page; so is Armat's (M1.4L.5B); a project without a page
-//    (AZIZ, since Armat has one) keeps "Coming soon".
+//    (Wallpapers since M1.4L.6B, when AZIZ got its page; AZIZ before that) keeps "Coming soon".
 {
   const page = await launch(); watch(page);
   await page.goto(`${BASE}/lab-v2?station=educational&project=arimap`); await hideOverlay(page);
@@ -30,10 +30,10 @@ const openLink = `document.querySelector('[data-open-row="arimap"] a[data-open-p
   await until(page, `!!document.querySelector('[data-open-row="armat"] a[data-open-project="armat"]')`);
   const ar = await page.eval(`document.querySelector('[data-open-row="armat"] a[data-open-project="armat"]')?.getAttribute("href") ?? null`);
   check("lab-v2: Armat's Open project now links to its page", ar === "/lab-v2/projects/armat", ar);
-  await page.goto(`${BASE}/lab-v2?station=playground&project=aziz`); await hideOverlay(page);
-  await until(page, `!!document.querySelector('[data-open-row="aziz"]')`);
-  const tr = await page.eval(`(() => { const r = document.querySelector('[data-open-row="aziz"]'); return { link: !!r.querySelector("a"), disabled: r.querySelector("button")?.getAttribute("aria-disabled"), soon: r.textContent.includes("Coming soon") }; })()`);
-  check("lab-v2: a project without a page (AZIZ) keeps the disabled Coming soon action", !tr.link && tr.disabled === "true" && tr.soon, JSON.stringify(tr));
+  await page.goto(`${BASE}/lab-v2?station=creative&project=wallpapers`); await hideOverlay(page);
+  await until(page, `!!document.querySelector('[data-open-row="wallpapers"]')`);
+  const tr = await page.eval(`(() => { const r = document.querySelector('[data-open-row="wallpapers"]'); return { link: !!r.querySelector("a"), disabled: r.querySelector("button")?.getAttribute("aria-disabled"), soon: r.textContent.includes("Coming soon") }; })()`);
+  check("lab-v2: a project without a page (Wallpapers) keeps the disabled Coming soon action", !tr.link && tr.disabled === "true" && tr.soon, JSON.stringify(tr));
   await page.close();
 }
 
@@ -102,7 +102,7 @@ for (const view of ["render=lite", "render=lite&floor=original", "floor=approved
 }
 
 // 5. Unknown or unapproved slugs are 404s; view parameters are validated.
-for (const [p, want] of [["/lab-v2/projects/arimap", 200], ["/lab-v2/projects/armat", 200], ["/lab-v2/projects/aziz", 404], ["/lab-v2/projects/koreez", 404], ["/lab-v2/projects/nope", 404], ["/projects/arimap", 404]]) {
+for (const [p, want] of [["/lab-v2/projects/arimap", 200], ["/lab-v2/projects/armat", 200], ["/lab-v2/projects/aziz", 200], ["/lab-v2/projects/wallpapers", 404], ["/lab-v2/projects/koreez", 404], ["/lab-v2/projects/nope", 404], ["/projects/arimap", 404]]) {
   const r = await fetch(BASE + p);
   check(`${p} -> ${want}`, r.status === want, String(r.status));
 }

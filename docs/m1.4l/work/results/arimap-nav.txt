@@ -1,6 +1,6 @@
 PASS  lab-v2 deep link: AriMap Open project links to its page  (/lab-v2/projects/arimap)
 PASS  lab-v2: Armat's Open project now links to its page  (/lab-v2/projects/armat)
-PASS  lab-v2: a project without a page (AZIZ) keeps the disabled Coming soon action  ({"link":false,"disabled":"true","soon":true})
+PASS  lab-v2: a project without a page (Wallpapers) keeps the disabled Coming soon action  ({"link":false,"disabled":"true","soon":true})
 PASS  Open project opens /lab-v2/projects/arimap with a client-side navigation  ({"marker":true,"h1":"AriMap","scene":false,"scroll":"auto","title":"AriMap — Lab v2 (experimental)"})
 PASS  the project page does not keep the lab scene mounted, and scrolls
 PASS  five screenshots load, each with a description and its own proportions  ([{"ok":true,"alt":true,"ratio":true},{"ok":true,"alt":true,"ratio":true},{"ok":true,"alt":true,"ratio":true},{"ok":true,"alt":true,"ratio":true},{"ok":true,"alt":true,"ratio":true}])
@@ -16,7 +16,8 @@ PASS  render=lite&floor=original: kept to the page and back  (/lab-v2/projects/a
 PASS  floor=approved: kept to the page and back  (/lab-v2/projects/arimap?floor=approved | /lab-v2?station=educational&project=arimap&floor=approved | /lab-v2?floor=approved)
 PASS  /lab-v2/projects/arimap -> 200  (200)
 PASS  /lab-v2/projects/armat -> 200  (200)
-PASS  /lab-v2/projects/aziz -> 404  (404)
+PASS  /lab-v2/projects/aziz -> 200  (200)
+PASS  /lab-v2/projects/wallpapers -> 404  (404)
 PASS  /lab-v2/projects/koreez -> 404  (404)
 PASS  /lab-v2/projects/nope -> 404  (404)
 PASS  /projects/arimap -> 404  (404)
@@ -28,4 +29,4 @@ PASS  /: AriMap's Open project is still disabled with Coming soon  ({"link":fals
 PASS  /: header navigation unchanged  (/ #lab-stations #station-experience #lab-intro)
 PASS  no console errors or exceptions
 
-29 passed, 0 failed
+30 passed, 0 failed

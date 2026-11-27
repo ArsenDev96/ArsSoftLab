@@ -28,7 +28,8 @@ const SECTIONS = "Overview | Multilingual content architecture | Content discove
 const FACTS = "Status: Public website · Ongoing development | Category: Education / Multilingual Publishing | Role: Creator & Full-stack Engineer | Languages: Eastern Armenian · Western Armenian · English";
 const STACK = "Next.js | React | TypeScript | Tailwind CSS | Supabase | Leaflet | Playwright";
 
-// 1. Deep link in the lab: Open project is a link to the page; AriMap's still links to its own; AZIZ keeps "Coming soon".
+// 1. Deep link in the lab: Open project is a link to the page; AriMap's still links to its own; a project without a
+//    page keeps "Coming soon" (Wallpapers since M1.4L.6B, when AZIZ got its page).
 {
   const page = await launch(); watch(page);
   await page.goto(`${BASE}/lab-v2?station=educational&project=armat`); await hideOverlay(page);
@@ -38,10 +39,10 @@ const STACK = "Next.js | React | TypeScript | Tailwind CSS | Supabase | Leaflet 
   await page.eval(`[...${PANEL}.querySelectorAll("button[aria-pressed]")].find((b) => b.textContent === "AriMap").click()`);
   await until(page, `!!${openLink("arimap")}`);
   check("lab-v2: AriMap's Open project still links to its page", (await page.eval(`${openLink("arimap")}.getAttribute("href")`)) === "/lab-v2/projects/arimap");
-  await page.goto(`${BASE}/lab-v2?station=playground&project=aziz`); await hideOverlay(page);
-  await until(page, `!!document.querySelector('[data-open-row="aziz"]')`);
-  const az = await page.eval(`(() => { const r = document.querySelector('[data-open-row="aziz"]'); return { link: !!r.querySelector("a"), disabled: r.querySelector("button")?.getAttribute("aria-disabled"), soon: r.textContent.includes("Coming soon") }; })()`);
-  check("lab-v2: a project without a page (AZIZ) keeps the disabled Coming soon action", !az.link && az.disabled === "true" && az.soon, JSON.stringify(az));
+  await page.goto(`${BASE}/lab-v2?station=creative&project=wallpapers`); await hideOverlay(page);
+  await until(page, `!!document.querySelector('[data-open-row="wallpapers"]')`);
+  const az = await page.eval(`(() => { const r = document.querySelector('[data-open-row="wallpapers"]'); return { link: !!r.querySelector("a"), disabled: r.querySelector("button")?.getAttribute("aria-disabled"), soon: r.textContent.includes("Coming soon") }; })()`);
+  check("lab-v2: a project without a page (Wallpapers) keeps the disabled Coming soon action", !az.link && az.disabled === "true" && az.soon, JSON.stringify(az));
   await page.close();
 }
 
@@ -171,7 +172,7 @@ for (const view of ["render=lite", "render=lite&floor=original", "floor=approved
 }
 
 // 6. Unknown or unapproved slugs are 404s; view parameters are validated.
-for (const [p, want] of [[PAGE, 200], ["/lab-v2/projects/arimap", 200], ["/lab-v2/projects/sqlorbit", 200], ["/lab-v2/projects/tablerefresh", 200], ["/lab-v2/projects/aziz", 404], ["/lab-v2/projects/wallpapers", 404], ["/lab-v2/projects/koreez", 404], ["/lab-v2/projects/nope", 404], ["/projects/armat", 404]]) {
+for (const [p, want] of [[PAGE, 200], ["/lab-v2/projects/arimap", 200], ["/lab-v2/projects/sqlorbit", 200], ["/lab-v2/projects/tablerefresh", 200], ["/lab-v2/projects/aziz", 200], ["/lab-v2/projects/wallpapers", 404], ["/lab-v2/projects/koreez", 404], ["/lab-v2/projects/nope", 404], ["/projects/armat", 404]]) {
   const r = await fetch(BASE + p);
   check(`${p} -> ${want}`, r.status === want, String(r.status));
 }

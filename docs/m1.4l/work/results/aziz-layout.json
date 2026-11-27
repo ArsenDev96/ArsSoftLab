@@ -1,0 +1,456 @@
+{
+ "1648x928": {
+  "docWidth": 1648,
+  "viewport": 1648,
+  "docHeight": 4207,
+  "scrollable": "auto",
+  "pastRightEdge": [],
+  "header": [
+   "site"
+  ],
+  "h1": {
+   "text": "AZIZ",
+   "px": 92
+  },
+  "tagline": [
+   "Three party games. One phone. A lot of",
+   "unexpected answers."
+  ],
+  "facts": [
+   {
+    "term": "Status",
+    "value": "Available on Google Play",
+    "lines": 1,
+    "inside": true
+   },
+   {
+    "term": "Release",
+    "value": "Version 1.0.0 on Google Play",
+    "lines": 1,
+    "inside": true
+   },
+   {
+    "term": "Category",
+    "value": "Mobile Game / Party Game",
+    "lines": 1,
+    "inside": true
+   },
+   {
+    "term": "Role",
+    "value": "Creator & Mobile Engineer",
+    "lines": 1,
+    "inside": true
+   },
+   {
+    "term": "Platforms",
+    "value": "Android",
+    "lines": 1,
+    "inside": true
+   },
+   {
+    "term": "Languages",
+    "value": "Armenian · English",
+    "lines": 1,
+    "inside": true
+   }
+  ],
+  "factsBox": {
+   "x": 998,
+   "y": 232,
+   "w": 360,
+   "h": 458
+  },
+  "headings": [
+   "H1 AZIZ",
+   "H2 Overview",
+   "H2 Game modes",
+   "H2 Engineering contributions",
+   "H2 Technology stack",
+   "H2 Testing and release",
+   "H2 Links",
+   "H2 Related project",
+   "H3 AriMap"
+  ],
+  "sections": [
+   {
+    "title": "Overview",
+    "x": 290,
+    "y": 770,
+    "w": 1068,
+    "h": 569
+   },
+   {
+    "title": "Game modes",
+    "x": 290,
+    "y": 1340,
+    "w": 1068,
+    "h": 547
+   },
+   {
+    "title": "Engineering contributions",
+    "x": 290,
+    "y": 1887,
+    "w": 1068,
+    "h": 839
+   },
+   {
+    "title": "Technology stack",
+    "x": 290,
+    "y": 2726,
+    "w": 1068,
+    "h": 227
+   },
+   {
+    "title": "Testing and release",
+    "x": 290,
+    "y": 2953,
+    "w": 1068,
+    "h": 473
+   },
+   {
+    "title": "Links",
+    "x": 290,
+    "y": 3425,
+    "w": 1068,
+    "h": 197
+   },
+   {
+    "title": "Related project",
+    "x": 290,
+    "y": 3622,
+    "w": 1068,
+    "h": 394
+   }
+  ],
+  "smallestText": [
+   {
+    "t": "Status",
+    "px": 11.5
+   },
+   {
+    "t": "Release",
+    "px": 11.5
+   },
+   {
+    "t": "Category",
+    "px": 11.5
+   }
+  ],
+  "smallestHeaderText": [
+   {
+    "t": "Software Engineer",
+    "px": 11.3349
+   },
+   {
+    "t": "Ctrl K",
+    "px": 14.2919
+   }
+  ],
+  "images": 0,
+  "scene": false,
+  "errors": []
+ },
+ "390x844": {
+  "docWidth": 390,
+  "viewport": 390,
+  "docHeight": 6033,
+  "scrollable": "auto",
+  "pastRightEdge": [],
+  "header": [
+   "compact"
+  ],
+  "h1": {
+   "text": "AZIZ",
+   "px": 48
+  },
+  "tagline": [
+   "Three party games. One phone. A lot",
+   "of unexpected answers."
+  ],
+  "facts": [
+   {
+    "term": "Status",
+    "value": "Available on Google Play",
+    "lines": 1,
+    "inside": true
+   },
+   {
+    "term": "Release",
+    "value": "Version 1.0.0 on Google Play",
+    "lines": 1,
+    "inside": true
+   },
+   {
+    "term": "Category",
+    "value": "Mobile Game / Party Game",
+    "lines": 1,
+    "inside": true
+   },
+   {
+    "term": "Role",
+    "value": "Creator & Mobile Engineer",
+    "lines": 1,
+    "inside": true
+   },
+   {
+    "term": "Platforms",
+    "value": "Android",
+    "lines": 1,
+    "inside": true
+   },
+   {
+    "term": "Languages",
+    "value": "Armenian · English",
+    "lines": 1,
+    "inside": true
+   }
+  ],
+  "factsBox": {
+   "x": 24,
+   "y": 389,
+   "w": 342,
+   "h": 458
+  },
+  "headings": [
+   "H1 AZIZ",
+   "H2 Overview",
+   "H2 Game modes",
+   "H2 Engineering contributions",
+   "H2 Technology stack",
+   "H2 Testing and release",
+   "H2 Links",
+   "H2 Related project",
+   "H3 AriMap"
+  ],
+  "sections": [
+   {
+    "title": "Overview",
+    "x": 24,
+    "y": 903,
+    "w": 342,
+    "h": 905
+   },
+   {
+    "title": "Game modes",
+    "x": 24,
+    "y": 1808,
+    "w": 342,
+    "h": 904
+   },
+   {
+    "title": "Engineering contributions",
+    "x": 24,
+    "y": 2712,
+    "w": 342,
+    "h": 1476
+   },
+   {
+    "title": "Technology stack",
+    "x": 24,
+    "y": 4188,
+    "w": 342,
+    "h": 306
+   },
+   {
+    "title": "Testing and release",
+    "x": 24,
+    "y": 4493,
+    "w": 342,
+    "h": 727
+   },
+   {
+    "title": "Links",
+    "x": 24,
+    "y": 5220,
+    "w": 342,
+    "h": 201
+   },
+   {
+    "title": "Related project",
+    "x": 24,
+    "y": 5421,
+    "w": 342,
+    "h": 417
+   }
+  ],
+  "smallestText": [
+   {
+    "t": "Status",
+    "px": 11.5
+   },
+   {
+    "t": "Release",
+    "px": 11.5
+   },
+   {
+    "t": "Category",
+    "px": 11.5
+   }
+  ],
+  "smallestHeaderText": [
+   {
+    "t": "Software Engineer",
+    "px": 10
+   },
+   {
+    "t": "Lab",
+    "px": 14
+   }
+  ],
+  "images": 0,
+  "scene": false,
+  "errors": []
+ },
+ "320x640": {
+  "docWidth": 320,
+  "viewport": 320,
+  "docHeight": 6771,
+  "scrollable": "auto",
+  "pastRightEdge": [],
+  "header": [
+   "compact"
+  ],
+  "h1": {
+   "text": "AZIZ",
+   "px": 48
+  },
+  "tagline": [
+   "Three party games. One",
+   "phone. A lot of unexpected",
+   "answers."
+  ],
+  "facts": [
+   {
+    "term": "Status",
+    "value": "Available on Google Play",
+    "lines": 1,
+    "inside": true
+   },
+   {
+    "term": "Release",
+    "value": "Version 1.0.0 on Google Play",
+    "lines": 1,
+    "inside": true
+   },
+   {
+    "term": "Category",
+    "value": "Mobile Game / Party Game",
+    "lines": 1,
+    "inside": true
+   },
+   {
+    "term": "Role",
+    "value": "Creator & Mobile Engineer",
+    "lines": 1,
+    "inside": true
+   },
+   {
+    "term": "Platforms",
+    "value": "Android",
+    "lines": 1,
+    "inside": true
+   },
+   {
+    "term": "Languages",
+    "value": "Armenian · English",
+    "lines": 1,
+    "inside": true
+   }
+  ],
+  "factsBox": {
+   "x": 24,
+   "y": 422,
+   "w": 272,
+   "h": 458
+  },
+  "headings": [
+   "H1 AZIZ",
+   "H2 Overview",
+   "H2 Game modes",
+   "H2 Engineering contributions",
+   "H2 Technology stack",
+   "H2 Testing and release",
+   "H2 Links",
+   "H2 Related project",
+   "H3 AriMap"
+  ],
+  "sections": [
+   {
+    "title": "Overview",
+    "x": 24,
+    "y": 936,
+    "w": 272,
+    "h": 989
+   },
+   {
+    "title": "Game modes",
+    "x": 24,
+    "y": 1926,
+    "w": 272,
+    "h": 1006
+   },
+   {
+    "title": "Engineering contributions",
+    "x": 24,
+    "y": 2932,
+    "w": 272,
+    "h": 1819
+   },
+   {
+    "title": "Technology stack",
+    "x": 24,
+    "y": 4751,
+    "w": 272,
+    "h": 353
+   },
+   {
+    "title": "Testing and release",
+    "x": 24,
+    "y": 5103,
+    "w": 272,
+    "h": 829
+   },
+   {
+    "title": "Links",
+    "x": 24,
+    "y": 5933,
+    "w": 272,
+    "h": 201
+   },
+   {
+    "title": "Related project",
+    "x": 24,
+    "y": 6133,
+    "w": 272,
+    "h": 442
+   }
+  ],
+  "smallestText": [
+   {
+    "t": "Status",
+    "px": 11.5
+   },
+   {
+    "t": "Release",
+    "px": 11.5
+   },
+   {
+    "t": "Category",
+    "px": 11.5
+   }
+  ],
+  "smallestHeaderText": [
+   {
+    "t": "Software Engineer",
+    "px": 10
+   },
+   {
+    "t": "Lab",
+    "px": 14
+   }
+  ],
+  "images": 0,
+  "scene": false,
+  "errors": []
+ }
+}

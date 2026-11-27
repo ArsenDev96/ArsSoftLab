@@ -1,6 +1,6 @@
 PASS  lab-v2 deep link: Armat's Open project links to its page  (/lab-v2/projects/armat)
 PASS  lab-v2: AriMap's Open project still links to its page
-PASS  lab-v2: a project without a page (AZIZ) keeps the disabled Coming soon action  ({"link":false,"disabled":"true","soon":true})
+PASS  lab-v2: a project without a page (Wallpapers) keeps the disabled Coming soon action  ({"link":false,"disabled":"true","soon":true})
 PASS  Open project opens the Armat page with a client-side navigation  ({"marker":true,"h1":"Armat","scene":false,"scroll":"auto","title":"Armat — Lab v2 (experimental)","robots":"noindex, nofollow"})
 PASS  the project page does not keep the lab scene mounted, and scrolls
 PASS  title and noindex like the other project pages  (Armat — Lab v2 (experimental) | noindex, nofollow)
@@ -38,7 +38,7 @@ PASS  /lab-v2/projects/armat -> 200  (200)
 PASS  /lab-v2/projects/arimap -> 200  (200)
 PASS  /lab-v2/projects/sqlorbit -> 200  (200)
 PASS  /lab-v2/projects/tablerefresh -> 200  (200)
-PASS  /lab-v2/projects/aziz -> 404  (404)
+PASS  /lab-v2/projects/aziz -> 200  (200)
 PASS  /lab-v2/projects/wallpapers -> 404  (404)
 PASS  /lab-v2/projects/koreez -> 404  (404)
 PASS  /lab-v2/projects/nope -> 404  (404)

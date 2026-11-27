@@ -1,0 +1,55 @@
+PASS  lab-v2 deep link: AZIZ's Open project links to its page  (/lab-v2/projects/aziz)
+PASS  lab-v2: AriMap's Open project still links to its page
+PASS  lab-v2: a project without a page (Wallpapers) keeps the disabled Coming soon action  ({"link":false,"disabled":"true","soon":true})
+PASS  Open project opens the AZIZ page with a client-side navigation  ({"marker":true,"h1":"AZIZ","scene":false,"scroll":"auto","title":"AZIZ — Lab v2 (experimental)","robots":"noindex, nofollow"})
+PASS  the project page does not keep the lab scene mounted, and scrolls
+PASS  title and noindex like the other project pages  (AZIZ — Lab v2 (experimental) | noindex, nofollow)
+PASS  hero: tagline is the approved line  (Three party games. One phone. A lot of unexpected answers.)
+PASS  hero eyebrow: Playground station with its violet dot  (Playground·Project | block size-1.5 rounded-full bg-violet-gl)
+PASS  hero facts: status, release, category, role, platforms, languages  (Status: Available on Google Play | Release: Version 1.0.0 on Google Play | Category: Mobile Game / Party Game | Role: Creator & Mobile Engineer | Platforms: Android | Languages: Armenian · English)
+PASS  sections in the approved order  (Overview | Game modes | Engineering contributions | Technology stack | Testing and release | Links | Related project)
+PASS  Overview: the five approved paragraphs, exactly  (ok,ok,ok,ok,ok)
+PASS  seven engineering contributions  (7)
+PASS  technology stack: only technologies verified in the source  (Expo | React Native | TypeScript | Expo Router | React Native Reanimated | AsyncStorage | EAS Build)
+PASS  section items: three game modes, then game rules, content and release  (Wrong Answer Only, Same Answer, Act It!, Game rules, Content, Release)
+PASS  game modes: wrong answers, group judging and sudden death
+PASS  game modes: matching answers scored by the largest group
+PASS  game modes: charades with 45-second turns and two skips
+PASS  release: publicly available, no account or internet connection required
+PASS  no screenshots or illustrations: no images, no viewer, no Screenshots section  (0 img, 0 viewer)
+PASS  no metrics, playtest, unconfirmed Play details, data-collection or online-play claims  (none)
+PASS  American spelling throughout the page  (none)
+PASS  Google Play link: the verified listing, in a new tab, announced as such  ({"href":"https://play.google.com/store/apps/details?id=am.aziz.party","target":"_blank","rel":"noopener noreferrer","sr":" (opens in a new tab)"})
+PASS  no repository link
+PASS  Related project: Open AriMap links to its page  (/lab-v2/projects/arimap)
+PASS  Back to the lab returns to the station and project  (/lab-v2?station=playground&project=aziz)
+PASS  back in the lab: Playground open, AZIZ selected, no reload  ({"url":"/lab-v2?station=playground&project=aziz","marker":true,"pressed":["AZIZ"],"scroll":"hidden"})
+PASS  the lab is one fixed screen again  (hidden)
+PASS  browser Back from the page restores the selected station and project  (before /lab-v2?station=playground&project=aziz; {"url":"/lab-v2?station=playground&project=aziz","pressed":["AZIZ"]})
+PASS  browser Forward returns to the project page  (/lab-v2/projects/aziz)
+PASS  further Back walks the lab's own history (station only)  (/lab-v2?station=playground)
+PASS  AZIZ's related card: Open AriMap with AriMap's lab summary  ({"href":"/lab-v2/projects/arimap","summary":"An interactive geography-learning game built around exploration, lessons, and challenges."})
+PASS  AZIZ -> AriMap: client-side navigation  (/lab-v2/projects/arimap)
+PASS  AriMap's page is unchanged: still relates to Armat, no link to AZIZ  ({"armat":true,"aziz":false})
+PASS  Back, Forward, Back walk AZIZ and AriMap correctly, without a reload  (/lab-v2/projects/aziz)
+PASS  render=lite: kept to the page, back to the lab and to AriMap  (/lab-v2/projects/aziz?render=lite | /lab-v2?station=playground&project=aziz&render=lite | /lab-v2?render=lite | /lab-v2/projects/arimap?render=lite)
+PASS  render=lite&floor=original: kept to the page, back to the lab and to AriMap  (/lab-v2/projects/aziz?render=lite&floor=original | /lab-v2?station=playground&project=aziz&render=lite&floor=original | /lab-v2?render=lite&floor=original | /lab-v2/projects/arimap?render=lite&floor=original)
+PASS  floor=approved: kept to the page, back to the lab and to AriMap  (/lab-v2/projects/aziz?floor=approved | /lab-v2?station=playground&project=aziz&floor=approved | /lab-v2?floor=approved | /lab-v2/projects/arimap?floor=approved)
+PASS  /lab-v2/projects/aziz -> 200  (200)
+PASS  /lab-v2/projects/arimap -> 200  (200)
+PASS  /lab-v2/projects/armat -> 200  (200)
+PASS  /lab-v2/projects/sqlorbit -> 200  (200)
+PASS  /lab-v2/projects/tablerefresh -> 200  (200)
+PASS  /lab-v2/projects/wallpapers -> 404  (404)
+PASS  /lab-v2/projects/koreez -> 404  (404)
+PASS  /lab-v2/projects/nope -> 404  (404)
+PASS  /projects/aziz -> 404  (404)
+PASS  unknown view values are dropped from every lab link  (/lab-v2 /lab-v2#lab-stations /lab-v2#station-experience /lab-v2#lab-intro /lab-v2 /lab-v2?station=playground&amp;project=aziz /lab-v2/projects/arimap /lab-v2?station=playground&amp;project=aziz)
+PASS  Tab order reaches skip link, Back to the lab, Google Play and the related project  (Skip to content | Arsen ManukyanSoftware Engineer | Lab | Projects | Experience | About | Ctrl K | Let’s Talk | Back to the lab | AZIZ on Google Play (opens in a new tab) | Open AriMap | Back to the lab | (body) | Skip to content | Arsen ManukyanSoftware Engineer | Lab)
+PASS  every focused control shows the focus ring  (all)
+PASS  reduced motion: no animations, no transitions on links  ({"anims":0,"tr":"0s"})
+PASS  /: AZIZ's Open project is still disabled with Coming soon  ({"link":false,"disabled":"true","soon":true,"pageLinks":0,"nav":"/ #lab-stations #station-experience #lab-intro"})
+PASS  /: header navigation unchanged  (/ #lab-stations #station-experience #lab-intro)
+PASS  no console errors or exceptions
+
+53 passed, 0 failed
