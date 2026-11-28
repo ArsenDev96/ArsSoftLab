@@ -1,0 +1,5 @@
+home {"total":73,"v2":0,"v2CacheControl":[],"otherDirs":["/scene/lab-plate.webp","/scene/power","/scene/layers","/scene/activation","/scene/masks"],"otherCacheControl":["public, max-age=0"]}
+lite {"total":6,"v2":0,"v2CacheControl":[],"otherDirs":["/scene/static-lite"],"otherCacheControl":["public, max-age=0"]}
+cinematic {"total":94,"v2":81,"v2CacheControl":["public, max-age=86400"],"otherDirs":["/scene/activation"],"otherCacheControl":["public, max-age=0"]}
+project {"total":0,"v2":0,"v2CacheControl":[],"otherDirs":[],"otherCacheControl":[]}
+mobile {"total":94,"v2":81,"v2CacheControl":["public, max-age=86400"],"otherDirs":["/scene/activation"],"otherCacheControl":["public, max-age=0"]}

@@ -1,0 +1,68 @@
+# M1.4R.3 final production build: M1.4P navigation suite
+PASS  [full] header Experience href is the station deep link  — /lab-v2?station=experience
+PASS  [full] lab at rest on load  — {"url":"/lab-v2","sel":null,"open":[],"hist":2,"focus":"BODY"}
+PASS  [full] click: Experience selected and its panel open  — {"url":"/lab-v2?station=experience","sel":"experience","open":["experience"],"hist":3,"focus":"station-experience-panel-title"}
+PASS  [full] click: URL ?station=experience, no fragment  — /lab-v2?station=experience
+PASS  [full] click: one history entry  — 2 -> 3
+PASS  [full] click: focus on the panel heading  — station-experience-panel-title
+PASS  [full] click: nothing scrolled
+PASS  [full] click: camera moved to the Experience shot  — matrix(1.03, 0, 0, 1.03, -24.7335, 0)
+PASS  [full] second click: stays open, no new history entry  — {"url":"/lab-v2?station=experience","sel":"experience","open":["experience"],"hist":3,"focus":"A"}
+PASS  [full] Back: lab, panel closed, URL /lab-v2  — {"url":"/lab-v2","sel":null,"open":[],"hist":3,"focus":"A"}
+PASS  [full] Back: nothing scrolled
+PASS  [full] Forward: Experience open again  — {"url":"/lab-v2?station=experience","sel":"experience","open":["experience"],"hist":3,"focus":"station-experience-panel-title"}
+PASS  [full] Back to Lab: closed, URL /lab-v2  — {"url":"/lab-v2","sel":null,"open":[],"hist":4,"focus":"station-experience-trigger"}
+PASS  [full] Back to Lab: focus returned to the Experience title  — station-experience-trigger
+PASS  [full] Back to Lab: nothing scrolled
+PASS  [full] Engineering title: Engineering open  — {"url":"/lab-v2?station=engineering","sel":"engineering","open":["engineering"],"hist":5,"focus":"station-engineering-panel-title"}
+PASS  [full] header Experience from Engineering: switches to Experience  — {"url":"/lab-v2?station=experience","sel":"experience","open":["experience"],"hist":6,"focus":"station-experience-panel-title"}
+PASS  [full] Back: Engineering again  — {"url":"/lab-v2?station=engineering","sel":"engineering","open":["engineering"],"hist":6,"focus":"station-engineering-panel-title"}
+PASS  [full] Educational title from Experience: Educational open  — {"url":"/lab-v2?station=educational","sel":"educational","open":["educational"],"hist":7,"focus":"station-educational-panel-title"}
+PASS  [full] keyboard Enter: Experience open, URL updated, focus on heading  — {"url":"/lab-v2?station=experience","sel":"experience","open":["experience"],"hist":9,"focus":"station-experience-panel-title"}
+PASS  [full] keyboard Enter: nothing scrolled
+PASS  [full] Escape: closed, URL /lab-v2  — {"url":"/lab-v2","sel":null,"open":[],"hist":10,"focus":"station-experience-trigger"}
+PASS  [full] deep link /lab-v2?station=experience: open on load  — {"url":"/lab-v2?station=experience","sel":"experience","open":["experience"],"hist":11,"focus":"BODY"}
+PASS  [full] deep link: nothing scrolled
+PASS  [full] deep link then header Experience: unchanged, no entry  — {"url":"/lab-v2?station=experience","sel":"experience","open":["experience"],"hist":11,"focus":"A"}
+PASS  [full] direct #station-experience: nothing scrolled
+PASS  [full] other header links unchanged  — Lab=/ Projects=#lab-stations Experience=/lab-v2?station=experience About=#lab-intro
+PASS  [full] console: no errors or warnings
+PASS  [lite] header Experience href is the station deep link  — /lab-v2?station=experience&render=lite
+PASS  [lite] lab at rest on load  — {"url":"/lab-v2?render=lite","sel":null,"open":[],"hist":2,"focus":"BODY"}
+PASS  [lite] click: Experience selected and its panel open  — {"url":"/lab-v2?station=experience&render=lite","sel":"experience","open":["experience"],"hist":3,"focus":"station-experience-panel-title"}
+PASS  [lite] click: URL ?station=experience, no fragment  — /lab-v2?station=experience&render=lite
+PASS  [lite] click: one history entry  — 2 -> 3
+PASS  [lite] click: focus on the panel heading  — station-experience-panel-title
+PASS  [lite] click: nothing scrolled
+PASS  [lite] second click: stays open, no new history entry  — {"url":"/lab-v2?station=experience&render=lite","sel":"experience","open":["experience"],"hist":3,"focus":"A"}
+PASS  [lite] Back: lab, panel closed, URL /lab-v2?render=lite  — {"url":"/lab-v2?render=lite","sel":null,"open":[],"hist":3,"focus":"A"}
+PASS  [lite] Back: nothing scrolled
+PASS  [lite] Forward: Experience open again  — {"url":"/lab-v2?station=experience&render=lite","sel":"experience","open":["experience"],"hist":3,"focus":"station-experience-panel-title"}
+PASS  [lite] Back to Lab: closed, URL /lab-v2?render=lite  — {"url":"/lab-v2?render=lite","sel":null,"open":[],"hist":4,"focus":"station-experience-trigger"}
+PASS  [lite] Back to Lab: focus returned to the Experience title  — station-experience-trigger
+PASS  [lite] Back to Lab: nothing scrolled
+PASS  [lite] Engineering title: Engineering open  — {"url":"/lab-v2?station=engineering&render=lite","sel":"engineering","open":["engineering"],"hist":5,"focus":"station-engineering-panel-title"}
+PASS  [lite] header Experience from Engineering: switches to Experience  — {"url":"/lab-v2?station=experience&render=lite","sel":"experience","open":["experience"],"hist":6,"focus":"station-experience-panel-title"}
+PASS  [lite] Back: Engineering again  — {"url":"/lab-v2?station=engineering&render=lite","sel":"engineering","open":["engineering"],"hist":6,"focus":"station-engineering-panel-title"}
+PASS  [lite] Educational title from Experience: Educational open  — {"url":"/lab-v2?station=educational&render=lite","sel":"educational","open":["educational"],"hist":7,"focus":"station-educational-panel-title"}
+PASS  [lite] keyboard Enter: Experience open, URL updated, focus on heading  — {"url":"/lab-v2?station=experience&render=lite","sel":"experience","open":["experience"],"hist":9,"focus":"station-experience-panel-title"}
+PASS  [lite] keyboard Enter: nothing scrolled
+PASS  [lite] Escape: closed, URL /lab-v2?render=lite  — {"url":"/lab-v2?render=lite","sel":null,"open":[],"hist":10,"focus":"station-experience-trigger"}
+PASS  [lite] deep link /lab-v2?station=experience&render=lite: open on load  — {"url":"/lab-v2?station=experience&render=lite","sel":"experience","open":["experience"],"hist":11,"focus":"BODY"}
+PASS  [lite] deep link: nothing scrolled
+PASS  [lite] deep link then header Experience: unchanged, no entry  — {"url":"/lab-v2?station=experience&render=lite","sel":"experience","open":["experience"],"hist":11,"focus":"A"}
+PASS  [lite] direct #station-experience: nothing scrolled
+PASS  [lite] other header links unchanged  — Lab=/ Projects=#lab-stations Experience=/lab-v2?station=experience&render=lite About=#lab-intro
+PASS  [lite] console: no errors or warnings
+PASS  [/] header Experience href still #station-experience  — #station-experience
+PASS  [/] no /lab-v2 header wrapper or station-link marker  — {"href":"#station-experience","attr":false,"desk":false}
+PASS  [/] Experience click: anchor followed as before (URL /#station-experience, nothing selected)  — {"url":"/#station-experience","sel":null,"open":[],"hist":3,"focus":"A"}
+PASS  [/] Experience click: nothing scrolled
+PASS  [390x844] compact menu Experience: opens Experience (dock handler)  — {"url":"/lab-v2?station=experience","sel":"experience","open":["experience"],"hist":3,"focus":"station-experience-panel-title","dock":"true"}
+PASS  [390x844] nothing scrolled
+PASS  [390x844] dock Experience again: toggles closed  — {"url":"/lab-v2","sel":null,"open":[],"hist":4,"focus":"BUTTON"}
+PASS  [390x844] dock Experience: opens  — {"url":"/lab-v2?station=experience","sel":"experience","open":["experience"],"hist":5,"focus":"station-experience-panel-title"}
+PASS  [390x844] Escape closes  — {"url":"/lab-v2","sel":null,"open":[],"hist":6,"focus":"BUTTON"}
+PASS  [844x390] compact menu Experience: anchor as before, nothing scrolled  — {"url":"/lab-v2#station-experience","sel":null,"open":[],"hist":3,"focus":"BODY"} 
+
+65 of 65 pass

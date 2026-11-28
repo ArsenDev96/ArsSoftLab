@@ -1,0 +1,69 @@
+# M1.4R.2 visual A/B (2026-11-28T11:42Z), production servers: baseline = f724729 config, prototype = with the /scene/v2 header rule
+# Capture: reduced motion, animations frozen, transitions finished. 'warm' = one visit, another site, then the captured visit.
+# Columns: layout fingerprint (every element's box and computed style), then pixel max channel delta and counts over 2 and over 12 (0-255).
+
+## base vs proto
+home-1648            fingerprint identical (598 el)  pixels: max 0 over2 0 over12 0
+home-1920            fingerprint identical (598 el)  pixels: max 0 over2 0 over12 0
+home-exp-1648        fingerprint identical (598 el)  pixels: max 0 over2 0 over12 0
+v2-full-1648         fingerprint identical (1084 el)  pixels: max 0 over2 0 over12 0
+v2-full-1920         fingerprint identical (1084 el)  pixels: max 0 over2 0 over12 0
+v2-full-exp-1648     fingerprint identical (1084 el)  pixels: max 9 over2 303 over12 0
+v2-lite-1648         fingerprint identical (357 el)  pixels: max 0 over2 0 over12 0
+v2-lite-exp-1648     fingerprint identical (357 el)  pixels: max 0 over2 0 over12 0
+v2-mobile-390        fingerprint identical (1084 el)  pixels: max 1 over2 0 over12 0
+v2-mobile-exp-390    fingerprint identical (1084 el)  pixels: max 1 over2 0 over12 0
+
+## base vs proto-warm
+home-1648            fingerprint identical (598 el)  pixels: max 0 over2 0 over12 0
+home-1920            fingerprint identical (598 el)  pixels: max 0 over2 0 over12 0
+home-exp-1648        fingerprint identical (598 el)  pixels: max 0 over2 0 over12 0
+v2-full-1648         fingerprint identical (1084 el)  pixels: max 66 over2 11779 over12 1820
+v2-full-1920         fingerprint identical (1084 el)  pixels: max 36 over2 15296 over12 1434
+v2-full-exp-1648     fingerprint identical (1084 el)  pixels: max 9 over2 303 over12 0
+v2-lite-1648         fingerprint identical (357 el)  pixels: max 0 over2 0 over12 0
+v2-lite-exp-1648     fingerprint identical (357 el)  pixels: max 0 over2 0 over12 0
+v2-mobile-390        fingerprint identical (1084 el)  pixels: max 1 over2 0 over12 0
+v2-mobile-exp-390    fingerprint identical (1084 el)  pixels: max 1 over2 0 over12 0
+
+## base vs base2
+home-1648            fingerprint identical (598 el)  pixels: max 0 over2 0 over12 0
+home-1920            fingerprint identical (598 el)  pixels: max 0 over2 0 over12 0
+home-exp-1648        fingerprint identical (598 el)  pixels: max 0 over2 0 over12 0
+v2-full-1648         fingerprint identical (1084 el)  pixels: max 0 over2 0 over12 0
+v2-full-1920         fingerprint identical (1084 el)  pixels: max 0 over2 0 over12 0
+v2-full-exp-1648     fingerprint identical (1084 el)  pixels: max 9 over2 303 over12 0
+v2-lite-1648         fingerprint identical (357 el)  pixels: max 0 over2 0 over12 0
+v2-lite-exp-1648     fingerprint identical (357 el)  pixels: max 0 over2 0 over12 0
+v2-mobile-390        fingerprint identical (1084 el)  pixels: max 1 over2 0 over12 0
+v2-mobile-exp-390    fingerprint identical (1084 el)  pixels: max 1 over2 0 over12 0
+
+## base vs base-warm
+home-1648            fingerprint identical (598 el)  pixels: max 0 over2 0 over12 0
+home-1920            fingerprint identical (598 el)  pixels: max 0 over2 0 over12 0
+home-exp-1648        fingerprint identical (598 el)  pixels: max 0 over2 0 over12 0
+v2-full-1648         fingerprint identical (1084 el)  pixels: max 66 over2 12140 over12 1818
+v2-full-1920         fingerprint identical (1084 el)  pixels: max 0 over2 0 over12 0
+v2-full-exp-1648     fingerprint identical (1084 el)  pixels: max 9 over2 303 over12 0
+v2-lite-1648         fingerprint identical (357 el)  pixels: max 0 over2 0 over12 0
+v2-lite-exp-1648     fingerprint identical (357 el)  pixels: max 0 over2 0 over12 0
+v2-mobile-390        fingerprint identical (1084 el)  pixels: max 0 over2 0 over12 0
+v2-mobile-exp-390    fingerprint identical (1084 el)  pixels: max 1 over2 0 over12 0
+
+## base-warm vs proto-warm
+home-1648            fingerprint identical (598 el)  pixels: max 0 over2 0 over12 0
+home-1920            fingerprint identical (598 el)  pixels: max 0 over2 0 over12 0
+home-exp-1648        fingerprint identical (598 el)  pixels: max 0 over2 0 over12 0
+v2-full-1648         fingerprint identical (1084 el)  pixels: max 14 over2 428 over12 1
+v2-full-1920         fingerprint identical (1084 el)  pixels: max 36 over2 15296 over12 1434
+v2-full-exp-1648     fingerprint identical (1084 el)  pixels: max 0 over2 0 over12 0
+v2-lite-1648         fingerprint identical (357 el)  pixels: max 0 over2 0 over12 0
+v2-lite-exp-1648     fingerprint identical (357 el)  pixels: max 0 over2 0 over12 0
+v2-mobile-390        fingerprint identical (1084 el)  pixels: max 1 over2 0 over12 0
+v2-mobile-exp-390    fingerprint identical (1084 el)  pixels: max 0 over2 0 over12 0
+
+## Where the Cinematic differences are (pixels with delta > 2)
+base vs proto-warm v2-full-1648: max 66, 11779 px > 2, all inside x 1044–1355, y 315–539
+base vs proto-warm v2-full-1920: max 36, 15296 px > 2, all inside x 1216–1579, y 299–562
+base vs base-warm v2-full-1648: max 66, 12140 px > 2, all inside x 1044–1355, y 315–539
+base vs base2 v2-full-exp-1648: max 9, 303 px > 2, all inside x 1066–1352, y 498–528

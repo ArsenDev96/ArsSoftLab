@@ -1,0 +1,3943 @@
+{
+ "plan": "trace",
+ "base": "http://localhost:3014",
+ "n": 3,
+ "viewport": "1648x928@1",
+ "startedAt": "2026-11-28T10:26:50.350Z",
+ "chrome": "Chrome/158.0.8127.88",
+ "gpu": null,
+ "variant": {
+  "extraFlags": "",
+  "persistentProfile": false,
+  "injectedCss": ""
+ },
+ "runs": {
+  "home": {
+   "trace-warm-process": [
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.4,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.2,
+      "ttfb": 12.9,
+      "responseEnd": 16.1,
+      "domInteractive": 107.1,
+      "dcl": 107.1,
+      "load": 164,
+      "htmlBytes": 36108,
+      "htmlBody": 324315,
+      "serverTiming": []
+     },
+     "fp": 128,
+     "fcp": 128,
+     "lcp": 128,
+     "lcpEl": "SPAN.font-medium",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       128,
+       "SPAN.font-medium",
+       18260
+      ]
+     ],
+     "firstRaf": 44.7,
+     "gateStyleAt": 155.1,
+     "sceneFirstVisible": 192.6,
+     "sceneFullyVisible": 426,
+     "litePlateDrawnAt": null,
+     "longTasks": [
+      [
+       45,
+       54
+      ]
+     ],
+     "resources": [
+      {
+       "type": "link",
+       "name": "/_next/static/media/c0680f1bdb3a2e90-s.p.1gsd1jahc5dg_.woff2",
+       "start": 17,
+       "reqStart": 17.7,
+       "respStart": 18.6,
+       "end": 19.3,
+       "bytes": 32528,
+       "body": 32228,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/lab-plate.webp",
+       "start": 17.1,
+       "reqStart": 17.9,
+       "respStart": 18.8,
+       "end": 21.8,
+       "bytes": 365188,
+       "body": 364888,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/layers/engineering-backdrop.webp",
+       "start": 17.2,
+       "reqStart": 29,
+       "respStart": 30.5,
+       "end": 31.9,
+       "bytes": 51214,
+       "body": 50914,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/layers/engineering-shadow.webp",
+       "start": 17.3,
+       "reqStart": 29.1,
+       "respStart": 30.4,
+       "end": 31.6,
+       "bytes": 2784,
+       "body": 2484,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/layers/engineering.webp",
+       "start": 17.3,
+       "reqStart": 29.1,
+       "respStart": 30.5,
+       "end": 32,
+       "bytes": 58248,
+       "body": 57948,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/power/unpowered-lift.png",
+       "start": 17.3,
+       "reqStart": 30.2,
+       "respStart": 31.5,
+       "end": 35.9,
+       "bytes": 29444,
+       "body": 29144,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/power/light-lift.png",
+       "start": 17.3,
+       "reqStart": 30.3,
+       "respStart": 31.7,
+       "end": 36.1,
+       "bytes": 8759,
+       "body": 8459,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/activation/engineering.png",
+       "start": 17.4,
+       "reqStart": 30.4,
+       "respStart": 31.5,
+       "end": 35.7,
+       "bytes": 30212,
+       "body": 29912,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/layers/playground-backdrop.png",
+       "start": 17.4,
+       "reqStart": 32.9,
+       "respStart": 33.8,
+       "end": 40.5,
+       "bytes": 119549,
+       "body": 119249,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/layers/playground-shadow.png",
+       "start": 17.4,
+       "reqStart": 33.7,
+       "respStart": 34.5,
+       "end": 40,
+       "bytes": 9830,
+       "body": 9530,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/power/unpowered.png",
+       "start": 19.4,
+       "reqStart": 21.5,
+       "respStart": 22.5,
+       "end": 24.6,
+       "bytes": 113364,
+       "body": 113064,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/layers/playground-shadow-soft.png",
+       "start": 19.6,
+       "reqStart": 35.8,
+       "respStart": 36.8,
+       "end": 42.4,
+       "bytes": 12308,
+       "body": 12008,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/layers/playground-gap.png",
+       "start": 19.6,
+       "reqStart": 37.7,
+       "respStart": 38.7,
+       "end": 42.6,
+       "bytes": 12418,
+       "body": 12118,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/layers/playground.png",
+       "start": 19.6,
+       "reqStart": 38.6,
+       "respStart": 39.2,
+       "end": 44.4,
+       "bytes": 134037,
+       "body": 133737,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/activation/playground.png",
+       "start": 19.6,
+       "reqStart": 39.9,
+       "respStart": 40.7,
+       "end": 48.2,
+       "bytes": 21837,
+       "body": 21537,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/activation/playground-line-dim-a.png",
+       "start": 19.7,
+       "reqStart": 42.7,
+       "respStart": 43.7,
+       "end": 48.5,
+       "bytes": 7130,
+       "body": 6830,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/activation/playground-line-dim-b.png",
+       "start": 19.7,
+       "reqStart": 44.6,
+       "respStart": 45.3,
+       "end": 48.7,
+       "bytes": 13226,
+       "body": 12926,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/activation/lines/educational-0-dim.png",
+       "start": 19.7,
+       "reqStart": 45.5,
+       "respStart": 46,
+       "end": 48.8,
+       "bytes": 5549,
+       "body": 5249,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/activation/lines/engineering-0-dim.png",
+       "start": 19.7,
+       "reqStart": 46.6,
+       "respStart": 47.2,
+       "end": 48.6,
+       "bytes": 1562,
+       "body": 1262,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/_next/static/chunks/2kafo_um2qs4h.css",
+       "start": 19.8,
+       "reqStart": 20.7,
+       "respStart": 22.6,
+       "end": 24.1,
+       "bytes": 11187,
+       "body": 51336,
+       "blocking": "blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/activation/lines/engineering-1-dim.png",
+       "start": 19.8,
+       "reqStart": 47.8,
+       "respStart": 48.9,
+       "end": 54.5,
+       "bytes": 7654,
+       "body": 7354,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/_next/static/chunks/1pcw6gskne7pf.js",
+       "start": 19.8,
+       "reqStart": 49.9,
+       "respStart": 51,
+       "end": 54.7,
+       "bytes": 2330,
+       "body": 5600,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/1wnov70f88xjy.js",
+       "start": 19.8,
+       "reqStart": 51,
+       "respStart": 52.2,
+       "end": 54.9,
+       "bytes": 7950,
+       "body": 29127,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/092r-mewpaf3q.js",
+       "start": 19.8,
+       "reqStart": 52.1,
+       "respStart": 55.1,
+       "end": 63.3,
+       "bytes": 71981,
+       "body": 229052,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/0c1ad7rcpjghx.js",
+       "start": 19.9,
+       "reqStart": 53.8,
+       "respStart": 55.7,
+       "end": 61.7,
+       "bytes": 46746,
+       "body": 169437,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/turbopack-2u1d16houkiyo.js",
+       "start": 20,
+       "reqStart": 53.9,
+       "respStart": 55.2,
+       "end": 60.2,
+       "bytes": 4205,
+       "body": 9974,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/3qfy96eoyh-ek.js",
+       "start": 20,
+       "reqStart": 55.6,
+       "respStart": 56.9,
+       "end": 60.8,
+       "bytes": 3815,
+       "body": 13994,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/3gickv_6i64jl.js",
+       "start": 20,
+       "reqStart": 57.1,
+       "respStart": 58.4,
+       "end": 61.1,
+       "bytes": 10295,
+       "body": 27417,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/activation/lines/creative-0-dim.png",
+       "start": 20.1,
+       "reqStart": 61.9,
+       "respStart": 63,
+       "end": 67.7,
+       "bytes": 6414,
+       "body": 6114,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/activation/lines/creative-1-dim.png",
+       "start": 20.1,
+       "reqStart": 62.1,
+       "respStart": 63.2,
+       "end": 67.8,
+       "bytes": 5391,
+       "body": 5091,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/0v65o2h_z1ytx.js",
+       "start": 20.1,
+       "reqStart": 59.1,
+       "respStart": 61.5,
+       "end": 68.2,
+       "bytes": 38689,
+       "body": 105666,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/activation/lines/creative-2-dim.png",
+       "start": 20.2,
+       "reqStart": 63,
+       "respStart": 63.8,
+       "end": 67.9,
+       "bytes": 6174,
+       "body": 5874,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/activation/lines/experience-0-dim.png",
+       "start": 20.2,
+       "reqStart": 65.6,
+       "respStart": 66.5,
+       "end": 68.3,
+       "bytes": 6744,
+       "body": 6444,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/activation/lines/experience-1-dim.png",
+       "start": 20.2,
+       "reqStart": 67.2,
+       "respStart": 68,
+       "end": 73.8,
+       "bytes": 5404,
+       "body": 5104,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/activation/lines/experience-2-dim.png",
+       "start": 20.2,
+       "reqStart": 69.1,
+       "respStart": 69.8,
+       "end": 74.2,
+       "bytes": 6775,
+       "body": 6475,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/activation/educational.png",
+       "start": 20.3,
+       "reqStart": 70.1,
+       "respStart": 70.6,
+       "end": 74.3,
+       "bytes": 47117,
+       "body": 46817,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/activation/creative.png",
+       "start": 20.3,
+       "reqStart": 71.1,
+       "respStart": 71.7,
+       "end": 74.3,
+       "bytes": 30599,
+       "body": 30299,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/activation/experience.png",
+       "start": 20.3,
+       "reqStart": 72.5,
+       "respStart": 73,
+       "end": 74.3,
+       "bytes": 18615,
+       "body": 18315,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/activation/core.png",
+       "start": 20.3,
+       "reqStart": 73.6,
+       "respStart": 74.1,
+       "end": 80.7,
+       "bytes": 20818,
+       "body": 20518,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/engineering-scan.png",
+       "start": 48.7,
+       "reqStart": 75.2,
+       "respStart": 76,
+       "end": 80.9,
+       "bytes": 18633,
+       "body": 18333,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/playground-route-a-glow.png",
+       "start": 49.5,
+       "reqStart": 77,
+       "respStart": 77.8,
+       "end": 81,
+       "bytes": 8983,
+       "body": 8683,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/playground-route-a.png",
+       "start": 49.6,
+       "reqStart": 77.7,
+       "respStart": 78.2,
+       "end": 81.1,
+       "bytes": 6905,
+       "body": 6605,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/playground-route-b-glow.png",
+       "start": 49.8,
+       "reqStart": 78.9,
+       "respStart": 79.4,
+       "end": 81.2,
+       "bytes": 11312,
+       "body": 11012,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/playground-route-b.png",
+       "start": 49.9,
+       "reqStart": 80.3,
+       "respStart": 81.2,
+       "end": 88,
+       "bytes": 7274,
+       "body": 6974,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/educational-0-glow.png",
+       "start": 50.3,
+       "reqStart": 83.2,
+       "respStart": 84,
+       "end": 88.1,
+       "bytes": 1075,
+       "body": 775,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/educational-0.png",
+       "start": 50.4,
+       "reqStart": 84.5,
+       "respStart": 85.1,
+       "end": 88.1,
+       "bytes": 723,
+       "body": 423,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/engineering-0-glow.png",
+       "start": 50.6,
+       "reqStart": 84.8,
+       "respStart": 85.4,
+       "end": 88.1,
+       "bytes": 2757,
+       "body": 2457,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/engineering-0.png",
+       "start": 50.7,
+       "reqStart": 85.7,
+       "respStart": 86.2,
+       "end": 88.3,
+       "bytes": 888,
+       "body": 588,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/engineering-1-glow.png",
+       "start": 50.9,
+       "reqStart": 87.6,
+       "respStart": 88.5,
+       "end": 95.9,
+       "bytes": 4139,
+       "body": 3839,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/engineering-1.png",
+       "start": 51,
+       "reqStart": 89.3,
+       "respStart": 89.9,
+       "end": 95.5,
+       "bytes": 1286,
+       "body": 986,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/creative-0-glow.png",
+       "start": 51.2,
+       "reqStart": 90.1,
+       "respStart": 90.6,
+       "end": 95.6,
+       "bytes": 2988,
+       "body": 2688,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/creative-0.png",
+       "start": 51.3,
+       "reqStart": 90.9,
+       "respStart": 91.5,
+       "end": 95.7,
+       "bytes": 1032,
+       "body": 732,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/creative-1-glow.png",
+       "start": 51.5,
+       "reqStart": 92.5,
+       "respStart": 93.3,
+       "end": 95.8,
+       "bytes": 2836,
+       "body": 2536,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/creative-1.png",
+       "start": 51.6,
+       "reqStart": 94.2,
+       "respStart": 95.2,
+       "end": 96.9,
+       "bytes": 955,
+       "body": 655,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/creative-2-glow.png",
+       "start": 51.8,
+       "reqStart": 120.4,
+       "respStart": 121.6,
+       "end": 127,
+       "bytes": 2773,
+       "body": 2473,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/creative-2.png",
+       "start": 51.9,
+       "reqStart": 121.1,
+       "respStart": 122,
+       "end": 127.2,
+       "bytes": 991,
+       "body": 691,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/experience-0-glow.png",
+       "start": 52.1,
+       "reqStart": 122.2,
+       "respStart": 122.9,
+       "end": 127.2,
+       "bytes": 3429,
+       "body": 3129,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/experience-0.png",
+       "start": 52.1,
+       "reqStart": 123.2,
+       "respStart": 123.9,
+       "end": 127.3,
+       "bytes": 1102,
+       "body": 802,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/experience-1-glow.png",
+       "start": 52.4,
+       "reqStart": 124.7,
+       "respStart": 125.3,
+       "end": 127.3,
+       "bytes": 3000,
+       "body": 2700,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/experience-1.png",
+       "start": 52.5,
+       "reqStart": 126.4,
+       "respStart": 127.4,
+       "end": 133.1,
+       "bytes": 1013,
+       "body": 713,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/experience-2-glow.png",
+       "start": 52.6,
+       "reqStart": 128.9,
+       "respStart": 129.9,
+       "end": 133.6,
+       "bytes": 2848,
+       "body": 2548,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/experience-2.png",
+       "start": 52.7,
+       "reqStart": 130,
+       "respStart": 130.9,
+       "end": 133.7,
+       "bytes": 1037,
+       "body": 737,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/power/light.png",
+       "start": 52.9,
+       "reqStart": 102.7,
+       "respStart": 104.1,
+       "end": 110,
+       "bytes": 16285,
+       "body": 15985,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/creative-scan.png",
+       "start": 54.1,
+       "reqStart": 130.2,
+       "respStart": 131.1,
+       "end": 134.6,
+       "bytes": 12513,
+       "body": 12213,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/experience-scan-glow.png",
+       "start": 54.3,
+       "reqStart": 131,
+       "respStart": 131.6,
+       "end": 136.3,
+       "bytes": 15136,
+       "body": 14836,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/experience-scan.png",
+       "start": 54.4,
+       "reqStart": 133,
+       "respStart": 133.9,
+       "end": 137.6,
+       "bytes": 13751,
+       "body": 13451,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/masks/orbit-glow.png",
+       "start": 54.6,
+       "reqStart": 96.5,
+       "respStart": 97.5,
+       "end": 102.3,
+       "bytes": 20673,
+       "body": 20373,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/masks/orbit.png",
+       "start": 55.3,
+       "reqStart": 96.3,
+       "respStart": 97.3,
+       "end": 102.2,
+       "bytes": 20683,
+       "body": 20383,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/educational-route-wide.png",
+       "start": 56,
+       "reqStart": 102.6,
+       "respStart": 103.9,
+       "end": 109.6,
+       "bytes": 1440,
+       "body": 1140,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/educational-route-glow.png",
+       "start": 56.2,
+       "reqStart": 96.3,
+       "respStart": 97.4,
+       "end": 101.8,
+       "bytes": 1075,
+       "body": 775,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/educational-route.png",
+       "start": 56.2,
+       "reqStart": 102.9,
+       "respStart": 104.3,
+       "end": 109.9,
+       "bytes": 723,
+       "body": 423,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/engineering-route-wide.png",
+       "start": 56.5,
+       "reqStart": 102.9,
+       "respStart": 104.4,
+       "end": 111,
+       "bytes": 8350,
+       "body": 8050,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/engineering-route-glow.png",
+       "start": 56.7,
+       "reqStart": 102.7,
+       "respStart": 104.2,
+       "end": 110.2,
+       "bytes": 5822,
+       "body": 5522,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/engineering-route.png",
+       "start": 56.9,
+       "reqStart": 110.4,
+       "respStart": 111.5,
+       "end": 117.5,
+       "bytes": 1609,
+       "body": 1309,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/playground-route-wide.png",
+       "start": 57,
+       "reqStart": 110.5,
+       "respStart": 111.9,
+       "end": 119,
+       "bytes": 17506,
+       "body": 17206,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/playground-route-glow.png",
+       "start": 57.1,
+       "reqStart": 110.4,
+       "respStart": 111.8,
+       "end": 118.5,
+       "bytes": 13328,
+       "body": 13028,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/playground-route.png",
+       "start": 57.2,
+       "reqStart": 96.4,
+       "respStart": 97.5,
+       "end": 102.3,
+       "bytes": 7633,
+       "body": 7333,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/creative-route-wide.png",
+       "start": 57.4,
+       "reqStart": 96.1,
+       "respStart": 97.2,
+       "end": 102,
+       "bytes": 8583,
+       "body": 8283,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/creative-route-glow.png",
+       "start": 57.5,
+       "reqStart": 97.1,
+       "respStart": 98,
+       "end": 102.4,
+       "bytes": 6151,
+       "body": 5851,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/creative-route.png",
+       "start": 57.6,
+       "reqStart": 110.4,
+       "respStart": 111.6,
+       "end": 117.7,
+       "bytes": 1815,
+       "body": 1515,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/experience-route-wide.png",
+       "start": 57.7,
+       "reqStart": 110.2,
+       "respStart": 111.9,
+       "end": 118.7,
+       "bytes": 9270,
+       "body": 8970,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/experience-route.png",
+       "start": 57.9,
+       "reqStart": 102.8,
+       "respStart": 104.3,
+       "end": 109.9,
+       "bytes": 1958,
+       "body": 1658,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/experience-route-glow.png",
+       "start": 57.9,
+       "reqStart": 111.2,
+       "respStart": 112.3,
+       "end": 120.1,
+       "bytes": 6696,
+       "body": 6396,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "other",
+       "name": "/icon.svg?icon.1plqej6prq-qi.svg",
+       "start": 176.7,
+       "reqStart": 177.3,
+       "respStart": 179.1,
+       "end": 179.4,
+       "bytes": 838,
+       "body": 963,
+       "blocking": "non-blocking"
+      }
+     ],
+     "fonts": [
+      "Outfit"
+     ],
+     "diagnosticCss": null,
+     "wallToLoad": 170,
+     "trace": {
+      "marks": {
+       "firstPaint": 125.8,
+       "firstContentfulPaint": 125.8,
+       "domInteractive": 0.3,
+       "domContentLoaded": 0.3
+      },
+      "beforeFCP": {
+       "windowMs": 125.8,
+       "mainThreadBusyMs": 111,
+       "parseHTML": 12.9,
+       "scriptCompile": 1.1,
+       "scriptEvaluate": 60.7,
+       "gc": 0,
+       "style": 17.6,
+       "layout": 29.1,
+       "paint": 8.1,
+       "imageDecode": 0,
+       "fontWork": 0,
+       "network": 0
+      },
+      "longTasksBeforeFCP": [
+       {
+        "startMs": 44.5,
+        "durMs": 54.5,
+        "url": null,
+        "top": [
+         "ThreadControllerImpl::RunTask 54",
+         "ProxyMain::BeginMainFrame 54",
+         "WebFrameWidgetImpl::UpdateLifecycle 37",
+         "LocalFrameView::RunStyleAndLayoutLifecyclePhases 30",
+         "LocalFrameView::UpdateStyleAndLayout 30"
+        ]
+       }
+      ],
+      "compositorDrawsBeforeFCP": 13,
+      "threads": "CrRendererMain",
+      "gpuBeforeFCP": {
+       "threadBusyMs": {
+        "GpuVSyncThread": 116.6,
+        "CrGpuMain": 20.3
+       },
+       "topEventsMs": {
+        "Scheduler::RunTask": 7,
+        "GpuChannel::ExecuteDeferredRequest": 4,
+        "GPUTask": 4,
+        "BrowserRasterWorker": 4,
+        "CommandBuffer::Flush": 4,
+        "CommandBufferStub::OnAsyncFlush": 4,
+        "CommandBufferService:PutChanged": 4,
+        "SkiaOutputSurfaceImplOnGpu::SwapBuffers": 3
+       },
+       "pipelineOrShaderEvents": 152
+      }
+     }
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.5,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.3,
+      "ttfb": 11.9,
+      "responseEnd": 15,
+      "domInteractive": 35.6,
+      "dcl": 35.7,
+      "load": 140.7,
+      "htmlBytes": 36108,
+      "htmlBody": 324315,
+      "serverTiming": []
+     },
+     "fp": 124,
+     "fcp": 124,
+     "lcp": 292,
+     "lcpEl": "IMG.absolute.max-w-none.select-none",
+     "lcpUrl": "/scene/power/unpowered.png",
+     "lcpAll": [
+      [
+       124,
+       "SPAN.font-medium",
+       18260
+      ],
+      [
+       292,
+       "IMG.absolute.max-w-none.select-none",
+       19376
+      ]
+     ],
+     "firstRaf": 87,
+     "gateStyleAt": 130.5,
+     "sceneFirstVisible": 104.6,
+     "sceneFullyVisible": 104.6,
+     "litePlateDrawnAt": null,
+     "longTasks": [],
+     "fonts": [
+      "Outfit"
+     ],
+     "diagnosticCss": null,
+     "wallToLoad": 144,
+     "trace": {
+      "marks": {
+       "firstPaint": 121.1,
+       "firstContentfulPaint": 121.1,
+       "domInteractive": 0.1,
+       "domContentLoaded": 0.1
+      },
+      "beforeFCP": {
+       "windowMs": 121.1,
+       "mainThreadBusyMs": 107.6,
+       "parseHTML": 9.6,
+       "scriptCompile": 0.7,
+       "scriptEvaluate": 53.2,
+       "gc": 0,
+       "style": 12.8,
+       "layout": 30.3,
+       "paint": 6.4,
+       "imageDecode": 0,
+       "fontWork": 0,
+       "network": 0
+      },
+      "longTasksBeforeFCP": [],
+      "compositorDrawsBeforeFCP": 13,
+      "threads": "CrRendererMain",
+      "gpuBeforeFCP": {
+       "threadBusyMs": {
+        "GpuVSyncThread": 116.6,
+        "CrGpuMain": 21.1
+       },
+       "topEventsMs": {
+        "Scheduler::RunTask": 8,
+        "GpuChannel::ExecuteDeferredRequest": 8,
+        "GPUTask": 8,
+        "RendererRasterWorker": 8,
+        "CommandBuffer::Flush": 8,
+        "CommandBufferStub::OnAsyncFlush": 8,
+        "CommandBufferService:PutChanged": 8,
+        "RasterDecoderImpl::DoFlushTileRasterGraphiteCommandsCHROMIUM": 5
+       },
+       "pipelineOrShaderEvents": 152
+      }
+     },
+     "resourceCount": 84
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.5,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.3,
+      "ttfb": 13.6,
+      "responseEnd": 16.7,
+      "domInteractive": 96.4,
+      "dcl": 96.5,
+      "load": 157.6,
+      "htmlBytes": 36108,
+      "htmlBody": 324315,
+      "serverTiming": []
+     },
+     "fp": 124,
+     "fcp": 124,
+     "lcp": 124,
+     "lcpEl": "SPAN.font-medium",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       124,
+       "SPAN.font-medium",
+       18260
+      ]
+     ],
+     "firstRaf": 39.3,
+     "gateStyleAt": 148.1,
+     "sceneFirstVisible": 189.8,
+     "sceneFullyVisible": 423.3,
+     "litePlateDrawnAt": null,
+     "longTasks": [],
+     "fonts": [
+      "Outfit"
+     ],
+     "diagnosticCss": null,
+     "wallToLoad": 161,
+     "trace": {
+      "marks": {
+       "firstPaint": 123.1,
+       "firstContentfulPaint": 123.1,
+       "domInteractive": 0,
+       "domContentLoaded": 0.1
+      },
+      "beforeFCP": {
+       "windowMs": 123.1,
+       "mainThreadBusyMs": 107.6,
+       "parseHTML": 9.5,
+       "scriptCompile": 1,
+       "scriptEvaluate": 73.5,
+       "gc": 0,
+       "style": 16.1,
+       "layout": 28.9,
+       "paint": 5.7,
+       "imageDecode": 0,
+       "fontWork": 0,
+       "network": 0
+      },
+      "longTasksBeforeFCP": [],
+      "compositorDrawsBeforeFCP": 14,
+      "threads": "CrRendererMain",
+      "gpuBeforeFCP": {
+       "threadBusyMs": {
+        "GpuVSyncThread": 116.6,
+        "CrGpuMain": 34.8,
+        "VizCompositorThread": 5.2
+       },
+       "topEventsMs": {
+        "Scheduler::RunTask": 16,
+        "GpuChannel::ExecuteDeferredRequest": 16,
+        "GPUTask": 16,
+        "RendererRasterWorker": 16,
+        "CommandBuffer::Flush": 16,
+        "CommandBufferStub::OnAsyncFlush": 16,
+        "CommandBufferService:PutChanged": 16,
+        "RasterDecoderImpl::DoFlushTileRasterGraphiteCommandsCHROMIUM": 7,
+        "DisplayScheduler::OnBeginFrameDeadline": 3,
+        "DisplayScheduler::DrawAndSwap": 3,
+        "Display::DrawAndSwap": 3,
+        "Graphics.Pipeline": 3
+       },
+       "pipelineOrShaderEvents": 153
+      }
+     },
+     "resourceCount": 84
+    }
+   ]
+  },
+  "cinematic": {
+   "trace-warm-process": [
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.5,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.5,
+      "ttfb": 28.4,
+      "responseEnd": 36.9,
+      "domInteractive": 67.5,
+      "dcl": 67.5,
+      "load": 218.7,
+      "htmlBytes": 81316,
+      "htmlBody": 698742,
+      "serverTiming": []
+     },
+     "fp": 168,
+     "fcp": 168,
+     "lcp": 168,
+     "lcpEl": "SPAN.font-medium",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       168,
+       "SPAN.font-medium",
+       18260
+      ]
+     ],
+     "firstRaf": 109.6,
+     "gateStyleAt": 216.3,
+     "sceneFirstVisible": 280.6,
+     "sceneFullyVisible": 514.2,
+     "litePlateDrawnAt": null,
+     "longTasks": [],
+     "resources": [
+      {
+       "type": "link",
+       "name": "/_next/static/media/c0680f1bdb3a2e90-s.p.1gsd1jahc5dg_.woff2",
+       "start": 32.5,
+       "reqStart": 33.9,
+       "respStart": 35.6,
+       "end": 40.4,
+       "bytes": 32528,
+       "body": 32228,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/activation/core.png",
+       "start": 32.9,
+       "reqStart": 34,
+       "respStart": 35.3,
+       "end": 35.8,
+       "bytes": 20818,
+       "body": 20518,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/v2/environment/lab-background.png",
+       "start": 35.7,
+       "reqStart": 41.4,
+       "respStart": 42.5,
+       "end": 82.8,
+       "bytes": 2291246,
+       "body": 2290946,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/v2/stations/playground.png",
+       "start": 35.8,
+       "reqStart": 47.4,
+       "respStart": 49.3,
+       "end": 63.7,
+       "bytes": 644985,
+       "body": 644685,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/v2/m14e1/playground-strip-off.png",
+       "start": 35.9,
+       "reqStart": 47.5,
+       "respStart": 49.1,
+       "end": 51.9,
+       "bytes": 30891,
+       "body": 30591,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/v2/m14h1/engineering-body.png",
+       "start": 35.9,
+       "reqStart": 47.7,
+       "respStart": 49.5,
+       "end": 54.1,
+       "bytes": 83466,
+       "body": 83166,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/v2/m14f1/engineering.png",
+       "start": 35.9,
+       "reqStart": 48.9,
+       "respStart": 50.5,
+       "end": 56.2,
+       "bytes": 92725,
+       "body": 92425,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/v2/m14h1/engineering-body-light.png",
+       "start": 36,
+       "reqStart": 51.6,
+       "respStart": 52.7,
+       "end": 58.3,
+       "bytes": 8805,
+       "body": 8505,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/v2/m14h1/engineering-chart-light.png",
+       "start": 36,
+       "reqStart": 54.2,
+       "respStart": 55.5,
+       "end": 59.7,
+       "bytes": 15916,
+       "body": 15616,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/v2/m14e/hub.png",
+       "start": 36,
+       "reqStart": 56.5,
+       "respStart": 57.6,
+       "end": 62.9,
+       "bytes": 70257,
+       "body": 69957,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/v2/m14e/hub-light.png",
+       "start": 36,
+       "reqStart": 58.2,
+       "respStart": 59.1,
+       "end": 63.6,
+       "bytes": 30673,
+       "body": 30373,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/v2/m14f/creative.png",
+       "start": 36.1,
+       "reqStart": 60,
+       "respStart": 61,
+       "end": 69.9,
+       "bytes": 143960,
+       "body": 143660,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/_next/static/chunks/2kafo_um2qs4h.css",
+       "start": 36.2,
+       "reqStart": 40.3,
+       "respStart": 43.1,
+       "end": 46.9,
+       "bytes": 11187,
+       "body": 51336,
+       "blocking": "blocking"
+      },
+      {
+       "type": "link",
+       "name": "/_next/static/chunks/1pcw6gskne7pf.js",
+       "start": 36.2,
+       "reqStart": 61.4,
+       "respStart": 62.5,
+       "end": 69.2,
+       "bytes": 2330,
+       "body": 5600,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/1wnov70f88xjy.js",
+       "start": 36.3,
+       "reqStart": 66.2,
+       "respStart": 67.7,
+       "end": 73,
+       "bytes": 7950,
+       "body": 29127,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/3qfy96eoyh-ek.js",
+       "start": 36.3,
+       "reqStart": 73.3,
+       "respStart": 74.8,
+       "end": 76.9,
+       "bytes": 3815,
+       "body": 13994,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/turbopack-2u1d16houkiyo.js",
+       "start": 36.3,
+       "reqStart": 71.1,
+       "respStart": 72.1,
+       "end": 75.9,
+       "bytes": 4205,
+       "body": 9974,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/0c1ad7rcpjghx.js",
+       "start": 36.3,
+       "reqStart": 68.8,
+       "respStart": 71.3,
+       "end": 77.3,
+       "bytes": 46746,
+       "body": 169437,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/092r-mewpaf3q.js",
+       "start": 36.3,
+       "reqStart": 67.3,
+       "respStart": 70,
+       "end": 78.2,
+       "bytes": 71981,
+       "body": 229052,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/2vb0hl-tsp388.js",
+       "start": 36.4,
+       "reqStart": 75.3,
+       "respStart": 77,
+       "end": 82.5,
+       "bytes": 3675,
+       "body": 9246,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/0v65o2h_z1ytx.js",
+       "start": 36.4,
+       "reqStart": 77.9,
+       "respStart": 80.4,
+       "end": 86.9,
+       "bytes": 38689,
+       "body": 105666,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/v2/m14e/fg-steam.png",
+       "start": 36.5,
+       "reqStart": 81.5,
+       "respStart": 83.4,
+       "end": 88.5,
+       "bytes": 18607,
+       "body": 18307,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/3gickv_6i64jl.js",
+       "start": 36.5,
+       "reqStart": 79.2,
+       "respStart": 81,
+       "end": 86.2,
+       "bytes": 10295,
+       "body": 27417,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h4-floor-light.png",
+       "start": 36.6,
+       "reqStart": 41.5,
+       "respStart": 42.6,
+       "end": 43.3,
+       "bytes": 2912,
+       "body": 2612,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/v2/m14g1/creative-light.png",
+       "start": 36.6,
+       "reqStart": 82.6,
+       "respStart": 83.5,
+       "end": 89.9,
+       "bytes": 22060,
+       "body": 21760,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/v2/m14f/experience.png",
+       "start": 36.6,
+       "reqStart": 84.3,
+       "respStart": 85.2,
+       "end": 92.6,
+       "bytes": 187045,
+       "body": 186745,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/v2/m14f/experience-light.png",
+       "start": 36.6,
+       "reqStart": 86.4,
+       "respStart": 87.3,
+       "end": 92.9,
+       "bytes": 22343,
+       "body": 22043,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h1-engineering-floor.png",
+       "start": 36.8,
+       "reqStart": 45,
+       "respStart": 47.1,
+       "end": 49.5,
+       "bytes": 29090,
+       "body": 28790,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h2-educational-floor.png",
+       "start": 36.8,
+       "reqStart": 88.7,
+       "respStart": 89.6,
+       "end": 93.3,
+       "bytes": 18738,
+       "body": 18438,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h2-educational-floor-cyan.png",
+       "start": 36.8,
+       "reqStart": 90.1,
+       "respStart": 90.8,
+       "end": 95.3,
+       "bytes": 6345,
+       "body": 6045,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14j3-creative-floor-rest.png",
+       "start": 36.9,
+       "reqStart": 91,
+       "respStart": 91.8,
+       "end": 97.5,
+       "bytes": 13480,
+       "body": 13180,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14j3-creative-floor-edge.png",
+       "start": 37,
+       "reqStart": 92.4,
+       "respStart": 93.4,
+       "end": 99.6,
+       "bytes": 2204,
+       "body": 1904,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h3-creative-floor-top.png",
+       "start": 37.1,
+       "reqStart": 94.6,
+       "respStart": 95.7,
+       "end": 100.3,
+       "bytes": 10167,
+       "body": 9867,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14j4-experience-floor-rest.png",
+       "start": 37.1,
+       "reqStart": 96.1,
+       "respStart": 96.9,
+       "end": 101.1,
+       "bytes": 25374,
+       "body": 25074,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14j4-experience-floor-lit-rest.png",
+       "start": 37.1,
+       "reqStart": 97.7,
+       "respStart": 98.9,
+       "end": 102.2,
+       "bytes": 24101,
+       "body": 23801,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14j4-experience-floor-edge.png",
+       "start": 37.2,
+       "reqStart": 98.5,
+       "respStart": 100,
+       "end": 102.4,
+       "bytes": 1508,
+       "body": 1208,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h4-experience-floor-top.png",
+       "start": 37.2,
+       "reqStart": 99.7,
+       "respStart": 100.5,
+       "end": 107.1,
+       "bytes": 11778,
+       "body": 11478,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14g1-playground-ring.png",
+       "start": 37.2,
+       "reqStart": 101,
+       "respStart": 101.9,
+       "end": 106.9,
+       "bytes": 2787,
+       "body": 2487,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14g1-playground-ring-lit.png",
+       "start": 37.3,
+       "reqStart": 102.5,
+       "respStart": 103.3,
+       "end": 107.4,
+       "bytes": 3494,
+       "body": 3194,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14g1-playground-occlusion.png",
+       "start": 37.3,
+       "reqStart": 103.8,
+       "respStart": 104.5,
+       "end": 110.5,
+       "bytes": 5582,
+       "body": 5282,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14g1-playground-reflection.png",
+       "start": 37.3,
+       "reqStart": 106.1,
+       "respStart": 107.6,
+       "end": 112.9,
+       "bytes": 20403,
+       "body": 20103,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14g1-playground-reflection-lit.png",
+       "start": 37.3,
+       "reqStart": 106.6,
+       "respStart": 107.7,
+       "end": 113.2,
+       "bytes": 6434,
+       "body": 6134,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14g-contact.png",
+       "start": 37.4,
+       "reqStart": 108.2,
+       "respStart": 108.9,
+       "end": 113.5,
+       "bytes": 7117,
+       "body": 6817,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h2-educational-body.png",
+       "start": 37.4,
+       "reqStart": 109.4,
+       "respStart": 110.2,
+       "end": 116.4,
+       "bytes": 103231,
+       "body": 102931,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h2-educational-globe.png",
+       "start": 37.4,
+       "reqStart": 111.1,
+       "respStart": 111.9,
+       "end": 117.6,
+       "bytes": 55974,
+       "body": 55674,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h2-educational-orbit.png",
+       "start": 37.5,
+       "reqStart": 112.6,
+       "respStart": 114.1,
+       "end": 125.2,
+       "bytes": 9594,
+       "body": 9294,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14f1-educational.png",
+       "start": 37.6,
+       "reqStart": 116.7,
+       "respStart": 118.7,
+       "end": 126.8,
+       "bytes": 132716,
+       "body": 132416,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14f1-educational-light.png",
+       "start": 37.6,
+       "reqStart": 118.1,
+       "respStart": 119.6,
+       "end": 125.7,
+       "bytes": 36736,
+       "body": 36436,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h2-educational-globe-light.png",
+       "start": 37.7,
+       "reqStart": 120.2,
+       "respStart": 121.7,
+       "end": 126.6,
+       "bytes": 31776,
+       "body": 31476,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h2-educational-orbit-light.png",
+       "start": 37.7,
+       "reqStart": 122.3,
+       "respStart": 125.4,
+       "end": 132.9,
+       "bytes": 5530,
+       "body": 5230,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h2-educational-strip-floor.png",
+       "start": 37.8,
+       "reqStart": 124.4,
+       "respStart": 125.8,
+       "end": 131.3,
+       "bytes": 3427,
+       "body": 3127,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h2-educational-strip-off.png",
+       "start": 37.8,
+       "reqStart": 126.7,
+       "respStart": 127.5,
+       "end": 133.6,
+       "bytes": 7165,
+       "body": 6865,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h2-educational-strip-light.png",
+       "start": 37.9,
+       "reqStart": 128.5,
+       "respStart": 129.6,
+       "end": 133.9,
+       "bytes": 8718,
+       "body": 8418,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h2-educational-base.png",
+       "start": 37.9,
+       "reqStart": 130.3,
+       "respStart": 131.6,
+       "end": 134.9,
+       "bytes": 15204,
+       "body": 14904,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h2-educational-flare.png",
+       "start": 38,
+       "reqStart": 131.1,
+       "respStart": 133.1,
+       "end": 136.2,
+       "bytes": 50575,
+       "body": 50275,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h1-engineering-strip-floor.png",
+       "start": 38.1,
+       "reqStart": 172.9,
+       "respStart": 174,
+       "end": 177.8,
+       "bytes": 3683,
+       "body": 3383,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h1-engineering-strip-off.png",
+       "start": 38.2,
+       "reqStart": 174.8,
+       "respStart": 175.8,
+       "end": 182.9,
+       "bytes": 5108,
+       "body": 4808,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h1-engineering-strip-light.png",
+       "start": 38.2,
+       "reqStart": 175.7,
+       "respStart": 176.8,
+       "end": 183.2,
+       "bytes": 6422,
+       "body": 6122,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h1-engineering-screen-bars.png",
+       "start": 38.3,
+       "reqStart": 176.8,
+       "respStart": 178.1,
+       "end": 183.9,
+       "bytes": 2065,
+       "body": 1765,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h1-engineering-chart.png",
+       "start": 38.3,
+       "reqStart": 179.1,
+       "respStart": 180.3,
+       "end": 186.6,
+       "bytes": 8922,
+       "body": 8622,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14j3-creative-fill.png",
+       "start": 38.4,
+       "reqStart": 180.9,
+       "respStart": 183.7,
+       "end": 187.4,
+       "bytes": 11985,
+       "body": 11685,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14j3-creative-light-spill.png",
+       "start": 38.4,
+       "reqStart": 183.5,
+       "respStart": 184.6,
+       "end": 189.2,
+       "bytes": 11457,
+       "body": 11157,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14j3-creative-light-edge.png",
+       "start": 38.4,
+       "reqStart": 184.1,
+       "respStart": 185,
+       "end": 190.3,
+       "bytes": 5072,
+       "body": 4772,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14j3-creative-fill-off.png",
+       "start": 38.5,
+       "reqStart": 186.4,
+       "respStart": 188.4,
+       "end": 191.9,
+       "bytes": 626,
+       "body": 326,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h3-creative-strip-off.png",
+       "start": 38.5,
+       "reqStart": 185.3,
+       "respStart": 187.3,
+       "end": 192.2,
+       "bytes": 6767,
+       "body": 6467,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h3-creative-strip-light.png",
+       "start": 38.5,
+       "reqStart": 189.4,
+       "respStart": 190.9,
+       "end": 196.3,
+       "bytes": 6736,
+       "body": 6436,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h3-creative-standby.png",
+       "start": 38.6,
+       "reqStart": 190.7,
+       "respStart": 191.6,
+       "end": 196.7,
+       "bytes": 37679,
+       "body": 37379,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h3-creative-warm.png",
+       "start": 38.6,
+       "reqStart": 191.2,
+       "respStart": 192.6,
+       "end": 199,
+       "bytes": 6842,
+       "body": 6542,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14j4-experience-light-spill.png",
+       "start": 38.6,
+       "reqStart": 194.8,
+       "respStart": 195.7,
+       "end": 200.5,
+       "bytes": 12342,
+       "body": 12042,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h3-creative-highlights.png",
+       "start": 38.6,
+       "reqStart": 192.1,
+       "respStart": 193,
+       "end": 200.3,
+       "bytes": 25987,
+       "body": 25687,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14j4-experience-light-edge.png",
+       "start": 38.7,
+       "reqStart": 196.1,
+       "respStart": 197.3,
+       "end": 204.8,
+       "bytes": 5836,
+       "body": 5536,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h4-experience-strip-off.png",
+       "start": 38.7,
+       "reqStart": 199.2,
+       "respStart": 200.9,
+       "end": 205.7,
+       "bytes": 8662,
+       "body": 8362,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h4-experience-strip-light.png",
+       "start": 38.7,
+       "reqStart": 200.7,
+       "respStart": 201.9,
+       "end": 206.5,
+       "bytes": 8404,
+       "body": 8104,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h4-experience-standby.png",
+       "start": 38.7,
+       "reqStart": 201.2,
+       "respStart": 202.2,
+       "end": 206.7,
+       "bytes": 32496,
+       "body": 32196,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14j3-creative-steam.png",
+       "start": 38.8,
+       "reqStart": 202.7,
+       "respStart": 203.8,
+       "end": 207,
+       "bytes": 7753,
+       "body": 7453,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14j3-creative-books.png",
+       "start": 38.9,
+       "reqStart": 204.4,
+       "respStart": 205.5,
+       "end": 210.7,
+       "bytes": 1986,
+       "body": 1686,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14e-fg-table.png",
+       "start": 38.9,
+       "reqStart": 206.8,
+       "respStart": 207.9,
+       "end": 212.9,
+       "bytes": 88506,
+       "body": 88206,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14e-fg-plant.png",
+       "start": 38.9,
+       "reqStart": 207.3,
+       "respStart": 208.8,
+       "end": 212.7,
+       "bytes": 34150,
+       "body": 33850,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/v2/m14g/floor-mask.png",
+       "start": 70.8,
+       "reqStart": 143.6,
+       "respStart": 144.7,
+       "end": 149.9,
+       "bytes": 9405,
+       "body": 9105,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/v2/m14h2/educational-wave.png",
+       "start": 75.1,
+       "reqStart": 136.4,
+       "respStart": 137.1,
+       "end": 143.3,
+       "bytes": 59680,
+       "body": 59380,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/v2/m14h2/educational-crest.png",
+       "start": 78.4,
+       "reqStart": 140.1,
+       "respStart": 141.3,
+       "end": 149.7,
+       "bytes": 86401,
+       "body": 86101,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/v2/m14h2/educational-light.png",
+       "start": 78.7,
+       "reqStart": 168.7,
+       "respStart": 169.8,
+       "end": 177.5,
+       "bytes": 106092,
+       "body": 105792,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/v2/m14h2/educational-ring-core.png",
+       "start": 78.8,
+       "reqStart": 140.4,
+       "respStart": 141.4,
+       "end": 148.7,
+       "bytes": 14093,
+       "body": 13793,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/v2/m14h1/engineering-screen-mask.png",
+       "start": 80.4,
+       "reqStart": 135.4,
+       "respStart": 136.4,
+       "end": 143.1,
+       "bytes": 7229,
+       "body": 6929,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/v2/m14h1/engineering-chart.png",
+       "start": 82.9,
+       "reqStart": 169.3,
+       "respStart": 170.1,
+       "end": 177,
+       "bytes": 16721,
+       "body": 16421,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/v2/m14h3/creative-sunrise.png",
+       "start": 84.5,
+       "reqStart": 132.3,
+       "respStart": 133.7,
+       "end": 139.4,
+       "bytes": 75110,
+       "body": 74810,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/v2/m14h3/creative-crest.png",
+       "start": 84.8,
+       "reqStart": 140.2,
+       "respStart": 141.6,
+       "end": 150.8,
+       "bytes": 144676,
+       "body": 144376,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/v2/m14h3/creative-glints.png",
+       "start": 85,
+       "reqStart": 207.7,
+       "respStart": 209.9,
+       "end": 212.8,
+       "bytes": 44166,
+       "body": 43866,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/v2/m14h4/experience-reveal.png",
+       "start": 86.6,
+       "reqStart": 140.4,
+       "respStart": 141.7,
+       "end": 158.3,
+       "bytes": 251558,
+       "body": 251258,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/v2/m14h4/experience-light.png",
+       "start": 86.8,
+       "reqStart": 210.9,
+       "respStart": 214.3,
+       "end": 218,
+       "bytes": 221093,
+       "body": 220793,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/educational-route-wide.png",
+       "start": 89.2,
+       "reqStart": 150.4,
+       "respStart": 152.1,
+       "end": 159.3,
+       "bytes": 1440,
+       "body": 1140,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/educational-route-glow.png",
+       "start": 89.4,
+       "reqStart": 159.6,
+       "respStart": 160.8,
+       "end": 168.1,
+       "bytes": 1075,
+       "body": 775,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/educational-route.png",
+       "start": 89.6,
+       "reqStart": 134.3,
+       "respStart": 135.4,
+       "end": 139.9,
+       "bytes": 723,
+       "body": 423,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/engineering-route-wide.png",
+       "start": 89.8,
+       "reqStart": 165.9,
+       "respStart": 167.2,
+       "end": 172.8,
+       "bytes": 8350,
+       "body": 8050,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/engineering-route-glow.png",
+       "start": 89.9,
+       "reqStart": 159.5,
+       "respStart": 160.6,
+       "end": 168.5,
+       "bytes": 5822,
+       "body": 5522,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/engineering-route.png",
+       "start": 90,
+       "reqStart": 150.1,
+       "respStart": 151.9,
+       "end": 159.2,
+       "bytes": 1609,
+       "body": 1309,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/v2/m14e1/playground-route-wide.png",
+       "start": 90.1,
+       "reqStart": 165.7,
+       "respStart": 167.2,
+       "end": 172.5,
+       "bytes": 10982,
+       "body": 10682,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/v2/m14e1/playground-route-glow.png",
+       "start": 90.2,
+       "reqStart": 150.6,
+       "respStart": 152.5,
+       "end": 164.9,
+       "bytes": 10079,
+       "body": 9779,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/v2/m14e1/playground-route-core.png",
+       "start": 90.3,
+       "reqStart": 143.7,
+       "respStart": 144.9,
+       "end": 150.2,
+       "bytes": 8805,
+       "body": 8505,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/creative-route-wide.png",
+       "start": 90.5,
+       "reqStart": 166,
+       "respStart": 167.3,
+       "end": 173.1,
+       "bytes": 8583,
+       "body": 8283,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/creative-route-glow.png",
+       "start": 90.6,
+       "reqStart": 150.5,
+       "respStart": 152.3,
+       "end": 164.7,
+       "bytes": 6151,
+       "body": 5851,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/creative-route.png",
+       "start": 90.7,
+       "reqStart": 133.4,
+       "respStart": 134.2,
+       "end": 139.2,
+       "bytes": 1815,
+       "body": 1515,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/experience-route-wide.png",
+       "start": 90.8,
+       "reqStart": 159,
+       "respStart": 160.3,
+       "end": 168.3,
+       "bytes": 9270,
+       "body": 8970,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/experience-route-glow.png",
+       "start": 90.9,
+       "reqStart": 151.1,
+       "respStart": 152.6,
+       "end": 165.1,
+       "bytes": 6696,
+       "body": 6396,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/experience-route.png",
+       "start": 91,
+       "reqStart": 134.1,
+       "respStart": 134.9,
+       "end": 139.4,
+       "bytes": 1958,
+       "body": 1658,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "fetch",
+       "name": "/?_rsc=N5gqt1sOHIfEO55J",
+       "start": 205,
+       "reqStart": 211.1,
+       "respStart": 213.4,
+       "end": 217.6,
+       "bytes": 464,
+       "body": 186,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "fetch",
+       "name": "/lab-v2?station=experience&_rsc=00wVIN80ldkuJnnP",
+       "start": 205.1,
+       "reqStart": 212.4,
+       "respStart": 217.4,
+       "end": 218.1,
+       "bytes": 1283,
+       "body": 1704,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "fetch",
+       "name": "/?_rsc=00wVIN80ldkuJnnP",
+       "start": 221.2,
+       "reqStart": 221.7,
+       "respStart": 223.7,
+       "end": 225.8,
+       "bytes": 1243,
+       "body": 1602,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "other",
+       "name": "/icon.svg?icon.1plqej6prq-qi.svg",
+       "start": 222.1,
+       "reqStart": 222.5,
+       "respStart": 225.1,
+       "end": 225.6,
+       "bytes": 838,
+       "body": 963,
+       "blocking": "non-blocking"
+      }
+     ],
+     "fonts": [
+      "Outfit"
+     ],
+     "diagnosticCss": null,
+     "wallToLoad": 224,
+     "trace": {
+      "marks": {
+       "firstPaint": 164,
+       "firstContentfulPaint": 164,
+       "domInteractive": 67.4,
+       "domContentLoaded": 67.5
+      },
+      "beforeFCP": {
+       "windowMs": 164,
+       "mainThreadBusyMs": 133.1,
+       "parseHTML": 19.3,
+       "scriptCompile": 0.5,
+       "scriptEvaluate": 28.5,
+       "gc": 0,
+       "style": 28,
+       "layout": 18.9,
+       "paint": 11.2,
+       "imageDecode": 0,
+       "fontWork": 0,
+       "network": 0
+      },
+      "longTasksBeforeFCP": [],
+      "compositorDrawsBeforeFCP": 16,
+      "threads": "CrRendererMain",
+      "gpuBeforeFCP": {
+       "threadBusyMs": {
+        "GpuVSyncThread": 150,
+        "CrGpuMain": 24.6
+       },
+       "topEventsMs": {
+        "Scheduler::RunTask": 8,
+        "GpuChannel::ExecuteDeferredRequest": 5,
+        "GPUTask": 5,
+        "BrowserRasterWorker": 4,
+        "CommandBuffer::Flush": 4,
+        "CommandBufferStub::OnAsyncFlush": 4,
+        "CommandBufferService:PutChanged": 4,
+        "SkiaOutputSurfaceImplOnGpu::SwapBuffers": 3
+       },
+       "pipelineOrShaderEvents": 187
+      }
+     }
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.4,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.2,
+      "ttfb": 25,
+      "responseEnd": 32.5,
+      "domInteractive": 62.9,
+      "dcl": 63,
+      "load": 186.2,
+      "htmlBytes": 81316,
+      "htmlBody": 698742,
+      "serverTiming": []
+     },
+     "fp": 144,
+     "fcp": 144,
+     "lcp": 144,
+     "lcpEl": "SPAN.font-medium",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       144,
+       "SPAN.font-medium",
+       18260
+      ]
+     ],
+     "firstRaf": 86.1,
+     "gateStyleAt": 185.1,
+     "sceneFirstVisible": 240.1,
+     "sceneFullyVisible": 473.4,
+     "litePlateDrawnAt": null,
+     "longTasks": [],
+     "fonts": [
+      "Outfit"
+     ],
+     "diagnosticCss": null,
+     "wallToLoad": 190,
+     "trace": {
+      "marks": {
+       "firstPaint": 140.2,
+       "firstContentfulPaint": 140.2,
+       "domInteractive": 0.1,
+       "domContentLoaded": 0.1
+      },
+      "beforeFCP": {
+       "windowMs": 140.2,
+       "mainThreadBusyMs": 113.1,
+       "parseHTML": 13.6,
+       "scriptCompile": 0.4,
+       "scriptEvaluate": 33.6,
+       "gc": 0,
+       "style": 19.9,
+       "layout": 12.2,
+       "paint": 8.6,
+       "imageDecode": 0,
+       "fontWork": 0,
+       "network": 0
+      },
+      "longTasksBeforeFCP": [],
+      "compositorDrawsBeforeFCP": 17,
+      "threads": "CrRendererMain",
+      "gpuBeforeFCP": {
+       "threadBusyMs": {
+        "GpuVSyncThread": 133.3,
+        "CrGpuMain": 33.9,
+        "VizCompositorThread": 5.4
+       },
+       "topEventsMs": {
+        "Scheduler::RunTask": 14,
+        "GpuChannel::ExecuteDeferredRequest": 14,
+        "GPUTask": 14,
+        "CommandBuffer::Flush": 14,
+        "CommandBufferStub::OnAsyncFlush": 14,
+        "CommandBufferService:PutChanged": 14,
+        "RendererRasterWorker": 12,
+        "RasterDecoderImpl::DoFlushTileRasterGraphiteCommandsCHROMIUM": 3,
+        "DisplayScheduler::OnBeginFrameDeadline": 2,
+        "DisplayScheduler::DrawAndSwap": 2,
+        "Display::DrawAndSwap": 2,
+        "Graphics.Pipeline": 2
+       },
+       "pipelineOrShaderEvents": 184
+      }
+     },
+     "resourceCount": 109
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.7,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.9,
+      "ttfb": 26.3,
+      "responseEnd": 33.8,
+      "domInteractive": 67.7,
+      "dcl": 67.9,
+      "load": 201.9,
+      "htmlBytes": 81316,
+      "htmlBody": 698742,
+      "serverTiming": []
+     },
+     "fp": 140,
+     "fcp": 140,
+     "lcp": 140,
+     "lcpEl": "SPAN.font-medium",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       140,
+       "SPAN.font-medium",
+       18260
+      ]
+     ],
+     "firstRaf": 88.5,
+     "gateStyleAt": 200.3,
+     "sceneFirstVisible": 253.6,
+     "sceneFullyVisible": 486.8,
+     "litePlateDrawnAt": null,
+     "longTasks": [],
+     "fonts": [
+      "Outfit"
+     ],
+     "diagnosticCss": null,
+     "wallToLoad": 206,
+     "trace": {
+      "marks": {
+       "firstPaint": 136.9,
+       "firstContentfulPaint": 136.9,
+       "domInteractive": 67.8,
+       "domContentLoaded": 67.8
+      },
+      "beforeFCP": {
+       "windowMs": 136.9,
+       "mainThreadBusyMs": 108.6,
+       "parseHTML": 16.7,
+       "scriptCompile": 0.4,
+       "scriptEvaluate": 26.3,
+       "gc": 0,
+       "style": 18.8,
+       "layout": 12.7,
+       "paint": 10.2,
+       "imageDecode": 0,
+       "fontWork": 0,
+       "network": 0
+      },
+      "longTasksBeforeFCP": [],
+      "compositorDrawsBeforeFCP": 17,
+      "threads": "CrRendererMain",
+      "gpuBeforeFCP": {
+       "threadBusyMs": {
+        "GpuVSyncThread": 133.2,
+        "CrGpuMain": 30.7
+       },
+       "topEventsMs": {
+        "Scheduler::RunTask": 9,
+        "GpuChannel::ExecuteDeferredRequest": 4,
+        "GPUTask": 4,
+        "CommandBuffer::Flush": 4,
+        "CommandBufferStub::OnAsyncFlush": 4,
+        "CommandBufferService:PutChanged": 4,
+        "SkiaOutputSurfaceImplOnGpu::SwapBuffers": 4,
+        "RendererRasterWorker": 2,
+        "BrowserRasterWorker": 2
+       },
+       "pipelineOrShaderEvents": 180
+      }
+     },
+     "resourceCount": 109
+    }
+   ]
+  },
+  "lite": {
+   "trace-warm-process": [
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.5,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.4,
+      "ttfb": 8.3,
+      "responseEnd": 9.8,
+      "domInteractive": 56,
+      "dcl": 56.1,
+      "load": 68.5,
+      "htmlBytes": 16456,
+      "htmlBody": 87683,
+      "serverTiming": []
+     },
+     "fp": 96,
+     "fcp": 96,
+     "lcp": 96,
+     "lcpEl": "SPAN.font-medium",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       96,
+       "SPAN.font-medium",
+       18260
+      ]
+     ],
+     "firstRaf": 24.8,
+     "gateStyleAt": null,
+     "sceneFirstVisible": null,
+     "sceneFullyVisible": null,
+     "litePlateDrawnAt": 42.6,
+     "longTasks": [],
+     "resources": [
+      {
+       "type": "link",
+       "name": "/_next/static/media/c0680f1bdb3a2e90-s.p.1gsd1jahc5dg_.woff2",
+       "start": 12.3,
+       "reqStart": 13,
+       "respStart": 14.4,
+       "end": 15.1,
+       "bytes": 32528,
+       "body": 32228,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/static-lite/plate.webp",
+       "start": 12.4,
+       "reqStart": 13.1,
+       "respStart": 14.5,
+       "end": 41.6,
+       "bytes": 1658200,
+       "body": 1657900,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/static-lite/on-engineering.webp",
+       "start": 13.4,
+       "reqStart": 19.6,
+       "respStart": 20.7,
+       "end": 24,
+       "bytes": 171684,
+       "body": 171384,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/static-lite/on-educational.webp",
+       "start": 13.5,
+       "reqStart": 21.3,
+       "respStart": 22.3,
+       "end": 28.2,
+       "bytes": 146422,
+       "body": 146122,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/static-lite/on-playground.webp",
+       "start": 13.5,
+       "reqStart": 21.5,
+       "respStart": 22.4,
+       "end": 28.4,
+       "bytes": 137114,
+       "body": 136814,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/_next/static/chunks/2kafo_um2qs4h.css",
+       "start": 13.6,
+       "reqStart": 14.5,
+       "respStart": 16.2,
+       "end": 21.9,
+       "bytes": 11187,
+       "body": 51336,
+       "blocking": "blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/static-lite/on-creative.webp",
+       "start": 13.6,
+       "reqStart": 21.6,
+       "respStart": 22.6,
+       "end": 28.9,
+       "bytes": 251188,
+       "body": 250888,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/static-lite/on-experience.webp",
+       "start": 13.6,
+       "reqStart": 23.9,
+       "respStart": 25,
+       "end": 33.3,
+       "bytes": 275500,
+       "body": 275200,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/_next/static/chunks/1pcw6gskne7pf.js",
+       "start": 13.6,
+       "reqStart": 27,
+       "respStart": 28.9,
+       "end": 33.1,
+       "bytes": 2330,
+       "body": 5600,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/1wnov70f88xjy.js",
+       "start": 13.7,
+       "reqStart": 29.8,
+       "respStart": 31.3,
+       "end": 37.9,
+       "bytes": 7950,
+       "body": 29127,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/092r-mewpaf3q.js",
+       "start": 13.7,
+       "reqStart": 31,
+       "respStart": 33.7,
+       "end": 42,
+       "bytes": 71981,
+       "body": 229052,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/turbopack-2u1d16houkiyo.js",
+       "start": 13.8,
+       "reqStart": 36.4,
+       "respStart": 37.5,
+       "end": 40.1,
+       "bytes": 4205,
+       "body": 9974,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/0c1ad7rcpjghx.js",
+       "start": 13.8,
+       "reqStart": 32.8,
+       "respStart": 35.1,
+       "end": 41.1,
+       "bytes": 46746,
+       "body": 169437,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/3qfy96eoyh-ek.js",
+       "start": 13.9,
+       "reqStart": 38.1,
+       "respStart": 39.1,
+       "end": 41.3,
+       "bytes": 3815,
+       "body": 13994,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/2vb0hl-tsp388.js",
+       "start": 13.9,
+       "reqStart": 39.2,
+       "respStart": 40,
+       "end": 45.8,
+       "bytes": 3675,
+       "body": 9246,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/3gickv_6i64jl.js",
+       "start": 13.9,
+       "reqStart": 44.8,
+       "respStart": 46,
+       "end": 48.7,
+       "bytes": 10295,
+       "body": 27417,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/0v65o2h_z1ytx.js",
+       "start": 13.9,
+       "reqStart": 42.2,
+       "respStart": 44.8,
+       "end": 48.9,
+       "bytes": 38689,
+       "body": 105666,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "other",
+       "name": "/icon.svg?icon.1plqej6prq-qi.svg",
+       "start": 70.7,
+       "reqStart": 71.2,
+       "respStart": 72.8,
+       "end": 73.1,
+       "bytes": 838,
+       "body": 963,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "fetch",
+       "name": "/?_rsc=N5gqt1sOHIfEO55J",
+       "start": 95.9,
+       "reqStart": 97,
+       "respStart": 99,
+       "end": 101.2,
+       "bytes": 464,
+       "body": 186,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "fetch",
+       "name": "/lab-v2?station=experience&render=lite&_rsc=00wVIN80ldkuJnnP",
+       "start": 96,
+       "reqStart": 97.1,
+       "respStart": 100.9,
+       "end": 101.4,
+       "bytes": 1293,
+       "body": 1716,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "fetch",
+       "name": "/?_rsc=00wVIN80ldkuJnnP",
+       "start": 102.3,
+       "reqStart": 102.9,
+       "respStart": 105.3,
+       "end": 105.8,
+       "bytes": 1244,
+       "body": 1602,
+       "blocking": "non-blocking"
+      }
+     ],
+     "fonts": [
+      "Outfit"
+     ],
+     "diagnosticCss": null,
+     "wallToLoad": 72,
+     "trace": {
+      "marks": {
+       "firstPaint": 92.4,
+       "firstContentfulPaint": 92.4,
+       "domInteractive": 0.1,
+       "domContentLoaded": 0.1
+      },
+      "beforeFCP": {
+       "windowMs": 92.4,
+       "mainThreadBusyMs": 61.2,
+       "parseHTML": 4.5,
+       "scriptCompile": 0.3,
+       "scriptEvaluate": 20.6,
+       "gc": 0,
+       "style": 6,
+       "layout": 15.7,
+       "paint": 2.7,
+       "imageDecode": 0,
+       "fontWork": 0,
+       "network": 0
+      },
+      "longTasksBeforeFCP": [],
+      "compositorDrawsBeforeFCP": 13,
+      "threads": "CrRendererMain",
+      "gpuBeforeFCP": {
+       "threadBusyMs": {
+        "GpuVSyncThread": 83.1,
+        "CrGpuMain": 31.7
+       },
+       "topEventsMs": {
+        "Scheduler::RunTask": 12,
+        "GpuChannel::ExecuteDeferredRequest": 7,
+        "GPUTask": 7,
+        "CommandBuffer::Flush": 7,
+        "CommandBufferStub::OnAsyncFlush": 7,
+        "CommandBufferService:PutChanged": 7,
+        "SkiaOutputSurfaceImplOnGpu::SwapBuffers": 5,
+        "RendererRasterWorker": 4,
+        "BrowserRasterWorker": 3
+       },
+       "pipelineOrShaderEvents": 137
+      }
+     }
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.4,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.3,
+      "ttfb": 7.5,
+      "responseEnd": 8.8,
+      "domInteractive": 44.6,
+      "dcl": 44.6,
+      "load": 55.6,
+      "htmlBytes": 16456,
+      "htmlBody": 87683,
+      "serverTiming": []
+     },
+     "fp": 84,
+     "fcp": 84,
+     "lcp": 84,
+     "lcpEl": "SPAN.font-medium",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       84,
+       "SPAN.font-medium",
+       18260
+      ]
+     ],
+     "firstRaf": 20.5,
+     "gateStyleAt": null,
+     "sceneFirstVisible": null,
+     "sceneFullyVisible": null,
+     "litePlateDrawnAt": 31,
+     "longTasks": [],
+     "fonts": [
+      "Outfit"
+     ],
+     "diagnosticCss": null,
+     "wallToLoad": 60,
+     "trace": {
+      "marks": {
+       "firstPaint": 80.8,
+       "firstContentfulPaint": 80.8,
+       "domInteractive": 0.1,
+       "domContentLoaded": 0.1
+      },
+      "beforeFCP": {
+       "windowMs": 80.8,
+       "mainThreadBusyMs": 51.5,
+       "parseHTML": 4.3,
+       "scriptCompile": 0.3,
+       "scriptEvaluate": 17.9,
+       "gc": 3.8,
+       "style": 4.5,
+       "layout": 12.7,
+       "paint": 1.9,
+       "imageDecode": 0,
+       "fontWork": 0,
+       "network": 0
+      },
+      "longTasksBeforeFCP": [],
+      "compositorDrawsBeforeFCP": 10,
+      "threads": "CrRendererMain",
+      "gpuBeforeFCP": {
+       "threadBusyMs": {
+        "GpuVSyncThread": 66.5,
+        "CrGpuMain": 29.5
+       },
+       "topEventsMs": {
+        "Scheduler::RunTask": 14,
+        "GpuChannel::ExecuteDeferredRequest": 9,
+        "GPUTask": 9,
+        "CommandBuffer::Flush": 9,
+        "CommandBufferStub::OnAsyncFlush": 9,
+        "CommandBufferService:PutChanged": 9,
+        "BrowserRasterWorker": 5,
+        "SkiaOutputSurfaceImplOnGpu::SwapBuffers": 5,
+        "RendererRasterWorker": 5
+       },
+       "pipelineOrShaderEvents": 102
+      }
+     },
+     "resourceCount": 21
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.4,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.2,
+      "ttfb": 7.1,
+      "responseEnd": 8.5,
+      "domInteractive": 43.1,
+      "dcl": 43.1,
+      "load": 53.8,
+      "htmlBytes": 16456,
+      "htmlBody": 87683,
+      "serverTiming": []
+     },
+     "fp": 76,
+     "fcp": 76,
+     "lcp": 76,
+     "lcpEl": "SPAN.font-medium",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       76,
+       "SPAN.font-medium",
+       18260
+      ]
+     ],
+     "firstRaf": 20.3,
+     "gateStyleAt": null,
+     "sceneFirstVisible": null,
+     "sceneFullyVisible": null,
+     "litePlateDrawnAt": 22.9,
+     "longTasks": [],
+     "fonts": [
+      "Outfit"
+     ],
+     "diagnosticCss": null,
+     "wallToLoad": 57,
+     "trace": {
+      "marks": {
+       "firstPaint": 72.9,
+       "firstContentfulPaint": 72.9,
+       "domInteractive": 0.1,
+       "domContentLoaded": 0.1
+      },
+      "beforeFCP": {
+       "windowMs": 72.9,
+       "mainThreadBusyMs": 49.7,
+       "parseHTML": 4.2,
+       "scriptCompile": 0.2,
+       "scriptEvaluate": 17.9,
+       "gc": 6.7,
+       "style": 4.5,
+       "layout": 11.4,
+       "paint": 1.8,
+       "imageDecode": 0,
+       "fontWork": 0,
+       "network": 0
+      },
+      "longTasksBeforeFCP": [],
+      "compositorDrawsBeforeFCP": 13,
+      "threads": "CrRendererMain",
+      "gpuBeforeFCP": {
+       "threadBusyMs": {
+        "GpuVSyncThread": 66.8,
+        "CrGpuMain": 22.6
+       },
+       "topEventsMs": {
+        "Scheduler::RunTask": 8,
+        "SkiaOutputSurfaceImplOnGpu::SwapBuffers": 4,
+        "GpuChannel::ExecuteDeferredRequest": 3,
+        "GPUTask": 3,
+        "RendererRasterWorker": 3,
+        "CommandBuffer::Flush": 3,
+        "CommandBufferStub::OnAsyncFlush": 3,
+        "CommandBufferService:PutChanged": 3
+       },
+       "pipelineOrShaderEvents": 129
+      }
+     },
+     "resourceCount": 21
+    }
+   ]
+  },
+  "project": {
+   "trace-warm-process": [
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.6,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.6,
+      "ttfb": 8.1,
+      "responseEnd": 9.4,
+      "domInteractive": 20.9,
+      "dcl": 20.9,
+      "load": 73.6,
+      "htmlBytes": 12637,
+      "htmlBody": 57825,
+      "serverTiming": []
+     },
+     "fp": 92,
+     "fcp": 92,
+     "lcp": 92,
+     "lcpEl": "P.text-[clamp(1.125rem,1.5vw,1.25rem)].leading-[1.6].font-[380]",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       92,
+       "P.text-[clamp(1.125rem,1.5vw,1.25rem)].leading-[1.6].font-[380]",
+       81433
+      ]
+     ],
+     "firstRaf": 73.9,
+     "gateStyleAt": null,
+     "sceneFirstVisible": null,
+     "sceneFullyVisible": null,
+     "litePlateDrawnAt": null,
+     "longTasks": [],
+     "resources": [
+      {
+       "type": "link",
+       "name": "/_next/static/media/c0680f1bdb3a2e90-s.p.1gsd1jahc5dg_.woff2",
+       "start": 12.3,
+       "reqStart": 13,
+       "respStart": 14.6,
+       "end": 15.3,
+       "bytes": 32528,
+       "body": 32228,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/_next/static/chunks/2kafo_um2qs4h.css",
+       "start": 13.1,
+       "reqStart": 13.7,
+       "respStart": 16.2,
+       "end": 17,
+       "bytes": 11187,
+       "body": 51336,
+       "blocking": "blocking"
+      },
+      {
+       "type": "link",
+       "name": "/_next/static/chunks/1pcw6gskne7pf.js",
+       "start": 13.2,
+       "reqStart": 20.7,
+       "respStart": 22.9,
+       "end": 23.6,
+       "bytes": 2330,
+       "body": 5600,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/1wnov70f88xjy.js",
+       "start": 13.3,
+       "reqStart": 21.6,
+       "respStart": 23.3,
+       "end": 25.1,
+       "bytes": 7950,
+       "body": 29127,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/092r-mewpaf3q.js",
+       "start": 13.3,
+       "reqStart": 22.9,
+       "respStart": 27.6,
+       "end": 35.7,
+       "bytes": 71981,
+       "body": 229052,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/3qfy96eoyh-ek.js",
+       "start": 13.4,
+       "reqStart": 23.2,
+       "respStart": 26.5,
+       "end": 28.7,
+       "bytes": 3815,
+       "body": 13994,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/turbopack-2u1d16houkiyo.js",
+       "start": 13.4,
+       "reqStart": 23.1,
+       "respStart": 26.1,
+       "end": 28.6,
+       "bytes": 4205,
+       "body": 9974,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/0c1ad7rcpjghx.js",
+       "start": 13.4,
+       "reqStart": 23,
+       "respStart": 27.5,
+       "end": 32.1,
+       "bytes": 46746,
+       "body": 169437,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/0y1lx3-sp2a-p.js",
+       "start": 13.6,
+       "reqStart": 25.4,
+       "respStart": 27.5,
+       "end": 29,
+       "bytes": 2755,
+       "body": 6443,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/3gickv_6i64jl.js",
+       "start": 13.7,
+       "reqStart": 27.9,
+       "respStart": 30.4,
+       "end": 31.9,
+       "bytes": 10295,
+       "body": 27417,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "fetch",
+       "name": "/?_rsc=IdJiNe8zykWjflsa",
+       "start": 79.2,
+       "reqStart": 81.3,
+       "respStart": 84.3,
+       "end": 90.1,
+       "bytes": 464,
+       "body": 186,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "fetch",
+       "name": "/lab-v2?_rsc=IdJiNe8zykWjflsa",
+       "start": 79.3,
+       "reqStart": 81.5,
+       "respStart": 85.4,
+       "end": 90.2,
+       "bytes": 479,
+       "body": 228,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "fetch",
+       "name": "/lab-v2?station=experience&_rsc=IdJiNe8zykWjflsa",
+       "start": 79.5,
+       "reqStart": 81.6,
+       "respStart": 86.5,
+       "end": 90.4,
+       "bytes": 495,
+       "body": 247,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "fetch",
+       "name": "/lab-v2?station=engineering&project=sqlorbit&_rsc=IdJiNe8zykWjflsa",
+       "start": 79.6,
+       "reqStart": 81.6,
+       "respStart": 87.8,
+       "end": 90.5,
+       "bytes": 511,
+       "body": 265,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "other",
+       "name": "/icon.svg?icon.1plqej6prq-qi.svg",
+       "start": 80.9,
+       "reqStart": 82.5,
+       "respStart": 89.4,
+       "end": 90.3,
+       "bytes": 838,
+       "body": 963,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "fetch",
+       "name": "/lab-v2?station=experience&_rsc=zUK_lrLOAzM2qHsA",
+       "start": 92.6,
+       "reqStart": 93.8,
+       "respStart": 97,
+       "end": 102.3,
+       "bytes": 1282,
+       "body": 1704,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "fetch",
+       "name": "/lab-v2?station=engineering&project=sqlorbit&_rsc=zUK_lrLOAzM2qHsA",
+       "start": 93.3,
+       "reqStart": 94.5,
+       "respStart": 98.3,
+       "end": 102.4,
+       "bytes": 1296,
+       "body": 1722,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "fetch",
+       "name": "/?_rsc=zUK_lrLOAzM2qHsA",
+       "start": 94,
+       "reqStart": 94.5,
+       "respStart": 99.6,
+       "end": 102.4,
+       "bytes": 1242,
+       "body": 1602,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "fetch",
+       "name": "/lab-v2?_rsc=zUK_lrLOAzM2qHsA",
+       "start": 94.6,
+       "reqStart": 94.9,
+       "respStart": 101.7,
+       "end": 102.5,
+       "bytes": 1267,
+       "body": 1685,
+       "blocking": "non-blocking"
+      }
+     ],
+     "fonts": [
+      "Outfit",
+      "Outfit Fallback"
+     ],
+     "diagnosticCss": null,
+     "wallToLoad": 78,
+     "trace": {
+      "marks": {
+       "firstPaint": 90.6,
+       "firstContentfulPaint": 90.6,
+       "domInteractive": 0.3,
+       "domContentLoaded": 0.3
+      },
+      "beforeFCP": {
+       "windowMs": 90.6,
+       "mainThreadBusyMs": 74,
+       "parseHTML": 3,
+       "scriptCompile": 0.3,
+       "scriptEvaluate": 22.2,
+       "gc": 3.9,
+       "style": 22.4,
+       "layout": 17.9,
+       "paint": 2.5,
+       "imageDecode": 0,
+       "fontWork": 0,
+       "network": 0
+      },
+      "longTasksBeforeFCP": [],
+      "compositorDrawsBeforeFCP": 10,
+      "threads": "CrRendererMain",
+      "gpuBeforeFCP": {
+       "threadBusyMs": {
+        "GpuVSyncThread": 83.2,
+        "CrGpuMain": 17.7
+       },
+       "topEventsMs": {
+        "Scheduler::RunTask": 8,
+        "GpuChannel::ExecuteDeferredRequest": 6,
+        "GPUTask": 6,
+        "CommandBuffer::Flush": 6,
+        "CommandBufferStub::OnAsyncFlush": 6,
+        "CommandBufferService:PutChanged": 6,
+        "BrowserRasterWorker": 3,
+        "RendererRasterWorker": 3,
+        "SkiaOutputSurfaceImplOnGpu::SwapBuffers": 3,
+        "RasterDecoderImpl::DoEndRasterCHROMIUM": 2,
+        "RasterDecoderImpl::DoEndRasterCHROMIUM::Flush": 2
+       },
+       "pipelineOrShaderEvents": 113
+      }
+     }
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.5,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.4,
+      "ttfb": 6.4,
+      "responseEnd": 7.4,
+      "domInteractive": 16,
+      "dcl": 16.1,
+      "load": 43.7,
+      "htmlBytes": 12637,
+      "htmlBody": 57825,
+      "serverTiming": []
+     },
+     "fp": 48,
+     "fcp": 48,
+     "lcp": 48,
+     "lcpEl": "P.text-[clamp(1.125rem,1.5vw,1.25rem)].leading-[1.6].font-[380]",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       48,
+       "P.text-[clamp(1.125rem,1.5vw,1.25rem)].leading-[1.6].font-[380]",
+       81433
+      ]
+     ],
+     "firstRaf": 20.6,
+     "gateStyleAt": null,
+     "sceneFirstVisible": null,
+     "sceneFullyVisible": null,
+     "litePlateDrawnAt": null,
+     "longTasks": [],
+     "fonts": [
+      "Outfit"
+     ],
+     "diagnosticCss": null,
+     "wallToLoad": 48,
+     "trace": {
+      "marks": {
+       "firstPaint": 45.4,
+       "firstContentfulPaint": 45.4,
+       "domInteractive": 0,
+       "domContentLoaded": 0
+      },
+      "beforeFCP": {
+       "windowMs": 45.4,
+       "mainThreadBusyMs": 37.6,
+       "parseHTML": 2.6,
+       "scriptCompile": 0.2,
+       "scriptEvaluate": 14.3,
+       "gc": 2.2,
+       "style": 4.4,
+       "layout": 12.6,
+       "paint": 1.1,
+       "imageDecode": 0,
+       "fontWork": 0,
+       "network": 0
+      },
+      "longTasksBeforeFCP": [],
+      "compositorDrawsBeforeFCP": 7,
+      "threads": "CrRendererMain",
+      "gpuBeforeFCP": {
+       "threadBusyMs": {
+        "GpuVSyncThread": 33.2,
+        "CrGpuMain": 12.6
+       },
+       "topEventsMs": {
+        "Scheduler::RunTask": 5,
+        "GpuChannel::ExecuteDeferredRequest": 3,
+        "GPUTask": 3,
+        "BrowserRasterWorker": 3,
+        "CommandBuffer::Flush": 3,
+        "CommandBufferStub::OnAsyncFlush": 3,
+        "CommandBufferService:PutChanged": 3,
+        "SkiaOutputSurfaceImplOnGpu::SwapBuffers": 2
+       },
+       "pipelineOrShaderEvents": 66
+      }
+     },
+     "resourceCount": 19
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.5,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.3,
+      "ttfb": 5.9,
+      "responseEnd": 7.1,
+      "domInteractive": 16.4,
+      "dcl": 16.4,
+      "load": 42.6,
+      "htmlBytes": 12637,
+      "htmlBody": 57825,
+      "serverTiming": []
+     },
+     "fp": 60,
+     "fcp": 60,
+     "lcp": 60,
+     "lcpEl": "P.text-[clamp(1.125rem,1.5vw,1.25rem)].leading-[1.6].font-[380]",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       60,
+       "P.text-[clamp(1.125rem,1.5vw,1.25rem)].leading-[1.6].font-[380]",
+       81433
+      ]
+     ],
+     "firstRaf": 20.5,
+     "gateStyleAt": null,
+     "sceneFirstVisible": null,
+     "sceneFullyVisible": null,
+     "litePlateDrawnAt": null,
+     "longTasks": [],
+     "fonts": [
+      "Outfit"
+     ],
+     "diagnosticCss": null,
+     "wallToLoad": 47,
+     "trace": {
+      "marks": {
+       "firstPaint": 59.6,
+       "firstContentfulPaint": 59.6,
+       "domInteractive": 0,
+       "domContentLoaded": 0
+      },
+      "beforeFCP": {
+       "windowMs": 59.6,
+       "mainThreadBusyMs": 44.6,
+       "parseHTML": 2.3,
+       "scriptCompile": 0.2,
+       "scriptEvaluate": 16.6,
+       "gc": 4.1,
+       "style": 4.3,
+       "layout": 12.1,
+       "paint": 1.4,
+       "imageDecode": 0,
+       "fontWork": 0,
+       "network": 0
+      },
+      "longTasksBeforeFCP": [],
+      "compositorDrawsBeforeFCP": 10,
+      "threads": "CrRendererMain",
+      "gpuBeforeFCP": {
+       "threadBusyMs": {
+        "GpuVSyncThread": 50.2,
+        "CrGpuMain": 12.6
+       },
+       "topEventsMs": {},
+       "pipelineOrShaderEvents": 96
+      }
+     },
+     "resourceCount": 19
+    }
+   ]
+  },
+  "notfound": {
+   "trace-warm-process": [
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.7,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.6,
+      "ttfb": 3.4,
+      "responseEnd": 3.7,
+      "domInteractive": 18.3,
+      "dcl": 18.4,
+      "load": 30.2,
+      "htmlBytes": 2865,
+      "htmlBody": 9390,
+      "serverTiming": []
+     },
+     "fp": 48,
+     "fcp": 48,
+     "lcp": 48,
+     "lcpEl": "H2",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       48,
+       "H2",
+       3553
+      ]
+     ],
+     "firstRaf": 31.9,
+     "gateStyleAt": null,
+     "sceneFirstVisible": null,
+     "sceneFullyVisible": null,
+     "litePlateDrawnAt": null,
+     "longTasks": [],
+     "resources": [
+      {
+       "type": "link",
+       "name": "/_next/static/chunks/2kafo_um2qs4h.css",
+       "start": 7.7,
+       "reqStart": 8.2,
+       "respStart": 11.6,
+       "end": 14.2,
+       "bytes": 11187,
+       "body": 51336,
+       "blocking": "blocking"
+      },
+      {
+       "type": "link",
+       "name": "/_next/static/chunks/1pcw6gskne7pf.js",
+       "start": 7.8,
+       "reqStart": 8.5,
+       "respStart": 11,
+       "end": 12.6,
+       "bytes": 2330,
+       "body": 5600,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/1wnov70f88xjy.js",
+       "start": 7.9,
+       "reqStart": 11.8,
+       "respStart": 14,
+       "end": 16.1,
+       "bytes": 7950,
+       "body": 29127,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/0c1ad7rcpjghx.js",
+       "start": 7.9,
+       "reqStart": 14.3,
+       "respStart": 17.2,
+       "end": 21.1,
+       "bytes": 46746,
+       "body": 169437,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/092r-mewpaf3q.js",
+       "start": 7.9,
+       "reqStart": 13.8,
+       "respStart": 16.7,
+       "end": 23.4,
+       "bytes": 71981,
+       "body": 229052,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/turbopack-2u1d16houkiyo.js",
+       "start": 8,
+       "reqStart": 14.5,
+       "respStart": 15.9,
+       "end": 17,
+       "bytes": 4205,
+       "body": 9974,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/3qfy96eoyh-ek.js",
+       "start": 8,
+       "reqStart": 16.2,
+       "respStart": 17.4,
+       "end": 20.6,
+       "bytes": 3815,
+       "body": 13994,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "other",
+       "name": "/icon.svg?icon.1plqej6prq-qi.svg",
+       "start": 33.7,
+       "reqStart": 34.4,
+       "respStart": 36.2,
+       "end": 36.7,
+       "bytes": 838,
+       "body": 963,
+       "blocking": "non-blocking"
+      }
+     ],
+     "fonts": [],
+     "diagnosticCss": null,
+     "wallToLoad": 36,
+     "trace": {
+      "marks": {
+       "firstPaint": 47.7,
+       "firstContentfulPaint": 47.7,
+       "domInteractive": 18.3,
+       "domContentLoaded": 0
+      },
+      "beforeFCP": {
+       "windowMs": 47.7,
+       "mainThreadBusyMs": 24.5,
+       "parseHTML": 1.8,
+       "scriptCompile": 0.3,
+       "scriptEvaluate": 11.4,
+       "gc": 7.1,
+       "style": 2.3,
+       "layout": 0.2,
+       "paint": 0.4,
+       "imageDecode": 0,
+       "fontWork": 0,
+       "network": 0
+      },
+      "longTasksBeforeFCP": [],
+      "compositorDrawsBeforeFCP": 7,
+      "threads": "CrRendererMain",
+      "gpuBeforeFCP": {
+       "threadBusyMs": {
+        "GpuVSyncThread": 33.1,
+        "CrGpuMain": 7.9
+       },
+       "topEventsMs": {
+        "Scheduler::RunTask": 3,
+        "GpuChannel::ExecuteDeferredRequest": 3,
+        "GPUTask": 3,
+        "BrowserRasterWorker": 3,
+        "CommandBuffer::Flush": 3,
+        "CommandBufferStub::OnAsyncFlush": 3,
+        "CommandBufferService:PutChanged": 3
+       },
+       "pipelineOrShaderEvents": 72
+      }
+     }
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.5,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.3,
+      "ttfb": 3.4,
+      "responseEnd": 3.6,
+      "domInteractive": 15.5,
+      "dcl": 15.5,
+      "load": 25.7,
+      "htmlBytes": 2865,
+      "htmlBody": 9390,
+      "serverTiming": []
+     },
+     "fp": 24,
+     "fcp": 24,
+     "lcp": 24,
+     "lcpEl": "H2",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       24,
+       "H2",
+       3553
+      ]
+     ],
+     "firstRaf": 14,
+     "gateStyleAt": null,
+     "sceneFirstVisible": null,
+     "sceneFullyVisible": null,
+     "litePlateDrawnAt": null,
+     "longTasks": [],
+     "fonts": [],
+     "diagnosticCss": null,
+     "wallToLoad": 30,
+     "trace": {
+      "marks": {
+       "firstPaint": 22.7,
+       "firstContentfulPaint": 22.7,
+       "domInteractive": 0,
+       "domContentLoaded": 0
+      },
+      "beforeFCP": {
+       "windowMs": 22.7,
+       "mainThreadBusyMs": 12.1,
+       "parseHTML": 1.4,
+       "scriptCompile": 0.2,
+       "scriptEvaluate": 4.8,
+       "gc": 0,
+       "style": 1.6,
+       "layout": 0.1,
+       "paint": 0.2,
+       "imageDecode": 0,
+       "fontWork": 0,
+       "network": 0
+      },
+      "longTasksBeforeFCP": [],
+      "compositorDrawsBeforeFCP": 7,
+      "threads": "CrRendererMain",
+      "gpuBeforeFCP": {
+       "threadBusyMs": {
+        "GpuVSyncThread": 16.5
+       },
+       "topEventsMs": {},
+       "pipelineOrShaderEvents": 57
+      }
+     },
+     "resourceCount": 8
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.6,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.4,
+      "ttfb": 2.7,
+      "responseEnd": 2.9,
+      "domInteractive": 14.5,
+      "dcl": 14.6,
+      "load": 25,
+      "htmlBytes": 2865,
+      "htmlBody": 9390,
+      "serverTiming": []
+     },
+     "fp": 40,
+     "fcp": 40,
+     "lcp": 40,
+     "lcpEl": "H2",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       40,
+       "H2",
+       3553
+      ]
+     ],
+     "firstRaf": 12.4,
+     "gateStyleAt": null,
+     "sceneFirstVisible": null,
+     "sceneFullyVisible": null,
+     "litePlateDrawnAt": null,
+     "longTasks": [],
+     "fonts": [],
+     "diagnosticCss": null,
+     "wallToLoad": 29,
+     "trace": {
+      "marks": {
+       "firstPaint": 38,
+       "firstContentfulPaint": 38,
+       "domInteractive": 0.1,
+       "domContentLoaded": 0.1
+      },
+      "beforeFCP": {
+       "windowMs": 38,
+       "mainThreadBusyMs": 18.4,
+       "parseHTML": 1.2,
+       "scriptCompile": 0.2,
+       "scriptEvaluate": 9.2,
+       "gc": 3.3,
+       "style": 1.7,
+       "layout": 0.2,
+       "paint": 0.4,
+       "imageDecode": 0,
+       "fontWork": 0,
+       "network": 0
+      },
+      "longTasksBeforeFCP": [],
+      "compositorDrawsBeforeFCP": 10,
+      "threads": "CrRendererMain",
+      "gpuBeforeFCP": {
+       "threadBusyMs": {
+        "GpuVSyncThread": 33.5
+       },
+       "topEventsMs": {},
+       "pipelineOrShaderEvents": 92
+      }
+     },
+     "resourceCount": 8
+    }
+   ]
+  }
+ },
+ "finishedAt": "2026-11-28T10:28:12.204Z",
+ "slimmed": "resources: listed for the first trial of each route and condition only; resourceCount elsewhere"
+}

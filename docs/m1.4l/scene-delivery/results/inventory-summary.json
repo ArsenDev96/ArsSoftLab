@@ -1,0 +1,762 @@
+{
+ "collectedAt": "2026-11-28T10:58:24.555Z",
+ "note": "Unthrottled, fresh profile, one load per route; local next start (HTTP/1.1). Scene assets are in scene-assets.csv.",
+ "routes": {
+  "home": {
+   "gates": [
+    {
+     "svgImages": false,
+     "waitsFor": 13
+    }
+   ],
+   "objectViewBox": true,
+   "nonScene": [
+    {
+     "type": "Document",
+     "url": "/",
+     "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate",
+     "etag": false,
+     "renderBlocking": null,
+     "transferBytes": 36932
+    },
+    {
+     "type": "Font",
+     "url": "/_next/static/media/c0680f1bdb3a2e90-s.p.1gsd1jahc5dg_.woff2",
+     "cacheControl": "public, max-age=31536000, immutable",
+     "etag": true,
+     "renderBlocking": "non-blocking",
+     "transferBytes": 32528
+    },
+    {
+     "type": "Stylesheet",
+     "url": "/_next/static/chunks/2kafo_um2qs4h.css",
+     "cacheControl": "public, max-age=31536000, immutable",
+     "etag": true,
+     "renderBlocking": "blocking",
+     "transferBytes": 11270
+    },
+    {
+     "type": "Script",
+     "url": "/_next/static/chunks/1pcw6gskne7pf.js",
+     "cacheControl": "public, max-age=31536000, immutable",
+     "etag": true,
+     "renderBlocking": "non-blocking",
+     "transferBytes": 2426
+    },
+    {
+     "type": "Script",
+     "url": "/_next/static/chunks/1wnov70f88xjy.js",
+     "cacheControl": "public, max-age=31536000, immutable",
+     "etag": true,
+     "renderBlocking": "non-blocking",
+     "transferBytes": 8047
+    },
+    {
+     "type": "Script",
+     "url": "/_next/static/chunks/092r-mewpaf3q.js",
+     "cacheControl": "public, max-age=31536000, immutable",
+     "etag": true,
+     "renderBlocking": "non-blocking",
+     "transferBytes": 72121
+    },
+    {
+     "type": "Script",
+     "url": "/_next/static/chunks/0c1ad7rcpjghx.js",
+     "cacheControl": "public, max-age=31536000, immutable",
+     "etag": true,
+     "renderBlocking": "non-blocking",
+     "transferBytes": 46868
+    },
+    {
+     "type": "Script",
+     "url": "/_next/static/chunks/turbopack-2u1d16houkiyo.js",
+     "cacheControl": "public, max-age=31536000, immutable",
+     "etag": true,
+     "renderBlocking": "non-blocking",
+     "transferBytes": 4301
+    },
+    {
+     "type": "Script",
+     "url": "/_next/static/chunks/3qfy96eoyh-ek.js",
+     "cacheControl": "public, max-age=31536000, immutable",
+     "etag": true,
+     "renderBlocking": "non-blocking",
+     "transferBytes": 3911
+    },
+    {
+     "type": "Script",
+     "url": "/_next/static/chunks/3gickv_6i64jl.js",
+     "cacheControl": "public, max-age=31536000, immutable",
+     "etag": true,
+     "renderBlocking": "non-blocking",
+     "transferBytes": 10392
+    },
+    {
+     "type": "Script",
+     "url": "/_next/static/chunks/0v65o2h_z1ytx.js",
+     "cacheControl": "public, max-age=31536000, immutable",
+     "etag": true,
+     "renderBlocking": "non-blocking",
+     "transferBytes": 38806
+    },
+    {
+     "type": "Other",
+     "url": "/icon.svg?icon.1plqej6prq-qi.svg",
+     "cacheControl": "public, max-age=0, must-revalidate",
+     "etag": false,
+     "renderBlocking": "non-blocking",
+     "transferBytes": 915
+    }
+   ],
+   "referencedNotFetched": [
+    {
+     "url": "/scene/masks/connections-glow.png",
+     "how": [
+      "css-mask"
+     ],
+     "bytes": 24014
+    },
+    {
+     "url": "/scene/masks/connections.png",
+     "how": [
+      "css-mask"
+     ],
+     "bytes": 22972
+    }
+   ]
+  },
+  "cinematic": {
+   "gates": [
+    {
+     "svgImages": true,
+     "waitsFor": 66
+    }
+   ],
+   "objectViewBox": true,
+   "nonScene": [
+    {
+     "type": "Document",
+     "url": "/lab-v2",
+     "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate",
+     "etag": false,
+     "renderBlocking": null,
+     "transferBytes": 81670
+    },
+    {
+     "type": "Font",
+     "url": "/_next/static/media/c0680f1bdb3a2e90-s.p.1gsd1jahc5dg_.woff2",
+     "cacheControl": "public, max-age=31536000, immutable",
+     "etag": true,
+     "renderBlocking": "non-blocking",
+     "transferBytes": 32528
+    },
+    {
+     "type": "Stylesheet",
+     "url": "/_next/static/chunks/2kafo_um2qs4h.css",
+     "cacheControl": "public, max-age=31536000, immutable",
+     "etag": true,
+     "renderBlocking": "blocking",
+     "transferBytes": 11270
+    },
+    {
+     "type": "Script",
+     "url": "/_next/static/chunks/1pcw6gskne7pf.js",
+     "cacheControl": "public, max-age=31536000, immutable",
+     "etag": true,
+     "renderBlocking": "non-blocking",
+     "transferBytes": 2426
+    },
+    {
+     "type": "Script",
+     "url": "/_next/static/chunks/1wnov70f88xjy.js",
+     "cacheControl": "public, max-age=31536000, immutable",
+     "etag": true,
+     "renderBlocking": "non-blocking",
+     "transferBytes": 8047
+    },
+    {
+     "type": "Script",
+     "url": "/_next/static/chunks/092r-mewpaf3q.js",
+     "cacheControl": "public, max-age=31536000, immutable",
+     "etag": true,
+     "renderBlocking": "non-blocking",
+     "transferBytes": 72121
+    },
+    {
+     "type": "Script",
+     "url": "/_next/static/chunks/0c1ad7rcpjghx.js",
+     "cacheControl": "public, max-age=31536000, immutable",
+     "etag": true,
+     "renderBlocking": "non-blocking",
+     "transferBytes": 46868
+    },
+    {
+     "type": "Script",
+     "url": "/_next/static/chunks/turbopack-2u1d16houkiyo.js",
+     "cacheControl": "public, max-age=31536000, immutable",
+     "etag": true,
+     "renderBlocking": "non-blocking",
+     "transferBytes": 4301
+    },
+    {
+     "type": "Script",
+     "url": "/_next/static/chunks/3qfy96eoyh-ek.js",
+     "cacheControl": "public, max-age=31536000, immutable",
+     "etag": true,
+     "renderBlocking": "non-blocking",
+     "transferBytes": 3911
+    },
+    {
+     "type": "Script",
+     "url": "/_next/static/chunks/2vb0hl-tsp388.js",
+     "cacheControl": "public, max-age=31536000, immutable",
+     "etag": true,
+     "renderBlocking": "non-blocking",
+     "transferBytes": 3771
+    },
+    {
+     "type": "Script",
+     "url": "/_next/static/chunks/0v65o2h_z1ytx.js",
+     "cacheControl": "public, max-age=31536000, immutable",
+     "etag": true,
+     "renderBlocking": "non-blocking",
+     "transferBytes": 38806
+    },
+    {
+     "type": "Script",
+     "url": "/_next/static/chunks/3gickv_6i64jl.js",
+     "cacheControl": "public, max-age=31536000, immutable",
+     "etag": true,
+     "renderBlocking": "non-blocking",
+     "transferBytes": 10392
+    },
+    {
+     "type": "Other",
+     "url": "/icon.svg?icon.1plqej6prq-qi.svg",
+     "cacheControl": "public, max-age=0, must-revalidate",
+     "etag": false,
+     "renderBlocking": "non-blocking",
+     "transferBytes": 915
+    },
+    {
+     "type": "Fetch",
+     "url": "/?_rsc=N5gqt1sOHIfEO55J",
+     "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate",
+     "etag": false,
+     "renderBlocking": "non-blocking",
+     "transferBytes": 542
+    },
+    {
+     "type": "Fetch",
+     "url": "/lab-v2?station=experience&_rsc=00wVIN80ldkuJnnP",
+     "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate",
+     "etag": false,
+     "renderBlocking": "non-blocking",
+     "transferBytes": 1374
+    },
+    {
+     "type": "Fetch",
+     "url": "/?_rsc=00wVIN80ldkuJnnP",
+     "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate",
+     "etag": false,
+     "renderBlocking": "non-blocking",
+     "transferBytes": 1336
+    }
+   ],
+   "referencedNotFetched": [
+    {
+     "url": "/scene/v2/m14h4/floor-light.png",
+     "how": [
+      "svg-image data-full (fallback, unused when object-view-box is supported)"
+     ],
+     "bytes": 8274
+    },
+    {
+     "url": "/scene/v2/m14h1/engineering-floor.png",
+     "how": [
+      "svg-image data-full (fallback, unused when object-view-box is supported)"
+     ],
+     "bytes": 39935
+    },
+    {
+     "url": "/scene/v2/m14h2/educational-floor.png",
+     "how": [
+      "svg-image data-full (fallback, unused when object-view-box is supported)"
+     ],
+     "bytes": 27817
+    },
+    {
+     "url": "/scene/v2/m14h2/educational-floor-cyan.png",
+     "how": [
+      "svg-image data-full (fallback, unused when object-view-box is supported)"
+     ],
+     "bytes": 13103
+    },
+    {
+     "url": "/scene/v2/m14j3/creative-floor-rest.png",
+     "how": [
+      "svg-image data-full (fallback, unused when object-view-box is supported)"
+     ],
+     "bytes": 20698
+    },
+    {
+     "url": "/scene/v2/m14j3/creative-floor-edge.png",
+     "how": [
+      "svg-image data-full (fallback, unused when object-view-box is supported)"
+     ],
+     "bytes": 8025
+    },
+    {
+     "url": "/scene/v2/m14h3/creative-floor-top.png",
+     "how": [
+      "svg-image data-full (fallback, unused when object-view-box is supported)"
+     ],
+     "bytes": 17808
+    },
+    {
+     "url": "/scene/v2/m14j4/experience-floor-rest.png",
+     "how": [
+      "svg-image data-full (fallback, unused when object-view-box is supported)"
+     ],
+     "bytes": 34051
+    },
+    {
+     "url": "/scene/v2/m14j4/experience-floor-lit-rest.png",
+     "how": [
+      "svg-image data-full (fallback, unused when object-view-box is supported)"
+     ],
+     "bytes": 32598
+    },
+    {
+     "url": "/scene/v2/m14j4/experience-floor-edge.png",
+     "how": [
+      "svg-image data-full (fallback, unused when object-view-box is supported)"
+     ],
+     "bytes": 7233
+    },
+    {
+     "url": "/scene/v2/m14h4/experience-floor-top.png",
+     "how": [
+      "svg-image data-full (fallback, unused when object-view-box is supported)"
+     ],
+     "bytes": 19719
+    },
+    {
+     "url": "/scene/v2/m14g1/playground-ring.png",
+     "how": [
+      "svg-image data-full (fallback, unused when object-view-box is supported)"
+     ],
+     "bytes": 8908
+    },
+    {
+     "url": "/scene/v2/m14g1/playground-ring-lit.png",
+     "how": [
+      "svg-image data-full (fallback, unused when object-view-box is supported)"
+     ],
+     "bytes": 9685
+    },
+    {
+     "url": "/scene/v2/m14g1/playground-occlusion.png",
+     "how": [
+      "svg-image data-full (fallback, unused when object-view-box is supported)"
+     ],
+     "bytes": 12194
+    },
+    {
+     "url": "/scene/v2/m14g1/playground-reflection.png",
+     "how": [
+      "svg-image data-full (fallback, unused when object-view-box is supported)"
+     ],
+     "bytes": 30190
+    },
+    {
+     "url": "/scene/v2/m14g1/playground-reflection-lit.png",
+     "how": [
+      "svg-image data-full (fallback, unused when object-view-box is supported)"
+     ],
+     "bytes": 13355
+    },
+    {
+     "url": "/scene/v2/m14g/contact.png",
+     "how": [
+      "svg-image data-full (fallback, unused when object-view-box is supported)"
+     ],
+     "bytes": 10462
+    },
+    {
+     "url": "/scene/v2/m14h2/educational-body.png",
+     "how": [
+      "svg-image data-full (fallback, unused when object-view-box is supported)"
+     ],
+     "bytes": 117648
+    },
+    {
+     "url": "/scene/v2/m14h2/educational-globe.png",
+     "how": [
+      "svg-image data-full (fallback, unused when object-view-box is supported)"
+     ],
+     "bytes": 66929
+    },
+    {
+     "url": "/scene/v2/m14h2/educational-orbit.png",
+     "how": [
+      "svg-image data-full (fallback, unused when object-view-box is supported)"
+     ],
+     "bytes": 16116
+    },
+    {
+     "url": "/scene/v2/m14f1/educational.png",
+     "how": [
+      "svg-image data-full (fallback, unused when object-view-box is supported)"
+     ],
+     "bytes": 146451
+    },
+    {
+     "url": "/scene/v2/m14f1/educational-light.png",
+     "how": [
+      "svg-image data-full (fallback, unused when object-view-box is supported)"
+     ],
+     "bytes": 46330
+    },
+    {
+     "url": "/scene/v2/m14h2/educational-globe-light.png",
+     "how": [
+      "svg-image data-full (fallback, unused when object-view-box is supported)"
+     ],
+     "bytes": 41665
+    },
+    {
+     "url": "/scene/v2/m14h2/educational-orbit-light.png",
+     "how": [
+      "svg-image data-full (fallback, unused when object-view-box is supported)"
+     ],
+     "bytes": 11603
+    },
+    {
+     "url": "/scene/v2/m14h2/educational-strip-floor.png",
+     "how": [
+      "svg-image data-full (fallback, unused when object-view-box is supported)"
+     ],
+     "bytes": 9572
+    },
+    {
+     "url": "/scene/v2/m14h2/educational-strip-off.png",
+     "how": [
+      "svg-image data-full (fallback, unused when object-view-box is supported)"
+     ],
+     "bytes": 14005
+    },
+    {
+     "url": "/scene/v2/m14h2/educational-strip-light.png",
+     "how": [
+      "svg-image data-full (fallback, unused when object-view-box is supported)"
+     ],
+     "bytes": 15916
+    },
+    {
+     "url": "/scene/v2/m14h2/educational-base.png",
+     "how": [
+      "svg-image data-full (fallback, unused when object-view-box is supported)"
+     ],
+     "bytes": 23357
+    },
+    {
+     "url": "/scene/v2/m14h2/educational-flare.png",
+     "how": [
+      "svg-image data-full (fallback, unused when object-view-box is supported)"
+     ],
+     "bytes": 60560
+    },
+    {
+     "url": "/scene/v2/m14h1/engineering-strip-floor.png",
+     "how": [
+      "svg-image data-full (fallback, unused when object-view-box is supported)"
+     ],
+     "bytes": 10161
+    },
+    {
+     "url": "/scene/v2/m14h1/engineering-strip-off.png",
+     "how": [
+      "svg-image data-full (fallback, unused when object-view-box is supported)"
+     ],
+     "bytes": 11696
+    },
+    {
+     "url": "/scene/v2/m14h1/engineering-strip-light.png",
+     "how": [
+      "svg-image data-full (fallback, unused when object-view-box is supported)"
+     ],
+     "bytes": 13311
+    },
+    {
+     "url": "/scene/v2/m14h1/engineering-screen-bars.png",
+     "how": [
+      "svg-image data-full (fallback, unused when object-view-box is supported)"
+     ],
+     "bytes": 8213
+    },
+    {
+     "url": "/scene/v2/m14j3/creative-fill.png",
+     "how": [
+      "svg-image data-full (fallback, unused when object-view-box is supported)"
+     ],
+     "bytes": 20263
+    },
+    {
+     "url": "/scene/v2/m14j3/creative-light-spill.png",
+     "how": [
+      "svg-image data-full (fallback, unused when object-view-box is supported)"
+     ],
+     "bytes": 19122
+    },
+    {
+     "url": "/scene/v2/m14j3/creative-light-edge.png",
+     "how": [
+      "svg-image data-full (fallback, unused when object-view-box is supported)"
+     ],
+     "bytes": 11440
+    },
+    {
+     "url": "/scene/v2/m14h3/creative-strip-off.png",
+     "how": [
+      "svg-image data-full (fallback, unused when object-view-box is supported)"
+     ],
+     "bytes": 13484
+    },
+    {
+     "url": "/scene/v2/m14j3/creative-fill-off.png",
+     "how": [
+      "svg-image data-full (fallback, unused when object-view-box is supported)"
+     ],
+     "bytes": 6513
+    },
+    {
+     "url": "/scene/v2/m14h3/creative-strip-light.png",
+     "how": [
+      "svg-image data-full (fallback, unused when object-view-box is supported)"
+     ],
+     "bytes": 13402
+    },
+    {
+     "url": "/scene/v2/m14h3/creative-standby.png",
+     "how": [
+      "svg-image data-full (fallback, unused when object-view-box is supported)"
+     ],
+     "bytes": 48017
+    },
+    {
+     "url": "/scene/v2/m14h3/creative-warm.png",
+     "how": [
+      "svg-image data-full (fallback, unused when object-view-box is supported)"
+     ],
+     "bytes": 13762
+    },
+    {
+     "url": "/scene/v2/m14h3/creative-highlights.png",
+     "how": [
+      "svg-image data-full (fallback, unused when object-view-box is supported)"
+     ],
+     "bytes": 35810
+    },
+    {
+     "url": "/scene/v2/m14j4/experience-light-spill.png",
+     "how": [
+      "svg-image data-full (fallback, unused when object-view-box is supported)"
+     ],
+     "bytes": 19949
+    },
+    {
+     "url": "/scene/v2/m14j4/experience-light-edge.png",
+     "how": [
+      "svg-image data-full (fallback, unused when object-view-box is supported)"
+     ],
+     "bytes": 12395
+    },
+    {
+     "url": "/scene/v2/m14h4/experience-strip-off.png",
+     "how": [
+      "svg-image data-full (fallback, unused when object-view-box is supported)"
+     ],
+     "bytes": 15509
+    },
+    {
+     "url": "/scene/v2/m14h4/experience-strip-light.png",
+     "how": [
+      "svg-image data-full (fallback, unused when object-view-box is supported)"
+     ],
+     "bytes": 15229
+    },
+    {
+     "url": "/scene/v2/m14h4/experience-standby.png",
+     "how": [
+      "svg-image data-full (fallback, unused when object-view-box is supported)"
+     ],
+     "bytes": 41964
+    },
+    {
+     "url": "/scene/v2/m14j3/creative-steam.png",
+     "how": [
+      "svg-image data-full (fallback, unused when object-view-box is supported)"
+     ],
+     "bytes": 15721
+    },
+    {
+     "url": "/scene/v2/m14j3/creative-books.png",
+     "how": [
+      "svg-image data-full (fallback, unused when object-view-box is supported)"
+     ],
+     "bytes": 8050
+    },
+    {
+     "url": "/scene/v2/m14e/fg-table.png",
+     "how": [
+      "svg-image data-full (fallback, unused when object-view-box is supported)"
+     ],
+     "bytes": 101744
+    },
+    {
+     "url": "/scene/v2/m14e/fg-plant.png",
+     "how": [
+      "svg-image data-full (fallback, unused when object-view-box is supported)"
+     ],
+     "bytes": 44101
+    }
+   ]
+  },
+  "lite": {
+   "gates": [],
+   "objectViewBox": true,
+   "nonScene": [
+    {
+     "type": "Document",
+     "url": "/lab-v2?render=lite",
+     "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate",
+     "etag": false,
+     "renderBlocking": null,
+     "transferBytes": 16793
+    },
+    {
+     "type": "Font",
+     "url": "/_next/static/media/c0680f1bdb3a2e90-s.p.1gsd1jahc5dg_.woff2",
+     "cacheControl": "public, max-age=31536000, immutable",
+     "etag": true,
+     "renderBlocking": "non-blocking",
+     "transferBytes": 32528
+    },
+    {
+     "type": "Stylesheet",
+     "url": "/_next/static/chunks/2kafo_um2qs4h.css",
+     "cacheControl": "public, max-age=31536000, immutable",
+     "etag": true,
+     "renderBlocking": "blocking",
+     "transferBytes": 11270
+    },
+    {
+     "type": "Script",
+     "url": "/_next/static/chunks/1pcw6gskne7pf.js",
+     "cacheControl": "public, max-age=31536000, immutable",
+     "etag": true,
+     "renderBlocking": "non-blocking",
+     "transferBytes": 2426
+    },
+    {
+     "type": "Script",
+     "url": "/_next/static/chunks/1wnov70f88xjy.js",
+     "cacheControl": "public, max-age=31536000, immutable",
+     "etag": true,
+     "renderBlocking": "non-blocking",
+     "transferBytes": 8047
+    },
+    {
+     "type": "Script",
+     "url": "/_next/static/chunks/092r-mewpaf3q.js",
+     "cacheControl": "public, max-age=31536000, immutable",
+     "etag": true,
+     "renderBlocking": "non-blocking",
+     "transferBytes": 72121
+    },
+    {
+     "type": "Script",
+     "url": "/_next/static/chunks/0c1ad7rcpjghx.js",
+     "cacheControl": "public, max-age=31536000, immutable",
+     "etag": true,
+     "renderBlocking": "non-blocking",
+     "transferBytes": 46868
+    },
+    {
+     "type": "Script",
+     "url": "/_next/static/chunks/turbopack-2u1d16houkiyo.js",
+     "cacheControl": "public, max-age=31536000, immutable",
+     "etag": true,
+     "renderBlocking": "non-blocking",
+     "transferBytes": 4301
+    },
+    {
+     "type": "Script",
+     "url": "/_next/static/chunks/3qfy96eoyh-ek.js",
+     "cacheControl": "public, max-age=31536000, immutable",
+     "etag": true,
+     "renderBlocking": "non-blocking",
+     "transferBytes": 3911
+    },
+    {
+     "type": "Script",
+     "url": "/_next/static/chunks/2vb0hl-tsp388.js",
+     "cacheControl": "public, max-age=31536000, immutable",
+     "etag": true,
+     "renderBlocking": "non-blocking",
+     "transferBytes": 3771
+    },
+    {
+     "type": "Script",
+     "url": "/_next/static/chunks/0v65o2h_z1ytx.js",
+     "cacheControl": "public, max-age=31536000, immutable",
+     "etag": true,
+     "renderBlocking": "non-blocking",
+     "transferBytes": 38806
+    },
+    {
+     "type": "Script",
+     "url": "/_next/static/chunks/3gickv_6i64jl.js",
+     "cacheControl": "public, max-age=31536000, immutable",
+     "etag": true,
+     "renderBlocking": "non-blocking",
+     "transferBytes": 10392
+    },
+    {
+     "type": "Other",
+     "url": "/icon.svg?icon.1plqej6prq-qi.svg",
+     "cacheControl": "public, max-age=0, must-revalidate",
+     "etag": false,
+     "renderBlocking": "non-blocking",
+     "transferBytes": 915
+    },
+    {
+     "type": "Fetch",
+     "url": "/?_rsc=N5gqt1sOHIfEO55J",
+     "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate",
+     "etag": false,
+     "renderBlocking": "non-blocking",
+     "transferBytes": 542
+    },
+    {
+     "type": "Fetch",
+     "url": "/lab-v2?station=experience&render=lite&_rsc=00wVIN80ldkuJnnP",
+     "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate",
+     "etag": false,
+     "renderBlocking": "non-blocking",
+     "transferBytes": 1384
+    },
+    {
+     "type": "Fetch",
+     "url": "/?_rsc=00wVIN80ldkuJnnP",
+     "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate",
+     "etag": false,
+     "renderBlocking": "non-blocking",
+     "transferBytes": 1337
+    }
+   ],
+   "referencedNotFetched": []
+  }
+ }
+}

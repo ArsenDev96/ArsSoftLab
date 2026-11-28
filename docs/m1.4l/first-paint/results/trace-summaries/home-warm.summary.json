@@ -1,0 +1,195 @@
+{
+ "route": "/",
+ "cond": "warm",
+ "milestones": {
+  "fcp": 131.8,
+  "firstPaintEvent": 131.8,
+  "responseStart": 16.4,
+  "domContentLoaded": 0.1,
+  "load": 159.9,
+  "lcpCandidates": [
+   131.8
+  ]
+ },
+ "pipeline": {
+  "firstBeginMainThreadFrame": 60.1,
+  "firstCommit": 98.1,
+  "firstActivate": 103.3,
+  "firstDrawFrame": 104.1,
+  "commitsBeforeFcp": 6,
+  "rasterTasksBeforeFcp": 31,
+  "rasterMsBeforeFcp": 4,
+  "imageDecodeTasksBeforeFcp": 19,
+  "imageDecodeMsBeforeFcp": 43,
+  "decodeImageMsBeforeFcp": 15
+ },
+ "busyBeforeFcp": [
+  [
+   "GPU Process/GpuVSyncThread",
+   263
+  ],
+  [
+   "Renderer/CrRendererMain (page renderer)",
+   229
+  ],
+  [
+   "Renderer/ThreadPoolForegroundWorker (page renderer)",
+   87
+  ],
+  [
+   "Browser/CrBrowserMain",
+   81
+  ],
+  [
+   "Browser/ThreadPoolForegroundWorker",
+   72
+  ],
+  [
+   "Browser/Chrome_DevToolsHandlerThread",
+   48
+  ],
+  [
+   "GPU Process/CrGpuMain",
+   43
+  ],
+  [
+   "Renderer/Font thread (page renderer)",
+   25
+  ],
+  [
+   "Renderer/Compositor (page renderer)",
+   13
+  ],
+  [
+   "GPU Process/VizCompositorThread",
+   7
+  ],
+  [
+   "Browser/Chrome_IOThread",
+   7
+  ],
+  [
+   "Renderer/Chrome_ChildIOThread (page renderer)",
+   6
+  ],
+  [
+   "Browser/ThreadPoolSingleThreadSharedForeground",
+   1
+  ],
+  [
+   "GPU Process/ThreadPoolForegroundWorker",
+   1
+  ],
+  [
+   "Renderer/PerfettoTrace (page renderer)",
+   1
+  ]
+ ],
+ "selfBeforeFcp": [
+  [
+   "GPU Process/GpuVSyncThread :: ThreadControllerImpl::RunTask",
+   115.4
+  ],
+  [
+   "Browser/ThreadPoolForegroundWorker :: Receive mojo message",
+   57.5
+  ],
+  [
+   "Renderer/CrRendererMain (page renderer) :: LocalFrameView::performLayout",
+   32.9
+  ],
+  [
+   "Renderer/ThreadPoolForegroundWorker (page renderer) :: ImageFrameGenerator::decodeToYUV",
+   25.8
+  ],
+  [
+   "Browser/Chrome_DevToolsHandlerThread :: ThreadControllerImpl::RunTask",
+   23.6
+  ],
+  [
+   "Renderer/CrRendererMain (page renderer) :: RunMicrotasks",
+   20.3
+  ],
+  [
+   "Renderer/ThreadPoolForegroundWorker (page renderer) :: v8.parseOnBackgroundParsing",
+   16.7
+  ],
+  [
+   "Renderer/CrRendererMain (page renderer) :: UpdateLayoutTree",
+   15.7
+  ],
+  [
+   "Browser/CrBrowserMain :: Receive mojo message",
+   15.6
+  ],
+  [
+   "Renderer/ThreadPoolForegroundWorker (page renderer) :: Decode Image",
+   15.2
+  ],
+  [
+   "Browser/Chrome_IOThread :: IOHandler::OnIOCompleted",
+   14.7
+  ],
+  [
+   "Renderer/CrRendererMain (page renderer) :: ThreadControllerImpl::RunTask",
+   12.4
+  ],
+  [
+   "Renderer/Font thread (page renderer) :: ThreadControllerImpl::RunTask",
+   12.2
+  ],
+  [
+   "Browser/ThreadPoolForegroundWorker :: ThreadPool_RunTask",
+   10.7
+  ],
+  [
+   "Renderer/CrRendererMain (page renderer) :: ParseHTML",
+   7.6
+  ],
+  [
+   "Renderer/ThreadPoolForegroundWorker (page renderer) :: ThreadPool_RunTask",
+   7.1
+  ],
+  [
+   "Renderer/Chrome_ChildIOThread (page renderer) :: IOHandler::OnIOCompleted",
+   5.9
+  ],
+  [
+   "Renderer/ThreadPoolForegroundWorker (page renderer) :: v8.parseOnBackgroundWaiting",
+   5.9
+  ],
+  [
+   "Browser/CrBrowserMain :: ThreadControllerImpl::RunTask",
+   5.3
+  ],
+  [
+   "GPU Process/CrGpuMain :: RasterDecoderImpl::DoEndRasterCHROMIUM::Flush",
+   4.9
+  ],
+  [
+   "GPU Process/CrGpuMain :: RasterDecoderImpl::DoFlushTileRasterGraphiteCommandsCHROMIUM",
+   4.7
+  ],
+  [
+   "Renderer/CrRendererMain (page renderer) :: RunTask",
+   4.3
+  ],
+  [
+   "GPU Process/CrGpuMain :: RasterDecoderImpl::DoRasterCHROMIUM::Deserializing",
+   3.8
+  ],
+  [
+   "Browser/ThreadPoolForegroundWorker :: SimpleWatcher::OnHandleReady",
+   3.3
+  ],
+  [
+   "Renderer/ThreadPoolForegroundWorker (page renderer) :: RasterImplementation::RasterCHROMIUM",
+   3.3
+  ],
+  [
+   "Browser/CrBrowserMain :: RunTask",
+   3.3
+  ]
+ ],
+ "shots": 145
+}

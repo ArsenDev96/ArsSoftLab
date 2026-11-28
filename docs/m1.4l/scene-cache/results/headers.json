@@ -1,0 +1,697 @@
+{
+ "collectedAt": "2026-11-28T11:33:43.657Z",
+ "servers": {
+  "baseline": {
+   "scene/v2 (Cinematic)": {
+    "/scene/v2/environment/lab-background.png": {
+     "status": 200,
+     "cacheControl": "public, max-age=0",
+     "etag": "weak",
+     "lastModified": true,
+     "conditional": {
+      "status": 304,
+      "cacheControl": "public, max-age=0",
+      "etag": "weak",
+      "lastModified": true
+     },
+     "head": {
+      "status": 200,
+      "cacheControl": "public, max-age=0",
+      "etag": "weak",
+      "lastModified": true
+     },
+     "range": {
+      "status": 206,
+      "cacheControl": "public, max-age=0",
+      "etag": "weak",
+      "lastModified": true
+     }
+    },
+    "/scene/v2/connections/creative-studio.png": {
+     "status": 200,
+     "cacheControl": "public, max-age=0",
+     "etag": "weak",
+     "lastModified": true,
+     "conditional": {
+      "status": 304,
+      "cacheControl": "public, max-age=0",
+      "etag": "weak",
+      "lastModified": true
+     },
+     "head": {
+      "status": 200,
+      "cacheControl": "public, max-age=0",
+      "etag": "weak",
+      "lastModified": true
+     },
+     "range": {
+      "status": 206,
+      "cacheControl": "public, max-age=0",
+      "etag": "weak",
+      "lastModified": true
+     }
+    },
+    "/scene/v2/m14i2/m14h1-engineering-strip-light.png": {
+     "status": 200,
+     "cacheControl": "public, max-age=0",
+     "etag": "weak",
+     "lastModified": true,
+     "conditional": {
+      "status": 304,
+      "cacheControl": "public, max-age=0",
+      "etag": "weak",
+      "lastModified": true
+     },
+     "head": {
+      "status": 200,
+      "cacheControl": "public, max-age=0",
+      "etag": "weak",
+      "lastModified": true
+     },
+     "range": {
+      "status": 206,
+      "cacheControl": "public, max-age=0",
+      "etag": "weak",
+      "lastModified": true
+     }
+    },
+    "/scene/v2/stations/playground.png": {
+     "status": 200,
+     "cacheControl": "public, max-age=0",
+     "etag": "weak",
+     "lastModified": true,
+     "conditional": {
+      "status": 304,
+      "cacheControl": "public, max-age=0",
+      "etag": "weak",
+      "lastModified": true
+     },
+     "head": {
+      "status": 200,
+      "cacheControl": "public, max-age=0",
+      "etag": "weak",
+      "lastModified": true
+     },
+     "range": {
+      "status": 206,
+      "cacheControl": "public, max-age=0",
+      "etag": "weak",
+      "lastModified": true
+     }
+    }
+   },
+   "scene/v2 edge cases": {
+    "/scene/v2/does-not-exist.png": {
+     "status": 404,
+     "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate",
+     "etag": "strong",
+     "lastModified": false
+    },
+    "/scene/v2": {
+     "status": 404,
+     "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate",
+     "etag": "strong",
+     "lastModified": false
+    },
+    "/scene/v2/": {
+     "status": 308,
+     "cacheControl": null,
+     "etag": null,
+     "lastModified": false
+    },
+    "/scene/V2/stations/playground.png": {
+     "status": 404,
+     "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate",
+     "etag": "strong",
+     "lastModified": false
+    },
+    "/scene/v2x/a.png": {
+     "status": 404,
+     "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate",
+     "etag": "strong",
+     "lastModified": false
+    },
+    "/scene/v2/stations/playground.png?v=1": {
+     "status": 200,
+     "cacheControl": "public, max-age=0",
+     "etag": "weak",
+     "lastModified": true,
+     "conditional": {
+      "status": 304,
+      "cacheControl": "public, max-age=0",
+      "etag": "weak",
+      "lastModified": true
+     },
+     "head": {
+      "status": 200,
+      "cacheControl": "public, max-age=0",
+      "etag": "weak",
+      "lastModified": true
+     },
+     "range": {
+      "status": 206,
+      "cacheControl": "public, max-age=0",
+      "etag": "weak",
+      "lastModified": true
+     }
+    }
+   },
+   "other /scene folders": {
+    "/scene/activation/core.png": {
+     "status": 200,
+     "cacheControl": "public, max-age=0",
+     "etag": "weak",
+     "lastModified": true,
+     "conditional": {
+      "status": 304,
+      "cacheControl": "public, max-age=0",
+      "etag": "weak",
+      "lastModified": true
+     },
+     "head": {
+      "status": 200,
+      "cacheControl": "public, max-age=0",
+      "etag": "weak",
+      "lastModified": true
+     },
+     "range": {
+      "status": 206,
+      "cacheControl": "public, max-age=0",
+      "etag": "weak",
+      "lastModified": true
+     }
+    },
+    "/scene/layers25d/environment-corrections.png": {
+     "status": 200,
+     "cacheControl": "public, max-age=0",
+     "etag": "weak",
+     "lastModified": true,
+     "conditional": {
+      "status": 304,
+      "cacheControl": "public, max-age=0",
+      "etag": "weak",
+      "lastModified": true
+     },
+     "head": {
+      "status": 200,
+      "cacheControl": "public, max-age=0",
+      "etag": "weak",
+      "lastModified": true
+     },
+     "range": {
+      "status": 206,
+      "cacheControl": "public, max-age=0",
+      "etag": "weak",
+      "lastModified": true
+     }
+    },
+    "/scene/lab-plate.webp": {
+     "status": 200,
+     "cacheControl": "public, max-age=0",
+     "etag": "weak",
+     "lastModified": true,
+     "conditional": {
+      "status": 304,
+      "cacheControl": "public, max-age=0",
+      "etag": "weak",
+      "lastModified": true
+     },
+     "head": {
+      "status": 200,
+      "cacheControl": "public, max-age=0",
+      "etag": "weak",
+      "lastModified": true
+     },
+     "range": {
+      "status": 206,
+      "cacheControl": "public, max-age=0",
+      "etag": "weak",
+      "lastModified": true
+     }
+    }
+   },
+   "Static Lite": {
+    "/scene/static-lite/plate.webp": {
+     "status": 200,
+     "cacheControl": "public, max-age=0",
+     "etag": "weak",
+     "lastModified": true,
+     "conditional": {
+      "status": 304,
+      "cacheControl": "public, max-age=0",
+      "etag": "weak",
+      "lastModified": true
+     },
+     "head": {
+      "status": 200,
+      "cacheControl": "public, max-age=0",
+      "etag": "weak",
+      "lastModified": true
+     },
+     "range": {
+      "status": 206,
+      "cacheControl": "public, max-age=0",
+      "etag": "weak",
+      "lastModified": true
+     }
+    },
+    "/scene/static-lite/on-creative.webp": {
+     "status": 200,
+     "cacheControl": "public, max-age=0",
+     "etag": "weak",
+     "lastModified": true,
+     "conditional": {
+      "status": 304,
+      "cacheControl": "public, max-age=0",
+      "etag": "weak",
+      "lastModified": true
+     },
+     "head": {
+      "status": 200,
+      "cacheControl": "public, max-age=0",
+      "etag": "weak",
+      "lastModified": true
+     },
+     "range": {
+      "status": 206,
+      "cacheControl": "public, max-age=0",
+      "etag": "weak",
+      "lastModified": true
+     }
+    }
+   },
+   "hashed Next.js assets": {
+    "/_next/static/chunks/2kafo_um2qs4h.css": {
+     "status": 200,
+     "cacheControl": "public, max-age=31536000, immutable",
+     "etag": "weak",
+     "lastModified": true
+    },
+    "/_next/static/chunks/1pcw6gskne7pf.js": {
+     "status": 200,
+     "cacheControl": "public, max-age=31536000, immutable",
+     "etag": "weak",
+     "lastModified": true
+    },
+    "/_next/static/chunks/1wnov70f88xjy.js": {
+     "status": 200,
+     "cacheControl": "public, max-age=31536000, immutable",
+     "etag": "weak",
+     "lastModified": true
+    }
+   },
+   "HTML": {
+    "/": {
+     "status": 200,
+     "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate",
+     "etag": null,
+     "lastModified": false
+    },
+    "/lab-v2": {
+     "status": 200,
+     "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate",
+     "etag": null,
+     "lastModified": false
+    },
+    "/lab-v2?render=lite": {
+     "status": 200,
+     "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate",
+     "etag": null,
+     "lastModified": false
+    },
+    "/lab-v2?station=experience": {
+     "status": 200,
+     "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate",
+     "etag": null,
+     "lastModified": false
+    },
+    "/lab-v2/projects/arimap": {
+     "status": 200,
+     "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate",
+     "etag": null,
+     "lastModified": false
+    }
+   },
+   "other public files": {
+    "/icon.svg": {
+     "status": 200,
+     "cacheControl": "public, max-age=0, must-revalidate",
+     "etag": null,
+     "lastModified": false
+    },
+    "/favicon.ico": {
+     "status": 200,
+     "cacheControl": "public, max-age=0, must-revalidate",
+     "etag": null,
+     "lastModified": false
+    }
+   }
+  },
+  "prototype": {
+   "scene/v2 (Cinematic)": {
+    "/scene/v2/environment/lab-background.png": {
+     "status": 200,
+     "cacheControl": "public, max-age=86400",
+     "etag": "weak",
+     "lastModified": true,
+     "conditional": {
+      "status": 304,
+      "cacheControl": "public, max-age=86400",
+      "etag": "weak",
+      "lastModified": true
+     },
+     "head": {
+      "status": 200,
+      "cacheControl": "public, max-age=86400",
+      "etag": "weak",
+      "lastModified": true
+     },
+     "range": {
+      "status": 206,
+      "cacheControl": "public, max-age=86400",
+      "etag": "weak",
+      "lastModified": true
+     }
+    },
+    "/scene/v2/connections/creative-studio.png": {
+     "status": 200,
+     "cacheControl": "public, max-age=86400",
+     "etag": "weak",
+     "lastModified": true,
+     "conditional": {
+      "status": 304,
+      "cacheControl": "public, max-age=86400",
+      "etag": "weak",
+      "lastModified": true
+     },
+     "head": {
+      "status": 200,
+      "cacheControl": "public, max-age=86400",
+      "etag": "weak",
+      "lastModified": true
+     },
+     "range": {
+      "status": 206,
+      "cacheControl": "public, max-age=86400",
+      "etag": "weak",
+      "lastModified": true
+     }
+    },
+    "/scene/v2/m14i2/m14h1-engineering-strip-light.png": {
+     "status": 200,
+     "cacheControl": "public, max-age=86400",
+     "etag": "weak",
+     "lastModified": true,
+     "conditional": {
+      "status": 304,
+      "cacheControl": "public, max-age=86400",
+      "etag": "weak",
+      "lastModified": true
+     },
+     "head": {
+      "status": 200,
+      "cacheControl": "public, max-age=86400",
+      "etag": "weak",
+      "lastModified": true
+     },
+     "range": {
+      "status": 206,
+      "cacheControl": "public, max-age=86400",
+      "etag": "weak",
+      "lastModified": true
+     }
+    },
+    "/scene/v2/stations/playground.png": {
+     "status": 200,
+     "cacheControl": "public, max-age=86400",
+     "etag": "weak",
+     "lastModified": true,
+     "conditional": {
+      "status": 304,
+      "cacheControl": "public, max-age=86400",
+      "etag": "weak",
+      "lastModified": true
+     },
+     "head": {
+      "status": 200,
+      "cacheControl": "public, max-age=86400",
+      "etag": "weak",
+      "lastModified": true
+     },
+     "range": {
+      "status": 206,
+      "cacheControl": "public, max-age=86400",
+      "etag": "weak",
+      "lastModified": true
+     }
+    }
+   },
+   "scene/v2 edge cases": {
+    "/scene/v2/does-not-exist.png": {
+     "status": 404,
+     "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate",
+     "etag": "strong",
+     "lastModified": false
+    },
+    "/scene/v2": {
+     "status": 404,
+     "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate",
+     "etag": "strong",
+     "lastModified": false
+    },
+    "/scene/v2/": {
+     "status": 308,
+     "cacheControl": null,
+     "etag": null,
+     "lastModified": false
+    },
+    "/scene/V2/stations/playground.png": {
+     "status": 404,
+     "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate",
+     "etag": "strong",
+     "lastModified": false
+    },
+    "/scene/v2x/a.png": {
+     "status": 404,
+     "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate",
+     "etag": "strong",
+     "lastModified": false
+    },
+    "/scene/v2/stations/playground.png?v=1": {
+     "status": 200,
+     "cacheControl": "public, max-age=86400",
+     "etag": "weak",
+     "lastModified": true,
+     "conditional": {
+      "status": 304,
+      "cacheControl": "public, max-age=86400",
+      "etag": "weak",
+      "lastModified": true
+     },
+     "head": {
+      "status": 200,
+      "cacheControl": "public, max-age=86400",
+      "etag": "weak",
+      "lastModified": true
+     },
+     "range": {
+      "status": 206,
+      "cacheControl": "public, max-age=86400",
+      "etag": "weak",
+      "lastModified": true
+     }
+    }
+   },
+   "other /scene folders": {
+    "/scene/activation/core.png": {
+     "status": 200,
+     "cacheControl": "public, max-age=0",
+     "etag": "weak",
+     "lastModified": true,
+     "conditional": {
+      "status": 304,
+      "cacheControl": "public, max-age=0",
+      "etag": "weak",
+      "lastModified": true
+     },
+     "head": {
+      "status": 200,
+      "cacheControl": "public, max-age=0",
+      "etag": "weak",
+      "lastModified": true
+     },
+     "range": {
+      "status": 206,
+      "cacheControl": "public, max-age=0",
+      "etag": "weak",
+      "lastModified": true
+     }
+    },
+    "/scene/layers25d/environment-corrections.png": {
+     "status": 200,
+     "cacheControl": "public, max-age=0",
+     "etag": "weak",
+     "lastModified": true,
+     "conditional": {
+      "status": 304,
+      "cacheControl": "public, max-age=0",
+      "etag": "weak",
+      "lastModified": true
+     },
+     "head": {
+      "status": 200,
+      "cacheControl": "public, max-age=0",
+      "etag": "weak",
+      "lastModified": true
+     },
+     "range": {
+      "status": 206,
+      "cacheControl": "public, max-age=0",
+      "etag": "weak",
+      "lastModified": true
+     }
+    },
+    "/scene/lab-plate.webp": {
+     "status": 200,
+     "cacheControl": "public, max-age=0",
+     "etag": "weak",
+     "lastModified": true,
+     "conditional": {
+      "status": 304,
+      "cacheControl": "public, max-age=0",
+      "etag": "weak",
+      "lastModified": true
+     },
+     "head": {
+      "status": 200,
+      "cacheControl": "public, max-age=0",
+      "etag": "weak",
+      "lastModified": true
+     },
+     "range": {
+      "status": 206,
+      "cacheControl": "public, max-age=0",
+      "etag": "weak",
+      "lastModified": true
+     }
+    }
+   },
+   "Static Lite": {
+    "/scene/static-lite/plate.webp": {
+     "status": 200,
+     "cacheControl": "public, max-age=0",
+     "etag": "weak",
+     "lastModified": true,
+     "conditional": {
+      "status": 304,
+      "cacheControl": "public, max-age=0",
+      "etag": "weak",
+      "lastModified": true
+     },
+     "head": {
+      "status": 200,
+      "cacheControl": "public, max-age=0",
+      "etag": "weak",
+      "lastModified": true
+     },
+     "range": {
+      "status": 206,
+      "cacheControl": "public, max-age=0",
+      "etag": "weak",
+      "lastModified": true
+     }
+    },
+    "/scene/static-lite/on-creative.webp": {
+     "status": 200,
+     "cacheControl": "public, max-age=0",
+     "etag": "weak",
+     "lastModified": true,
+     "conditional": {
+      "status": 304,
+      "cacheControl": "public, max-age=0",
+      "etag": "weak",
+      "lastModified": true
+     },
+     "head": {
+      "status": 200,
+      "cacheControl": "public, max-age=0",
+      "etag": "weak",
+      "lastModified": true
+     },
+     "range": {
+      "status": 206,
+      "cacheControl": "public, max-age=0",
+      "etag": "weak",
+      "lastModified": true
+     }
+    }
+   },
+   "hashed Next.js assets": {
+    "/_next/static/chunks/2kafo_um2qs4h.css": {
+     "status": 200,
+     "cacheControl": "public, max-age=31536000, immutable",
+     "etag": "weak",
+     "lastModified": true
+    },
+    "/_next/static/chunks/1pcw6gskne7pf.js": {
+     "status": 200,
+     "cacheControl": "public, max-age=31536000, immutable",
+     "etag": "weak",
+     "lastModified": true
+    },
+    "/_next/static/chunks/1wnov70f88xjy.js": {
+     "status": 200,
+     "cacheControl": "public, max-age=31536000, immutable",
+     "etag": "weak",
+     "lastModified": true
+    }
+   },
+   "HTML": {
+    "/": {
+     "status": 200,
+     "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate",
+     "etag": null,
+     "lastModified": false
+    },
+    "/lab-v2": {
+     "status": 200,
+     "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate",
+     "etag": null,
+     "lastModified": false
+    },
+    "/lab-v2?render=lite": {
+     "status": 200,
+     "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate",
+     "etag": null,
+     "lastModified": false
+    },
+    "/lab-v2?station=experience": {
+     "status": 200,
+     "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate",
+     "etag": null,
+     "lastModified": false
+    },
+    "/lab-v2/projects/arimap": {
+     "status": 200,
+     "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate",
+     "etag": null,
+     "lastModified": false
+    }
+   },
+   "other public files": {
+    "/icon.svg": {
+     "status": 200,
+     "cacheControl": "public, max-age=0, must-revalidate",
+     "etag": null,
+     "lastModified": false
+    },
+    "/favicon.ico": {
+     "status": 200,
+     "cacheControl": "public, max-age=0, must-revalidate",
+     "etag": null,
+     "lastModified": false
+    }
+   }
+  }
+ }
+}

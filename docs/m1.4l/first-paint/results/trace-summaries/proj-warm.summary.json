@@ -1,0 +1,111 @@
+{
+ "route": "/lab-v2/projects/sqlorbit",
+ "cond": "warm",
+ "milestones": {
+  "fcp": 196.5,
+  "firstPaintEvent": 196.5,
+  "responseStart": 12.2,
+  "domContentLoaded": 0.1,
+  "load": 1068.7,
+  "lcpCandidates": [
+   196.5
+  ]
+ },
+ "pipeline": {
+  "firstBeginMainThreadFrame": 153.9,
+  "firstCommit": 169.6,
+  "firstActivate": 171.5,
+  "firstDrawFrame": 171.8,
+  "commitsBeforeFcp": 5,
+  "rasterTasksBeforeFcp": 5,
+  "rasterMsBeforeFcp": 2,
+  "imageDecodeTasksBeforeFcp": 0,
+  "imageDecodeMsBeforeFcp": 0,
+  "decodeImageMsBeforeFcp": 0
+ },
+ "busyBeforeFcp": [
+  [
+   "GPU Process/GpuVSyncThread",
+   393
+  ],
+  [
+   "Browser/ThreadPoolForegroundWorker",
+   192
+  ],
+  [
+   "Renderer/CrRendererMain (page renderer)",
+   48
+  ],
+  [
+   "Browser/CrBrowserMain",
+   44
+  ],
+  [
+   "GPU Process/CrGpuMain",
+   28
+  ],
+  [
+   "GPU Process/VizCompositorThread",
+   8
+  ],
+  [
+   "Renderer/Font thread (page renderer)",
+   6
+  ],
+  [
+   "Renderer/Compositor (page renderer)",
+   4
+  ],
+  [
+   "Browser/Chrome_DevToolsHandlerThread",
+   3
+  ],
+  [
+   "Browser/Chrome_IOThread",
+   3
+  ],
+  [
+   "Renderer/ThreadPoolForegroundWorker (page renderer)",
+   3
+  ],
+  [
+   "Renderer/Chrome_ChildIOThread (page renderer)",
+   2
+  ],
+  [
+   "GPU Process/ThreadPoolForegroundWorker",
+   1
+  ],
+  [
+   "Browser/ThreadPoolSingleThreadSharedForeground",
+   0
+  ],
+  [
+   "GPU Process/ThreadPoolServiceThread",
+   0
+  ]
+ ],
+ "selfBeforeFcp": [
+  [
+   "Browser/ThreadPoolForegroundWorker :: Receive mojo message",
+   190
+  ],
+  [
+   "GPU Process/GpuVSyncThread :: ThreadControllerImpl::RunTask",
+   183
+  ],
+  [
+   "Renderer/CrRendererMain (page renderer) :: LocalFrameView::performLayout",
+   11.7
+  ],
+  [
+   "Renderer/Font thread (page renderer) :: ThreadControllerImpl::RunTask",
+   3.1
+  ],
+  [
+   "GPU Process/CrGpuMain :: RasterDecoderImpl::DoEndRasterCHROMIUM::Flush",
+   3.1
+  ]
+ ],
+ "shots": 1
+}

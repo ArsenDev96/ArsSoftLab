@@ -1,0 +1,88 @@
+PASS  [full] sqlorbit: header Experience href is /lab-v2?station=experience
+PASS  [full] sqlorbit: lands on the lab with Experience open
+PASS  [full] sqlorbit: render mode kept (Cinematic, camera)
+PASS  [full] sqlorbit: Lab is the active header entry
+PASS  [full] sqlorbit: nothing scrolled
+PASS  [full] sqlorbit: Back: the project page again
+PASS  [full] sqlorbit: Forward: the lab with Experience open
+PASS  [full] sqlorbit: Forward: nothing scrolled
+PASS  [full] arimap: header Experience href is /lab-v2?station=experience
+PASS  [full] arimap: lands on the lab with Experience open
+PASS  [full] arimap: render mode kept (Cinematic, camera)
+PASS  [full] arimap: Lab is the active header entry
+PASS  [full] arimap: nothing scrolled
+PASS  [full] arimap: Back: the project page again
+PASS  [full] arimap: Forward: the lab with Experience open
+PASS  [full] arimap: Forward: nothing scrolled
+PASS  [full] tablerefresh: header Experience href is /lab-v2?station=experience
+PASS  [full] tablerefresh: lands on the lab with Experience open
+PASS  [full] tablerefresh: render mode kept (Cinematic, camera)
+PASS  [full] tablerefresh: Lab is the active header entry
+PASS  [full] tablerefresh: nothing scrolled
+PASS  [full] tablerefresh: Back: the project page again
+PASS  [full] tablerefresh: Forward: the lab with Experience open
+PASS  [full] tablerefresh: Forward: nothing scrolled
+PASS  [full] armat: header Experience href is /lab-v2?station=experience
+PASS  [full] armat: lands on the lab with Experience open
+PASS  [full] armat: render mode kept (Cinematic, camera)
+PASS  [full] armat: Lab is the active header entry
+PASS  [full] armat: nothing scrolled
+PASS  [full] armat: Back: the project page again
+PASS  [full] armat: Forward: the lab with Experience open
+PASS  [full] armat: Forward: nothing scrolled
+PASS  [full] aziz: header Experience href is /lab-v2?station=experience
+PASS  [full] aziz: lands on the lab with Experience open
+PASS  [full] aziz: render mode kept (Cinematic, camera)
+PASS  [full] aziz: Lab is the active header entry
+PASS  [full] aziz: nothing scrolled
+PASS  [full] aziz: Back: the project page again
+PASS  [full] aziz: Forward: the lab with Experience open
+PASS  [full] aziz: Forward: nothing scrolled
+PASS  [full] Ctrl+click: this tab unchanged (no selection, same URL, no entry)
+PASS  [full] Ctrl+click: a new tab opens /lab-v2?station=experience
+PASS  [full] console: no errors, warnings or hydration messages
+PASS  [lite] sqlorbit: header Experience href is /lab-v2?station=experience&render=lite
+PASS  [lite] sqlorbit: lands on the lab with Experience open
+PASS  [lite] sqlorbit: render mode kept (Static Lite, no camera)
+PASS  [lite] sqlorbit: Lab is the active header entry
+PASS  [lite] sqlorbit: nothing scrolled
+PASS  [lite] sqlorbit: Back: the project page again
+PASS  [lite] sqlorbit: Forward: the lab with Experience open
+PASS  [lite] sqlorbit: Forward: nothing scrolled
+PASS  [lite] arimap: header Experience href is /lab-v2?station=experience&render=lite
+PASS  [lite] arimap: lands on the lab with Experience open
+PASS  [lite] arimap: render mode kept (Static Lite, no camera)
+PASS  [lite] arimap: Lab is the active header entry
+PASS  [lite] arimap: nothing scrolled
+PASS  [lite] arimap: Back: the project page again
+PASS  [lite] arimap: Forward: the lab with Experience open
+PASS  [lite] arimap: Forward: nothing scrolled
+PASS  [lite] tablerefresh: header Experience href is /lab-v2?station=experience&render=lite
+PASS  [lite] tablerefresh: lands on the lab with Experience open
+PASS  [lite] tablerefresh: render mode kept (Static Lite, no camera)
+PASS  [lite] tablerefresh: Lab is the active header entry
+PASS  [lite] tablerefresh: nothing scrolled
+PASS  [lite] tablerefresh: Back: the project page again
+PASS  [lite] tablerefresh: Forward: the lab with Experience open
+PASS  [lite] tablerefresh: Forward: nothing scrolled
+PASS  [lite] armat: header Experience href is /lab-v2?station=experience&render=lite
+PASS  [lite] armat: lands on the lab with Experience open
+PASS  [lite] armat: render mode kept (Static Lite, no camera)
+PASS  [lite] armat: Lab is the active header entry
+PASS  [lite] armat: nothing scrolled
+PASS  [lite] armat: Back: the project page again
+PASS  [lite] armat: Forward: the lab with Experience open
+PASS  [lite] armat: Forward: nothing scrolled
+PASS  [lite] aziz: header Experience href is /lab-v2?station=experience&render=lite
+PASS  [lite] aziz: lands on the lab with Experience open
+PASS  [lite] aziz: render mode kept (Static Lite, no camera)
+PASS  [lite] aziz: Lab is the active header entry
+PASS  [lite] aziz: nothing scrolled
+PASS  [lite] aziz: Back: the project page again
+PASS  [lite] aziz: Forward: the lab with Experience open
+PASS  [lite] aziz: Forward: nothing scrolled
+PASS  [lite] Ctrl+click: this tab unchanged (no selection, same URL, no entry)
+PASS  [lite] Ctrl+click: a new tab opens /lab-v2?station=experience&render=lite
+PASS  [lite] console: no errors, warnings or hydration messages
+
+86 of 86 pass

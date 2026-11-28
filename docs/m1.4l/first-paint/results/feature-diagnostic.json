@@ -1,0 +1,275 @@
+{
+ "base": "http://localhost:3100",
+ "results": [
+  {
+   "route": "project",
+   "variant": "baseline",
+   "trial": 0,
+   "fcp": 484
+  },
+  {
+   "route": "project",
+   "variant": "baseline",
+   "trial": 1,
+   "fcp": 536
+  },
+  {
+   "route": "project",
+   "variant": "baseline",
+   "trial": 2,
+   "fcp": 464
+  },
+  {
+   "route": "project",
+   "variant": "no-images",
+   "trial": 0,
+   "fcp": 332
+  },
+  {
+   "route": "project",
+   "variant": "no-images",
+   "trial": 1,
+   "fcp": 300
+  },
+  {
+   "route": "project",
+   "variant": "no-images",
+   "trial": 2,
+   "fcp": 284
+  },
+  {
+   "route": "project",
+   "variant": "no-filters-shadows",
+   "trial": 0,
+   "fcp": 408
+  },
+  {
+   "route": "project",
+   "variant": "no-filters-shadows",
+   "trial": 1,
+   "fcp": 916
+  },
+  {
+   "route": "project",
+   "variant": "no-filters-shadows",
+   "trial": 2,
+   "fcp": 696
+  },
+  {
+   "route": "project",
+   "variant": "no-blend-masks",
+   "trial": 0,
+   "fcp": 452
+  },
+  {
+   "route": "project",
+   "variant": "no-blend-masks",
+   "trial": 1,
+   "fcp": 548
+  },
+  {
+   "route": "project",
+   "variant": "no-blend-masks",
+   "trial": 2,
+   "fcp": 500
+  },
+  {
+   "route": "project",
+   "variant": "no-gradients",
+   "trial": 0,
+   "fcp": 684
+  },
+  {
+   "route": "project",
+   "variant": "no-gradients",
+   "trial": 1,
+   "fcp": 300
+  },
+  {
+   "route": "project",
+   "variant": "no-gradients",
+   "trial": 2,
+   "fcp": 284
+  },
+  {
+   "route": "lite",
+   "variant": "baseline",
+   "trial": 0,
+   "fcp": 900
+  },
+  {
+   "route": "lite",
+   "variant": "baseline",
+   "trial": 1,
+   "fcp": 880
+  },
+  {
+   "route": "lite",
+   "variant": "baseline",
+   "trial": 2,
+   "fcp": 916
+  },
+  {
+   "route": "lite",
+   "variant": "no-images",
+   "trial": 0,
+   "fcp": 500
+  },
+  {
+   "route": "lite",
+   "variant": "no-images",
+   "trial": 1,
+   "fcp": 548
+  },
+  {
+   "route": "lite",
+   "variant": "no-images",
+   "trial": 2,
+   "fcp": 512
+  },
+  {
+   "route": "lite",
+   "variant": "no-filters-shadows",
+   "trial": 0,
+   "fcp": 680
+  },
+  {
+   "route": "lite",
+   "variant": "no-filters-shadows",
+   "trial": 1,
+   "fcp": 348
+  },
+  {
+   "route": "lite",
+   "variant": "no-filters-shadows",
+   "trial": 2,
+   "fcp": 480
+  },
+  {
+   "route": "lite",
+   "variant": "no-blend-masks",
+   "trial": 0,
+   "fcp": 564
+  },
+  {
+   "route": "lite",
+   "variant": "no-blend-masks",
+   "trial": 1,
+   "fcp": 880
+  },
+  {
+   "route": "lite",
+   "variant": "no-blend-masks",
+   "trial": 2,
+   "fcp": 684
+  },
+  {
+   "route": "lite",
+   "variant": "no-gradients",
+   "trial": 0,
+   "fcp": 640
+  },
+  {
+   "route": "lite",
+   "variant": "no-gradients",
+   "trial": 1,
+   "fcp": 548
+  },
+  {
+   "route": "lite",
+   "variant": "no-gradients",
+   "trial": 2,
+   "fcp": 624
+  },
+  {
+   "route": "cinematic",
+   "variant": "baseline",
+   "trial": 0,
+   "fcp": 712
+  },
+  {
+   "route": "cinematic",
+   "variant": "baseline",
+   "trial": 1,
+   "fcp": 776
+  },
+  {
+   "route": "cinematic",
+   "variant": "baseline",
+   "trial": 2,
+   "fcp": 848
+  },
+  {
+   "route": "cinematic",
+   "variant": "no-images",
+   "trial": 0,
+   "fcp": 516
+  },
+  {
+   "route": "cinematic",
+   "variant": "no-images",
+   "trial": 1,
+   "fcp": 632
+  },
+  {
+   "route": "cinematic",
+   "variant": "no-images",
+   "trial": 2,
+   "fcp": 616
+  },
+  {
+   "route": "cinematic",
+   "variant": "no-filters-shadows",
+   "trial": 0,
+   "fcp": 716
+  },
+  {
+   "route": "cinematic",
+   "variant": "no-filters-shadows",
+   "trial": 1,
+   "fcp": 664
+  },
+  {
+   "route": "cinematic",
+   "variant": "no-filters-shadows",
+   "trial": 2,
+   "fcp": 596
+  },
+  {
+   "route": "cinematic",
+   "variant": "no-blend-masks",
+   "trial": 0,
+   "fcp": 664
+  },
+  {
+   "route": "cinematic",
+   "variant": "no-blend-masks",
+   "trial": 1,
+   "fcp": 744
+  },
+  {
+   "route": "cinematic",
+   "variant": "no-blend-masks",
+   "trial": 2,
+   "fcp": 656
+  },
+  {
+   "route": "cinematic",
+   "variant": "no-gradients",
+   "trial": 0,
+   "fcp": 1180
+  },
+  {
+   "route": "cinematic",
+   "variant": "no-gradients",
+   "trial": 1,
+   "fcp": 700
+  },
+  {
+   "route": "cinematic",
+   "variant": "no-gradients",
+   "trial": 2,
+   "fcp": 516
+  }
+ ]
+}

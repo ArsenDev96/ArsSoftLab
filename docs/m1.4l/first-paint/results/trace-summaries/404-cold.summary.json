@@ -1,0 +1,143 @@
+{
+ "route": "/m14q-not-a-page",
+ "cond": "cold",
+ "milestones": {
+  "fcp": 218.5,
+  "firstPaintEvent": 218.5,
+  "responseStart": 7.1,
+  "domContentLoaded": 0.1,
+  "load": 60.6,
+  "lcpCandidates": [
+   218.5
+  ]
+ },
+ "pipeline": {
+  "firstBeginMainThreadFrame": 18.8,
+  "firstCommit": 29.7,
+  "firstActivate": 30.8,
+  "firstDrawFrame": 31.1,
+  "commitsBeforeFcp": 5,
+  "rasterTasksBeforeFcp": 1,
+  "rasterMsBeforeFcp": 0,
+  "imageDecodeTasksBeforeFcp": 0,
+  "imageDecodeMsBeforeFcp": 0,
+  "decodeImageMsBeforeFcp": 0
+ },
+ "busyBeforeFcp": [
+  [
+   "GPU Process/GpuVSyncThread",
+   437
+  ],
+  [
+   "GPU Process/CrGpuMain",
+   413
+  ],
+  [
+   "GPU Process/ThreadPoolForegroundWorker",
+   169
+  ],
+  [
+   "Renderer/CrRendererMain (page renderer)",
+   134
+  ],
+  [
+   "Browser/CrBrowserMain",
+   60
+  ],
+  [
+   "Renderer/ThreadPoolForegroundWorker (page renderer)",
+   20
+  ],
+  [
+   "Renderer/Compositor (page renderer)",
+   13
+  ],
+  [
+   "Browser/ThreadPoolForegroundWorker",
+   12
+  ],
+  [
+   "GPU Process/VizCompositorThread",
+   5
+  ],
+  [
+   "Browser/Chrome_IOThread",
+   3
+  ],
+  [
+   "Renderer/Chrome_ChildIOThread (page renderer)",
+   2
+  ],
+  [
+   "Browser/Chrome_DevToolsHandlerThread",
+   2
+  ],
+  [
+   "Renderer/PerfettoTrace (page renderer)",
+   1
+  ],
+  [
+   "Browser/ThreadPoolSingleThreadSharedForeground",
+   1
+  ],
+  [
+   "GPU Process/Chrome_ChildIOThread",
+   0
+  ]
+ ],
+ "selfBeforeFcp": [
+  [
+   "GPU Process/GpuVSyncThread :: ThreadControllerImpl::RunTask",
+   216.1
+  ],
+  [
+   "GPU Process/CrGpuMain :: RasterDecoderImpl::DoEndRasterCHROMIUM::Flush",
+   181.8
+  ],
+  [
+   "GPU Process/ThreadPoolForegroundWorker :: DawnPlatformImpl::RunWorkerTask",
+   168.9
+  ],
+  [
+   "Renderer/CrRendererMain (page renderer) :: RunMicrotasks",
+   26.3
+  ],
+  [
+   "Renderer/ThreadPoolForegroundWorker (page renderer) :: v8.parseOnBackgroundParsing",
+   13
+  ],
+  [
+   "Renderer/CrRendererMain (page renderer) :: FunctionCall",
+   12.7
+  ],
+  [
+   "Browser/ThreadPoolForegroundWorker :: ThreadPool_RunTask",
+   9.5
+  ],
+  [
+   "Renderer/CrRendererMain (page renderer) :: LocalFrameView::performLayout",
+   9.1
+  ],
+  [
+   "Browser/CrBrowserMain :: Receive mojo message",
+   5.2
+  ],
+  [
+   "Browser/CrBrowserMain :: ThreadControllerImpl::RunTask",
+   4.7
+  ],
+  [
+   "Renderer/Compositor (page renderer) :: CommandBufferProxyImpl::Initialize",
+   4.3
+  ],
+  [
+   "Renderer/CrRendererMain (page renderer) :: ThreadControllerImpl::RunTask",
+   3.5
+  ],
+  [
+   "Browser/Chrome_IOThread :: IOHandler::OnIOCompleted",
+   3.1
+  ]
+ ],
+ "shots": 2
+}

@@ -1,0 +1,11 @@
+# M1.4R.3 final production build (production-only rule) vs the M1.4R.2 baseline capture
+home-1648            fingerprint identical (598 el)  pixels: max 0 over2 0 over12 0
+home-1920            fingerprint identical (598 el)  pixels: max 0 over2 0 over12 0
+home-exp-1648        fingerprint identical (598 el)  pixels: max 0 over2 0 over12 0
+v2-full-1648         fingerprint identical (1084 el)  pixels: max 0 over2 0 over12 0
+v2-full-1920         fingerprint identical (1084 el)  pixels: max 0 over2 0 over12 0
+v2-full-exp-1648     fingerprint identical (1084 el)  pixels: max 9 over2 303 over12 0
+v2-lite-1648         fingerprint identical (357 el)  pixels: max 0 over2 0 over12 0
+v2-lite-exp-1648     fingerprint identical (357 el)  pixels: max 0 over2 0 over12 0
+v2-mobile-390        fingerprint identical (1084 el)  pixels: max 1 over2 0 over12 0
+v2-mobile-exp-390    fingerprint identical (1084 el)  pixels: max 1 over2 0 over12 0

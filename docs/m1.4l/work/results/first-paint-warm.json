@@ -1,0 +1,8134 @@
+{
+ "plan": "warm",
+ "base": "http://localhost:3014",
+ "n": 7,
+ "viewport": "1648x928@1",
+ "startedAt": "2026-11-28T10:07:17.219Z",
+ "chrome": "Chrome/158.0.8127.88",
+ "gpu": {
+  "devices": [
+   "NVIDIA GeForce RTX 4060",
+   "Microsoft Basic Render Driver"
+  ],
+  "compositing": "enabled",
+  "rasterization": "enabled"
+ },
+ "variant": {
+  "extraFlags": "",
+  "persistentProfile": false
+ },
+ "runs": {
+  "home": {
+   "warm-cache": [
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.6,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.7,
+      "ttfb": 26.4,
+      "responseEnd": 42.1,
+      "domInteractive": 68.3,
+      "dcl": 68.4,
+      "load": 470,
+      "htmlBytes": 36108,
+      "htmlBody": 324315,
+      "serverTiming": []
+     },
+     "fp": 180,
+     "fcp": 180,
+     "lcp": 180,
+     "lcpEl": "SPAN.font-medium",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       180,
+       "SPAN.font-medium",
+       18260
+      ]
+     ],
+     "firstRaf": 94.6,
+     "gateStyleAt": 320.3,
+     "sceneFirstVisible": 362.9,
+     "sceneFullyVisible": 596.2,
+     "litePlateDrawnAt": null,
+     "longTasks": [
+      [
+       95,
+       57
+      ]
+     ],
+     "resources": [
+      {
+       "type": "link",
+       "name": "/_next/static/media/c0680f1bdb3a2e90-s.p.1gsd1jahc5dg_.woff2",
+       "start": 35.5,
+       "reqStart": 37.3,
+       "respStart": 43.7,
+       "end": 45,
+       "bytes": 0,
+       "body": 32228,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/lab-plate.webp",
+       "start": 35.9,
+       "reqStart": 44.2,
+       "respStart": 46.1,
+       "end": 52.9,
+       "bytes": 300,
+       "body": 364888,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/layers/engineering-backdrop.webp",
+       "start": 36.1,
+       "reqStart": 49.6,
+       "respStart": 51.4,
+       "end": 52.4,
+       "bytes": 300,
+       "body": 50914,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/layers/engineering-shadow.webp",
+       "start": 36.1,
+       "reqStart": 50.5,
+       "respStart": 51.9,
+       "end": 56.9,
+       "bytes": 300,
+       "body": 2484,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/layers/engineering.webp",
+       "start": 36.2,
+       "reqStart": 50.8,
+       "respStart": 51.9,
+       "end": 57.1,
+       "bytes": 300,
+       "body": 57948,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/power/unpowered-lift.png",
+       "start": 36.3,
+       "reqStart": 51.2,
+       "respStart": 51.9,
+       "end": 57.3,
+       "bytes": 300,
+       "body": 29144,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/power/light-lift.png",
+       "start": 36.3,
+       "reqStart": 58.7,
+       "respStart": 59.5,
+       "end": 61.5,
+       "bytes": 300,
+       "body": 8459,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/activation/engineering.png",
+       "start": 36.3,
+       "reqStart": 60.9,
+       "respStart": 61.8,
+       "end": 63.1,
+       "bytes": 300,
+       "body": 29912,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/layers/playground-backdrop.png",
+       "start": 36.4,
+       "reqStart": 60.9,
+       "respStart": 62.1,
+       "end": 64.3,
+       "bytes": 300,
+       "body": 119249,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/layers/playground-shadow.png",
+       "start": 36.5,
+       "reqStart": 61,
+       "respStart": 62.2,
+       "end": 63.7,
+       "bytes": 300,
+       "body": 9530,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/power/unpowered.png",
+       "start": 38.5,
+       "reqStart": 44.8,
+       "respStart": 50.4,
+       "end": 52.7,
+       "bytes": 300,
+       "body": 113064,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/layers/playground-shadow-soft.png",
+       "start": 38.5,
+       "reqStart": 61.3,
+       "respStart": 62.4,
+       "end": 63.9,
+       "bytes": 300,
+       "body": 12008,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/layers/playground-gap.png",
+       "start": 38.6,
+       "reqStart": 61.4,
+       "respStart": 62.8,
+       "end": 64.5,
+       "bytes": 300,
+       "body": 12118,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/layers/playground.png",
+       "start": 38.6,
+       "reqStart": 63.4,
+       "respStart": 65.4,
+       "end": 68.5,
+       "bytes": 300,
+       "body": 133737,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/activation/playground.png",
+       "start": 38.6,
+       "reqStart": 66,
+       "respStart": 66.7,
+       "end": 68.2,
+       "bytes": 300,
+       "body": 21537,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/activation/playground-line-dim-a.png",
+       "start": 38.7,
+       "reqStart": 67.4,
+       "respStart": 68.5,
+       "end": 70.2,
+       "bytes": 300,
+       "body": 6830,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/activation/playground-line-dim-b.png",
+       "start": 38.7,
+       "reqStart": 67.5,
+       "respStart": 68.7,
+       "end": 70.3,
+       "bytes": 300,
+       "body": 12926,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/activation/lines/educational-0-dim.png",
+       "start": 38.8,
+       "reqStart": 67.5,
+       "respStart": 68.7,
+       "end": 70.5,
+       "bytes": 300,
+       "body": 5249,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/activation/lines/engineering-0-dim.png",
+       "start": 38.8,
+       "reqStart": 67.7,
+       "respStart": 68.8,
+       "end": 70.7,
+       "bytes": 300,
+       "body": 1262,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/activation/lines/engineering-1-dim.png",
+       "start": 38.8,
+       "reqStart": 70.9,
+       "respStart": 73.9,
+       "end": 76,
+       "bytes": 300,
+       "body": 7354,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/_next/static/chunks/2kafo_um2qs4h.css",
+       "start": 38.9,
+       "reqStart": 39.3,
+       "respStart": 44.2,
+       "end": 45.4,
+       "bytes": 0,
+       "body": 51336,
+       "blocking": "blocking"
+      },
+      {
+       "type": "link",
+       "name": "/_next/static/chunks/1pcw6gskne7pf.js",
+       "start": 38.9,
+       "reqStart": 68.7,
+       "respStart": 70.4,
+       "end": 72.7,
+       "bytes": 0,
+       "body": 5600,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/1wnov70f88xjy.js",
+       "start": 39,
+       "reqStart": 71.1,
+       "respStart": 74.4,
+       "end": 74.9,
+       "bytes": 0,
+       "body": 29127,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/turbopack-2u1d16houkiyo.js",
+       "start": 39,
+       "reqStart": 71.4,
+       "respStart": 74.8,
+       "end": 76.2,
+       "bytes": 0,
+       "body": 9974,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/0c1ad7rcpjghx.js",
+       "start": 39,
+       "reqStart": 71.4,
+       "respStart": 74.8,
+       "end": 77.1,
+       "bytes": 0,
+       "body": 169437,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/092r-mewpaf3q.js",
+       "start": 39,
+       "reqStart": 71.2,
+       "respStart": 74.4,
+       "end": 77.6,
+       "bytes": 0,
+       "body": 229052,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/3qfy96eoyh-ek.js",
+       "start": 39.1,
+       "reqStart": 73,
+       "respStart": 75.7,
+       "end": 76.8,
+       "bytes": 0,
+       "body": 13994,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/3gickv_6i64jl.js",
+       "start": 39.1,
+       "reqStart": 75.6,
+       "respStart": 77.2,
+       "end": 77.8,
+       "bytes": 0,
+       "body": 27417,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/0v65o2h_z1ytx.js",
+       "start": 39.2,
+       "reqStart": 76.5,
+       "respStart": 77.7,
+       "end": 79.2,
+       "bytes": 0,
+       "body": 105666,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/activation/lines/creative-0-dim.png",
+       "start": 39.3,
+       "reqStart": 78.1,
+       "respStart": 78.9,
+       "end": 80.4,
+       "bytes": 300,
+       "body": 6114,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/activation/lines/creative-1-dim.png",
+       "start": 39.3,
+       "reqStart": 78.8,
+       "respStart": 79.8,
+       "end": 81.2,
+       "bytes": 300,
+       "body": 5091,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/activation/lines/creative-2-dim.png",
+       "start": 39.3,
+       "reqStart": 78.8,
+       "respStart": 80.2,
+       "end": 81.4,
+       "bytes": 300,
+       "body": 5874,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/activation/lines/experience-0-dim.png",
+       "start": 39.4,
+       "reqStart": 79.1,
+       "respStart": 80.5,
+       "end": 81.5,
+       "bytes": 300,
+       "body": 6444,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/activation/lines/experience-1-dim.png",
+       "start": 39.5,
+       "reqStart": 79.4,
+       "respStart": 81.3,
+       "end": 84,
+       "bytes": 300,
+       "body": 5104,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/activation/lines/experience-2-dim.png",
+       "start": 39.5,
+       "reqStart": 81,
+       "respStart": 81.8,
+       "end": 84.2,
+       "bytes": 300,
+       "body": 6475,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/activation/educational.png",
+       "start": 39.5,
+       "reqStart": 82,
+       "respStart": 83.4,
+       "end": 90.3,
+       "bytes": 300,
+       "body": 46817,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/activation/creative.png",
+       "start": 39.7,
+       "reqStart": 84.4,
+       "respStart": 86.8,
+       "end": 95.4,
+       "bytes": 300,
+       "body": 30299,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/activation/experience.png",
+       "start": 39.7,
+       "reqStart": 84.6,
+       "respStart": 87,
+       "end": 95.5,
+       "bytes": 300,
+       "body": 18315,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/activation/core.png",
+       "start": 39.7,
+       "reqStart": 84.8,
+       "respStart": 87.1,
+       "end": 95.6,
+       "bytes": 300,
+       "body": 20518,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/engineering-scan.png",
+       "start": 75.5,
+       "reqStart": 91.6,
+       "respStart": 96,
+       "end": 107.3,
+       "bytes": 300,
+       "body": 18333,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/playground-route-a-glow.png",
+       "start": 76.6,
+       "reqStart": 96.2,
+       "respStart": 103.4,
+       "end": 107.6,
+       "bytes": 300,
+       "body": 8683,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/playground-route-a.png",
+       "start": 76.7,
+       "reqStart": 104.1,
+       "respStart": 104.8,
+       "end": 112.5,
+       "bytes": 300,
+       "body": 6605,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/playground-route-b-glow.png",
+       "start": 76.9,
+       "reqStart": 107.8,
+       "respStart": 109.6,
+       "end": 119.1,
+       "bytes": 300,
+       "body": 11012,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/playground-route-b.png",
+       "start": 77,
+       "reqStart": 137.3,
+       "respStart": 138,
+       "end": 138.5,
+       "bytes": 300,
+       "body": 6974,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/educational-0-glow.png",
+       "start": 77.1,
+       "reqStart": 155.5,
+       "respStart": 156.8,
+       "end": 157.5,
+       "bytes": 300,
+       "body": 775,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/educational-0.png",
+       "start": 77.2,
+       "reqStart": 185.3,
+       "respStart": 186.7,
+       "end": 187.1,
+       "bytes": 300,
+       "body": 423,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/engineering-0-glow.png",
+       "start": 77.4,
+       "reqStart": 195.1,
+       "respStart": 195.9,
+       "end": 196.8,
+       "bytes": 300,
+       "body": 2457,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/engineering-0.png",
+       "start": 77.4,
+       "reqStart": 203.2,
+       "respStart": 203.9,
+       "end": 204.4,
+       "bytes": 300,
+       "body": 588,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/engineering-1-glow.png",
+       "start": 77.6,
+       "reqStart": 212,
+       "respStart": 212.9,
+       "end": 213.7,
+       "bytes": 300,
+       "body": 3839,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/engineering-1.png",
+       "start": 77.6,
+       "reqStart": 224.5,
+       "respStart": 225.2,
+       "end": 225.6,
+       "bytes": 300,
+       "body": 986,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/creative-0-glow.png",
+       "start": 77.8,
+       "reqStart": 227.3,
+       "respStart": 229.1,
+       "end": 231,
+       "bytes": 300,
+       "body": 2688,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/creative-0.png",
+       "start": 77.8,
+       "reqStart": 228.2,
+       "respStart": 230,
+       "end": 231.5,
+       "bytes": 300,
+       "body": 732,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/creative-1-glow.png",
+       "start": 78,
+       "reqStart": 228.3,
+       "respStart": 230.2,
+       "end": 232.3,
+       "bytes": 300,
+       "body": 2536,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/creative-1.png",
+       "start": 78.1,
+       "reqStart": 234.4,
+       "respStart": 235.8,
+       "end": 236.6,
+       "bytes": 300,
+       "body": 655,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/creative-2-glow.png",
+       "start": 78.2,
+       "reqStart": 234.7,
+       "respStart": 235.9,
+       "end": 236.8,
+       "bytes": 300,
+       "body": 2473,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/creative-2.png",
+       "start": 78.3,
+       "reqStart": 234.8,
+       "respStart": 236.2,
+       "end": 237.1,
+       "bytes": 300,
+       "body": 691,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/experience-0-glow.png",
+       "start": 78.5,
+       "reqStart": 234.8,
+       "respStart": 237,
+       "end": 238.6,
+       "bytes": 300,
+       "body": 3129,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/experience-0.png",
+       "start": 78.5,
+       "reqStart": 235.7,
+       "respStart": 237,
+       "end": 238.9,
+       "bytes": 300,
+       "body": 802,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/experience-1-glow.png",
+       "start": 78.7,
+       "reqStart": 235.9,
+       "respStart": 237.2,
+       "end": 239.1,
+       "bytes": 300,
+       "body": 2700,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/experience-1.png",
+       "start": 78.8,
+       "reqStart": 238.8,
+       "respStart": 239.5,
+       "end": 241.9,
+       "bytes": 300,
+       "body": 713,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/experience-2-glow.png",
+       "start": 78.9,
+       "reqStart": 239.3,
+       "respStart": 239.8,
+       "end": 242.3,
+       "bytes": 300,
+       "body": 2548,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/experience-2.png",
+       "start": 79,
+       "reqStart": 239.4,
+       "respStart": 240.2,
+       "end": 242.4,
+       "bytes": 300,
+       "body": 737,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/power/light.png",
+       "start": 79.2,
+       "reqStart": 241.5,
+       "respStart": 242.6,
+       "end": 245.2,
+       "bytes": 300,
+       "body": 15985,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/creative-scan.png",
+       "start": 81.6,
+       "reqStart": 242.1,
+       "respStart": 242.9,
+       "end": 245.4,
+       "bytes": 300,
+       "body": 12213,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/experience-scan-glow.png",
+       "start": 81.8,
+       "reqStart": 242.2,
+       "respStart": 243,
+       "end": 245.9,
+       "bytes": 300,
+       "body": 14836,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/experience-scan.png",
+       "start": 82,
+       "reqStart": 245.6,
+       "respStart": 247.7,
+       "end": 248.5,
+       "bytes": 300,
+       "body": 13451,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/masks/orbit-glow.png",
+       "start": 82.2,
+       "reqStart": 245.7,
+       "respStart": 247.8,
+       "end": 248.8,
+       "bytes": 300,
+       "body": 20373,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/masks/orbit.png",
+       "start": 83.1,
+       "reqStart": 245.8,
+       "respStart": 248,
+       "end": 249,
+       "bytes": 300,
+       "body": 20383,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/educational-route-wide.png",
+       "start": 84,
+       "reqStart": 247.8,
+       "respStart": 248.7,
+       "end": 251.6,
+       "bytes": 300,
+       "body": 1140,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/educational-route-glow.png",
+       "start": 84.1,
+       "reqStart": 248.3,
+       "respStart": 250.2,
+       "end": 252.8,
+       "bytes": 300,
+       "body": 775,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/educational-route.png",
+       "start": 84.3,
+       "reqStart": 248.3,
+       "respStart": 250.3,
+       "end": 253.4,
+       "bytes": 300,
+       "body": 423,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/engineering-route-wide.png",
+       "start": 84.5,
+       "reqStart": 289.3,
+       "respStart": 290.4,
+       "end": 293.4,
+       "bytes": 300,
+       "body": 8050,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/engineering-route-glow.png",
+       "start": 84.6,
+       "reqStart": 304.3,
+       "respStart": 305.1,
+       "end": 305.6,
+       "bytes": 300,
+       "body": 5522,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/engineering-route.png",
+       "start": 84.6,
+       "reqStart": 311.1,
+       "respStart": 311.8,
+       "end": 312.3,
+       "bytes": 300,
+       "body": 1309,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/playground-route-wide.png",
+       "start": 85,
+       "reqStart": 320,
+       "respStart": 321.3,
+       "end": 322,
+       "bytes": 300,
+       "body": 17206,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/playground-route-glow.png",
+       "start": 85.1,
+       "reqStart": 327.6,
+       "respStart": 330.8,
+       "end": 333.2,
+       "bytes": 300,
+       "body": 13028,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/playground-route.png",
+       "start": 85.2,
+       "reqStart": 327.7,
+       "respStart": 331,
+       "end": 333.3,
+       "bytes": 300,
+       "body": 7333,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/creative-route-wide.png",
+       "start": 85.3,
+       "reqStart": 327.8,
+       "respStart": 331,
+       "end": 333.5,
+       "bytes": 300,
+       "body": 8283,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/creative-route-glow.png",
+       "start": 85.4,
+       "reqStart": 328.1,
+       "respStart": 331,
+       "end": 333.6,
+       "bytes": 300,
+       "body": 5851,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/creative-route.png",
+       "start": 85.5,
+       "reqStart": 328.2,
+       "respStart": 331,
+       "end": 333.7,
+       "bytes": 300,
+       "body": 1515,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/experience-route-wide.png",
+       "start": 85.6,
+       "reqStart": 344.6,
+       "respStart": 345.9,
+       "end": 347.3,
+       "bytes": 300,
+       "body": 8970,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/experience-route-glow.png",
+       "start": 85.7,
+       "reqStart": 388.3,
+       "respStart": 389.1,
+       "end": 389.7,
+       "bytes": 300,
+       "body": 6396,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/experience-route.png",
+       "start": 85.8,
+       "reqStart": 388.5,
+       "respStart": 389.2,
+       "end": 389.8,
+       "bytes": 300,
+       "body": 1658,
+       "blocking": "non-blocking"
+      }
+     ],
+     "fonts": [
+      "Outfit"
+     ],
+     "wallToLoad": 590
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.5,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1,
+      "ttfb": 11.6,
+      "responseEnd": 15.7,
+      "domInteractive": 39.9,
+      "dcl": 40,
+      "load": 121.6,
+      "htmlBytes": 36108,
+      "htmlBody": 324315,
+      "serverTiming": []
+     },
+     "fp": 116,
+     "fcp": 116,
+     "lcp": 116,
+     "lcpEl": "SPAN.font-medium",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       116,
+       "SPAN.font-medium",
+       18260
+      ]
+     ],
+     "firstRaf": 59.3,
+     "gateStyleAt": 116.2,
+     "sceneFirstVisible": 164.5,
+     "sceneFullyVisible": 397.9,
+     "litePlateDrawnAt": null,
+     "longTasks": [],
+     "fonts": [
+      "Outfit"
+     ],
+     "wallToLoad": 126,
+     "resourceCount": 83
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.4,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.1,
+      "ttfb": 11.1,
+      "responseEnd": 14.4,
+      "domInteractive": 34.4,
+      "dcl": 34.4,
+      "load": 116.3,
+      "htmlBytes": 36108,
+      "htmlBody": 324315,
+      "serverTiming": []
+     },
+     "fp": 216,
+     "fcp": 216,
+     "lcp": 216,
+     "lcpEl": "SPAN.font-medium",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       216,
+       "SPAN.font-medium",
+       18260
+      ]
+     ],
+     "firstRaf": 101.8,
+     "gateStyleAt": 107.8,
+     "sceneFirstVisible": 215.1,
+     "sceneFullyVisible": 448.4,
+     "litePlateDrawnAt": null,
+     "longTasks": [],
+     "fonts": [
+      "Outfit"
+     ],
+     "wallToLoad": 120,
+     "resourceCount": 83
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.5,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.4,
+      "ttfb": 11.8,
+      "responseEnd": 15.4,
+      "domInteractive": 39.8,
+      "dcl": 39.9,
+      "load": 101.5,
+      "htmlBytes": 36108,
+      "htmlBody": 324315,
+      "serverTiming": []
+     },
+     "fp": 184,
+     "fcp": 184,
+     "lcp": 184,
+     "lcpEl": "SPAN.font-medium",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       184,
+       "SPAN.font-medium",
+       18260
+      ]
+     ],
+     "firstRaf": 102,
+     "gateStyleAt": 111.9,
+     "sceneFirstVisible": 182.3,
+     "sceneFullyVisible": 415.9,
+     "litePlateDrawnAt": null,
+     "longTasks": [],
+     "fonts": [
+      "Outfit"
+     ],
+     "wallToLoad": 108,
+     "resourceCount": 83
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.5,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.2,
+      "ttfb": 11,
+      "responseEnd": 14.1,
+      "domInteractive": 35.5,
+      "dcl": 35.6,
+      "load": 125.4,
+      "htmlBytes": 36108,
+      "htmlBody": 324315,
+      "serverTiming": []
+     },
+     "fp": 200,
+     "fcp": 200,
+     "lcp": 252,
+     "lcpEl": "IMG.absolute.max-w-none.select-none",
+     "lcpUrl": "/scene/power/unpowered.png",
+     "lcpAll": [
+      [
+       200,
+       "SPAN.font-medium",
+       18260
+      ],
+      [
+       252,
+       "IMG.absolute.max-w-none.select-none",
+       19376
+      ]
+     ],
+     "firstRaf": 102.5,
+     "gateStyleAt": 117.1,
+     "sceneFirstVisible": 98.3,
+     "sceneFullyVisible": 98.3,
+     "litePlateDrawnAt": null,
+     "longTasks": [],
+     "fonts": [
+      "Outfit"
+     ],
+     "wallToLoad": 129,
+     "resourceCount": 83
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.5,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.1,
+      "ttfb": 13.1,
+      "responseEnd": 16.8,
+      "domInteractive": 37.3,
+      "dcl": 37.4,
+      "load": 70.5,
+      "htmlBytes": 36108,
+      "htmlBody": 324315,
+      "serverTiming": []
+     },
+     "fp": 168,
+     "fcp": 168,
+     "lcp": 168,
+     "lcpEl": "SPAN.font-medium",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       168,
+       "SPAN.font-medium",
+       18260
+      ]
+     ],
+     "firstRaf": 97,
+     "gateStyleAt": 106.9,
+     "sceneFirstVisible": 181,
+     "sceneFullyVisible": 414.3,
+     "litePlateDrawnAt": null,
+     "longTasks": [],
+     "fonts": [
+      "Outfit"
+     ],
+     "wallToLoad": 100,
+     "resourceCount": 83
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.4,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1,
+      "ttfb": 11.4,
+      "responseEnd": 14.6,
+      "domInteractive": 33.5,
+      "dcl": 33.5,
+      "load": 66.1,
+      "htmlBytes": 36108,
+      "htmlBody": 324315,
+      "serverTiming": []
+     },
+     "fp": 168,
+     "fcp": 168,
+     "lcp": 168,
+     "lcpEl": "SPAN.font-medium",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       168,
+       "SPAN.font-medium",
+       18260
+      ]
+     ],
+     "firstRaf": 98,
+     "gateStyleAt": 104.1,
+     "sceneFirstVisible": 181.6,
+     "sceneFullyVisible": 415.1,
+     "litePlateDrawnAt": null,
+     "longTasks": [],
+     "fonts": [
+      "Outfit"
+     ],
+     "wallToLoad": 96,
+     "resourceCount": 83
+    }
+   ],
+   "warm-process": [
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.4,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.5,
+      "ttfb": 12.2,
+      "responseEnd": 15.8,
+      "domInteractive": 105.2,
+      "dcl": 105.2,
+      "load": 160.8,
+      "htmlBytes": 36108,
+      "htmlBody": 324315,
+      "serverTiming": []
+     },
+     "fp": 132,
+     "fcp": 132,
+     "lcp": 132,
+     "lcpEl": "SPAN.font-medium",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       132,
+       "SPAN.font-medium",
+       18260
+      ]
+     ],
+     "firstRaf": 44,
+     "gateStyleAt": 152.6,
+     "sceneFirstVisible": 196.8,
+     "sceneFullyVisible": 429.9,
+     "litePlateDrawnAt": null,
+     "longTasks": [
+      [
+       44,
+       54
+      ]
+     ],
+     "resources": [
+      {
+       "type": "link",
+       "name": "/_next/static/media/c0680f1bdb3a2e90-s.p.1gsd1jahc5dg_.woff2",
+       "start": 18.1,
+       "reqStart": 19.1,
+       "respStart": 20.5,
+       "end": 21.2,
+       "bytes": 32528,
+       "body": 32228,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/lab-plate.webp",
+       "start": 18.3,
+       "reqStart": 19.2,
+       "respStart": 21,
+       "end": 24.5,
+       "bytes": 365188,
+       "body": 364888,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/layers/engineering-shadow.webp",
+       "start": 18.4,
+       "reqStart": 30.6,
+       "respStart": 33.2,
+       "end": 33.7,
+       "bytes": 2784,
+       "body": 2484,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/layers/engineering-backdrop.webp",
+       "start": 18.4,
+       "reqStart": 30.4,
+       "respStart": 33.5,
+       "end": 35.2,
+       "bytes": 51214,
+       "body": 50914,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/power/unpowered-lift.png",
+       "start": 18.5,
+       "reqStart": 31,
+       "respStart": 33.6,
+       "end": 35.3,
+       "bytes": 29444,
+       "body": 29144,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/layers/engineering.webp",
+       "start": 18.5,
+       "reqStart": 30.8,
+       "respStart": 33.8,
+       "end": 35.6,
+       "bytes": 58248,
+       "body": 57948,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/power/light-lift.png",
+       "start": 18.6,
+       "reqStart": 31.1,
+       "respStart": 33.9,
+       "end": 35.8,
+       "bytes": 8759,
+       "body": 8459,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/activation/engineering.png",
+       "start": 18.6,
+       "reqStart": 31.1,
+       "respStart": 33.9,
+       "end": 35.9,
+       "bytes": 30212,
+       "body": 29912,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/layers/playground-backdrop.png",
+       "start": 18.6,
+       "reqStart": 34.8,
+       "respStart": 36.1,
+       "end": 45.3,
+       "bytes": 119549,
+       "body": 119249,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/layers/playground-shadow.png",
+       "start": 18.7,
+       "reqStart": 37,
+       "respStart": 37.9,
+       "end": 45.1,
+       "bytes": 9830,
+       "body": 9530,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/power/unpowered.png",
+       "start": 21.8,
+       "reqStart": 23.4,
+       "respStart": 24.7,
+       "end": 27.1,
+       "bytes": 113364,
+       "body": 113064,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/layers/playground-shadow-soft.png",
+       "start": 21.9,
+       "reqStart": 39.6,
+       "respStart": 40.6,
+       "end": 45.5,
+       "bytes": 12308,
+       "body": 12008,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/layers/playground-gap.png",
+       "start": 21.9,
+       "reqStart": 40.5,
+       "respStart": 41.5,
+       "end": 45.6,
+       "bytes": 12418,
+       "body": 12118,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/layers/playground.png",
+       "start": 21.9,
+       "reqStart": 41.5,
+       "respStart": 43.7,
+       "end": 47,
+       "bytes": 134037,
+       "body": 133737,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/activation/playground.png",
+       "start": 21.9,
+       "reqStart": 44.1,
+       "respStart": 45,
+       "end": 53.4,
+       "bytes": 21837,
+       "body": 21537,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/activation/playground-line-dim-a.png",
+       "start": 22,
+       "reqStart": 47.7,
+       "respStart": 48.8,
+       "end": 55.9,
+       "bytes": 7130,
+       "body": 6830,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/activation/playground-line-dim-b.png",
+       "start": 22,
+       "reqStart": 49.4,
+       "respStart": 51.1,
+       "end": 56,
+       "bytes": 13226,
+       "body": 12926,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/activation/lines/educational-0-dim.png",
+       "start": 22.1,
+       "reqStart": 50.7,
+       "respStart": 51.6,
+       "end": 56.1,
+       "bytes": 5549,
+       "body": 5249,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/activation/lines/engineering-0-dim.png",
+       "start": 22.1,
+       "reqStart": 51.7,
+       "respStart": 52.3,
+       "end": 55.5,
+       "bytes": 1562,
+       "body": 1262,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/activation/lines/engineering-1-dim.png",
+       "start": 22.1,
+       "reqStart": 53.6,
+       "respStart": 54.6,
+       "end": 60.1,
+       "bytes": 7654,
+       "body": 7354,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/_next/static/chunks/2kafo_um2qs4h.css",
+       "start": 22.2,
+       "reqStart": 22.9,
+       "respStart": 24.8,
+       "end": 26.7,
+       "bytes": 11187,
+       "body": 51336,
+       "blocking": "blocking"
+      },
+      {
+       "type": "link",
+       "name": "/_next/static/chunks/1pcw6gskne7pf.js",
+       "start": 22.3,
+       "reqStart": 55.7,
+       "respStart": 57.2,
+       "end": 61.3,
+       "bytes": 2330,
+       "body": 5600,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/1wnov70f88xjy.js",
+       "start": 22.3,
+       "reqStart": 57.2,
+       "respStart": 58.9,
+       "end": 61.6,
+       "bytes": 7950,
+       "body": 29127,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/092r-mewpaf3q.js",
+       "start": 22.3,
+       "reqStart": 58.3,
+       "respStart": 61.8,
+       "end": 69,
+       "bytes": 71981,
+       "body": 229052,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/0c1ad7rcpjghx.js",
+       "start": 22.3,
+       "reqStart": 59.8,
+       "respStart": 62.1,
+       "end": 68.1,
+       "bytes": 46746,
+       "body": 169437,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/turbopack-2u1d16houkiyo.js",
+       "start": 22.4,
+       "reqStart": 60,
+       "respStart": 61,
+       "end": 65.2,
+       "bytes": 4205,
+       "body": 9974,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/3qfy96eoyh-ek.js",
+       "start": 22.4,
+       "reqStart": 61.5,
+       "respStart": 62.6,
+       "end": 67.2,
+       "bytes": 3815,
+       "body": 13994,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/3gickv_6i64jl.js",
+       "start": 22.4,
+       "reqStart": 63,
+       "respStart": 65.8,
+       "end": 68.7,
+       "bytes": 10295,
+       "body": 27417,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/0v65o2h_z1ytx.js",
+       "start": 22.4,
+       "reqStart": 64.8,
+       "respStart": 67.6,
+       "end": 73.7,
+       "bytes": 38689,
+       "body": 105666,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/activation/lines/creative-0-dim.png",
+       "start": 22.5,
+       "reqStart": 67.4,
+       "respStart": 68.8,
+       "end": 74.6,
+       "bytes": 6414,
+       "body": 6114,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/activation/lines/creative-1-dim.png",
+       "start": 22.5,
+       "reqStart": 68.4,
+       "respStart": 69.1,
+       "end": 75.7,
+       "bytes": 5391,
+       "body": 5091,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/activation/lines/creative-2-dim.png",
+       "start": 22.5,
+       "reqStart": 70.6,
+       "respStart": 71.6,
+       "end": 76.6,
+       "bytes": 6174,
+       "body": 5874,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/activation/lines/experience-0-dim.png",
+       "start": 22.6,
+       "reqStart": 71.8,
+       "respStart": 72.6,
+       "end": 76.8,
+       "bytes": 6744,
+       "body": 6444,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/activation/lines/experience-1-dim.png",
+       "start": 22.6,
+       "reqStart": 74.1,
+       "respStart": 74.9,
+       "end": 80.7,
+       "bytes": 5404,
+       "body": 5104,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/activation/lines/experience-2-dim.png",
+       "start": 22.6,
+       "reqStart": 75.8,
+       "respStart": 76.6,
+       "end": 81.5,
+       "bytes": 6775,
+       "body": 6475,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/activation/educational.png",
+       "start": 22.7,
+       "reqStart": 76.8,
+       "respStart": 77.4,
+       "end": 81.9,
+       "bytes": 47117,
+       "body": 46817,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/activation/creative.png",
+       "start": 22.7,
+       "reqStart": 77.8,
+       "respStart": 78.4,
+       "end": 82.8,
+       "bytes": 30599,
+       "body": 30299,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/activation/experience.png",
+       "start": 22.7,
+       "reqStart": 78.8,
+       "respStart": 79.3,
+       "end": 83,
+       "bytes": 18615,
+       "body": 18315,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/activation/core.png",
+       "start": 22.8,
+       "reqStart": 80.3,
+       "respStart": 81.7,
+       "end": 88.1,
+       "bytes": 20818,
+       "body": 20518,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/engineering-scan.png",
+       "start": 49.5,
+       "reqStart": 83,
+       "respStart": 83.7,
+       "end": 88.5,
+       "bytes": 18633,
+       "body": 18333,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/playground-route-a-glow.png",
+       "start": 50.5,
+       "reqStart": 84.4,
+       "respStart": 85.1,
+       "end": 88.6,
+       "bytes": 8983,
+       "body": 8683,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/playground-route-a.png",
+       "start": 50.5,
+       "reqStart": 85.3,
+       "respStart": 86,
+       "end": 90.4,
+       "bytes": 6905,
+       "body": 6605,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/playground-route-b-glow.png",
+       "start": 50.8,
+       "reqStart": 86.3,
+       "respStart": 86.9,
+       "end": 90.7,
+       "bytes": 11312,
+       "body": 11012,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/playground-route-b.png",
+       "start": 50.8,
+       "reqStart": 87.8,
+       "respStart": 88.4,
+       "end": 94.7,
+       "bytes": 7274,
+       "body": 6974,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/educational-0-glow.png",
+       "start": 51.1,
+       "reqStart": 90.6,
+       "respStart": 91.2,
+       "end": 95,
+       "bytes": 1075,
+       "body": 775,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/educational-0.png",
+       "start": 51.1,
+       "reqStart": 91.5,
+       "respStart": 92,
+       "end": 95.1,
+       "bytes": 723,
+       "body": 423,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/engineering-0-glow.png",
+       "start": 51.3,
+       "reqStart": 92,
+       "respStart": 92.5,
+       "end": 95.1,
+       "bytes": 2757,
+       "body": 2457,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/engineering-0.png",
+       "start": 51.4,
+       "reqStart": 92.7,
+       "respStart": 93.1,
+       "end": 95.3,
+       "bytes": 888,
+       "body": 588,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/engineering-1-glow.png",
+       "start": 51.7,
+       "reqStart": 94.3,
+       "respStart": 95,
+       "end": 100.5,
+       "bytes": 4139,
+       "body": 3839,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/engineering-1.png",
+       "start": 51.7,
+       "reqStart": 118.3,
+       "respStart": 119.5,
+       "end": 123,
+       "bytes": 1286,
+       "body": 986,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/creative-0-glow.png",
+       "start": 51.9,
+       "reqStart": 118.8,
+       "respStart": 119.8,
+       "end": 123.1,
+       "bytes": 2988,
+       "body": 2688,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/creative-0.png",
+       "start": 52,
+       "reqStart": 119.8,
+       "respStart": 120.6,
+       "end": 123.2,
+       "bytes": 1032,
+       "body": 732,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/creative-1-glow.png",
+       "start": 52.2,
+       "reqStart": 120.6,
+       "respStart": 121.2,
+       "end": 123.3,
+       "bytes": 2836,
+       "body": 2536,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/creative-1.png",
+       "start": 52.2,
+       "reqStart": 122.2,
+       "respStart": 123.3,
+       "end": 129.1,
+       "bytes": 955,
+       "body": 655,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/creative-2-glow.png",
+       "start": 52.4,
+       "reqStart": 124.4,
+       "respStart": 125.1,
+       "end": 130.4,
+       "bytes": 2773,
+       "body": 2473,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/creative-2.png",
+       "start": 52.4,
+       "reqStart": 125.5,
+       "respStart": 126.2,
+       "end": 131.4,
+       "bytes": 991,
+       "body": 691,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/experience-0-glow.png",
+       "start": 52.7,
+       "reqStart": 127.2,
+       "respStart": 128.1,
+       "end": 131.7,
+       "bytes": 3429,
+       "body": 3129,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/experience-0.png",
+       "start": 52.8,
+       "reqStart": 128.3,
+       "respStart": 129,
+       "end": 132.1,
+       "bytes": 1102,
+       "body": 802,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/experience-1-glow.png",
+       "start": 52.9,
+       "reqStart": 129.4,
+       "respStart": 130.6,
+       "end": 134.8,
+       "bytes": 3000,
+       "body": 2700,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/experience-1.png",
+       "start": 53,
+       "reqStart": 132.4,
+       "respStart": 133.5,
+       "end": 135.2,
+       "bytes": 1013,
+       "body": 713,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/experience-2-glow.png",
+       "start": 53.2,
+       "reqStart": 133.3,
+       "respStart": 134.1,
+       "end": 135.3,
+       "bytes": 2848,
+       "body": 2548,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/experience-2.png",
+       "start": 53.3,
+       "reqStart": 133.6,
+       "respStart": 134.3,
+       "end": 136.3,
+       "bytes": 1037,
+       "body": 737,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/power/light.png",
+       "start": 53.5,
+       "reqStart": 101.7,
+       "respStart": 103.3,
+       "end": 106.6,
+       "bytes": 16285,
+       "body": 15985,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/creative-scan.png",
+       "start": 55,
+       "reqStart": 133.8,
+       "respStart": 134.8,
+       "end": 139.6,
+       "bytes": 12513,
+       "body": 12213,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/experience-scan-glow.png",
+       "start": 55.2,
+       "reqStart": 134.7,
+       "respStart": 135.4,
+       "end": 139.8,
+       "bytes": 15136,
+       "body": 14836,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/experience-scan.png",
+       "start": 55.4,
+       "reqStart": 136.9,
+       "respStart": 137.6,
+       "end": 141,
+       "bytes": 13751,
+       "body": 13451,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/masks/orbit-glow.png",
+       "start": 55.6,
+       "reqStart": 95.2,
+       "respStart": 96.1,
+       "end": 101.2,
+       "bytes": 20673,
+       "body": 20373,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/masks/orbit.png",
+       "start": 56.4,
+       "reqStart": 114.8,
+       "respStart": 117,
+       "end": 123.4,
+       "bytes": 20683,
+       "body": 20383,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/educational-route-wide.png",
+       "start": 57.2,
+       "reqStart": 95.5,
+       "respStart": 96.7,
+       "end": 100.9,
+       "bytes": 1440,
+       "body": 1140,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/educational-route-glow.png",
+       "start": 57.4,
+       "reqStart": 95.5,
+       "respStart": 97,
+       "end": 101.1,
+       "bytes": 1075,
+       "body": 775,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/educational-route.png",
+       "start": 57.6,
+       "reqStart": 106.7,
+       "respStart": 108.1,
+       "end": 114.2,
+       "bytes": 723,
+       "body": 423,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/engineering-route-wide.png",
+       "start": 57.7,
+       "reqStart": 106.9,
+       "respStart": 108.3,
+       "end": 114.6,
+       "bytes": 8350,
+       "body": 8050,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/engineering-route-glow.png",
+       "start": 57.8,
+       "reqStart": 101.5,
+       "respStart": 103,
+       "end": 106.4,
+       "bytes": 5822,
+       "body": 5522,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/engineering-route.png",
+       "start": 57.9,
+       "reqStart": 101.7,
+       "respStart": 103.4,
+       "end": 106.1,
+       "bytes": 1609,
+       "body": 1309,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/playground-route-wide.png",
+       "start": 58.1,
+       "reqStart": 101.4,
+       "respStart": 102.7,
+       "end": 106.3,
+       "bytes": 17506,
+       "body": 17206,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/playground-route-glow.png",
+       "start": 58.2,
+       "reqStart": 107,
+       "respStart": 108.4,
+       "end": 115.3,
+       "bytes": 13328,
+       "body": 13028,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/creative-route-wide.png",
+       "start": 58.3,
+       "reqStart": 106.8,
+       "respStart": 108.4,
+       "end": 115,
+       "bytes": 8583,
+       "body": 8283,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/playground-route.png",
+       "start": 58.3,
+       "reqStart": 107.1,
+       "respStart": 108.6,
+       "end": 115.5,
+       "bytes": 7633,
+       "body": 7333,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/creative-route-glow.png",
+       "start": 58.5,
+       "reqStart": 101.6,
+       "respStart": 103,
+       "end": 106.5,
+       "bytes": 6151,
+       "body": 5851,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/creative-route.png",
+       "start": 58.6,
+       "reqStart": 101.7,
+       "respStart": 103.1,
+       "end": 106,
+       "bytes": 1815,
+       "body": 1515,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/experience-route-wide.png",
+       "start": 58.7,
+       "reqStart": 95.4,
+       "respStart": 96.3,
+       "end": 101.3,
+       "bytes": 9270,
+       "body": 8970,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/experience-route-glow.png",
+       "start": 58.8,
+       "reqStart": 107,
+       "respStart": 108.7,
+       "end": 116.4,
+       "bytes": 6696,
+       "body": 6396,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/experience-route.png",
+       "start": 58.9,
+       "reqStart": 95.4,
+       "respStart": 96.5,
+       "end": 100.8,
+       "bytes": 1958,
+       "body": 1658,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "other",
+       "name": "/icon.svg?icon.1plqej6prq-qi.svg",
+       "start": 176.5,
+       "reqStart": 177,
+       "respStart": 179.1,
+       "end": 180,
+       "bytes": 838,
+       "body": 963,
+       "blocking": "non-blocking"
+      }
+     ],
+     "fonts": [
+      "Outfit"
+     ],
+     "wallToLoad": 165
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.6,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.6,
+      "ttfb": 18.8,
+      "responseEnd": 23.6,
+      "domInteractive": 56.1,
+      "dcl": 56.1,
+      "load": 213.9,
+      "htmlBytes": 36108,
+      "htmlBody": 324315,
+      "serverTiming": []
+     },
+     "fp": 168,
+     "fcp": 168,
+     "lcp": 168,
+     "lcpEl": "SPAN.font-medium",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       168,
+       "SPAN.font-medium",
+       18260
+      ]
+     ],
+     "firstRaf": 82.4,
+     "gateStyleAt": 203.3,
+     "sceneFirstVisible": 280.7,
+     "sceneFullyVisible": 514,
+     "litePlateDrawnAt": null,
+     "longTasks": [
+      [
+       82,
+       56
+      ]
+     ],
+     "fonts": [
+      "Outfit"
+     ],
+     "wallToLoad": 219,
+     "resourceCount": 84
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.5,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.5,
+      "ttfb": 15.3,
+      "responseEnd": 19.8,
+      "domInteractive": 97,
+      "dcl": 97,
+      "load": 152.1,
+      "htmlBytes": 36108,
+      "htmlBody": 324315,
+      "serverTiming": []
+     },
+     "fp": 120,
+     "fcp": 120,
+     "lcp": 120,
+     "lcpEl": "SPAN.font-medium",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       120,
+       "SPAN.font-medium",
+       18260
+      ]
+     ],
+     "firstRaf": 42.2,
+     "gateStyleAt": 142.4,
+     "sceneFirstVisible": 200.7,
+     "sceneFullyVisible": 434.3,
+     "litePlateDrawnAt": null,
+     "longTasks": [],
+     "fonts": [
+      "Outfit"
+     ],
+     "wallToLoad": 156,
+     "resourceCount": 84
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.6,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.3,
+      "ttfb": 15.3,
+      "responseEnd": 18.8,
+      "domInteractive": 99,
+      "dcl": 99,
+      "load": 156.2,
+      "htmlBytes": 36108,
+      "htmlBody": 324315,
+      "serverTiming": []
+     },
+     "fp": 120,
+     "fcp": 120,
+     "lcp": 120,
+     "lcpEl": "SPAN.font-medium",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       120,
+       "SPAN.font-medium",
+       18260
+      ]
+     ],
+     "firstRaf": 42.5,
+     "gateStyleAt": 147,
+     "sceneFirstVisible": 185.6,
+     "sceneFullyVisible": 418.7,
+     "litePlateDrawnAt": null,
+     "longTasks": [
+      [
+       42,
+       51
+      ]
+     ],
+     "fonts": [
+      "Outfit"
+     ],
+     "wallToLoad": 160,
+     "resourceCount": 84
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.4,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.3,
+      "ttfb": 16.3,
+      "responseEnd": 20.2,
+      "domInteractive": 118.5,
+      "dcl": 118.5,
+      "load": 209.4,
+      "htmlBytes": 36108,
+      "htmlBody": 324315,
+      "serverTiming": []
+     },
+     "fp": 144,
+     "fcp": 144,
+     "lcp": 144,
+     "lcpEl": "SPAN.font-medium",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       144,
+       "SPAN.font-medium",
+       18260
+      ]
+     ],
+     "firstRaf": 44,
+     "gateStyleAt": 190.4,
+     "sceneFirstVisible": 259.6,
+     "sceneFullyVisible": 492.8,
+     "litePlateDrawnAt": null,
+     "longTasks": [
+      [
+       44,
+       70
+      ]
+     ],
+     "fonts": [
+      "Outfit"
+     ],
+     "wallToLoad": 20,
+     "resourceCount": 84
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.5,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.6,
+      "ttfb": 14.4,
+      "responseEnd": 17.8,
+      "domInteractive": 42.1,
+      "dcl": 42.2,
+      "load": 161.4,
+      "htmlBytes": 36108,
+      "htmlBody": 324315,
+      "serverTiming": []
+     },
+     "fp": 148,
+     "fcp": 148,
+     "lcp": 296,
+     "lcpEl": "IMG.absolute.max-w-none.select-none",
+     "lcpUrl": "/scene/power/unpowered.png",
+     "lcpAll": [
+      [
+       148,
+       "SPAN.font-medium",
+       18260
+      ],
+      [
+       296,
+       "IMG.absolute.max-w-none.select-none",
+       19376
+      ]
+     ],
+     "firstRaf": 100.3,
+     "gateStyleAt": 151.4,
+     "sceneFirstVisible": 110.9,
+     "sceneFullyVisible": 110.9,
+     "litePlateDrawnAt": null,
+     "longTasks": [],
+     "fonts": [
+      "Outfit"
+     ],
+     "wallToLoad": 166,
+     "resourceCount": 84
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.5,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.4,
+      "ttfb": 11,
+      "responseEnd": 14.2,
+      "domInteractive": 32.9,
+      "dcl": 33,
+      "load": 145.1,
+      "htmlBytes": 36108,
+      "htmlBody": 324315,
+      "serverTiming": []
+     },
+     "fp": 120,
+     "fcp": 120,
+     "lcp": 268,
+     "lcpEl": "IMG.absolute.max-w-none.select-none",
+     "lcpUrl": "/scene/power/unpowered.png",
+     "lcpAll": [
+      [
+       120,
+       "SPAN.font-medium",
+       18260
+      ],
+      [
+       268,
+       "IMG.absolute.max-w-none.select-none",
+       19376
+      ]
+     ],
+     "firstRaf": 78.1,
+     "gateStyleAt": 136.1,
+     "sceneFirstVisible": 101.4,
+     "sceneFullyVisible": 101.4,
+     "litePlateDrawnAt": null,
+     "longTasks": [],
+     "fonts": [
+      "Outfit"
+     ],
+     "wallToLoad": 148,
+     "resourceCount": 84
+    }
+   ]
+  },
+  "cinematic": {
+   "warm-cache": [
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.4,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.6,
+      "ttfb": 28.2,
+      "responseEnd": 37.4,
+      "domInteractive": 72.8,
+      "dcl": 72.9,
+      "load": 1449.5,
+      "htmlBytes": 81316,
+      "htmlBody": 698742,
+      "serverTiming": []
+     },
+     "fp": 136,
+     "fcp": 136,
+     "lcp": 136,
+     "lcpEl": "SPAN.font-medium",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       136,
+       "SPAN.font-medium",
+       18260
+      ]
+     ],
+     "firstRaf": 96.6,
+     "gateStyleAt": 1448.8,
+     "sceneFirstVisible": 1501.4,
+     "sceneFullyVisible": 1734.8,
+     "litePlateDrawnAt": null,
+     "longTasks": [],
+     "resources": [
+      {
+       "type": "link",
+       "name": "/_next/static/media/c0680f1bdb3a2e90-s.p.1gsd1jahc5dg_.woff2",
+       "start": 31.6,
+       "reqStart": 31.6,
+       "respStart": 31.6,
+       "end": 31.6,
+       "bytes": 0,
+       "body": 32228,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/activation/core.png",
+       "start": 31.7,
+       "reqStart": 32.4,
+       "respStart": 33.1,
+       "end": 33.8,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/v2/environment/lab-background.png",
+       "start": 32.7,
+       "reqStart": 34.1,
+       "respStart": 35.5,
+       "end": 36.1,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/v2/stations/playground.png",
+       "start": 32.8,
+       "reqStart": 39.9,
+       "respStart": 41.4,
+       "end": 41.9,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/v2/m14e1/playground-strip-off.png",
+       "start": 32.8,
+       "reqStart": 40,
+       "respStart": 41.6,
+       "end": 42.1,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/v2/m14h1/engineering-body.png",
+       "start": 32.9,
+       "reqStart": 40.1,
+       "respStart": 41.6,
+       "end": 42.2,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/v2/m14f1/engineering.png",
+       "start": 32.9,
+       "reqStart": 41.4,
+       "respStart": 42.4,
+       "end": 43.6,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/v2/m14h1/engineering-body-light.png",
+       "start": 33,
+       "reqStart": 42.3,
+       "respStart": 42.9,
+       "end": 47.4,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/v2/m14h1/engineering-chart-light.png",
+       "start": 33,
+       "reqStart": 42.7,
+       "respStart": 43.4,
+       "end": 47.6,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/_next/static/chunks/2kafo_um2qs4h.css",
+       "start": 33.1,
+       "reqStart": 33.1,
+       "respStart": 33.1,
+       "end": 33.1,
+       "bytes": 0,
+       "body": 51336,
+       "blocking": "blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/v2/m14e/hub.png",
+       "start": 33.1,
+       "reqStart": 49.8,
+       "respStart": 50.6,
+       "end": 51.8,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/v2/m14e/hub-light.png",
+       "start": 33.1,
+       "reqStart": 49.8,
+       "respStart": 50.7,
+       "end": 52.2,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/v2/m14f/creative.png",
+       "start": 33.1,
+       "reqStart": 49.9,
+       "respStart": 50.7,
+       "end": 52.6,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/_next/static/chunks/1pcw6gskne7pf.js",
+       "start": 33.2,
+       "reqStart": 33.2,
+       "respStart": 33.2,
+       "end": 33.2,
+       "bytes": 0,
+       "body": 5600,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/1wnov70f88xjy.js",
+       "start": 33.3,
+       "reqStart": 33.3,
+       "respStart": 33.3,
+       "end": 33.3,
+       "bytes": 0,
+       "body": 29127,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/092r-mewpaf3q.js",
+       "start": 33.3,
+       "reqStart": 33.3,
+       "respStart": 33.3,
+       "end": 33.3,
+       "bytes": 0,
+       "body": 229052,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/0c1ad7rcpjghx.js",
+       "start": 33.4,
+       "reqStart": 33.4,
+       "respStart": 33.4,
+       "end": 33.4,
+       "bytes": 0,
+       "body": 169437,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/turbopack-2u1d16houkiyo.js",
+       "start": 33.4,
+       "reqStart": 33.4,
+       "respStart": 33.4,
+       "end": 33.4,
+       "bytes": 0,
+       "body": 9974,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/3qfy96eoyh-ek.js",
+       "start": 33.4,
+       "reqStart": 33.4,
+       "respStart": 33.4,
+       "end": 33.4,
+       "bytes": 0,
+       "body": 13994,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/2vb0hl-tsp388.js",
+       "start": 33.4,
+       "reqStart": 33.4,
+       "respStart": 33.4,
+       "end": 33.4,
+       "bytes": 0,
+       "body": 9246,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/0v65o2h_z1ytx.js",
+       "start": 33.4,
+       "reqStart": 33.4,
+       "respStart": 33.4,
+       "end": 33.4,
+       "bytes": 0,
+       "body": 105666,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/3gickv_6i64jl.js",
+       "start": 33.5,
+       "reqStart": 33.5,
+       "respStart": 33.5,
+       "end": 33.5,
+       "bytes": 0,
+       "body": 27417,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/v2/m14e/fg-steam.png",
+       "start": 33.5,
+       "reqStart": 52.4,
+       "respStart": 53.1,
+       "end": 54,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/v2/m14g1/creative-light.png",
+       "start": 33.5,
+       "reqStart": 53,
+       "respStart": 53.5,
+       "end": 54.3,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/v2/m14f/experience.png",
+       "start": 33.5,
+       "reqStart": 53,
+       "respStart": 53.6,
+       "end": 54.4,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h4-floor-light.png",
+       "start": 33.6,
+       "reqStart": 35.4,
+       "respStart": 36.6,
+       "end": 37,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/v2/m14f/experience-light.png",
+       "start": 33.6,
+       "reqStart": 54.5,
+       "respStart": 55.1,
+       "end": 55.9,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h1-engineering-floor.png",
+       "start": 33.7,
+       "reqStart": 35.8,
+       "respStart": 37.1,
+       "end": 37.7,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h2-educational-floor.png",
+       "start": 33.7,
+       "reqStart": 54.6,
+       "respStart": 55.2,
+       "end": 56.2,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h2-educational-floor-cyan.png",
+       "start": 33.8,
+       "reqStart": 54.8,
+       "respStart": 55.3,
+       "end": 56.5,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14j3-creative-floor-rest.png",
+       "start": 33.8,
+       "reqStart": 56,
+       "respStart": 56.9,
+       "end": 59.3,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14j3-creative-floor-edge.png",
+       "start": 33.8,
+       "reqStart": 56.3,
+       "respStart": 56.9,
+       "end": 59.5,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h3-creative-floor-top.png",
+       "start": 33.9,
+       "reqStart": 56.7,
+       "respStart": 57.1,
+       "end": 59.5,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14j4-experience-floor-rest.png",
+       "start": 33.9,
+       "reqStart": 59.8,
+       "respStart": 60.4,
+       "end": 61.2,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14j4-experience-floor-lit-rest.png",
+       "start": 33.9,
+       "reqStart": 59.9,
+       "respStart": 60.5,
+       "end": 61.4,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14j4-experience-floor-edge.png",
+       "start": 34,
+       "reqStart": 59.9,
+       "respStart": 60.6,
+       "end": 61.6,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h4-experience-floor-top.png",
+       "start": 34,
+       "reqStart": 61.2,
+       "respStart": 61.7,
+       "end": 63.6,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14g1-playground-ring.png",
+       "start": 34,
+       "reqStart": 61.3,
+       "respStart": 61.8,
+       "end": 63.8,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14g1-playground-ring-lit.png",
+       "start": 34.1,
+       "reqStart": 61.7,
+       "respStart": 62.1,
+       "end": 64,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14g1-playground-occlusion.png",
+       "start": 34.1,
+       "reqStart": 64.1,
+       "respStart": 64.7,
+       "end": 66.4,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14g1-playground-reflection.png",
+       "start": 34.1,
+       "reqStart": 64.3,
+       "respStart": 64.9,
+       "end": 66.6,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14g1-playground-reflection-lit.png",
+       "start": 34.1,
+       "reqStart": 64.5,
+       "respStart": 65,
+       "end": 66.8,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14g-contact.png",
+       "start": 34.1,
+       "reqStart": 66.7,
+       "respStart": 67.1,
+       "end": 68.9,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h2-educational-body.png",
+       "start": 34.2,
+       "reqStart": 67,
+       "respStart": 67.4,
+       "end": 69.3,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h2-educational-globe.png",
+       "start": 34.2,
+       "reqStart": 67,
+       "respStart": 67.4,
+       "end": 69.6,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h2-educational-orbit.png",
+       "start": 34.2,
+       "reqStart": 69.8,
+       "respStart": 70.8,
+       "end": 71.9,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14f1-educational.png",
+       "start": 34.2,
+       "reqStart": 70.1,
+       "respStart": 71,
+       "end": 72.2,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14f1-educational-light.png",
+       "start": 34.3,
+       "reqStart": 70.2,
+       "respStart": 71.2,
+       "end": 72.5,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h2-educational-globe-light.png",
+       "start": 34.3,
+       "reqStart": 72.4,
+       "respStart": 73,
+       "end": 179.4,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h2-educational-orbit-light.png",
+       "start": 34.3,
+       "reqStart": 72.8,
+       "respStart": 73.5,
+       "end": 179.5,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h2-educational-strip-floor.png",
+       "start": 34.4,
+       "reqStart": 72.9,
+       "respStart": 73.6,
+       "end": 179.7,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h2-educational-strip-off.png",
+       "start": 42.1,
+       "reqStart": 180,
+       "respStart": 180.7,
+       "end": 208,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h2-educational-strip-light.png",
+       "start": 42.3,
+       "reqStart": 180.1,
+       "respStart": 180.8,
+       "end": 208.2,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h2-educational-base.png",
+       "start": 42.6,
+       "reqStart": 180.2,
+       "respStart": 180.9,
+       "end": 208.3,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h2-educational-flare.png",
+       "start": 42.7,
+       "reqStart": 1426.9,
+       "respStart": 1427.6,
+       "end": 1427.8,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h1-engineering-strip-floor.png",
+       "start": 43.5,
+       "reqStart": 1427,
+       "respStart": 1428,
+       "end": 1428.2,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h1-engineering-strip-off.png",
+       "start": 43.6,
+       "reqStart": 1427.1,
+       "respStart": 1428,
+       "end": 1428.4,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h1-engineering-strip-light.png",
+       "start": 43.8,
+       "reqStart": 1427.1,
+       "respStart": 1428,
+       "end": 1428.4,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h1-engineering-screen-bars.png",
+       "start": 44,
+       "reqStart": 1427.1,
+       "respStart": 1429.2,
+       "end": 1430.4,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h1-engineering-chart.png",
+       "start": 44.3,
+       "reqStart": 1427.1,
+       "respStart": 1429,
+       "end": 1430.2,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14j3-creative-fill.png",
+       "start": 45.1,
+       "reqStart": 1430.4,
+       "respStart": 1430.9,
+       "end": 1432,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14j3-creative-light-spill.png",
+       "start": 45.2,
+       "reqStart": 1430.6,
+       "respStart": 1431,
+       "end": 1432.2,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14j3-creative-light-edge.png",
+       "start": 45.3,
+       "reqStart": 1430.7,
+       "respStart": 1431.2,
+       "end": 1432.3,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h3-creative-strip-off.png",
+       "start": 45.6,
+       "reqStart": 1430.7,
+       "respStart": 1431.3,
+       "end": 1432.4,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14j3-creative-fill-off.png",
+       "start": 45.6,
+       "reqStart": 1432.6,
+       "respStart": 1433.1,
+       "end": 1435.4,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h3-creative-strip-light.png",
+       "start": 45.7,
+       "reqStart": 1432.6,
+       "respStart": 1433.1,
+       "end": 1435.7,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h3-creative-standby.png",
+       "start": 45.9,
+       "reqStart": 1435.9,
+       "respStart": 1436.8,
+       "end": 1437.2,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h3-creative-warm.png",
+       "start": 46,
+       "reqStart": 1436.2,
+       "respStart": 1436.9,
+       "end": 1437.4,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h3-creative-highlights.png",
+       "start": 46,
+       "reqStart": 1436.3,
+       "respStart": 1437.1,
+       "end": 1437.9,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14j4-experience-light-spill.png",
+       "start": 46.3,
+       "reqStart": 1436.3,
+       "respStart": 1437.6,
+       "end": 1438.2,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14j4-experience-light-edge.png",
+       "start": 46.5,
+       "reqStart": 1437.6,
+       "respStart": 1438.2,
+       "end": 1440.2,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h4-experience-strip-off.png",
+       "start": 46.7,
+       "reqStart": 1438.1,
+       "respStart": 1438.3,
+       "end": 1441,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h4-experience-strip-light.png",
+       "start": 46.8,
+       "reqStart": 1441.4,
+       "respStart": 1442,
+       "end": 1442.6,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h4-experience-standby.png",
+       "start": 46.9,
+       "reqStart": 1441.5,
+       "respStart": 1442.1,
+       "end": 1442.8,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14j3-creative-steam.png",
+       "start": 47,
+       "reqStart": 1441.5,
+       "respStart": 1442.2,
+       "end": 1442.9,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14j3-creative-books.png",
+       "start": 47.1,
+       "reqStart": 1441.8,
+       "respStart": 1442.4,
+       "end": 1443,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14e-fg-table.png",
+       "start": 47.1,
+       "reqStart": 1442.8,
+       "respStart": 1443.3,
+       "end": 1445.9,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14e-fg-plant.png",
+       "start": 47.2,
+       "reqStart": 1443.2,
+       "respStart": 1443.5,
+       "end": 1446.2,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/v2/m14g/floor-mask.png",
+       "start": 74.8,
+       "reqStart": 418,
+       "respStart": 419,
+       "end": 615.6,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/v2/m14h2/educational-wave.png",
+       "start": 77,
+       "reqStart": 208.5,
+       "respStart": 209.3,
+       "end": 507.3,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/v2/m14h2/educational-crest.png",
+       "start": 78.6,
+       "reqStart": 208.6,
+       "respStart": 209.4,
+       "end": 507.6,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/v2/m14h2/educational-light.png",
+       "start": 78.7,
+       "reqStart": 1270.3,
+       "respStart": 1271.2,
+       "end": 1423.2,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/v2/m14h2/educational-ring-core.png",
+       "start": 78.8,
+       "reqStart": 507.8,
+       "respStart": 508.6,
+       "end": 882.2,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/v2/m14h1/engineering-screen-mask.png",
+       "start": 79.6,
+       "reqStart": 208.5,
+       "respStart": 209.1,
+       "end": 507.1,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/v2/m14h1/engineering-chart.png",
+       "start": 80.6,
+       "reqStart": 1419.2,
+       "respStart": 1419.9,
+       "end": 1423.3,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/v2/m14h3/creative-sunrise.png",
+       "start": 81.6,
+       "reqStart": 329.4,
+       "respStart": 330,
+       "end": 596.6,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/v2/m14h3/creative-crest.png",
+       "start": 81.6,
+       "reqStart": 507.7,
+       "respStart": 508.4,
+       "end": 881.9,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/v2/m14h3/creative-glints.png",
+       "start": 81.8,
+       "reqStart": 1446.5,
+       "respStart": 1448.3,
+       "end": 1448.5,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/v2/m14h4/experience-reveal.png",
+       "start": 82.6,
+       "reqStart": 507.7,
+       "respStart": 508.5,
+       "end": 882,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/v2/m14h4/experience-light.png",
+       "start": 82.8,
+       "reqStart": 1446.5,
+       "respStart": 1448.4,
+       "end": 1448.7,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/educational-route-wide.png",
+       "start": 84.1,
+       "reqStart": 882.5,
+       "respStart": 883.2,
+       "end": 1269.7,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/educational-route-glow.png",
+       "start": 84.2,
+       "reqStart": 882.5,
+       "respStart": 883.2,
+       "end": 1269.9,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/educational-route.png",
+       "start": 84.3,
+       "reqStart": 596.7,
+       "respStart": 597.3,
+       "end": 968.3,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/engineering-route-wide.png",
+       "start": 84.4,
+       "reqStart": 1270.1,
+       "respStart": 1270.9,
+       "end": 1422.7,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/engineering-route-glow.png",
+       "start": 84.4,
+       "reqStart": 1270.2,
+       "respStart": 1271.1,
+       "end": 1423.1,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/engineering-route.png",
+       "start": 84.5,
+       "reqStart": 207.6,
+       "respStart": 208.4,
+       "end": 417.7,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/v2/m14e1/playground-route-wide.png",
+       "start": 84.6,
+       "reqStart": 207.7,
+       "respStart": 208.5,
+       "end": 506.9,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/v2/m14e1/playground-route-glow.png",
+       "start": 84.7,
+       "reqStart": 882.6,
+       "respStart": 883.3,
+       "end": 1270,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/v2/m14e1/playground-route-core.png",
+       "start": 84.8,
+       "reqStart": 507.8,
+       "respStart": 508.7,
+       "end": 882.3,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/creative-route-wide.png",
+       "start": 84.9,
+       "reqStart": 882.4,
+       "respStart": 883.1,
+       "end": 1269.5,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/creative-route-glow.png",
+       "start": 85,
+       "reqStart": 1270.2,
+       "respStart": 1271.1,
+       "end": 1423,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/creative-route.png",
+       "start": 85.1,
+       "reqStart": 207.6,
+       "respStart": 208.4,
+       "end": 329.3,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/experience-route-wide.png",
+       "start": 85.3,
+       "reqStart": 1082.1,
+       "respStart": 1082.6,
+       "end": 1419.8,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/experience-route-glow.png",
+       "start": 85.4,
+       "reqStart": 968.6,
+       "respStart": 969.4,
+       "end": 1419,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/experience-route.png",
+       "start": 85.6,
+       "reqStart": 615.8,
+       "respStart": 616.3,
+       "end": 1081.9,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "fetch",
+       "name": "/?_rsc=N5gqt1sOHIfEO55J",
+       "start": 121.7,
+       "reqStart": 1444.6,
+       "respStart": 1446.3,
+       "end": 1446.5,
+       "bytes": 464,
+       "body": 186,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "fetch",
+       "name": "/lab-v2?station=experience&_rsc=00wVIN80ldkuJnnP",
+       "start": 121.8,
+       "reqStart": 1446.1,
+       "respStart": 1448.2,
+       "end": 1450.4,
+       "bytes": 1281,
+       "body": 1704,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "fetch",
+       "name": "/?_rsc=00wVIN80ldkuJnnP",
+       "start": 1447.9,
+       "reqStart": 1448.4,
+       "respStart": 1450.2,
+       "end": 1450.6,
+       "bytes": 1242,
+       "body": 1602,
+       "blocking": "non-blocking"
+      }
+     ],
+     "fonts": [
+      "Outfit"
+     ],
+     "wallToLoad": 1454
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.6,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.5,
+      "ttfb": 27.1,
+      "responseEnd": 36.1,
+      "domInteractive": 59.2,
+      "dcl": 59.2,
+      "load": 127.1,
+      "htmlBytes": 81316,
+      "htmlBody": 698742,
+      "serverTiming": []
+     },
+     "fp": 120,
+     "fcp": 120,
+     "lcp": 120,
+     "lcpEl": "SPAN.font-medium",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       120,
+       "SPAN.font-medium",
+       18260
+      ]
+     ],
+     "firstRaf": 83.1,
+     "gateStyleAt": 139,
+     "sceneFirstVisible": 201.6,
+     "sceneFullyVisible": 434.9,
+     "litePlateDrawnAt": null,
+     "longTasks": [],
+     "fonts": [
+      "Outfit"
+     ],
+     "wallToLoad": 133,
+     "resourceCount": 108
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.4,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.1,
+      "ttfb": 25.9,
+      "responseEnd": 33.7,
+      "domInteractive": 58.1,
+      "dcl": 58.1,
+      "load": 118.9,
+      "htmlBytes": 81316,
+      "htmlBody": 698742,
+      "serverTiming": []
+     },
+     "fp": 120,
+     "fcp": 120,
+     "lcp": 120,
+     "lcpEl": "SPAN.font-medium",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       120,
+       "SPAN.font-medium",
+       18260
+      ]
+     ],
+     "firstRaf": 80.2,
+     "gateStyleAt": 133.9,
+     "sceneFirstVisible": 185.9,
+     "sceneFullyVisible": 419.2,
+     "litePlateDrawnAt": null,
+     "longTasks": [],
+     "fonts": [
+      "Outfit"
+     ],
+     "wallToLoad": 123,
+     "resourceCount": 108
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.4,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1,
+      "ttfb": 20.7,
+      "responseEnd": 27.9,
+      "domInteractive": 48.7,
+      "dcl": 48.8,
+      "load": 100.5,
+      "htmlBytes": 81316,
+      "htmlBody": 698742,
+      "serverTiming": []
+     },
+     "fp": 104,
+     "fcp": 104,
+     "lcp": 104,
+     "lcpEl": "SPAN.font-medium",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       104,
+       "SPAN.font-medium",
+       18260
+      ]
+     ],
+     "firstRaf": 64.8,
+     "gateStyleAt": 122.8,
+     "sceneFirstVisible": 185.1,
+     "sceneFullyVisible": 418.5,
+     "litePlateDrawnAt": null,
+     "longTasks": [],
+     "fonts": [
+      "Outfit"
+     ],
+     "wallToLoad": 105,
+     "resourceCount": 108
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.4,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1,
+      "ttfb": 23.9,
+      "responseEnd": 32.3,
+      "domInteractive": 87.6,
+      "dcl": 87.8,
+      "load": 101.1,
+      "htmlBytes": 81316,
+      "htmlBody": 698742,
+      "serverTiming": []
+     },
+     "fp": 108,
+     "fcp": 108,
+     "lcp": 108,
+     "lcpEl": "SPAN.font-medium",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       108,
+       "SPAN.font-medium",
+       18260
+      ]
+     ],
+     "firstRaf": 53.5,
+     "gateStyleAt": 152.2,
+     "sceneFirstVisible": 206.7,
+     "sceneFullyVisible": 440,
+     "litePlateDrawnAt": null,
+     "longTasks": [],
+     "fonts": [
+      "Outfit"
+     ],
+     "wallToLoad": 130,
+     "resourceCount": 108
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.4,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1,
+      "ttfb": 20.2,
+      "responseEnd": 26.9,
+      "domInteractive": 43.4,
+      "dcl": 43.4,
+      "load": 80.1,
+      "htmlBytes": 81316,
+      "htmlBody": 698742,
+      "serverTiming": []
+     },
+     "fp": 132,
+     "fcp": 132,
+     "lcp": 132,
+     "lcpEl": "SPAN.font-medium",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       132,
+       "SPAN.font-medium",
+       18260
+      ]
+     ],
+     "firstRaf": 66.3,
+     "gateStyleAt": 121.7,
+     "sceneFirstVisible": 180.3,
+     "sceneFullyVisible": 413.4,
+     "litePlateDrawnAt": null,
+     "longTasks": [],
+     "fonts": [
+      "Outfit"
+     ],
+     "wallToLoad": 84,
+     "resourceCount": 108
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.6,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 2.3,
+      "ttfb": 24.9,
+      "responseEnd": 34.4,
+      "domInteractive": 57.9,
+      "dcl": 58,
+      "load": 137.1,
+      "htmlBytes": 81316,
+      "htmlBody": 698742,
+      "serverTiming": []
+     },
+     "fp": 144,
+     "fcp": 144,
+     "lcp": 144,
+     "lcpEl": "SPAN.font-medium",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       144,
+       "SPAN.font-medium",
+       18260
+      ]
+     ],
+     "firstRaf": 92.7,
+     "gateStyleAt": 184.1,
+     "sceneFirstVisible": 258.6,
+     "sceneFullyVisible": 492,
+     "litePlateDrawnAt": null,
+     "longTasks": [],
+     "fonts": [
+      "Outfit"
+     ],
+     "wallToLoad": 204,
+     "resourceCount": 108
+    }
+   ],
+   "warm-process": [
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.4,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.2,
+      "ttfb": 22,
+      "responseEnd": 29.9,
+      "domInteractive": 258.2,
+      "dcl": 258.2,
+      "load": 363.4,
+      "htmlBytes": 81316,
+      "htmlBody": 698742,
+      "serverTiming": []
+     },
+     "fp": 248,
+     "fcp": 248,
+     "lcp": 284,
+     "lcpEl": "SPAN.font-medium",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       248,
+       "SPAN.leading-none.font-[460].text-lab-text",
+       4082
+      ],
+      [
+       284,
+       "SPAN.font-medium",
+       18260
+      ]
+     ],
+     "firstRaf": 200.7,
+     "gateStyleAt": 351.8,
+     "sceneFirstVisible": 413.5,
+     "sceneFullyVisible": 646.8,
+     "litePlateDrawnAt": null,
+     "longTasks": [],
+     "resources": [
+      {
+       "type": "link",
+       "name": "/_next/static/media/c0680f1bdb3a2e90-s.p.1gsd1jahc5dg_.woff2",
+       "start": 25.4,
+       "reqStart": 26,
+       "respStart": 27.2,
+       "end": 27.7,
+       "bytes": 32528,
+       "body": 32228,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/activation/core.png",
+       "start": 25.5,
+       "reqStart": 26.4,
+       "respStart": 27.6,
+       "end": 196.2,
+       "bytes": 20818,
+       "body": 20518,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/v2/stations/playground.png",
+       "start": 26.4,
+       "reqStart": 196.7,
+       "respStart": 198.9,
+       "end": 210.2,
+       "bytes": 644985,
+       "body": 644685,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/v2/m14e1/playground-strip-off.png",
+       "start": 26.4,
+       "reqStart": 198.6,
+       "respStart": 199.6,
+       "end": 203.1,
+       "bytes": 30891,
+       "body": 30591,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/v2/m14h1/engineering-body.png",
+       "start": 26.4,
+       "reqStart": 200.2,
+       "respStart": 201.3,
+       "end": 204.7,
+       "bytes": 83466,
+       "body": 83166,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/v2/environment/lab-background.png",
+       "start": 26.4,
+       "reqStart": 27.3,
+       "respStart": 28.2,
+       "end": 239.3,
+       "bytes": 2291246,
+       "body": 2290946,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/v2/m14f1/engineering.png",
+       "start": 26.5,
+       "reqStart": 201,
+       "respStart": 201.9,
+       "end": 204.8,
+       "bytes": 92725,
+       "body": 92425,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/v2/m14h1/engineering-body-light.png",
+       "start": 26.5,
+       "reqStart": 202.7,
+       "respStart": 203.5,
+       "end": 208.8,
+       "bytes": 8805,
+       "body": 8505,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/_next/static/chunks/2kafo_um2qs4h.css",
+       "start": 26.6,
+       "reqStart": 27,
+       "respStart": 29,
+       "end": 198.4,
+       "bytes": 11187,
+       "body": 51336,
+       "blocking": "blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/v2/m14h1/engineering-chart-light.png",
+       "start": 26.6,
+       "reqStart": 204.5,
+       "respStart": 205.3,
+       "end": 210,
+       "bytes": 15916,
+       "body": 15616,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/v2/m14e/hub.png",
+       "start": 26.6,
+       "reqStart": 207.6,
+       "respStart": 208.2,
+       "end": 211.5,
+       "bytes": 70257,
+       "body": 69957,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/v2/m14e/hub-light.png",
+       "start": 26.6,
+       "reqStart": 209,
+       "respStart": 209.7,
+       "end": 213.4,
+       "bytes": 30673,
+       "body": 30373,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/v2/m14f/creative.png",
+       "start": 26.6,
+       "reqStart": 209.9,
+       "respStart": 210.6,
+       "end": 220,
+       "bytes": 143960,
+       "body": 143660,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/_next/static/chunks/1pcw6gskne7pf.js",
+       "start": 26.6,
+       "reqStart": 211.7,
+       "respStart": 212.6,
+       "end": 217.2,
+       "bytes": 2330,
+       "body": 5600,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/1wnov70f88xjy.js",
+       "start": 26.6,
+       "reqStart": 213.6,
+       "respStart": 215.7,
+       "end": 220.3,
+       "bytes": 7950,
+       "body": 29127,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/turbopack-2u1d16houkiyo.js",
+       "start": 26.7,
+       "reqStart": 219.6,
+       "respStart": 221,
+       "end": 224.6,
+       "bytes": 4205,
+       "body": 9974,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/0c1ad7rcpjghx.js",
+       "start": 26.7,
+       "reqStart": 216.6,
+       "respStart": 218.6,
+       "end": 224.9,
+       "bytes": 46746,
+       "body": 169437,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/092r-mewpaf3q.js",
+       "start": 26.7,
+       "reqStart": 215.1,
+       "respStart": 217.4,
+       "end": 225.5,
+       "bytes": 71981,
+       "body": 229052,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/3qfy96eoyh-ek.js",
+       "start": 26.7,
+       "reqStart": 246.1,
+       "respStart": 247.9,
+       "end": 253.3,
+       "bytes": 3815,
+       "body": 13994,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/2vb0hl-tsp388.js",
+       "start": 26.8,
+       "reqStart": 248.1,
+       "respStart": 249.2,
+       "end": 253.5,
+       "bytes": 3675,
+       "body": 9246,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/0v65o2h_z1ytx.js",
+       "start": 26.8,
+       "reqStart": 249.9,
+       "respStart": 252.4,
+       "end": 258.9,
+       "bytes": 38689,
+       "body": 105666,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/v2/m14e/fg-steam.png",
+       "start": 26.9,
+       "reqStart": 225.6,
+       "respStart": 226.9,
+       "end": 234.4,
+       "bytes": 18607,
+       "body": 18307,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/v2/m14f/experience-light.png",
+       "start": 26.9,
+       "reqStart": 225.7,
+       "respStart": 227.1,
+       "end": 234.5,
+       "bytes": 22343,
+       "body": 22043,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/v2/m14g1/creative-light.png",
+       "start": 26.9,
+       "reqStart": 235.1,
+       "respStart": 236.2,
+       "end": 242.8,
+       "bytes": 22060,
+       "body": 21760,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/v2/m14f/experience.png",
+       "start": 26.9,
+       "reqStart": 235.2,
+       "respStart": 236.5,
+       "end": 244.7,
+       "bytes": 187045,
+       "body": 186745,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/3gickv_6i64jl.js",
+       "start": 26.9,
+       "reqStart": 251.9,
+       "respStart": 253.9,
+       "end": 258.2,
+       "bytes": 10295,
+       "body": 27417,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h4-floor-light.png",
+       "start": 27,
+       "reqStart": 28.2,
+       "respStart": 28.8,
+       "end": 197.3,
+       "bytes": 2912,
+       "body": 2612,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h1-engineering-floor.png",
+       "start": 27,
+       "reqStart": 115.1,
+       "respStart": 116.1,
+       "end": 200.5,
+       "bytes": 29090,
+       "body": 28790,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h2-educational-floor.png",
+       "start": 27,
+       "reqStart": 271.5,
+       "respStart": 273.2,
+       "end": 280.3,
+       "bytes": 18738,
+       "body": 18438,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h2-educational-floor-cyan.png",
+       "start": 27.1,
+       "reqStart": 275.2,
+       "respStart": 276.4,
+       "end": 281.4,
+       "bytes": 6345,
+       "body": 6045,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14j3-creative-floor-rest.png",
+       "start": 27.2,
+       "reqStart": 275.8,
+       "respStart": 276.7,
+       "end": 281.6,
+       "bytes": 13480,
+       "body": 13180,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14j3-creative-floor-edge.png",
+       "start": 27.2,
+       "reqStart": 276.6,
+       "respStart": 277.7,
+       "end": 280.6,
+       "bytes": 2204,
+       "body": 1904,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h3-creative-floor-top.png",
+       "start": 27.2,
+       "reqStart": 277.5,
+       "respStart": 284.5,
+       "end": 286.5,
+       "bytes": 10167,
+       "body": 9867,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14j4-experience-floor-rest.png",
+       "start": 27.3,
+       "reqStart": 279.4,
+       "respStart": 285.1,
+       "end": 286.9,
+       "bytes": 25374,
+       "body": 25074,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14j4-experience-floor-lit-rest.png",
+       "start": 27.3,
+       "reqStart": 282.8,
+       "respStart": 285.5,
+       "end": 287.2,
+       "bytes": 24101,
+       "body": 23801,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14j4-experience-floor-edge.png",
+       "start": 27.3,
+       "reqStart": 283.1,
+       "respStart": 285.6,
+       "end": 287,
+       "bytes": 1508,
+       "body": 1208,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h4-experience-floor-top.png",
+       "start": 27.3,
+       "reqStart": 284.2,
+       "respStart": 286,
+       "end": 295.6,
+       "bytes": 11778,
+       "body": 11478,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14g1-playground-ring.png",
+       "start": 27.4,
+       "reqStart": 285.7,
+       "respStart": 287.4,
+       "end": 296.4,
+       "bytes": 2787,
+       "body": 2487,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14g1-playground-ring-lit.png",
+       "start": 27.4,
+       "reqStart": 290.9,
+       "respStart": 292.4,
+       "end": 298.1,
+       "bytes": 3494,
+       "body": 3194,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14g1-playground-occlusion.png",
+       "start": 27.4,
+       "reqStart": 292.8,
+       "respStart": 297.2,
+       "end": 301.3,
+       "bytes": 5582,
+       "body": 5282,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14g1-playground-reflection.png",
+       "start": 27.4,
+       "reqStart": 293.8,
+       "respStart": 298.7,
+       "end": 301.6,
+       "bytes": 20403,
+       "body": 20103,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14g1-playground-reflection-lit.png",
+       "start": 27.5,
+       "reqStart": 296,
+       "respStart": 298.7,
+       "end": 301.8,
+       "bytes": 6434,
+       "body": 6134,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14g-contact.png",
+       "start": 27.5,
+       "reqStart": 298.4,
+       "respStart": 299.5,
+       "end": 301.9,
+       "bytes": 7117,
+       "body": 6817,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h2-educational-body.png",
+       "start": 27.6,
+       "reqStart": 299.3,
+       "respStart": 300.3,
+       "end": 304.1,
+       "bytes": 103231,
+       "body": 102931,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h2-educational-orbit.png",
+       "start": 27.6,
+       "reqStart": 303.4,
+       "respStart": 304.5,
+       "end": 309.6,
+       "bytes": 9594,
+       "body": 9294,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h2-educational-globe.png",
+       "start": 27.6,
+       "reqStart": 300.7,
+       "respStart": 301.8,
+       "end": 309.1,
+       "bytes": 55974,
+       "body": 55674,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14f1-educational-light.png",
+       "start": 27.6,
+       "reqStart": 305.2,
+       "respStart": 306,
+       "end": 309.8,
+       "bytes": 36736,
+       "body": 36436,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14f1-educational.png",
+       "start": 27.6,
+       "reqStart": 304.5,
+       "respStart": 305.3,
+       "end": 311.3,
+       "bytes": 132716,
+       "body": 132416,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h2-educational-globe-light.png",
+       "start": 27.7,
+       "reqStart": 306.6,
+       "respStart": 307.4,
+       "end": 311,
+       "bytes": 31776,
+       "body": 31476,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h2-educational-orbit-light.png",
+       "start": 27.7,
+       "reqStart": 308.7,
+       "respStart": 309.7,
+       "end": 316.9,
+       "bytes": 5530,
+       "body": 5230,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h2-educational-strip-floor.png",
+       "start": 27.7,
+       "reqStart": 311.1,
+       "respStart": 312.2,
+       "end": 317.2,
+       "bytes": 3427,
+       "body": 3127,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h2-educational-strip-off.png",
+       "start": 39.1,
+       "reqStart": 311.5,
+       "respStart": 312.4,
+       "end": 317.3,
+       "bytes": 7165,
+       "body": 6865,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h2-educational-strip-light.png",
+       "start": 39.1,
+       "reqStart": 312.8,
+       "respStart": 313.6,
+       "end": 318.4,
+       "bytes": 8718,
+       "body": 8418,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h2-educational-base.png",
+       "start": 39.1,
+       "reqStart": 314.9,
+       "respStart": 315.9,
+       "end": 318.5,
+       "bytes": 15204,
+       "body": 14904,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h2-educational-flare.png",
+       "start": 39.1,
+       "reqStart": 316.5,
+       "respStart": 317.3,
+       "end": 322.7,
+       "bytes": 50575,
+       "body": 50275,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h1-engineering-strip-floor.png",
+       "start": 39.2,
+       "reqStart": 318.6,
+       "respStart": 319.3,
+       "end": 322.6,
+       "bytes": 3683,
+       "body": 3383,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h1-engineering-strip-off.png",
+       "start": 39.2,
+       "reqStart": 319.5,
+       "respStart": 320,
+       "end": 323,
+       "bytes": 5108,
+       "body": 4808,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h1-engineering-strip-light.png",
+       "start": 39.2,
+       "reqStart": 320.5,
+       "respStart": 320.9,
+       "end": 323.1,
+       "bytes": 6422,
+       "body": 6122,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h1-engineering-screen-bars.png",
+       "start": 39.2,
+       "reqStart": 321.2,
+       "respStart": 321.8,
+       "end": 322.9,
+       "bytes": 2065,
+       "body": 1765,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h1-engineering-chart.png",
+       "start": 39.3,
+       "reqStart": 322.3,
+       "respStart": 322.9,
+       "end": 328.3,
+       "bytes": 8922,
+       "body": 8622,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14j3-creative-fill.png",
+       "start": 39.3,
+       "reqStart": 324,
+       "respStart": 324.8,
+       "end": 329.8,
+       "bytes": 11985,
+       "body": 11685,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14j3-creative-light-spill.png",
+       "start": 39.4,
+       "reqStart": 326.1,
+       "respStart": 326.7,
+       "end": 330.5,
+       "bytes": 11457,
+       "body": 11157,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14j3-creative-light-edge.png",
+       "start": 39.4,
+       "reqStart": 326.2,
+       "respStart": 326.9,
+       "end": 330.8,
+       "bytes": 5072,
+       "body": 4772,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h3-creative-strip-off.png",
+       "start": 39.4,
+       "reqStart": 327,
+       "respStart": 327.5,
+       "end": 330.9,
+       "bytes": 6767,
+       "body": 6467,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14j3-creative-fill-off.png",
+       "start": 39.4,
+       "reqStart": 328.1,
+       "respStart": 328.7,
+       "end": 334.7,
+       "bytes": 626,
+       "body": 326,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h3-creative-strip-light.png",
+       "start": 39.4,
+       "reqStart": 330.7,
+       "respStart": 332,
+       "end": 336,
+       "bytes": 6736,
+       "body": 6436,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h3-creative-warm.png",
+       "start": 39.5,
+       "reqStart": 332.2,
+       "respStart": 332.9,
+       "end": 336,
+       "bytes": 6842,
+       "body": 6542,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h3-creative-standby.png",
+       "start": 39.5,
+       "reqStart": 331.9,
+       "respStart": 333.3,
+       "end": 336.2,
+       "bytes": 37679,
+       "body": 37379,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h3-creative-highlights.png",
+       "start": 39.5,
+       "reqStart": 333.2,
+       "respStart": 334,
+       "end": 336.2,
+       "bytes": 25987,
+       "body": 25687,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14j4-experience-light-spill.png",
+       "start": 39.5,
+       "reqStart": 334.8,
+       "respStart": 335.3,
+       "end": 340.5,
+       "bytes": 12342,
+       "body": 12042,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14j4-experience-light-edge.png",
+       "start": 39.5,
+       "reqStart": 335.8,
+       "respStart": 336.5,
+       "end": 342.5,
+       "bytes": 5836,
+       "body": 5536,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h4-experience-strip-off.png",
+       "start": 39.5,
+       "reqStart": 337.8,
+       "respStart": 338.7,
+       "end": 342.7,
+       "bytes": 8662,
+       "body": 8362,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h4-experience-strip-light.png",
+       "start": 39.6,
+       "reqStart": 338.2,
+       "respStart": 338.8,
+       "end": 342.7,
+       "bytes": 8404,
+       "body": 8104,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14h4-experience-standby.png",
+       "start": 39.6,
+       "reqStart": 339.4,
+       "respStart": 339.9,
+       "end": 342.7,
+       "bytes": 32496,
+       "body": 32196,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14j3-creative-steam.png",
+       "start": 39.6,
+       "reqStart": 340.7,
+       "respStart": 341.1,
+       "end": 346.9,
+       "bytes": 7753,
+       "body": 7453,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14j3-creative-books.png",
+       "start": 39.6,
+       "reqStart": 342.5,
+       "respStart": 343.1,
+       "end": 347.7,
+       "bytes": 1986,
+       "body": 1686,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14e-fg-plant.png",
+       "start": 39.7,
+       "reqStart": 344.3,
+       "respStart": 344.9,
+       "end": 349.3,
+       "bytes": 34150,
+       "body": 33850,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "image",
+       "name": "/scene/v2/m14i2/m14e-fg-table.png",
+       "start": 39.7,
+       "reqStart": 343.8,
+       "respStart": 344.7,
+       "end": 349.6,
+       "bytes": 88506,
+       "body": 88206,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/v2/m14g/floor-mask.png",
+       "start": 202.8,
+       "reqStart": 235.3,
+       "respStart": 236.9,
+       "end": 243.1,
+       "bytes": 9405,
+       "body": 9105,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/v2/m14h2/educational-wave.png",
+       "start": 204.8,
+       "reqStart": 220.9,
+       "respStart": 222.4,
+       "end": 225.1,
+       "bytes": 59680,
+       "body": 59380,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/v2/m14h2/educational-crest.png",
+       "start": 206.3,
+       "reqStart": 235.3,
+       "respStart": 236.7,
+       "end": 244.6,
+       "bytes": 86401,
+       "body": 86101,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/v2/m14h2/educational-light.png",
+       "start": 206.5,
+       "reqStart": 243.2,
+       "respStart": 244.2,
+       "end": 251.7,
+       "bytes": 106092,
+       "body": 105792,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/v2/m14h2/educational-ring-core.png",
+       "start": 206.6,
+       "reqStart": 225.7,
+       "respStart": 227.3,
+       "end": 234.7,
+       "bytes": 14093,
+       "body": 13793,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/v2/m14h1/engineering-screen-mask.png",
+       "start": 207.3,
+       "reqStart": 220.7,
+       "respStart": 222,
+       "end": 225.1,
+       "bytes": 7229,
+       "body": 6929,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/v2/m14h1/engineering-chart.png",
+       "start": 208.2,
+       "reqStart": 225.8,
+       "respStart": 227.7,
+       "end": 234.8,
+       "bytes": 16721,
+       "body": 16421,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/v2/m14h3/creative-sunrise.png",
+       "start": 209,
+       "reqStart": 239.7,
+       "respStart": 240.7,
+       "end": 249.7,
+       "bytes": 75110,
+       "body": 74810,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/v2/m14h3/creative-crest.png",
+       "start": 209.1,
+       "reqStart": 225.8,
+       "respStart": 227.6,
+       "end": 239.1,
+       "bytes": 144676,
+       "body": 144376,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/v2/m14h3/creative-glints.png",
+       "start": 209.2,
+       "reqStart": 344.9,
+       "respStart": 345.4,
+       "end": 349.4,
+       "bytes": 44166,
+       "body": 43866,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/v2/m14h4/experience-reveal.png",
+       "start": 210,
+       "reqStart": 239.6,
+       "respStart": 240.6,
+       "end": 251.2,
+       "bytes": 251558,
+       "body": 251258,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/v2/m14h4/experience-light.png",
+       "start": 210.2,
+       "reqStart": 347,
+       "respStart": 348.1,
+       "end": 362.7,
+       "bytes": 221093,
+       "body": 220793,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/educational-route-wide.png",
+       "start": 236.2,
+       "reqStart": 266.7,
+       "respStart": 268.6,
+       "end": 272.6,
+       "bytes": 1440,
+       "body": 1140,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/educational-route-glow.png",
+       "start": 236.3,
+       "reqStart": 266,
+       "respStart": 267.8,
+       "end": 272.3,
+       "bytes": 1075,
+       "body": 775,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/educational-route.png",
+       "start": 236.5,
+       "reqStart": 258.4,
+       "respStart": 260,
+       "end": 265.6,
+       "bytes": 723,
+       "body": 423,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/engineering-route-wide.png",
+       "start": 236.7,
+       "reqStart": 258.6,
+       "respStart": 260.3,
+       "end": 265.8,
+       "bytes": 8350,
+       "body": 8050,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/engineering-route.png",
+       "start": 236.8,
+       "reqStart": 253.9,
+       "respStart": 255.2,
+       "end": 257.9,
+       "bytes": 1609,
+       "body": 1309,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/engineering-route-glow.png",
+       "start": 236.8,
+       "reqStart": 258.6,
+       "respStart": 260.5,
+       "end": 266.3,
+       "bytes": 5822,
+       "body": 5522,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/v2/m14e1/playground-route-wide.png",
+       "start": 237,
+       "reqStart": 266.4,
+       "respStart": 268.2,
+       "end": 272.8,
+       "bytes": 10982,
+       "body": 10682,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/v2/m14e1/playground-route-core.png",
+       "start": 237.1,
+       "reqStart": 252.3,
+       "respStart": 253.7,
+       "end": 258,
+       "bytes": 8805,
+       "body": 8505,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/v2/m14e1/playground-route-glow.png",
+       "start": 237.1,
+       "reqStart": 258.7,
+       "respStart": 260.8,
+       "end": 266.4,
+       "bytes": 10079,
+       "body": 9779,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/creative-route-wide.png",
+       "start": 237.3,
+       "reqStart": 258.4,
+       "respStart": 260.4,
+       "end": 266.1,
+       "bytes": 8583,
+       "body": 8283,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/creative-route-glow.png",
+       "start": 237.3,
+       "reqStart": 266.6,
+       "respStart": 268.3,
+       "end": 272.9,
+       "bytes": 6151,
+       "body": 5851,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/creative-route.png",
+       "start": 237.4,
+       "reqStart": 253.8,
+       "respStart": 255,
+       "end": 257.8,
+       "bytes": 1815,
+       "body": 1515,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/experience-route-glow.png",
+       "start": 237.5,
+       "reqStart": 259.1,
+       "respStart": 260.8,
+       "end": 267.5,
+       "bytes": 6696,
+       "body": 6396,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/experience-route-wide.png",
+       "start": 237.5,
+       "reqStart": 266.7,
+       "respStart": 268.4,
+       "end": 273.1,
+       "bytes": 9270,
+       "body": 8970,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "css",
+       "name": "/scene/activation/lines/experience-route.png",
+       "start": 237.6,
+       "reqStart": 252.2,
+       "respStart": 253.6,
+       "end": 257.5,
+       "bytes": 1958,
+       "body": 1658,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "fetch",
+       "name": "/?_rsc=N5gqt1sOHIfEO55J",
+       "start": 306.7,
+       "reqStart": 348.6,
+       "respStart": 351,
+       "end": 353.1,
+       "bytes": 464,
+       "body": 186,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "fetch",
+       "name": "/lab-v2?station=experience&_rsc=00wVIN80ldkuJnnP",
+       "start": 306.8,
+       "reqStart": 349.2,
+       "respStart": 352.8,
+       "end": 353.4,
+       "bytes": 1282,
+       "body": 1704,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "fetch",
+       "name": "/?_rsc=00wVIN80ldkuJnnP",
+       "start": 354,
+       "reqStart": 354.3,
+       "respStart": 356,
+       "end": 356.4,
+       "bytes": 1240,
+       "body": 1602,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "other",
+       "name": "/icon.svg?icon.1plqej6prq-qi.svg",
+       "start": 367.9,
+       "reqStart": 368.3,
+       "respStart": 371.4,
+       "end": 371.8,
+       "bytes": 838,
+       "body": 963,
+       "blocking": "non-blocking"
+      }
+     ],
+     "fonts": [
+      "Outfit"
+     ],
+     "wallToLoad": 368
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.5,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.2,
+      "ttfb": 21,
+      "responseEnd": 28.8,
+      "domInteractive": 102.9,
+      "dcl": 103,
+      "load": 194.9,
+      "htmlBytes": 81316,
+      "htmlBody": 698742,
+      "serverTiming": []
+     },
+     "fp": 92,
+     "fcp": 92,
+     "lcp": 144,
+     "lcpEl": "SPAN.font-medium",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       92,
+       "SPAN.leading-none.font-[460].text-lab-text",
+       4082
+      ],
+      [
+       144,
+       "SPAN.font-medium",
+       18260
+      ]
+     ],
+     "firstRaf": 50.7,
+     "gateStyleAt": 193.6,
+     "sceneFirstVisible": 257.4,
+     "sceneFullyVisible": 490.5,
+     "litePlateDrawnAt": null,
+     "longTasks": [],
+     "fonts": [
+      "Outfit"
+     ],
+     "wallToLoad": 199,
+     "resourceCount": 109
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.5,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.2,
+      "ttfb": 27.5,
+      "responseEnd": 36.9,
+      "domInteractive": 64.7,
+      "dcl": 64.8,
+      "load": 202.7,
+      "htmlBytes": 81316,
+      "htmlBody": 698742,
+      "serverTiming": []
+     },
+     "fp": 128,
+     "fcp": 128,
+     "lcp": 128,
+     "lcpEl": "SPAN.font-medium",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       128,
+       "SPAN.font-medium",
+       18260
+      ]
+     ],
+     "firstRaf": 85.7,
+     "gateStyleAt": 202,
+     "sceneFirstVisible": 258.5,
+     "sceneFullyVisible": 491.9,
+     "litePlateDrawnAt": null,
+     "longTasks": [],
+     "fonts": [
+      "Outfit"
+     ],
+     "wallToLoad": 207,
+     "resourceCount": 109
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.5,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.2,
+      "ttfb": 21,
+      "responseEnd": 29.7,
+      "domInteractive": 106.9,
+      "dcl": 106.9,
+      "load": 197.6,
+      "htmlBytes": 81316,
+      "htmlBody": 698742,
+      "serverTiming": []
+     },
+     "fp": 140,
+     "fcp": 140,
+     "lcp": 140,
+     "lcpEl": "SPAN.font-medium",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       140,
+       "SPAN.font-medium",
+       18260
+      ]
+     ],
+     "firstRaf": 60.1,
+     "gateStyleAt": 195.9,
+     "sceneFirstVisible": 254.6,
+     "sceneFullyVisible": 487.2,
+     "litePlateDrawnAt": null,
+     "longTasks": [],
+     "fonts": [
+      "Outfit"
+     ],
+     "wallToLoad": 201,
+     "resourceCount": 109
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.6,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.4,
+      "ttfb": 24.9,
+      "responseEnd": 33.2,
+      "domInteractive": 59.9,
+      "dcl": 60,
+      "load": 200.2,
+      "htmlBytes": 81316,
+      "htmlBody": 698742,
+      "serverTiming": []
+     },
+     "fp": 136,
+     "fcp": 136,
+     "lcp": 136,
+     "lcpEl": "SPAN.font-medium",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       136,
+       "SPAN.font-medium",
+       18260
+      ]
+     ],
+     "firstRaf": 86.6,
+     "gateStyleAt": 199.2,
+     "sceneFirstVisible": 251.4,
+     "sceneFullyVisible": 484.6,
+     "litePlateDrawnAt": null,
+     "longTasks": [],
+     "fonts": [
+      "Outfit"
+     ],
+     "wallToLoad": 205,
+     "resourceCount": 109
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.5,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.2,
+      "ttfb": 24.3,
+      "responseEnd": 32.5,
+      "domInteractive": 56.9,
+      "dcl": 56.9,
+      "load": 204.8,
+      "htmlBytes": 81316,
+      "htmlBody": 698742,
+      "serverTiming": []
+     },
+     "fp": 140,
+     "fcp": 140,
+     "lcp": 140,
+     "lcpEl": "SPAN.font-medium",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       140,
+       "SPAN.font-medium",
+       18260
+      ]
+     ],
+     "firstRaf": 84.8,
+     "gateStyleAt": 202.5,
+     "sceneFirstVisible": 272.6,
+     "sceneFullyVisible": 506.1,
+     "litePlateDrawnAt": null,
+     "longTasks": [],
+     "fonts": [
+      "Outfit"
+     ],
+     "wallToLoad": 211,
+     "resourceCount": 109
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.4,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.2,
+      "ttfb": 23,
+      "responseEnd": 30.6,
+      "domInteractive": 53.8,
+      "dcl": 53.9,
+      "load": 195.6,
+      "htmlBytes": 81316,
+      "htmlBody": 698742,
+      "serverTiming": []
+     },
+     "fp": 128,
+     "fcp": 128,
+     "lcp": 128,
+     "lcpEl": "SPAN.font-medium",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       128,
+       "SPAN.font-medium",
+       18260
+      ]
+     ],
+     "firstRaf": 73.5,
+     "gateStyleAt": 193.4,
+     "sceneFirstVisible": 257.8,
+     "sceneFullyVisible": 491.1,
+     "litePlateDrawnAt": null,
+     "longTasks": [],
+     "fonts": [
+      "Outfit"
+     ],
+     "wallToLoad": 200,
+     "resourceCount": 109
+    }
+   ]
+  },
+  "lite": {
+   "warm-cache": [
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.5,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.2,
+      "ttfb": 8.2,
+      "responseEnd": 9.5,
+      "domInteractive": 28.8,
+      "dcl": 28.8,
+      "load": 190.3,
+      "htmlBytes": 16456,
+      "htmlBody": 87683,
+      "serverTiming": []
+     },
+     "fp": 104,
+     "fcp": 104,
+     "lcp": 104,
+     "lcpEl": "SPAN.font-medium",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       104,
+       "SPAN.font-medium",
+       18260
+      ]
+     ],
+     "firstRaf": 32,
+     "gateStyleAt": null,
+     "sceneFirstVisible": null,
+     "sceneFullyVisible": null,
+     "litePlateDrawnAt": 1.4,
+     "longTasks": [],
+     "resources": [
+      {
+       "type": "link",
+       "name": "/_next/static/media/c0680f1bdb3a2e90-s.p.1gsd1jahc5dg_.woff2",
+       "start": 11,
+       "reqStart": 11,
+       "respStart": 11,
+       "end": 11,
+       "bytes": 0,
+       "body": 32228,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/static-lite/plate.webp",
+       "start": 11.2,
+       "reqStart": 11.7,
+       "respStart": 12.4,
+       "end": 12.7,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/static-lite/on-engineering.webp",
+       "start": 11.8,
+       "reqStart": 12.3,
+       "respStart": 12.8,
+       "end": 13.1,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/static-lite/on-educational.webp",
+       "start": 11.9,
+       "reqStart": 13.3,
+       "respStart": 13.7,
+       "end": 14,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/static-lite/on-playground.webp",
+       "start": 11.9,
+       "reqStart": 13.4,
+       "respStart": 14.1,
+       "end": 14.2,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/_next/static/chunks/2kafo_um2qs4h.css",
+       "start": 12,
+       "reqStart": 12,
+       "respStart": 12,
+       "end": 12,
+       "bytes": 0,
+       "body": 51336,
+       "blocking": "blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/static-lite/on-creative.webp",
+       "start": 12,
+       "reqStart": 24.7,
+       "respStart": 25.5,
+       "end": 25.8,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/static-lite/on-experience.webp",
+       "start": 12,
+       "reqStart": 24.9,
+       "respStart": 25.9,
+       "end": 189.5,
+       "bytes": 300,
+       "body": 0,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/_next/static/chunks/1pcw6gskne7pf.js",
+       "start": 12.1,
+       "reqStart": 12.1,
+       "respStart": 12.1,
+       "end": 12.1,
+       "bytes": 0,
+       "body": 5600,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/1wnov70f88xjy.js",
+       "start": 12.1,
+       "reqStart": 12.1,
+       "respStart": 12.1,
+       "end": 12.1,
+       "bytes": 0,
+       "body": 29127,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/092r-mewpaf3q.js",
+       "start": 12.2,
+       "reqStart": 12.2,
+       "respStart": 12.2,
+       "end": 12.2,
+       "bytes": 0,
+       "body": 229052,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/0c1ad7rcpjghx.js",
+       "start": 12.2,
+       "reqStart": 12.2,
+       "respStart": 12.2,
+       "end": 12.2,
+       "bytes": 0,
+       "body": 169437,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/turbopack-2u1d16houkiyo.js",
+       "start": 12.2,
+       "reqStart": 12.2,
+       "respStart": 12.2,
+       "end": 12.2,
+       "bytes": 0,
+       "body": 9974,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/3qfy96eoyh-ek.js",
+       "start": 12.2,
+       "reqStart": 12.2,
+       "respStart": 12.2,
+       "end": 12.2,
+       "bytes": 0,
+       "body": 13994,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/2vb0hl-tsp388.js",
+       "start": 12.4,
+       "reqStart": 12.4,
+       "respStart": 12.4,
+       "end": 12.4,
+       "bytes": 0,
+       "body": 9246,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/0v65o2h_z1ytx.js",
+       "start": 12.4,
+       "reqStart": 12.4,
+       "respStart": 12.4,
+       "end": 12.4,
+       "bytes": 0,
+       "body": 105666,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/3gickv_6i64jl.js",
+       "start": 12.4,
+       "reqStart": 12.4,
+       "respStart": 12.4,
+       "end": 12.4,
+       "bytes": 0,
+       "body": 27417,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "fetch",
+       "name": "/?_rsc=N5gqt1sOHIfEO55J",
+       "start": 44.9,
+       "reqStart": 189.7,
+       "respStart": 191.6,
+       "end": 191.8,
+       "bytes": 464,
+       "body": 186,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "fetch",
+       "name": "/lab-v2?station=experience&render=lite&_rsc=00wVIN80ldkuJnnP",
+       "start": 45,
+       "reqStart": 246.3,
+       "respStart": 248.2,
+       "end": 249.4,
+       "bytes": 1291,
+       "body": 1716,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "fetch",
+       "name": "/?_rsc=00wVIN80ldkuJnnP",
+       "start": 192.8,
+       "reqStart": 417.9,
+       "respStart": 420.6,
+       "end": 421,
+       "bytes": 1242,
+       "body": 1602,
+       "blocking": "non-blocking"
+      }
+     ],
+     "fonts": [
+      "Outfit"
+     ],
+     "wallToLoad": 193
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.6,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.5,
+      "ttfb": 7.8,
+      "responseEnd": 9.4,
+      "domInteractive": 23.5,
+      "dcl": 23.6,
+      "load": 26.6,
+      "htmlBytes": 16456,
+      "htmlBody": 87683,
+      "serverTiming": []
+     },
+     "fp": 100,
+     "fcp": 100,
+     "lcp": 100,
+     "lcpEl": "SPAN.font-medium",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       100,
+       "SPAN.font-medium",
+       18260
+      ]
+     ],
+     "firstRaf": 29.1,
+     "gateStyleAt": null,
+     "sceneFirstVisible": null,
+     "sceneFullyVisible": null,
+     "litePlateDrawnAt": 13.1,
+     "longTasks": [],
+     "fonts": [
+      "Outfit"
+     ],
+     "wallToLoad": 32,
+     "resourceCount": 20
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.5,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.1,
+      "ttfb": 7.2,
+      "responseEnd": 8.7,
+      "domInteractive": 20.2,
+      "dcl": 20.2,
+      "load": 23.1,
+      "htmlBytes": 16456,
+      "htmlBody": 87683,
+      "serverTiming": []
+     },
+     "fp": 92,
+     "fcp": 92,
+     "lcp": 92,
+     "lcpEl": "SPAN.font-medium",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       92,
+       "SPAN.font-medium",
+       18260
+      ]
+     ],
+     "firstRaf": 25.5,
+     "gateStyleAt": null,
+     "sceneFirstVisible": null,
+     "sceneFullyVisible": null,
+     "litePlateDrawnAt": 8,
+     "longTasks": [],
+     "fonts": [
+      "Outfit"
+     ],
+     "wallToLoad": 29,
+     "resourceCount": 20
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.5,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1,
+      "ttfb": 6.4,
+      "responseEnd": 7.7,
+      "domInteractive": 18.7,
+      "dcl": 18.8,
+      "load": 21.6,
+      "htmlBytes": 16456,
+      "htmlBody": 87683,
+      "serverTiming": []
+     },
+     "fp": 80,
+     "fcp": 80,
+     "lcp": 80,
+     "lcpEl": "SPAN.font-medium",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       80,
+       "SPAN.font-medium",
+       18260
+      ]
+     ],
+     "firstRaf": 23.8,
+     "gateStyleAt": null,
+     "sceneFirstVisible": null,
+     "sceneFullyVisible": null,
+     "litePlateDrawnAt": 11.3,
+     "longTasks": [],
+     "fonts": [
+      "Outfit"
+     ],
+     "wallToLoad": 26,
+     "resourceCount": 20
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.5,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1,
+      "ttfb": 8.1,
+      "responseEnd": 9.3,
+      "domInteractive": 21.9,
+      "dcl": 22,
+      "load": 25,
+      "htmlBytes": 16456,
+      "htmlBody": 87683,
+      "serverTiming": []
+     },
+     "fp": 96,
+     "fcp": 96,
+     "lcp": 96,
+     "lcpEl": "SPAN.font-medium",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       96,
+       "SPAN.font-medium",
+       18260
+      ]
+     ],
+     "firstRaf": 27.5,
+     "gateStyleAt": null,
+     "sceneFirstVisible": null,
+     "sceneFullyVisible": null,
+     "litePlateDrawnAt": 10.2,
+     "longTasks": [],
+     "fonts": [
+      "Outfit"
+     ],
+     "wallToLoad": 31,
+     "resourceCount": 20
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.4,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 0.9,
+      "ttfb": 6.3,
+      "responseEnd": 7.7,
+      "domInteractive": 18.7,
+      "dcl": 18.8,
+      "load": 21.7,
+      "htmlBytes": 16456,
+      "htmlBody": 87683,
+      "serverTiming": []
+     },
+     "fp": 80,
+     "fcp": 80,
+     "lcp": 80,
+     "lcpEl": "SPAN.font-medium",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       80,
+       "SPAN.font-medium",
+       18260
+      ]
+     ],
+     "firstRaf": 24,
+     "gateStyleAt": null,
+     "sceneFirstVisible": null,
+     "sceneFullyVisible": null,
+     "litePlateDrawnAt": 9.5,
+     "longTasks": [],
+     "fonts": [
+      "Outfit"
+     ],
+     "wallToLoad": 27,
+     "resourceCount": 20
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.5,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1,
+      "ttfb": 6.6,
+      "responseEnd": 7.9,
+      "domInteractive": 18.4,
+      "dcl": 18.4,
+      "load": 21.3,
+      "htmlBytes": 16456,
+      "htmlBody": 87683,
+      "serverTiming": []
+     },
+     "fp": 92,
+     "fcp": 92,
+     "lcp": 92,
+     "lcpEl": "SPAN.font-medium",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       92,
+       "SPAN.font-medium",
+       18260
+      ]
+     ],
+     "firstRaf": 23.8,
+     "gateStyleAt": null,
+     "sceneFirstVisible": null,
+     "sceneFullyVisible": null,
+     "litePlateDrawnAt": 5.1,
+     "longTasks": [],
+     "fonts": [
+      "Outfit"
+     ],
+     "wallToLoad": 26,
+     "resourceCount": 20
+    }
+   ],
+   "warm-process": [
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.4,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.1,
+      "ttfb": 6.7,
+      "responseEnd": 8,
+      "domInteractive": 18.7,
+      "dcl": 18.7,
+      "load": 49.2,
+      "htmlBytes": 16456,
+      "htmlBody": 87683,
+      "serverTiming": []
+     },
+     "fp": 112,
+     "fcp": 112,
+     "lcp": 112,
+     "lcpEl": "SPAN.font-medium",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       112,
+       "SPAN.font-medium",
+       18260
+      ]
+     ],
+     "firstRaf": 39.3,
+     "gateStyleAt": null,
+     "sceneFirstVisible": null,
+     "sceneFullyVisible": null,
+     "litePlateDrawnAt": 11.5,
+     "longTasks": [],
+     "resources": [
+      {
+       "type": "link",
+       "name": "/_next/static/media/c0680f1bdb3a2e90-s.p.1gsd1jahc5dg_.woff2",
+       "start": 9.4,
+       "reqStart": 9.8,
+       "respStart": 10.8,
+       "end": 12.3,
+       "bytes": 32528,
+       "body": 32228,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/static-lite/plate.webp",
+       "start": 9.5,
+       "reqStart": 9.9,
+       "respStart": 10.8,
+       "end": 33.4,
+       "bytes": 1658200,
+       "body": 1657900,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/static-lite/on-engineering.webp",
+       "start": 10,
+       "reqStart": 12.7,
+       "respStart": 13.7,
+       "end": 17.5,
+       "bytes": 171684,
+       "body": 171384,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/_next/static/chunks/2kafo_um2qs4h.css",
+       "start": 10.1,
+       "reqStart": 10.9,
+       "respStart": 12.7,
+       "end": 15.8,
+       "bytes": 11187,
+       "body": 51336,
+       "blocking": "blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/static-lite/on-educational.webp",
+       "start": 10.1,
+       "reqStart": 15,
+       "respStart": 16,
+       "end": 21.5,
+       "bytes": 146422,
+       "body": 146122,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/static-lite/on-playground.webp",
+       "start": 10.1,
+       "reqStart": 15.5,
+       "respStart": 16.3,
+       "end": 21.8,
+       "bytes": 137114,
+       "body": 136814,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/static-lite/on-creative.webp",
+       "start": 10.1,
+       "reqStart": 15.6,
+       "respStart": 16.6,
+       "end": 22.6,
+       "bytes": 251188,
+       "body": 250888,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/scene/static-lite/on-experience.webp",
+       "start": 10.1,
+       "reqStart": 17.2,
+       "respStart": 18.3,
+       "end": 26.1,
+       "bytes": 275500,
+       "body": 275200,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/_next/static/chunks/1pcw6gskne7pf.js",
+       "start": 10.1,
+       "reqStart": 20.9,
+       "respStart": 21.9,
+       "end": 25.8,
+       "bytes": 2330,
+       "body": 5600,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/1wnov70f88xjy.js",
+       "start": 10.2,
+       "reqStart": 22.7,
+       "respStart": 24,
+       "end": 29,
+       "bytes": 7950,
+       "body": 29127,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/0c1ad7rcpjghx.js",
+       "start": 10.2,
+       "reqStart": 25.7,
+       "respStart": 27.4,
+       "end": 33,
+       "bytes": 46746,
+       "body": 169437,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/092r-mewpaf3q.js",
+       "start": 10.2,
+       "reqStart": 23.9,
+       "respStart": 26.3,
+       "end": 33.3,
+       "bytes": 71981,
+       "body": 229052,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/turbopack-2u1d16houkiyo.js",
+       "start": 10.3,
+       "reqStart": 28,
+       "respStart": 31.5,
+       "end": 33,
+       "bytes": 4205,
+       "body": 9974,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/3qfy96eoyh-ek.js",
+       "start": 10.3,
+       "reqStart": 29.6,
+       "respStart": 32.2,
+       "end": 33.2,
+       "bytes": 3815,
+       "body": 13994,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/2vb0hl-tsp388.js",
+       "start": 10.3,
+       "reqStart": 31.3,
+       "respStart": 32.8,
+       "end": 37.2,
+       "bytes": 3675,
+       "body": 9246,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/0v65o2h_z1ytx.js",
+       "start": 10.3,
+       "reqStart": 34.7,
+       "respStart": 36.5,
+       "end": 40.9,
+       "bytes": 38689,
+       "body": 105666,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/3gickv_6i64jl.js",
+       "start": 10.4,
+       "reqStart": 36.8,
+       "respStart": 37.8,
+       "end": 40.7,
+       "bytes": 10295,
+       "body": 27417,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "other",
+       "name": "/icon.svg?icon.1plqej6prq-qi.svg",
+       "start": 52.9,
+       "reqStart": 53.5,
+       "respStart": 54.8,
+       "end": 55.1,
+       "bytes": 838,
+       "body": 963,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "fetch",
+       "name": "/?_rsc=N5gqt1sOHIfEO55J",
+       "start": 78.2,
+       "reqStart": 79.7,
+       "respStart": 81.5,
+       "end": 82.9,
+       "bytes": 464,
+       "body": 186,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "fetch",
+       "name": "/lab-v2?station=experience&render=lite&_rsc=00wVIN80ldkuJnnP",
+       "start": 78.4,
+       "reqStart": 79.8,
+       "respStart": 82.6,
+       "end": 83.2,
+       "bytes": 1291,
+       "body": 1716,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "fetch",
+       "name": "/?_rsc=00wVIN80ldkuJnnP",
+       "start": 84,
+       "reqStart": 84.3,
+       "respStart": 85.9,
+       "end": 86.3,
+       "bytes": 1242,
+       "body": 1602,
+       "blocking": "non-blocking"
+      }
+     ],
+     "fonts": [
+      "Outfit"
+     ],
+     "wallToLoad": 52
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.5,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.1,
+      "ttfb": 6.7,
+      "responseEnd": 8,
+      "domInteractive": 18.4,
+      "dcl": 18.4,
+      "load": 50,
+      "htmlBytes": 16456,
+      "htmlBody": 87683,
+      "serverTiming": []
+     },
+     "fp": 76,
+     "fcp": 76,
+     "lcp": 76,
+     "lcpEl": "SPAN.font-medium",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       76,
+       "SPAN.font-medium",
+       18260
+      ]
+     ],
+     "firstRaf": 23.6,
+     "gateStyleAt": null,
+     "sceneFirstVisible": null,
+     "sceneFullyVisible": null,
+     "litePlateDrawnAt": 24.2,
+     "longTasks": [],
+     "fonts": [
+      "Outfit"
+     ],
+     "wallToLoad": 54,
+     "resourceCount": 21
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.4,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.1,
+      "ttfb": 6.7,
+      "responseEnd": 7.9,
+      "domInteractive": 40,
+      "dcl": 40,
+      "load": 51.1,
+      "htmlBytes": 16456,
+      "htmlBody": 87683,
+      "serverTiming": []
+     },
+     "fp": 64,
+     "fcp": 64,
+     "lcp": 64,
+     "lcpEl": "SPAN.font-medium",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       64,
+       "SPAN.font-medium",
+       18260
+      ]
+     ],
+     "firstRaf": 18.2,
+     "gateStyleAt": null,
+     "sceneFirstVisible": null,
+     "sceneFullyVisible": null,
+     "litePlateDrawnAt": 28.6,
+     "longTasks": [],
+     "fonts": [
+      "Outfit"
+     ],
+     "wallToLoad": 55,
+     "resourceCount": 21
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.4,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.3,
+      "ttfb": 8.7,
+      "responseEnd": 9.9,
+      "domInteractive": 43.3,
+      "dcl": 43.4,
+      "load": 53.1,
+      "htmlBytes": 16456,
+      "htmlBody": 87683,
+      "serverTiming": []
+     },
+     "fp": 68,
+     "fcp": 68,
+     "lcp": 68,
+     "lcpEl": "SPAN.font-medium",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       68,
+       "SPAN.font-medium",
+       18260
+      ]
+     ],
+     "firstRaf": 20,
+     "gateStyleAt": null,
+     "sceneFirstVisible": null,
+     "sceneFullyVisible": null,
+     "litePlateDrawnAt": 33.5,
+     "longTasks": [],
+     "fonts": [
+      "Outfit"
+     ],
+     "wallToLoad": 57,
+     "resourceCount": 21
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.4,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.3,
+      "ttfb": 7.1,
+      "responseEnd": 8.6,
+      "domInteractive": 44.2,
+      "dcl": 44.2,
+      "load": 52.9,
+      "htmlBytes": 16456,
+      "htmlBody": 87683,
+      "serverTiming": []
+     },
+     "fp": 84,
+     "fcp": 84,
+     "lcp": 84,
+     "lcpEl": "SPAN.font-medium",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       84,
+       "SPAN.font-medium",
+       18260
+      ]
+     ],
+     "firstRaf": 20,
+     "gateStyleAt": null,
+     "sceneFirstVisible": null,
+     "sceneFullyVisible": null,
+     "litePlateDrawnAt": 30.6,
+     "longTasks": [],
+     "fonts": [
+      "Outfit"
+     ],
+     "wallToLoad": 56,
+     "resourceCount": 21
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.4,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.2,
+      "ttfb": 7.2,
+      "responseEnd": 8.8,
+      "domInteractive": 42.3,
+      "dcl": 42.4,
+      "load": 51.6,
+      "htmlBytes": 16456,
+      "htmlBody": 87683,
+      "serverTiming": []
+     },
+     "fp": 64,
+     "fcp": 64,
+     "lcp": 64,
+     "lcpEl": "SPAN.font-medium",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       64,
+       "SPAN.font-medium",
+       18260
+      ]
+     ],
+     "firstRaf": 23.6,
+     "gateStyleAt": null,
+     "sceneFirstVisible": null,
+     "sceneFullyVisible": null,
+     "litePlateDrawnAt": 46.2,
+     "longTasks": [],
+     "fonts": [
+      "Outfit"
+     ],
+     "wallToLoad": 54,
+     "resourceCount": 21
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.4,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.1,
+      "ttfb": 7.8,
+      "responseEnd": 9.1,
+      "domInteractive": 40,
+      "dcl": 40,
+      "load": 49.1,
+      "htmlBytes": 16456,
+      "htmlBody": 87683,
+      "serverTiming": []
+     },
+     "fp": 72,
+     "fcp": 72,
+     "lcp": 72,
+     "lcpEl": "SPAN.font-medium",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       72,
+       "SPAN.font-medium",
+       18260
+      ]
+     ],
+     "firstRaf": 17.7,
+     "gateStyleAt": null,
+     "sceneFirstVisible": null,
+     "sceneFullyVisible": null,
+     "litePlateDrawnAt": 21.7,
+     "longTasks": [],
+     "fonts": [
+      "Outfit"
+     ],
+     "wallToLoad": 53,
+     "resourceCount": 21
+    }
+   ]
+  },
+  "project": {
+   "warm-cache": [
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.5,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.2,
+      "ttfb": 9.7,
+      "responseEnd": 10.7,
+      "domInteractive": 28.9,
+      "dcl": 29,
+      "load": 30.9,
+      "htmlBytes": 12637,
+      "htmlBody": 57825,
+      "serverTiming": []
+     },
+     "fp": 56,
+     "fcp": 56,
+     "lcp": 56,
+     "lcpEl": "P.text-[clamp(1.125rem,1.5vw,1.25rem)].leading-[1.6].font-[380]",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       56,
+       "P.text-[clamp(1.125rem,1.5vw,1.25rem)].leading-[1.6].font-[380]",
+       81433
+      ]
+     ],
+     "firstRaf": 33.2,
+     "gateStyleAt": null,
+     "sceneFirstVisible": null,
+     "sceneFullyVisible": null,
+     "litePlateDrawnAt": null,
+     "longTasks": [],
+     "resources": [
+      {
+       "type": "link",
+       "name": "/_next/static/media/c0680f1bdb3a2e90-s.p.1gsd1jahc5dg_.woff2",
+       "start": 12.7,
+       "reqStart": 12.7,
+       "respStart": 12.7,
+       "end": 12.7,
+       "bytes": 0,
+       "body": 32228,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/_next/static/chunks/2kafo_um2qs4h.css",
+       "start": 13.2,
+       "reqStart": 13.2,
+       "respStart": 13.2,
+       "end": 13.2,
+       "bytes": 0,
+       "body": 51336,
+       "blocking": "blocking"
+      },
+      {
+       "type": "link",
+       "name": "/_next/static/chunks/1pcw6gskne7pf.js",
+       "start": 13.3,
+       "reqStart": 13.3,
+       "respStart": 13.3,
+       "end": 13.3,
+       "bytes": 0,
+       "body": 5600,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/1wnov70f88xjy.js",
+       "start": 13.5,
+       "reqStart": 13.5,
+       "respStart": 13.5,
+       "end": 13.5,
+       "bytes": 0,
+       "body": 29127,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/092r-mewpaf3q.js",
+       "start": 13.5,
+       "reqStart": 13.5,
+       "respStart": 13.5,
+       "end": 13.5,
+       "bytes": 0,
+       "body": 229052,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/0c1ad7rcpjghx.js",
+       "start": 13.6,
+       "reqStart": 13.6,
+       "respStart": 13.6,
+       "end": 13.6,
+       "bytes": 0,
+       "body": 169437,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/turbopack-2u1d16houkiyo.js",
+       "start": 13.6,
+       "reqStart": 13.6,
+       "respStart": 13.6,
+       "end": 13.6,
+       "bytes": 0,
+       "body": 9974,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/3qfy96eoyh-ek.js",
+       "start": 13.7,
+       "reqStart": 13.7,
+       "respStart": 13.7,
+       "end": 13.7,
+       "bytes": 0,
+       "body": 13994,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/0y1lx3-sp2a-p.js",
+       "start": 13.7,
+       "reqStart": 13.7,
+       "respStart": 13.7,
+       "end": 13.7,
+       "bytes": 0,
+       "body": 6443,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/3gickv_6i64jl.js",
+       "start": 13.7,
+       "reqStart": 13.7,
+       "respStart": 13.7,
+       "end": 13.7,
+       "bytes": 0,
+       "body": 27417,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "fetch",
+       "name": "/?_rsc=IdJiNe8zykWjflsa",
+       "start": 40.2,
+       "reqStart": 41.5,
+       "respStart": 46.4,
+       "end": 52.4,
+       "bytes": 464,
+       "body": 186,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "fetch",
+       "name": "/lab-v2?_rsc=IdJiNe8zykWjflsa",
+       "start": 40.3,
+       "reqStart": 41.5,
+       "respStart": 48.8,
+       "end": 52.5,
+       "bytes": 479,
+       "body": 228,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "fetch",
+       "name": "/lab-v2?station=experience&_rsc=IdJiNe8zykWjflsa",
+       "start": 40.5,
+       "reqStart": 41.7,
+       "respStart": 50.2,
+       "end": 52.5,
+       "bytes": 495,
+       "body": 247,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "fetch",
+       "name": "/lab-v2?station=engineering&project=sqlorbit&_rsc=IdJiNe8zykWjflsa",
+       "start": 40.5,
+       "reqStart": 42.5,
+       "respStart": 52,
+       "end": 52.7,
+       "bytes": 511,
+       "body": 265,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "fetch",
+       "name": "/?_rsc=zUK_lrLOAzM2qHsA",
+       "start": 53.7,
+       "reqStart": 54.3,
+       "respStart": 57.6,
+       "end": 63.6,
+       "bytes": 1243,
+       "body": 1602,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "fetch",
+       "name": "/lab-v2?_rsc=zUK_lrLOAzM2qHsA",
+       "start": 54.6,
+       "reqStart": 55.1,
+       "respStart": 59.3,
+       "end": 63.8,
+       "bytes": 1266,
+       "body": 1685,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "fetch",
+       "name": "/lab-v2?station=experience&_rsc=zUK_lrLOAzM2qHsA",
+       "start": 55.3,
+       "reqStart": 55.7,
+       "respStart": 61.5,
+       "end": 64,
+       "bytes": 1282,
+       "body": 1704,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "fetch",
+       "name": "/lab-v2?station=engineering&project=sqlorbit&_rsc=zUK_lrLOAzM2qHsA",
+       "start": 56.7,
+       "reqStart": 57.2,
+       "respStart": 63.1,
+       "end": 64,
+       "bytes": 1297,
+       "body": 1722,
+       "blocking": "non-blocking"
+      }
+     ],
+     "fonts": [
+      "Outfit"
+     ],
+     "wallToLoad": 37
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.4,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.1,
+      "ttfb": 6.8,
+      "responseEnd": 7.8,
+      "domInteractive": 16.1,
+      "dcl": 16.2,
+      "load": 18.1,
+      "htmlBytes": 12637,
+      "htmlBody": 57825,
+      "serverTiming": []
+     },
+     "fp": 36,
+     "fcp": 36,
+     "lcp": 36,
+     "lcpEl": "P.text-[clamp(1.125rem,1.5vw,1.25rem)].leading-[1.6].font-[380]",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       36,
+       "P.text-[clamp(1.125rem,1.5vw,1.25rem)].leading-[1.6].font-[380]",
+       81433
+      ]
+     ],
+     "firstRaf": 20.3,
+     "gateStyleAt": null,
+     "sceneFirstVisible": null,
+     "sceneFullyVisible": null,
+     "litePlateDrawnAt": null,
+     "longTasks": [],
+     "fonts": [
+      "Outfit"
+     ],
+     "wallToLoad": 24,
+     "resourceCount": 18
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.4,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1,
+      "ttfb": 6.2,
+      "responseEnd": 7.2,
+      "domInteractive": 15.7,
+      "dcl": 15.8,
+      "load": 17.6,
+      "htmlBytes": 12637,
+      "htmlBody": 57825,
+      "serverTiming": []
+     },
+     "fp": 36,
+     "fcp": 36,
+     "lcp": 36,
+     "lcpEl": "P.text-[clamp(1.125rem,1.5vw,1.25rem)].leading-[1.6].font-[380]",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       36,
+       "P.text-[clamp(1.125rem,1.5vw,1.25rem)].leading-[1.6].font-[380]",
+       81433
+      ]
+     ],
+     "firstRaf": 19.9,
+     "gateStyleAt": null,
+     "sceneFirstVisible": null,
+     "sceneFullyVisible": null,
+     "litePlateDrawnAt": null,
+     "longTasks": [],
+     "fonts": [
+      "Outfit"
+     ],
+     "wallToLoad": 23,
+     "resourceCount": 18
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.5,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.1,
+      "ttfb": 6.7,
+      "responseEnd": 7.8,
+      "domInteractive": 16.3,
+      "dcl": 16.3,
+      "load": 18.1,
+      "htmlBytes": 12637,
+      "htmlBody": 57825,
+      "serverTiming": []
+     },
+     "fp": 36,
+     "fcp": 36,
+     "lcp": 36,
+     "lcpEl": "P.text-[clamp(1.125rem,1.5vw,1.25rem)].leading-[1.6].font-[380]",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       36,
+       "P.text-[clamp(1.125rem,1.5vw,1.25rem)].leading-[1.6].font-[380]",
+       81433
+      ]
+     ],
+     "firstRaf": 21.3,
+     "gateStyleAt": null,
+     "sceneFirstVisible": null,
+     "sceneFullyVisible": null,
+     "litePlateDrawnAt": null,
+     "longTasks": [],
+     "fonts": [
+      "Outfit"
+     ],
+     "wallToLoad": 24,
+     "resourceCount": 18
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.6,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.5,
+      "ttfb": 10.6,
+      "responseEnd": 12,
+      "domInteractive": 25.1,
+      "dcl": 25.2,
+      "load": 28,
+      "htmlBytes": 12637,
+      "htmlBody": 57825,
+      "serverTiming": []
+     },
+     "fp": 56,
+     "fcp": 56,
+     "lcp": 56,
+     "lcpEl": "P.text-[clamp(1.125rem,1.5vw,1.25rem)].leading-[1.6].font-[380]",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       56,
+       "P.text-[clamp(1.125rem,1.5vw,1.25rem)].leading-[1.6].font-[380]",
+       81433
+      ]
+     ],
+     "firstRaf": 34.3,
+     "gateStyleAt": null,
+     "sceneFirstVisible": null,
+     "sceneFullyVisible": null,
+     "litePlateDrawnAt": null,
+     "longTasks": [],
+     "fonts": [
+      "Outfit"
+     ],
+     "wallToLoad": 36,
+     "resourceCount": 18
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.5,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.2,
+      "ttfb": 7.1,
+      "responseEnd": 8.1,
+      "domInteractive": 17.5,
+      "dcl": 17.6,
+      "load": 19.6,
+      "htmlBytes": 12637,
+      "htmlBody": 57825,
+      "serverTiming": []
+     },
+     "fp": 40,
+     "fcp": 40,
+     "lcp": 40,
+     "lcpEl": "P.text-[clamp(1.125rem,1.5vw,1.25rem)].leading-[1.6].font-[380]",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       40,
+       "P.text-[clamp(1.125rem,1.5vw,1.25rem)].leading-[1.6].font-[380]",
+       81433
+      ]
+     ],
+     "firstRaf": 22.5,
+     "gateStyleAt": null,
+     "sceneFirstVisible": null,
+     "sceneFullyVisible": null,
+     "litePlateDrawnAt": null,
+     "longTasks": [],
+     "fonts": [
+      "Outfit"
+     ],
+     "wallToLoad": 25,
+     "resourceCount": 18
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.4,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1,
+      "ttfb": 5.7,
+      "responseEnd": 6.8,
+      "domInteractive": 16.4,
+      "dcl": 16.5,
+      "load": 18.4,
+      "htmlBytes": 12637,
+      "htmlBody": 57825,
+      "serverTiming": []
+     },
+     "fp": 44,
+     "fcp": 44,
+     "lcp": 44,
+     "lcpEl": "P.text-[clamp(1.125rem,1.5vw,1.25rem)].leading-[1.6].font-[380]",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       44,
+       "P.text-[clamp(1.125rem,1.5vw,1.25rem)].leading-[1.6].font-[380]",
+       81433
+      ]
+     ],
+     "firstRaf": 23.4,
+     "gateStyleAt": null,
+     "sceneFirstVisible": null,
+     "sceneFullyVisible": null,
+     "litePlateDrawnAt": null,
+     "longTasks": [],
+     "fonts": [
+      "Outfit"
+     ],
+     "wallToLoad": 23,
+     "resourceCount": 18
+    }
+   ],
+   "warm-process": [
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.6,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.3,
+      "ttfb": 7,
+      "responseEnd": 8.3,
+      "domInteractive": 39.8,
+      "dcl": 39.9,
+      "load": 49.8,
+      "htmlBytes": 12637,
+      "htmlBody": 57825,
+      "serverTiming": []
+     },
+     "fp": 64,
+     "fcp": 64,
+     "lcp": 64,
+     "lcpEl": "P.text-[clamp(1.125rem,1.5vw,1.25rem)].leading-[1.6].font-[380]",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       64,
+       "P.text-[clamp(1.125rem,1.5vw,1.25rem)].leading-[1.6].font-[380]",
+       81433
+      ]
+     ],
+     "firstRaf": 18.5,
+     "gateStyleAt": null,
+     "sceneFirstVisible": null,
+     "sceneFullyVisible": null,
+     "litePlateDrawnAt": null,
+     "longTasks": [],
+     "resources": [
+      {
+       "type": "link",
+       "name": "/_next/static/media/c0680f1bdb3a2e90-s.p.1gsd1jahc5dg_.woff2",
+       "start": 10.2,
+       "reqStart": 10.7,
+       "respStart": 12.2,
+       "end": 12.8,
+       "bytes": 32528,
+       "body": 32228,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "link",
+       "name": "/_next/static/chunks/2kafo_um2qs4h.css",
+       "start": 10.8,
+       "reqStart": 11.1,
+       "respStart": 13.3,
+       "end": 14.9,
+       "bytes": 11187,
+       "body": 51336,
+       "blocking": "blocking"
+      },
+      {
+       "type": "link",
+       "name": "/_next/static/chunks/1pcw6gskne7pf.js",
+       "start": 10.8,
+       "reqStart": 15.1,
+       "respStart": 17.1,
+       "end": 17.8,
+       "bytes": 2330,
+       "body": 5600,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/turbopack-2u1d16houkiyo.js",
+       "start": 10.9,
+       "reqStart": 16.1,
+       "respStart": 18.4,
+       "end": 20.9,
+       "bytes": 4205,
+       "body": 9974,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/1wnov70f88xjy.js",
+       "start": 10.9,
+       "reqStart": 15.8,
+       "respStart": 18.1,
+       "end": 20.7,
+       "bytes": 7950,
+       "body": 29127,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/0c1ad7rcpjghx.js",
+       "start": 10.9,
+       "reqStart": 15.9,
+       "respStart": 19.4,
+       "end": 25.8,
+       "bytes": 46746,
+       "body": 169437,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/092r-mewpaf3q.js",
+       "start": 10.9,
+       "reqStart": 15.9,
+       "respStart": 19.2,
+       "end": 26.1,
+       "bytes": 71981,
+       "body": 229052,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/3qfy96eoyh-ek.js",
+       "start": 11,
+       "reqStart": 16.8,
+       "respStart": 18.8,
+       "end": 21,
+       "bytes": 3815,
+       "body": 13994,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/0y1lx3-sp2a-p.js",
+       "start": 11,
+       "reqStart": 19.8,
+       "respStart": 21.5,
+       "end": 25.7,
+       "bytes": 2755,
+       "body": 6443,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/3gickv_6i64jl.js",
+       "start": 11,
+       "reqStart": 22.2,
+       "respStart": 24.2,
+       "end": 29.3,
+       "bytes": 10295,
+       "body": 27417,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "other",
+       "name": "/icon.svg?icon.1plqej6prq-qi.svg",
+       "start": 52.8,
+       "reqStart": 53.6,
+       "respStart": 55.7,
+       "end": 56.1,
+       "bytes": 838,
+       "body": 963,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "fetch",
+       "name": "/?_rsc=IdJiNe8zykWjflsa",
+       "start": 62.7,
+       "reqStart": 63.3,
+       "respStart": 65.6,
+       "end": 69.5,
+       "bytes": 464,
+       "body": 186,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "fetch",
+       "name": "/lab-v2?_rsc=IdJiNe8zykWjflsa",
+       "start": 62.8,
+       "reqStart": 63.5,
+       "respStart": 66.6,
+       "end": 69.6,
+       "bytes": 479,
+       "body": 228,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "fetch",
+       "name": "/lab-v2?station=experience&_rsc=IdJiNe8zykWjflsa",
+       "start": 62.9,
+       "reqStart": 63.6,
+       "respStart": 68,
+       "end": 69.7,
+       "bytes": 495,
+       "body": 247,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "fetch",
+       "name": "/lab-v2?station=engineering&project=sqlorbit&_rsc=IdJiNe8zykWjflsa",
+       "start": 63,
+       "reqStart": 63.6,
+       "respStart": 69,
+       "end": 69.7,
+       "bytes": 511,
+       "body": 265,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "fetch",
+       "name": "/lab-v2?_rsc=zUK_lrLOAzM2qHsA",
+       "start": 70.7,
+       "reqStart": 71,
+       "respStart": 73.3,
+       "end": 80.7,
+       "bytes": 1266,
+       "body": 1685,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "fetch",
+       "name": "/lab-v2?station=experience&_rsc=zUK_lrLOAzM2qHsA",
+       "start": 71.2,
+       "reqStart": 71.6,
+       "respStart": 74.6,
+       "end": 80.6,
+       "bytes": 1281,
+       "body": 1704,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "fetch",
+       "name": "/lab-v2?station=engineering&project=sqlorbit&_rsc=zUK_lrLOAzM2qHsA",
+       "start": 71.6,
+       "reqStart": 71.9,
+       "respStart": 76.6,
+       "end": 80.8,
+       "bytes": 1296,
+       "body": 1722,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "fetch",
+       "name": "/?_rsc=zUK_lrLOAzM2qHsA",
+       "start": 72.1,
+       "reqStart": 72.4,
+       "respStart": 77.6,
+       "end": 80.8,
+       "bytes": 1242,
+       "body": 1602,
+       "blocking": "non-blocking"
+      }
+     ],
+     "fonts": [
+      "Outfit"
+     ],
+     "wallToLoad": 55
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.5,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.3,
+      "ttfb": 6.2,
+      "responseEnd": 7.9,
+      "domInteractive": 44.8,
+      "dcl": 44.9,
+      "load": 55,
+      "htmlBytes": 12637,
+      "htmlBody": 57825,
+      "serverTiming": []
+     },
+     "fp": 76,
+     "fcp": 76,
+     "lcp": 76,
+     "lcpEl": "P.text-[clamp(1.125rem,1.5vw,1.25rem)].leading-[1.6].font-[380]",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       76,
+       "P.text-[clamp(1.125rem,1.5vw,1.25rem)].leading-[1.6].font-[380]",
+       81433
+      ]
+     ],
+     "firstRaf": 18.5,
+     "gateStyleAt": null,
+     "sceneFirstVisible": null,
+     "sceneFullyVisible": null,
+     "litePlateDrawnAt": null,
+     "longTasks": [],
+     "fonts": [
+      "Outfit"
+     ],
+     "wallToLoad": 60,
+     "resourceCount": 19
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.5,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.2,
+      "ttfb": 6.1,
+      "responseEnd": 7.4,
+      "domInteractive": 16.8,
+      "dcl": 16.8,
+      "load": 47.4,
+      "htmlBytes": 12637,
+      "htmlBody": 57825,
+      "serverTiming": []
+     },
+     "fp": 60,
+     "fcp": 60,
+     "lcp": 60,
+     "lcpEl": "P.text-[clamp(1.125rem,1.5vw,1.25rem)].leading-[1.6].font-[380]",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       60,
+       "P.text-[clamp(1.125rem,1.5vw,1.25rem)].leading-[1.6].font-[380]",
+       81433
+      ]
+     ],
+     "firstRaf": 20.9,
+     "gateStyleAt": null,
+     "sceneFirstVisible": null,
+     "sceneFullyVisible": null,
+     "litePlateDrawnAt": null,
+     "longTasks": [],
+     "fonts": [
+      "Outfit"
+     ],
+     "wallToLoad": 51,
+     "resourceCount": 19
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.5,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.1,
+      "ttfb": 7,
+      "responseEnd": 7.9,
+      "domInteractive": 16.2,
+      "dcl": 16.3,
+      "load": 40.9,
+      "htmlBytes": 12637,
+      "htmlBody": 57825,
+      "serverTiming": []
+     },
+     "fp": 44,
+     "fcp": 44,
+     "lcp": 44,
+     "lcpEl": "P.text-[clamp(1.125rem,1.5vw,1.25rem)].leading-[1.6].font-[380]",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       44,
+       "P.text-[clamp(1.125rem,1.5vw,1.25rem)].leading-[1.6].font-[380]",
+       81433
+      ]
+     ],
+     "firstRaf": 32.3,
+     "gateStyleAt": null,
+     "sceneFirstVisible": null,
+     "sceneFullyVisible": null,
+     "litePlateDrawnAt": null,
+     "longTasks": [],
+     "fonts": [
+      "Outfit",
+      "Outfit Fallback"
+     ],
+     "wallToLoad": 44,
+     "resourceCount": 19
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.7,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 4.5,
+      "ttfb": 13.1,
+      "responseEnd": 16,
+      "domInteractive": 32.9,
+      "dcl": 32.9,
+      "load": 81.4,
+      "htmlBytes": 12637,
+      "htmlBody": 57825,
+      "serverTiming": []
+     },
+     "fp": 96,
+     "fcp": 96,
+     "lcp": 96,
+     "lcpEl": "P.text-[clamp(1.125rem,1.5vw,1.25rem)].leading-[1.6].font-[380]",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       96,
+       "P.text-[clamp(1.125rem,1.5vw,1.25rem)].leading-[1.6].font-[380]",
+       81433
+      ]
+     ],
+     "firstRaf": 61.3,
+     "gateStyleAt": null,
+     "sceneFirstVisible": null,
+     "sceneFullyVisible": null,
+     "litePlateDrawnAt": null,
+     "longTasks": [],
+     "fonts": [
+      "Outfit"
+     ],
+     "wallToLoad": 101,
+     "resourceCount": 19
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.5,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.2,
+      "ttfb": 6.5,
+      "responseEnd": 8,
+      "domInteractive": 40.9,
+      "dcl": 41,
+      "load": 48.7,
+      "htmlBytes": 12637,
+      "htmlBody": 57825,
+      "serverTiming": []
+     },
+     "fp": 60,
+     "fcp": 60,
+     "lcp": 60,
+     "lcpEl": "P.text-[clamp(1.125rem,1.5vw,1.25rem)].leading-[1.6].font-[380]",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       60,
+       "P.text-[clamp(1.125rem,1.5vw,1.25rem)].leading-[1.6].font-[380]",
+       81433
+      ]
+     ],
+     "firstRaf": 22.9,
+     "gateStyleAt": null,
+     "sceneFirstVisible": null,
+     "sceneFullyVisible": null,
+     "litePlateDrawnAt": null,
+     "longTasks": [],
+     "fonts": [
+      "Outfit"
+     ],
+     "wallToLoad": 52,
+     "resourceCount": 19
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.4,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.3,
+      "ttfb": 6.9,
+      "responseEnd": 8,
+      "domInteractive": 35.5,
+      "dcl": 35.5,
+      "load": 42.3,
+      "htmlBytes": 12637,
+      "htmlBody": 57825,
+      "serverTiming": []
+     },
+     "fp": 48,
+     "fcp": 48,
+     "lcp": 48,
+     "lcpEl": "P.text-[clamp(1.125rem,1.5vw,1.25rem)].leading-[1.6].font-[380]",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       48,
+       "P.text-[clamp(1.125rem,1.5vw,1.25rem)].leading-[1.6].font-[380]",
+       81433
+      ]
+     ],
+     "firstRaf": 17.1,
+     "gateStyleAt": null,
+     "sceneFirstVisible": null,
+     "sceneFullyVisible": null,
+     "litePlateDrawnAt": null,
+     "longTasks": [],
+     "fonts": [
+      "Outfit"
+     ],
+     "wallToLoad": 46,
+     "resourceCount": 19
+    }
+   ]
+  },
+  "notfound": {
+   "warm-cache": [
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.5,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.3,
+      "ttfb": 3.5,
+      "responseEnd": 3.7,
+      "domInteractive": 20.3,
+      "dcl": 20.3,
+      "load": 21.2,
+      "htmlBytes": 2865,
+      "htmlBody": 9390,
+      "serverTiming": []
+     },
+     "fp": 56,
+     "fcp": 56,
+     "lcp": 56,
+     "lcpEl": "H2",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       56,
+       "H2",
+       3553
+      ]
+     ],
+     "firstRaf": 21.6,
+     "gateStyleAt": null,
+     "sceneFirstVisible": null,
+     "sceneFullyVisible": null,
+     "litePlateDrawnAt": null,
+     "longTasks": [],
+     "resources": [
+      {
+       "type": "link",
+       "name": "/_next/static/chunks/2kafo_um2qs4h.css",
+       "start": 7.9,
+       "reqStart": 7.9,
+       "respStart": 7.9,
+       "end": 7.9,
+       "bytes": 0,
+       "body": 51336,
+       "blocking": "blocking"
+      },
+      {
+       "type": "link",
+       "name": "/_next/static/chunks/1pcw6gskne7pf.js",
+       "start": 8,
+       "reqStart": 8,
+       "respStart": 8,
+       "end": 8,
+       "bytes": 0,
+       "body": 5600,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/1wnov70f88xjy.js",
+       "start": 8.1,
+       "reqStart": 8.1,
+       "respStart": 8.1,
+       "end": 8.1,
+       "bytes": 0,
+       "body": 29127,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/092r-mewpaf3q.js",
+       "start": 8.1,
+       "reqStart": 8.1,
+       "respStart": 8.1,
+       "end": 8.1,
+       "bytes": 0,
+       "body": 229052,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/0c1ad7rcpjghx.js",
+       "start": 8.1,
+       "reqStart": 8.1,
+       "respStart": 8.1,
+       "end": 8.1,
+       "bytes": 0,
+       "body": 169437,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/turbopack-2u1d16houkiyo.js",
+       "start": 8.1,
+       "reqStart": 8.1,
+       "respStart": 8.1,
+       "end": 8.1,
+       "bytes": 0,
+       "body": 9974,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/3qfy96eoyh-ek.js",
+       "start": 8.2,
+       "reqStart": 8.2,
+       "respStart": 8.2,
+       "end": 8.2,
+       "bytes": 0,
+       "body": 13994,
+       "blocking": "non-blocking"
+      }
+     ],
+     "fonts": [],
+     "wallToLoad": 28
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.5,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1,
+      "ttfb": 2.7,
+      "responseEnd": 3,
+      "domInteractive": 11,
+      "dcl": 11.2,
+      "load": 11.5,
+      "htmlBytes": 2865,
+      "htmlBody": 9390,
+      "serverTiming": []
+     },
+     "fp": 52,
+     "fcp": 52,
+     "lcp": 52,
+     "lcpEl": "H2",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       52,
+       "H2",
+       3553
+      ]
+     ],
+     "firstRaf": 13.2,
+     "gateStyleAt": null,
+     "sceneFirstVisible": null,
+     "sceneFullyVisible": null,
+     "litePlateDrawnAt": null,
+     "longTasks": [],
+     "fonts": [],
+     "wallToLoad": 15,
+     "resourceCount": 7
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.6,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 4.2,
+      "ttfb": 18.4,
+      "responseEnd": 26.4,
+      "domInteractive": 40.9,
+      "dcl": 41,
+      "load": 41.9,
+      "htmlBytes": 2865,
+      "htmlBody": 9390,
+      "serverTiming": []
+     },
+     "fp": 80,
+     "fcp": 80,
+     "lcp": 80,
+     "lcpEl": "H2",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       80,
+       "H2",
+       3553
+      ]
+     ],
+     "firstRaf": 52,
+     "gateStyleAt": null,
+     "sceneFirstVisible": null,
+     "sceneFullyVisible": null,
+     "litePlateDrawnAt": null,
+     "longTasks": [],
+     "fonts": [],
+     "wallToLoad": 56,
+     "resourceCount": 7
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.5,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1,
+      "ttfb": 2.4,
+      "responseEnd": 2.6,
+      "domInteractive": 12.2,
+      "dcl": 12.2,
+      "load": 12.7,
+      "htmlBytes": 2865,
+      "htmlBody": 9390,
+      "serverTiming": []
+     },
+     "fp": 28,
+     "fcp": 28,
+     "lcp": 28,
+     "lcpEl": "H2",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       28,
+       "H2",
+       3553
+      ]
+     ],
+     "firstRaf": 14.4,
+     "gateStyleAt": null,
+     "sceneFirstVisible": null,
+     "sceneFullyVisible": null,
+     "litePlateDrawnAt": null,
+     "longTasks": [],
+     "fonts": [],
+     "wallToLoad": 16,
+     "resourceCount": 7
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.6,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.3,
+      "ttfb": 3.5,
+      "responseEnd": 3.9,
+      "domInteractive": 14.9,
+      "dcl": 14.9,
+      "load": 15.6,
+      "htmlBytes": 2865,
+      "htmlBody": 9390,
+      "serverTiming": []
+     },
+     "fp": 56,
+     "fcp": 56,
+     "lcp": 56,
+     "lcpEl": "H2",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       56,
+       "H2",
+       3553
+      ]
+     ],
+     "firstRaf": 16,
+     "gateStyleAt": null,
+     "sceneFirstVisible": null,
+     "sceneFullyVisible": null,
+     "litePlateDrawnAt": null,
+     "longTasks": [],
+     "fonts": [],
+     "wallToLoad": 22,
+     "resourceCount": 7
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.5,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.3,
+      "ttfb": 3,
+      "responseEnd": 3.3,
+      "domInteractive": 13.5,
+      "dcl": 13.6,
+      "load": 14.1,
+      "htmlBytes": 2865,
+      "htmlBody": 9390,
+      "serverTiming": []
+     },
+     "fp": 40,
+     "fcp": 40,
+     "lcp": 40,
+     "lcpEl": "H2",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       40,
+       "H2",
+       3553
+      ]
+     ],
+     "firstRaf": 16,
+     "gateStyleAt": null,
+     "sceneFirstVisible": null,
+     "sceneFullyVisible": null,
+     "litePlateDrawnAt": null,
+     "longTasks": [],
+     "fonts": [],
+     "wallToLoad": 18,
+     "resourceCount": 7
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.4,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1,
+      "ttfb": 2.2,
+      "responseEnd": 2.5,
+      "domInteractive": 9.9,
+      "dcl": 9.9,
+      "load": 10.3,
+      "htmlBytes": 2865,
+      "htmlBody": 9390,
+      "serverTiming": []
+     },
+     "fp": 32,
+     "fcp": 32,
+     "lcp": 32,
+     "lcpEl": "H2",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       32,
+       "H2",
+       3553
+      ]
+     ],
+     "firstRaf": 11.8,
+     "gateStyleAt": null,
+     "sceneFirstVisible": null,
+     "sceneFullyVisible": null,
+     "litePlateDrawnAt": null,
+     "longTasks": [],
+     "fonts": [],
+     "wallToLoad": 13,
+     "resourceCount": 7
+    }
+   ],
+   "warm-process": [
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.6,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.8,
+      "ttfb": 3.9,
+      "responseEnd": 4.2,
+      "domInteractive": 25.5,
+      "dcl": 25.5,
+      "load": 50.2,
+      "htmlBytes": 2865,
+      "htmlBody": 9390,
+      "serverTiming": []
+     },
+     "fp": 56,
+     "fcp": 56,
+     "lcp": 56,
+     "lcpEl": "H2",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       56,
+       "H2",
+       3553
+      ]
+     ],
+     "firstRaf": 38.8,
+     "gateStyleAt": null,
+     "sceneFirstVisible": null,
+     "sceneFullyVisible": null,
+     "litePlateDrawnAt": null,
+     "longTasks": [],
+     "resources": [
+      {
+       "type": "link",
+       "name": "/_next/static/chunks/2kafo_um2qs4h.css",
+       "start": 8.7,
+       "reqStart": 10.3,
+       "respStart": 13.9,
+       "end": 22.8,
+       "bytes": 11187,
+       "body": 51336,
+       "blocking": "blocking"
+      },
+      {
+       "type": "link",
+       "name": "/_next/static/chunks/1pcw6gskne7pf.js",
+       "start": 8.9,
+       "reqStart": 10.6,
+       "respStart": 13.1,
+       "end": 16.1,
+       "bytes": 2330,
+       "body": 5600,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/1wnov70f88xjy.js",
+       "start": 9,
+       "reqStart": 14.2,
+       "respStart": 16.3,
+       "end": 27.5,
+       "bytes": 7950,
+       "body": 29127,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/turbopack-2u1d16houkiyo.js",
+       "start": 9,
+       "reqStart": 14.5,
+       "respStart": 16.4,
+       "end": 27.8,
+       "bytes": 4205,
+       "body": 9974,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/0c1ad7rcpjghx.js",
+       "start": 9,
+       "reqStart": 14.4,
+       "respStart": 17.1,
+       "end": 37.8,
+       "bytes": 46746,
+       "body": 169437,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/092r-mewpaf3q.js",
+       "start": 9,
+       "reqStart": 14.3,
+       "respStart": 18.2,
+       "end": 43.4,
+       "bytes": 71981,
+       "body": 229052,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "script",
+       "name": "/_next/static/chunks/3qfy96eoyh-ek.js",
+       "start": 9.1,
+       "reqStart": 23.2,
+       "respStart": 26.3,
+       "end": 38.8,
+       "bytes": 3815,
+       "body": 13994,
+       "blocking": "non-blocking"
+      },
+      {
+       "type": "other",
+       "name": "/icon.svg?icon.1plqej6prq-qi.svg",
+       "start": 52.6,
+       "reqStart": 53.1,
+       "respStart": 55.7,
+       "end": 56.6,
+       "bytes": 838,
+       "body": 963,
+       "blocking": "non-blocking"
+      }
+     ],
+     "fonts": [],
+     "wallToLoad": 55
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.5,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.4,
+      "ttfb": 2.8,
+      "responseEnd": 3,
+      "domInteractive": 13.3,
+      "dcl": 13.3,
+      "load": 26.4,
+      "htmlBytes": 2865,
+      "htmlBody": 9390,
+      "serverTiming": []
+     },
+     "fp": 40,
+     "fcp": 40,
+     "lcp": 40,
+     "lcpEl": "H2",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       40,
+       "H2",
+       3553
+      ]
+     ],
+     "firstRaf": 11.8,
+     "gateStyleAt": null,
+     "sceneFirstVisible": null,
+     "sceneFullyVisible": null,
+     "litePlateDrawnAt": null,
+     "longTasks": [],
+     "fonts": [],
+     "wallToLoad": 31,
+     "resourceCount": 8
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.5,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.2,
+      "ttfb": 2.5,
+      "responseEnd": 2.7,
+      "domInteractive": 12.7,
+      "dcl": 12.8,
+      "load": 22.9,
+      "htmlBytes": 2865,
+      "htmlBody": 9390,
+      "serverTiming": []
+     },
+     "fp": 28,
+     "fcp": 28,
+     "lcp": 28,
+     "lcpEl": "H2",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       28,
+       "H2",
+       3553
+      ]
+     ],
+     "firstRaf": 10.2,
+     "gateStyleAt": null,
+     "sceneFirstVisible": null,
+     "sceneFullyVisible": null,
+     "litePlateDrawnAt": null,
+     "longTasks": [],
+     "fonts": [],
+     "wallToLoad": 27,
+     "resourceCount": 8
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.5,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.4,
+      "ttfb": 2.6,
+      "responseEnd": 2.9,
+      "domInteractive": 10.4,
+      "dcl": 10.4,
+      "load": 23.9,
+      "htmlBytes": 2865,
+      "htmlBody": 9390,
+      "serverTiming": []
+     },
+     "fp": 28,
+     "fcp": 28,
+     "lcp": 28,
+     "lcpEl": "H2",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       28,
+       "H2",
+       3553
+      ]
+     ],
+     "firstRaf": 11.5,
+     "gateStyleAt": null,
+     "sceneFirstVisible": null,
+     "sceneFullyVisible": null,
+     "litePlateDrawnAt": null,
+     "longTasks": [],
+     "fonts": [],
+     "wallToLoad": 28,
+     "resourceCount": 8
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.4,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.2,
+      "ttfb": 2.8,
+      "responseEnd": 3.1,
+      "domInteractive": 15.5,
+      "dcl": 15.5,
+      "load": 26.1,
+      "htmlBytes": 2865,
+      "htmlBody": 9390,
+      "serverTiming": []
+     },
+     "fp": 28,
+     "fcp": 28,
+     "lcp": 28,
+     "lcpEl": "H2",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       28,
+       "H2",
+       3553
+      ]
+     ],
+     "firstRaf": 13.4,
+     "gateStyleAt": null,
+     "sceneFirstVisible": null,
+     "sceneFullyVisible": null,
+     "litePlateDrawnAt": null,
+     "longTasks": [],
+     "fonts": [],
+     "wallToLoad": 32,
+     "resourceCount": 8
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.6,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.4,
+      "ttfb": 3,
+      "responseEnd": 3.3,
+      "domInteractive": 16.1,
+      "dcl": 16.1,
+      "load": 28.8,
+      "htmlBytes": 2865,
+      "htmlBody": 9390,
+      "serverTiming": []
+     },
+     "fp": 28,
+     "fcp": 28,
+     "lcp": 28,
+     "lcpEl": "H2",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       28,
+       "H2",
+       3553
+      ]
+     ],
+     "firstRaf": 13.9,
+     "gateStyleAt": null,
+     "sceneFirstVisible": null,
+     "sceneFullyVisible": null,
+     "litePlateDrawnAt": null,
+     "longTasks": [],
+     "fonts": [],
+     "wallToLoad": 33,
+     "resourceCount": 8
+    },
+    {
+     "nav": {
+      "redirect": 0,
+      "fetchStart": 0.5,
+      "dns": 0,
+      "connect": 0,
+      "requestStart": 1.2,
+      "ttfb": 2.5,
+      "responseEnd": 2.7,
+      "domInteractive": 13,
+      "dcl": 13.1,
+      "load": 23.6,
+      "htmlBytes": 2865,
+      "htmlBody": 9390,
+      "serverTiming": []
+     },
+     "fp": 24,
+     "fcp": 24,
+     "lcp": 24,
+     "lcpEl": "H2",
+     "lcpUrl": "",
+     "lcpAll": [
+      [
+       24,
+       "H2",
+       3553
+      ]
+     ],
+     "firstRaf": 11,
+     "gateStyleAt": null,
+     "sceneFirstVisible": null,
+     "sceneFullyVisible": null,
+     "litePlateDrawnAt": null,
+     "longTasks": [],
+     "fonts": [],
+     "wallToLoad": 28,
+     "resourceCount": 8
+    }
+   ]
+  }
+ },
+ "finishedAt": "2026-11-28T10:11:06.656Z",
+ "slimmed": "resources: listed for the first trial of each route and condition only; resourceCount elsewhere"
+}

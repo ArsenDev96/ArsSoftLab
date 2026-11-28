@@ -1,0 +1,115 @@
+{
+ "route": "/m14q-not-a-page",
+ "cond": "warm",
+ "milestones": {
+  "fcp": 25.3,
+  "firstPaintEvent": 25.3,
+  "responseStart": 6.6,
+  "domContentLoaded": 0,
+  "load": 31.6,
+  "lcpCandidates": [
+   25.3
+  ]
+ },
+ "pipeline": {
+  "firstBeginMainThreadFrame": 15.6,
+  "firstCommit": 17.2,
+  "firstActivate": 17.8,
+  "firstDrawFrame": 18,
+  "commitsBeforeFcp": 3,
+  "rasterTasksBeforeFcp": 1,
+  "rasterMsBeforeFcp": 0,
+  "imageDecodeTasksBeforeFcp": 0,
+  "imageDecodeMsBeforeFcp": 0,
+  "decodeImageMsBeforeFcp": 0
+ },
+ "busyBeforeFcp": [
+  [
+   "GPU Process/GpuVSyncThread",
+   51
+  ],
+  [
+   "Browser/CrBrowserMain",
+   34
+  ],
+  [
+   "Renderer/CrRendererMain (page renderer)",
+   24
+  ],
+  [
+   "Renderer/ThreadPoolForegroundWorker (page renderer)",
+   16
+  ],
+  [
+   "Browser/ThreadPoolForegroundWorker",
+   15
+  ],
+  [
+   "GPU Process/CrGpuMain",
+   11
+  ],
+  [
+   "Browser/Chrome_DevToolsHandlerThread",
+   8
+  ],
+  [
+   "Renderer/Compositor (page renderer)",
+   3
+  ],
+  [
+   "Browser/Chrome_IOThread",
+   3
+  ],
+  [
+   "GPU Process/VizCompositorThread",
+   3
+  ],
+  [
+   "Renderer/Chrome_ChildIOThread (page renderer)",
+   2
+  ],
+  [
+   "Browser/ThreadPoolSingleThreadSharedForeground",
+   1
+  ],
+  [
+   "Renderer/PerfettoTrace (page renderer)",
+   1
+  ],
+  [
+   "Browser/PerfettoTrace",
+   0
+  ],
+  [
+   "GPU Process/ThreadPoolForegroundWorker",
+   0
+  ]
+ ],
+ "selfBeforeFcp": [
+  [
+   "GPU Process/GpuVSyncThread :: ThreadControllerImpl::RunTask",
+   16.6
+  ],
+  [
+   "Renderer/ThreadPoolForegroundWorker (page renderer) :: v8.parseOnBackgroundParsing",
+   10.9
+  ],
+  [
+   "Browser/ThreadPoolForegroundWorker :: Receive mojo message",
+   10.5
+  ],
+  [
+   "Browser/Chrome_DevToolsHandlerThread :: ThreadControllerImpl::RunTask",
+   4
+  ],
+  [
+   "Browser/ThreadPoolForegroundWorker :: ThreadPool_RunTask",
+   4
+  ],
+  [
+   "Browser/Chrome_IOThread :: IOHandler::OnIOCompleted",
+   3.1
+  ]
+ ],
+ "shots": 1
+}

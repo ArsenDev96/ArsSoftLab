@@ -1,0 +1,71 @@
+{
+ "servers": [
+  "final"
+ ],
+ "route": "/lab-v2",
+ "trials": 1,
+ "proxied": false,
+ "collectedAt": "2026-11-28T12:02:56.904Z",
+ "results": [
+  {
+   "server": "final",
+   "net": "50-20",
+   "visit": "repeat",
+   "trial": 0,
+   "fcp": 188,
+   "load": 199,
+   "gateStyle": 228,
+   "gateFirst": 285,
+   "gateFull": 485,
+   "sceneVisible": 285,
+   "sceneFull": 485,
+   "sceneRequests": 94,
+   "v2Requests": 81,
+   "diskHits": 81,
+   "memoryHits": 0,
+   "revalidated304": 13,
+   "downloaded200": 0,
+   "v2Revalidated304": 0,
+   "v2Downloaded200": 0,
+   "v2DiskHits": 81,
+   "networkBytes": 3153,
+   "v2CacheControl": [
+    "public, max-age=86400"
+   ],
+   "failed": 0,
+   "imageDeliveryEnd": 192,
+   "sceneReady": 485,
+   "errors": []
+  },
+  {
+   "server": "final",
+   "net": "12-70",
+   "visit": "repeat",
+   "trial": 0,
+   "fcp": 228,
+   "load": 343,
+   "gateStyle": 282,
+   "gateFirst": 344,
+   "gateFull": 544,
+   "sceneVisible": 344,
+   "sceneFull": 544,
+   "sceneRequests": 94,
+   "v2Requests": 81,
+   "diskHits": 81,
+   "memoryHits": 0,
+   "revalidated304": 13,
+   "downloaded200": 0,
+   "v2Revalidated304": 0,
+   "v2Downloaded200": 0,
+   "v2DiskHits": 81,
+   "networkBytes": 3153,
+   "v2CacheControl": [
+    "public, max-age=86400"
+   ],
+   "failed": 0,
+   "imageDeliveryEnd": 342,
+   "sceneReady": 544,
+   "errors": []
+  }
+ ]
+}

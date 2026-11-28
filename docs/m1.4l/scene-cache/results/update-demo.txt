@@ -1,0 +1,6 @@
+t=0.0s first load                                          -> version-1  server saw: /asset.txt plain
+t=0.0s file overwritten in place (new size and mtime)
+t=0.0s same URL, within the lifetime                       -> version-1  server saw: nothing
+t=0.0s new URL (as a renamed file would get)               -> version-2! server saw: /asset.txt?new-path plain
+t=6.0s same URL, after the lifetime                        -> version-2! server saw: /asset.txt conditional
+t=6.0s same URL, again                                     -> version-2! server saw: nothing

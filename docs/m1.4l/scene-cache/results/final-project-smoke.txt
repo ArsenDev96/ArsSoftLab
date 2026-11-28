@@ -1,0 +1,41 @@
+# M1.4R.3 final production build: M1.4P project suite, representative pages (arimap, aziz)
+PASS  [full] arimap: header Experience href is /lab-v2?station=experience
+PASS  [full] arimap: lands on the lab with Experience open
+PASS  [full] arimap: render mode kept (Cinematic, camera)
+PASS  [full] arimap: Lab is the active header entry
+PASS  [full] arimap: nothing scrolled
+PASS  [full] arimap: Back: the project page again
+PASS  [full] arimap: Forward: the lab with Experience open
+PASS  [full] arimap: Forward: nothing scrolled
+PASS  [full] aziz: header Experience href is /lab-v2?station=experience
+PASS  [full] aziz: lands on the lab with Experience open
+PASS  [full] aziz: render mode kept (Cinematic, camera)
+PASS  [full] aziz: Lab is the active header entry
+PASS  [full] aziz: nothing scrolled
+PASS  [full] aziz: Back: the project page again
+PASS  [full] aziz: Forward: the lab with Experience open
+PASS  [full] aziz: Forward: nothing scrolled
+PASS  [full] Ctrl+click: this tab unchanged (no selection, same URL, no entry)
+PASS  [full] Ctrl+click: a new tab opens /lab-v2?station=experience
+PASS  [full] console: no errors, warnings or hydration messages
+PASS  [lite] arimap: header Experience href is /lab-v2?station=experience&render=lite
+PASS  [lite] arimap: lands on the lab with Experience open
+PASS  [lite] arimap: render mode kept (Static Lite, no camera)
+PASS  [lite] arimap: Lab is the active header entry
+PASS  [lite] arimap: nothing scrolled
+PASS  [lite] arimap: Back: the project page again
+PASS  [lite] arimap: Forward: the lab with Experience open
+PASS  [lite] arimap: Forward: nothing scrolled
+PASS  [lite] aziz: header Experience href is /lab-v2?station=experience&render=lite
+PASS  [lite] aziz: lands on the lab with Experience open
+PASS  [lite] aziz: render mode kept (Static Lite, no camera)
+PASS  [lite] aziz: Lab is the active header entry
+PASS  [lite] aziz: nothing scrolled
+PASS  [lite] aziz: Back: the project page again
+PASS  [lite] aziz: Forward: the lab with Experience open
+PASS  [lite] aziz: Forward: nothing scrolled
+PASS  [lite] Ctrl+click: this tab unchanged (no selection, same URL, no entry)
+PASS  [lite] Ctrl+click: a new tab opens /lab-v2?station=experience&render=lite
+PASS  [lite] console: no errors, warnings or hydration messages
+
+38 of 38 pass

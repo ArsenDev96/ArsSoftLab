@@ -1,0 +1,5163 @@
+{
+ "env": {
+  "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+  "gl": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4060 (0x00002882) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+ },
+ "base": "http://localhost:3100",
+ "trials": 7,
+ "results": [
+  {
+   "cond": "cold",
+   "route": "404",
+   "trial": 0,
+   "launchMs": 318,
+   "responseStart": 7,
+   "responseEnd": 7,
+   "domInteractive": 27,
+   "dcl": 27,
+   "load": 77,
+   "htmlBytes": 2866,
+   "fp": 228,
+   "fcp": 228,
+   "lcp": 228,
+   "lcpEl": "H2:This page could not be found.",
+   "lcpCandidates": 1,
+   "hydrStart": 84,
+   "hydrLink": null,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 23,
+     "lastEnd": 23
+    },
+    "js": {
+     "n": 6,
+     "bytes": 137027,
+     "firstEnd": 24,
+     "lastEnd": 32
+    },
+    "img": {
+     "n": 1,
+     "bytes": 838,
+     "firstEnd": 96,
+     "lastEnd": 96
+    }
+   },
+   "domNodes": 37
+  },
+  {
+   "cond": "cold",
+   "route": "404",
+   "trial": 1,
+   "launchMs": 293,
+   "responseStart": 7,
+   "responseEnd": 8,
+   "domInteractive": 27,
+   "dcl": 27,
+   "load": 84,
+   "htmlBytes": 2866,
+   "fp": 440,
+   "fcp": 440,
+   "lcp": 440,
+   "lcpEl": "H2:This page could not be found.",
+   "lcpCandidates": 1,
+   "hydrStart": 93,
+   "hydrLink": null,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 25,
+     "lastEnd": 25
+    },
+    "js": {
+     "n": 6,
+     "bytes": 137027,
+     "firstEnd": 28,
+     "lastEnd": 37
+    },
+    "img": {
+     "n": 1,
+     "bytes": 838,
+     "firstEnd": 107,
+     "lastEnd": 107
+    }
+   },
+   "domNodes": 37
+  },
+  {
+   "cond": "cold",
+   "route": "404",
+   "trial": 2,
+   "launchMs": 317,
+   "responseStart": 6,
+   "responseEnd": 7,
+   "domInteractive": 27,
+   "dcl": 27,
+   "load": 82,
+   "htmlBytes": 2866,
+   "fp": 492,
+   "fcp": 492,
+   "lcp": 492,
+   "lcpEl": "H2:This page could not be found.",
+   "lcpCandidates": 1,
+   "hydrStart": 90,
+   "hydrLink": null,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 23,
+     "lastEnd": 23
+    },
+    "js": {
+     "n": 6,
+     "bytes": 137027,
+     "firstEnd": 24,
+     "lastEnd": 31
+    },
+    "img": {
+     "n": 1,
+     "bytes": 838,
+     "firstEnd": 108,
+     "lastEnd": 108
+    }
+   },
+   "domNodes": 37
+  },
+  {
+   "cond": "cold",
+   "route": "404",
+   "trial": 3,
+   "launchMs": 280,
+   "responseStart": 9,
+   "responseEnd": 10,
+   "domInteractive": 30,
+   "dcl": 30,
+   "load": 85,
+   "htmlBytes": 2866,
+   "fp": 416,
+   "fcp": 416,
+   "lcp": 416,
+   "lcpEl": "H2:This page could not be found.",
+   "lcpCandidates": 1,
+   "hydrStart": 92,
+   "hydrLink": null,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 27,
+     "lastEnd": 27
+    },
+    "js": {
+     "n": 6,
+     "bytes": 137027,
+     "firstEnd": 30,
+     "lastEnd": 39
+    },
+    "img": {
+     "n": 1,
+     "bytes": 838,
+     "firstEnd": 107,
+     "lastEnd": 107
+    }
+   },
+   "domNodes": 37
+  },
+  {
+   "cond": "cold",
+   "route": "404",
+   "trial": 4,
+   "launchMs": 278,
+   "responseStart": 5,
+   "responseEnd": 6,
+   "domInteractive": 28,
+   "dcl": 28,
+   "load": 84,
+   "htmlBytes": 2866,
+   "fp": 412,
+   "fcp": 412,
+   "lcp": 412,
+   "lcpEl": "H2:This page could not be found.",
+   "lcpCandidates": 1,
+   "hydrStart": 92,
+   "hydrLink": null,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 25,
+     "lastEnd": 25
+    },
+    "js": {
+     "n": 6,
+     "bytes": 137027,
+     "firstEnd": 23,
+     "lastEnd": 36
+    },
+    "img": {
+     "n": 1,
+     "bytes": 838,
+     "firstEnd": 104,
+     "lastEnd": 104
+    }
+   },
+   "domNodes": 37
+  },
+  {
+   "cond": "cold",
+   "route": "404",
+   "trial": 5,
+   "launchMs": 283,
+   "responseStart": 5,
+   "responseEnd": 5,
+   "domInteractive": 27,
+   "dcl": 27,
+   "load": 78,
+   "htmlBytes": 2866,
+   "fp": 416,
+   "fcp": 416,
+   "lcp": 416,
+   "lcpEl": "H2:This page could not be found.",
+   "lcpCandidates": 1,
+   "hydrStart": 87,
+   "hydrLink": null,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 24,
+     "lastEnd": 24
+    },
+    "js": {
+     "n": 6,
+     "bytes": 137027,
+     "firstEnd": 22,
+     "lastEnd": 33
+    },
+    "img": {
+     "n": 1,
+     "bytes": 838,
+     "firstEnd": 100,
+     "lastEnd": 100
+    }
+   },
+   "domNodes": 37
+  },
+  {
+   "cond": "cold",
+   "route": "404",
+   "trial": 6,
+   "launchMs": 267,
+   "responseStart": 5,
+   "responseEnd": 7,
+   "domInteractive": 25,
+   "dcl": 25,
+   "load": 76,
+   "htmlBytes": 2866,
+   "fp": 416,
+   "fcp": 416,
+   "lcp": 416,
+   "lcpEl": "H2:This page could not be found.",
+   "lcpCandidates": 1,
+   "hydrStart": 85,
+   "hydrLink": null,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 23,
+     "lastEnd": 23
+    },
+    "js": {
+     "n": 6,
+     "bytes": 137027,
+     "firstEnd": 28,
+     "lastEnd": 35
+    },
+    "img": {
+     "n": 1,
+     "bytes": 838,
+     "firstEnd": 98,
+     "lastEnd": 98
+    }
+   },
+   "domNodes": 37
+  },
+  {
+   "cond": "cold",
+   "route": "home",
+   "trial": 0,
+   "launchMs": 265,
+   "responseStart": 35,
+   "responseEnd": 41,
+   "domInteractive": 68,
+   "dcl": 68,
+   "load": 315,
+   "htmlBytes": 36109,
+   "fp": 1288,
+   "fcp": 1288,
+   "lcp": 1288,
+   "lcpEl": "SPAN:ideas.",
+   "lcpCandidates": 1,
+   "hydrStart": 315,
+   "hydrLink": 326,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32528,
+     "firstEnd": 44,
+     "lastEnd": 44
+    },
+    "img": {
+     "n": 74,
+     "bytes": 1438181,
+     "firstEnd": 57,
+     "lastEnd": 331
+    },
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 59,
+     "lastEnd": 59
+    },
+    "js": {
+     "n": 8,
+     "bytes": 186011,
+     "firstEnd": 87,
+     "lastEnd": 107
+    }
+   },
+   "domNodes": 654
+  },
+  {
+   "cond": "cold",
+   "route": "home",
+   "trial": 1,
+   "launchMs": 275,
+   "responseStart": 25,
+   "responseEnd": 30,
+   "domInteractive": 57,
+   "dcl": 57,
+   "load": 213,
+   "htmlBytes": 36109,
+   "fp": 1140,
+   "fcp": 1140,
+   "lcp": 1140,
+   "lcpEl": "SPAN:ideas.",
+   "lcpCandidates": 1,
+   "hydrStart": 192,
+   "hydrLink": 207,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32528,
+     "firstEnd": 33,
+     "lastEnd": 33
+    },
+    "img": {
+     "n": 74,
+     "bytes": 1438181,
+     "firstEnd": 40,
+     "lastEnd": 233
+    },
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 45,
+     "lastEnd": 45
+    },
+    "js": {
+     "n": 8,
+     "bytes": 186011,
+     "firstEnd": 80,
+     "lastEnd": 100
+    }
+   },
+   "domNodes": 654
+  },
+  {
+   "cond": "cold",
+   "route": "home",
+   "trial": 2,
+   "launchMs": 284,
+   "responseStart": 30,
+   "responseEnd": 35,
+   "domInteractive": 63,
+   "dcl": 63,
+   "load": 301,
+   "htmlBytes": 36109,
+   "fp": 1304,
+   "fcp": 1304,
+   "lcp": 1304,
+   "lcpEl": "SPAN:ideas.",
+   "lcpCandidates": 1,
+   "hydrStart": 301,
+   "hydrLink": 312,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32528,
+     "firstEnd": 48,
+     "lastEnd": 48
+    },
+    "img": {
+     "n": 74,
+     "bytes": 1438181,
+     "firstEnd": 52,
+     "lastEnd": 318
+    },
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 53,
+     "lastEnd": 53
+    },
+    "js": {
+     "n": 8,
+     "bytes": 186011,
+     "firstEnd": 93,
+     "lastEnd": 109
+    }
+   },
+   "domNodes": 654
+  },
+  {
+   "cond": "cold",
+   "route": "home",
+   "trial": 3,
+   "launchMs": 593,
+   "responseStart": 838,
+   "responseEnd": 843,
+   "domInteractive": 872,
+   "dcl": 872,
+   "load": 1014,
+   "htmlBytes": 36109,
+   "fp": 2092,
+   "fcp": 2092,
+   "lcp": 2092,
+   "lcpEl": "SPAN:ideas.",
+   "lcpCandidates": 1,
+   "hydrStart": 1008,
+   "hydrLink": 1020,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32528,
+     "firstEnd": 852,
+     "lastEnd": 852
+    },
+    "img": {
+     "n": 74,
+     "bytes": 1438181,
+     "firstEnd": 859,
+     "lastEnd": 1033
+    },
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 860,
+     "lastEnd": 860
+    },
+    "js": {
+     "n": 8,
+     "bytes": 186011,
+     "firstEnd": 901,
+     "lastEnd": 915
+    }
+   },
+   "domNodes": 654
+  },
+  {
+   "cond": "cold",
+   "route": "home",
+   "trial": 4,
+   "launchMs": 274,
+   "responseStart": 27,
+   "responseEnd": 31,
+   "domInteractive": 60,
+   "dcl": 60,
+   "load": 298,
+   "htmlBytes": 36109,
+   "fp": 1296,
+   "fcp": 1296,
+   "lcp": 1296,
+   "lcpEl": "SPAN:ideas.",
+   "lcpCandidates": 1,
+   "hydrStart": 297,
+   "hydrLink": 311,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32528,
+     "firstEnd": 36,
+     "lastEnd": 36
+    },
+    "img": {
+     "n": 74,
+     "bytes": 1438181,
+     "firstEnd": 45,
+     "lastEnd": 317
+    },
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 48,
+     "lastEnd": 48
+    },
+    "js": {
+     "n": 8,
+     "bytes": 186011,
+     "firstEnd": 84,
+     "lastEnd": 100
+    }
+   },
+   "domNodes": 654
+  },
+  {
+   "cond": "cold",
+   "route": "home",
+   "trial": 5,
+   "launchMs": 276,
+   "responseStart": 23,
+   "responseEnd": 30,
+   "domInteractive": 61,
+   "dcl": 61,
+   "load": 215,
+   "htmlBytes": 36109,
+   "fp": 1112,
+   "fcp": 1112,
+   "lcp": 1112,
+   "lcpEl": "SPAN:ideas.",
+   "lcpCandidates": 1,
+   "hydrStart": 199,
+   "hydrLink": 215,
+   "longtasks": [
+    [
+     137,
+     56
+    ]
+   ],
+   "preFcpLongMs": 56,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32528,
+     "firstEnd": 45,
+     "lastEnd": 45
+    },
+    "img": {
+     "n": 74,
+     "bytes": 1438181,
+     "firstEnd": 48,
+     "lastEnd": 232
+    },
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 50,
+     "lastEnd": 50
+    },
+    "js": {
+     "n": 8,
+     "bytes": 186011,
+     "firstEnd": 83,
+     "lastEnd": 99
+    }
+   },
+   "domNodes": 654
+  },
+  {
+   "cond": "cold",
+   "route": "home",
+   "trial": 6,
+   "launchMs": 265,
+   "responseStart": 22,
+   "responseEnd": 27,
+   "domInteractive": 58,
+   "dcl": 58,
+   "load": 228,
+   "htmlBytes": 36109,
+   "fp": 1044,
+   "fcp": 1044,
+   "lcp": 1044,
+   "lcpEl": "SPAN:ideas.",
+   "lcpCandidates": 1,
+   "hydrStart": 224,
+   "hydrLink": 246,
+   "longtasks": [
+    [
+     135,
+     82
+    ]
+   ],
+   "preFcpLongMs": 82,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32528,
+     "firstEnd": 40,
+     "lastEnd": 40
+    },
+    "img": {
+     "n": 74,
+     "bytes": 1438181,
+     "firstEnd": 48,
+     "lastEnd": 249
+    },
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 48,
+     "lastEnd": 48
+    },
+    "js": {
+     "n": 8,
+     "bytes": 186011,
+     "firstEnd": 84,
+     "lastEnd": 100
+    }
+   },
+   "domNodes": 654
+  },
+  {
+   "cond": "cold",
+   "route": "cinematic",
+   "trial": 0,
+   "launchMs": 273,
+   "responseStart": 45,
+   "responseEnd": 61,
+   "domInteractive": 94,
+   "dcl": 94,
+   "load": 372,
+   "htmlBytes": 81318,
+   "fp": 1036,
+   "fcp": 1036,
+   "lcp": 1036,
+   "lcpEl": "SPAN:ideas.",
+   "lcpCandidates": 1,
+   "hydrStart": 371,
+   "hydrLink": 384,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32528,
+     "firstEnd": 67,
+     "lastEnd": 67
+    },
+    "img": {
+     "n": 95,
+     "bytes": 5795863,
+     "firstEnd": 67,
+     "lastEnd": 389
+    },
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 72,
+     "lastEnd": 72
+    },
+    "js": {
+     "n": 9,
+     "bytes": 189686,
+     "firstEnd": 101,
+     "lastEnd": 120
+    },
+    "other": {
+     "n": 3,
+     "bytes": 2987,
+     "firstEnd": 530,
+     "lastEnd": 541
+    }
+   },
+   "domNodes": 1150
+  },
+  {
+   "cond": "cold",
+   "route": "cinematic",
+   "trial": 1,
+   "launchMs": 265,
+   "responseStart": 45,
+   "responseEnd": 60,
+   "domInteractive": 93,
+   "dcl": 93,
+   "load": 262,
+   "htmlBytes": 81318,
+   "fp": 1076,
+   "fcp": 1076,
+   "lcp": 1076,
+   "lcpEl": "SPAN:ideas.",
+   "lcpCandidates": 1,
+   "hydrStart": 240,
+   "hydrLink": 255,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32528,
+     "firstEnd": 53,
+     "lastEnd": 53
+    },
+    "img": {
+     "n": 95,
+     "bytes": 5795863,
+     "firstEnd": 61,
+     "lastEnd": 279
+    },
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 67,
+     "lastEnd": 67
+    },
+    "js": {
+     "n": 9,
+     "bytes": 189686,
+     "firstEnd": 93,
+     "lastEnd": 113
+    },
+    "other": {
+     "n": 3,
+     "bytes": 2986,
+     "firstEnd": 495,
+     "lastEnd": 502
+    }
+   },
+   "domNodes": 1150
+  },
+  {
+   "cond": "cold",
+   "route": "cinematic",
+   "trial": 2,
+   "launchMs": 309,
+   "responseStart": 41,
+   "responseEnd": 55,
+   "domInteractive": 93,
+   "dcl": 93,
+   "load": 255,
+   "htmlBytes": 81318,
+   "fp": 1036,
+   "fcp": 1036,
+   "lcp": 1036,
+   "lcpEl": "SPAN:ideas.",
+   "lcpCandidates": 1,
+   "hydrStart": 254,
+   "hydrLink": 266,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32528,
+     "firstEnd": 59,
+     "lastEnd": 59
+    },
+    "img": {
+     "n": 95,
+     "bytes": 5795863,
+     "firstEnd": 59,
+     "lastEnd": 272
+    },
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 63,
+     "lastEnd": 63
+    },
+    "js": {
+     "n": 9,
+     "bytes": 189686,
+     "firstEnd": 88,
+     "lastEnd": 117
+    },
+    "other": {
+     "n": 3,
+     "bytes": 2984,
+     "firstEnd": 439,
+     "lastEnd": 448
+    }
+   },
+   "domNodes": 1150
+  },
+  {
+   "cond": "cold",
+   "route": "cinematic",
+   "trial": 3,
+   "launchMs": 284,
+   "responseStart": 41,
+   "responseEnd": 56,
+   "domInteractive": 89,
+   "dcl": 89,
+   "load": 352,
+   "htmlBytes": 81318,
+   "fp": 1020,
+   "fcp": 1020,
+   "lcp": 1020,
+   "lcpEl": "SPAN:ideas.",
+   "lcpCandidates": 1,
+   "hydrStart": 351,
+   "hydrLink": 362,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32528,
+     "firstEnd": 58,
+     "lastEnd": 58
+    },
+    "img": {
+     "n": 95,
+     "bytes": 5795863,
+     "firstEnd": 57,
+     "lastEnd": 367
+    },
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 65,
+     "lastEnd": 65
+    },
+    "js": {
+     "n": 9,
+     "bytes": 189686,
+     "firstEnd": 93,
+     "lastEnd": 113
+    },
+    "other": {
+     "n": 3,
+     "bytes": 2984,
+     "firstEnd": 496,
+     "lastEnd": 509
+    }
+   },
+   "domNodes": 1150
+  },
+  {
+   "cond": "cold",
+   "route": "cinematic",
+   "trial": 4,
+   "launchMs": 263,
+   "responseStart": 41,
+   "responseEnd": 54,
+   "domInteractive": 93,
+   "dcl": 93,
+   "load": 252,
+   "htmlBytes": 81318,
+   "fp": 1084,
+   "fcp": 1084,
+   "lcp": 1084,
+   "lcpEl": "SPAN:ideas.",
+   "lcpCandidates": 1,
+   "hydrStart": 242,
+   "hydrLink": 258,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32528,
+     "firstEnd": 55,
+     "lastEnd": 55
+    },
+    "img": {
+     "n": 95,
+     "bytes": 5795863,
+     "firstEnd": 59,
+     "lastEnd": 269
+    },
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 63,
+     "lastEnd": 63
+    },
+    "js": {
+     "n": 9,
+     "bytes": 189686,
+     "firstEnd": 89,
+     "lastEnd": 109
+    },
+    "other": {
+     "n": 3,
+     "bytes": 2983,
+     "firstEnd": 504,
+     "lastEnd": 513
+    }
+   },
+   "domNodes": 1150
+  },
+  {
+   "cond": "cold",
+   "route": "cinematic",
+   "trial": 5,
+   "launchMs": 385,
+   "responseStart": 43,
+   "responseEnd": 58,
+   "domInteractive": 89,
+   "dcl": 89,
+   "load": 262,
+   "htmlBytes": 81318,
+   "fp": 1052,
+   "fcp": 1052,
+   "lcp": 1052,
+   "lcpEl": "SPAN:ideas.",
+   "lcpCandidates": 1,
+   "hydrStart": 242,
+   "hydrLink": 268,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32528,
+     "firstEnd": 59,
+     "lastEnd": 59
+    },
+    "img": {
+     "n": 95,
+     "bytes": 5795863,
+     "firstEnd": 59,
+     "lastEnd": 279
+    },
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 67,
+     "lastEnd": 67
+    },
+    "js": {
+     "n": 9,
+     "bytes": 189686,
+     "firstEnd": 101,
+     "lastEnd": 124
+    },
+    "other": {
+     "n": 3,
+     "bytes": 2984,
+     "firstEnd": 502,
+     "lastEnd": 508
+    }
+   },
+   "domNodes": 1150
+  },
+  {
+   "cond": "cold",
+   "route": "cinematic",
+   "trial": 6,
+   "launchMs": 272,
+   "responseStart": 46,
+   "responseEnd": 60,
+   "domInteractive": 96,
+   "dcl": 96,
+   "load": 259,
+   "htmlBytes": 81318,
+   "fp": 1096,
+   "fcp": 1096,
+   "lcp": 1096,
+   "lcpEl": "SPAN:ideas.",
+   "lcpCandidates": 1,
+   "hydrStart": 250,
+   "hydrLink": 265,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32528,
+     "firstEnd": 64,
+     "lastEnd": 64
+    },
+    "img": {
+     "n": 95,
+     "bytes": 5795863,
+     "firstEnd": 64,
+     "lastEnd": 275
+    },
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 71,
+     "lastEnd": 71
+    },
+    "js": {
+     "n": 9,
+     "bytes": 189686,
+     "firstEnd": 96,
+     "lastEnd": 114
+    },
+    "other": {
+     "n": 3,
+     "bytes": 2986,
+     "firstEnd": 476,
+     "lastEnd": 499
+    }
+   },
+   "domNodes": 1150
+  },
+  {
+   "cond": "cold",
+   "route": "lite",
+   "trial": 0,
+   "launchMs": 264,
+   "responseStart": 18,
+   "responseEnd": 21,
+   "domInteractive": 46,
+   "dcl": 46,
+   "load": 246,
+   "htmlBytes": 16458,
+   "fp": 1264,
+   "fcp": 1264,
+   "lcp": 1264,
+   "lcpEl": "SPAN:ideas.",
+   "lcpCandidates": 1,
+   "hydrStart": 246,
+   "hydrLink": 258,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32528,
+     "firstEnd": 35,
+     "lastEnd": 35
+    },
+    "img": {
+     "n": 7,
+     "bytes": 2640946,
+     "firstEnd": 40,
+     "lastEnd": 276
+    },
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 40,
+     "lastEnd": 40
+    },
+    "js": {
+     "n": 9,
+     "bytes": 189686,
+     "firstEnd": 50,
+     "lastEnd": 80
+    },
+    "other": {
+     "n": 3,
+     "bytes": 2996,
+     "firstEnd": 294,
+     "lastEnd": 299
+    }
+   },
+   "domNodes": 406
+  },
+  {
+   "cond": "cold",
+   "route": "lite",
+   "trial": 1,
+   "launchMs": 565,
+   "responseStart": 12,
+   "responseEnd": 13,
+   "domInteractive": 70,
+   "dcl": 70,
+   "load": 159,
+   "htmlBytes": 16458,
+   "fp": 1124,
+   "fcp": 1124,
+   "lcp": 1124,
+   "lcpEl": "SPAN:ideas.",
+   "lcpCandidates": 1,
+   "hydrStart": 159,
+   "hydrLink": 170,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32528,
+     "firstEnd": 60,
+     "lastEnd": 60
+    },
+    "img": {
+     "n": 7,
+     "bytes": 2640946,
+     "firstEnd": 64,
+     "lastEnd": 175
+    },
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 65,
+     "lastEnd": 65
+    },
+    "js": {
+     "n": 9,
+     "bytes": 189686,
+     "firstEnd": 72,
+     "lastEnd": 93
+    },
+    "other": {
+     "n": 3,
+     "bytes": 2992,
+     "firstEnd": 418,
+     "lastEnd": 426
+    }
+   },
+   "domNodes": 406
+  },
+  {
+   "cond": "cold",
+   "route": "lite",
+   "trial": 2,
+   "launchMs": 256,
+   "responseStart": 13,
+   "responseEnd": 15,
+   "domInteractive": 41,
+   "dcl": 41,
+   "load": 127,
+   "htmlBytes": 16458,
+   "fp": 1180,
+   "fcp": 1180,
+   "lcp": 1180,
+   "lcpEl": "SPAN:ideas.",
+   "lcpCandidates": 1,
+   "hydrStart": 127,
+   "hydrLink": 138,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32528,
+     "firstEnd": 31,
+     "lastEnd": 31
+    },
+    "img": {
+     "n": 7,
+     "bytes": 2640946,
+     "firstEnd": 38,
+     "lastEnd": 142
+    },
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 35,
+     "lastEnd": 35
+    },
+    "js": {
+     "n": 9,
+     "bytes": 189686,
+     "firstEnd": 49,
+     "lastEnd": 71
+    },
+    "other": {
+     "n": 3,
+     "bytes": 2996,
+     "firstEnd": 243,
+     "lastEnd": 249
+    }
+   },
+   "domNodes": 406
+  },
+  {
+   "cond": "cold",
+   "route": "lite",
+   "trial": 3,
+   "launchMs": 254,
+   "responseStart": 16,
+   "responseEnd": 19,
+   "domInteractive": 41,
+   "dcl": 41,
+   "load": 220,
+   "htmlBytes": 16458,
+   "fp": 1184,
+   "fcp": 1184,
+   "lcp": 1184,
+   "lcpEl": "SPAN:ideas.",
+   "lcpCandidates": 1,
+   "hydrStart": 220,
+   "hydrLink": 231,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32528,
+     "firstEnd": 33,
+     "lastEnd": 33
+    },
+    "img": {
+     "n": 7,
+     "bytes": 2640946,
+     "firstEnd": 37,
+     "lastEnd": 236
+    },
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 36,
+     "lastEnd": 36
+    },
+    "js": {
+     "n": 9,
+     "bytes": 189686,
+     "firstEnd": 48,
+     "lastEnd": 70
+    },
+    "other": {
+     "n": 3,
+     "bytes": 2992,
+     "firstEnd": 254,
+     "lastEnd": 258
+    }
+   },
+   "domNodes": 406
+  },
+  {
+   "cond": "cold",
+   "route": "lite",
+   "trial": 4,
+   "launchMs": 250,
+   "responseStart": 846,
+   "responseEnd": 851,
+   "domInteractive": 937,
+   "dcl": 937,
+   "load": 1004,
+   "htmlBytes": 16458,
+   "fp": 2000,
+   "fcp": 2000,
+   "lcp": 2000,
+   "lcpEl": "SPAN:ideas.",
+   "lcpCandidates": 1,
+   "hydrStart": 1004,
+   "hydrLink": 1015,
+   "longtasks": [
+    [
+     942,
+     54
+    ]
+   ],
+   "preFcpLongMs": 54,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32528,
+     "firstEnd": 864,
+     "lastEnd": 864
+    },
+    "img": {
+     "n": 7,
+     "bytes": 2640946,
+     "firstEnd": 874,
+     "lastEnd": 1021
+    },
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 871,
+     "lastEnd": 871
+    },
+    "js": {
+     "n": 9,
+     "bytes": 189686,
+     "firstEnd": 887,
+     "lastEnd": 911
+    },
+    "other": {
+     "n": 3,
+     "bytes": 2992,
+     "firstEnd": 1994,
+     "lastEnd": 2000
+    }
+   },
+   "domNodes": 406
+  },
+  {
+   "cond": "cold",
+   "route": "lite",
+   "trial": 5,
+   "launchMs": 252,
+   "responseStart": 16,
+   "responseEnd": 18,
+   "domInteractive": 39,
+   "dcl": 39,
+   "load": 126,
+   "htmlBytes": 16458,
+   "fp": 1172,
+   "fcp": 1172,
+   "lcp": 1172,
+   "lcpEl": "SPAN:ideas.",
+   "lcpCandidates": 1,
+   "hydrStart": 126,
+   "hydrLink": 138,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32528,
+     "firstEnd": 33,
+     "lastEnd": 33
+    },
+    "img": {
+     "n": 7,
+     "bytes": 2640946,
+     "firstEnd": 38,
+     "lastEnd": 142
+    },
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 35,
+     "lastEnd": 35
+    },
+    "js": {
+     "n": 9,
+     "bytes": 189686,
+     "firstEnd": 45,
+     "lastEnd": 65
+    },
+    "other": {
+     "n": 3,
+     "bytes": 2992,
+     "firstEnd": 165,
+     "lastEnd": 171
+    }
+   },
+   "domNodes": 406
+  },
+  {
+   "cond": "cold",
+   "route": "lite",
+   "trial": 6,
+   "launchMs": 585,
+   "responseStart": 12,
+   "responseEnd": 14,
+   "domInteractive": 55,
+   "dcl": 55,
+   "load": 138,
+   "htmlBytes": 16458,
+   "fp": 1032,
+   "fcp": 1032,
+   "lcp": 1032,
+   "lcpEl": "SPAN:ideas.",
+   "lcpCandidates": 1,
+   "hydrStart": 138,
+   "hydrLink": 149,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32528,
+     "firstEnd": 46,
+     "lastEnd": 46
+    },
+    "img": {
+     "n": 7,
+     "bytes": 2640946,
+     "firstEnd": 54,
+     "lastEnd": 154
+    },
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 52,
+     "lastEnd": 52
+    },
+    "js": {
+     "n": 9,
+     "bytes": 189686,
+     "firstEnd": 66,
+     "lastEnd": 81
+    },
+    "other": {
+     "n": 3,
+     "bytes": 2992,
+     "firstEnd": 256,
+     "lastEnd": 263
+    }
+   },
+   "domNodes": 406
+  },
+  {
+   "cond": "cold",
+   "route": "project",
+   "trial": 0,
+   "launchMs": 606,
+   "responseStart": 24,
+   "responseEnd": 26,
+   "domInteractive": 104,
+   "dcl": 104,
+   "load": 208,
+   "htmlBytes": 12637,
+   "fp": 820,
+   "fcp": 820,
+   "lcp": 820,
+   "lcpEl": "P:Database performance problems ",
+   "lcpCandidates": 1,
+   "hydrStart": 202,
+   "hydrLink": 214,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32528,
+     "firstEnd": 98,
+     "lastEnd": 98
+    },
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 100,
+     "lastEnd": 100
+    },
+    "js": {
+     "n": 8,
+     "bytes": 150077,
+     "firstEnd": 101,
+     "lastEnd": 114
+    },
+    "img": {
+     "n": 1,
+     "bytes": 838,
+     "firstEnd": 221,
+     "lastEnd": 221
+    },
+    "other": {
+     "n": 8,
+     "bytes": 7026,
+     "firstEnd": 304,
+     "lastEnd": 321
+    }
+   },
+   "domNodes": 214
+  },
+  {
+   "cond": "cold",
+   "route": "project",
+   "trial": 1,
+   "launchMs": 260,
+   "responseStart": 13,
+   "responseEnd": 14,
+   "domInteractive": 33,
+   "dcl": 33,
+   "load": 115,
+   "htmlBytes": 12637,
+   "fp": 852,
+   "fcp": 852,
+   "lcp": 852,
+   "lcpEl": "P:Database performance problems ",
+   "lcpCandidates": 1,
+   "hydrStart": 115,
+   "hydrLink": 218,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32528,
+     "firstEnd": 26,
+     "lastEnd": 26
+    },
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 29,
+     "lastEnd": 29
+    },
+    "js": {
+     "n": 8,
+     "bytes": 150077,
+     "firstEnd": 30,
+     "lastEnd": 43
+    },
+    "img": {
+     "n": 1,
+     "bytes": 838,
+     "firstEnd": 223,
+     "lastEnd": 223
+    },
+    "other": {
+     "n": 8,
+     "bytes": 7026,
+     "firstEnd": 249,
+     "lastEnd": 260
+    }
+   },
+   "domNodes": 214
+  },
+  {
+   "cond": "cold",
+   "route": "project",
+   "trial": 2,
+   "launchMs": 257,
+   "responseStart": 11,
+   "responseEnd": 13,
+   "domInteractive": 33,
+   "dcl": 33,
+   "load": 113,
+   "htmlBytes": 12637,
+   "fp": 880,
+   "fcp": 880,
+   "lcp": 880,
+   "lcpEl": "P:Database performance problems ",
+   "lcpCandidates": 1,
+   "hydrStart": 113,
+   "hydrLink": 219,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32528,
+     "firstEnd": 23,
+     "lastEnd": 23
+    },
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 29,
+     "lastEnd": 29
+    },
+    "js": {
+     "n": 8,
+     "bytes": 150077,
+     "firstEnd": 30,
+     "lastEnd": 44
+    },
+    "img": {
+     "n": 1,
+     "bytes": 838,
+     "firstEnd": 225,
+     "lastEnd": 225
+    },
+    "other": {
+     "n": 8,
+     "bytes": 7027,
+     "firstEnd": 251,
+     "lastEnd": 263
+    }
+   },
+   "domNodes": 214
+  },
+  {
+   "cond": "cold",
+   "route": "project",
+   "trial": 3,
+   "launchMs": 258,
+   "responseStart": 12,
+   "responseEnd": 14,
+   "domInteractive": 33,
+   "dcl": 33,
+   "load": 114,
+   "htmlBytes": 12637,
+   "fp": 872,
+   "fcp": 872,
+   "lcp": 872,
+   "lcpEl": "P:Database performance problems ",
+   "lcpCandidates": 1,
+   "hydrStart": 114,
+   "hydrLink": 225,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32528,
+     "firstEnd": 25,
+     "lastEnd": 25
+    },
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 29,
+     "lastEnd": 29
+    },
+    "js": {
+     "n": 8,
+     "bytes": 150077,
+     "firstEnd": 29,
+     "lastEnd": 40
+    },
+    "img": {
+     "n": 1,
+     "bytes": 838,
+     "firstEnd": 231,
+     "lastEnd": 231
+    },
+    "other": {
+     "n": 8,
+     "bytes": 7029,
+     "firstEnd": 256,
+     "lastEnd": 270
+    }
+   },
+   "domNodes": 214
+  },
+  {
+   "cond": "cold",
+   "route": "project",
+   "trial": 4,
+   "launchMs": 263,
+   "responseStart": 12,
+   "responseEnd": 13,
+   "domInteractive": 34,
+   "dcl": 34,
+   "load": 227,
+   "htmlBytes": 12637,
+   "fp": 892,
+   "fcp": 892,
+   "lcp": 892,
+   "lcpEl": "P:Database performance problems ",
+   "lcpCandidates": 1,
+   "hydrStart": 125,
+   "hydrLink": 232,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32528,
+     "firstEnd": 27,
+     "lastEnd": 27
+    },
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 31,
+     "lastEnd": 31
+    },
+    "js": {
+     "n": 8,
+     "bytes": 150077,
+     "firstEnd": 33,
+     "lastEnd": 46
+    },
+    "img": {
+     "n": 1,
+     "bytes": 838,
+     "firstEnd": 242,
+     "lastEnd": 242
+    },
+    "other": {
+     "n": 8,
+     "bytes": 7028,
+     "firstEnd": 269,
+     "lastEnd": 282
+    }
+   },
+   "domNodes": 214
+  },
+  {
+   "cond": "cold",
+   "route": "project",
+   "trial": 5,
+   "launchMs": 603,
+   "responseStart": 15,
+   "responseEnd": 16,
+   "domInteractive": 103,
+   "dcl": 103,
+   "load": 195,
+   "htmlBytes": 12637,
+   "fp": 852,
+   "fcp": 852,
+   "lcp": 852,
+   "lcpEl": "P:Database performance problems ",
+   "lcpCandidates": 1,
+   "hydrStart": 185,
+   "hydrLink": 195,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32528,
+     "firstEnd": 91,
+     "lastEnd": 91
+    },
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 98,
+     "lastEnd": 98
+    },
+    "js": {
+     "n": 8,
+     "bytes": 150077,
+     "firstEnd": 99,
+     "lastEnd": 117
+    },
+    "img": {
+     "n": 1,
+     "bytes": 838,
+     "firstEnd": 206,
+     "lastEnd": 206
+    },
+    "other": {
+     "n": 8,
+     "bytes": 7027,
+     "firstEnd": 312,
+     "lastEnd": 324
+    }
+   },
+   "domNodes": 214
+  },
+  {
+   "cond": "cold",
+   "route": "project",
+   "trial": 6,
+   "launchMs": 279,
+   "responseStart": 13,
+   "responseEnd": 16,
+   "domInteractive": 38,
+   "dcl": 38,
+   "load": 263,
+   "htmlBytes": 12637,
+   "fp": 996,
+   "fcp": 996,
+   "lcp": 996,
+   "lcpEl": "P:Database performance problems ",
+   "lcpCandidates": 1,
+   "hydrStart": 128,
+   "hydrLink": 269,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32528,
+     "firstEnd": 29,
+     "lastEnd": 29
+    },
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 35,
+     "lastEnd": 35
+    },
+    "js": {
+     "n": 8,
+     "bytes": 150077,
+     "firstEnd": 40,
+     "lastEnd": 50
+    },
+    "img": {
+     "n": 1,
+     "bytes": 838,
+     "firstEnd": 288,
+     "lastEnd": 288
+    },
+    "other": {
+     "n": 8,
+     "bytes": 7024,
+     "firstEnd": 312,
+     "lastEnd": 333
+    }
+   },
+   "domNodes": 214
+  },
+  {
+   "cond": "warm",
+   "route": "404",
+   "trial": 0,
+   "responseStart": 4,
+   "responseEnd": 4,
+   "domInteractive": 17,
+   "dcl": 17,
+   "load": 34,
+   "htmlBytes": 2866,
+   "fp": 56,
+   "fcp": 56,
+   "lcp": 56,
+   "lcpEl": "H2:This page could not be found.",
+   "lcpCandidates": 1,
+   "hydrStart": 35,
+   "hydrLink": null,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 13,
+     "lastEnd": 13
+    },
+    "js": {
+     "n": 6,
+     "bytes": 137027,
+     "firstEnd": 13,
+     "lastEnd": 25
+    },
+    "img": {
+     "n": 1,
+     "bytes": 838,
+     "firstEnd": 40,
+     "lastEnd": 40
+    }
+   },
+   "domNodes": 37
+  },
+  {
+   "cond": "warm",
+   "route": "404",
+   "trial": 1,
+   "responseStart": 4,
+   "responseEnd": 5,
+   "domInteractive": 18,
+   "dcl": 18,
+   "load": 30,
+   "htmlBytes": 2866,
+   "fp": 36,
+   "fcp": 36,
+   "lcp": 36,
+   "lcpEl": "H2:This page could not be found.",
+   "lcpCandidates": 1,
+   "hydrStart": 30,
+   "hydrLink": null,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 13,
+     "lastEnd": 13
+    },
+    "js": {
+     "n": 6,
+     "bytes": 137027,
+     "firstEnd": 13,
+     "lastEnd": 23
+    },
+    "img": {
+     "n": 1,
+     "bytes": 838,
+     "firstEnd": 34,
+     "lastEnd": 34
+    }
+   },
+   "domNodes": 37
+  },
+  {
+   "cond": "warm",
+   "route": "404",
+   "trial": 2,
+   "responseStart": 3,
+   "responseEnd": 3,
+   "domInteractive": 13,
+   "dcl": 13,
+   "load": 39,
+   "htmlBytes": 2866,
+   "fp": 28,
+   "fcp": 28,
+   "lcp": 28,
+   "lcpEl": "H2:This page could not be found.",
+   "lcpCandidates": 1,
+   "hydrStart": 39,
+   "hydrLink": null,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 9,
+     "lastEnd": 9
+    },
+    "js": {
+     "n": 6,
+     "bytes": 137027,
+     "firstEnd": 9,
+     "lastEnd": 34
+    },
+    "img": {
+     "n": 1,
+     "bytes": 838,
+     "firstEnd": 43,
+     "lastEnd": 43
+    }
+   },
+   "domNodes": 37
+  },
+  {
+   "cond": "warm",
+   "route": "404",
+   "trial": 3,
+   "responseStart": 3,
+   "responseEnd": 3,
+   "domInteractive": 15,
+   "dcl": 15,
+   "load": 27,
+   "htmlBytes": 2866,
+   "fp": 28,
+   "fcp": 28,
+   "lcp": 28,
+   "lcpEl": "H2:This page could not be found.",
+   "lcpCandidates": 1,
+   "hydrStart": 28,
+   "hydrLink": null,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 10,
+     "lastEnd": 10
+    },
+    "js": {
+     "n": 6,
+     "bytes": 137027,
+     "firstEnd": 10,
+     "lastEnd": 20
+    },
+    "img": {
+     "n": 1,
+     "bytes": 838,
+     "firstEnd": 32,
+     "lastEnd": 32
+    }
+   },
+   "domNodes": 37
+  },
+  {
+   "cond": "warm",
+   "route": "404",
+   "trial": 4,
+   "responseStart": 3,
+   "responseEnd": 3,
+   "domInteractive": 16,
+   "dcl": 16,
+   "load": 28,
+   "htmlBytes": 2866,
+   "fp": 48,
+   "fcp": 48,
+   "lcp": 48,
+   "lcpEl": "H2:This page could not be found.",
+   "lcpCandidates": 1,
+   "hydrStart": 28,
+   "hydrLink": null,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 11,
+     "lastEnd": 11
+    },
+    "js": {
+     "n": 6,
+     "bytes": 137027,
+     "firstEnd": 10,
+     "lastEnd": 20
+    },
+    "img": {
+     "n": 1,
+     "bytes": 838,
+     "firstEnd": 33,
+     "lastEnd": 33
+    }
+   },
+   "domNodes": 37
+  },
+  {
+   "cond": "warm",
+   "route": "404",
+   "trial": 5,
+   "responseStart": 3,
+   "responseEnd": 3,
+   "domInteractive": 15,
+   "dcl": 15,
+   "load": 26,
+   "htmlBytes": 2866,
+   "fp": 28,
+   "fcp": 28,
+   "lcp": 28,
+   "lcpEl": "H2:This page could not be found.",
+   "lcpCandidates": 1,
+   "hydrStart": 27,
+   "hydrLink": null,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 11,
+     "lastEnd": 11
+    },
+    "js": {
+     "n": 6,
+     "bytes": 137027,
+     "firstEnd": 9,
+     "lastEnd": 20
+    },
+    "img": {
+     "n": 1,
+     "bytes": 838,
+     "firstEnd": 31,
+     "lastEnd": 31
+    }
+   },
+   "domNodes": 37
+  },
+  {
+   "cond": "warm",
+   "route": "404",
+   "trial": 6,
+   "responseStart": 3,
+   "responseEnd": 4,
+   "domInteractive": 18,
+   "dcl": 18,
+   "load": 30,
+   "htmlBytes": 2866,
+   "fp": 40,
+   "fcp": 40,
+   "lcp": 40,
+   "lcpEl": "H2:This page could not be found.",
+   "lcpCandidates": 1,
+   "hydrStart": 29,
+   "hydrLink": null,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 14,
+     "lastEnd": 14
+    },
+    "js": {
+     "n": 6,
+     "bytes": 137027,
+     "firstEnd": 11,
+     "lastEnd": 22
+    },
+    "img": {
+     "n": 1,
+     "bytes": 838,
+     "firstEnd": 34,
+     "lastEnd": 34
+    }
+   },
+   "domNodes": 37
+  },
+  {
+   "cond": "warm",
+   "route": "home",
+   "trial": 0,
+   "responseStart": 15,
+   "responseEnd": 18,
+   "domInteractive": 243,
+   "dcl": 243,
+   "load": 314,
+   "htmlBytes": 36109,
+   "fp": 228,
+   "fcp": 228,
+   "lcp": 280,
+   "lcpEl": "SPAN:ideas.",
+   "lcpCandidates": 2,
+   "hydrStart": 313,
+   "hydrLink": 327,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32528,
+     "firstEnd": 20,
+     "lastEnd": 20
+    },
+    "img": {
+     "n": 76,
+     "bytes": 1485767,
+     "firstEnd": 90,
+     "lastEnd": 331
+    },
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 169,
+     "lastEnd": 169
+    },
+    "js": {
+     "n": 8,
+     "bytes": 186011,
+     "firstEnd": 199,
+     "lastEnd": 227
+    }
+   },
+   "domNodes": 654
+  },
+  {
+   "cond": "warm",
+   "route": "home",
+   "trial": 1,
+   "responseStart": 20,
+   "responseEnd": 24,
+   "domInteractive": 124,
+   "dcl": 124,
+   "load": 180,
+   "htmlBytes": 36109,
+   "fp": 104,
+   "fcp": 104,
+   "lcp": 136,
+   "lcpEl": "SPAN:ideas.",
+   "lcpCandidates": 2,
+   "hydrStart": 171,
+   "hydrLink": 186,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32528,
+     "firstEnd": 28,
+     "lastEnd": 28
+    },
+    "img": {
+     "n": 76,
+     "bytes": 1485767,
+     "firstEnd": 37,
+     "lastEnd": 196
+    },
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 48,
+     "lastEnd": 48
+    },
+    "js": {
+     "n": 8,
+     "bytes": 186011,
+     "firstEnd": 72,
+     "lastEnd": 87
+    }
+   },
+   "domNodes": 654
+  },
+  {
+   "cond": "warm",
+   "route": "home",
+   "trial": 2,
+   "responseStart": 18,
+   "responseEnd": 22,
+   "domInteractive": 107,
+   "dcl": 107,
+   "load": 165,
+   "htmlBytes": 36109,
+   "fp": 136,
+   "fcp": 136,
+   "lcp": 136,
+   "lcpEl": "SPAN:ideas.",
+   "lcpCandidates": 1,
+   "hydrStart": 155,
+   "hydrLink": 171,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32528,
+     "firstEnd": 26,
+     "lastEnd": 26
+    },
+    "img": {
+     "n": 74,
+     "bytes": 1438181,
+     "firstEnd": 31,
+     "lastEnd": 181
+    },
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 34,
+     "lastEnd": 34
+    },
+    "js": {
+     "n": 8,
+     "bytes": 186011,
+     "firstEnd": 61,
+     "lastEnd": 74
+    }
+   },
+   "domNodes": 654
+  },
+  {
+   "cond": "warm",
+   "route": "home",
+   "trial": 3,
+   "responseStart": 16,
+   "responseEnd": 19,
+   "domInteractive": 42,
+   "dcl": 42,
+   "load": 177,
+   "htmlBytes": 36109,
+   "fp": 156,
+   "fcp": 156,
+   "lcp": 156,
+   "lcpEl": "SPAN:ideas.",
+   "lcpCandidates": 1,
+   "hydrStart": 170,
+   "hydrLink": 187,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32528,
+     "firstEnd": 23,
+     "lastEnd": 23
+    },
+    "img": {
+     "n": 74,
+     "bytes": 1438181,
+     "firstEnd": 26,
+     "lastEnd": 203
+    },
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 28,
+     "lastEnd": 28
+    },
+    "js": {
+     "n": 8,
+     "bytes": 186011,
+     "firstEnd": 71,
+     "lastEnd": 95
+    }
+   },
+   "domNodes": 654
+  },
+  {
+   "cond": "warm",
+   "route": "home",
+   "trial": 4,
+   "responseStart": 20,
+   "responseEnd": 23,
+   "domInteractive": 111,
+   "dcl": 111,
+   "load": 166,
+   "htmlBytes": 36109,
+   "fp": 132,
+   "fcp": 132,
+   "lcp": 132,
+   "lcpEl": "SPAN:ideas.",
+   "lcpCandidates": 1,
+   "hydrStart": 166,
+   "hydrLink": 182,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32528,
+     "firstEnd": 26,
+     "lastEnd": 26
+    },
+    "img": {
+     "n": 74,
+     "bytes": 1438181,
+     "firstEnd": 30,
+     "lastEnd": 190
+    },
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 32,
+     "lastEnd": 32
+    },
+    "js": {
+     "n": 8,
+     "bytes": 186011,
+     "firstEnd": 64,
+     "lastEnd": 78
+    }
+   },
+   "domNodes": 654
+  },
+  {
+   "cond": "warm",
+   "route": "home",
+   "trial": 5,
+   "responseStart": 16,
+   "responseEnd": 21,
+   "domInteractive": 45,
+   "dcl": 45,
+   "load": 178,
+   "htmlBytes": 36109,
+   "fp": 152,
+   "fcp": 152,
+   "lcp": 320,
+   "lcpEl": "/scene/power/unpowered.png",
+   "lcpCandidates": 2,
+   "hydrStart": 177,
+   "hydrLink": 190,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32528,
+     "firstEnd": 24,
+     "lastEnd": 24
+    },
+    "img": {
+     "n": 74,
+     "bytes": 1438181,
+     "firstEnd": 27,
+     "lastEnd": 194
+    },
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 29,
+     "lastEnd": 29
+    },
+    "js": {
+     "n": 8,
+     "bytes": 186011,
+     "firstEnd": 61,
+     "lastEnd": 77
+    }
+   },
+   "domNodes": 654
+  },
+  {
+   "cond": "warm",
+   "route": "home",
+   "trial": 6,
+   "responseStart": 18,
+   "responseEnd": 22,
+   "domInteractive": 47,
+   "dcl": 47,
+   "load": 166,
+   "htmlBytes": 36109,
+   "fp": 144,
+   "fcp": 144,
+   "lcp": 276,
+   "lcpEl": "/scene/power/unpowered.png",
+   "lcpCandidates": 2,
+   "hydrStart": 165,
+   "hydrLink": 178,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32528,
+     "firstEnd": 25,
+     "lastEnd": 25
+    },
+    "img": {
+     "n": 74,
+     "bytes": 1438181,
+     "firstEnd": 28,
+     "lastEnd": 182
+    },
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 30,
+     "lastEnd": 30
+    },
+    "js": {
+     "n": 8,
+     "bytes": 186011,
+     "firstEnd": 59,
+     "lastEnd": 74
+    }
+   },
+   "domNodes": 654
+  },
+  {
+   "cond": "warm",
+   "route": "cinematic",
+   "trial": 0,
+   "responseStart": 29,
+   "responseEnd": 44,
+   "domInteractive": 65,
+   "dcl": 65,
+   "load": 218,
+   "htmlBytes": 81318,
+   "fp": 136,
+   "fcp": 136,
+   "lcp": 136,
+   "lcpEl": "SPAN:ideas.",
+   "lcpCandidates": 1,
+   "hydrStart": 136,
+   "hydrLink": 136,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32528,
+     "firstEnd": 39,
+     "lastEnd": 39
+    },
+    "img": {
+     "n": 95,
+     "bytes": 5795863,
+     "firstEnd": 45,
+     "lastEnd": 228
+    },
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 48,
+     "lastEnd": 48
+    },
+    "js": {
+     "n": 9,
+     "bytes": 189686,
+     "firstEnd": 71,
+     "lastEnd": 90
+    },
+    "other": {
+     "n": 3,
+     "bytes": 2986,
+     "firstEnd": 216,
+     "lastEnd": 222
+    }
+   },
+   "domNodes": 1150
+  },
+  {
+   "cond": "warm",
+   "route": "cinematic",
+   "trial": 1,
+   "responseStart": 25,
+   "responseEnd": 33,
+   "domInteractive": 114,
+   "dcl": 114,
+   "load": 210,
+   "htmlBytes": 81318,
+   "fp": 96,
+   "fcp": 96,
+   "lcp": 132,
+   "lcpEl": "SPAN:ideas.",
+   "lcpCandidates": 2,
+   "hydrStart": 124,
+   "hydrLink": 141,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32528,
+     "firstEnd": 31,
+     "lastEnd": 31
+    },
+    "img": {
+     "n": 95,
+     "bytes": 5795863,
+     "firstEnd": 31,
+     "lastEnd": 220
+    },
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 37,
+     "lastEnd": 37
+    },
+    "js": {
+     "n": 9,
+     "bytes": 189686,
+     "firstEnd": 59,
+     "lastEnd": 76
+    },
+    "other": {
+     "n": 3,
+     "bytes": 2983,
+     "firstEnd": 209,
+     "lastEnd": 215
+    }
+   },
+   "domNodes": 1150
+  },
+  {
+   "cond": "warm",
+   "route": "cinematic",
+   "trial": 2,
+   "responseStart": 25,
+   "responseEnd": 33,
+   "domInteractive": 110,
+   "dcl": 110,
+   "load": 205,
+   "htmlBytes": 81318,
+   "fp": 104,
+   "fcp": 104,
+   "lcp": 136,
+   "lcpEl": "SPAN:ideas.",
+   "lcpCandidates": 2,
+   "hydrStart": 121,
+   "hydrLink": 139,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32528,
+     "firstEnd": 31,
+     "lastEnd": 31
+    },
+    "img": {
+     "n": 95,
+     "bytes": 5795863,
+     "firstEnd": 36,
+     "lastEnd": 211
+    },
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 38,
+     "lastEnd": 38
+    },
+    "js": {
+     "n": 9,
+     "bytes": 189686,
+     "firstEnd": 62,
+     "lastEnd": 80
+    },
+    "other": {
+     "n": 3,
+     "bytes": 2987,
+     "firstEnd": 204,
+     "lastEnd": 211
+    }
+   },
+   "domNodes": 1150
+  },
+  {
+   "cond": "warm",
+   "route": "cinematic",
+   "trial": 3,
+   "responseStart": 26,
+   "responseEnd": 33,
+   "domInteractive": 55,
+   "dcl": 56,
+   "load": 208,
+   "htmlBytes": 81318,
+   "fp": 140,
+   "fcp": 140,
+   "lcp": 140,
+   "lcpEl": "SPAN:ideas.",
+   "lcpCandidates": 1,
+   "hydrStart": 117,
+   "hydrLink": 135,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "img": {
+     "n": 95,
+     "bytes": 5795863,
+     "firstEnd": 32,
+     "lastEnd": 216
+    },
+    "font": {
+     "n": 1,
+     "bytes": 32528,
+     "firstEnd": 31,
+     "lastEnd": 31
+    },
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 34,
+     "lastEnd": 34
+    },
+    "js": {
+     "n": 9,
+     "bytes": 189686,
+     "firstEnd": 61,
+     "lastEnd": 77
+    },
+    "other": {
+     "n": 3,
+     "bytes": 2983,
+     "firstEnd": 206,
+     "lastEnd": 217
+    }
+   },
+   "domNodes": 1150
+  },
+  {
+   "cond": "warm",
+   "route": "cinematic",
+   "trial": 4,
+   "responseStart": 30,
+   "responseEnd": 40,
+   "domInteractive": 138,
+   "dcl": 138,
+   "load": 241,
+   "htmlBytes": 81318,
+   "fp": 116,
+   "fcp": 116,
+   "lcp": 164,
+   "lcpEl": "SPAN:ideas.",
+   "lcpCandidates": 2,
+   "hydrStart": 160,
+   "hydrLink": 161,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32528,
+     "firstEnd": 41,
+     "lastEnd": 41
+    },
+    "img": {
+     "n": 95,
+     "bytes": 5795863,
+     "firstEnd": 40,
+     "lastEnd": 249
+    },
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 45,
+     "lastEnd": 45
+    },
+    "js": {
+     "n": 9,
+     "bytes": 189686,
+     "firstEnd": 75,
+     "lastEnd": 105
+    },
+    "other": {
+     "n": 3,
+     "bytes": 2983,
+     "firstEnd": 239,
+     "lastEnd": 250
+    }
+   },
+   "domNodes": 1150
+  },
+  {
+   "cond": "warm",
+   "route": "cinematic",
+   "trial": 5,
+   "responseStart": 27,
+   "responseEnd": 36,
+   "domInteractive": 63,
+   "dcl": 63,
+   "load": 218,
+   "htmlBytes": 81318,
+   "fp": 140,
+   "fcp": 140,
+   "lcp": 140,
+   "lcpEl": "SPAN:ideas.",
+   "lcpCandidates": 1,
+   "hydrStart": 130,
+   "hydrLink": 145,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32528,
+     "firstEnd": 34,
+     "lastEnd": 34
+    },
+    "img": {
+     "n": 95,
+     "bytes": 5795863,
+     "firstEnd": 35,
+     "lastEnd": 223
+    },
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 38,
+     "lastEnd": 38
+    },
+    "js": {
+     "n": 9,
+     "bytes": 189686,
+     "firstEnd": 64,
+     "lastEnd": 93
+    },
+    "other": {
+     "n": 3,
+     "bytes": 2985,
+     "firstEnd": 216,
+     "lastEnd": 223
+    }
+   },
+   "domNodes": 1150
+  },
+  {
+   "cond": "warm",
+   "route": "cinematic",
+   "trial": 6,
+   "responseStart": 23,
+   "responseEnd": 30,
+   "domInteractive": 107,
+   "dcl": 107,
+   "load": 221,
+   "htmlBytes": 81318,
+   "fp": 88,
+   "fcp": 88,
+   "lcp": 120,
+   "lcpEl": "SPAN:ideas.",
+   "lcpCandidates": 2,
+   "hydrStart": 119,
+   "hydrLink": 137,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32528,
+     "firstEnd": 28,
+     "lastEnd": 28
+    },
+    "img": {
+     "n": 95,
+     "bytes": 5795863,
+     "firstEnd": 29,
+     "lastEnd": 235
+    },
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 34,
+     "lastEnd": 34
+    },
+    "js": {
+     "n": 9,
+     "bytes": 189686,
+     "firstEnd": 63,
+     "lastEnd": 80
+    },
+    "other": {
+     "n": 3,
+     "bytes": 2985,
+     "firstEnd": 220,
+     "lastEnd": 236
+    }
+   },
+   "domNodes": 1150
+  },
+  {
+   "cond": "warm",
+   "route": "lite",
+   "trial": 0,
+   "responseStart": 14,
+   "responseEnd": 17,
+   "domInteractive": 72,
+   "dcl": 72,
+   "load": 72,
+   "htmlBytes": 16458,
+   "fp": 100,
+   "fcp": 100,
+   "lcp": 100,
+   "lcpEl": "SPAN:ideas.",
+   "lcpCandidates": 1,
+   "hydrStart": 78,
+   "hydrLink": 78,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32528,
+     "firstEnd": 23,
+     "lastEnd": 23
+    },
+    "img": {
+     "n": 7,
+     "bytes": 2640946,
+     "firstEnd": 32,
+     "lastEnd": 83
+    },
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 30,
+     "lastEnd": 30
+    },
+    "js": {
+     "n": 9,
+     "bytes": 189686,
+     "firstEnd": 38,
+     "lastEnd": 59
+    },
+    "other": {
+     "n": 3,
+     "bytes": 2996,
+     "firstEnd": 93,
+     "lastEnd": 99
+    }
+   },
+   "domNodes": 406
+  },
+  {
+   "cond": "warm",
+   "route": "lite",
+   "trial": 1,
+   "responseStart": 8,
+   "responseEnd": 9,
+   "domInteractive": 51,
+   "dcl": 51,
+   "load": 63,
+   "htmlBytes": 16458,
+   "fp": 72,
+   "fcp": 72,
+   "lcp": 72,
+   "lcpEl": "SPAN:ideas.",
+   "lcpCandidates": 1,
+   "hydrStart": 63,
+   "hydrLink": 63,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32528,
+     "firstEnd": 14,
+     "lastEnd": 14
+    },
+    "img": {
+     "n": 7,
+     "bytes": 2640946,
+     "firstEnd": 20,
+     "lastEnd": 70
+    },
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 18,
+     "lastEnd": 18
+    },
+    "js": {
+     "n": 9,
+     "bytes": 189686,
+     "firstEnd": 29,
+     "lastEnd": 45
+    },
+    "other": {
+     "n": 3,
+     "bytes": 2991,
+     "firstEnd": 98,
+     "lastEnd": 104
+    }
+   },
+   "domNodes": 406
+  },
+  {
+   "cond": "warm",
+   "route": "lite",
+   "trial": 2,
+   "responseStart": 10,
+   "responseEnd": 12,
+   "domInteractive": 24,
+   "dcl": 24,
+   "load": 60,
+   "htmlBytes": 16458,
+   "fp": 124,
+   "fcp": 124,
+   "lcp": 124,
+   "lcpEl": "SPAN:ideas.",
+   "lcpCandidates": 1,
+   "hydrStart": 60,
+   "hydrLink": 60,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32528,
+     "firstEnd": 16,
+     "lastEnd": 16
+    },
+    "img": {
+     "n": 7,
+     "bytes": 2640946,
+     "firstEnd": 21,
+     "lastEnd": 68
+    },
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 19,
+     "lastEnd": 19
+    },
+    "js": {
+     "n": 9,
+     "bytes": 189686,
+     "firstEnd": 27,
+     "lastEnd": 44
+    },
+    "other": {
+     "n": 3,
+     "bytes": 2994,
+     "firstEnd": 67,
+     "lastEnd": 72
+    }
+   },
+   "domNodes": 406
+  },
+  {
+   "cond": "warm",
+   "route": "lite",
+   "trial": 3,
+   "responseStart": 10,
+   "responseEnd": 11,
+   "domInteractive": 52,
+   "dcl": 52,
+   "load": 64,
+   "htmlBytes": 16458,
+   "fp": 88,
+   "fcp": 88,
+   "lcp": 88,
+   "lcpEl": "SPAN:ideas.",
+   "lcpCandidates": 1,
+   "hydrStart": 64,
+   "hydrLink": 64,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32528,
+     "firstEnd": 16,
+     "lastEnd": 16
+    },
+    "img": {
+     "n": 7,
+     "bytes": 2640946,
+     "firstEnd": 22,
+     "lastEnd": 70
+    },
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 21,
+     "lastEnd": 21
+    },
+    "js": {
+     "n": 9,
+     "bytes": 189686,
+     "firstEnd": 29,
+     "lastEnd": 48
+    },
+    "other": {
+     "n": 3,
+     "bytes": 2992,
+     "firstEnd": 77,
+     "lastEnd": 80
+    }
+   },
+   "domNodes": 406
+  },
+  {
+   "cond": "warm",
+   "route": "lite",
+   "trial": 4,
+   "responseStart": 9,
+   "responseEnd": 11,
+   "domInteractive": 50,
+   "dcl": 50,
+   "load": 65,
+   "htmlBytes": 16458,
+   "fp": 88,
+   "fcp": 88,
+   "lcp": 88,
+   "lcpEl": "SPAN:ideas.",
+   "lcpCandidates": 1,
+   "hydrStart": 65,
+   "hydrLink": 65,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32528,
+     "firstEnd": 20,
+     "lastEnd": 20
+    },
+    "img": {
+     "n": 7,
+     "bytes": 2640946,
+     "firstEnd": 22,
+     "lastEnd": 170
+    },
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 23,
+     "lastEnd": 23
+    },
+    "js": {
+     "n": 9,
+     "bytes": 189686,
+     "firstEnd": 30,
+     "lastEnd": 47
+    },
+    "other": {
+     "n": 3,
+     "bytes": 2996,
+     "firstEnd": 175,
+     "lastEnd": 179
+    }
+   },
+   "domNodes": 406
+  },
+  {
+   "cond": "warm",
+   "route": "lite",
+   "trial": 5,
+   "responseStart": 10,
+   "responseEnd": 11,
+   "domInteractive": 22,
+   "dcl": 22,
+   "load": 64,
+   "htmlBytes": 16458,
+   "fp": 88,
+   "fcp": 88,
+   "lcp": 88,
+   "lcpEl": "SPAN:ideas.",
+   "lcpCandidates": 1,
+   "hydrStart": 64,
+   "hydrLink": 64,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32528,
+     "firstEnd": 15,
+     "lastEnd": 15
+    },
+    "img": {
+     "n": 7,
+     "bytes": 2640946,
+     "firstEnd": 20,
+     "lastEnd": 71
+    },
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 19,
+     "lastEnd": 19
+    },
+    "js": {
+     "n": 9,
+     "bytes": 189686,
+     "firstEnd": 28,
+     "lastEnd": 50
+    },
+    "other": {
+     "n": 3,
+     "bytes": 2994,
+     "firstEnd": 78,
+     "lastEnd": 82
+    }
+   },
+   "domNodes": 406
+  },
+  {
+   "cond": "warm",
+   "route": "lite",
+   "trial": 6,
+   "responseStart": 9,
+   "responseEnd": 11,
+   "domInteractive": 24,
+   "dcl": 24,
+   "load": 65,
+   "htmlBytes": 16458,
+   "fp": 88,
+   "fcp": 88,
+   "lcp": 88,
+   "lcpEl": "SPAN:ideas.",
+   "lcpCandidates": 1,
+   "hydrStart": 65,
+   "hydrLink": 65,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32528,
+     "firstEnd": 15,
+     "lastEnd": 15
+    },
+    "img": {
+     "n": 7,
+     "bytes": 2640946,
+     "firstEnd": 21,
+     "lastEnd": 71
+    },
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 20,
+     "lastEnd": 20
+    },
+    "js": {
+     "n": 9,
+     "bytes": 189686,
+     "firstEnd": 28,
+     "lastEnd": 48
+    },
+    "other": {
+     "n": 3,
+     "bytes": 2993,
+     "firstEnd": 151,
+     "lastEnd": 155
+    }
+   },
+   "domNodes": 406
+  },
+  {
+   "cond": "warm",
+   "route": "project",
+   "trial": 0,
+   "responseStart": 12,
+   "responseEnd": 14,
+   "domInteractive": 27,
+   "dcl": 27,
+   "load": 69,
+   "htmlBytes": 12637,
+   "fp": 84,
+   "fcp": 84,
+   "lcp": 84,
+   "lcpEl": "P:Database performance problems ",
+   "lcpCandidates": 1,
+   "hydrStart": 69,
+   "hydrLink": 69,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32528,
+     "firstEnd": 21,
+     "lastEnd": 21
+    },
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 24,
+     "lastEnd": 24
+    },
+    "js": {
+     "n": 8,
+     "bytes": 150077,
+     "firstEnd": 29,
+     "lastEnd": 40
+    },
+    "other": {
+     "n": 8,
+     "bytes": 7030,
+     "firstEnd": 86,
+     "lastEnd": 104
+    },
+    "img": {
+     "n": 1,
+     "bytes": 838,
+     "firstEnd": 86,
+     "lastEnd": 86
+    }
+   },
+   "domNodes": 214
+  },
+  {
+   "cond": "warm",
+   "route": "project",
+   "trial": 1,
+   "responseStart": 9,
+   "responseEnd": 10,
+   "domInteractive": 40,
+   "dcl": 40,
+   "load": 48,
+   "htmlBytes": 12637,
+   "fp": 56,
+   "fcp": 56,
+   "lcp": 56,
+   "lcpEl": "P:Database performance problems ",
+   "lcpCandidates": 1,
+   "hydrStart": 48,
+   "hydrLink": 48,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32528,
+     "firstEnd": 14,
+     "lastEnd": 14
+    },
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 18,
+     "lastEnd": 18
+    },
+    "js": {
+     "n": 8,
+     "bytes": 150077,
+     "firstEnd": 20,
+     "lastEnd": 29
+    },
+    "img": {
+     "n": 1,
+     "bytes": 838,
+     "firstEnd": 53,
+     "lastEnd": 53
+    },
+    "other": {
+     "n": 8,
+     "bytes": 7027,
+     "firstEnd": 63,
+     "lastEnd": 73
+    }
+   },
+   "domNodes": 214
+  },
+  {
+   "cond": "warm",
+   "route": "project",
+   "trial": 2,
+   "responseStart": 8,
+   "responseEnd": 9,
+   "domInteractive": 19,
+   "dcl": 19,
+   "load": 46,
+   "htmlBytes": 12637,
+   "fp": 56,
+   "fcp": 56,
+   "lcp": 56,
+   "lcpEl": "P:Database performance problems ",
+   "lcpCandidates": 1,
+   "hydrStart": 47,
+   "hydrLink": 47,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32528,
+     "firstEnd": 14,
+     "lastEnd": 14
+    },
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 16,
+     "lastEnd": 16
+    },
+    "js": {
+     "n": 8,
+     "bytes": 150077,
+     "firstEnd": 18,
+     "lastEnd": 28
+    },
+    "img": {
+     "n": 1,
+     "bytes": 838,
+     "firstEnd": 52,
+     "lastEnd": 52
+    },
+    "other": {
+     "n": 8,
+     "bytes": 7025,
+     "firstEnd": 61,
+     "lastEnd": 71
+    }
+   },
+   "domNodes": 214
+  },
+  {
+   "cond": "warm",
+   "route": "project",
+   "trial": 3,
+   "responseStart": 9,
+   "responseEnd": 10,
+   "domInteractive": 40,
+   "dcl": 40,
+   "load": 51,
+   "htmlBytes": 12637,
+   "fp": 60,
+   "fcp": 60,
+   "lcp": 60,
+   "lcpEl": "P:Database performance problems ",
+   "lcpCandidates": 1,
+   "hydrStart": 51,
+   "hydrLink": 51,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32528,
+     "firstEnd": 14,
+     "lastEnd": 14
+    },
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 19,
+     "lastEnd": 19
+    },
+    "js": {
+     "n": 8,
+     "bytes": 150077,
+     "firstEnd": 21,
+     "lastEnd": 29
+    },
+    "img": {
+     "n": 1,
+     "bytes": 838,
+     "firstEnd": 55,
+     "lastEnd": 55
+    },
+    "other": {
+     "n": 8,
+     "bytes": 7029,
+     "firstEnd": 65,
+     "lastEnd": 75
+    }
+   },
+   "domNodes": 214
+  },
+  {
+   "cond": "warm",
+   "route": "project",
+   "trial": 4,
+   "responseStart": 8,
+   "responseEnd": 9,
+   "domInteractive": 18,
+   "dcl": 18,
+   "load": 47,
+   "htmlBytes": 12637,
+   "fp": 56,
+   "fcp": 56,
+   "lcp": 56,
+   "lcpEl": "P:Database performance problems ",
+   "lcpCandidates": 1,
+   "hydrStart": 47,
+   "hydrLink": 47,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32528,
+     "firstEnd": 13,
+     "lastEnd": 13
+    },
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 16,
+     "lastEnd": 16
+    },
+    "js": {
+     "n": 8,
+     "bytes": 150077,
+     "firstEnd": 18,
+     "lastEnd": 26
+    },
+    "img": {
+     "n": 1,
+     "bytes": 838,
+     "firstEnd": 52,
+     "lastEnd": 52
+    },
+    "other": {
+     "n": 8,
+     "bytes": 7025,
+     "firstEnd": 63,
+     "lastEnd": 75
+    }
+   },
+   "domNodes": 214
+  },
+  {
+   "cond": "warm",
+   "route": "project",
+   "trial": 5,
+   "responseStart": 7,
+   "responseEnd": 8,
+   "domInteractive": 39,
+   "dcl": 39,
+   "load": 50,
+   "htmlBytes": 12637,
+   "fp": 60,
+   "fcp": 60,
+   "lcp": 60,
+   "lcpEl": "P:Database performance problems ",
+   "lcpCandidates": 1,
+   "hydrStart": 50,
+   "hydrLink": 50,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32528,
+     "firstEnd": 16,
+     "lastEnd": 16
+    },
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 18,
+     "lastEnd": 18
+    },
+    "js": {
+     "n": 8,
+     "bytes": 150077,
+     "firstEnd": 18,
+     "lastEnd": 29
+    },
+    "img": {
+     "n": 1,
+     "bytes": 838,
+     "firstEnd": 55,
+     "lastEnd": 55
+    },
+    "other": {
+     "n": 8,
+     "bytes": 7024,
+     "firstEnd": 66,
+     "lastEnd": 78
+    }
+   },
+   "domNodes": 214
+  },
+  {
+   "cond": "warm",
+   "route": "project",
+   "trial": 6,
+   "responseStart": 7,
+   "responseEnd": 8,
+   "domInteractive": 35,
+   "dcl": 35,
+   "load": 47,
+   "htmlBytes": 12637,
+   "fp": 60,
+   "fcp": 60,
+   "lcp": 60,
+   "lcpEl": "P:Database performance problems ",
+   "lcpCandidates": 1,
+   "hydrStart": 47,
+   "hydrLink": 47,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32528,
+     "firstEnd": 13,
+     "lastEnd": 13
+    },
+    "css": {
+     "n": 1,
+     "bytes": 11187,
+     "firstEnd": 15,
+     "lastEnd": 15
+    },
+    "js": {
+     "n": 8,
+     "bytes": 150077,
+     "firstEnd": 17,
+     "lastEnd": 26
+    },
+    "img": {
+     "n": 1,
+     "bytes": 838,
+     "firstEnd": 52,
+     "lastEnd": 52
+    },
+    "other": {
+     "n": 8,
+     "bytes": 7024,
+     "firstEnd": 67,
+     "lastEnd": 78
+    }
+   },
+   "domNodes": 214
+  },
+  {
+   "cond": "warmcache",
+   "route": "404",
+   "trial": 0,
+   "responseStart": 7,
+   "responseEnd": 7,
+   "domInteractive": 28,
+   "dcl": 29,
+   "load": 29,
+   "htmlBytes": 2866,
+   "fp": 56,
+   "fcp": 56,
+   "lcp": 56,
+   "lcpEl": "H2:This page could not be found.",
+   "lcpCandidates": 1,
+   "hydrStart": 30,
+   "hydrLink": null,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "css": {
+     "n": 1,
+     "bytes": 10887,
+     "firstEnd": 12,
+     "lastEnd": 12
+    },
+    "js": {
+     "n": 6,
+     "bytes": 135227,
+     "firstEnd": 12,
+     "lastEnd": 12
+    }
+   },
+   "domNodes": 37
+  },
+  {
+   "cond": "warmcache",
+   "route": "404",
+   "trial": 1,
+   "responseStart": 3,
+   "responseEnd": 3,
+   "domInteractive": 13,
+   "dcl": 13,
+   "load": 14,
+   "htmlBytes": 2866,
+   "fp": 40,
+   "fcp": 40,
+   "lcp": 40,
+   "lcpEl": "H2:This page could not be found.",
+   "lcpCandidates": 1,
+   "hydrStart": 16,
+   "hydrLink": null,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "css": {
+     "n": 1,
+     "bytes": 10887,
+     "firstEnd": 8,
+     "lastEnd": 8
+    },
+    "js": {
+     "n": 6,
+     "bytes": 135227,
+     "firstEnd": 8,
+     "lastEnd": 8
+    }
+   },
+   "domNodes": 37
+  },
+  {
+   "cond": "warmcache",
+   "route": "404",
+   "trial": 2,
+   "responseStart": 4,
+   "responseEnd": 4,
+   "domInteractive": 13,
+   "dcl": 13,
+   "load": 14,
+   "htmlBytes": 2866,
+   "fp": 36,
+   "fcp": 36,
+   "lcp": 36,
+   "lcpEl": "H2:This page could not be found.",
+   "lcpCandidates": 1,
+   "hydrStart": 16,
+   "hydrLink": null,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "css": {
+     "n": 1,
+     "bytes": 10887,
+     "firstEnd": 7,
+     "lastEnd": 7
+    },
+    "js": {
+     "n": 6,
+     "bytes": 135227,
+     "firstEnd": 7,
+     "lastEnd": 7
+    }
+   },
+   "domNodes": 37
+  },
+  {
+   "cond": "warmcache",
+   "route": "404",
+   "trial": 3,
+   "responseStart": 3,
+   "responseEnd": 3,
+   "domInteractive": 12,
+   "dcl": 12,
+   "load": 13,
+   "htmlBytes": 2866,
+   "fp": 44,
+   "fcp": 44,
+   "lcp": 44,
+   "lcpEl": "H2:This page could not be found.",
+   "lcpCandidates": 1,
+   "hydrStart": 15,
+   "hydrLink": null,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "css": {
+     "n": 1,
+     "bytes": 10887,
+     "firstEnd": 7,
+     "lastEnd": 7
+    },
+    "js": {
+     "n": 6,
+     "bytes": 135227,
+     "firstEnd": 7,
+     "lastEnd": 7
+    }
+   },
+   "domNodes": 37
+  },
+  {
+   "cond": "warmcache",
+   "route": "404",
+   "trial": 4,
+   "responseStart": 3,
+   "responseEnd": 3,
+   "domInteractive": 14,
+   "dcl": 14,
+   "load": 15,
+   "htmlBytes": 2866,
+   "fp": 40,
+   "fcp": 40,
+   "lcp": 40,
+   "lcpEl": "H2:This page could not be found.",
+   "lcpCandidates": 1,
+   "hydrStart": 17,
+   "hydrLink": null,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "css": {
+     "n": 1,
+     "bytes": 10887,
+     "firstEnd": 7,
+     "lastEnd": 7
+    },
+    "js": {
+     "n": 6,
+     "bytes": 135227,
+     "firstEnd": 7,
+     "lastEnd": 7
+    }
+   },
+   "domNodes": 37
+  },
+  {
+   "cond": "warmcache",
+   "route": "404",
+   "trial": 5,
+   "responseStart": 3,
+   "responseEnd": 4,
+   "domInteractive": 15,
+   "dcl": 15,
+   "load": 16,
+   "htmlBytes": 2866,
+   "fp": 36,
+   "fcp": 36,
+   "lcp": 36,
+   "lcpEl": "H2:This page could not be found.",
+   "lcpCandidates": 1,
+   "hydrStart": 19,
+   "hydrLink": null,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "css": {
+     "n": 1,
+     "bytes": 10887,
+     "firstEnd": 8,
+     "lastEnd": 8
+    },
+    "js": {
+     "n": 6,
+     "bytes": 135227,
+     "firstEnd": 8,
+     "lastEnd": 8
+    }
+   },
+   "domNodes": 37
+  },
+  {
+   "cond": "warmcache",
+   "route": "404",
+   "trial": 6,
+   "responseStart": 2,
+   "responseEnd": 3,
+   "domInteractive": 11,
+   "dcl": 11,
+   "load": 12,
+   "htmlBytes": 2866,
+   "fp": 48,
+   "fcp": 48,
+   "lcp": 48,
+   "lcpEl": "H2:This page could not be found.",
+   "lcpCandidates": 1,
+   "hydrStart": 14,
+   "hydrLink": null,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "css": {
+     "n": 1,
+     "bytes": 10887,
+     "firstEnd": 6,
+     "lastEnd": 6
+    },
+    "js": {
+     "n": 6,
+     "bytes": 135227,
+     "firstEnd": 6,
+     "lastEnd": 6
+    }
+   },
+   "domNodes": 37
+  },
+  {
+   "cond": "warmcache",
+   "route": "home",
+   "trial": 0,
+   "responseStart": 18,
+   "responseEnd": 21,
+   "domInteractive": 47,
+   "dcl": 47,
+   "load": 156,
+   "htmlBytes": 36109,
+   "fp": 148,
+   "fcp": 148,
+   "lcp": 148,
+   "lcpEl": "SPAN:ideas.",
+   "lcpCandidates": 1,
+   "hydrStart": 164,
+   "hydrLink": 164,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32228,
+     "firstEnd": 23,
+     "lastEnd": 23
+    },
+    "img": {
+     "n": 73,
+     "bytes": 21900,
+     "firstEnd": 26,
+     "lastEnd": 112
+    },
+    "css": {
+     "n": 1,
+     "bytes": 10887,
+     "firstEnd": 27,
+     "lastEnd": 27
+    },
+    "js": {
+     "n": 8,
+     "bytes": 183611,
+     "firstEnd": 50,
+     "lastEnd": 56
+    }
+   },
+   "domNodes": 654
+  },
+  {
+   "cond": "warmcache",
+   "route": "home",
+   "trial": 1,
+   "responseStart": 14,
+   "responseEnd": 17,
+   "domInteractive": 41,
+   "dcl": 41,
+   "load": 118,
+   "htmlBytes": 36109,
+   "fp": 192,
+   "fcp": 192,
+   "lcp": 192,
+   "lcpEl": "SPAN:ideas.",
+   "lcpCandidates": 1,
+   "hydrStart": 109,
+   "hydrLink": 124,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32228,
+     "firstEnd": 19,
+     "lastEnd": 19
+    },
+    "img": {
+     "n": 73,
+     "bytes": 21900,
+     "firstEnd": 20,
+     "lastEnd": 97
+    },
+    "css": {
+     "n": 1,
+     "bytes": 10887,
+     "firstEnd": 23,
+     "lastEnd": 23
+    },
+    "js": {
+     "n": 8,
+     "bytes": 183611,
+     "firstEnd": 43,
+     "lastEnd": 48
+    }
+   },
+   "domNodes": 654
+  },
+  {
+   "cond": "warmcache",
+   "route": "home",
+   "trial": 2,
+   "responseStart": 13,
+   "responseEnd": 16,
+   "domInteractive": 40,
+   "dcl": 40,
+   "load": 103,
+   "htmlBytes": 36109,
+   "fp": 192,
+   "fcp": 192,
+   "lcp": 192,
+   "lcpEl": "SPAN:ideas.",
+   "lcpCandidates": 1,
+   "hydrStart": 108,
+   "hydrLink": 123,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32228,
+     "firstEnd": 18,
+     "lastEnd": 18
+    },
+    "img": {
+     "n": 73,
+     "bytes": 21900,
+     "firstEnd": 20,
+     "lastEnd": 98
+    },
+    "css": {
+     "n": 1,
+     "bytes": 10887,
+     "firstEnd": 21,
+     "lastEnd": 21
+    },
+    "js": {
+     "n": 8,
+     "bytes": 183611,
+     "firstEnd": 42,
+     "lastEnd": 47
+    }
+   },
+   "domNodes": 654
+  },
+  {
+   "cond": "warmcache",
+   "route": "home",
+   "trial": 3,
+   "responseStart": 13,
+   "responseEnd": 16,
+   "domInteractive": 39,
+   "dcl": 39,
+   "load": 101,
+   "htmlBytes": 36109,
+   "fp": 192,
+   "fcp": 192,
+   "lcp": 192,
+   "lcpEl": "SPAN:ideas.",
+   "lcpCandidates": 1,
+   "hydrStart": 111,
+   "hydrLink": 111,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32228,
+     "firstEnd": 18,
+     "lastEnd": 18
+    },
+    "img": {
+     "n": 73,
+     "bytes": 21900,
+     "firstEnd": 20,
+     "lastEnd": 97
+    },
+    "css": {
+     "n": 1,
+     "bytes": 10887,
+     "firstEnd": 21,
+     "lastEnd": 21
+    },
+    "js": {
+     "n": 8,
+     "bytes": 183611,
+     "firstEnd": 41,
+     "lastEnd": 46
+    }
+   },
+   "domNodes": 654
+  },
+  {
+   "cond": "warmcache",
+   "route": "home",
+   "trial": 4,
+   "responseStart": 15,
+   "responseEnd": 23,
+   "domInteractive": 45,
+   "dcl": 45,
+   "load": 138,
+   "htmlBytes": 36109,
+   "fp": 212,
+   "fcp": 212,
+   "lcp": 212,
+   "lcpEl": "SPAN:ideas.",
+   "lcpCandidates": 1,
+   "hydrStart": 145,
+   "hydrLink": 145,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32228,
+     "firstEnd": 21,
+     "lastEnd": 21
+    },
+    "img": {
+     "n": 73,
+     "bytes": 21900,
+     "firstEnd": 25,
+     "lastEnd": 112
+    },
+    "css": {
+     "n": 1,
+     "bytes": 10887,
+     "firstEnd": 24,
+     "lastEnd": 24
+    },
+    "js": {
+     "n": 8,
+     "bytes": 183611,
+     "firstEnd": 48,
+     "lastEnd": 54
+    }
+   },
+   "domNodes": 654
+  },
+  {
+   "cond": "warmcache",
+   "route": "home",
+   "trial": 5,
+   "responseStart": 15,
+   "responseEnd": 18,
+   "domInteractive": 38,
+   "dcl": 38,
+   "load": 110,
+   "htmlBytes": 36109,
+   "fp": 176,
+   "fcp": 176,
+   "lcp": 176,
+   "lcpEl": "SPAN:ideas.",
+   "lcpCandidates": 1,
+   "hydrStart": 110,
+   "hydrLink": 110,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32228,
+     "firstEnd": 20,
+     "lastEnd": 20
+    },
+    "img": {
+     "n": 73,
+     "bytes": 21900,
+     "firstEnd": 21,
+     "lastEnd": 63
+    },
+    "css": {
+     "n": 1,
+     "bytes": 10887,
+     "firstEnd": 22,
+     "lastEnd": 22
+    },
+    "js": {
+     "n": 8,
+     "bytes": 183611,
+     "firstEnd": 37,
+     "lastEnd": 40
+    }
+   },
+   "domNodes": 654
+  },
+  {
+   "cond": "warmcache",
+   "route": "home",
+   "trial": 6,
+   "responseStart": 15,
+   "responseEnd": 18,
+   "domInteractive": 40,
+   "dcl": 40,
+   "load": 117,
+   "htmlBytes": 36109,
+   "fp": 188,
+   "fcp": 188,
+   "lcp": 188,
+   "lcpEl": "SPAN:ideas.",
+   "lcpCandidates": 1,
+   "hydrStart": 117,
+   "hydrLink": 117,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32228,
+     "firstEnd": 20,
+     "lastEnd": 20
+    },
+    "img": {
+     "n": 73,
+     "bytes": 21900,
+     "firstEnd": 22,
+     "lastEnd": 66
+    },
+    "css": {
+     "n": 1,
+     "bytes": 10887,
+     "firstEnd": 23,
+     "lastEnd": 23
+    },
+    "js": {
+     "n": 8,
+     "bytes": 183611,
+     "firstEnd": 37,
+     "lastEnd": 41
+    }
+   },
+   "domNodes": 654
+  },
+  {
+   "cond": "warmcache",
+   "route": "cinematic",
+   "trial": 0,
+   "responseStart": 29,
+   "responseEnd": 37,
+   "domInteractive": 66,
+   "dcl": 67,
+   "load": 588,
+   "htmlBytes": 81318,
+   "fp": 124,
+   "fcp": 124,
+   "lcp": 124,
+   "lcpEl": "SPAN:ideas.",
+   "lcpCandidates": 1,
+   "hydrStart": 99,
+   "hydrLink": 110,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32228,
+     "firstEnd": 32,
+     "lastEnd": 32
+    },
+    "img": {
+     "n": 94,
+     "bytes": 28200,
+     "firstEnd": 34,
+     "lastEnd": 587
+    },
+    "css": {
+     "n": 1,
+     "bytes": 10887,
+     "firstEnd": 36,
+     "lastEnd": 36
+    },
+    "js": {
+     "n": 9,
+     "bytes": 186986,
+     "firstEnd": 36,
+     "lastEnd": 36
+    },
+    "other": {
+     "n": 3,
+     "bytes": 2982,
+     "firstEnd": 591,
+     "lastEnd": 595
+    }
+   },
+   "domNodes": 1150
+  },
+  {
+   "cond": "warmcache",
+   "route": "cinematic",
+   "trial": 1,
+   "responseStart": 24,
+   "responseEnd": 32,
+   "domInteractive": 55,
+   "dcl": 55,
+   "load": 113,
+   "htmlBytes": 81318,
+   "fp": 120,
+   "fcp": 120,
+   "lcp": 120,
+   "lcpEl": "SPAN:ideas.",
+   "lcpCandidates": 1,
+   "hydrStart": 104,
+   "hydrLink": 121,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32228,
+     "firstEnd": 28,
+     "lastEnd": 28
+    },
+    "img": {
+     "n": 94,
+     "bytes": 28200,
+     "firstEnd": 29,
+     "lastEnd": 112
+    },
+    "css": {
+     "n": 1,
+     "bytes": 10887,
+     "firstEnd": 30,
+     "lastEnd": 30
+    },
+    "js": {
+     "n": 9,
+     "bytes": 186986,
+     "firstEnd": 30,
+     "lastEnd": 30
+    },
+    "other": {
+     "n": 3,
+     "bytes": 2983,
+     "firstEnd": 146,
+     "lastEnd": 153
+    }
+   },
+   "domNodes": 1150
+  },
+  {
+   "cond": "warmcache",
+   "route": "cinematic",
+   "trial": 2,
+   "responseStart": 23,
+   "responseEnd": 33,
+   "domInteractive": 56,
+   "dcl": 56,
+   "load": 122,
+   "htmlBytes": 81318,
+   "fp": 132,
+   "fcp": 132,
+   "lcp": 132,
+   "lcpEl": "SPAN:ideas.",
+   "lcpCandidates": 1,
+   "hydrStart": 102,
+   "hydrLink": 119,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32228,
+     "firstEnd": 27,
+     "lastEnd": 27
+    },
+    "img": {
+     "n": 94,
+     "bytes": 28200,
+     "firstEnd": 29,
+     "lastEnd": 116
+    },
+    "css": {
+     "n": 1,
+     "bytes": 10887,
+     "firstEnd": 29,
+     "lastEnd": 29
+    },
+    "js": {
+     "n": 9,
+     "bytes": 186986,
+     "firstEnd": 29,
+     "lastEnd": 30
+    },
+    "other": {
+     "n": 3,
+     "bytes": 2987,
+     "firstEnd": 144,
+     "lastEnd": 150
+    }
+   },
+   "domNodes": 1150
+  },
+  {
+   "cond": "warmcache",
+   "route": "cinematic",
+   "trial": 3,
+   "responseStart": 21,
+   "responseEnd": 35,
+   "domInteractive": 89,
+   "dcl": 89,
+   "load": 116,
+   "htmlBytes": 81318,
+   "fp": 120,
+   "fcp": 120,
+   "lcp": 120,
+   "lcpEl": "SPAN:ideas.",
+   "lcpCandidates": 1,
+   "hydrStart": 90,
+   "hydrLink": 108,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "img": {
+     "n": 94,
+     "bytes": 28200,
+     "firstEnd": 30,
+     "lastEnd": 112
+    },
+    "font": {
+     "n": 1,
+     "bytes": 32228,
+     "firstEnd": 26,
+     "lastEnd": 26
+    },
+    "css": {
+     "n": 1,
+     "bytes": 10887,
+     "firstEnd": 27,
+     "lastEnd": 27
+    },
+    "js": {
+     "n": 9,
+     "bytes": 186986,
+     "firstEnd": 27,
+     "lastEnd": 28
+    },
+    "other": {
+     "n": 3,
+     "bytes": 2985,
+     "firstEnd": 130,
+     "lastEnd": 135
+    }
+   },
+   "domNodes": 1150
+  },
+  {
+   "cond": "warmcache",
+   "route": "cinematic",
+   "trial": 4,
+   "responseStart": 32,
+   "responseEnd": 41,
+   "domInteractive": 64,
+   "dcl": 64,
+   "load": 130,
+   "htmlBytes": 81318,
+   "fp": 132,
+   "fcp": 132,
+   "lcp": 132,
+   "lcpEl": "SPAN:ideas.",
+   "lcpCandidates": 1,
+   "hydrStart": 102,
+   "hydrLink": 113,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32228,
+     "firstEnd": 36,
+     "lastEnd": 36
+    },
+    "img": {
+     "n": 94,
+     "bytes": 28200,
+     "firstEnd": 39,
+     "lastEnd": 114
+    },
+    "css": {
+     "n": 1,
+     "bytes": 10887,
+     "firstEnd": 39,
+     "lastEnd": 39
+    },
+    "js": {
+     "n": 9,
+     "bytes": 186986,
+     "firstEnd": 39,
+     "lastEnd": 40
+    },
+    "other": {
+     "n": 3,
+     "bytes": 2985,
+     "firstEnd": 134,
+     "lastEnd": 141
+    }
+   },
+   "domNodes": 1150
+  },
+  {
+   "cond": "warmcache",
+   "route": "cinematic",
+   "trial": 5,
+   "responseStart": 23,
+   "responseEnd": 31,
+   "domInteractive": 51,
+   "dcl": 51,
+   "load": 94,
+   "htmlBytes": 81318,
+   "fp": 104,
+   "fcp": 104,
+   "lcp": 104,
+   "lcpEl": "SPAN:ideas.",
+   "lcpCandidates": 1,
+   "hydrStart": 91,
+   "hydrLink": 106,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32228,
+     "firstEnd": 27,
+     "lastEnd": 27
+    },
+    "img": {
+     "n": 94,
+     "bytes": 28200,
+     "firstEnd": 29,
+     "lastEnd": 75
+    },
+    "css": {
+     "n": 1,
+     "bytes": 10887,
+     "firstEnd": 30,
+     "lastEnd": 30
+    },
+    "js": {
+     "n": 9,
+     "bytes": 186986,
+     "firstEnd": 30,
+     "lastEnd": 30
+    },
+    "other": {
+     "n": 3,
+     "bytes": 2984,
+     "firstEnd": 120,
+     "lastEnd": 125
+    }
+   },
+   "domNodes": 1150
+  },
+  {
+   "cond": "warmcache",
+   "route": "cinematic",
+   "trial": 6,
+   "responseStart": 23,
+   "responseEnd": 30,
+   "domInteractive": 52,
+   "dcl": 52,
+   "load": 100,
+   "htmlBytes": 81318,
+   "fp": 104,
+   "fcp": 104,
+   "lcp": 104,
+   "lcpEl": "SPAN:ideas.",
+   "lcpCandidates": 1,
+   "hydrStart": 96,
+   "hydrLink": 111,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "img": {
+     "n": 94,
+     "bytes": 28200,
+     "firstEnd": 28,
+     "lastEnd": 73
+    },
+    "font": {
+     "n": 1,
+     "bytes": 32228,
+     "firstEnd": 26,
+     "lastEnd": 26
+    },
+    "css": {
+     "n": 1,
+     "bytes": 10887,
+     "firstEnd": 29,
+     "lastEnd": 29
+    },
+    "js": {
+     "n": 9,
+     "bytes": 186986,
+     "firstEnd": 29,
+     "lastEnd": 29
+    },
+    "other": {
+     "n": 3,
+     "bytes": 2985,
+     "firstEnd": 126,
+     "lastEnd": 131
+    }
+   },
+   "domNodes": 1150
+  },
+  {
+   "cond": "warmcache",
+   "route": "lite",
+   "trial": 0,
+   "responseStart": 13,
+   "responseEnd": 15,
+   "domInteractive": 37,
+   "dcl": 37,
+   "load": 40,
+   "htmlBytes": 16458,
+   "fp": 112,
+   "fcp": 112,
+   "lcp": 112,
+   "lcpEl": "SPAN:ideas.",
+   "lcpCandidates": 1,
+   "hydrStart": 40,
+   "hydrLink": 51,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32228,
+     "firstEnd": 17,
+     "lastEnd": 17
+    },
+    "img": {
+     "n": 6,
+     "bytes": 1800,
+     "firstEnd": 20,
+     "lastEnd": 25
+    },
+    "css": {
+     "n": 1,
+     "bytes": 10887,
+     "firstEnd": 18,
+     "lastEnd": 18
+    },
+    "js": {
+     "n": 9,
+     "bytes": 186986,
+     "firstEnd": 19,
+     "lastEnd": 19
+    },
+    "other": {
+     "n": 3,
+     "bytes": 2994,
+     "firstEnd": 59,
+     "lastEnd": 63
+    }
+   },
+   "domNodes": 406
+  },
+  {
+   "cond": "warmcache",
+   "route": "lite",
+   "trial": 1,
+   "responseStart": 9,
+   "responseEnd": 10,
+   "domInteractive": 23,
+   "dcl": 23,
+   "load": 27,
+   "htmlBytes": 16458,
+   "fp": 88,
+   "fcp": 88,
+   "lcp": 88,
+   "lcpEl": "SPAN:ideas.",
+   "lcpCandidates": 1,
+   "hydrStart": 29,
+   "hydrLink": 36,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32228,
+     "firstEnd": 12,
+     "lastEnd": 12
+    },
+    "img": {
+     "n": 6,
+     "bytes": 1800,
+     "firstEnd": 14,
+     "lastEnd": 17
+    },
+    "css": {
+     "n": 1,
+     "bytes": 10887,
+     "firstEnd": 13,
+     "lastEnd": 13
+    },
+    "js": {
+     "n": 9,
+     "bytes": 186986,
+     "firstEnd": 13,
+     "lastEnd": 13
+    },
+    "other": {
+     "n": 3,
+     "bytes": 2992,
+     "firstEnd": 58,
+     "lastEnd": 61
+    }
+   },
+   "domNodes": 406
+  },
+  {
+   "cond": "warmcache",
+   "route": "lite",
+   "trial": 2,
+   "responseStart": 9,
+   "responseEnd": 10,
+   "domInteractive": 24,
+   "dcl": 24,
+   "load": 27,
+   "htmlBytes": 16458,
+   "fp": 88,
+   "fcp": 88,
+   "lcp": 88,
+   "lcpEl": "SPAN:ideas.",
+   "lcpCandidates": 1,
+   "hydrStart": 35,
+   "hydrLink": 35,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "img": {
+     "n": 6,
+     "bytes": 1800,
+     "firstEnd": 14,
+     "lastEnd": 16
+    },
+    "font": {
+     "n": 1,
+     "bytes": 32228,
+     "firstEnd": 12,
+     "lastEnd": 12
+    },
+    "css": {
+     "n": 1,
+     "bytes": 10887,
+     "firstEnd": 13,
+     "lastEnd": 13
+    },
+    "js": {
+     "n": 9,
+     "bytes": 186986,
+     "firstEnd": 13,
+     "lastEnd": 13
+    },
+    "other": {
+     "n": 3,
+     "bytes": 2992,
+     "firstEnd": 42,
+     "lastEnd": 45
+    }
+   },
+   "domNodes": 406
+  },
+  {
+   "cond": "warmcache",
+   "route": "lite",
+   "trial": 3,
+   "responseStart": 8,
+   "responseEnd": 10,
+   "domInteractive": 22,
+   "dcl": 22,
+   "load": 26,
+   "htmlBytes": 16458,
+   "fp": 88,
+   "fcp": 88,
+   "lcp": 88,
+   "lcpEl": "SPAN:ideas.",
+   "lcpCandidates": 1,
+   "hydrStart": 35,
+   "hydrLink": 35,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32228,
+     "firstEnd": 11,
+     "lastEnd": 11
+    },
+    "img": {
+     "n": 6,
+     "bytes": 1800,
+     "firstEnd": 13,
+     "lastEnd": 16
+    },
+    "css": {
+     "n": 1,
+     "bytes": 10887,
+     "firstEnd": 12,
+     "lastEnd": 12
+    },
+    "js": {
+     "n": 9,
+     "bytes": 186986,
+     "firstEnd": 12,
+     "lastEnd": 13
+    },
+    "other": {
+     "n": 3,
+     "bytes": 2996,
+     "firstEnd": 41,
+     "lastEnd": 45
+    }
+   },
+   "domNodes": 406
+  },
+  {
+   "cond": "warmcache",
+   "route": "lite",
+   "trial": 4,
+   "responseStart": 8,
+   "responseEnd": 10,
+   "domInteractive": 25,
+   "dcl": 25,
+   "load": 30,
+   "htmlBytes": 16458,
+   "fp": 84,
+   "fcp": 84,
+   "lcp": 84,
+   "lcpEl": "SPAN:ideas.",
+   "lcpCandidates": 1,
+   "hydrStart": 33,
+   "hydrLink": 44,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32228,
+     "firstEnd": 12,
+     "lastEnd": 12
+    },
+    "img": {
+     "n": 6,
+     "bytes": 1800,
+     "firstEnd": 13,
+     "lastEnd": 17
+    },
+    "css": {
+     "n": 1,
+     "bytes": 10887,
+     "firstEnd": 13,
+     "lastEnd": 13
+    },
+    "js": {
+     "n": 9,
+     "bytes": 186986,
+     "firstEnd": 13,
+     "lastEnd": 13
+    },
+    "other": {
+     "n": 3,
+     "bytes": 2997,
+     "firstEnd": 57,
+     "lastEnd": 61
+    }
+   },
+   "domNodes": 406
+  },
+  {
+   "cond": "warmcache",
+   "route": "lite",
+   "trial": 5,
+   "responseStart": 7,
+   "responseEnd": 9,
+   "domInteractive": 22,
+   "dcl": 22,
+   "load": 25,
+   "htmlBytes": 16458,
+   "fp": 88,
+   "fcp": 88,
+   "lcp": 88,
+   "lcpEl": "SPAN:ideas.",
+   "lcpCandidates": 1,
+   "hydrStart": 33,
+   "hydrLink": 33,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32228,
+     "firstEnd": 10,
+     "lastEnd": 10
+    },
+    "img": {
+     "n": 6,
+     "bytes": 1800,
+     "firstEnd": 12,
+     "lastEnd": 15
+    },
+    "css": {
+     "n": 1,
+     "bytes": 10887,
+     "firstEnd": 11,
+     "lastEnd": 11
+    },
+    "js": {
+     "n": 9,
+     "bytes": 186986,
+     "firstEnd": 11,
+     "lastEnd": 12
+    },
+    "other": {
+     "n": 3,
+     "bytes": 2994,
+     "firstEnd": 40,
+     "lastEnd": 43
+    }
+   },
+   "domNodes": 406
+  },
+  {
+   "cond": "warmcache",
+   "route": "lite",
+   "trial": 6,
+   "responseStart": 9,
+   "responseEnd": 10,
+   "domInteractive": 23,
+   "dcl": 23,
+   "load": 26,
+   "htmlBytes": 16458,
+   "fp": 88,
+   "fcp": 88,
+   "lcp": 88,
+   "lcpEl": "SPAN:ideas.",
+   "lcpCandidates": 1,
+   "hydrStart": 30,
+   "hydrLink": 36,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32228,
+     "firstEnd": 12,
+     "lastEnd": 12
+    },
+    "img": {
+     "n": 6,
+     "bytes": 1800,
+     "firstEnd": 14,
+     "lastEnd": 17
+    },
+    "css": {
+     "n": 1,
+     "bytes": 10887,
+     "firstEnd": 13,
+     "lastEnd": 13
+    },
+    "js": {
+     "n": 9,
+     "bytes": 186986,
+     "firstEnd": 13,
+     "lastEnd": 13
+    },
+    "other": {
+     "n": 3,
+     "bytes": 2995,
+     "firstEnd": 43,
+     "lastEnd": 48
+    }
+   },
+   "domNodes": 406
+  },
+  {
+   "cond": "warmcache",
+   "route": "project",
+   "trial": 0,
+   "responseStart": 9,
+   "responseEnd": 10,
+   "domInteractive": 29,
+   "dcl": 29,
+   "load": 32,
+   "htmlBytes": 12637,
+   "fp": 68,
+   "fcp": 68,
+   "lcp": 68,
+   "lcpEl": "P:Database performance problems ",
+   "lcpCandidates": 1,
+   "hydrStart": 37,
+   "hydrLink": 44,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32228,
+     "firstEnd": 12,
+     "lastEnd": 12
+    },
+    "css": {
+     "n": 1,
+     "bytes": 10887,
+     "firstEnd": 12,
+     "lastEnd": 12
+    },
+    "js": {
+     "n": 8,
+     "bytes": 147677,
+     "firstEnd": 12,
+     "lastEnd": 13
+    },
+    "other": {
+     "n": 8,
+     "bytes": 7028,
+     "firstEnd": 53,
+     "lastEnd": 65
+    }
+   },
+   "domNodes": 214
+  },
+  {
+   "cond": "warmcache",
+   "route": "project",
+   "trial": 1,
+   "responseStart": 9,
+   "responseEnd": 10,
+   "domInteractive": 20,
+   "dcl": 20,
+   "load": 23,
+   "htmlBytes": 12637,
+   "fp": 36,
+   "fcp": 36,
+   "lcp": 36,
+   "lcpEl": "P:Database performance problems ",
+   "lcpCandidates": 1,
+   "hydrStart": 29,
+   "hydrLink": 29,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32228,
+     "firstEnd": 12,
+     "lastEnd": 12
+    },
+    "css": {
+     "n": 1,
+     "bytes": 10887,
+     "firstEnd": 13,
+     "lastEnd": 13
+    },
+    "js": {
+     "n": 8,
+     "bytes": 147677,
+     "firstEnd": 13,
+     "lastEnd": 13
+    },
+    "other": {
+     "n": 8,
+     "bytes": 7028,
+     "firstEnd": 39,
+     "lastEnd": 48
+    }
+   },
+   "domNodes": 214
+  },
+  {
+   "cond": "warmcache",
+   "route": "project",
+   "trial": 2,
+   "responseStart": 7,
+   "responseEnd": 8,
+   "domInteractive": 16,
+   "dcl": 17,
+   "load": 19,
+   "htmlBytes": 12637,
+   "fp": 40,
+   "fcp": 40,
+   "lcp": 40,
+   "lcpEl": "P:Database performance problems ",
+   "lcpCandidates": 1,
+   "hydrStart": 27,
+   "hydrLink": 27,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32228,
+     "firstEnd": 10,
+     "lastEnd": 10
+    },
+    "css": {
+     "n": 1,
+     "bytes": 10887,
+     "firstEnd": 10,
+     "lastEnd": 10
+    },
+    "js": {
+     "n": 8,
+     "bytes": 147677,
+     "firstEnd": 10,
+     "lastEnd": 10
+    },
+    "other": {
+     "n": 8,
+     "bytes": 7026,
+     "firstEnd": 35,
+     "lastEnd": 45
+    }
+   },
+   "domNodes": 214
+  },
+  {
+   "cond": "warmcache",
+   "route": "project",
+   "trial": 3,
+   "responseStart": 7,
+   "responseEnd": 8,
+   "domInteractive": 18,
+   "dcl": 18,
+   "load": 20,
+   "htmlBytes": 12637,
+   "fp": 36,
+   "fcp": 36,
+   "lcp": 36,
+   "lcpEl": "P:Database performance problems ",
+   "lcpCandidates": 1,
+   "hydrStart": 27,
+   "hydrLink": 27,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32228,
+     "firstEnd": 10,
+     "lastEnd": 10
+    },
+    "css": {
+     "n": 1,
+     "bytes": 10887,
+     "firstEnd": 10,
+     "lastEnd": 10
+    },
+    "js": {
+     "n": 8,
+     "bytes": 147677,
+     "firstEnd": 10,
+     "lastEnd": 11
+    },
+    "other": {
+     "n": 8,
+     "bytes": 7027,
+     "firstEnd": 35,
+     "lastEnd": 47
+    }
+   },
+   "domNodes": 214
+  },
+  {
+   "cond": "warmcache",
+   "route": "project",
+   "trial": 4,
+   "responseStart": 8,
+   "responseEnd": 10,
+   "domInteractive": 20,
+   "dcl": 20,
+   "load": 22,
+   "htmlBytes": 12637,
+   "fp": 36,
+   "fcp": 36,
+   "lcp": 36,
+   "lcpEl": "P:Database performance problems ",
+   "lcpCandidates": 1,
+   "hydrStart": 30,
+   "hydrLink": 30,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32228,
+     "firstEnd": 12,
+     "lastEnd": 12
+    },
+    "css": {
+     "n": 1,
+     "bytes": 10887,
+     "firstEnd": 12,
+     "lastEnd": 12
+    },
+    "js": {
+     "n": 8,
+     "bytes": 147677,
+     "firstEnd": 12,
+     "lastEnd": 13
+    },
+    "other": {
+     "n": 8,
+     "bytes": 7029,
+     "firstEnd": 42,
+     "lastEnd": 54
+    }
+   },
+   "domNodes": 214
+  },
+  {
+   "cond": "warmcache",
+   "route": "project",
+   "trial": 5,
+   "responseStart": 7,
+   "responseEnd": 8,
+   "domInteractive": 17,
+   "dcl": 17,
+   "load": 19,
+   "htmlBytes": 12637,
+   "fp": 36,
+   "fcp": 36,
+   "lcp": 36,
+   "lcpEl": "P:Database performance problems ",
+   "lcpCandidates": 1,
+   "hydrStart": 27,
+   "hydrLink": 27,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32228,
+     "firstEnd": 10,
+     "lastEnd": 10
+    },
+    "css": {
+     "n": 1,
+     "bytes": 10887,
+     "firstEnd": 10,
+     "lastEnd": 10
+    },
+    "js": {
+     "n": 8,
+     "bytes": 147677,
+     "firstEnd": 10,
+     "lastEnd": 10
+    },
+    "other": {
+     "n": 8,
+     "bytes": 7030,
+     "firstEnd": 35,
+     "lastEnd": 47
+    }
+   },
+   "domNodes": 214
+  },
+  {
+   "cond": "warmcache",
+   "route": "project",
+   "trial": 6,
+   "responseStart": 6,
+   "responseEnd": 8,
+   "domInteractive": 17,
+   "dcl": 17,
+   "load": 19,
+   "htmlBytes": 12637,
+   "fp": 40,
+   "fcp": 40,
+   "lcp": 40,
+   "lcpEl": "P:Database performance problems ",
+   "lcpCandidates": 1,
+   "hydrStart": 26,
+   "hydrLink": 26,
+   "longtasks": [],
+   "preFcpLongMs": 0,
+   "res": {
+    "font": {
+     "n": 1,
+     "bytes": 32228,
+     "firstEnd": 10,
+     "lastEnd": 10
+    },
+    "css": {
+     "n": 1,
+     "bytes": 10887,
+     "firstEnd": 10,
+     "lastEnd": 10
+    },
+    "js": {
+     "n": 8,
+     "bytes": 147677,
+     "firstEnd": 10,
+     "lastEnd": 11
+    },
+    "other": {
+     "n": 8,
+     "bytes": 7027,
+     "firstEnd": 36,
+     "lastEnd": 46
+    }
+   },
+   "domNodes": 214
+  }
+ ]
+}
