@@ -9,7 +9,7 @@ import { getProject, projectSummary, type Project, type ProjectDetail as Detail 
 import { NAV_ITEMS, SITE, type NavItem } from "@/data/site";
 import { getZone, type StationAccent } from "@/data/zones";
 import { LAB_HOME } from "@/lib/lab-url";
-import { LAB_V2_PATH, labV2Href, projectPageHref } from "@/lib/lab-v2-pages";
+import { LAB_V2_PATH, labV2ExperienceHref, labV2Href, projectPageHref } from "@/lib/lab-v2-pages";
 
 /**
  * M1.4L.2: a project's detail page, in the lab's visual language without the
@@ -81,10 +81,16 @@ export function ProjectDetail({ project, view }: { project: Project & { detail: 
     });
   }
 
-  // The site's navigation, pointing into the experimental lab instead of the homepage.
+  // The site's navigation, pointing into the experimental lab instead of the homepage. M1.4P: Experience opens the
+  // Experience station (its deep link, as in the lab's own header) instead of the in-scene anchor.
   const nav: NavItem[] = NAV_ITEMS.map((item) => ({
     ...item,
-    href: item.href === "/" ? labHref : `${LAB_V2_PATH}${view ? `?${view}` : ""}${item.href}`,
+    href:
+      item.href === "/"
+        ? labHref
+        : item.icon === "experience"
+          ? labV2ExperienceHref(view)
+          : `${LAB_V2_PATH}${view ? `?${view}` : ""}${item.href}`,
   }));
   const projectsNav = nav.find((item) => item.icon === "projects")?.href;
 

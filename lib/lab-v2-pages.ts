@@ -1,4 +1,5 @@
 import { projectsWithPages, type ProjectId } from "@/data/projects";
+import { NAV_ITEMS, type NavItem } from "@/data/site";
 import { labSearch, type LabLocation } from "./lab-url";
 
 /**
@@ -30,6 +31,23 @@ export function labViewQuery(query: Query): string {
 /** `/lab-v2` at `loc` (station first, then project), with the view parameters kept. */
 export function labV2Href(loc: LabLocation, view: string): string {
   return LAB_V2_PATH + labSearch(loc, view);
+}
+
+/**
+ * M1.4P: the desktop header's navigation on `/lab-v2` itself. As the site's (NAV_ITEMS), except that Experience is the
+ * Experience station's deep link (`/lab-v2?station=experience`, view parameters kept) instead of the in-scene anchor
+ * `#station-experience`, which only pointed at the label and opened nothing. A plain click is handled in place by
+ * HeaderStationLinks (selects the station through the lab's own state); a new tab, or a click before hydration,
+ * follows the deep link. The homepage keeps NAV_ITEMS.
+ */
+export function labV2Nav(view: string): NavItem[] {
+  const experience = labV2ExperienceHref(view);
+  return NAV_ITEMS.map((item) => (item.icon === "experience" ? { ...item, href: experience } : item));
+}
+
+/** The header's Experience destination in `/lab-v2`: the Experience station's deep link, view parameters kept (M1.4P). */
+export function labV2ExperienceHref(view: string): string {
+  return labV2Href({ station: "experience", project: null }, view);
 }
 
 /** A project page, with the view parameters kept. */

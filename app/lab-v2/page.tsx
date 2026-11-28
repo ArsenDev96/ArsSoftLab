@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { ExploreCue } from "@/components/lab/ExploreCue";
+import { HeaderStationLinks } from "@/components/lab/HeaderStationLinks";
 import { LabHero } from "@/components/lab/LabHero";
 import { LabScene } from "@/components/lab/LabScene";
 import { LabSceneStatic } from "@/components/lab/LabSceneStatic";
@@ -8,7 +9,7 @@ import { LabCompactHeader, LabStationDock } from "@/components/lab/MobileLab";
 import { RenderModeSelector } from "@/components/lab/RenderModeSelector";
 import { SiteHeader } from "@/components/ui/SiteHeader";
 import { PROJECT_PARAM, resolveLabLocation, STATION_PARAM } from "@/lib/lab-url";
-import { labV2ProjectPages, labViewQuery } from "@/lib/lab-v2-pages";
+import { labV2Nav, labV2ProjectPages, labViewQuery } from "@/lib/lab-v2-pages";
 
 /** M1.4D: experimental, not linked from anywhere and not indexed. */
 export const metadata: Metadata = {
@@ -48,9 +49,10 @@ export default async function LabV2Page({ searchParams }: { searchParams: Search
       </a>
       {/* M1.4K.5B: Cinematic / Lite, in the header's row (clear of every station, label and chip).
           M1.4N.2: on narrow and portrait screens CSS swaps this header (a display: contents wrapper, so nothing
-          changes on desktop) for LabCompactHeader. */}
-      <div className="lab-desktop-header contents">
-        <SiteHeader activeHref="/" utilities={<RenderModeSelector mode={lite ? "lite" : "full"} />} />
+          changes on desktop) for LabCompactHeader.
+          M1.4P: its Experience opens the Experience station (labV2Nav, HeaderStationLinks); the homepage's is unchanged. */}
+      <div className="lab-desktop-header contents" data-lab-header-stations="">
+        <SiteHeader activeHref="/" nav={labV2Nav(labViewQuery(query))} utilities={<RenderModeSelector mode={lite ? "lite" : "full"} />} />
       </div>
       <LabCompactHeader mode={lite ? "lite" : "full"} />
       {/* M1.4N.2: data-lab-mobile scopes the mobile rules (globals.css) to this page; the homepage has no such attribute. */}
@@ -63,6 +65,8 @@ export default async function LabV2Page({ searchParams }: { searchParams: Search
           <ExploreCue />
           {/* M1.4N.2: the five stations, in station mode (portrait) only. */}
           <LabStationDock />
+          {/* M1.4P: the desktop header's station links (Experience) select in place. */}
+          <HeaderStationLinks />
         </LabStateProvider>
       </main>
     </>
